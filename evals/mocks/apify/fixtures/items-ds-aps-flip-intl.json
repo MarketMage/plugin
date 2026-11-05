@@ -1,0 +1,77 @@
+[
+ {
+  "recordType": "product",
+  "marketplace": "US",
+  "asin": "B0INTLHP01",
+  "url": "https://www.amazon.com/dp/B0INTLHP01",
+  "source": "barcode",
+  "input": "4548736143999",
+  "title": "Sony WH-CH520 Wireless On-Ear Headphones, Blue (International Version, No Warranty)",
+  "brand": "Sony",
+  "price": 44.95,
+  "currency": "USD",
+  "rating": 4.5,
+  "reviewCount": 1820,
+  "starBreakdown": {
+   "5": 71,
+   "4": 14,
+   "3": 6,
+   "2": 3,
+   "1": 6
+  },
+  "rank": 3120,
+  "rankCategory": "Electronics",
+  "boughtPastMonth": "200+ bought in past month",
+  "boughtPastMonthMin": 200,
+  "dateFirstAvailable": "2023-04-02",
+  "soldByAmazon": false,
+  "buyBoxSeller": "GlobalTechImports",
+  "scrapedAt": "2026-11-04T10:00:00.000Z",
+  "fees": {
+   "supported": true,
+   "currency": "USD",
+   "price": 44.95,
+   "referralCategory": "Consumer Electronics",
+   "referralFee": 3.6,
+   "closingFee": 0,
+   "fbaFee": 4.75,
+   "fbaFeeRange": null,
+   "sizeTier": "Large standard",
+   "shippingWeightLb": 0.7,
+   "totalFees": 8.35,
+   "totalFeesRange": null,
+   "afterFees": 36.6,
+   "afterFeesRange": null,
+   "feePercentOfPrice": 18.6,
+   "missing": [],
+   "confidence": "high",
+   "basis": "Referral fee: Amazon's published Consumer Electronics rate (8%) on the featured price. FBA fee: the 2026 US rate card for a large standard unit at 0.7 lb.",
+   "scheduleVersion": "amazon-us-2026 (fetched 2026-10-23)"
+  },
+  "barcodeVerified": true,
+  "matchConfidence": 1,
+  "offerCount": 2,
+  "offers": [
+   {
+    "position": 0,
+    "buyBox": true,
+    "price": 44.95,
+    "currency": "USD",
+    "condition": "New",
+    "seller": "GlobalTechImports",
+    "soldByAmazon": false,
+    "fulfilledByAmazon": true
+   },
+   {
+    "position": 1,
+    "buyBox": false,
+    "price": 47.5,
+    "currency": "USD",
+    "condition": "New",
+    "seller": "WorldWideAudio",
+    "soldByAmazon": false,
+    "fulfilledByAmazon": false
+   }
+  ]
+ }
+]

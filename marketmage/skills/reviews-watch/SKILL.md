@@ -1,0 +1,80 @@
+---
+name: reviews-watch
+description: Read or monitor product reviews - average rating, review count, share per star, the newest reviews and the complaint and praise themes in them - for product pages on shops using Judge.me, Yotpo, Okendo, Loox or Stamped, for Amazon ASINs, and for businesses on Trustpilot, once or on a schedule that reports new reviews and rating moves. Use when someone asks what customers say about a product (theirs or a competitor's), what shoppers complain about, whether a rating is slipping, or wants to be told about new or bad reviews. Not for writing replies to reviews.
+---
+
+# Reviews watch
+
+Ratings, new reviews and what shoppers praise or complain about, now or over time. Read these first:
+- `references/running.md`: costs, caps, tools, secrets;
+- `references/watchlists.md`: scheduling;
+- `references/costs.md`: the prices.
+
+**Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
+
+**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
+
+## 1. Ask only for
+
+- **The products:** product page URLs from the user's or competitors' shops, and Amazon ASINs or URLs with the marketplace (US by default).
+- **Companies on Trustpilot:** a domain (`allbirds.com`) or its `trustpilot.com/review/…` page, as `trustpilotDomains`.
+- **Once or ongoing.** If ongoing, how often: daily or weekly.
+- **Optional:** how far back (`sinceDays`, 30 by default) and how many reviews per product (`maxReviewsPerProduct`, 20 by default; 0 for the rating summary only).
+
+Never ask for reviewer names, and leave `includeReviewerNames` off (its default). Names are personal data, and themes, alerts and comparisons don't need them. If the user asks for names, say they're off by design; they can turn the field on in the actor's input in the Console only if they have a lawful reason to process them.
+
+## 2. One-off read
+
+- **Run** `cleanpull/reviews-monitor` with `productUrls`, `asins`, `trustpilotDomains`, `amazonMarketplace`, `sinceDays`, `maxReviewsPerProduct`.
+- **Cost (paid plans):**
+  - each product read: a rating summary USD 0.003 + USD 0.0005 per review delivered;
+  - a shop product with 20 reviews ≈ **USD 0.013**; an Amazon ASIN outside the US (its 8 to 13 top reviews) ≈ **USD 0.01**; an amazon.com (US) ASIN: its rating summary only, USD 0.003 (below); outside the US, add up to USD 0.012 for the local-address reads;
+  - **a Trustpilot business:** summary USD 0.003 + USD 0.003 for its read (provider search) + USD 0.0035 per review delivered (review USD 0.0005 + provider record USD 0.003): with 20 reviews ≈ **USD 0.076**. It's read through CleanPull's marketplace data service (a third-party provider; nothing to set up) and takes about 30 to 60 seconds a business;
+  - a product whose shop uses another review app, or that can't be read, is not charged.
+  - **When the estimate is USD 0.05 or less,** say the cost in one line and run it straight away; above that, ask first. **Example above it:** 4 product pages and 2 ASINs, 20 reviews each ≈ USD 0.07: say so and get a yes.
+- **Read** with `get-dataset-items`:
+  - the `rating-summary` rows in full: `average`, `count`, `histogram` (`histogramUnit` is `count` for the review apps and `percent` for Amazon), `themes`, `topComplaints`, `topPraise`, `newestReviewDate`;
+  - the `review` rows with `fields: "recordType,productTitle,rating,title,text,date,verified,variant,reviewId"` and a `limit` of about 100.
+- **Not read:** `RUN_SUMMARY.failures` names each product that wasn't, with the reason. Say which:
+  - shops using Bazaarvoice, Junip, REVIEWS.io, PowerReviews or another app, and review apps loaded only by a theme's scripts;
+  - Amazon's full review list (it needs a sign-in): outside the US Amazon gives the rating, the share per star and the top reviews only; amazon.com gives the rating and the share per star only (next point).
+- **amazon.com (US) shows no review text to signed-out shoppers:** follow `references/running.md`, "Amazon reviews in the US" (say it in the cost line, price US ASINs as the summary only, offer amazon.co.uk or .de or shop pages, never "no complaints").
+
+## 3. Explain it like an expert
+
+- **Lead with the verdict per product:** rating, count, and whether the recent reviews are better or worse than the average.
+- **The shape of the stars:** a healthy product is heavy at 5 with a thin middle. A bump at 1 star usually means a defect, a shipping problem or a listing that promises too much; read those reviews first.
+- **Themes:** name the top complaint and praise themes with how many reviews mention each (`reviews`, `share`), and quote one short example review per theme (text only, never a name).
+  - **On a competitor:** their complaints are the user's selling angle ("doesn't run small", "arrives in a padded box"); their praise is the bar to meet.
+  - **On the user's own product:** turn each complaint into a fix: a size chart, packaging, a clearer photo or description.
+- **Small samples:** under about 20 reviews, say the themes are a hint, not a trend. Themes come from keyword and phrase matching, not AI, so a theme is a pointer to reviews to read, not a measured sentiment score. **Named themes are English only:** the known complaint and praise phrases ("runs small", "arrived damaged") are English, so reviews in another language (amazon.de, .fr, .es, a German Trustpilot page) give mostly recurring phrases in that language, or no themes: say so, and read the review texts themselves for what buyers complain about.
+- **Loox** shows no dates in some layouts, and **Stamped** and **Loox** publish no counts per star: say so when it matters.
+- End with the cost and the dataset link, and offer the watch: "I can tell you each morning when these get new or low reviews."
+
+## 4. Ongoing (a watchlist)
+
+- **The task:** `cleanpull/watch-digest`, named `cw-reviews-<name>`, with:
+  - `reviewProductUrls`, `reviewAsins`, `reviewTrustpilotDomains` (domains or `trustpilot.com/review/…` pages) and `reviewMarketplace` (at most 1,000 products and businesses together);
+  - `monitorName: "<name>"` and `title`;
+  - `maxRunCostUsd` (see below);
+  - `alertBelowRating` (for example 3) when the user only wants to hear about bad reviews: the message then lists only new reviews under that many stars, and ratings that fell under it (`references/watchlists.md`, "Alerts").
+
+  The digest reports new reviews (with the lowest rating among them and their top themes), the rating moving by 0.1 stars or more, the count jumping or dropping by 10% or more, and a product page removed (confirmed on a second run). A Trustpilot business is checked through its newest 5 reviews each run: more new reviews than that between runs aren't all listed, so suggest daily for busy businesses.
+- **Cost per run:**
+  - digest USD 0.005;
+  - products × USD 0.00025;
+  - each product with nothing new USD 0.0005; each with something new USD 0.003 + USD 0.0005 per new review;
+  - **each Trustpilot business:** its read (provider search) USD 0.003 + its newest 5 reviews re-checked at USD 0.003 each, so USD 0.0185 with nothing new (with the USD 0.0005 check); a new review is USD 0.0035 instead of a re-check, plus the USD 0.003 summary. About **USD 0.56 a month per business daily**, USD 0.08 weekly. **Suggest weekly for Trustpilot** unless the business gets more than about 5 reviews a day (then daily, so the newest 5 cover them). It adds about 30 to 60 seconds to the digest (up to 4 businesses at a time);
+  - USD 0.001 per message once a channel is added.
+  - **The first run** reads each product's summary and up to 20 reviews as the baseline: about USD 0.013 per product; a Trustpilot business's summary, read and newest 5 reviews: about USD 0.024.
+  - **Example:** 20 products daily, 4 of them with a couple of new reviews: 0.005 + 20 × 0.00025 + 16 × 0.0005 + 4 × 0.004 ≈ **USD 0.034 a run, about USD 1.00 a month**; the first run ≈ USD 0.27. Weekly is about USD 0.15 a month.
+- **`maxRunCostUsd`:** 1.5× the typical run + USD 0.04 (room for one product's worst case, USD 0.037; with Trustpilot businesses only, + USD 0.03, for a business's USD 0.0235; `references/watchlists.md`). For the example, about USD 0.09; for 3 Trustpilot businesses daily, 1.5 × 0.06 + 0.03 ≈ USD 0.12.
+- **Steps:** follow `references/watchlists.md`: show the monthly and first-run cost and get a yes, create the task, run the baseline (with `maxRunCostUsd` raised to the first-run cap in that run's input), schedule it, and say where the results go: "your briefing in Claude, on request or on a Monday schedule"; the Console link for email or Slack delivery only when the user asks for a channel (step 7).
+- **The watch can share a digest** with an existing price watchlist: add the review items to its task (`watchlists` skill, "Change") instead of creating a second one, if the user prefers one message.
+
+## 5. Reading a reviews digest later
+
+When you explain one (the `watchlists` skill reads it):
+- lead with new low ratings (1 to 2 stars) and what they're about;
+- then rating moves and count jumps; a count that drops usually means the shop or Amazon removed reviews;
+- a product reported removed was gone on two runs in a row: the page was taken down or moved.

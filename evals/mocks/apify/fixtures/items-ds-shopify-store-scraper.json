@@ -1,0 +1,426 @@
+[
+ {
+  "recordType": "store",
+  "storeDomain": "ruffwear.com",
+  "primaryDomain": "ruffwear.com",
+  "storeName": "Ruffwear",
+  "description": "Building dog gear to enhance your outdoor adventures. Trail tested & rugged dog boots, dog coats, dog harnesses, dog life jackets and much more.",
+  "country": "US",
+  "city": "Bend",
+  "currency": "USD",
+  "myshopifyDomain": "ruffwear.myshopify.com",
+  "shopId": 15774333,
+  "productCount": 50,
+  "publishedProductsCount": 143,
+  "catalogueComplete": false,
+  "variantCount": 1023,
+  "collectionCount": 86,
+  "priceMin": 7.87,
+  "priceMedian": 44.99,
+  "priceMax": 179.99,
+  "onSaleShare": 68,
+  "averageDiscountPercent": 32.2,
+  "inStockShare": 94,
+  "newProductsLast7Days": 0,
+  "newProductsLast30Days": 1,
+  "topVendors": [
+   {
+    "name": "Ruff Wear Inc",
+    "products": 39
+   },
+   {
+    "name": "Ruff Wear Inc.",
+    "products": 9
+   },
+   {
+    "name": "Ruff Wear",
+    "products": 2
+   }
+  ],
+  "topProductTypes": [
+   {
+    "name": "Apparel",
+    "products": 15
+   },
+   {
+    "name": "Accessories",
+    "products": 9
+   },
+   {
+    "name": "Leashes",
+    "products": 5
+   },
+   {
+    "name": "Bowls",
+    "products": 4
+   },
+   {
+    "name": "Toys",
+    "products": 4
+   },
+   {
+    "name": "Harnesses",
+    "products": 3
+   },
+   {
+    "name": "Beds",
+    "products": 2
+   },
+   {
+    "name": "Boots",
+    "products": 2
+   },
+   {
+    "name": "Collars",
+    "products": 2
+   },
+   {
+    "name": "Packs",
+    "products": 2
+   }
+  ],
+  "topTags": [
+   {
+    "name": "ONE_RATE_PAK",
+    "products": 25
+   },
+   {
+    "name": "Powder Hound",
+    "products": 16
+   },
+   {
+    "name": "Trail Mate",
+    "products": 16
+   },
+   {
+    "name": "Ruffworn",
+    "products": 13
+   },
+   {
+    "name": "FW26",
+    "products": 11
+   },
+   {
+    "name": "SS25",
+    "products": 11
+   },
+   {
+    "name": "SS26",
+    "products": 10
+   },
+   {
+    "name": "FW25",
+    "products": 8
+   },
+   {
+    "name": "New Dog",
+    "products": 7
+   },
+   {
+    "name": "Happy Camper",
+    "products": 6
+   },
+   {
+    "name": "Running Partner",
+    "products": 4
+   },
+   {
+    "name": "Co-Pilot",
+    "products": 3
+   },
+   {
+    "name": "Crag Dog",
+    "products": 2
+   },
+   {
+    "name": "BFCM24",
+    "products": 1
+   },
+   {
+    "name": "FFSALE24",
+    "products": 1
+   }
+  ],
+  "theme": {
+   "name": "Badge Fix (PR 410)",
+   "schemaName": null,
+   "themeStoreId": null
+  },
+  "apps": [
+   {
+    "name": "Okendo",
+    "category": "reviews"
+   },
+   {
+    "name": "Klaviyo",
+    "category": "email-sms"
+   },
+   {
+    "name": "Attentive",
+    "category": "email-sms"
+   },
+   {
+    "name": "Rebuy",
+    "category": "upsell"
+   }
+  ],
+  "appCategories": [
+   "email-sms",
+   "reviews",
+   "upsell"
+  ],
+  "socialProfiles": {
+   "instagram": "https://www.instagram.com/ruffwear",
+   "facebook": "https://www.facebook.com/ruffwear",
+   "tiktok": "https://www.tiktok.com/@ruffweardogs",
+   "x": "https://www.twitter.com/ruffwear",
+   "pinterest": "https://www.pinterest.com/ruffwear"
+  },
+  "markets": {},
+  "bestSellers": [
+   {
+    "rank": 1,
+    "productId": 8259021061,
+    "handle": "grip-trex-dog-boot-pairs",
+    "title": "Grip Trex\u2122 Dog Boots"
+   },
+   {
+    "rank": 2,
+    "productId": 7113590800467,
+    "handle": "front-range-everyday-dog-harness",
+    "title": "Front Range\u00ae Harness"
+   },
+   {
+    "rank": 3,
+    "productId": 4548971495507,
+    "handle": "float-coat-dog-life-jacket",
+    "title": "Float Coat\u2122 Dog Life Jacket"
+   },
+   {
+    "rank": 4,
+    "productId": 6724143480915,
+    "handle": "hi-and-light-dog-harness",
+    "title": "Hi & Light\u2122 Lightweight Dog Harness"
+   },
+   {
+    "rank": 5,
+    "productId": 6723780968531,
+    "handle": "dog-harness-flagline",
+    "title": "Flagline\u2122 Dog Harness with Handle"
+   },
+   {
+    "rank": 6,
+    "productId": 8516201285,
+    "handle": "the-beacon-safety-dog-light",
+    "title": "The Beacon\u2122 Dog Safety Light"
+   },
+   {
+    "rank": 7,
+    "productId": 7957880133,
+    "handle": "dog-socks-barkn-boot-liners-15802",
+    "title": "Bark\u2019n Boot\u2122 Dog Socks"
+   },
+   {
+    "rank": 8,
+    "productId": 4285146136659,
+    "handle": "crag-reflective-dog-collar",
+    "title": "Crag\u2122 Collar"
+   },
+   {
+    "rank": 9,
+    "productId": 6538737746003,
+    "handle": "sun-shower-dog-raincoat",
+    "title": "Sun Shower\u2122 Dog Raincoat"
+   },
+   {
+    "rank": 10,
+    "productId": 7113590702163,
+    "handle": "front-range-lightweight-dog-leash",
+    "title": "Front Range\u00ae  Leash"
+   }
+  ],
+  "url": "https://ruffwear.com",
+  "input": "ruffwear.com",
+  "scrapedAt": "2026-10-14T19:28:40.992Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Knot-a-Hitch\u2122",
+  "productType": "Accessories",
+  "priceMin": 74.99,
+  "priceMax": 99.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-09-14T13:01:34-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/knot-a-hitch"
+ },
+ {
+  "recordType": "product",
+  "title": "Polar Trex\u2122 Winter Boots",
+  "productType": "Boots",
+  "priceMin": 48.74,
+  "priceMax": 64.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-24T07:55:52-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/polar-trex-winter-dog-boots"
+ },
+ {
+  "recordType": "product",
+  "title": "Webbing Remix\u2122\ufe0f Cactus Tug Toy",
+  "productType": "Toys",
+  "priceMin": 24.99,
+  "priceMax": 24.99,
+  "onSale": false,
+  "available": false,
+  "publishedAt": "2026-08-14T06:14:39-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/webbing-remix-cactus-tug-toy"
+ },
+ {
+  "recordType": "product",
+  "title": "Remix\u2122 Soft Flying Disc",
+  "productType": "Toys",
+  "priceMin": 24.99,
+  "priceMax": 24.99,
+  "onSale": false,
+  "available": true,
+  "publishedAt": "2026-08-14T06:14:38-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/webbing-remix-soft-flying-disc"
+ },
+ {
+  "recordType": "product",
+  "title": "Lumenglow\u2122 High-Vis Vest",
+  "productType": "Apparel",
+  "priceMin": 44.99,
+  "priceMax": 59.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-14T06:05:42-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/lumenglow-high-vis-vest"
+ },
+ {
+  "recordType": "product",
+  "title": "Overcoat Fuse\u2122 Insulated Vest",
+  "productType": "Apparel",
+  "priceMin": 74.99,
+  "priceMax": 99.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-14T06:05:06-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/overcoat-fuse-insulated-vest"
+ },
+ {
+  "recordType": "product",
+  "title": "Powder Hound\u2122 Waterproof Insulated Coverall",
+  "productType": "Apparel",
+  "priceMin": 104.99,
+  "priceMax": 139.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-14T06:04:51-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/powder-hound-coverall"
+ },
+ {
+  "recordType": "product",
+  "title": "Powder Hound\u2122 Waterproof Insulated Jacket",
+  "productType": "Apparel",
+  "priceMin": 109.99,
+  "priceMax": 109.99,
+  "onSale": false,
+  "available": true,
+  "publishedAt": "2026-08-14T06:03:59-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/powder-hound-jacket"
+ },
+ {
+  "recordType": "product",
+  "title": "Powder Hound\u2122 Waterproof Insulated Vest",
+  "productType": "Apparel",
+  "priceMin": 74.99,
+  "priceMax": 99.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-14T06:03:27-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/powder-hound-vest"
+ },
+ {
+  "recordType": "product",
+  "title": "Timberline Fuse\u2122 Fleece Vest",
+  "productType": "Apparel",
+  "priceMin": 67.49,
+  "priceMax": 89.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-14T06:00:35-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/timberline-fuse-fleece-vest"
+ },
+ {
+  "recordType": "product",
+  "title": "Mt. Hoodie\u2122 Warming Neck Gaiter",
+  "productType": "Accessories",
+  "priceMin": 22.49,
+  "priceMax": 29.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-08-14T05:59:28-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/mt-hoodie-warming-neck-gaiter"
+ },
+ {
+  "recordType": "product",
+  "title": "Rogue\u2122 Long Line",
+  "productType": "Leashes",
+  "priceMin": 34.99,
+  "priceMax": 34.99,
+  "onSale": false,
+  "available": true,
+  "publishedAt": "2026-07-22T13:33:12-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/rogue-long-line-leash"
+ },
+ {
+  "recordType": "product",
+  "title": "Sun Shower\u2122 Coverall Dog Rain Suit",
+  "productType": "Apparel",
+  "priceMin": 77.99,
+  "priceMax": 119.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-05-13T09:24:12-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/sun-shower-coverall"
+ },
+ {
+  "recordType": "product",
+  "title": "Furness\u2122 Dog Jacket",
+  "productType": "Apparel",
+  "priceMin": 59.14,
+  "priceMax": 90.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-05-12T11:44:10-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/furness-jacket"
+ },
+ {
+  "recordType": "product",
+  "title": "Palisades\u2122 Dog Backpack",
+  "productType": "Packs",
+  "priceMin": 97.49,
+  "priceMax": 149.99,
+  "onSale": true,
+  "available": true,
+  "publishedAt": "2026-05-11T11:48:35-07:00",
+  "bestSellerRank": null,
+  "url": "https://ruffwear.com/products/palisades-pack-50203"
+ }
+]

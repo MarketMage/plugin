@@ -1,0 +1,209 @@
+[
+ {
+  "recordType": "product",
+  "storeDomain": "warmnap.shop",
+  "title": "Heated Eye Mask",
+  "handle": "heated-eye-mask",
+  "price": 24.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-09-29T10:00:00.000Z",
+  "publishedAt": "2026-09-29T10:00:00.000Z",
+  "url": "https://warmnap.shop/products/heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "warmnap.shop",
+  "title": "Cordless Heated Eye Mask",
+  "handle": "cordless-heated-eye-mask",
+  "price": 26.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-09-29T10:00:00.000Z",
+  "publishedAt": "2026-09-29T10:00:00.000Z",
+  "url": "https://warmnap.shop/products/cordless-heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "restlab.store",
+  "title": "Heated Eye Mask",
+  "handle": "heated-eye-mask",
+  "price": 27.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-02T10:00:00.000Z",
+  "publishedAt": "2026-10-02T10:00:00.000Z",
+  "url": "https://restlab.store/products/heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "calmora.com",
+  "title": "Heated Eye Mask",
+  "handle": "heated-eye-mask",
+  "price": 22.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-04T10:00:00.000Z",
+  "publishedAt": "2026-10-04T10:00:00.000Z",
+  "url": "https://calmora.com/products/heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "calmora.com",
+  "title": "Cordless Heated Eye Mask",
+  "handle": "cordless-heated-eye-mask",
+  "price": 24.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-04T10:00:00.000Z",
+  "publishedAt": "2026-10-04T10:00:00.000Z",
+  "url": "https://calmora.com/products/cordless-heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "calmora.com",
+  "title": "Steam Eye Mask Reusable",
+  "handle": "steam-eye-mask-reusable",
+  "price": 26.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-04T10:00:00.000Z",
+  "publishedAt": "2026-10-04T10:00:00.000Z",
+  "url": "https://calmora.com/products/steam-eye-mask-reusable"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "kozihome.com",
+  "title": "Heated Eye Mask",
+  "handle": "heated-eye-mask",
+  "price": 29.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-06T10:00:00.000Z",
+  "publishedAt": "2026-10-06T10:00:00.000Z",
+  "url": "https://kozihome.com/products/heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "nuvorest.com",
+  "title": "Heated Eye Mask",
+  "handle": "heated-eye-mask",
+  "price": 19.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-10T10:00:00.000Z",
+  "publishedAt": "2026-10-10T10:00:00.000Z",
+  "url": "https://nuvorest.com/products/heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "nuvorest.com",
+  "title": "Cordless Heated Eye Mask",
+  "handle": "cordless-heated-eye-mask",
+  "price": 21.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-10T10:00:00.000Z",
+  "publishedAt": "2026-10-10T10:00:00.000Z",
+  "url": "https://nuvorest.com/products/cordless-heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "softdusk.shop",
+  "title": "Heated Eye Mask",
+  "handle": "heated-eye-mask",
+  "price": 26.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-16T10:00:00.000Z",
+  "publishedAt": "2026-10-16T10:00:00.000Z",
+  "url": "https://softdusk.shop/products/heated-eye-mask"
+ },
+ {
+  "recordType": "product",
+  "storeDomain": "sleepora.co",
+  "title": "Cooling Gel Eye Mask for Puffy Eyes",
+  "handle": "cooling-gel-eye-mask",
+  "price": 12.99,
+  "currency": "USD",
+  "available": true,
+  "createdAt": "2026-10-12T10:00:00.000Z",
+  "publishedAt": "2026-10-12T10:00:00.000Z",
+  "url": "https://sleepora.co/products/cooling-gel-eye-mask"
+ },
+ {
+  "recordType": "waveSummary",
+  "keywords": [
+   "eye mask"
+  ],
+  "createdWithinDays": 30,
+  "publishedWithinDays": null,
+  "storesChecked": 14,
+  "storesWithMatch": 7,
+  "storesWithoutMatch": 7,
+  "storesUnreadable": 0,
+  "storesNotShopify": 0,
+  "storesNotRead": 0,
+  "partial": false,
+  "stopReason": null,
+  "matchingStores": [
+   {
+    "domain": "warmnap.shop",
+    "matchingProducts": 2,
+    "earliestCreatedAt": "2026-09-29T10:00:00.000Z",
+    "earliestPublishedAt": "2026-09-29T10:00:00.000Z",
+    "cheapestPrice": 24.99,
+    "currency": "USD"
+   },
+   {
+    "domain": "restlab.store",
+    "matchingProducts": 1,
+    "earliestCreatedAt": "2026-10-02T10:00:00.000Z",
+    "earliestPublishedAt": "2026-10-02T10:00:00.000Z",
+    "cheapestPrice": 27.99,
+    "currency": "USD"
+   },
+   {
+    "domain": "calmora.com",
+    "matchingProducts": 3,
+    "earliestCreatedAt": "2026-10-04T10:00:00.000Z",
+    "earliestPublishedAt": "2026-10-04T10:00:00.000Z",
+    "cheapestPrice": 22.99,
+    "currency": "USD"
+   },
+   {
+    "domain": "kozihome.com",
+    "matchingProducts": 1,
+    "earliestCreatedAt": "2026-10-06T10:00:00.000Z",
+    "earliestPublishedAt": "2026-10-06T10:00:00.000Z",
+    "cheapestPrice": 29.99,
+    "currency": "USD"
+   },
+   {
+    "domain": "sleepora.co",
+    "matchingProducts": 1,
+    "earliestCreatedAt": "2026-10-12T10:00:00.000Z",
+    "earliestPublishedAt": "2026-10-12T10:00:00.000Z",
+    "cheapestPrice": 12.99,
+    "currency": "USD"
+   },
+   {
+    "domain": "nuvorest.com",
+    "matchingProducts": 2,
+    "earliestCreatedAt": "2026-10-10T10:00:00.000Z",
+    "earliestPublishedAt": "2026-10-10T10:00:00.000Z",
+    "cheapestPrice": 19.99,
+    "currency": "USD"
+   },
+   {
+    "domain": "softdusk.shop",
+    "matchingProducts": 1,
+    "earliestCreatedAt": "2026-10-16T10:00:00.000Z",
+    "earliestPublishedAt": "2026-10-16T10:00:00.000Z",
+    "cheapestPrice": 26.99,
+    "currency": "USD"
+   }
+  ],
+  "scrapedAt": "2026-10-25T09:00:00.000Z"
+ }
+]

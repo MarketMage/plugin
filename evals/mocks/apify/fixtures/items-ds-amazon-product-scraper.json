@@ -1,0 +1,962 @@
+[
+ {
+  "recordType": "product",
+  "marketplace": "US",
+  "asin": "B0BZYCJK89",
+  "url": "https://www.amazon.com/dp/B0BZYCJK89",
+  "source": "asin",
+  "input": "B0BZYCJK89",
+  "image": "https://m.media-amazon.com/images/I/61Gvw0-b0eL._AC_SL1500_.jpg",
+  "rank": 1,
+  "rankCategory": "Kitchen & Dining",
+  "title": "Owala FreeSip Stainless Steel Water Bottle 24 oz Denim",
+  "deliveryLocation": "Update location",
+  "brand": "Owala",
+  "parentAsin": "B0FLKGX4B7",
+  "variations": [
+   {
+    "asin": "B0FM9LXK4K",
+    "dimensions": {
+     "color_name": "Down to Earth",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTN3SK83",
+    "dimensions": {
+     "color_name": "Very, Very Dark",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0CRC73JTS",
+    "dimensions": {
+     "color_name": "Celestial Sphere",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0FJN3BTPV",
+    "dimensions": {
+     "color_name": "Black Cherry",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FK1FDHXP",
+    "dimensions": {
+     "color_name": "Off Road",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59CLN29",
+    "dimensions": {
+     "color_name": "Iced Breeze",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FH1ZXTN1",
+    "dimensions": {
+     "color_name": "Blue Jay",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYBSRNF",
+    "dimensions": {
+     "color_name": "Denim",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0FFTN5KCN",
+    "dimensions": {
+     "color_name": "Putting Green",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FJ6VZ7B3",
+    "dimensions": {
+     "color_name": "80s Ski Slopes",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0CRCJY6YH",
+    "dimensions": {
+     "color_name": "All the Berries",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0F354MWSL",
+    "dimensions": {
+     "color_name": "Beach House",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0HHPBVY8P",
+    "dimensions": {
+     "color_name": "Bold Move",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FK19911W",
+    "dimensions": {
+     "color_name": "Off Road",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0FJ6VZPCM",
+    "dimensions": {
+     "color_name": "80s Ski Slopes",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0H693DW3F",
+    "dimensions": {
+     "color_name": "Just Ripe (Fruit)",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0F353LXTF",
+    "dimensions": {
+     "color_name": "Strawberry Fields",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0DV1LZWG2",
+    "dimensions": {
+     "color_name": "Surfs Edge",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTYMHYWZ",
+    "dimensions": {
+     "color_name": "Butter Half",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0HBB44FS6",
+    "dimensions": {
+     "color_name": "Bold Move",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0F3L5R5LB",
+    "dimensions": {
+     "color_name": "Citrus Crush",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTYJG326",
+    "dimensions": {
+     "color_name": "Lilac You A Lot",
+     "size_name": "710 ml"
+    }
+   },
+   {
+    "asin": "B0GTYJ85C6",
+    "dimensions": {
+     "color_name": "Peach of Mind",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZY9F2F1",
+    "dimensions": {
+     "color_name": "Summer Sweetness",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0DR1V4W92",
+    "dimensions": {
+     "color_name": "Lemon Limeade",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0FFTP9BNY",
+    "dimensions": {
+     "color_name": "Lost Signal",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GHHDDWTC",
+    "dimensions": {
+     "color_name": "Peachy Keen",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0BFYRW71W",
+    "dimensions": {
+     "color_name": "Amber Glow",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVGNVCVS",
+    "dimensions": {
+     "color_name": "Read My Lips",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0HB9V827C",
+    "dimensions": {
+     "color_name": "Joshua Tree",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0CRCB4FTM",
+    "dimensions": {
+     "color_name": "Misty Horizons",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVG9DKJP",
+    "dimensions": {
+     "color_name": "Out of the Blue",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0H68Z1X64",
+    "dimensions": {
+     "color_name": "Pretty Polite",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0CV1F1W7K",
+    "dimensions": {
+     "color_name": "Tropical",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0C7SZSM38",
+    "dimensions": {
+     "color_name": "Neon Moon",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0CN2Q2C5C",
+    "dimensions": {
+     "color_name": "Water in the Desert",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0DKLJXC3W",
+    "dimensions": {
+     "color_name": "Candy Store",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0B6DCN2CJ",
+    "dimensions": {
+     "color_name": "Very, Very Dark",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0HB9S1PWM",
+    "dimensions": {
+     "color_name": "Just Ripe",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0FDSM1NSR",
+    "dimensions": {
+     "color_name": "Forest Fairy",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVGGPTWR",
+    "dimensions": {
+     "color_name": "Read My Lips",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B09GD4YBCY",
+    "dimensions": {
+     "color_name": "Boneyard",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0B6DBM5HM",
+    "dimensions": {
+     "color_name": "Shy Marshmallow",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTYL6XRM",
+    "dimensions": {
+     "color_name": "Lilac You A Lot",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0F86P23XS",
+    "dimensions": {
+     "color_name": "Muddy Buddy",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVFWBFQN",
+    "dimensions": {
+     "color_name": "Out of the Blue",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0H9BCHSRP",
+    "dimensions": {
+     "color_name": "Woodland Boho",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B085DV8T75",
+    "dimensions": {
+     "color_name": "Shy Marshmallow",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59FDKTP",
+    "dimensions": {
+     "color_name": "Dreamy Field",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0FK1LF5PM",
+    "dimensions": {
+     "color_name": "Black Cherry",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0H9BDDWS5",
+    "dimensions": {
+     "color_name": "Fright and Delight",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FFTLNC5S",
+    "dimensions": {
+     "color_name": "Daybreak",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59BYVTQ",
+    "dimensions": {
+     "color_name": "Dreamy Field",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0H694DN2K",
+    "dimensions": {
+     "color_name": "Trail On",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59C39PV",
+    "dimensions": {
+     "color_name": "Foggy Tide",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FDTQTHB3",
+    "dimensions": {
+     "color_name": "Due North",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0H69KFDV4",
+    "dimensions": {
+     "color_name": "Ready, Set, Sip",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0HBB16FZM",
+    "dimensions": {
+     "color_name": "Desert Smoke",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0F86W257P",
+    "dimensions": {
+     "color_name": "Alpine Sport",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FDRZNGP1",
+    "dimensions": {
+     "color_name": "Crown Jewel",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59B9VJ4",
+    "dimensions": {
+     "color_name": "Foggy Tide",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTYLXDV1",
+    "dimensions": {
+     "color_name": "Lilac You A Lot",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYDCSKX",
+    "dimensions": {
+     "color_name": "Camo Cool",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0F359FRH8",
+    "dimensions": {
+     "color_name": "Beach House",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0F7TVYTMK",
+    "dimensions": {
+     "color_name": "Night Safari",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTN7WS21",
+    "dimensions": {
+     "color_name": "Sugar High",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0F3KZ2GDS",
+    "dimensions": {
+     "color_name": "Citrus Crush",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTYR4XQB",
+    "dimensions": {
+     "color_name": "Butter Half",
+     "size_name": "945 ml"
+    }
+   },
+   {
+    "asin": "B0FDSL18S8",
+    "dimensions": {
+     "color_name": "Golden Quest",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYF1C1V",
+    "dimensions": {
+     "color_name": "Summer Sweetness",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVG5LSXC",
+    "dimensions": {
+     "color_name": "Read My Lips",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0DV211S6K",
+    "dimensions": {
+     "color_name": "Surfs Edge",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B085DVNHHK",
+    "dimensions": {
+     "color_name": "Shy Marshmallow",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYC7N7X",
+    "dimensions": {
+     "color_name": "Camo Cool",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0CJK1NVBS",
+    "dimensions": {
+     "color_name": "Desert Bloom",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0DR9GN2PM",
+    "dimensions": {
+     "color_name": "Angel Food Cake",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0HHBSSJPR",
+    "dimensions": {
+     "color_name": "Joshua Tree",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FR15MTSZ",
+    "dimensions": {
+     "color_name": "Darling Diva",
+     "size_name": "19 Ounces"
+    }
+   },
+   {
+    "asin": "B0HD998TYF",
+    "dimensions": {
+     "color_name": "Woodland Boho",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0HB9T58LG",
+    "dimensions": {
+     "color_name": "Delectable Delights",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59BVJ3N",
+    "dimensions": {
+     "color_name": "Dreamy Field",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTMVPRNG",
+    "dimensions": {
+     "color_name": "Shy Marshmallow",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0H9B9366L",
+    "dimensions": {
+     "color_name": "Round We Ghost",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59CZHH1",
+    "dimensions": {
+     "color_name": "Iced Breeze",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0HD8TXT6V",
+    "dimensions": {
+     "color_name": "Coastal Bohemian",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYBP74R",
+    "dimensions": {
+     "color_name": "Summer Sweetness",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B085DTZQNZ",
+    "dimensions": {
+     "color_name": "Very, Very Dark",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0GTYD1C8W",
+    "dimensions": {
+     "color_name": "Butter Half",
+     "size_name": "473 ml"
+    }
+   },
+   {
+    "asin": "B0FFTL1ZFB",
+    "dimensions": {
+     "color_name": "Putting Green",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0CTRWR3KD",
+    "dimensions": {
+     "color_name": "Treasure Hunt",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0F34Z5PLK",
+    "dimensions": {
+     "color_name": "Strawberry Fields",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0H8QGGQP1",
+    "dimensions": {
+     "color_name": "Dreamy Field",
+     "size_name": "32 Ounces (Pack of 8)"
+    }
+   },
+   {
+    "asin": "B0GD66J7D9",
+    "dimensions": {
+     "color_name": "Terracotta Sunset",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0DKLJGJ13",
+    "dimensions": {
+     "color_name": "Candy Store",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0FFTNNXQD",
+    "dimensions": {
+     "color_name": "Daybreak",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59F7Y8J",
+    "dimensions": {
+     "color_name": "Iced Breeze",
+     "size_name": "945 ml"
+    }
+   },
+   {
+    "asin": "B0FQZNDH3Z",
+    "dimensions": {
+     "color_name": "Tropical Rain",
+     "size_name": "19 Ounces"
+    }
+   },
+   {
+    "asin": "B0FL25N8L1",
+    "dimensions": {
+     "color_name": "Peachy Keen",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0DKLNVHNW",
+    "dimensions": {
+     "color_name": "Candy Store",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0G6TSSYCL",
+    "dimensions": {
+     "color_name": "Alpine Sport",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0FFTNJVQN",
+    "dimensions": {
+     "color_name": "Lost Signal",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0F5BG91XZ",
+    "dimensions": {
+     "color_name": "Summer Paradise",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0DSWW84QJ",
+    "dimensions": {
+     "color_name": "Blue Jay",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0CRC7XLCR",
+    "dimensions": {
+     "color_name": "Mint Chocolate Chip",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYCJK89",
+    "dimensions": {
+     "color_name": "Denim",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0FDRW1T7H",
+    "dimensions": {
+     "color_name": "Cranberry Parade",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVG7LZK8",
+    "dimensions": {
+     "color_name": "Out of the Blue",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B09SJRBMP3",
+    "dimensions": {
+     "color_name": "Boneyard",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVG61VXQ",
+    "dimensions": {
+     "color_name": "Out of the Blue",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0FJ6V6ZTQ",
+    "dimensions": {
+     "color_name": "Sunny Daze",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0BZYFFLQG",
+    "dimensions": {
+     "color_name": "Denim",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0C59CRT4M",
+    "dimensions": {
+     "color_name": "Foggy Tide",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0DRB5CD7P",
+    "dimensions": {
+     "color_name": "Angel Food Cake",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0CKTZ2PDF",
+    "dimensions": {
+     "color_name": "Lemon Limeade",
+     "size_name": "40 Ounces"
+    }
+   },
+   {
+    "asin": "B0CRC8MQZL",
+    "dimensions": {
+     "color_name": "Blue Citrus",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0FDS46BP8",
+    "dimensions": {
+     "color_name": "Crown Jewel",
+     "size_name": "24 Ounces"
+    }
+   },
+   {
+    "asin": "B085DVHQ57",
+    "dimensions": {
+     "color_name": "Very, Very Dark",
+     "size_name": "32 Ounces"
+    }
+   },
+   {
+    "asin": "B0GVGB9Q94",
+    "dimensions": {
+     "color_name": "Read My Lips",
+     "size_name": "16 Ounces"
+    }
+   },
+   {
+    "asin": "B0BFYMCZ67",
+    "dimensions": {
+     "color_name": "Amber Glow",
+     "size_name": "40 Ounces"
+    }
+   }
+  ],
+  "variationDimensions": [
+   "color_name",
+   "size_name"
+  ],
+  "price": 29.99,
+  "listPrice": null,
+  "currency": "USD",
+  "savingsPercent": null,
+  "unitPrice": null,
+  "coupon": null,
+  "deal": null,
+  "buyBoxSuppressed": false,
+  "buyBoxSeller": "Amazon.com",
+  "buyBoxSellerId": null,
+  "shipsFrom": "Amazon.com",
+  "soldByAmazon": true,
+  "fulfilledByAmazon": true,
+  "availability": "In Stock",
+  "inStock": true,
+  "offerCount": 3,
+  "lowestOfferPrice": 29.99,
+  "rating": 4.6,
+  "reviewCount": 141467,
+  "starBreakdown": {
+   "1": 5,
+   "2": 2,
+   "3": 3,
+   "4": 6,
+   "5": 84
+  },
+  "bestSellersRanks": [
+   {
+    "rank": 1,
+    "category": "Kitchen & Dining"
+   },
+   {
+    "rank": 1,
+    "category": "Travel & To-Go Drinkware"
+   },
+   {
+    "rank": 1,
+    "category": "Insulated Bottles"
+   }
+  ],
+  "boughtPastMonth": "20K+ bought in past month",
+  "boughtPastMonthMin": 20000,
+  "categories": [
+   "Home & Kitchen",
+   "Kitchen & Dining",
+   "Storage & Organization",
+   "Thermoses",
+   "Insulated Beverage Containers",
+   "Thermoses"
+  ],
+  "images": [
+   "https://m.media-amazon.com/images/I/61Gvw0-b0eL._AC_SL1500_.jpg",
+   "https://m.media-amazon.com/images/I/81gPgBnMQML._AC_SL1500_.jpg",
+   "https://m.media-amazon.com/images/I/61Eher5nn0L._AC_SL1080_.jpg",
+   "https://m.media-amazon.com/images/I/51Zg2vXcR8L._AC_SL1080_.jpg",
+   "https://m.media-amazon.com/images/I/51wewEuKr5L._AC_SL1080_.jpg",
+   "https://m.media-amazon.com/images/I/61PZ0XohljL._AC_SL1080_.jpg",
+   "https://m.media-amazon.com/images/I/71RakBaEuKL._AC_SL1500_.jpg",
+   "https://m.media-amazon.com/images/I/41j-Pra86lL._AC_SL1314_.jpg"
+  ],
+  "features": [
+   "24-ounce insulated stainless-steel water bottle with a FreeSip spout and push-button lid with lock",
+   "Patented FreeSip spout designed for either sipping upright through the built-in straw or tilting back to swig from the spout opening",
+   "Protective push-to-open lid keeps spout clean; convenient carry loop doubles as a lock",
+   "Double-wall insulation keeps drinks cold for up to 24 hours; wide opening for cleaning and adding ice; cup holder-friendly base",
+   "This bottle is wider than standard cupholders and may only fit in oversized or specialty cupholders designed for larger containers"
+  ],
+  "description": "The Owala FreeSip Insulated Stainless-Steel Water Bottle with Locking Push-Button Lid easily tackles every thirst. With a built-in, easy-clean straw and a wide-mouth opening, the FreeSip reusable bottle is designed for drinking two different ways: sipping upright through the straw or tilting back to swig from the wide-mouth spout opening. Add in a push-to-open lid and playful colors, and staying hydrated has never been simpler\u2014or more fun. Additional features include double-wall insulated stainless steel that keeps drinks cold up to 24 hours, a carry loop that doubles as a lock, a cup holder-friendly base, and a wide opening for easy cleaning and adding ice. The Owala FreeSip Insulated Stainless-Steel Water Bottle with Locking Push-Button Lid is available in three sizes: 24-Ounce, 32-Ounce, and 40-Ounce. Lid is dishwasher safe; hand wash cup. Not for use with hot liquids. Manufacturer\u2019s limited lifetime warranty.",
+  "specs": {
+   "Brand": "Owala",
+   "Material": "Stainless Steel",
+   "Bottle Type": "Sports Bottle",
+   "Color": "Denim",
+   "Capacity": "24 fluid ounces",
+   "Brand Name": "Owala",
+   "Model Name": "FreeSip Insulated Stainless Steel Water Bottle",
+   "Item Weight": "0.4 kg",
+   "Manufacturer": "BlenderBottle",
+   "UPC": "847280080908",
+   "Age Range Description": "Adult",
+   "Included Components": "Water Bottle",
+   "Item Type Name": "Insulated Water Bottle",
+   "Manufacturer Part Number": "C06060",
+   "Model Number": "C06060",
+   "Best Sellers Rank": "#1 in Kitchen & Dining (See Top 100 in Kitchen & Dining) #1 in Travel & To-Go Drinkware #1 in Insulated Bottles",
+   "ASIN": "B0BZYCJK89",
+   "Recommended Uses For Product": "Travel",
+   "Item Dimensions W x H": "3.24\"W x 10.68\"H",
+   "Number of Items": "1",
+   "Number of Packs": "1",
+   "Additional Features": "Carrying Loop, Insulated, Spout Cover",
+   "Reusability": "Reusable",
+   "Theme": "Sport",
+   "Shape": "Cylindrical",
+   "Style Name": "Water Bottle",
+   "Material Type": "Stainless Steel",
+   "Product Care Instructions": "Hand Wash Only",
+   "Material Type Free": "Bisphenol A (BPA) Free"
+  },
+  "dateFirstAvailable": null,
+  "featuredReviews": [],
+  "missingSections": [],
+  "localView": true,
+  "changes": [],
+  "firstSeen": true,
+  "scrapedAt": "2026-10-14T19:29:28.568Z"
+ }
+]

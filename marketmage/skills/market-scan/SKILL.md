@@ -1,0 +1,95 @@
+---
+name: market-scan
+description: Size up the market for a search keyword on Amazon (22 countries), eBay, Etsy, Walmart, Target, Best Buy, Home Depot and Lowe's - price spread (p25, median, p75), how many sellers share the top results and how concentrated they are, review depth, sponsored listings - once, or on a schedule that reports new entrants, new sellers and price-band moves. Use when someone asks what a product sells for across marketplaces, how crowded a keyword is, what to charge, or wants to know when new sellers enter their search results. Not for a verdict on a product idea (use validate).
+---
+
+# Market scan
+
+The market behind a keyword, per marketplace. Read these first:
+- `references/judgement.md`: the core: the rules and the thresholds. Its other parts are read only at the step that needs them: `references/judgement-tone.md` and `references/judgement-answer.md` before writing the answer; `references/judgement-ladder.md` (the related versions ladder, the watches) once the verdict is known; `references/judgement-profile.md` (the profile, asking for it once, choosing the lens) when there is a profile or it is to be offered; with a profile, once the lens is chosen, `references/judgement-for-you.md` and the chosen lens's file only (`references/judgement-lens-cold-traffic.md`, `references/judgement-lens-marketplace.md`, `references/judgement-lens-own-stock.md`, `references/judgement-lens-maker.md` or `references/judgement-lens-general.md`; plus `references/judgement-lens-goals.md` when the goal is side income or brand); `references/judgement-saturation.md` (Where you'd compete) only through the cold-traffic lens, when that read is made or offered;
+- `references/running.md`: costs, caps, tools, timing;
+- `references/notebook.md`: the opt-in notebook, when the user asks to be remembered or keeps one (then `references/notebook-use.md` before any notebook call).
+- `references/watchlists.md`: scheduling;
+- `references/costs.md`: the prices.
+
+**Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
+
+**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
+
+## 1. Ask only for
+
+- **The keywords,** as shoppers type them.
+- **Where:** Amazon (with its countries: US, GB, DE, FR, JP and others), and any of eBay (ebay.com), Etsy, Walmart, Target, Best Buy, Home Depot and Lowe's (US sites; `homedepot`, `lowes`). Home Depot and Lowe's give at most 24 results a keyword (one page), and a search they don't let through is reported as unread, free. Amazon alone by default. **With a profile that sells on Etsy or eBay** (`channels`, or named in the question), the default is that marketplace, with Amazon beside it as the cheap reference (for example Etsy at 24 results with listing rows, and Amazon's summary, about USD 0.12 for one keyword; USD 0.21 on Apify's free plan from 2026-11-07): their buyers are there (`references/judgement-lens-marketplace.md`, "Which marketplace is read"). Label every figure with its marketplace; Etsy and eBay show no monthly sales, so the sales floor is Amazon's only. **For a maker** (they make what they sell: "I make stoneware mugs", the Maker lens): read their marketplace with `listingRows: true`, and give the price band **from the listing rows that match what they make** only, with printed, print-on-demand, factory-made, set and other listings set aside and counted, the band recomputed and said as recomputed (`references/judgement-lens-maker.md`, "Their price band: listings that match what they make"); the summary's band over every result is one labelled line at most. Their payout after fees uses their own price and making cost when given, and the fairness line comes once, as that file says.
+- **Once or ongoing.**
+
+Nothing else is needed: no marketplace accounts or keys. eBay, Etsy, Walmart, Target, Best Buy, Home Depot and Lowe's come through CleanPull's marketplace data service, a third-party web data provider that CleanPull holds the account for.
+
+## 2. Run
+
+- **Run** `cleanpull/marketplace-search-scanner` with `keywords`, `sources` (always pass it, for example `["amazon"]` or `["amazon", "ebay", "etsy"]`), `amazonMarketplaces` when Amazon is in, and:
+  - **`listingRows: false` by default** (always pass it): the summary answers "how crowded" and "what price". Pass `true` only when the user asks *who* sells (the sellers and their listings), at USD 0.0005 a listing, or **for an Etsy or eBay seller's own marketplace**: there concentration is counted from the listing rows (`references/judgement-lens-marketplace.md`), and a later `validate` reuses them instead of reading that marketplace again (`references/running.md`, "Runs in this conversation"). Run that marketplace as its own run with `listingRows: true` (24 rows, USD 0.012 more), and Amazon and any other marketplaces in a second run with `listingRows: false`;
+  - `maxResults`: **always pass `maxResults: 24` when any of eBay, Etsy, Walmart, Target, Best Buy, Home Depot or Lowe's is in `sources`** (the actor's default of 48 doubles their cost); 48 (one Amazon page) for Amazon alone. Use 48 on eBay, Etsy, Walmart, Target or Best Buy only when the user asks for more results, with the higher estimate; never above 24 for Home Depot and Lowe's (one page holds at most 24, so more only raises the reserved cost);
+  - `includeAds: true` (default) to see Amazon's sponsored results apart; in the US, ads are read from home-network addresses (the add-on below);
+  - `ebayFixedPriceOnly: true` if they want buy-it-now listings only.
+- **Cost (paid plans):**
+  - **Amazon, per keyword and country:** summary USD 0.003 + search page USD 0.002; home-network add-on USD 0.012 a page (in the US only with ads, in every other country always); listings USD 0.0005 each when `listingRows` is on. **US summary with ads ≈ USD 0.017 (the default); without ads (`includeAds: false`) ≈ USD 0.005; with listings ≈ USD 0.041.**
+  - **eBay, Etsy, Walmart, Target, Best Buy, Home Depot, Lowe's:** USD 0.015 per marketplace per run (one provider search covers all the run's keywords there) + per keyword: summary USD 0.003 + USD 0.003 per result (provider record) + USD 0.0005 per listing row. **One keyword at 24 results ≈ USD 0.087 + the USD 0.015 search**; at 48 ≈ USD 0.17 + 0.015.
+  - A search that fails or is blocked is not charged.
+  - **Example:** "yoga mat" on Amazon US (summary) and eBay at 24 results ≈ 0.017 + 0.015 + 0.087 ≈ USD 0.12: say so and get a yes.
+  - **Quote the cap with the estimate:** at 24 results a service search can't cost much more than USD 0.087 a keyword + USD 0.015 a marketplace (with listing rows off, nothing in it can grow, apart from up to 4 change rows a search, USD 0.004, on a search this account ran before), so say "about USD 0.12, capped at USD 0.20": the cap you set (below; the sum of the caps when several runs start together) is the most it can cost. Never "and no more than that" on the estimate: it promises a limit the caps don't set (`references/running.md`, "Never a ceiling phrase on an estimate").
+- **Timing:** Amazon searches take seconds. **Walmart, eBay, Home Depot and Lowe's searches usually take 1 to 4 minutes** (each search page is read fresh); **Etsy, Target and Best Buy searches take up to about 12 minutes**, and so can Walmart or eBay when a page can't be read and the service reads the search the slow way. **Always say the time in the message that starts the run**, with the cost line, even when the user has already agreed or the run goes ahead without asking: "usually a few minutes" for Walmart, eBay, Home Depot and Lowe's, "up to about 12 minutes" when Etsy, Target or Best Buy is included. Then start it with `waitSecs: 45` and follow it with `get-actor-run` (`references/running.md`).
+- **The cap** (`maxTotalChargeUsd`): 1.5× the estimate, plus **USD 0.02 per keyword per service marketplace** (eBay, Etsy, Walmart, Target, Best Buy, Home Depot, Lowe's): the actor holds a provider search fee for every keyword before it starts, and stops early under a tight cap. Example: 8 keywords on eBay at 24 results ≈ 8 × 0.087 + 0.015 = USD 0.71; cap 1.5 × 0.71 + 8 × 0.02 ≈ USD 1.23.
+
+## 3. Read the results
+
+- **`keyword-summary` rows** (read them in full), one per keyword and marketplace:
+  - prices of the organic results: `priceMin`, `priceP25`, `priceMedian`, `priceP75`, `priceMax`, in `currency`;
+  - **like-for-like prices:** `singleNewPrice` (`listings`, `min`, `p25`, `median`, `p75`, `max`, `excludedMultiPack`, `excludedOtherCondition`, `excludedUnknownCondition`, `basis`), over single-unit new listings only; and `conditionCounts` and `multiPack`. **Quote `singleNewPrice`** as the price band whenever it excluded any listing, next to the all-listings band, with one line saying why: "6 multi-packs and 1 renewed listing are left out of the single-unit band";
+  - competition: `sellers`, `top3SellerShare`, `sellerHhi`, `topSellers`;
+  - review depth: `medianReviews`, `averageRating`, `under100Reviews`;
+  - ads apart: `sponsored` and `ads` (count, price range, top advertisers);
+  - **the sales floor** (Amazon only; `null` elsewhere): `salesFloor.unitsPerMonthMin` and `revenuePerMonthMin` over the top 10 organic results, with `listingsWithBadge`. Say it as "at least 12,000 units, about USD 360,000 a month across the top 10", never as an estimate of sales: a listing without a badge counts 0, and "10K+" can be far more;
+  - **fees:** `marketplaceFees` (US marketplaces: Amazon, eBay, Etsy, Walmart; `null` for Target, Best Buy, Home Depot, Lowe's and Amazon outside the US): `typicalFeePercent`, `fixedFeePerOrder`, the `components` and what the `basis` leaves out. Amazon's figure is the referral fee only: its FBA fee depends on size and weight (`validate` reads it per product).
+- **Listings** (if asked): `fields: "recordType,keyword,source,marketplace,position,title,price,currency,seller,reviewCount,rating,sponsored,condition,conditionLabel,conditionBasis,packCount,url"`, `limit` about 60. `condition` is `new`, `renewed`, `used`, `open-box` or `unknown` on every marketplace (`conditionLabel` keeps eBay's or Walmart's own words); `packCount` is the units the title says are sold together (`null` when it gives none).
+- **A seller of renewed, used or refurbished stock** (they say so): their condition's band leads, new as the reference. The summary's percentiles and `singleNewPrice` are new-led, so read the listing rows (`listingRows: true`, its cost as above) and work out the band over the rows in their condition (`condition`, checked against the title): lowest, median and highest, with how many listings (`conditionCounts`); then the new band (`singleNewPrice`) as the reference line ("renewed: 7 listings, USD 149 to 219, median 179; new: median 279"). Fewer than 6 listings in their condition: say the band is thin, with the count. Never fold their condition into the new band.
+- **Check the listings like an analyst** (`references/running.md`, "Read the data like an analyst"): a multi-pack or lot (`packCount` above 1, or the title: "2 pack", "set of 4") is priced per unit or set aside, a used, renewed or open-box listing (`condition`, checked against the title) isn't compared with new ones, an `unknown` condition is never counted as new, and a listing for another product is left out. When any are, **recompute the price band from the remaining listings** and say so: "one listing is a 2-pack (USD 56.99, USD 28.50 a block), counted per block". With summaries only, say the percentiles cover every result as the marketplace ranked them, and offer listing rows to check when the spread looks odd (a `priceMax` over twice the median).
+- **Sellers on Amazon are brands** read from the title (`sellerSource: "title-brand"`): Amazon's search shows no seller. eBay gives the seller's username and feedback; Etsy the shop name. **`RUN_SUMMARY`** names every search that couldn't be made, with the reason.
+- **Best Buy's own search** ranks related accessories high; say so if its listings look off-topic.
+
+## 4. Explain it like an expert
+
+Facts first, then what they mean, kept apart (`references/judgement.md`, rules 1 to 3). Score these signals with the shared thresholds, and print each threshold next to its number:
+- **Review depth:** `medianReviews` and `under100Reviews` (median under 500 with at least 1 in 6 under 100 reviews favours a newcomer; median over 3,000 with at most 1 in 24 under 100 is against).
+- **Concentration:** `top3SellerShare` under 0.35 favours; over 0.55, or `sellerHhi` over 0.25, is against (a few brands own the page).
+- **Paid pressure:** 6 or fewer ads in 48 favours; 12 or more, priced under the organic `priceP25`, is against.
+- **Price band:** `priceP25`, `priceMedian`, `priceP75`: where most buyers see offers.
+
+Then:
+- **The shape in two sentences,** with the counts ("2 of 3 signals favour a newcomer, 1 is against"), using the calibration phrases (`references/judgement-tone.md`, "Tone"). If the user asked "how crowded", add one line on what a newcomer still has going; if they asked "is there room", one line on what stands in the way, phrased as the early sign to watch.
+- **When the shape is against a newcomer,** say so once, kindly, then give one related version from these rows (`references/judgement-ladder.md`, "Related versions"): a price band above `priceP75` with a difference, another marketplace whose median or review depth differs, or a narrower keyword to scan next, with its cost.
+- **Price to aim for, conditional:** the way in is a difference a shopper can see (a better rating, a bundle, a material, a brand); without one, pricing under the median only starts a price war, so name the difference that would earn the user's price. Under the median works when the leaders' ratings leave a quality gap the user can beat (check with `validate` or a reviews read). Above `priceP75` needs a difference a shopper can see. With a profile, adjust this advice only in a separate "For you" line (`references/judgement-profile.md`, "The seller profile and lenses"), naming the fact it reacts to.
+- **Across marketplaces:** compare medians in their own currencies; a much higher median on Etsy or eBay can point to a niche for handmade or used; Walmart and Target show where big-box prices sit. With `marketplaceFees`, compare what a median sale pays out after the published fees ("USD 24.99 on Etsy pays out about USD 22.17 after 9.5% + USD 0.45; on eBay about USD 21.19 after 13.6% + USD 0.40"): a fact for the marketplace rung of the ladder.
+- **Demand,** when Amazon was read: the sales floor, as above, next to the review depth: a high floor with a thin review median is the open case.
+- **What this can't see,** in one line: Amazon's search shows no seller (sellers are brands from titles), and no sales figures (the floor is the sum of "bought in past month" badges); fees are published list rates, not an account's own.
+- End with the cost and the dataset link, then the next move, last: `validate` for a full verdict (about USD 0.14), the related version's scan, listing rows to see who sells (about USD 0.024 more), or a watch for new entrants (the early sign on a keyword the user plans to enter).
+
+## 5. Ongoing (a watchlist)
+
+- **Home Depot and Lowe's are one-off scans only:** watch-digest doesn't read them, so never put them in `marketSources`; when the user wants them watched, say so plainly and offer the watch on the marketplaces it covers.
+- **The task:** `cleanpull/watch-digest`, named `cw-market-<name>`, with `marketKeywords`, `marketSources` (any of `amazon`, `ebay`, `etsy`, `walmart`, `target`, `bestbuy`), `marketAmazonMarketplaces`, `monitorName: "<name>"`, `title` and `maxRunCostUsd` (at most 300 keyword × marketplace searches). Never fill the old eBay and Etsy key fields: they're not used.
+  - Watch Digest searches without ads and without listing rows: ads rotate on every visit and would read as false entrants.
+- **What the digests report:** new entrants in the top results (counted only when still there on the next run), new sellers, sellers gone (confirmed on a second run), and price-band moves of 10% or more (or the watchlist's `minPriceChangePercent`).
+- **Cost per run:**
+  - digest USD 0.005 + searches × USD 0.00025;
+  - each Amazon search: page USD 0.002, plus USD 0.012 outside the US;
+  - each eBay, Etsy, Walmart, Target or Best Buy search: its results at USD 0.003 each (48 ≈ USD 0.144) + USD 0.015 per marketplace per run: **much dearer than Amazon**, so suggest Amazon for daily watches and the others weekly;
+  - USD 0.001 per change row, USD 0.003 per search summary on the first run;
+  - USD 0.001 per message once a channel is added.
+  - **Example:** 5 keywords on Amazon US, weekly: 0.005 + 5 × 0.00025 + 5 × 0.002 + a few changes ≈ **USD 0.02 a run, about USD 0.08 a month**; daily ≈ USD 0.55 a month. The first run ≈ USD 0.035. The same 5 on eBay weekly add about 5 × 0.147 + 0.015 ≈ USD 0.75 a run, about USD 3.20 a month: **about 40 times the Amazon watch.** Say the ratio before offering it.
+- **`maxRunCostUsd`:** 1.5× the typical run + USD 0.06 for Amazon searches, + USD 0.20 for eBay, Etsy, Walmart, Target or Best Buy searches (one such search's worst case is USD 0.166). For the Amazon example, about USD 0.09.
+- **Timing:** a digest with eBay, Etsy, Walmart, Target or Best Buy takes up to about 12 minutes longer.
+- **Steps:** follow `references/watchlists.md` (cost, yes, task, baseline with `maxRunCostUsd` raised to the first-run cap, schedule, where the results go).
+
+## 6. Reading a market digest later
+
+Lead with new entrants (title, price, seller, the link) and new sellers, then price-band moves (the old and new median and quartiles), then sellers that left. Say whether the market is getting more crowded or cheaper.

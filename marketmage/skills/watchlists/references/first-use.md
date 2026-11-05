@@ -1,0 +1,63 @@
+# First use and setup
+
+Read from `running.md` only when it says: the connector is missing ("Not connected yet"), its "First use" test applies, or the user asks "what can you do?".
+
+## Not connected yet: the steps
+
+- **claude.ai, the desktop app or Cowork:**
+  1. **Customize → Plugins → MarketMage → Connectors → Connect.**
+  2. An **"Add custom connector"** notice opens with the details already filled in. That's expected: it is Apify's official server, set up with the tools MarketMage uses. Signing in gives the connector access to your Apify account; MarketMage's skills only run CleanPull's actors and only create, change or pause their own `cw-` watches (that's how the skills are written, not a technical lock). Check the connector address starts with `https://mcp.apify.com/`, keep the details as they are and click **Add**. If it shows any other address, don't add it, and tell me what it says.
+  3. Sign in to Apify, or **create a free Apify account** (it includes USD 5 of credit every month).
+  4. Approve the access, come back to this chat and say "done".
+- **Claude Code:** run `/mcp`, choose the Apify server and sign in (or create a free account) there.
+- Screenshots of each step: https://marketmage.io/start/
+
+Give only the steps for the surface you can tell you're on; if you can't tell, give both. Keep what the user asked: once they say it's connected, carry on with it.
+## First use
+
+**The opening, in this order:**
+
+1. **The connection.** If the Apify tools are missing, give the setup steps ("Not connected yet" above) and stop there; the rest follows once they're connected.
+2. **A returning user** (the conversation holds `MarketMage notebook: on`, or they say they've used MarketMage before, "I'm back", "last time"): read the notebook (`notebook.md`, "When to read"; past-work words alone get its one-line ask first), then welcome them back instead of starting over, naming their stage and offering its next step (`notebook-use.md`, "Journey stages"): "Welcome back. You're at sourcing for heated eye masks (Strong for the market; for you, a fit, with one fix; 12 Oct): next is sending the three supplier questions." When the notebook holds watch entries, or the chat opens with a greeting or "what's new", the `briefing` skill gives this welcome as the top of its briefing (their watches' latest digests are free to read). Offer to pick up there, with what a fresh check would cost, or start something new. Use the saved profile (re-check it if stale: `judgement-profile.md`, "The profile"). Skip steps 3 to 5.
+3. **How it works, one short paragraph:** every run is billed to their own Apify account at per-result prices; Claude shows the cost first, waits for a yes above USD 0.05 and before anything recurring, and caps every run; Apify's free plan includes USD 5 of credit a month.
+4. **About them, friendly and skippable:** the five quick bands, in the words of `judgement-profile.md`, "The profile" (budget, fulfilment, experience, channels, side income or brand; not other questions), with its plain gloss on each fulfilment option ("Fulfilment options, in plain words"). Nothing waits on them. This is the conversation's one offer (`judgement-profile.md`, "Asking for the profile"): skipped, it is never asked again in this chat, and the market verdict leads every answer.
+5. **The guided first session,** aimed at a "found something" moment, as a short numbered list with each step's cost and the total for their lens (below):
+   1. **Ideas in their interest,** searched through their lens: `find-products` on the niche they name (about USD 0.15 in the US).
+   2. **The 2 best, checked:** `validate` on the two ideas the counts favour (for them, with a profile), reusing the TikTok and Trends rows already read (about USD 0.08 each; about USD 0.11 each with the AliExpress single-unit check a dropship lens adds; about USD 0.16 each through the cold-traffic lens, which also reads where they'd compete on Meta ads).
+   3. **One related version:** the best rung of the ladder (`judgement-ladder.md`, "Related versions") for the stronger of the two, checked with a market scan summary (about USD 0.02) or `validate` (about USD 0.14; about USD 0.18 with the AliExpress single-unit check; about USD 0.23 through the cold-traffic lens).
+   4. **One watch on the chosen niche:** the watch that catches its early sign (`judgement-ladder.md`, "Watches"), for example TikTok sales per day or new entrants on page 1 (a first run of about USD 0.01 to 0.07, then cents a month).
+
+   **The total, per lens, from `costs.md`** (steps 1 to 3 at their most: find-products about USD 0.15 = Best Sellers 0.077 + TikTok 0.061 + Trends 0.0075, plus up to USD 0.10 when the account has read that chart before (products that left the chart since are billed as changes: `running.md`, "Change events on repeat reads"); validate with reused TikTok and Trends about USD 0.072 = scanner 0.017 + suppliers 0.025 + Amazon leaders 0.03; the AliExpress single-unit check adds about USD 0.04 a check = 1 summary 0.005 + 1 provider search 0.02 + 3 offers × 0.005; a full `validate` about USD 0.14; the cold-traffic lens's Where you'd compete read, Meta ads in the market's country, about USD 0.05 a check at most = 1 watch item 0.001 + 1 library page 0.0035 + up to 30 advertiser rows × 0.0015):
+   - **without dropship** (no profile, own stock, FBA, print on demand, General): 0.15 + 2 × 0.08 + 0.14 ≈ **about USD 0.45 at most**, or **about USD 0.55 at most** with up to USD 0.10 of chart changes (the default: `running.md`, "Change events on repeat reads", unless this is the account's first MarketMage run);
+   - **dropship on Amazon, Etsy or eBay** (Marketplace lens with dropship, AliExpress in each check): 0.15 + 2 × 0.11 + 0.18 ≈ **about USD 0.55 at most**, **about USD 0.65** with the chart changes;
+   - **selling on Etsy or eBay** (Marketplace lens: each check adds that marketplace's own read, about USD 0.10 = provider search 0.015 + summary 0.003 + 24 records × 0.003 + 24 listing rows × 0.0005; USD 0.19 on Apify's free plan from 2026-11-07): add 3 × 0.10 to the figure above, so about **USD 0.85 at most** with dropship (**USD 1.12 on Apify's free plan** from 2026-11-07) and about **USD 0.75** for print on demand (**USD 1.02 on the free plan**), or with the chart changes about **USD 0.95** with dropship (**USD 1.22 on the free plan**) and **USD 0.85** for print on demand (**USD 1.12 on the free plan**); the other reads in these steps cost the same on both plans. State both figures, and get the yes on the free-plan one: it is the most they can pay;
+   - **dropship through ads** (cold-traffic lens: AliExpress and the Where you'd compete read in each check): 0.15 + 2 × 0.16 + 0.23 ≈ **about USD 0.70 at most**, **about USD 0.80** with the chart changes. find-products' own offer of that read is skipped here: the checks read it. The wave read (whether the advertisers' stores added it in the last 30 days) isn't offered in the guided session; it can follow after it.
+
+   State the total for their lens before the yes; when the profile isn't known yet, state both, labelled. Recompute if the plan changes (outside the US: no TikTok, Amazon's local-market reads) and say the new total before running. Quote the Free column too where it differs (`costs.md`).
+
+   Ask which niche or interest to start from. One yes covers steps 1 to 3 up to exactly the total stated for their lens (never more: anything beyond it, an add-on or a second related version, gets its own yes), each run still with its own cap and its cost said as it starts; the watch (step 4) always gets its own yes, since it recurs. Between steps, keep it a conversation: answer any question they asked first, in plain words (`judgement-tone.md`, "Answer the user's question first"), then show what each step found, give credit where the data backs the user's pick (for what they said, such as their reason for it: `judgement.md`, rule 5), and let them steer the next step (another niche, a different version) before spending more.
+
+**At the end of the guided session:** "4 things you can ask next", phrased as they'd ask them, drawn from what was found (for example: "Check the steam version for me", "Who are the top sellers and what do they charge?", "What would a first order look like?", "What's new in my niche this week?"), then one sentence on watches: "A watch is a saved check that runs on a schedule and tells you what changed, for a few cents a run."
+
+**Not this:** a greeting or "help" attached to an unrelated request ("hi, can you help me write an email to my landlord?", code, a recipe) gets that request answered as Claude normally would, with no menu, no setup steps and no mention of MarketMage.
+
+**A bare greeting** ("hi", "hello", "hey", "good morning", "morning", "good afternoon", or "help" alone, with nothing else asked) that names neither MarketMage, the plugin, selling online nor the menu: reply as Claude normally would (a friendly hello and what they'd like help with), then add exactly **one line** offering MarketMage, for example: "If you're here for MarketMage, I can help you find something to sell, check an idea or keep an eye on competitors: just say which, or type /marketmage:start." No menu, no numbered list, no setup steps (even when the connector is missing: they come once the user asks for MarketMage), no costs and no tool calls. A greeting from a returning notebook user (`MarketMage notebook: on`) still goes to the `briefing` skill. A greeting that names MarketMage, the plugin, selling online or the menu ("hi, what can MarketMage do?", "hello, I want to start selling online"), or `/marketmage:start`, gets the answer below.
+
+**"What can you do?"** (or "what is this?", "show me the menu", a message naming MarketMage or the plugin with no job in it, or `/marketmage:start`; a greeting from a returning notebook user, `MarketMage notebook: on`, goes to the `briefing` skill instead): this is the one definition; the `start` skill follows it. No tool calls, and no research shown. In Claude Code, "what is this?" means MarketMage: answer with this menu, not a description of Claude Code or the folder. Three cases, in order:
+- **The connector is missing:** the setup steps ("Not connected yet") first, then the menu below.
+- **A new user** (the "When it applies" test above): the menu with the guided session offered as item 0, above the five: "0. **A guided first session:** ideas in a niche you like, the two best checked for you, about USD 0.55 at most (up to about USD 0.80 if you dropship)."
+- **Otherwise** (a returning user, or work already done in this chat): the menu alone.
+
+The menu, five plain starting points, never the list of skills or their names:
+1. **Find something to sell** in a niche you like.
+2. **Check an idea:** is it worth selling, and is it right for you?
+   - If you make what you sell: price it against listings like yours.
+3. **Spy on a competitor:** what a store sells, promotes and advertises.
+4. **Watch prices or rivals:** a check on a schedule that tells you what changed. Already selling? It can track your own Amazon listings' rank on your keywords and who holds the Buy Box.
+5. **What's new since last time:** your watches and saved ideas, turned into a few decisions (the `briefing` skill; reading them is free).
+
+Under the menu, one short line on who runs it and how it's paid for (`running.md`, "Who runs this"): "MarketMage's actors are published on Apify by CleanPull, MarketMage's own publisher; every run bills your own Apify account at per-result prices, shown first and capped, and Apify's free plan includes USD 5 of credit a month."
+
+Then one line: "Pick one, or tell me what you sell or want to sell."
+
+**For users who want to try monitoring instead,** three cheap first questions: a price check by ASIN (about USD 0.003), a competitor's promotions (about USD 0.02), a keyword's market on Amazon, summary only (about USD 0.017).

@@ -1,0 +1,129 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "collapsible silicone water bottle",
+  "source": "amazon",
+  "marketplace": "GB",
+  "listings": 48,
+  "totalResults": null,
+  "resultsText": null,
+  "currency": "GBP",
+  "priceMin": 4.48,
+  "priceP10": 5.99,
+  "priceP25": 6.99,
+  "priceMedian": 7.99,
+  "priceP75": 10.99,
+  "priceP90": 14.99,
+  "priceMax": 32.99,
+  "priced": 48,
+  "otherCurrency": 0,
+  "notFixedPrice": 0,
+  "singleNewPrice": {
+   "listings": 43,
+   "currency": "GBP",
+   "min": 4.48,
+   "p10": 5.99,
+   "p25": 6.99,
+   "median": 7.99,
+   "p75": 9.99,
+   "p90": 14.39,
+   "max": 29.99,
+   "excludedMultiPack": 5,
+   "excludedOtherCondition": 0,
+   "excludedUnknownCondition": 0,
+   "basis": "Organic fixed-price listings in the main currency whose condition is new (a marketplace label, or a store that lists new and titles other conditions) and whose title states no multi-pack (packCount null or 1)."
+  },
+  "conditionCounts": {
+   "new": 48,
+   "renewed": 0,
+   "used": 0,
+   "open-box": 0,
+   "unknown": 0
+  },
+  "multiPack": 5,
+  "sponsored": 12,
+  "adsShown": true,
+  "ads": {
+   "count": 12,
+   "alsoOrganic": 7,
+   "priceMin": 5.99,
+   "priceMedian": 11.81,
+   "priceMax": 37.7,
+   "topSellers": [
+    {
+     "seller": "HYDAWAY",
+     "ads": 2
+    },
+    {
+     "seller": "SWIFTER",
+     "ads": 1
+    },
+    {
+     "seller": "ONTA",
+     "ads": 1
+    }
+   ]
+  },
+  "sellers": 10,
+  "sellerKnown": 12,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "BEAUTAIL",
+    "listings": 3,
+    "share": 0.25
+   },
+   {
+    "seller": "BRITECO",
+    "listings": 1,
+    "share": 0.0833
+   },
+   {
+    "seller": "Embhlitfe",
+    "listings": 1,
+    "share": 0.0833
+   },
+   {
+    "seller": "SWIFTER",
+    "listings": 1,
+    "share": 0.0833
+   },
+   {
+    "seller": "Newthinking",
+    "listings": 1,
+    "share": 0.0833
+   }
+  ],
+  "top3SellerShare": 0.4167,
+  "sellerHhi": 0.125,
+  "reviewScope": "product",
+  "withReviews": 42,
+  "averageReviews": 579,
+  "medianReviews": 12.5,
+  "averageRating": 4.11,
+  "under100Reviews": 30,
+  "firstRun": true,
+  "newEntrants": null,
+  "newEntrantIds": [],
+  "newSellers": null,
+  "droppedOut": null,
+  "pendingDropped": 0,
+  "pendingEntrants": 0,
+  "pendingPriceMoves": 0,
+  "priceBandMove": [],
+  "previousRunAt": null,
+  "salesFloor": {
+   "unitsPerMonthMin": 300,
+   "revenuePerMonthMin": 2822,
+   "listingsCounted": 10,
+   "listingsWithBadge": 5,
+   "currency": "GBP",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times each one's price. A floor, not an estimate of actual sales: one without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": null,
+  "pagesRead": 1,
+  "deliveryLocation": "Update location",
+  "notes": [],
+  "scrapedAt": "2026-10-27T17:57:09.488Z"
+ }
+]

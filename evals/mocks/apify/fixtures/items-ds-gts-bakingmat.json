@@ -1,0 +1,883 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "silicone baking mat",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "silicone baking sheet",
+   "reusable baking mat"
+  ],
+  "summary": {
+   "average": 53,
+   "peak": 76,
+   "peakDate": "2024-06-30T00:00:00.000Z",
+   "latest": 42,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 1.4,
+   "direction": "stable"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "formattedAxisTime": "2021-10-03",
+    "value": [
+     40
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2021-10-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-01-02",
+    "value": [
+     52
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-01-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-04-03",
+    "value": [
+     45
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-04-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-07-03",
+    "value": [
+     70
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-07-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-10-02",
+    "value": [
+     42
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-10-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-01-01",
+    "value": [
+     55
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-01-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-04-02",
+    "value": [
+     48
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-04-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-07-02",
+    "value": [
+     74
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-07-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-10-01",
+    "value": [
+     44
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-10-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-12-31",
+    "value": [
+     56
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-12-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-03-31",
+    "value": [
+     47
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-03-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-06-30",
+    "value": [
+     76
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-06-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-09-29",
+    "value": [
+     43
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-09-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-12-29",
+    "value": [
+     54
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-12-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-03-30",
+    "value": [
+     46
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-03-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-06-29",
+    "value": [
+     73
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-06-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-09-28",
+    "value": [
+     41
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-09-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-12-28",
+    "value": [
+     53
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-12-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-03-29",
+    "value": [
+     45
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-03-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-06-28",
+    "value": [
+     70
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-09-27",
+    "value": [
+     42
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   }
+  ],
+  "missingDataTypes": [],
+  "relatedQueries_top": [
+   {
+    "query": "silicone baking mat best",
+    "value": 100,
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat for kids",
+    "value": 90,
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat set",
+    "value": 80,
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "silicone baking mat for air fryer",
+    "value": 350,
+    "formattedValue": "+350%",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat with measurements",
+    "value": 180,
+    "formattedValue": "+180%",
+    "isBreakout": false
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "type": "term",
+  "searchTerm": "silicone baking sheet",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "silicone baking mat",
+   "reusable baking mat"
+  ],
+  "summary": {
+   "average": 50,
+   "peak": 73,
+   "peakDate": "2024-06-30T00:00:00.000Z",
+   "latest": 39,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 1.5,
+   "direction": "stable"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "formattedAxisTime": "2021-10-03",
+    "value": [
+     37
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2021-10-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-01-02",
+    "value": [
+     49
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-01-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-04-03",
+    "value": [
+     42
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-04-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-07-03",
+    "value": [
+     67
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-07-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-10-02",
+    "value": [
+     39
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-10-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-01-01",
+    "value": [
+     52
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-01-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-04-02",
+    "value": [
+     45
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-04-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-07-02",
+    "value": [
+     71
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-07-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-10-01",
+    "value": [
+     41
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-10-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-12-31",
+    "value": [
+     53
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-12-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-03-31",
+    "value": [
+     44
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-03-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-06-30",
+    "value": [
+     73
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-06-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-09-29",
+    "value": [
+     40
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-09-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-12-29",
+    "value": [
+     51
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-12-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-03-30",
+    "value": [
+     43
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-03-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-06-29",
+    "value": [
+     70
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-06-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-09-28",
+    "value": [
+     38
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-09-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-12-28",
+    "value": [
+     50
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-12-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-03-29",
+    "value": [
+     42
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-03-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-06-28",
+    "value": [
+     67
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-09-27",
+    "value": [
+     39
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   }
+  ],
+  "missingDataTypes": [],
+  "relatedQueries_top": [
+   {
+    "query": "silicone baking mat best",
+    "value": 100,
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat for kids",
+    "value": 90,
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat set",
+    "value": 80,
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "silicone baking mat for air fryer",
+    "value": 350,
+    "formattedValue": "+350%",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat with measurements",
+    "value": 180,
+    "formattedValue": "+180%",
+    "isBreakout": false
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "type": "term",
+  "searchTerm": "reusable baking mat",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "silicone baking mat",
+   "silicone baking sheet"
+  ],
+  "summary": {
+   "average": 47,
+   "peak": 70,
+   "peakDate": "2024-06-30T00:00:00.000Z",
+   "latest": 36,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 1.6,
+   "direction": "stable"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "formattedAxisTime": "2021-10-03",
+    "value": [
+     34
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2021-10-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-01-02",
+    "value": [
+     46
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-01-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-04-03",
+    "value": [
+     39
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-04-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-07-03",
+    "value": [
+     64
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-07-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-10-02",
+    "value": [
+     36
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-10-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-01-01",
+    "value": [
+     49
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-01-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-04-02",
+    "value": [
+     42
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-04-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-07-02",
+    "value": [
+     68
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-07-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-10-01",
+    "value": [
+     38
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-10-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-12-31",
+    "value": [
+     50
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-12-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-03-31",
+    "value": [
+     41
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-03-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-06-30",
+    "value": [
+     70
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-06-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-09-29",
+    "value": [
+     37
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-09-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-12-29",
+    "value": [
+     48
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-12-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-03-30",
+    "value": [
+     40
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-03-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-06-29",
+    "value": [
+     67
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-06-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-09-28",
+    "value": [
+     35
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-09-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-12-28",
+    "value": [
+     47
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-12-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-03-29",
+    "value": [
+     39
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-03-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-06-28",
+    "value": [
+     64
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-09-27",
+    "value": [
+     36
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   }
+  ],
+  "missingDataTypes": [],
+  "relatedQueries_top": [
+   {
+    "query": "silicone baking mat best",
+    "value": 100,
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat for kids",
+    "value": 90,
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat set",
+    "value": 80,
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "silicone baking mat for air fryer",
+    "value": 350,
+    "formattedValue": "+350%",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone baking mat with measurements",
+    "value": 180,
+    "formattedValue": "+180%",
+    "isBreakout": false
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "type": "comparison",
+  "searchTerms": [
+   "silicone baking mat",
+   "silicone baking sheet",
+   "reusable baking mat"
+  ],
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "winner": "silicone baking mat",
+  "averages": [
+   {
+    "searchTerm": "silicone baking mat",
+    "average": 53
+   },
+   {
+    "searchTerm": "silicone baking sheet",
+    "average": 50
+   },
+   {
+    "searchTerm": "reusable baking mat",
+    "average": 47
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "recordType": "summary",
+    "product": "heated eye mask",
+    "offers": 3,
+    "offersBySource": {
+      "aliexpress": 3
+    },
+    "sources": {
+      "aliexpress": {
+        "status": "ok",
+        "offers": 3
+      }
+    },
+    "quantity": null,
+    "currency": "USD",
+    "unitPriceMin": 6.2,
+    "unitPriceP25": 6.2,
+    "unitPriceMedian": 7.9,
+    "unitPriceP75": 9.4,
+    "unitPriceMax": 9.4,
+    "pricedOffers": 3,
+    "moqMin": 1,
+    "moqMedian": 1,
+    "moqMax": 1,
+    "landedUnitCostMin": null,
+    "landedUnitCostMedian": null,
+    "landedUnitCostMax": null,
+    "offersWithShipping": 0,
+    "shipTo": "US",
+    "cheapestOffer": {
+      "title": "Steam Eye Mask Reusable Heated",
+      "source": "aliexpress",
+      "url": "https://www.aliexpress.us/item/3157700002.html",
+      "unitPrice": 6.2,
+      "moq": 1,
+      "supplierName": "SpaHome Store"
+    },
+    "lowestMoqOffer": {
+      "title": "Steam Eye Mask Reusable Heated",
+      "source": "aliexpress",
+      "url": "https://www.aliexpress.us/item/3157700002.html",
+      "unitPrice": 6.2,
+      "moq": 1,
+      "supplierName": "SpaHome Store"
+    },
+    "singleUnit": {
+      "moq1OfferFound": true,
+      "unitPriceMin": 6.2,
+      "currency": "USD",
+      "offersRead": 3,
+      "offersBySource": {
+        "aliexpress": 3
+      },
+      "sampleUrl": "https://www.aliexpress.us/item/3157700002.html",
+      "sampleSource": "aliexpress",
+      "priceBasis": "before shipping"
+    },
+    "notes": [
+      "AliExpress search results carry no price breaks or shipping."
+    ]
+  },
+  {
+    "recordType": "offer",
+    "product": "heated eye mask",
+    "source": "aliexpress",
+    "position": 1,
+    "title": "Cordless Heated Eye Mask USB Rechargeable",
+    "url": "https://www.aliexpress.us/item/3157700000.html",
+    "currency": "USD",
+    "unitPriceMin": 7.9,
+    "unitPriceMax": 7.9,
+    "priceTiers": [],
+    "moq": 1,
+    "unit": "pieces",
+    "landedUnitCostMin": null,
+    "supplierName": "Sleepy Store",
+    "supplierYears": null,
+    "supplierLevel": null,
+    "supplierVerified": null,
+    "supplierRating": 4.7,
+    "ordersCount": null,
+    "sellsSingleUnit": true
+  },
+  {
+    "recordType": "offer",
+    "product": "heated eye mask",
+    "source": "aliexpress",
+    "position": 2,
+    "title": "Graphene Heated Sleep Mask",
+    "url": "https://www.aliexpress.us/item/3157700001.html",
+    "currency": "USD",
+    "unitPriceMin": 9.4,
+    "unitPriceMax": 9.4,
+    "priceTiers": [],
+    "moq": 1,
+    "unit": "pieces",
+    "landedUnitCostMin": null,
+    "supplierName": "WarmLife Official Store",
+    "supplierYears": null,
+    "supplierLevel": null,
+    "supplierVerified": null,
+    "supplierRating": 4.8,
+    "ordersCount": null,
+    "sellsSingleUnit": true
+  },
+  {
+    "recordType": "offer",
+    "product": "heated eye mask",
+    "source": "aliexpress",
+    "position": 3,
+    "title": "Steam Eye Mask Reusable Heated",
+    "url": "https://www.aliexpress.us/item/3157700002.html",
+    "currency": "USD",
+    "unitPriceMin": 6.2,
+    "unitPriceMax": 6.2,
+    "priceTiers": [],
+    "moq": 1,
+    "unit": "pieces",
+    "landedUnitCostMin": null,
+    "supplierName": "SpaHome Store",
+    "supplierYears": null,
+    "supplierLevel": null,
+    "supplierVerified": null,
+    "supplierRating": 4.6,
+    "ordersCount": null,
+    "sellsSingleUnit": true
+  }
+]

@@ -1,0 +1,51 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "nachtlicht kinder",
+  "source": "amazon",
+  "marketplace": "DE",
+  "listings": 48,
+  "currency": "EUR",
+  "priceMin": 7.99,
+  "priceP25": 13.99,
+  "priceMedian": 18.99,
+  "priceP75": 24.99,
+  "priceMax": 49.99,
+  "priced": 48,
+  "singleNewPrice": {
+   "listings": 44,
+   "currency": "EUR",
+   "min": 7.99,
+   "p25": 13.99,
+   "median": 18.99,
+   "p75": 24.99,
+   "max": 49.99,
+   "excludedMultiPack": 4,
+   "excludedOtherCondition": 0,
+   "excludedUnknownCondition": 0,
+   "basis": "Organic fixed-price listings in the main currency whose condition is new and whose title states no multi-pack (packCount null or 1)."
+  },
+  "sponsored": 9,
+  "adsShown": true,
+  "sellers": 30,
+  "sellerSource": "title-brand",
+  "top3SellerShare": 0.27,
+  "sellerHhi": 0.06,
+  "reviewScope": "product",
+  "medianReviews": 480,
+  "under100Reviews": 17,
+  "firstRun": true,
+  "salesFloor": {
+   "unitsPerMonthMin": 3400,
+   "revenuePerMonthMin": 64566,
+   "listingsCounted": 10,
+   "listingsWithBadge": 5,
+   "currency": "EUR",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket. A floor, not an estimate of actual sales."
+  },
+  "marketplaceFees": null,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-11-04T10:00:00.000Z"
+ }
+]

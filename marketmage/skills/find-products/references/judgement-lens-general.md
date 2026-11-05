@@ -1,0 +1,5 @@
+# Judgement: the General lens
+
+Part of the judgement rules (`judgement.md` is the core). Read with `judgement-for-you.md` when the lens is General. The fit check is in `judgement-for-you.md`, "The "For you" block".
+
+**General** (a partial profile no other lens matches): every market row **same**, plus the fit check (below) with whatever the profile gives. The first-order gate (MOQ × unit cost against the budget) applies only when the profile says they buy stock, and then reads as in `judgement-lens-own-stock.md` (the user's quote, when given, decides it). With a budget but no fulfilment (a budget-only profile), it is never applied; the gate is `unclear`, and before judging fit Claude asks one line: "Would you dropship or buy stock?" Say in the heading which answer would sharpen it ("tell me how you'd fulfil and I'll read it through that lens").

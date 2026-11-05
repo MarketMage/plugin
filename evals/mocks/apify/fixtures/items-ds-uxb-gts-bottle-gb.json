@@ -1,0 +1,119 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "collapsible water bottle",
+  "summary": {
+   "average": 37.8,
+   "peak": 99,
+   "peakDate": "2025-07-06T00:00:00.000Z",
+   "latest": 17,
+   "changePercent": 12.6,
+   "direction": "rising"
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "nefeeko collapsible water bottle",
+    "value": 24050,
+    "formattedValue": "Breakout",
+    "link": "https://trends.google.com/trends/explore?q=nefeeko+collapsible+water+bottle&date=today+5-y&geo=GB",
+    "isBreakout": true
+   },
+   {
+    "query": "hydrapak",
+    "value": 300,
+    "formattedValue": "+300%",
+    "link": "https://trends.google.com/trends/explore?q=hydrapak&date=today+5-y&geo=GB",
+    "isBreakout": false
+   },
+   {
+    "query": "mayim collapsible water bottle",
+    "value": 200,
+    "formattedValue": "+200%",
+    "link": "https://trends.google.com/trends/explore?q=mayim+collapsible+water+bottle&date=today+5-y&geo=GB",
+    "isBreakout": false
+   },
+   {
+    "query": "collapsible water bottle for travel",
+    "value": 140,
+    "formattedValue": "+140%",
+    "link": "https://trends.google.com/trends/explore?q=collapsible+water+bottle+for+travel&date=today+5-y&geo=GB",
+    "isBreakout": false
+   },
+   {
+    "query": "collapsible water bottle with filter",
+    "value": 110,
+    "formattedValue": "+110%",
+    "link": "https://trends.google.com/trends/explore?q=collapsible+water+bottle+with+filter&date=today+5-y&geo=GB",
+    "isBreakout": false
+   },
+   {
+    "query": "hydaway collapsible water bottle",
+    "value": 90,
+    "formattedValue": "+90%",
+    "link": "https://trends.google.com/trends/explore?q=hydaway+collapsible+water+bottle&date=today+5-y&geo=GB",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   20
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "silicone water bottle",
+  "summary": {
+   "average": 35.3,
+   "peak": 100,
+   "peakDate": "2026-02-15T00:00:00.000Z",
+   "latest": 24,
+   "changePercent": 43.3,
+   "direction": "rising"
+  },
+  "relatedQueries_rising": [],
+  "interestOverTime_averages": [
+   7
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "foldable water bottle",
+  "summary": {
+   "average": 30.2,
+   "peak": 50,
+   "peakDate": "2026-08-23T00:00:00.000Z",
+   "latest": 8,
+   "changePercent": -19.7,
+   "direction": "falling"
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "travel water bottle",
+    "value": 80,
+    "formattedValue": "+80%",
+    "link": "https://trends.google.com/trends/explore?q=travel+water+bottle&date=today+5-y&geo=GB",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   3
+  ]
+ },
+ {
+  "type": "comparison",
+  "winner": "collapsible water bottle",
+  "averages": [
+   {
+    "searchTerm": "collapsible water bottle",
+    "average": 20
+   },
+   {
+    "searchTerm": "silicone water bottle",
+    "average": 7
+   },
+   {
+    "searchTerm": "foldable water bottle",
+    "average": 3
+   }
+  ]
+ }
+]

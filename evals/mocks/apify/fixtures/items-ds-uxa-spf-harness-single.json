@@ -1,0 +1,69 @@
+[
+ {
+  "recordType": "summary",
+  "product": "tactical dog harness",
+  "unitPriceMin": 20.14,
+  "singleUnit": {
+   "moq1OfferFound": true,
+   "unitPriceMin": 20.14,
+   "currency": "USD",
+   "offersRead": 3,
+   "offersBySource": {
+    "aliexpress": 3
+   },
+   "sampleUrl": "https://www.aliexpress.us/item/3256812512223800.html",
+   "sampleSource": "aliexpress",
+   "priceBasis": "before shipping"
+  },
+  "margin": {
+   "sellPrice": null,
+   "unitCost": 20.14,
+   "unitCostBasis": "before shipping",
+   "unitCostFrom": "singleUnit.unitPriceMin",
+   "feePercent": 2.9,
+   "fixedFee": 0.3,
+   "channelFee": null,
+   "breakEvenAdCost": 8,
+   "breakEvenPrice": 29.29,
+   "costFreeFloor": 8.55,
+   "currency": "USD"
+  },
+  "notes": [
+   "Unit prices are each offer's price at the quantity (its minimum order unless you set one), or its lowest shown price where the source gives only a range.",
+   "No landed cost: none of these offers shows a shipping cost to the destination. AliExpress and Alibaba search results carry no shipping cost or price breaks (DHgate offer pages you give show shipping to the US)."
+  ]
+ },
+ {
+  "recordType": "offer",
+  "product": "tactical dog harness",
+  "title": "Tactical Dog Harness, Adjustable No-Pull Handle Service Vest Heavy Duty Pet Large Breed,  Dog Vest for Training Hunting Walking",
+  "unitPriceMin": 32.46,
+  "sellsSingleUnit": true,
+  "moq": 1,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost)."
+  ]
+ },
+ {
+  "recordType": "offer",
+  "product": "tactical dog harness",
+  "title": "Tactical Dog Harness Collar Leash Molle Pouches For Medium Large Dogs Pet German Shepherd Training Walking Vest Dog Harnesses",
+  "unitPriceMin": 20.14,
+  "sellsSingleUnit": true,
+  "moq": 1,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost)."
+  ]
+ },
+ {
+  "recordType": "offer",
+  "product": "tactical dog harness",
+  "title": "Tactical Military Vest Pet German Shepherd Golden Retriever Tactical Training Dog Harness and Leash Set For All Breeds Dogs",
+  "unitPriceMin": 33.19,
+  "sellsSingleUnit": true,
+  "moq": 1,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost)."
+  ]
+ }
+]

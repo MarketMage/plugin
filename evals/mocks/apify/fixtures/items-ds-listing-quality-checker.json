@@ -1,0 +1,621 @@
+[
+ {
+  "recordType": "audit",
+  "url": "https://www.amazon.com/dp/B0DTK7VDTH",
+  "finalUrl": "https://www.amazon.com/dp/B0DTK7VDTH?language=en_US",
+  "domain": "amazon.com",
+  "role": "yours",
+  "pageType": "amazon",
+  "platform": "amazon",
+  "marketplace": "US",
+  "asin": "B0DTK7VDTH",
+  "title": "GTPLAYER Gaming Chair with Footrest, Ergonomic Computer Game Desk Chair, Reclining Gamer Chair Seat Height Adjustment, Swivel Rocker with Headrest and Lumbar (Blue)",
+  "brand": "GTPLAYER",
+  "price": null,
+  "currency": null,
+  "rating": 4.4,
+  "reviewCount": 551,
+  "score": 73,
+  "grade": "C",
+  "passed": 5,
+  "warnings": 2,
+  "failed": 1,
+  "topFixes": [
+   "Title rules: Fix the title: use \"chair\" at most twice.",
+   "Title length: Shorten the title: Amazon recommends no more than 60 characters. Keep brand, product type and the key attribute (size, colour, count); move the rest to the bullets.",
+   "Title keywords: Start the title with the brand, then the product type and the attribute shoppers search for. Give keywords in the input to check them too."
+  ],
+  "checks": [
+   {
+    "id": "amazon-title-length",
+    "group": "content",
+    "label": "Title length",
+    "status": "warn",
+    "weight": 15,
+    "found": "164 characters: \"GTPLAYER Gaming Chair with Footrest, Ergonomic Computer Game Desk Chair, Reclin…\"",
+    "fix": "Shorten the title: Amazon recommends no more than 60 characters. Keep brand, product type and the key attribute (size, colour, count); move the rest to the bullets.",
+    "source": "Amazon: \"the Amazon product title character limit is 200, and we recommend no more than 60\" (sell.amazon.com/blog/amazon-seo); the warning above 80 is a CleanPull rule of thumb"
+   },
+   {
+    "id": "amazon-title-rules",
+    "group": "content",
+    "label": "Title rules",
+    "status": "fail",
+    "weight": 15,
+    "found": "repeated: chair",
+    "fix": "Fix the title: use \"chair\" at most twice.",
+    "source": "Amazon Seller Central: Product title requirements (2025): 200 characters, no special characters such as ! $ ? _ { } ^ ¬ ¦, no word more than twice"
+   },
+   {
+    "id": "amazon-bullets",
+    "group": "content",
+    "label": "Bullet points",
+    "status": "pass",
+    "weight": 15,
+    "found": "5 bullet(s)",
+    "fix": null,
+    "source": "Amazon: Amazon SEO, titles, bullets and images (sell.amazon.com/blog/amazon-seo)"
+   },
+   {
+    "id": "amazon-images",
+    "group": "images",
+    "label": "Images",
+    "status": "pass",
+    "weight": 15,
+    "found": "6 image(s)",
+    "fix": null,
+    "source": "Amazon: \"every product on Amazon must have at least one image, and we recommend having at least six\" (sell.amazon.com/blog/product-photos); a video counts as one"
+   },
+   {
+    "id": "amazon-aplus",
+    "group": "content",
+    "label": "A+ content",
+    "status": "pass",
+    "weight": 10,
+    "found": "A+ content with 52 module(s) and a brand story",
+    "fix": null,
+    "source": "Amazon: Amazon SEO, titles, bullets and images (sell.amazon.com/blog/amazon-seo)"
+   },
+   {
+    "id": "amazon-title-keywords",
+    "group": "content",
+    "label": "Title keywords",
+    "status": "warn",
+    "weight": 10,
+    "found": "brand in title, 20 descriptive words",
+    "fix": "Start the title with the brand, then the product type and the attribute shoppers search for. Give keywords in the input to check them too.",
+    "source": "Amazon: Amazon SEO, titles, bullets and images (sell.amazon.com/blog/amazon-seo)"
+   },
+   {
+    "id": "amazon-attributes",
+    "group": "attributes",
+    "label": "Brand, colour, size, material",
+    "status": "pass",
+    "weight": 10,
+    "found": "brand GTPLAYER; color, size, material in the details",
+    "fix": null,
+    "source": "Amazon: Amazon SEO, titles, bullets and images (sell.amazon.com/blog/amazon-seo)"
+   },
+   {
+    "id": "amazon-description",
+    "group": "content",
+    "label": "Product description",
+    "status": "pass",
+    "weight": 10,
+    "found": "A+ content in place of a description",
+    "fix": null,
+    "source": "Amazon: Amazon SEO, titles, bullets and images (sell.amazon.com/blog/amazon-seo)"
+   }
+  ],
+  "partial": false,
+  "pageWeight": {
+   "htmlKB": 1758.6,
+   "wireKB": 359.7,
+   "wireEstimated": false,
+   "domElements": null
+  },
+  "images": 6,
+  "bullets": 5,
+  "aplusModules": 52,
+  "readThroughResidentialProxy": false,
+  "auditedAt": "2026-10-15T01:57:09.257Z",
+  "firstSeen": true,
+  "previousScore": null,
+  "scoreChange": null,
+  "changedChecks": []
+ },
+ {
+  "recordType": "audit",
+  "url": "https://www.allbirds.com/products/mens-tree-runners",
+  "domain": "allbirds.com",
+  "role": "yours",
+  "pageType": "store",
+  "platform": "shopify",
+  "title": "Men's Tree Runner",
+  "brand": "Allbirds",
+  "price": 100,
+  "currency": "USD",
+  "rating": 4.6,
+  "reviewCount": 9951,
+  "score": 86,
+  "grade": "B",
+  "passed": 12,
+  "warnings": 4,
+  "failed": 0,
+  "topFixes": [
+   "GTIN (barcode): If the product has a GTIN (the barcode: EAN, UPC, ISBN), add it as gtin13, gtin12 or gtin14 to the Product or each variant; Merchant Center requires it for new products that have one. Without one, give mpn and brand.",
+   "Shipping and returns: Add shippingDetails (OfferShippingDetails: shippingRate, shippingDestination, deliveryTime) and hasMerchantReturnPolicy (applicableCountry, returnPolicyCategory, merchantReturnDays), on the Offer or once on your Organization, so Google can show them with the listing.",
+   "Product title length: Make the title more descriptive: brand, product type and the attribute shoppers search for (colour, size, model), e.g. \"Allbirds Men's Tree Runner, Navy\".",
+   "Review markup: Add aggregateRating (ratingValue, reviewCount) and review to the Product, from the ratings the page shows, so search results can show stars."
+  ],
+  "checks": [
+   {
+    "id": "product-structured-data",
+    "group": "structured-data",
+    "label": "Product structured data",
+    "status": "pass",
+    "weight": 14,
+    "found": "ProductGroup in JSON-LD with name, image and 8 offer(s)",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "offer-price",
+    "group": "structured-data",
+    "label": "Offer price and currency",
+    "status": "pass",
+    "weight": 10,
+    "found": "100 USD",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "availability",
+    "group": "structured-data",
+    "label": "Availability in the offer",
+    "status": "pass",
+    "weight": 6,
+    "found": "https://schema.org/InStock",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "gtin",
+    "group": "structured-data",
+    "label": "GTIN (barcode)",
+    "status": "warn",
+    "weight": 8,
+    "found": "No GTIN",
+    "fix": "If the product has a GTIN (the barcode: EAN, UPC, ISBN), add it as gtin13, gtin12 or gtin14 to the Product or each variant; Merchant Center requires it for new products that have one. Without one, give mpn and brand.",
+    "source": "Google Merchant Center: Product data specification (support.google.com/merchants/answer/7052112)"
+   },
+   {
+    "id": "price-valid-until",
+    "group": "structured-data",
+    "label": "priceValidUntil",
+    "status": "pass",
+    "weight": 3,
+    "found": "Not set (optional: for prices that end on a date)",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "review-markup",
+    "group": "structured-data",
+    "label": "Review markup",
+    "status": "warn",
+    "weight": 5,
+    "found": "Ratings shown on the page but not in the Product markup",
+    "fix": "Add aggregateRating (ratingValue, reviewCount) and review to the Product, from the ratings the page shows, so search results can show stars.",
+    "source": "Google Search Central: Product snippet structured data (developers.google.com/search/docs/appearance/structured-data/product-snippet)"
+   },
+   {
+    "id": "attributes",
+    "group": "attributes",
+    "label": "Brand, colour, size, material",
+    "status": "pass",
+    "weight": 8,
+    "found": "brand Allbirds; color, size",
+    "fix": null,
+    "source": "Google Merchant Center: Product data specification (support.google.com/merchants/answer/7052112)"
+   },
+   {
+    "id": "shipping-returns",
+    "group": "attributes",
+    "label": "Shipping and returns",
+    "status": "warn",
+    "weight": 8,
+    "found": "shipping in page text only; returns in page text only",
+    "fix": "Add shippingDetails (OfferShippingDetails: shippingRate, shippingDestination, deliveryTime) and hasMerchantReturnPolicy (applicableCountry, returnPolicyCategory, merchantReturnDays), on the Offer or once on your Organization, so Google can show them with the listing.",
+    "source": "Google Search Central: Merchant return policy structured data (developers.google.com/search/docs/appearance/structured-data/return-policy)"
+   },
+   {
+    "id": "title-length",
+    "group": "content",
+    "label": "Product title length",
+    "status": "warn",
+    "weight": 7,
+    "found": "17 characters: \"Men's Tree Runner\"",
+    "fix": "Make the title more descriptive: brand, product type and the attribute shoppers search for (colour, size, model), e.g. \"Allbirds Men's Tree Runner, Navy\".",
+    "source": "Google Merchant Center: Product data specification, title up to 150 characters (support.google.com/merchants/answer/7052112); the 20 and 110 character bounds are a CleanPull rule of thumb"
+   },
+   {
+    "id": "title-keywords",
+    "group": "content",
+    "label": "Title keywords",
+    "status": "pass",
+    "weight": 6,
+    "found": "3 descriptive words, none repeated",
+    "fix": null,
+    "source": "Google Search Central: Influencing title links (developers.google.com/search/docs/appearance/title-link)"
+   },
+   {
+    "id": "image-count",
+    "group": "images",
+    "label": "Product images",
+    "status": "pass",
+    "weight": 7,
+    "found": "5 product image(s) in structured data and Open Graph",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "image-alt",
+    "group": "images",
+    "label": "Image alt text",
+    "status": "pass",
+    "weight": 5,
+    "found": "6 of 6 product image tags have alt text",
+    "fix": null,
+    "source": "Google Search Central: Image SEO best practices (developers.google.com/search/docs/appearance/google-images)"
+   },
+   {
+    "id": "meta-title",
+    "group": "search",
+    "label": "Page title (title tag)",
+    "status": "pass",
+    "weight": 4,
+    "found": "57 characters: \"Men's Tree Runners - Black - Everyday Sneakers | Allbirds\"",
+    "fix": null,
+    "source": "Google Search Central: Influencing title links, no length limit but truncated to the device width (developers.google.com/search/docs/appearance/title-link); 15 to 70 characters is a CleanPull rule of thumb"
+   },
+   {
+    "id": "meta-description",
+    "group": "search",
+    "label": "Meta description",
+    "status": "pass",
+    "weight": 4,
+    "found": "264 characters: \"Allbirds men's Tree Runners, breathable sneakers in Limited Edition and Classic…\"",
+    "fix": null,
+    "source": "Google Search Central: Control your snippets, no length limit but truncated as needed (developers.google.com/search/docs/appearance/snippet); 50 to 320 characters is a CleanPull rule of thumb"
+   },
+   {
+    "id": "canonical",
+    "group": "search",
+    "label": "Canonical URL",
+    "status": "pass",
+    "weight": 3,
+    "found": "https://www.allbirds.com/products/mens-tree-runners",
+    "fix": null,
+    "source": "Google Search Central: Consolidate duplicate URLs (developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)"
+   },
+   {
+    "id": "page-weight",
+    "group": "performance",
+    "label": "Page weight",
+    "status": "pass",
+    "weight": 2,
+    "found": "834 KB of HTML, 2,636 elements",
+    "fix": null,
+    "source": "Google Search Central: Googlebot reads the first 2 MB of an HTML file (developers.google.com/search/docs/crawling-indexing/googlebot); Lighthouse DOM size (developer.chrome.com/docs/lighthouse/performance/dom-size)"
+   }
+  ],
+  "pageWeight": {
+   "htmlKB": 833.9,
+   "wireKB": 113,
+   "wireEstimated": false,
+   "domElements": 2636
+  },
+  "images": 5,
+  "structuredData": [
+   "json-ld",
+   "open-graph"
+  ],
+  "canonicalUrl": "https://www.allbirds.com/products/mens-tree-runners",
+  "readThroughResidentialProxy": false,
+  "auditedAt": "2026-10-15T01:57:09.454Z",
+  "firstSeen": true,
+  "previousScore": null,
+  "scoreChange": null,
+  "changedChecks": []
+ },
+ {
+  "recordType": "audit",
+  "url": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+  "domain": "zwilling.com",
+  "role": "competitor",
+  "pageType": "store",
+  "platform": "salesforce-commerce-cloud",
+  "title": "MIYABI Evolution 5-inch Prep Knife, Fine Edge",
+  "brand": "MIYABI",
+  "price": 129.99,
+  "currency": "USD",
+  "rating": 5,
+  "reviewCount": 70,
+  "score": 96,
+  "grade": "A",
+  "passed": 15,
+  "warnings": 1,
+  "failed": 0,
+  "topFixes": [
+   "Shipping and returns: Add shippingDetails (OfferShippingDetails: shippingRate, shippingDestination, deliveryTime) and hasMerchantReturnPolicy (applicableCountry, returnPolicyCategory, merchantReturnDays), on the Offer or once on your Organization, so Google can show them with the listing."
+  ],
+  "checks": [
+   {
+    "id": "product-structured-data",
+    "group": "structured-data",
+    "label": "Product structured data",
+    "status": "pass",
+    "weight": 14,
+    "found": "Product in JSON-LD with name, image and 1 offer(s)",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "offer-price",
+    "group": "structured-data",
+    "label": "Offer price and currency",
+    "status": "pass",
+    "weight": 10,
+    "found": "129.99 USD",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "availability",
+    "group": "structured-data",
+    "label": "Availability in the offer",
+    "status": "pass",
+    "weight": 6,
+    "found": "http://schema.org/InStock",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "gtin",
+    "group": "structured-data",
+    "label": "GTIN (barcode)",
+    "status": "pass",
+    "weight": 8,
+    "found": "1 GTIN(s), e.g. 4009839334917",
+    "fix": null,
+    "source": "Google Merchant Center: Product data specification (support.google.com/merchants/answer/7052112)"
+   },
+   {
+    "id": "price-valid-until",
+    "group": "structured-data",
+    "label": "priceValidUntil",
+    "status": "pass",
+    "weight": 3,
+    "found": "Not set (optional: for prices that end on a date)",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "review-markup",
+    "group": "structured-data",
+    "label": "Review markup",
+    "status": "pass",
+    "weight": 5,
+    "found": "aggregateRating",
+    "fix": null,
+    "source": "Google Search Central: Product snippet structured data (developers.google.com/search/docs/appearance/structured-data/product-snippet)"
+   },
+   {
+    "id": "attributes",
+    "group": "attributes",
+    "label": "Brand, colour, size, material",
+    "status": "pass",
+    "weight": 8,
+    "found": "brand MIYABI; color",
+    "fix": null,
+    "source": "Google Merchant Center: Product data specification (support.google.com/merchants/answer/7052112)"
+   },
+   {
+    "id": "shipping-returns",
+    "group": "attributes",
+    "label": "Shipping and returns",
+    "status": "warn",
+    "weight": 8,
+    "found": "shipping in page text only; returns in page text only",
+    "fix": "Add shippingDetails (OfferShippingDetails: shippingRate, shippingDestination, deliveryTime) and hasMerchantReturnPolicy (applicableCountry, returnPolicyCategory, merchantReturnDays), on the Offer or once on your Organization, so Google can show them with the listing.",
+    "source": "Google Search Central: Merchant return policy structured data (developers.google.com/search/docs/appearance/structured-data/return-policy)"
+   },
+   {
+    "id": "title-length",
+    "group": "content",
+    "label": "Product title length",
+    "status": "pass",
+    "weight": 7,
+    "found": "45 characters: \"MIYABI Evolution 5-inch Prep Knife, Fine Edge\"",
+    "fix": null,
+    "source": "Google Merchant Center: Product data specification, title up to 150 characters (support.google.com/merchants/answer/7052112); the 20 and 110 character bounds are a CleanPull rule of thumb"
+   },
+   {
+    "id": "title-keywords",
+    "group": "content",
+    "label": "Title keywords",
+    "status": "pass",
+    "weight": 6,
+    "found": "8 descriptive words, none repeated",
+    "fix": null,
+    "source": "Google Search Central: Influencing title links (developers.google.com/search/docs/appearance/title-link)"
+   },
+   {
+    "id": "image-count",
+    "group": "images",
+    "label": "Product images",
+    "status": "pass",
+    "weight": 7,
+    "found": "3 product image(s) in structured data and Open Graph",
+    "fix": null,
+    "source": "Google Search Central: Merchant listing structured data (developers.google.com/search/docs/appearance/structured-data/merchant-listing)"
+   },
+   {
+    "id": "image-alt",
+    "group": "images",
+    "label": "Image alt text",
+    "status": "pass",
+    "weight": 5,
+    "found": "5 of 6 product image tags have alt text",
+    "fix": null,
+    "source": "Google Search Central: Image SEO best practices (developers.google.com/search/docs/appearance/google-images)"
+   },
+   {
+    "id": "meta-title",
+    "group": "search",
+    "label": "Page title (title tag)",
+    "status": "pass",
+    "weight": 4,
+    "found": "64 characters: \"Buy MIYABI Evolution 5-inch Prep Knife, Fine Edge | ZWILLING.COM\"",
+    "fix": null,
+    "source": "Google Search Central: Influencing title links, no length limit but truncated to the device width (developers.google.com/search/docs/appearance/title-link); 15 to 70 characters is a CleanPull rule of thumb"
+   },
+   {
+    "id": "meta-description",
+    "group": "search",
+    "label": "Meta description",
+    "status": "pass",
+    "weight": 4,
+    "found": "124 characters: \"MIYABI Evolution 5-inch Prep Knife, Fine Edge ►Free shipping on orders above $7…\"",
+    "fix": null,
+    "source": "Google Search Central: Control your snippets, no length limit but truncated as needed (developers.google.com/search/docs/appearance/snippet); 50 to 320 characters is a CleanPull rule of thumb"
+   },
+   {
+    "id": "canonical",
+    "group": "search",
+    "label": "Canonical URL",
+    "status": "pass",
+    "weight": 3,
+    "found": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "fix": null,
+    "source": "Google Search Central: Consolidate duplicate URLs (developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)"
+   },
+   {
+    "id": "page-weight",
+    "group": "performance",
+    "label": "Page weight",
+    "status": "pass",
+    "weight": 2,
+    "found": "221 KB of HTML, 1,272 elements",
+    "fix": null,
+    "source": "Google Search Central: Googlebot reads the first 2 MB of an HTML file (developers.google.com/search/docs/crawling-indexing/googlebot); Lighthouse DOM size (developer.chrome.com/docs/lighthouse/performance/dom-size)"
+   }
+  ],
+  "pageWeight": {
+   "htmlKB": 220.5,
+   "wireKB": 46.9,
+   "wireEstimated": false,
+   "domElements": 1272
+  },
+  "images": 3,
+  "structuredData": [
+   "json-ld",
+   "open-graph"
+  ],
+  "canonicalUrl": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+  "readThroughResidentialProxy": false,
+  "auditedAt": "2026-10-15T01:57:11.164Z",
+  "firstSeen": true,
+  "previousScore": null,
+  "scoreChange": null,
+  "changedChecks": []
+ },
+ {
+  "recordType": "comparison",
+  "url": "https://www.amazon.com/dp/B0DTK7VDTH",
+  "domain": "amazon.com",
+  "score": 73,
+  "competitors": [
+   {
+    "url": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "domain": "zwilling.com",
+    "score": 96,
+    "grade": "A"
+   }
+  ],
+  "bestCompetitorScore": 96,
+  "scoreGap": -23,
+  "behindOn": [
+   {
+    "check": "title-length",
+    "label": "Title length",
+    "yours": "warn",
+    "theirs": "pass",
+    "competitorUrl": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "theirFinding": "45 characters: \"MIYABI Evolution 5-inch Prep Knife, Fine Edge\"",
+    "fix": "Shorten the title: Amazon recommends no more than 60 characters. Keep brand, product type and the key attribute (size, colour, count); move the rest to the bullets."
+   },
+   {
+    "check": "title-keywords",
+    "label": "Title keywords",
+    "yours": "warn",
+    "theirs": "pass",
+    "competitorUrl": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "theirFinding": "8 descriptive words, none repeated",
+    "fix": "Start the title with the brand, then the product type and the attribute shoppers search for. Give keywords in the input to check them too."
+   }
+  ],
+  "aheadOn": [],
+  "summary": "73 vs 96 (zwilling.com): behind on 2 check(s), ahead on 0.",
+  "comparedAt": "2026-10-15T01:57:11.357Z"
+ },
+ {
+  "recordType": "comparison",
+  "url": "https://www.allbirds.com/products/mens-tree-runners",
+  "domain": "allbirds.com",
+  "score": 86,
+  "competitors": [
+   {
+    "url": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "domain": "zwilling.com",
+    "score": 96,
+    "grade": "A"
+   }
+  ],
+  "bestCompetitorScore": 96,
+  "scoreGap": -10,
+  "behindOn": [
+   {
+    "check": "gtin",
+    "label": "GTIN (barcode)",
+    "yours": "warn",
+    "theirs": "pass",
+    "competitorUrl": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "theirFinding": "1 GTIN(s), e.g. 4009839334917",
+    "fix": "If the product has a GTIN (the barcode: EAN, UPC, ISBN), add it as gtin13, gtin12 or gtin14 to the Product or each variant; Merchant Center requires it for new products that have one. Without one, give mpn and brand."
+   },
+   {
+    "check": "review-markup",
+    "label": "Review markup",
+    "yours": "warn",
+    "theirs": "pass",
+    "competitorUrl": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "theirFinding": "aggregateRating",
+    "fix": "Add aggregateRating (ratingValue, reviewCount) and review to the Product, from the ratings the page shows, so search results can show stars."
+   },
+   {
+    "check": "title-length",
+    "label": "Product title length",
+    "yours": "warn",
+    "theirs": "pass",
+    "competitorUrl": "https://www.zwilling.com/us/miyabi-evolution-5-inch-prep-knife-fine-edge--34025-133/34025-133-0.html",
+    "theirFinding": "45 characters: \"MIYABI Evolution 5-inch Prep Knife, Fine Edge\"",
+    "fix": "Make the title more descriptive: brand, product type and the attribute shoppers search for (colour, size, model), e.g. \"Allbirds Men's Tree Runner, Navy\"."
+   }
+  ],
+  "aheadOn": [],
+  "summary": "86 vs 96 (zwilling.com): behind on 3 check(s), ahead on 0.",
+  "comparedAt": "2026-10-15T01:57:11.511Z"
+ }
+]

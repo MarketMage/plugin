@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help, setup and billing
+    url: https://marketmage.io/support/
+    about: Questions about connecting Apify, costs or getting started.
+  - name: Report a security problem
+    url: https://github.com/MarketMage/plugin/blob/main/SECURITY.md
+    about: Email security@marketmage.io. Never report a vulnerability in a public issue.

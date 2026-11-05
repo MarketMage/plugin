@@ -1,0 +1,221 @@
+{
+  "start": {
+    "runs": [],
+    "pricesOnly": [
+      "amazon-bestsellers-tracker",
+      "tiktok-shop-sales-tracker",
+      "google-trends-scraper",
+      "marketplace-search-scanner",
+      "supplier-price-finder",
+      "amazon-product-scraper",
+      "watch-digest",
+      "marketmage-notebook",
+      "ad-library-monitor"
+    ],
+    "judgement": true
+  },
+  "find-products": {
+    "runs": [
+      "amazon-bestsellers-tracker",
+      "tiktok-shop-sales-tracker",
+      "google-trends-scraper",
+      "marketplace-search-scanner",
+      "watch-digest",
+      "ad-library-monitor",
+      "shopify-store-scraper"
+    ],
+    "pricesOnly": [
+      "alerts-sender",
+      "marketmage-notebook"
+    ],
+    "judgement": true
+  },
+  "validate": {
+    "runs": [
+      "amazon-product-scraper",
+      "tiktok-shop-sales-tracker",
+      "google-trends-scraper",
+      "marketplace-search-scanner",
+      "supplier-price-finder",
+      "reviews-monitor",
+      "ad-library-monitor",
+      "shopify-store-scraper"
+    ],
+    "pricesOnly": [
+      "marketmage-notebook"
+    ],
+    "judgement": true
+  },
+  "spy-store": {
+    "runs": [
+      "shopify-store-scraper",
+      "tech-stack-detector",
+      "any-store-product-monitor",
+      "promotions-monitor",
+      "listing-quality-checker"
+    ],
+    "pricesOnly": []
+  },
+  "price-check": {
+    "runs": [
+      "barcode-price-checker",
+      "any-store-product-monitor",
+      "amazon-product-scraper"
+    ],
+    "pricesOnly": []
+  },
+  "price-watch": {
+    "runs": [
+      "watch-digest"
+    ],
+    "pricesOnly": [
+      "any-store-product-monitor",
+      "amazon-product-scraper",
+      "shopify-store-scraper",
+      "alerts-sender",
+      "google-sheets-sync"
+    ]
+  },
+  "map-watch": {
+    "runs": [
+      "barcode-price-checker",
+      "amazon-product-scraper"
+    ],
+    "pricesOnly": [
+      "google-sheets-sync"
+    ]
+  },
+  "rank-watch": {
+    "runs": [
+      "watch-digest",
+      "amazon-keyword-rank-tracker"
+    ],
+    "pricesOnly": [
+      "alerts-sender"
+    ]
+  },
+  "export": {
+    "runs": [
+      "google-sheets-sync"
+    ],
+    "pricesOnly": [
+      "watch-digest"
+    ]
+  },
+  "reviews-watch": {
+    "runs": [
+      "reviews-monitor",
+      "watch-digest"
+    ],
+    "pricesOnly": [
+      "alerts-sender"
+    ]
+  },
+  "gaps": {
+    "runs": [
+      "catalog-matcher",
+      "shopify-store-scraper",
+      "any-store-product-monitor",
+      "amazon-product-scraper"
+    ],
+    "pricesOnly": [
+      "marketmage-notebook"
+    ],
+    "judgement": true
+  },
+  "promo-watch": {
+    "runs": [
+      "promotions-monitor",
+      "watch-digest"
+    ],
+    "pricesOnly": [
+      "alerts-sender"
+    ]
+  },
+  "market-scan": {
+    "runs": [
+      "marketplace-search-scanner",
+      "watch-digest"
+    ],
+    "pricesOnly": [
+      "alerts-sender",
+      "marketmage-notebook"
+    ],
+    "judgement": true
+  },
+  "suppliers": {
+    "runs": [
+      "supplier-price-finder"
+    ],
+    "pricesOnly": [
+      "marketmage-notebook"
+    ],
+    "judgement": true
+  },
+  "ads-watch": {
+    "runs": [
+      "ad-library-monitor",
+      "watch-digest",
+      "shopify-store-scraper"
+    ],
+    "pricesOnly": [
+      "alerts-sender"
+    ]
+  },
+  "listing-audit": {
+    "runs": [
+      "listing-quality-checker"
+    ],
+    "pricesOnly": []
+  },
+  "watchlists": {
+    "runs": [],
+    "pricesOnly": [
+      "watch-digest",
+      "barcode-price-checker",
+      "amazon-keyword-rank-tracker",
+      "any-store-product-monitor",
+      "amazon-product-scraper",
+      "shopify-store-scraper",
+      "reviews-monitor",
+      "promotions-monitor",
+      "marketplace-search-scanner",
+      "ad-library-monitor",
+      "listing-quality-checker",
+      "supplier-price-finder",
+      "tiktok-shop-sales-tracker",
+      "amazon-bestsellers-tracker",
+      "catalog-matcher",
+      "alerts-sender"
+    ]
+  },
+  "launch-plan": {
+    "runs": [
+      "amazon-product-scraper",
+      "marketplace-search-scanner",
+      "supplier-price-finder",
+      "reviews-monitor",
+      "watch-digest"
+    ],
+    "pricesOnly": [
+      "amazon-keyword-rank-tracker",
+      "marketmage-notebook"
+    ],
+    "judgement": true
+  },
+  "notebook": {
+    "runs": [
+      "marketmage-notebook"
+    ],
+    "pricesOnly": []
+  },
+  "briefing": {
+    "runs": [
+      "marketmage-notebook"
+    ],
+    "pricesOnly": [
+      "watch-digest"
+    ],
+    "judgement": true
+  }
+}

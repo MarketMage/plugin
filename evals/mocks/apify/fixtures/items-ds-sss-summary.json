@@ -1,0 +1,63 @@
+[
+ {
+  "recordType": "store",
+  "storeDomain": "glowrest.com",
+  "storeName": "GlowRest",
+  "publishedProductsCount": 61,
+  "collectionCount": 9,
+  "country": "US",
+  "currency": "USD",
+  "summaryOnly": true,
+  "url": "https://glowrest.com"
+ },
+ {
+  "recordType": "store",
+  "storeDomain": "lunarasleep.com",
+  "storeName": "Lunara",
+  "publishedProductsCount": 14,
+  "collectionCount": 3,
+  "country": "US",
+  "currency": "USD",
+  "summaryOnly": true,
+  "url": "https://lunarasleep.com"
+ },
+ {
+  "recordType": "store",
+  "storeDomain": "eyecalm.co",
+  "storeName": "EyeCalm",
+  "publishedProductsCount": 6,
+  "collectionCount": 2,
+  "country": "US",
+  "currency": "USD",
+  "summaryOnly": true,
+  "url": "https://eyecalm.co"
+ },
+ {
+  "recordType": "store",
+  "storeDomain": "spanest.shop",
+  "storeName": "SpaNest",
+  "publishedProductsCount": 220,
+  "collectionCount": 18,
+  "country": "US",
+  "currency": "USD",
+  "summaryOnly": true,
+  "url": "https://spanest.shop"
+ },
+ {
+  "recordType": "unreadable",
+  "storeDomain": "restwellhome.com",
+  "reason": "Not a Shopify store (no Shopify storefront found).",
+  "url": "https://restwellhome.com"
+ },
+ {
+  "recordType": "store",
+  "storeDomain": "dreamydozer.com",
+  "storeName": "Dreamy Dozer",
+  "publishedProductsCount": 11,
+  "collectionCount": 2,
+  "country": "US",
+  "currency": "USD",
+  "summaryOnly": true,
+  "url": "https://dreamydozer.com"
+ }
+]

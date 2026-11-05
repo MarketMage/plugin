@@ -1,0 +1,101 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "sauna hat",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 52,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 9.99,
+  "priceP25": 17.99,
+  "priceMedian": 21.99,
+  "priceP75": 26.99,
+  "priceMax": 44.99,
+  "priced": 48,
+  "sponsored": 8,
+  "adsShown": true,
+  "ads": {
+   "count": 8,
+   "priceMin": 18.99,
+   "priceMedian": 22.49,
+   "priceMax": 41.29,
+   "topSellers": [
+    {
+     "seller": "Renpho",
+     "ads": 2
+    },
+    {
+     "seller": "Bruder",
+     "ads": 1
+    },
+    {
+     "seller": "Huggaroo",
+     "ads": 1
+    }
+   ]
+  },
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Finnmark",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Saunaco",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Woolly",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Kotka",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.28,
+  "sellerHhi": 0.07,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 900,
+  "averageRating": 4.3,
+  "under100Reviews": 6,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 4000,
+   "revenuePerMonthMin": 92710.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ }
+]

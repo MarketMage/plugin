@@ -1,0 +1,182 @@
+[
+ {
+  "domain": "ruffwear.com",
+  "input": "ruffwear.com",
+  "url": "https://ruffwear.com/",
+  "redirectedTo": null,
+  "status": "ok",
+  "statusReason": null,
+  "httpStatus": 200,
+  "technologyCount": 30,
+  "cms": [],
+  "ecommerce": [
+   "Shopify"
+  ],
+  "hosting": [],
+  "cdn": [
+   "Cloudflare",
+   "Google Hosted Libraries"
+  ],
+  "analytics": [],
+  "marketingAutomation": [
+   "Klaviyo"
+  ],
+  "crm": [],
+  "liveChat": [
+   "Gobot",
+   "Re:amaze"
+  ],
+  "payments": [
+   "Apple Pay",
+   "PayPal",
+   "Venmo"
+  ],
+  "advertising": [],
+  "frameworks": [
+   "React",
+   "Stimulus"
+  ],
+  "categories": {
+   "Payment processors": [
+    "Apple Pay",
+    "PayPal",
+    "Venmo"
+   ],
+   "Ecommerce": [
+    "Cart Functionality",
+    "Shopify"
+   ],
+   "CDN": [
+    "Cloudflare",
+    "Google Hosted Libraries"
+   ],
+   "Live chat": [
+    "Gobot",
+    "Re:amaze"
+   ],
+   "Hosting": [
+    "GoDaddy"
+   ],
+   "Font scripts": [
+    "Google Font API"
+   ],
+   "Tag managers": [
+    "Google Tag Manager"
+   ],
+   "Webmail": [
+    "Google Workspace",
+    "Microsoft 365"
+   ],
+   "Email": [
+    "Google Workspace",
+    "Microsoft 365"
+   ],
+   "Security": [
+    "HSTS",
+    "Jamf"
+   ],
+   "Miscellaneous": [
+    "HTTP/3",
+    "Klaviyo Customer Hub",
+    "Open Graph"
+   ],
+   "JavaScript libraries": [
+    "jQuery"
+   ],
+   "Marketing automation": [
+    "Klaviyo"
+   ],
+   "Reviews": [
+    "Klaviyo Reviews",
+    "Okendo"
+   ],
+   "SSL/TLS certificate authorities": [
+    "Let's Encrypt"
+   ],
+   "Shopify apps": [
+    "Okendo",
+    "Rebuy"
+   ],
+   "Cookie compliance": [
+    "Osano"
+   ],
+   "Performance": [
+    "Priority Hints"
+   ],
+   "JavaScript frameworks": [
+    "React",
+    "Stimulus"
+   ],
+   "Personalisation": [
+    "Rebuy"
+   ],
+   "A/B Testing": [
+    "Shoplift"
+   ]
+  },
+  "emailProvider": "Google Workspace",
+  "emailSenders": [
+   "Google Workspace",
+   "Shopify"
+  ],
+  "verifiedServices": [
+   "Apple",
+   "Google Search Console",
+   "Have I Been Pwned",
+   "Jamf",
+   "Klaviyo",
+   "Microsoft 365"
+  ],
+  "security": {
+   "https": true,
+   "hsts": true,
+   "contentSecurityPolicy": true,
+   "http3": true,
+   "certificateIssuer": "Let's Encrypt",
+   "spf": true,
+   "dmarcPolicy": "reject"
+  },
+  "spend": {
+   "paidTechnologies": 9,
+   "low": 4,
+   "mid": 3,
+   "high": 0,
+   "priceOnRequest": 1,
+   "minimumMonthlyUsd": 300,
+   "tier": "mid"
+  },
+  "site": {
+   "title": "Performance Dog Gear | Ruffwear",
+   "description": "Building dog gear to enhance your outdoor adventures. Trail tested & rugged dog boots, dog coats, dog harnesses, dog life jackets and much more.",
+   "language": "en",
+   "organization": {
+    "name": "Ruffwear",
+    "logo": "https://ruffwear.com/cdn/shop/files/ruffwear-logo_882x589.png?v=16274016135175350407",
+    "country": null,
+    "sameAs": [
+     "https://www.facebook.com/ruffwear/",
+     "https://www.instagram.com/ruffwear/",
+     "https://www.youtube.com/ruffwear/",
+     "https://www.pinterest.com/ruffwear/",
+     "https://www.twitter.com/ruffwear/"
+    ]
+   },
+   "socialProfiles": {
+    "facebook": "https://www.facebook.com/ruffwear/",
+    "instagram": "https://www.instagram.com/ruffwear/",
+    "pinterest": "https://www.pinterest.com/ruffwear/",
+    "twitter": "https://www.twitter.com/ruffwear/",
+    "tiktok": "https://www.tiktok.com/@ruffweardogs"
+   },
+   "contactPage": "https://ruffwear.com/pages/contact-us"
+  },
+  "tagManagerIds": [],
+  "pagesScanned": [
+   "https://ruffwear.com/"
+  ],
+  "browserUsed": false,
+  "matched": true,
+  "fingerprintsVersion": "eea872af449e207e055398f7369d11ee48c8ea03 2026-09-16",
+  "scannedAt": "2026-10-14T19:28:34.068Z"
+ }
+]

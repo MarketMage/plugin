@@ -1,0 +1,31 @@
+name: Bug report
+description: Something in MarketMage didn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste an API token, an Apify token, a webhook URL, an email API key or any other secret here.** Issues are public. Security problems go to security@marketmage.io instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you asked Claude, and what it did or answered.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where you use it
+      description: claude.ai, the desktop app, Cowork or Claude Code, and the plugin version if you know it.
+  - type: textarea
+    id: run
+    attributes:
+      label: Apify run (optional)
+      description: The actor's name and the run's ID, if a run failed. Remove any secrets from logs before pasting.

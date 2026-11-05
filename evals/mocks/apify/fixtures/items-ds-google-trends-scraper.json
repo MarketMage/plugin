@@ -1,0 +1,1450 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "silicone stretch lids",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "googleTime": "today 5-y",
+  "category": 0,
+  "property": "web",
+  "comparedWith": [
+   "silicone lids"
+  ],
+  "summary": {
+   "average": 6,
+   "peak": 15,
+   "peakDate": "2026-04-05T00:00:00.000Z",
+   "latest": 2,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 44.8,
+   "direction": "rising"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "time": "1777766400",
+    "formattedTime": "May 3\u2009\u2013\u20099, 2026",
+    "formattedAxisTime": "May 3, 2026",
+    "value": [
+     7
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "7"
+    ],
+    "date": "2026-05-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1778371200",
+    "formattedTime": "May 10\u2009\u2013\u200916, 2026",
+    "formattedAxisTime": "May 10, 2026",
+    "value": [
+     10
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "10"
+    ],
+    "date": "2026-05-10T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1778976000",
+    "formattedTime": "May 17\u2009\u2013\u200923, 2026",
+    "formattedAxisTime": "May 17, 2026",
+    "value": [
+     8
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "8"
+    ],
+    "date": "2026-05-17T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1779580800",
+    "formattedTime": "May 24\u2009\u2013\u200930, 2026",
+    "formattedAxisTime": "May 24, 2026",
+    "value": [
+     7
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "7"
+    ],
+    "date": "2026-05-24T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1780185600",
+    "formattedTime": "May 31\u2009\u2013\u2009Jun 6, 2026",
+    "formattedAxisTime": "May 31, 2026",
+    "value": [
+     8
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "8"
+    ],
+    "date": "2026-05-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1780790400",
+    "formattedTime": "Jun 7\u2009\u2013\u200913, 2026",
+    "formattedAxisTime": "Jun 7, 2026",
+    "value": [
+     8
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "8"
+    ],
+    "date": "2026-06-07T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1781395200",
+    "formattedTime": "Jun 14\u2009\u2013\u200920, 2026",
+    "formattedAxisTime": "Jun 14, 2026",
+    "value": [
+     9
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "9"
+    ],
+    "date": "2026-06-14T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1782000000",
+    "formattedTime": "Jun 21\u2009\u2013\u200927, 2026",
+    "formattedAxisTime": "Jun 21, 2026",
+    "value": [
+     7
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "7"
+    ],
+    "date": "2026-06-21T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1782604800",
+    "formattedTime": "Jun 28\u2009\u2013\u2009Jul 4, 2026",
+    "formattedAxisTime": "Jun 28, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1783209600",
+    "formattedTime": "Jul 5\u2009\u2013\u200911, 2026",
+    "formattedAxisTime": "Jul 5, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-07-05T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1783814400",
+    "formattedTime": "Jul 12\u2009\u2013\u200918, 2026",
+    "formattedAxisTime": "Jul 12, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-07-12T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1784419200",
+    "formattedTime": "Jul 19\u2009\u2013\u200925, 2026",
+    "formattedAxisTime": "Jul 19, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-07-19T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1785024000",
+    "formattedTime": "Jul 26\u2009\u2013\u2009Aug 1, 2026",
+    "formattedAxisTime": "Jul 26, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-07-26T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1785628800",
+    "formattedTime": "Aug 2\u2009\u2013\u20098, 2026",
+    "formattedAxisTime": "Aug 2, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-08-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1786233600",
+    "formattedTime": "Aug 9\u2009\u2013\u200915, 2026",
+    "formattedAxisTime": "Aug 9, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-08-09T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1786838400",
+    "formattedTime": "Aug 16\u2009\u2013\u200922, 2026",
+    "formattedAxisTime": "Aug 16, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-08-16T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1787443200",
+    "formattedTime": "Aug 23\u2009\u2013\u200929, 2026",
+    "formattedAxisTime": "Aug 23, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-08-23T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1788048000",
+    "formattedTime": "Aug 30\u2009\u2013\u2009Sep 5, 2026",
+    "formattedAxisTime": "Aug 30, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-08-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1788652800",
+    "formattedTime": "Sep 6\u2009\u2013\u200912, 2026",
+    "formattedAxisTime": "Sep 6, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-09-06T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1789257600",
+    "formattedTime": "Sep 13\u2009\u2013\u200919, 2026",
+    "formattedAxisTime": "Sep 13, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-09-13T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1789862400",
+    "formattedTime": "Sep 20\u2009\u2013\u200926, 2026",
+    "formattedAxisTime": "Sep 20, 2026",
+    "value": [
+     0
+    ],
+    "hasData": [
+     false
+    ],
+    "formattedValue": [
+     "0"
+    ],
+    "date": "2026-09-20T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1790467200",
+    "formattedTime": "Sep 27\u2009\u2013\u2009Oct 3, 2026",
+    "formattedAxisTime": "Sep 27, 2026",
+    "value": [
+     1
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "1"
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1791072000",
+    "formattedTime": "Oct 4\u2009\u2013\u200910, 2026",
+    "formattedAxisTime": "Oct 4, 2026",
+    "value": [
+     2
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "2"
+    ],
+    "date": "2026-10-04T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1791676800",
+    "formattedTime": "Oct 11\u2009\u2013\u200917, 2026",
+    "formattedAxisTime": "Oct 11, 2026",
+    "value": [
+     1
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "1"
+    ],
+    "isPartial": true,
+    "date": "2026-10-11T00:00:00.000Z"
+   }
+  ],
+  "interestOverTime_averages": [
+   1
+  ],
+  "missingDataTypes": [],
+  "trendsUrl": "https://trends.google.com/trends/explore?q=silicone%20stretch%20lids%2Csilicone%20lids&geo=US&date=today%205-y",
+  "scrapedAt": "2026-10-14T19:28:06.240Z",
+  "relatedQueries_top": [
+   {
+    "query": "silicone stretch lids set",
+    "value": 100,
+    "formattedValue": "100",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=silicone+stretch+lids+set&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "best silicone stretch lids",
+    "value": 58,
+    "formattedValue": "58",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=best+silicone+stretch+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone bowl covers",
+    "value": 23,
+    "formattedValue": "23",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=silicone+bowl+covers&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone stretch lids reviews",
+    "value": 16,
+    "formattedValue": "16",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=silicone+stretch+lids+reviews&date=today+5-y&geo=US",
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "silicone stretch lids set",
+    "value": 400,
+    "formattedValue": "+400%",
+    "link": "https://trends.google.com/trends/explore?q=silicone+stretch+lids+set&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone bowl covers",
+    "value": 70,
+    "formattedValue": "+70%",
+    "link": "https://trends.google.com/trends/explore?q=silicone+bowl+covers&date=today+5-y&geo=US",
+    "isBreakout": false
+   }
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "silicone lids",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "googleTime": "today 5-y",
+  "category": 0,
+  "property": "web",
+  "comparedWith": [
+   "silicone stretch lids"
+  ],
+  "summary": {
+   "average": 17.1,
+   "peak": 100,
+   "peakDate": "2026-04-05T00:00:00.000Z",
+   "latest": 18,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 152.4,
+   "direction": "rising"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "time": "1777766400",
+    "formattedTime": "May 3\u2009\u2013\u20099, 2026",
+    "formattedAxisTime": "May 3, 2026",
+    "value": [
+     47
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "47"
+    ],
+    "date": "2026-05-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1778371200",
+    "formattedTime": "May 10\u2009\u2013\u200916, 2026",
+    "formattedAxisTime": "May 10, 2026",
+    "value": [
+     72
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "72"
+    ],
+    "date": "2026-05-10T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1778976000",
+    "formattedTime": "May 17\u2009\u2013\u200923, 2026",
+    "formattedAxisTime": "May 17, 2026",
+    "value": [
+     81
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "81"
+    ],
+    "date": "2026-05-17T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1779580800",
+    "formattedTime": "May 24\u2009\u2013\u200930, 2026",
+    "formattedAxisTime": "May 24, 2026",
+    "value": [
+     43
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "43"
+    ],
+    "date": "2026-05-24T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1780185600",
+    "formattedTime": "May 31\u2009\u2013\u2009Jun 6, 2026",
+    "formattedAxisTime": "May 31, 2026",
+    "value": [
+     47
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "47"
+    ],
+    "date": "2026-05-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1780790400",
+    "formattedTime": "Jun 7\u2009\u2013\u200913, 2026",
+    "formattedAxisTime": "Jun 7, 2026",
+    "value": [
+     63
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "63"
+    ],
+    "date": "2026-06-07T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1781395200",
+    "formattedTime": "Jun 14\u2009\u2013\u200920, 2026",
+    "formattedAxisTime": "Jun 14, 2026",
+    "value": [
+     53
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "53"
+    ],
+    "date": "2026-06-14T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1782000000",
+    "formattedTime": "Jun 21\u2009\u2013\u200927, 2026",
+    "formattedAxisTime": "Jun 21, 2026",
+    "value": [
+     57
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "57"
+    ],
+    "date": "2026-06-21T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1782604800",
+    "formattedTime": "Jun 28\u2009\u2013\u2009Jul 4, 2026",
+    "formattedAxisTime": "Jun 28, 2026",
+    "value": [
+     26
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "26"
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1783209600",
+    "formattedTime": "Jul 5\u2009\u2013\u200911, 2026",
+    "formattedAxisTime": "Jul 5, 2026",
+    "value": [
+     23
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "23"
+    ],
+    "date": "2026-07-05T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1783814400",
+    "formattedTime": "Jul 12\u2009\u2013\u200918, 2026",
+    "formattedAxisTime": "Jul 12, 2026",
+    "value": [
+     21
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "21"
+    ],
+    "date": "2026-07-12T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1784419200",
+    "formattedTime": "Jul 19\u2009\u2013\u200925, 2026",
+    "formattedAxisTime": "Jul 19, 2026",
+    "value": [
+     17
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "17"
+    ],
+    "date": "2026-07-19T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1785024000",
+    "formattedTime": "Jul 26\u2009\u2013\u2009Aug 1, 2026",
+    "formattedAxisTime": "Jul 26, 2026",
+    "value": [
+     18
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "18"
+    ],
+    "date": "2026-07-26T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1785628800",
+    "formattedTime": "Aug 2\u2009\u2013\u20098, 2026",
+    "formattedAxisTime": "Aug 2, 2026",
+    "value": [
+     17
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "17"
+    ],
+    "date": "2026-08-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1786233600",
+    "formattedTime": "Aug 9\u2009\u2013\u200915, 2026",
+    "formattedAxisTime": "Aug 9, 2026",
+    "value": [
+     16
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "16"
+    ],
+    "date": "2026-08-09T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1786838400",
+    "formattedTime": "Aug 16\u2009\u2013\u200922, 2026",
+    "formattedAxisTime": "Aug 16, 2026",
+    "value": [
+     22
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "22"
+    ],
+    "date": "2026-08-16T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1787443200",
+    "formattedTime": "Aug 23\u2009\u2013\u200929, 2026",
+    "formattedAxisTime": "Aug 23, 2026",
+    "value": [
+     18
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "18"
+    ],
+    "date": "2026-08-23T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1788048000",
+    "formattedTime": "Aug 30\u2009\u2013\u2009Sep 5, 2026",
+    "formattedAxisTime": "Aug 30, 2026",
+    "value": [
+     20
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "20"
+    ],
+    "date": "2026-08-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1788652800",
+    "formattedTime": "Sep 6\u2009\u2013\u200912, 2026",
+    "formattedAxisTime": "Sep 6, 2026",
+    "value": [
+     20
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "20"
+    ],
+    "date": "2026-09-06T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1789257600",
+    "formattedTime": "Sep 13\u2009\u2013\u200919, 2026",
+    "formattedAxisTime": "Sep 13, 2026",
+    "value": [
+     20
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "20"
+    ],
+    "date": "2026-09-13T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1789862400",
+    "formattedTime": "Sep 20\u2009\u2013\u200926, 2026",
+    "formattedAxisTime": "Sep 20, 2026",
+    "value": [
+     21
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "21"
+    ],
+    "date": "2026-09-20T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1790467200",
+    "formattedTime": "Sep 27\u2009\u2013\u2009Oct 3, 2026",
+    "formattedAxisTime": "Sep 27, 2026",
+    "value": [
+     18
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "18"
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1791072000",
+    "formattedTime": "Oct 4\u2009\u2013\u200910, 2026",
+    "formattedAxisTime": "Oct 4, 2026",
+    "value": [
+     18
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "18"
+    ],
+    "date": "2026-10-04T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1791676800",
+    "formattedTime": "Oct 11\u2009\u2013\u200917, 2026",
+    "formattedAxisTime": "Oct 11, 2026",
+    "value": [
+     16
+    ],
+    "hasData": [
+     true
+    ],
+    "formattedValue": [
+     "16"
+    ],
+    "isPartial": true,
+    "date": "2026-10-11T00:00:00.000Z"
+   }
+  ],
+  "interestOverTime_averages": [
+   17
+  ],
+  "missingDataTypes": [],
+  "trendsUrl": "https://trends.google.com/trends/explore?q=silicone%20stretch%20lids%2Csilicone%20lids&geo=US&date=today%205-y",
+  "scrapedAt": "2026-10-14T19:28:06.241Z",
+  "relatedQueries_top": [
+   {
+    "query": "stretch silicone lids",
+    "value": 100,
+    "formattedValue": "100",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=stretch+silicone+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "pyrex silicone lids",
+    "value": 87,
+    "formattedValue": "87",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=pyrex+silicone+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "pyrex lids",
+    "value": 87,
+    "formattedValue": "87",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=pyrex+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone cups",
+    "value": 59,
+    "formattedValue": "59",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=silicone+cups&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone lids for pyrex",
+    "value": 40,
+    "formattedValue": "40",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=silicone+lids+for+pyrex&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "silicone lids for bowls",
+    "value": 33,
+    "formattedValue": "33",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=silicone+lids+for+bowls&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "prepworks silicone lids",
+    "value": 7,
+    "formattedValue": "7",
+    "hasData": true,
+    "link": "https://trends.google.com/trends/explore?q=prepworks+silicone+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "prepworks silicone lids",
+    "value": 67650,
+    "formattedValue": "Breakout",
+    "link": "https://trends.google.com/trends/explore?q=prepworks+silicone+lids&date=today+5-y&geo=US",
+    "isBreakout": true
+   },
+   {
+    "query": "silicone lids for pyrex",
+    "value": 170,
+    "formattedValue": "+170%",
+    "link": "https://trends.google.com/trends/explore?q=silicone+lids+for+pyrex&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "pyrex lids",
+    "value": 120,
+    "formattedValue": "+120%",
+    "link": "https://trends.google.com/trends/explore?q=pyrex+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   },
+   {
+    "query": "pyrex silicone lids",
+    "value": 110,
+    "formattedValue": "+110%",
+    "link": "https://trends.google.com/trends/explore?q=pyrex+silicone+lids&date=today+5-y&geo=US",
+    "isBreakout": false
+   }
+  ]
+ },
+ {
+  "type": "comparison",
+  "searchTerms": [
+   "silicone stretch lids",
+   "silicone lids"
+  ],
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "googleTime": "today 5-y",
+  "category": 0,
+  "property": "web",
+  "winner": "silicone lids",
+  "averages": [
+   {
+    "searchTerm": "silicone lids",
+    "average": 17
+   },
+   {
+    "searchTerm": "silicone stretch lids",
+    "average": 1
+   }
+  ],
+  "timeline": [
+   {
+    "time": "1777766400",
+    "formattedTime": "May 3\u2009\u2013\u20099, 2026",
+    "formattedAxisTime": "May 3, 2026",
+    "value": [
+     7,
+     47
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "7",
+     "47"
+    ],
+    "date": "2026-05-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1778371200",
+    "formattedTime": "May 10\u2009\u2013\u200916, 2026",
+    "formattedAxisTime": "May 10, 2026",
+    "value": [
+     10,
+     72
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "10",
+     "72"
+    ],
+    "date": "2026-05-10T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1778976000",
+    "formattedTime": "May 17\u2009\u2013\u200923, 2026",
+    "formattedAxisTime": "May 17, 2026",
+    "value": [
+     8,
+     81
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "8",
+     "81"
+    ],
+    "date": "2026-05-17T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1779580800",
+    "formattedTime": "May 24\u2009\u2013\u200930, 2026",
+    "formattedAxisTime": "May 24, 2026",
+    "value": [
+     7,
+     43
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "7",
+     "43"
+    ],
+    "date": "2026-05-24T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1780185600",
+    "formattedTime": "May 31\u2009\u2013\u2009Jun 6, 2026",
+    "formattedAxisTime": "May 31, 2026",
+    "value": [
+     8,
+     47
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "8",
+     "47"
+    ],
+    "date": "2026-05-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1780790400",
+    "formattedTime": "Jun 7\u2009\u2013\u200913, 2026",
+    "formattedAxisTime": "Jun 7, 2026",
+    "value": [
+     8,
+     63
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "8",
+     "63"
+    ],
+    "date": "2026-06-07T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1781395200",
+    "formattedTime": "Jun 14\u2009\u2013\u200920, 2026",
+    "formattedAxisTime": "Jun 14, 2026",
+    "value": [
+     9,
+     53
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "9",
+     "53"
+    ],
+    "date": "2026-06-14T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1782000000",
+    "formattedTime": "Jun 21\u2009\u2013\u200927, 2026",
+    "formattedAxisTime": "Jun 21, 2026",
+    "value": [
+     7,
+     57
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "7",
+     "57"
+    ],
+    "date": "2026-06-21T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1782604800",
+    "formattedTime": "Jun 28\u2009\u2013\u2009Jul 4, 2026",
+    "formattedAxisTime": "Jun 28, 2026",
+    "value": [
+     0,
+     26
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "26"
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1783209600",
+    "formattedTime": "Jul 5\u2009\u2013\u200911, 2026",
+    "formattedAxisTime": "Jul 5, 2026",
+    "value": [
+     0,
+     23
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "23"
+    ],
+    "date": "2026-07-05T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1783814400",
+    "formattedTime": "Jul 12\u2009\u2013\u200918, 2026",
+    "formattedAxisTime": "Jul 12, 2026",
+    "value": [
+     0,
+     21
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "21"
+    ],
+    "date": "2026-07-12T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1784419200",
+    "formattedTime": "Jul 19\u2009\u2013\u200925, 2026",
+    "formattedAxisTime": "Jul 19, 2026",
+    "value": [
+     0,
+     17
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "17"
+    ],
+    "date": "2026-07-19T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1785024000",
+    "formattedTime": "Jul 26\u2009\u2013\u2009Aug 1, 2026",
+    "formattedAxisTime": "Jul 26, 2026",
+    "value": [
+     0,
+     18
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "18"
+    ],
+    "date": "2026-07-26T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1785628800",
+    "formattedTime": "Aug 2\u2009\u2013\u20098, 2026",
+    "formattedAxisTime": "Aug 2, 2026",
+    "value": [
+     0,
+     17
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "17"
+    ],
+    "date": "2026-08-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1786233600",
+    "formattedTime": "Aug 9\u2009\u2013\u200915, 2026",
+    "formattedAxisTime": "Aug 9, 2026",
+    "value": [
+     0,
+     16
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "16"
+    ],
+    "date": "2026-08-09T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1786838400",
+    "formattedTime": "Aug 16\u2009\u2013\u200922, 2026",
+    "formattedAxisTime": "Aug 16, 2026",
+    "value": [
+     0,
+     22
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "22"
+    ],
+    "date": "2026-08-16T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1787443200",
+    "formattedTime": "Aug 23\u2009\u2013\u200929, 2026",
+    "formattedAxisTime": "Aug 23, 2026",
+    "value": [
+     0,
+     18
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "18"
+    ],
+    "date": "2026-08-23T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1788048000",
+    "formattedTime": "Aug 30\u2009\u2013\u2009Sep 5, 2026",
+    "formattedAxisTime": "Aug 30, 2026",
+    "value": [
+     0,
+     20
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "20"
+    ],
+    "date": "2026-08-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1788652800",
+    "formattedTime": "Sep 6\u2009\u2013\u200912, 2026",
+    "formattedAxisTime": "Sep 6, 2026",
+    "value": [
+     0,
+     20
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "20"
+    ],
+    "date": "2026-09-06T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1789257600",
+    "formattedTime": "Sep 13\u2009\u2013\u200919, 2026",
+    "formattedAxisTime": "Sep 13, 2026",
+    "value": [
+     0,
+     20
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "20"
+    ],
+    "date": "2026-09-13T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1789862400",
+    "formattedTime": "Sep 20\u2009\u2013\u200926, 2026",
+    "formattedAxisTime": "Sep 20, 2026",
+    "value": [
+     0,
+     21
+    ],
+    "hasData": [
+     false,
+     true
+    ],
+    "formattedValue": [
+     "0",
+     "21"
+    ],
+    "date": "2026-09-20T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1790467200",
+    "formattedTime": "Sep 27\u2009\u2013\u2009Oct 3, 2026",
+    "formattedAxisTime": "Sep 27, 2026",
+    "value": [
+     1,
+     18
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "1",
+     "18"
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1791072000",
+    "formattedTime": "Oct 4\u2009\u2013\u200910, 2026",
+    "formattedAxisTime": "Oct 4, 2026",
+    "value": [
+     2,
+     18
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "2",
+     "18"
+    ],
+    "date": "2026-10-04T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "time": "1791676800",
+    "formattedTime": "Oct 11\u2009\u2013\u200917, 2026",
+    "formattedAxisTime": "Oct 11, 2026",
+    "value": [
+     1,
+     16
+    ],
+    "hasData": [
+     true,
+     true
+    ],
+    "formattedValue": [
+     "1",
+     "16"
+    ],
+    "isPartial": true,
+    "date": "2026-10-11T00:00:00.000Z"
+   }
+  ],
+  "regions": [],
+  "trendsUrl": "https://trends.google.com/trends/explore?q=silicone%20stretch%20lids%2Csilicone%20lids&geo=US&date=today%205-y",
+  "scrapedAt": "2026-10-14T19:28:06.404Z"
+ }
+]

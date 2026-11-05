@@ -1,0 +1,13 @@
+# System files (the plugin directory refuses them)
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+# Secrets
+.env
+.env*
+# Eval results
+evals/results/
+**/evals/results/
+# Python
+__pycache__/

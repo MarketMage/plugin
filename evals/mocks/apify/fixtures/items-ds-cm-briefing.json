@@ -1,0 +1,89 @@
+[
+ {
+  "recordType": "summary",
+  "catalogue": "glowrest.com",
+  "yourProducts": 42,
+  "theirProducts": 61,
+  "matched": 9,
+  "overlapPercent": 21.4,
+  "byMethod": {
+   "title": 9
+  },
+  "medianPriceIndex": 94,
+  "youAreCheaper": 2,
+  "theyAreCheaper": 6,
+  "samePrice": 1,
+  "gapsTheySell": 30,
+  "gapsYouSell": 22,
+  "undercuts": 4,
+  "newUndercuts": 3,
+  "firstRun": false
+ },
+ {
+  "recordType": "match",
+  "catalogue": "glowrest.com",
+  "yourTitle": "Cordless Heated Eye Mask",
+  "theirTitle": "GlowRest Cordless Heated Eye Mask",
+  "yourPrice": 29.99,
+  "theirPrice": 27.99,
+  "priceGapPercent": -6.7,
+  "undercut": true,
+  "changes": [
+   {
+    "type": "undercut",
+    "gapPercent": -6.7
+   }
+  ],
+  "theirAvailable": true,
+  "theirUrl": "https://glowrest.com/products/cordless-heated-eye-mask"
+ },
+ {
+  "recordType": "match",
+  "catalogue": "glowrest.com",
+  "yourTitle": "Eye Mask Travel Case",
+  "theirTitle": "GlowRest Travel Case",
+  "yourPrice": 12.99,
+  "theirPrice": 11.99,
+  "priceGapPercent": -7.7,
+  "undercut": true,
+  "changes": [
+   {
+    "type": "undercut",
+    "gapPercent": -7.7
+   }
+  ],
+  "theirAvailable": true,
+  "theirUrl": "https://glowrest.com/products/travel-case"
+ },
+ {
+  "recordType": "match",
+  "catalogue": "glowrest.com",
+  "yourTitle": "Heated Neck Wrap",
+  "theirTitle": "GlowRest Heated Neck Wrap (Final Sale)",
+  "yourPrice": 39.99,
+  "theirPrice": 24.99,
+  "priceGapPercent": -37.5,
+  "undercut": true,
+  "changes": [
+   {
+    "type": "undercut",
+    "gapPercent": -37.5
+   }
+  ],
+  "theirAvailable": false,
+  "theirUrl": "https://glowrest.com/products/heated-neck-wrap"
+ },
+ {
+  "recordType": "match",
+  "catalogue": "glowrest.com",
+  "yourTitle": "Lavender Eye Pillow",
+  "theirTitle": "GlowRest Lavender Eye Pillow",
+  "yourPrice": 14.99,
+  "theirPrice": 14.49,
+  "priceGapPercent": -3.3,
+  "undercut": true,
+  "changes": [],
+  "theirAvailable": true,
+  "theirUrl": "https://glowrest.com/products/lavender-eye-pillow"
+ }
+]

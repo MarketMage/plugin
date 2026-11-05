@@ -1,0 +1,90 @@
+[
+ {
+  "recordType": "digest",
+  "title": "Pet opportunities",
+  "monitorName": "pets",
+  "changes": 7,
+  "watched": 7,
+  "opportunities": {
+   "searches": 3,
+   "charts": 2,
+   "tiktok": 1
+  },
+  "watchers": {
+   "trends": "ok",
+   "charts": "ok",
+   "tiktok": "ok"
+  },
+  "delivery": "not-asked"
+ },
+ {
+  "recordType": "change",
+  "source": "trends",
+  "opportunity": "searches",
+  "what": "Breakout search",
+  "keyword": "dog lick mat",
+  "title": "lick mat for dogs",
+  "detail": "Breakout (up more than 5,000%) in US, related to \"dog lick mat\"",
+  "url": null
+ },
+ {
+  "recordType": "change",
+  "source": "trends",
+  "opportunity": "searches",
+  "what": "New rising search",
+  "keyword": "cat water fountain",
+  "title": "cat water fountain cordless",
+  "detail": "up 350% in US, related to \"cat water fountain\"",
+  "url": null
+ },
+ {
+  "recordType": "change",
+  "source": "trends",
+  "opportunity": "searches",
+  "what": "Interest rising",
+  "keyword": "slow feeder bowl",
+  "title": "slow feeder bowl",
+  "detail": "up 64% (latest quarter against the earliest of the past 90 days)",
+  "url": null
+ },
+ {
+  "recordType": "change",
+  "source": "charts",
+  "opportunity": "charts",
+  "what": "New on the chart",
+  "keyword": null,
+  "title": "PawFlow Cordless Cat Water Fountain 2L",
+  "detail": "Pet Supplies, New Releases (US), #4",
+  "url": "https://www.amazon.com/dp/B0PETOPP01"
+ },
+ {
+  "recordType": "change",
+  "source": "charts",
+  "opportunity": "charts",
+  "what": "New on the chart",
+  "keyword": null,
+  "title": "LickPal Dog Lick Mat Set of 2",
+  "detail": "Pet Supplies, New Releases (US), #11",
+  "url": "https://www.amazon.com/dp/B0PETOPP02"
+ },
+ {
+  "recordType": "change",
+  "source": "tiktok",
+  "opportunity": "tiktok",
+  "what": "Units per day",
+  "keyword": "dog lick mat",
+  "title": "Calming Lick Mat for Dogs with Suction",
+  "detail": "40 → 95 a day (rising)",
+  "url": "https://shop.tiktok.com/view/product/1729000000000001"
+ },
+ {
+  "recordType": "change",
+  "source": "charts",
+  "opportunity": null,
+  "what": "Price",
+  "keyword": null,
+  "title": "Frisco Cat Tree 52 in",
+  "detail": "USD 59.99 → 49.99 (-16.7%)",
+  "url": "https://www.amazon.com/dp/B0PETOPP03"
+ }
+]

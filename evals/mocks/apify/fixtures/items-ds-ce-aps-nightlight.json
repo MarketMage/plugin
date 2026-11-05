@@ -1,0 +1,801 @@
+[
+ {
+  "recordType": "product",
+  "asin": "B0NACHT001",
+  "title": "Nachtlicht Kinder, LED Nachtlampe mit Akku, dimmbar, 7 Farben",
+  "brand": "Lumiteck",
+  "price": 19.99,
+  "rating": 4.4,
+  "reviewCount": 6100,
+  "starBreakdown": {
+   "1": 5,
+   "2": 4,
+   "3": 7,
+   "4": 14,
+   "5": 70
+  },
+  "rank": 1000,
+  "boughtPastMonthMin": 1000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 19.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": null,
+   "referralFee": null,
+   "referralFeeRange": {
+    "low": 1.6,
+    "high": 2.6,
+    "categories": [
+     "Home Products",
+     "Tools and Home Improvement"
+    ]
+   },
+   "closingFee": 0,
+   "fbaFee": 3.32,
+   "fbaFeeRange": null,
+   "sizeTier": "Small parcel",
+   "shippingWeightLb": 0.49,
+   "shippingWeightKg": 0.22,
+   "totalFees": null,
+   "totalFeesRange": {
+    "low": 4.92,
+    "high": 5.92
+   },
+   "afterFees": null,
+   "afterFeesRange": {
+    "low": 14.07,
+    "high": 15.07
+   },
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": {
+    "low": 10.88,
+    "high": 11.88
+   },
+   "feePercentOfPrice": null,
+   "feePercentOfPriceRange": {
+    "low": 24.6,
+    "high": 29.6
+   },
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     4.72,
+     3.94,
+     3.54
+    ],
+    "weightLb": 0.49,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     12,
+     10,
+     9
+    ],
+    "weightKg": 0.22,
+    "dimensionalWeightKg": 0.22,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: category not specific enough: lighting (the rate card has no lighting row): home products or DIY. The browse path \"Beleuchtung > Innenbeleuchtung > Nachtlichter\" covers Home Products, Tools and Home Improvement, whose published rates differ, so referralFeeRange spans them and the totals are ranges. FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (Low-Price FBA) for a small parcel unit at 220 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT002",
+  "title": "LED Nachtlicht Steckdose mit Dämmerungssensor, 2er Pack",
+  "brand": "Ansmann",
+  "price": 14.99,
+  "rating": 4.5,
+  "reviewCount": 12800,
+  "starBreakdown": {
+   "1": 5,
+   "2": 3,
+   "3": 6,
+   "4": 12,
+   "5": 74
+  },
+  "rank": 1731,
+  "boughtPastMonthMin": 2000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 14.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": "Tools and Home Improvement",
+   "referralFee": 1.95,
+   "referralFeeRange": null,
+   "closingFee": 0,
+   "fbaFee": 3.1,
+   "fbaFeeRange": null,
+   "sizeTier": "Extra-large envelope",
+   "shippingWeightLb": 0.26,
+   "shippingWeightKg": 0.12,
+   "totalFees": 5.05,
+   "totalFeesRange": null,
+   "afterFees": 9.94,
+   "afterFeesRange": null,
+   "afterFeesExVat": 7.55,
+   "afterFeesExVatRange": null,
+   "feePercentOfPrice": 33.7,
+   "feePercentOfPriceRange": null,
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     3.15,
+     2.36,
+     1.97
+    ],
+    "weightLb": 0.26,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     8,
+     6,
+     5
+    ],
+    "weightKg": 0.12,
+    "dimensionalWeightKg": 0.05,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: Amazon's published Tools and Home Improvement rate on the offer price (VAT included), category matched from the browse path \"Baumarkt > Elektroinstallation > Nachtlichter\" (a near match: check the fee category in Seller Central). FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (Low-Price FBA) for a extra-large envelope unit at 120 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT003",
+  "title": "Kinder Nachtlicht Silikon Bär, USB wiederaufladbar",
+  "brand": "Vansuny",
+  "price": 22.99,
+  "rating": 4.6,
+  "reviewCount": 3400,
+  "starBreakdown": {
+   "1": 4,
+   "2": 3,
+   "3": 5,
+   "4": 10,
+   "5": 78
+  },
+  "rank": 2462,
+  "boughtPastMonthMin": 500,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 22.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price: this category often carries a reduced VAT rate, so take the VAT due on the sale off the price before reading it as a margin.",
+   "vatRate": null,
+   "referralCategory": "Baby Products",
+   "referralFee": 3.45,
+   "referralFeeRange": null,
+   "closingFee": 0,
+   "fbaFee": 3.67,
+   "fbaFeeRange": null,
+   "sizeTier": "Small parcel",
+   "shippingWeightLb": 0.68,
+   "shippingWeightKg": 0.308,
+   "totalFees": 7.12,
+   "totalFeesRange": null,
+   "afterFees": 15.87,
+   "afterFeesRange": null,
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": null,
+   "feePercentOfPrice": 31,
+   "feePercentOfPriceRange": null,
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     5.51,
+     4.33,
+     3.94
+    ],
+    "weightLb": 0.57,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     14,
+     11,
+     10
+    ],
+    "weightKg": 0.26,
+    "dimensionalWeightKg": 0.31,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [
+    "VAT: Baby Products often carries a reduced VAT rate, so the price excluding VAT (afterFeesExVat) is not worked out."
+   ],
+   "confidence": "medium",
+   "basis": "Referral fee: Amazon's published Baby Products rate on the offer price (VAT included), category matched from the browse path \"Baby > Kinderzimmer > Nachtlichter\". FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (festive peak) for a small parcel unit at 308 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT004",
+  "title": "Nachtlampe Kinderzimmer mit Timer, Akku",
+  "brand": "Lumiteck",
+  "price": 17.99,
+  "rating": 4.3,
+  "reviewCount": 2100,
+  "starBreakdown": {
+   "1": 6,
+   "2": 4,
+   "3": 9,
+   "4": 15,
+   "5": 66
+  },
+  "rank": 3193,
+  "boughtPastMonthMin": 500,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 17.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": null,
+   "referralFee": null,
+   "referralFeeRange": {
+    "low": 1.44,
+    "high": 2.34,
+    "categories": [
+     "Home Products",
+     "Tools and Home Improvement"
+    ]
+   },
+   "closingFee": 0,
+   "fbaFee": 3.32,
+   "fbaFeeRange": null,
+   "sizeTier": "Small parcel",
+   "shippingWeightLb": 0.44,
+   "shippingWeightKg": 0.2,
+   "totalFees": null,
+   "totalFeesRange": {
+    "low": 4.76,
+    "high": 5.66
+   },
+   "afterFees": null,
+   "afterFeesRange": {
+    "low": 12.33,
+    "high": 13.23
+   },
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": {
+    "low": 9.46,
+    "high": 10.36
+   },
+   "feePercentOfPrice": null,
+   "feePercentOfPriceRange": {
+    "low": 26.5,
+    "high": 31.5
+   },
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     4.33,
+     3.54,
+     3.54
+    ],
+    "weightLb": 0.44,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     11,
+     9,
+     9
+    ],
+    "weightKg": 0.2,
+    "dimensionalWeightKg": 0.18,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: category not specific enough: lighting (the rate card has no lighting row): home products or DIY. The browse path \"Beleuchtung > Innenbeleuchtung > Nachtlichter\" covers Home Products, Tools and Home Improvement, whose published rates differ, so referralFeeRange spans them and the totals are ranges. FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (Low-Price FBA) for a small parcel unit at 200 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT005",
+  "title": "Sternenhimmel Projektor Nachtlicht Kinder",
+  "brand": "Ompeak",
+  "price": 24.99,
+  "rating": 4.4,
+  "reviewCount": 9800,
+  "starBreakdown": {
+   "1": 5,
+   "2": 4,
+   "3": 7,
+   "4": 13,
+   "5": 71
+  },
+  "rank": 3924,
+  "boughtPastMonthMin": 1000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 24.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": null,
+   "referralFee": null,
+   "referralFeeRange": {
+    "low": 3.25,
+    "high": 3.75,
+    "categories": [
+     "Home Products",
+     "Tools and Home Improvement"
+    ]
+   },
+   "closingFee": 0,
+   "fbaFee": 3.68,
+   "fbaFeeRange": null,
+   "sizeTier": "Small parcel",
+   "shippingWeightLb": 1.19,
+   "shippingWeightKg": 0.54,
+   "totalFees": null,
+   "totalFeesRange": {
+    "low": 6.93,
+    "high": 7.43
+   },
+   "afterFees": null,
+   "afterFeesRange": {
+    "low": 17.56,
+    "high": 18.06
+   },
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": {
+    "low": 13.57,
+    "high": 14.07
+   },
+   "feePercentOfPrice": null,
+   "feePercentOfPriceRange": {
+    "low": 27.7,
+    "high": 29.7
+   },
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     5.91,
+     5.91,
+     4.72
+    ],
+    "weightLb": 0.84,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     15,
+     15,
+     12
+    ],
+    "weightKg": 0.38,
+    "dimensionalWeightKg": 0.54,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: category not specific enough: lighting (the rate card has no lighting row): home products or DIY. The browse path \"Beleuchtung > Innenbeleuchtung > Nachtlichter\" covers Home Products, Tools and Home Improvement, whose published rates differ, so referralFeeRange spans them and the totals are ranges. FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (festive peak) for a small parcel unit at 540 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT006",
+  "title": "Nachtlicht Baby Stillen, dimmbar, Akku",
+  "brand": "Hatch Light",
+  "price": 29.99,
+  "rating": 4.5,
+  "reviewCount": 1800,
+  "starBreakdown": {
+   "1": 5,
+   "2": 3,
+   "3": 6,
+   "4": 11,
+   "5": 75
+  },
+  "rank": 4655,
+  "boughtPastMonthMin": 300,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 29.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price: this category often carries a reduced VAT rate, so take the VAT due on the sale off the price before reading it as a margin.",
+   "vatRate": null,
+   "referralCategory": "Baby Products",
+   "referralFee": 4.5,
+   "referralFeeRange": null,
+   "closingFee": 0,
+   "fbaFee": 3.67,
+   "fbaFeeRange": null,
+   "sizeTier": "Small parcel",
+   "shippingWeightLb": 0.82,
+   "shippingWeightKg": 0.372,
+   "totalFees": 8.17,
+   "totalFeesRange": null,
+   "afterFees": 21.82,
+   "afterFeesRange": null,
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": null,
+   "feePercentOfPrice": 27.2,
+   "feePercentOfPriceRange": null,
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     5.12,
+     5.12,
+     4.33
+    ],
+    "weightLb": 0.66,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     13,
+     13,
+     11
+    ],
+    "weightKg": 0.3,
+    "dimensionalWeightKg": 0.37,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [
+    "VAT: Baby Products often carries a reduced VAT rate, so the price excluding VAT (afterFeesExVat) is not worked out."
+   ],
+   "confidence": "medium",
+   "basis": "Referral fee: Amazon's published Baby Products rate on the offer price (VAT included), category matched from the browse path \"Baby > Kinderzimmer > Nachtlichter\". FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (festive peak) for a small parcel unit at 372 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT007",
+  "title": "LED Nachtlicht mit Bewegungsmelder, Batterie",
+  "brand": "Osram",
+  "price": 12.99,
+  "rating": 4.4,
+  "reviewCount": 15100,
+  "starBreakdown": {
+   "1": 5,
+   "2": 3,
+   "3": 7,
+   "4": 13,
+   "5": 72
+  },
+  "rank": 5386,
+  "boughtPastMonthMin": 1000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 12.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": "Tools and Home Improvement",
+   "referralFee": 1.69,
+   "referralFeeRange": null,
+   "closingFee": 0,
+   "fbaFee": 3.1,
+   "fbaFeeRange": null,
+   "sizeTier": "Extra-large envelope",
+   "shippingWeightLb": 0.31,
+   "shippingWeightKg": 0.14,
+   "totalFees": 4.79,
+   "totalFeesRange": null,
+   "afterFees": 8.2,
+   "afterFeesRange": null,
+   "afterFeesExVat": 6.13,
+   "afterFeesExVatRange": null,
+   "feePercentOfPrice": 36.9,
+   "feePercentOfPriceRange": null,
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     3.54,
+     2.76,
+     2.36
+    ],
+    "weightLb": 0.31,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     9,
+     7,
+     6
+    ],
+    "weightKg": 0.14,
+    "dimensionalWeightKg": 0.08,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: Amazon's published Tools and Home Improvement rate on the offer price (VAT included), category matched from the browse path \"Baumarkt > Elektroinstallation > Nachtlichter\" (a near match: check the fee category in Seller Central). FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (Low-Price FBA) for a extra-large envelope unit at 140 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT008",
+  "title": "Kinder Nachtlicht Hase, Touch, USB-C",
+  "brand": "Vansuny",
+  "price": 19.99,
+  "rating": 4.2,
+  "reviewCount": 900,
+  "starBreakdown": {
+   "1": 7,
+   "2": 5,
+   "3": 10,
+   "4": 16,
+   "5": 62
+  },
+  "rank": 6117,
+  "boughtPastMonthMin": 100,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 19.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": null,
+   "referralFee": null,
+   "referralFeeRange": {
+    "low": 1.6,
+    "high": 2.6,
+    "categories": [
+     "Home Products",
+     "Tools and Home Improvement"
+    ]
+   },
+   "closingFee": 0,
+   "fbaFee": 3.32,
+   "fbaFeeRange": null,
+   "sizeTier": "Small parcel",
+   "shippingWeightLb": 0.4,
+   "shippingWeightKg": 0.18,
+   "totalFees": null,
+   "totalFeesRange": {
+    "low": 4.92,
+    "high": 5.92
+   },
+   "afterFees": null,
+   "afterFeesRange": {
+    "low": 14.07,
+    "high": 15.07
+   },
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": {
+    "low": 10.88,
+    "high": 11.88
+   },
+   "feePercentOfPrice": null,
+   "feePercentOfPriceRange": {
+    "low": 24.6,
+    "high": 29.6
+   },
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     4.72,
+     3.54,
+     3.15
+    ],
+    "weightLb": 0.4,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     12,
+     9,
+     8
+    ],
+    "weightKg": 0.18,
+    "dimensionalWeightKg": 0.17,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: category not specific enough: lighting (the rate card has no lighting row): home products or DIY. The browse path \"Beleuchtung > Innenbeleuchtung > Nachtlichter\" covers Home Products, Tools and Home Improvement, whose published rates differ, so referralFeeRange spans them and the totals are ranges. FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (Low-Price FBA) for a small parcel unit at 180 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT009",
+  "title": "Nachtlicht Kinder Mond, Holz, Akku",
+  "brand": "Ompeak",
+  "price": 21.99,
+  "rating": 4.5,
+  "reviewCount": 1400,
+  "starBreakdown": {
+   "1": 5,
+   "2": 3,
+   "3": 6,
+   "4": 12,
+   "5": 74
+  },
+  "rank": 6848,
+  "boughtPastMonthMin": 0,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 21.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": null,
+   "referralFee": null,
+   "referralFeeRange": {
+    "low": 2.86,
+    "high": 3.3,
+    "categories": [
+     "Home Products",
+     "Tools and Home Improvement"
+    ]
+   },
+   "closingFee": 0,
+   "fbaFee": 3.49,
+   "fbaFeeRange": null,
+   "sizeTier": "Extra-large envelope",
+   "shippingWeightLb": 0.53,
+   "shippingWeightKg": 0.24,
+   "totalFees": null,
+   "totalFeesRange": {
+    "low": 6.35,
+    "high": 6.79
+   },
+   "afterFees": null,
+   "afterFeesRange": {
+    "low": 15.2,
+    "high": 15.64
+   },
+   "afterFeesExVat": null,
+   "afterFeesExVatRange": {
+    "low": 11.69,
+    "high": 12.13
+   },
+   "feePercentOfPrice": null,
+   "feePercentOfPriceRange": {
+    "low": 28.9,
+    "high": 30.9
+   },
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     5.51,
+     4.72,
+     2.36
+    ],
+    "weightLb": 0.53,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     14,
+     12,
+     6
+    ],
+    "weightKg": 0.24,
+    "dimensionalWeightKg": 0.2,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: category not specific enough: lighting (the rate card has no lighting row): home products or DIY. The browse path \"Beleuchtung > Innenbeleuchtung > Nachtlichter\" covers Home Products, Tools and Home Improvement, whose published rates differ, so referralFeeRange spans them and the totals are ranges. FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (festive peak) for a extra-large envelope unit at 240 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0NACHT010",
+  "title": "Nachtlicht Steckdose, warmweiß, 4er Pack",
+  "brand": "Ansmann",
+  "price": 16.99,
+  "rating": 4.6,
+  "reviewCount": 7300,
+  "starBreakdown": {
+   "1": 4,
+   "2": 2,
+   "3": 5,
+   "4": 10,
+   "5": 79
+  },
+  "rank": 7579,
+  "boughtPastMonthMin": 0,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": true,
+   "marketplace": "DE",
+   "currency": "EUR",
+   "price": 16.99,
+   "priceIncludesVat": true,
+   "vatNote": "The price includes VAT, and Amazon works out the referral fee on it. The fees are Amazon's published fees, excluding VAT. afterFees is the price minus the fees with the VAT still in the price; afterFeesExVat takes the 19% standard VAT out of the price first, the payout before product cost.",
+   "vatRate": 19,
+   "referralCategory": "Tools and Home Improvement",
+   "referralFee": 2.21,
+   "referralFeeRange": null,
+   "closingFee": 0,
+   "fbaFee": 3.1,
+   "fbaFeeRange": null,
+   "sizeTier": "Extra-large envelope",
+   "shippingWeightLb": 0.44,
+   "shippingWeightKg": 0.2,
+   "totalFees": 5.31,
+   "totalFeesRange": null,
+   "afterFees": 11.68,
+   "afterFeesRange": null,
+   "afterFeesExVat": 8.97,
+   "afterFeesExVatRange": null,
+   "feePercentOfPrice": 31.3,
+   "feePercentOfPriceRange": null,
+   "period": "peak",
+   "measured": {
+    "sidesIn": [
+     6.3,
+     4.72,
+     1.97
+    ],
+    "weightLb": 0.44,
+    "dimensionalWeightLb": null,
+    "sidesCm": [
+     16,
+     12,
+     5
+    ],
+    "weightKg": 0.2,
+    "dimensionalWeightKg": 0.19,
+    "sidesFrom": "Produktabmessungen",
+    "weightFrom": "Produktabmessungen"
+   },
+   "missing": [],
+   "notModelled": [],
+   "confidence": "low",
+   "basis": "Referral fee: Amazon's published Tools and Home Improvement rate on the offer price (VAT included), category matched from the browse path \"Baumarkt > Elektroinstallation > Nachtlichter\" (a near match: check the fee category in Seller Central). FBA fee: Amazon's amazon.de rate card effective 2 November 2026 (Low-Price FBA) for a extra-large envelope unit at 200 g (item size from \"Produktabmessungen\", weight from \"Produktabmessungen\"), with the 2% fuel and logistics surcharge, if the product is fulfilled by Amazon from stock in this marketplace. Amazon charges FBA on the packaged unit it measures, usually a little larger than the item. The German fee is for stock stored in Germany only; in the Central Europe Programme it is €0.26 less per unit. Not included: the digital services fee (it depends on where the seller is established), cross-border (EFN) and Pan-EU oversize and low-inventory surcharges, dangerous goods and lithium battery fees, storage, inbound placement and returns.",
+   "scheduleVersion": "amazon-eu-2026-11-02 (fetched 2026-11-04)"
+  }
+ }
+]

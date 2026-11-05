@@ -1,0 +1,18 @@
+---
+type: llm
+focus: trace
+---
+
+The market data favours heated eye masks (Strong for the market: demand +95.6% over 5 years, a top-10 Amazon sales floor of about 14,000 units a month, median 310 reviews, top-3 share 0.22, 4 ads in 48). Both sellers dropship through their own store with Facebook and TikTok ads, so the cold-traffic dropship lens applies to both. TikTok felt want is strong (top 5 at 1,200 to 3,400 units); AliExpress has a MOQ-1 offer at about USD 6.20 before shipping. The Meta ad library read (US, active ads, one row per advertiser) found 14 active advertisers, 5 of them running 35 days or more and 3 started in the last 14 days; on TikTok Shop the top 3 shops hold about 42% of the units.
+
+In this run the AliExpress single-unit check took its slow fallback (still running after its wait, several minutes in all), so the reply comes in two parts: the first answer, with what reads from that check marked as still reading AliExpress, and a short follow-up that adds it when it lands. You see the whole run (messages and tool calls); judge the assistant's messages. Judge the whole reply, both parts together: a figure given in either counts, and the For you label in the follow-up (unchanged, or "now: …") is the final one; a "(provisional)" tag on a label in the first answer is fine.
+
+PASS if all of these hold:
+- the answer gives "For the market" once (Strong), the same for both, and one "For you" reading per seller;
+- the competition counts on Meta (14 active advertisers, 5 proven at 35+ days, 3 new in 14 days, or the same numbers in other words) are stated as the same facts for both sellers, with a threshold printed next to at least one of them (for example "crowded at 10+");
+- for the first-timer under USD 1k, Where you'd compete (the ad crowd) reads against (outbid while testing, or the same idea), and her or his verdict is "a fit, with one fix" (not "not this one"), with the fix an angle or audience no current advertiser targets (for example the Bluetooth or "for dry eyes" version from the rising searches), checked against the advertisers' ads;
+- for the seller with USD 5k+ and brand experience, the same crowd reads in favour (proven advertisers: demand that pays, or the same idea), and the verdict is a strong fit (or at least better than the first-timer's, for that reason);
+- it says or implies the ad counts are Meta's US ads (or otherwise states the coverage correctly) and does not invent advertiser spend;
+- profiles are given as bands (under USD 1k; USD 5k–25k), not the exact USD 10k; no comment on either person's profile (no praise, no "don't worry"); it states what the research cost.
+
+FAIL if either verdict is "not this one" because of the competition, if the counts differ between the two readings, if the experienced seller's reading is against because of the crowd, if the newcomer's reading favours because of the crowd, if no unserved-angle fix is given for the newcomer, if the exact USD 10k is repeated, or if no cost is given.

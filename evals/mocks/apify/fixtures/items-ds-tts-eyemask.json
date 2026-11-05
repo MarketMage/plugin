@@ -1,0 +1,410 @@
+[
+ {
+  "recordType": "product",
+  "title": "Cordless Heated Eye Mask, 3 Heat Levels",
+  "price": 24.99,
+  "currency": "USD",
+  "unitsSold": 3400,
+  "shopName": "GlowRest",
+  "rating": 4.6,
+  "reviewCount": 1210,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-0/1729430515554800000",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 1,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Graphene Heated Sleep Mask",
+  "price": 29.0,
+  "currency": "USD",
+  "unitsSold": 2100,
+  "shopName": "Lunara Official",
+  "rating": 4.5,
+  "reviewCount": 820,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-1/1729430515554800001",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 2,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Rechargeable Warm Eye Mask for Dry Eyes",
+  "price": 21.99,
+  "currency": "USD",
+  "unitsSold": 1800,
+  "shopName": "EyeCalm",
+  "rating": 4.4,
+  "reviewCount": 640,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-2/1729430515554800002",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 3,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Steam Eye Mask Reusable",
+  "price": 17.5,
+  "currency": "USD",
+  "unitsSold": 1500,
+  "shopName": "SpaNest",
+  "rating": 4.5,
+  "reviewCount": 511,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-3/1729430515554800003",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 4,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Bluetooth Heated Eye Mask",
+  "price": 34.0,
+  "currency": "USD",
+  "unitsSold": 1200,
+  "shopName": "SoundSleep",
+  "rating": 4.3,
+  "reviewCount": 402,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-4/1729430515554800004",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 5,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Microwave Eye Pillow",
+  "price": 12.0,
+  "currency": "USD",
+  "unitsSold": 350,
+  "shopName": "HomeHeat",
+  "rating": 4.2,
+  "reviewCount": 90,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-5/1729430515554800005",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 6,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "USB Heated Eye Mask with Timer",
+  "price": 23.0,
+  "currency": "USD",
+  "unitsSold": 891,
+  "shopName": "CozyLids",
+  "rating": 4.3,
+  "reviewCount": 111,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-6/1729430515554800006",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 7,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Lavender Warm Compress Eye Mask",
+  "price": 24.0,
+  "currency": "USD",
+  "unitsSold": 801,
+  "shopName": "CalmCove",
+  "rating": 4.3,
+  "reviewCount": 100,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-7/1729430515554800007",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 8,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Silk Heated Sleep Mask",
+  "price": 25.0,
+  "currency": "USD",
+  "unitsSold": 721,
+  "shopName": "SilkHaven",
+  "rating": 4.3,
+  "reviewCount": 90,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-8/1729430515554800008",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 9,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Weighted Heated Eye Mask",
+  "price": 26.0,
+  "currency": "USD",
+  "unitsSold": 649,
+  "shopName": "DeepRest Co",
+  "rating": 4.3,
+  "reviewCount": 81,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-9/1729430515554800009",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 10,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Cordless Eye Massager with Heat",
+  "price": 22.0,
+  "currency": "USD",
+  "unitsSold": 584,
+  "shopName": "RelaxPeak",
+  "rating": 4.3,
+  "reviewCount": 73,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-10/1729430515554800010",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 11,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Washable Heated Eye Cover",
+  "price": 23.0,
+  "currency": "USD",
+  "unitsSold": 526,
+  "shopName": "PureNap",
+  "rating": 4.3,
+  "reviewCount": 65,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-11/1729430515554800011",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 12,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Heated Eye Mask for Puffy Eyes",
+  "price": 24.0,
+  "currency": "USD",
+  "unitsSold": 473,
+  "shopName": "BrightMorning",
+  "rating": 4.3,
+  "reviewCount": 59,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-12/1729430515554800012",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 13,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Travel Heated Eye Mask",
+  "price": 25.0,
+  "currency": "USD",
+  "unitsSold": 426,
+  "shopName": "JetSleep",
+  "rating": 4.3,
+  "reviewCount": 53,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-13/1729430515554800013",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 14,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Moist Heat Eye Mask for Styes",
+  "price": 26.0,
+  "currency": "USD",
+  "unitsSold": 383,
+  "shopName": "OcuSoothe",
+  "rating": 4.3,
+  "reviewCount": 47,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-14/1729430515554800014",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 15,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Kids Size Warm Eye Mask",
+  "price": 22.0,
+  "currency": "USD",
+  "unitsSold": 345,
+  "shopName": "TinyDreams",
+  "rating": 4.3,
+  "reviewCount": 43,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-15/1729430515554800015",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 16,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Contoured Heated Eye Mask",
+  "price": 23.0,
+  "currency": "USD",
+  "unitsSold": 310,
+  "shopName": "NightNest",
+  "rating": 4.3,
+  "reviewCount": 38,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-16/1729430515554800016",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 17,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Graphene Eye Warmer",
+  "price": 24.0,
+  "currency": "USD",
+  "unitsSold": 279,
+  "shopName": "WarmWave",
+  "rating": 4.3,
+  "reviewCount": 34,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-17/1729430515554800017",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 18,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Heated Eye Mask, 4 Temperatures",
+  "price": 25.0,
+  "currency": "USD",
+  "unitsSold": 251,
+  "shopName": "ThermaEase",
+  "rating": 4.3,
+  "reviewCount": 31,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-18/1729430515554800018",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 19,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Gel Bead Heated Eye Mask",
+  "price": 26.0,
+  "currency": "USD",
+  "unitsSold": 226,
+  "shopName": "BeadBliss",
+  "rating": 4.3,
+  "reviewCount": 28,
+  "url": "https://shop.tiktok.com/us/pdp/heated-eye-mask-19/1729430515554800019",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "heated eye mask",
+    "position": 20,
+    "newInSource": false
+   }
+  ]
+ },
+ {
+  "recordType": "summary",
+  "products": 20,
+  "unitsSoldTotal": 17215,
+  "priceMedian": 24.0,
+  "shops": 6,
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "type": "keyword",
+  "value": "heated eye mask",
+  "marketplaceFees": {
+   "marketplace": "tiktok-shop",
+   "typicalFeePercent": 6,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 6,
+     "fixed": null,
+     "note": "Most categories, on what the customer pays plus platform discounts, shipping included, tax excluded; 5% for some jewelry and pre-owned categories."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. Creator (affiliate) commissions, which sellers set and often pay on top, Fulfilled by TikTok and shipping fees are not included.",
+   "sources": [
+    "https://seller-us.tiktok.com/university/essay?knowledge_id=5988482086864682"
+   ],
+   "asOf": "2026-10-23"
+  }
+ }
+]

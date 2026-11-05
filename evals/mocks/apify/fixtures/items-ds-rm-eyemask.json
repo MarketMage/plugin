@@ -1,0 +1,532 @@
+[
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0004",
+  "asin": "B0CEYE0004",
+  "marketplace": "US",
+  "productTitle": "TheraMed Electric Heated Eye Mask USB",
+  "productId": "B0CEYE0004",
+  "average": 3.9,
+  "count": 980,
+  "histogram": {
+   "1": 11,
+   "2": 3,
+   "3": 4,
+   "4": 6,
+   "5": 76
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 11,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-12T00:00:00.000Z",
+  "oldestReviewDate": "2025-12-02T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "stops working",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 4,
+    "share": 0.33,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "cable too short",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 3,
+    "share": 0.25,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "too hot",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.17,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "relaxing",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 5,
+    "share": 0.45,
+    "exampleReviewIds": []
+   }
+  ],
+  "topComplaints": [
+   "stops working",
+   "cable too short",
+   "too hot"
+  ],
+  "topPraise": [
+   "relaxing"
+  ],
+  "changes": [],
+  "firstSeen": true,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0003",
+  "asin": "B0CEYE0003",
+  "marketplace": "US",
+  "productTitle": "Huggaroo Microwavable Eye Mask",
+  "productId": "B0CEYE0003",
+  "average": 4.0,
+  "count": 2911,
+  "histogram": {
+   "1": 10,
+   "2": 3,
+   "3": 4,
+   "4": 6,
+   "5": 77
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 11,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-12T00:00:00.000Z",
+  "oldestReviewDate": "2025-12-02T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "cools down quickly",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 4,
+    "share": 0.36,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "smell",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.18,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "too hot",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.18,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "relaxing",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 5,
+    "share": 0.45,
+    "exampleReviewIds": []
+   }
+  ],
+  "topComplaints": [
+   "cools down quickly",
+   "smell",
+   "too hot"
+  ],
+  "topPraise": [
+   "relaxing"
+  ],
+  "changes": [],
+  "firstSeen": true,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0010",
+  "asin": "B0CEYE0010",
+  "marketplace": "US",
+  "productTitle": "Sleepwell USB Warm Eye Mask",
+  "productId": "B0CEYE0010",
+  "average": 4.0,
+  "count": 95,
+  "histogram": {
+   "1": 10,
+   "2": 4,
+   "3": 5,
+   "4": 6,
+   "5": 75
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 11,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-12T00:00:00.000Z",
+  "oldestReviewDate": "2025-12-02T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "stops working",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 3,
+    "share": 0.3,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "strap too tight",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 3,
+    "share": 0.3,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "cable too short",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.2,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "relaxing",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 5,
+    "share": 0.45,
+    "exampleReviewIds": []
+   }
+  ],
+  "topComplaints": [
+   "stops working",
+   "strap too tight",
+   "cable too short"
+  ],
+  "topPraise": [
+   "relaxing"
+  ],
+  "changes": [],
+  "firstSeen": true,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0001",
+  "asin": "B0CEYE0001",
+  "marketplace": "US",
+  "productTitle": "Renpho Cordless Heated Eye Mask with 4 Heat Levels",
+  "productId": "B0CEYE0001",
+  "average": 4.1,
+  "count": 1840,
+  "histogram": {
+   "1": 9,
+   "2": 3,
+   "3": 4,
+   "4": 6,
+   "5": 78
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 11,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-12T00:00:00.000Z",
+  "oldestReviewDate": "2025-12-02T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "battery life",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 3,
+    "share": 0.27,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "strap too tight",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 3,
+    "share": 0.27,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "stops working",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.18,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "relaxing",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 5,
+    "share": 0.45,
+    "exampleReviewIds": []
+   }
+  ],
+  "topComplaints": [
+   "battery life",
+   "strap too tight",
+   "stops working"
+  ],
+  "topPraise": [
+   "relaxing"
+  ],
+  "changes": [],
+  "firstSeen": true,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0008",
+  "asin": "B0CEYE0008",
+  "marketplace": "US",
+  "productTitle": "Calmora Steam Eye Mask Reusable",
+  "productId": "B0CEYE0008",
+  "average": 4.1,
+  "count": 350,
+  "histogram": {
+   "1": 9,
+   "2": 3,
+   "3": 4,
+   "4": 6,
+   "5": 78
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 11,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-12T00:00:00.000Z",
+  "oldestReviewDate": "2025-12-02T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "cools down quickly",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 3,
+    "share": 0.3,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "strap too tight",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.2,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "smell",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.1,
+    "exampleReviewIds": []
+   },
+   {
+    "theme": "relaxing",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 5,
+    "share": 0.45,
+    "exampleReviewIds": []
+   }
+  ],
+  "topComplaints": [
+   "cools down quickly",
+   "strap too tight",
+   "smell"
+  ],
+  "topPraise": [
+   "relaxing"
+  ],
+  "changes": [],
+  "firstSeen": true,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0004",
+  "asin": "B0CEYE0004",
+  "marketplace": "US",
+  "productTitle": "TheraMed Electric Heated Eye Mask USB",
+  "reviewId": "R040EYEMASK",
+  "rating": 1,
+  "title": "Died after two weeks",
+  "text": "Worked great for 10 days then would not heat at all. Cable is also way too short to use in bed.",
+  "date": "2026-09-20T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0004",
+  "asin": "B0CEYE0004",
+  "marketplace": "US",
+  "productTitle": "TheraMed Electric Heated Eye Mask USB",
+  "reviewId": "R041EYEMASK",
+  "rating": 2,
+  "title": "Gets too hot on high",
+  "text": "Even the low setting is too hot after 10 minutes and there is no auto-off.",
+  "date": "2026-09-21T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0003",
+  "asin": "B0CEYE0003",
+  "marketplace": "US",
+  "productTitle": "Huggaroo Microwavable Eye Mask",
+  "reviewId": "R030EYEMASK",
+  "rating": 1,
+  "title": "Warm for five minutes",
+  "text": "Microwave it and it's cold again before I can relax. Not worth it.",
+  "date": "2026-09-20T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0003",
+  "asin": "B0CEYE0003",
+  "marketplace": "US",
+  "productTitle": "Huggaroo Microwavable Eye Mask",
+  "reviewId": "R031EYEMASK",
+  "rating": 2,
+  "title": "Weird smell",
+  "text": "Has a burnt smell every time I heat it.",
+  "date": "2026-09-21T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0010",
+  "asin": "B0CEYE0010",
+  "marketplace": "US",
+  "productTitle": "Sleepwell USB Warm Eye Mask",
+  "reviewId": "R100EYEMASK",
+  "rating": 1,
+  "title": "Stopped working",
+  "text": "Stopped heating on day 3.",
+  "date": "2026-09-20T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0010",
+  "asin": "B0CEYE0010",
+  "marketplace": "US",
+  "productTitle": "Sleepwell USB Warm Eye Mask",
+  "reviewId": "R101EYEMASK",
+  "rating": 1,
+  "title": "Strap hurts",
+  "text": "Strap is not adjustable and pinches behind my ears.",
+  "date": "2026-09-21T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0001",
+  "asin": "B0CEYE0001",
+  "marketplace": "US",
+  "productTitle": "Renpho Cordless Heated Eye Mask with 4 Heat Levels",
+  "reviewId": "R010EYEMASK",
+  "rating": 1,
+  "title": "Battery doesn't last",
+  "text": "Battery lasts one session, not the 3 they claim.",
+  "date": "2026-09-20T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0001",
+  "asin": "B0CEYE0001",
+  "marketplace": "US",
+  "productTitle": "Renpho Cordless Heated Eye Mask with 4 Heat Levels",
+  "reviewId": "R011EYEMASK",
+  "rating": 2,
+  "title": "Too tight",
+  "text": "Strap is too tight for my head and not adjustable.",
+  "date": "2026-09-21T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0008",
+  "asin": "B0CEYE0008",
+  "marketplace": "US",
+  "productTitle": "Calmora Steam Eye Mask Reusable",
+  "reviewId": "R080EYEMASK",
+  "rating": 1,
+  "title": "Cools in minutes",
+  "text": "Steam lasts maybe five minutes.",
+  "date": "2026-09-20T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0CEYE0008",
+  "asin": "B0CEYE0008",
+  "marketplace": "US",
+  "productTitle": "Calmora Steam Eye Mask Reusable",
+  "reviewId": "R081EYEMASK",
+  "rating": 2,
+  "title": "Tight strap",
+  "text": "Strap rolls and is too tight.",
+  "date": "2026-09-21T00:00:00.000Z",
+  "verified": true,
+  "country": "United States",
+  "isNew": null,
+  "scrapedAt": "2026-10-16T14:05:00.000Z"
+ }
+]

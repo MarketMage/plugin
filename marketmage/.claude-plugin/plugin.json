@@ -1,0 +1,27 @@
+{
+  "name": "marketmage",
+  "version": "0.3.0",
+  "description": "E-commerce product research and competitor monitoring, run on CleanPull's actors in your own Apify account: find and validate products for the market and for you, with supplier costs and a fit check against your budget; profile competitor stores, compare catalogues and prices, read reviews, promotions and ads, audit product pages, and schedule watchlists for prices, stock, MAP, Amazon ranks, reviews, promotions, marketplace searches and ads. Start with /marketmage:start, or just say \"I'm new, help me find something to sell\", \"Is a heated eye mask worth selling for me?\" or \"What is my competitor's store selling?\".",
+  "author": {
+    "name": "MarketMage",
+    "url": "https://marketmage.io"
+  },
+  "homepage": "https://marketmage.io",
+  "repository": "https://github.com/marketmage/plugin",
+  "license": "PolyForm-Shield-1.0.0",
+  "privacyPolicyUrl": "https://marketmage.io/privacy/",
+  "keywords": [
+    "ecommerce",
+    "price monitoring",
+    "amazon",
+    "shopify",
+    "product research",
+    "apify",
+    "map monitoring",
+    "rank tracking",
+    "reviews",
+    "competitor ads",
+    "catalog matching",
+    "supplier prices"
+  ]
+}

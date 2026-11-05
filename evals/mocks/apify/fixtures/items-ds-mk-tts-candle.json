@@ -1,0 +1,135 @@
+[
+ {
+  "recordType": "product",
+  "title": "Soy Candle Gift Set 4 Pack, Scented Aromatherapy",
+  "price": 19.99,
+  "currency": "USD",
+  "unitsSold": 4100,
+  "shopName": "CozyGlowShop",
+  "rating": 4.6,
+  "reviewCount": 205,
+  "url": "https://shop.tiktok.com/us/pdp/candle-1/1729430515554800001",
+  "relevantToKeyword": true,
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "hand poured soy candle",
+    "position": 1,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Wood Wick Candle, Crackling, 8 oz",
+  "price": 15.99,
+  "currency": "USD",
+  "unitsSold": 2300,
+  "shopName": "WickNest",
+  "rating": 4.6,
+  "reviewCount": 115,
+  "url": "https://shop.tiktok.com/us/pdp/candle-2/1729430515554800002",
+  "relevantToKeyword": true,
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "hand poured soy candle",
+    "position": 2,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Hand Poured Soy Candle, Vanilla Bean",
+  "price": 14.99,
+  "currency": "USD",
+  "unitsSold": 1210,
+  "shopName": "WickNest",
+  "rating": 4.6,
+  "reviewCount": 60,
+  "url": "https://shop.tiktok.com/us/pdp/candle-3/1729430515554800003",
+  "relevantToKeyword": true,
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "hand poured soy candle",
+    "position": 3,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Candle Warmer Lamp with Timer",
+  "price": 29.99,
+  "currency": "USD",
+  "unitsSold": 8800,
+  "shopName": "HomeLumen",
+  "rating": 4.6,
+  "reviewCount": 440,
+  "url": "https://shop.tiktok.com/us/pdp/candle-4/1729430515554800004",
+  "relevantToKeyword": false,
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "hand poured soy candle",
+    "position": 4,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "product",
+  "title": "Soy Candle in Tin, 3 Pack Travel",
+  "price": 12.99,
+  "currency": "USD",
+  "unitsSold": 960,
+  "shopName": "CozyGlowShop",
+  "rating": 4.6,
+  "reviewCount": 48,
+  "url": "https://shop.tiktok.com/us/pdp/candle-5/1729430515554800005",
+  "relevantToKeyword": true,
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "hand poured soy candle",
+    "position": 5,
+    "newInSource": true
+   }
+  ]
+ },
+ {
+  "recordType": "summary",
+  "products": 5,
+  "unitsSoldTotal": 17370,
+  "priceMedian": 15.99,
+  "shops": 3,
+  "scrapedAt": "2026-11-04T10:00:00.000Z",
+  "type": "keyword",
+  "value": "hand poured soy candle",
+  "relevantToKeyword": {
+   "products": 4,
+   "unitsSoldTotal": 8570,
+   "relevanceBasis": "Every word of the keyword in the title, or a close match."
+  },
+  "marketplaceFees": {
+   "marketplace": "tiktok-shop",
+   "typicalFeePercent": 6,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 6,
+     "fixed": null,
+     "note": "Most categories."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories.",
+   "sources": [
+    "https://seller-us.tiktok.com/university/essay?knowledge_id=5988482086864682"
+   ],
+   "asOf": "2026-10-23"
+  }
+ }
+]

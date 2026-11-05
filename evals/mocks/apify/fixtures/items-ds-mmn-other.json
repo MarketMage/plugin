@@ -1,0 +1,22 @@
+[
+ {
+  "operation": "updateEntry",
+  "ok": true,
+  "message": "Saved.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook01",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook01"
+  },
+  "counts": {
+   "idea": 1,
+   "variation": 0,
+   "decision": 1,
+   "watch": 0
+  },
+  "sizeBytes": 820
+ }
+]

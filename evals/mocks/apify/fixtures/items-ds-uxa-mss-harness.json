@@ -1,0 +1,91 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "source": "amazon",
+  "marketplace": "US",
+  "keyword": "tactical dog harness",
+  "listings": 48,
+  "priceP25": 23.74,
+  "priceMedian": 32.97,
+  "priceP75": 39.24,
+  "singleNewPrice": {
+   "listings": 48,
+   "currency": "USD",
+   "min": 13,
+   "p10": 17.68,
+   "p25": 23.74,
+   "median": 32.97,
+   "p75": 39.24,
+   "p90": 52.99,
+   "max": 69.99,
+   "excludedMultiPack": 0,
+   "excludedOtherCondition": 0,
+   "excludedUnknownCondition": 0,
+   "basis": "Organic fixed-price listings in the main currency whose condition is new (a marketplace label, or a store that lists new and titles other conditions) and whose title states no multi-pack (packCount null or 1)."
+  },
+  "sponsored": 12,
+  "ads": {
+   "count": 12,
+   "alsoOrganic": 8,
+   "priceMin": 15.99,
+   "priceMedian": 38.83,
+   "priceMax": 69.99,
+   "topSellers": [
+    {
+     "seller": "No",
+     "ads": 2
+    },
+    {
+     "seller": "OneTigris",
+     "ads": 2
+    },
+    {
+     "seller": "Forestpaw",
+     "ads": 2
+    }
+   ]
+  },
+  "top3SellerShare": 0.4324,
+  "sellerHhi": 0.0957,
+  "medianReviews": 2932,
+  "under100Reviews": 4,
+  "salesFloor": {
+   "unitsPerMonthMin": 3000,
+   "revenuePerMonthMin": 90287,
+   "listingsCounted": 10,
+   "listingsWithBadge": 8,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times each one's price. A floor, not an estimate of actual sales: one without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "typicalFeePercent": 15
+  },
+  "topSellers": [
+   {
+    "seller": "OneTigris",
+    "listings": 7,
+    "share": 0.1892
+   },
+   {
+    "seller": "No",
+    "listings": 5,
+    "share": 0.1351
+   },
+   {
+    "seller": "rabbitgoo",
+    "listings": 4,
+    "share": 0.1081
+   },
+   {
+    "seller": "AUROTH",
+    "listings": 4,
+    "share": 0.1081
+   },
+   {
+    "seller": "Service",
+    "listings": 3,
+    "share": 0.0811
+   }
+  ]
+ }
+]

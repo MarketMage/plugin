@@ -1,0 +1,64 @@
+[
+ {
+  "recordType": "product",
+  "input": "194253397168",
+  "barcode": "194253397168",
+  "gtin14": "00194253397168",
+  "title": "Apple - AirPods Pro (2nd generation) with MagSafe Case (USB-C) - White",
+  "brand": "Apple",
+  "model": "MQD83AM/A",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900964_sd.jpg",
+  "offers": [
+   {
+    "source": "amazon",
+    "store": "Amazon",
+    "seller": null,
+    "price": 245.19,
+    "wasPrice": null,
+    "currency": "USD",
+    "condition": "new",
+    "conditionBasis": "listing",
+    "inStock": true,
+    "offerType": "listing",
+    "offerCount": 3,
+    "title": "Apple AirPods Pro (2nd Gen) Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency, Personalized Spatial Audio MagSafe Charging Case (Lightning) Bluetooth Headphones for iPhone",
+    "url": "https://www.amazon.com/dp/B0BDHWDR12",
+    "urlSource": "store",
+    "isInternationalVersion": false,
+    "storeId": "B0BDHWDR12",
+    "rating": 4.7,
+    "reviews": 57977,
+    "matchType": "barcode",
+    "confidence": 1
+   }
+  ],
+  "offerCount": 1,
+  "storeCount": 1,
+  "lowestPrice": 245.19,
+  "lowestPriceStore": "Amazon",
+  "lowestPriceCondition": "new",
+  "lowestNewPrice": 245.19,
+  "lowestNewPriceStore": "Amazon",
+  "conditionCounts": {
+   "new": 1,
+   "renewed": 0,
+   "used": 0,
+   "open-box": 0,
+   "unknown": 0
+  },
+  "highestPrice": 245.19,
+  "priceSpreadPercent": 0,
+  "mapPrice": null,
+  "mapViolations": [],
+  "mapUnconfirmed": [],
+  "mapOtherCondition": [],
+  "myPrice": null,
+  "cheaperThanMe": null,
+  "sources": {
+   "amazon": "found",
+   "bestbuy": "found",
+   "google": "found"
+  },
+  "scrapedAt": "2026-10-27T17:55:37.690Z"
+ }
+]

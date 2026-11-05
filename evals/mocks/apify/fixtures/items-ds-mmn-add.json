@@ -1,0 +1,29 @@
+[
+ {
+  "operation": "addEntry",
+  "ok": true,
+  "message": "Added idea i-k3m9q2.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook01",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook01"
+  },
+  "counts": {
+   "idea": 1,
+   "variation": 0,
+   "decision": 0,
+   "watch": 0
+  },
+  "entry": {
+   "id": "i-k3m9q2",
+   "kind": "idea",
+   "idea": "Heated eye mask",
+   "verdict": "go",
+   "date": "2026-10-23"
+  },
+  "sizeBytes": 690
+ }
+]

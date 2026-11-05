@@ -1,0 +1,83 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "nachtlicht kinder",
+  "geo": "DE",
+  "summary": {
+   "average": 63,
+   "peak": 100,
+   "peakDate": "2025-12-21T00:00:00.000Z",
+   "latest": 63,
+   "changePercent": 16.0,
+   "direction": "rising",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "nachtlicht kinder akku",
+    "value": 150,
+    "formattedValue": "+150%",
+    "isBreakout": false
+   },
+   {
+    "query": "nachtlicht mit bewegungsmelder",
+    "value": 110,
+    "formattedValue": "+110%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   63
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "led nachtlicht",
+  "geo": "DE",
+  "summary": {
+   "average": 71,
+   "peak": 100,
+   "peakDate": "2025-12-21T00:00:00.000Z",
+   "latest": 71,
+   "changePercent": 4.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "led nachtlicht steckdose",
+    "value": 80,
+    "formattedValue": "+80%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   71
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "nachtlampe kinder",
+  "geo": "DE",
+  "summary": {
+   "average": 48,
+   "peak": 100,
+   "peakDate": "2025-12-21T00:00:00.000Z",
+   "latest": 48,
+   "changePercent": -6.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "nachtlampe baby",
+    "value": 70,
+    "formattedValue": "+70%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   48
+  ]
+ }
+]

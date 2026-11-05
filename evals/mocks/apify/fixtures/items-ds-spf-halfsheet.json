@@ -1,0 +1,138 @@
+[
+ {
+  "recordType": "summary",
+  "offers": 4,
+  "offersFound": 4,
+  "unitPriceMin": 0.5,
+  "unitPriceMedian": 0.895,
+  "unitPriceMax": 8.22,
+  "moqMin": 1,
+  "moqMedian": 75,
+  "notes": [
+   "Unit prices are each offer's price at the quantity (its minimum order unless you set one), or its lowest shown price where the source gives only a range.",
+   "No landed cost: none of these offers shows a shipping cost to the destination. AliExpress and Alibaba search results carry no shipping cost or price breaks (DHgate offer pages you give show shipping to the US)."
+  ],
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 1,
+    "filteredOut": 9
+   },
+   "alibaba": {
+    "status": "ok",
+    "offers": 3,
+    "filteredOut": 7
+   }
+  },
+  "product": "half sheet silicone baking mat",
+  "currency": "USD"
+ },
+ {
+  "recordType": "offer",
+  "unitPriceMin": 8.22,
+  "unitPriceMax": 8.22,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost)."
+  ],
+  "source": "aliexpress",
+  "title": "Perforated Baking Mats,2PCS Pink Silicone Mat for Half Sheet,Non-Stick Reusable Oven Liners for Making Bread/Pastry GSY",
+  "url": "https://www.aliexpress.us/item/3256808390784344.html",
+  "moq": 1,
+  "unit": "piece",
+  "unitPriceAtQuantity": 8.22,
+  "priceTiers": [],
+  "shippingCost": null,
+  "supplierName": null,
+  "supplierYears": null,
+  "supplierLevel": null,
+  "supplierVerified": null,
+  "supplierRating": null,
+  "ordersCount": null,
+  "specs": null,
+  "variantOptions": null,
+  "offerPageRead": false,
+  "product": "half sheet silicone baking mat",
+  "currency": "USD"
+ },
+ {
+  "recordType": "offer",
+  "unitPriceMin": 1.2,
+  "unitPriceMax": 1.2,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost). Give the offer's page in \"Alibaba offer pages\" for its price breaks."
+  ],
+  "source": "alibaba",
+  "title": "Suoyin Food Grade BPA Free Silicone Half Sheet 0.7mm Thick Heat Resistant Dishwasher Safe Macaron Baking Mat for Oven Use",
+  "url": "https://www.alibaba.com/product-detail/Suoyin-Food-Grade-BPA-Free-Silicone_1601620768085.html",
+  "moq": 50,
+  "unit": "pieces",
+  "unitPriceAtQuantity": 1.2,
+  "priceTiers": [],
+  "shippingCost": null,
+  "supplierName": "Xiamen Suoyin Hotel Supplies Co., Ltd.",
+  "supplierYears": 2,
+  "supplierLevel": null,
+  "supplierVerified": null,
+  "supplierRating": 5,
+  "ordersCount": null,
+  "specs": null,
+  "variantOptions": null,
+  "offerPageRead": false,
+  "product": "half sheet silicone baking mat",
+  "currency": "USD"
+ },
+ {
+  "recordType": "offer",
+  "unitPriceMin": 0.59,
+  "unitPriceMax": 1.29,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost). Give the offer's page in \"Alibaba offer pages\" for its price breaks."
+  ],
+  "source": "alibaba",
+  "title": "Half Sheet Premium Macaron Mat Non-stick Perforated Silicone Baking Mat for Bread Steaming Mesh Mat",
+  "url": "https://www.alibaba.com/product-detail/Half-Sheet-Premium-Macaron-Mat-Non_1600514029626.html",
+  "moq": 100,
+  "unit": "pieces",
+  "unitPriceAtQuantity": null,
+  "priceTiers": [],
+  "shippingCost": null,
+  "supplierName": "Fengyang Jiasong New Materials Technology Co., Ltd.",
+  "supplierYears": 12,
+  "supplierLevel": null,
+  "supplierVerified": null,
+  "supplierRating": 5,
+  "ordersCount": null,
+  "specs": null,
+  "variantOptions": null,
+  "offerPageRead": false,
+  "product": "half sheet silicone baking mat",
+  "currency": "USD"
+ },
+ {
+  "recordType": "offer",
+  "unitPriceMin": 0.5,
+  "unitPriceMax": 1,
+  "notes": [
+   "From the search page, through the marketplace data service: no price breaks, no shipping cost (so no landed cost). Give the offer's page in \"Alibaba offer pages\" for its price breaks."
+  ],
+  "source": "alibaba",
+  "title": "Silicone Baking Kit Macaroon Baking Mat Food Grade BPA Free Heat Resistant Nonstick Half Sheet",
+  "url": "https://www.alibaba.com/product-detail/Silicone-Baking-Kit-Macaroon-Baking-Mat_1601392164546.html",
+  "moq": 100,
+  "unit": "units",
+  "unitPriceAtQuantity": null,
+  "priceTiers": [],
+  "shippingCost": null,
+  "supplierName": "Yangjiang Jiangcheng Cnlinku Trading Co., Ltd.",
+  "supplierYears": 8,
+  "supplierLevel": null,
+  "supplierVerified": null,
+  "supplierRating": null,
+  "ordersCount": null,
+  "specs": null,
+  "variantOptions": null,
+  "offerPageRead": false,
+  "product": "half sheet silicone baking mat",
+  "currency": "USD"
+ }
+]

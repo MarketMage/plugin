@@ -1,0 +1,15 @@
+{
+  "name": "marketmage",
+  "description": "MarketMage: e-commerce research and monitoring inside Claude, on live marketplace data.",
+  "owner": {
+    "name": "MarketMage",
+    "url": "https://marketmage.io"
+  },
+  "plugins": [
+    {
+      "name": "marketmage",
+      "source": "./marketmage",
+      "description": "E-commerce product research and competitor monitoring (prices, stock, MAP, Amazon ranks, reviews, promotions, marketplaces, ads, catalogue gaps, listing audits) on Apify, with scheduled digests. Start with /marketmage:start."
+    }
+  ]
+}
