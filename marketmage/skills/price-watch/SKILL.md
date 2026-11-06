@@ -88,4 +88,4 @@ The `watchlists` skill reads the latest digest. When you explain one:
 - lead with the biggest price moves and stock-outs;
 - say what each means: a competitor undercutting, a rival out of stock (a chance to raise price or advertise), the Buy Box lost.
 - **One line per new product:** when the same store is in `shopifyStores` and `promotionStores` (one digest, or a price watch and a promo watch), a launch shows twice: a "New product" from the store watcher and a launch from the promotions watcher. Report it once, with the launch (its date) and the price from the store watcher, and never count it twice in a total. A `relaunch` is an old product re-published, not a new one.
-- **A history chart, on request** ("show me 30 days of price and BSR on B0X", "chart it"): see the `watchlists` skill, "A history chart".
+- **A history chart, on request** ("show me 30 days of price and BSR on B0X", "chart it"): see the `watchlists` skill, "A history chart" (an inline visual where one can be drawn; an artifact when the user wants to keep it).
