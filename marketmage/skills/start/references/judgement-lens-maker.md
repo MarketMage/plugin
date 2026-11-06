@@ -59,7 +59,7 @@ With **6 or more** matching rows, the band is scored on the usual Price band thr
 
 ### Fees outside the US
 
-Etsy's `marketplaceFees` are US sellers' rates in US dollars, and Etsy is read on the US site, in US dollars. For a seller whose bank account is in Canada, the payout uses Etsy's Canadian rates from `judgement-rates.md` ("Etsy fees for sellers in Canada"), and the answer says the listing prices read are US-dollar prices: their own CAD price and costs are compared only in CAD, with their rate for any conversion (`judgement.md`, "Mixed currencies"). Other countries: say the fees are US sellers' rates, and that Etsy's fee page for their country gives theirs.
+Etsy's `marketplaceFees` are US sellers' rates in US dollars, and Etsy is read on the US site, in US dollars. For a seller whose bank account is in Canada, the payout uses Etsy's Canadian rates from `judgement-rates.md` ("Etsy fees for sellers in Canada"), and the answer says the listing prices read are US-dollar prices: their own CAD price and costs are compared only in CAD, with their rate for any conversion (`judgement-abroad.md`, "Mixed currencies"). Other countries: say the fees are US sellers' rates, and that Etsy's fee page for their country gives theirs.
 
 ### The fairness line
 

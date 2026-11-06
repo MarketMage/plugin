@@ -2,6 +2,8 @@
 
 Part of the cold-traffic dropship lens (`judgement-lens-cold-traffic.md`). Read when the Where you'd compete read is made or offered.
 
+**Where you'd compete** (read only through the cold-traffic dropship lens): a row of facts in the table, the same for everyone, with its counts (Meta advertisers active, proven, new; TikTok Shop shops and the top 3 shops' share of units) and no market reading. It is left out of the market verdict: whether a crowd of advertisers is a wall or proof that ads pay depends on the budget, so only the lens reads it ("Where you'd compete: saturation on paid social and TikTok Shop").
+
 **Where you'd compete: saturation on paid social and TikTok Shop.** Amazon page 1 is not where this seller competes: the ad auction for the same buyers on Meta and the TikTok Shop feed are. The counts are the same for everyone (the facts table's "Where you'd compete" row); only their reading changes with the profile. A product can pay for a seller with budget and experience and still be closed to a newcomer testing on a small budget, and a crowd is proof that ads pay when the budget can outlast the tests.
 
 The facts (from the ad library keyword read, one row per advertiser, active ads only, the market's country, one page of 30 ads; a read that filled the page is "at least"):

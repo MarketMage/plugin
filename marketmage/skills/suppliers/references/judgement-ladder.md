@@ -15,8 +15,8 @@ For any verdict short of **Strong**, give 2 or 3 related versions that stay in t
 For each version:
 - **Name the fact that makes it promising,** from rows already read (a number, never a guess). A rung with no supporting fact in the data is skipped, not invented. If no rung has a fact yet, name the cheapest read that would find one (for example the Trends rising searches, about USD 0.0015 a term) and offer it.
 - **Say what stays the same** ("same buyers, same factory").
-- **Offer the best one for a check now, with its cost:** for example `validate` on it, reusing this conversation's rows where they apply (`running.md`, "Runs in this conversation"), or a `market-scan` summary (about USD 0.017). This offer is the answer's "Next step".
-- **After Not this version, the free stop:** the answer's last line may instead be "Next step: nothing to buy; keep the USD <X>.", with this offer kept as a follow-up (`judgement-tone.md`, "A free "stop here" is a next move too").
+- **Offer the best one for a check now, with its cost:** for example `validate` on it, reusing this conversation's rows where they apply (`running-runs.md`, "Runs in this conversation"), or a `market-scan` summary (about USD 0.017). This offer is the answer's "Next step".
+- **After Not this version, the free stop:** the answer's last line may instead be "Next step: nothing to buy; keep the USD <X>.", with this offer kept as a follow-up (`judgement-answer.md`, "A free "stop here" is a next move too").
 
 A **Promising** verdict also gets the ladder, shorter (1 or 2 versions), after "the one fix". A **Strong** verdict skips the ladder unless the user asks for options; it gets its watch instead.
 

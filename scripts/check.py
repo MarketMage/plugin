@@ -6,7 +6,9 @@
   arguments, so a price like "$0.005" would be mangled; write "USD 0.005");
 - every skill has its references (every non-judgement file in scripts/shared/ and `costs.md`, and the
   `judgement*.md` files skills.json gives it, each of which its SKILL.md must point to);
-- the split references still hold every line of the old ones (scripts/fixtures/*-before-split.md);
+- the split references still hold every line of the old ones (scripts/fixtures/*-before-split.md), and a slimmed
+  SKILL.md every line of its old self, in it or its own references (scripts/fixtures/skill-*-before-split.md);
+- no reference file is over 22 KiB, so claude.ai's file reader takes each in one read;
 - the connector is https and its tools= list is exactly the allow-list below (no per-actor tools: they take
   no spending cap, so every run goes through call-actor);
 - each skill's actors in skills.json are exactly the `cleanpull/<name>` actors its SKILL.md names;
@@ -63,9 +65,32 @@ def norm(line: str) -> str:
 
 shared_lines = {norm(line) for f in SHARED.glob('*.md') for line in f.read_text().splitlines()}
 for fixture in sorted((ROOT / 'scripts' / 'fixtures').glob('*-before-split.md')):
+    if fixture.name.startswith('skill-'):
+        continue  # a SKILL.md's own fixture, checked below against that skill
     for n, line in enumerate(fixture.read_text().splitlines(), 1):
         if line.strip() and norm(line) not in shared_lines:
             fail(f'{fixture.name}:{n}: this line of the old reference is in no file in scripts/shared/: {line.strip()[:80]}')
+
+# A skill's SKILL.md that was slimmed keeps every line too: each non-blank line of
+# scripts/fixtures/skill-<name>-before-split.md is a line of that skill's SKILL.md or of one of its own
+# references (a section moved to a reference read on demand). Same rule as above for file names.
+for fixture in sorted((ROOT / 'scripts' / 'fixtures').glob('skill-*-before-split.md')):
+    name = fixture.name[len('skill-'):-len('-before-split.md')]
+    d = PLUGIN / 'skills' / name
+    have = {norm(line) for f in [d / 'SKILL.md'] + sorted((d / 'references').glob('*.md')) if f.exists() for line in f.read_text().splitlines()}
+    for n, line in enumerate(fixture.read_text().splitlines(), 1):
+        if line.strip() and norm(line) not in have:
+            fail(f'{fixture.name}:{n}: this line of the old SKILL.md is in neither {SHIP}/skills/{name}/SKILL.md nor its references: {line.strip()[:80]}')
+
+# One read each: claude.ai's file reader cuts a long file (a 30 KB reference came back truncated and took a
+# second read), so every reference file a skill reads (the shared ones and a skill's own) stays at or under
+# this size. Split a file that grows past it into a core and parts read at their own step, as running.md
+# and judgement.md are, with a before-split fixture.
+MAX_REFERENCE_BYTES = 22 * 1024
+for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/references/*.md')):
+    size = len(f.read_bytes())
+    if size > MAX_REFERENCE_BYTES:
+        fail(f'{f.relative_to(ROOT)}: {size} bytes; a reference stays at or under {MAX_REFERENCE_BYTES} so claude.ai reads it in one go: split it')
 
 for cmd in sorted((PLUGIN / 'commands').glob('*.md')):
     m = re.match(r'^---\n(.*?)\n---\n', cmd.read_text(), re.S)
@@ -180,12 +205,16 @@ if tools:
     for actor_tool in sorted(t for t in tools if '/' in t):
         fail(f'{SHIP}/.mcp.json: {actor_tool} is a per-actor tool, which carries no spending cap; runs go through call-actor')
 
+known_shared = {f.name for f in SHARED.glob('*.md')}
 for name, spec in skills.items():
     md = PLUGIN / 'skills' / name / 'SKILL.md'
     if md.exists():
-        named = set(re.findall(r'cleanpull/([a-z-]+)', md.read_text()))
+        # The skill's own text: its SKILL.md and the references only it has (a section moved out of
+        # SKILL.md to be read on demand), not the shared references or costs.md, which name every actor.
+        own = [md] + [f for f in sorted((md.parent / 'references').glob('*.md')) if f.name not in known_shared and f.name != 'costs.md']
+        named = set(re.findall(r'cleanpull/([a-z-]+)', ''.join(f.read_text() for f in own)))
         if named != set(spec['runs']):
-            fail(f'{SHIP}/skills/{name}: skills.json "runs" lists {sorted(spec["runs"])}, SKILL.md names {sorted(named)}')
+            fail(f'{SHIP}/skills/{name}: skills.json "runs" lists {sorted(spec["runs"])}, SKILL.md and its own references name {sorted(named)}')
         if set(spec['pricesOnly']) & named:
             fail(f'{SHIP}/skills/{name}: an actor is in both "runs" and "pricesOnly"')
 

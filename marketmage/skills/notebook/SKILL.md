@@ -7,6 +7,8 @@ description: The user's MarketMage notebook, kept opt-in in their own Apify acco
 
 Memory across chats, only with the user's yes. Read `references/notebook.md` and `references/notebook-use.md` first and **follow them exactly**: when to ask, when to read, what to write, and what never goes in. Also `references/running.md` (tools, caps) and `references/notebook-use.md`, "What to write" (the profile bands).
 
+`references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+
 Every call is `cleanpull/marketmage-notebook` through `call-actor`, one operation at a time, with `callOptions.maxTotalChargeUsd: 0.01`. Use the input shapes in `references/notebook-use.md` exactly: entry fields go inside an `entry` object (`{"operation": "addEntry", "entry": {"kind": "idea", "idea": "…", "verdict": "maybe", …}}`), profile fields inside a `profile` object, and `startNotebook`, `entryId` and `confirmDeleteAll` at the top level.
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.

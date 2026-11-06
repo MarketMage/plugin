@@ -7,6 +7,7 @@ description: Set up a scheduled watchlist that reports price, sale, stock, Buy B
 
 Create a watchlist: one Watch Digest task and a schedule that runs it. Read these first:
 - `references/running.md`: costs, caps, tools, and the secrets rule;
+- `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
 - `references/watchlists.md`: the steps and naming;
 - `references/costs.md`: the prices.
 
