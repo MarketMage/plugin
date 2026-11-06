@@ -76,6 +76,14 @@ for cmd in sorted((PLUGIN / 'commands').glob('*.md')):
         continue
     if not isinstance(front, dict) or not isinstance(front.get('description'), str):
         fail(f'{SHIP}/commands/{cmd.name}: frontmatter has no description string')
+    elif len(front['description']) > 500:
+        # claude.ai's plugin upload refuses a command description over 500 characters.
+        fail(f'{SHIP}/commands/{cmd.name}: description is {len(front["description"])} characters; claude.ai allows 500')
+
+manifest = json.loads((PLUGIN / '.claude-plugin' / 'plugin.json').read_text())
+if len(manifest.get('description', '')) > 500:
+    # claude.ai's plugin upload refuses a plugin description over 500 characters.
+    fail(f'{SHIP}/.claude-plugin/plugin.json: description is {len(manifest["description"])} characters; claude.ai allows 500')
 
 for name in skills:
     d = PLUGIN / 'skills' / name

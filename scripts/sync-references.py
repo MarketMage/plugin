@@ -186,20 +186,6 @@ def table(name: str, a: dict, as_of: datetime.datetime) -> str:
     return '\n'.join(lines)
 
 
-def start_command() -> str:
-    text = (PLUGIN / 'skills' / 'start' / 'SKILL.md').read_text()
-    front, body = text.split('\n---\n', 1)
-    body = body.replace('`references/', '`${CLAUDE_PLUGIN_ROOT}/skills/start/references/')
-    # The command shares the skill's name (/marketmage:start), and Claude sees the command's
-    # description, not the skill's: give it the skill's own, so "what is this?", "hi" or
-    # "is this a scam?" reach it.
-    import yaml  # PyYAML (pip install pyyaml)
-    desc = yaml.safe_load(front.removeprefix('---\n'))['description']
-    return ('---\ndescription: ' + json.dumps(desc, ensure_ascii=False) + '\n---\n\n'
-            '<!-- Generated from skills/start/SKILL.md by scripts/sync-references.py: edit the skill, not this file. -->\n'
-            + body)
-
-
 def main() -> None:
     check = '--check' in sys.argv
     stale: list[str] = []
@@ -248,16 +234,9 @@ def main() -> None:
         else:
             (refs / 'costs.md').write_text(render(now))
             print(skill, ', '.join(actors))
-    # /marketmage:start: a plugin command takes the name before the skill of the same name, so the
-    # command carries the start skill's own text (references pointed at the skill's folder).
-    command = start_command()
-    target = PLUGIN / 'commands' / 'start.md'
-    if check:
-        if not target.exists() or target.read_text() != command:
-            stale.append(f'{PLUGIN.name}/commands/start.md')
-    else:
-        target.parent.mkdir(exist_ok=True)
-        target.write_text(command)
+    # /marketmage:start is the start skill itself (a skill answers to /<plugin>:<skill>). There is no
+    # command of that name: a command would shadow the skill, and claude.ai refuses a command
+    # description over 500 characters, too short for the start skill's triggers.
     if check and json.dumps(pending, sort_keys=True) != before:
         stale.append(PENDING.name)
     elif not check:
