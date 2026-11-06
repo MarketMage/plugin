@@ -16,7 +16,7 @@ A returning user wants to know what happened and what to do about it. Read every
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
-**Reading a watch's record** (`RUN_SUMMARY`, `DIGEST.md`): take `defaultKeyValueStoreId` from the task's last run (`apify-api-read` on `/v2/actor-tasks/<taskId>/runs/last`), or from that run in its run list, then `get-key-value-store-record` with `keyValueStoreId` set to it and `recordKey` set to the key; never without `keyValueStoreId` (`references/watchlists.md`, "Reading, pausing and changing").
+**Reading a watch's record** (`RUN_SUMMARY`, `DIGEST.md`): take `defaultKeyValueStoreId` from the task's last run (the first item of `apify-api-read` on `/v2/actor-tasks/<taskId>/runs` with `{"limit": 1, "desc": true}`; never `/runs/last`, which fails for a watch that hasn't run yet), or from that run in its run list, then `get-key-value-store-record` with `keyValueStoreId` set to it and `recordKey` set to the key; never without `keyValueStoreId` (`references/watchlists.md`, "Reading, pausing and changing"). A run that didn't succeed may have no record: read it only as `references/running.md`, "Running" ("Only a record that is there") says.
 
 ## 1. The cost, before reading
 

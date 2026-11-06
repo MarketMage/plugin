@@ -14,4 +14,6 @@ You are the Apify API (read-only GET). Answer as JSON with a `data` object, usin
 - `/v2/actor-tasks/tskCOMP/runs` (newest first): six SUCCEEDED runs `run-comp-<mmdd>`, started 12:30:00Z on the same dates, finished 12:33:00Z, `defaultKeyValueStoreId` `kv-comp-<mmdd>`, `usageTotalUsd` 0.0018.
 - `/v2/actor-tasks/tskEYE/runs` (newest first): six SUCCEEDED runs `run-eye-<mmdd>`, started 13:00:00Z on the same dates, finished 13:03:00Z, `defaultKeyValueStoreId` `kv-eye-<mmdd>`, `usageTotalUsd` 0.0017.
 - `/v2/actor-tasks/<id>/runs/last`: the newest run in that task's list.
+- `/v2/key-value-stores` (any query, such as `unnamed: false`): the account's named stores, with no notebook among them: `{"total": 1, "count": 1, "offset": 0, "limit": 1000, "desc": false, "items": [{"id": "kvsEXPORTS1", "name": "shop-exports", "createdAt": "2026-08-02T10:12:00.000Z", "modifiedAt": "2026-10-30T08:00:00.000Z"}]}`.
+- `/v2/key-value-stores/<id>/keys` for any id starting `kv-`: `{"items": [{"key": "RUN_SUMMARY", "size": 900}], "count": 1, "limit": 1000, "isTruncated": false}`, with `{"key": "DIGEST.md", "size": 1400}` added for an id starting `kv-watch-digest` or `kv-wd-`.
 - Anything for `tskOTHER`, and any other path: `{"error": {"type": "record-not-found"}}`.
