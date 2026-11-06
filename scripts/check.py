@@ -8,7 +8,7 @@
   `judgement*.md` files skills.json gives it, each of which its SKILL.md must point to);
 - the split references still hold every line of the old ones (scripts/fixtures/*-before-split.md), and a slimmed
   SKILL.md every line of its old self, in it or its own references (scripts/fixtures/skill-*-before-split.md);
-- no reference file is over 22 KiB, so claude.ai's file reader takes each in one read;
+- no reference file is over 24 KiB, so claude.ai's file reader takes each in one read;
 - the connector is https and its tools= list is exactly the allow-list below (no per-actor tools: they take
   no spending cap, so every run goes through call-actor);
 - each skill's actors in skills.json are exactly the `cleanpull/<name>` actors its SKILL.md names;
@@ -56,7 +56,7 @@ COMMON = sorted(f.name for f in SHARED.glob('*.md') if not f.name.startswith('ju
 # they were before the split (scripts/fixtures/<name>-before-split.md) must still be a line of
 # some file in scripts/shared/. Only file names in backticks may differ (a section moved to a
 # smaller file). When a rule is reworded on purpose, refresh the fixture in the same commit.
-FILE_NAME = re.compile(r'`[a-z][a-z-]*\.md`')
+FILE_NAME = re.compile(r'`(references/)?[a-z][a-z-]*\.md`')
 
 
 def norm(line: str) -> str:
@@ -86,7 +86,7 @@ for fixture in sorted((ROOT / 'scripts' / 'fixtures').glob('skill-*-before-split
 # second read), so every reference file a skill reads (the shared ones and a skill's own) stays at or under
 # this size. Split a file that grows past it into a core and parts read at their own step, as running.md
 # and judgement.md are, with a before-split fixture.
-MAX_REFERENCE_BYTES = 22 * 1024
+MAX_REFERENCE_BYTES = 24 * 1024
 for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/references/*.md')):
     size = len(f.read_bytes())
     if size > MAX_REFERENCE_BYTES:

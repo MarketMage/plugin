@@ -1,6 +1,6 @@
 # Running: when the user asks
 
-The part of `running.md` read when one of these comes up: who runs this and what the connector can reach, a session allowance the user offers, Apify's plan names, "show me the input", checking a watch's cap in the Console, a secret or a delivery channel, and The rest of the rules (and the few things MarketMage won't do) are in `running.md` and its other parts.
+The part of `running.md` read when one of these comes up: who runs this and what the connector can reach, a session allowance the user offers, Apify's plan names, "show me the input", checking a watch's cap in the Console, a secret or a delivery channel. The rest of the rules (and the few things MarketMage won't do) are in `running.md` and its other parts.
 
 ## Who runs this, when the user asks
 
