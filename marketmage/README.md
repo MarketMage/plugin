@@ -7,7 +7,7 @@ Product research and competitor monitoring for e-commerce sellers, inside Claude
 - "Is a heated eye mask worth selling for me?"
 - "What is allbirds.com selling right now?"
 
-**Which Claude plan:** plugins are available on Claude's paid plans: Pro, Max, Ultra, Team, Enterprise.
+**Which Claude plan:** any, Free included. The Monday scheduled briefing uses Claude's scheduled tasks, which come with the paid plans (Pro, Max, Ultra, Team, Enterprise).
 
 New to Apify? The first session walks you through connecting it, and a free Apify account works (USD 5 of credit a month). Screenshots: [marketmage.io/start](https://marketmage.io/start/).
 
@@ -171,7 +171,7 @@ Honest limits, so the answers are read right:
 - **Claude Code**, in a session: `/plugin marketplace add marketmage/plugin`, then `/plugin install marketmage@marketmage`. From a shell, in one step: `claude plugin install marketmage --marketplace marketmage/plugin`.
 - **From a clone:** `claude --plugin-dir ./marketmage` (from the repository root) loads it for one session.
 - Installing from GitHub needs the repository to be public (it is public from launch), or you to have access to it.
-- **Your Claude plan:** plugins are available on Claude's paid plans: Pro, Max, Ultra, Team, Enterprise.
+- **Your Claude plan:** any, Free included; the scheduled Monday briefing needs a paid plan (Pro, Max, Ultra, Team, Enterprise).
 - **Then:** connect Apify when prompted.
 
 ## Support
