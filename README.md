@@ -1,6 +1,6 @@
 # MarketMage plugin repository
 
-The plugin users install is the [`marketmage/`](marketmage/) folder; its [README](marketmage/README.md) is the plugin's documentation and directory listing. Everything else here (evals, scripts, CI) is for development and never ships. Plugins are available on Claude's paid plans: Pro, Max, Ultra, Team, Enterprise.
+The plugin users install is the [`marketmage/`](marketmage/) folder; its [README](marketmage/README.md) is the plugin's documentation and directory listing. Everything else here (evals, scripts, CI) is for development and never ships. It works on every Claude plan, Free included; the Monday scheduled briefing uses Claude's scheduled tasks, on paid plans.
 
 | Path | What it holds |
 | --- | --- |
