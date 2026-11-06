@@ -5,7 +5,7 @@ Estimate with the Bronze column: the paid-plan price (Silver and Gold pay less),
 Where the Free column differs, free-plan users pay that price: quote it too, in the same line ("about USD 0.09; USD 0.17 on Apify's free plan"), so they never pay more than you said either.
 Every run also has a start event of $0.00005 per GB of memory.
 
-### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Offers, Buy Box, BSR & Price Monitor
+### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Buy Box, Offers & BSR
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
@@ -47,7 +47,7 @@ Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 | `provider-record` | Provider record | $3.00 | $3.00 | $2.70 | $2.40 |
 | `provider-search` | Provider search | $20.00 | $20.00 | $20.00 | $20.00 |
 
-### `cleanpull/reviews-monitor`: Reviews Monitor: Shopify Review Apps & Amazon
+### `cleanpull/reviews-monitor`: Reviews Monitor: Shopify, Amazon & Trustpilot
 
 Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 

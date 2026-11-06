@@ -5,7 +5,7 @@ Estimate with the Bronze column: the paid-plan price (Silver and Gold pay less),
 Where the Free column differs, free-plan users pay that price: quote it too, in the same line ("about USD 0.09; USD 0.17 on Apify's free plan"), so they never pay more than you said either.
 Every run also has a start event of $0.00005 per GB of memory.
 
-### `cleanpull/shopify-store-scraper`: Shopify Store Scraper: Products, Prices & Stock
+### `cleanpull/shopify-store-scraper`: Shopify Scraper: Products, Stock & Sales Estimates
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
@@ -26,7 +26,7 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
 | Event | What it is | Free | Bronze | Silver | Gold+ |
 | --- | --- | --- | --- | --- | --- |
-| `domain-result` (main) | Domain result | $3.00 | $3.00 | $2.70 | $2.40 |
+| `domain-result` (main) | Domain result | $3.00 | $2.00 | $1.80 | $1.60 |
 | `domain-checked` | Domain checked | $0.50 | $0.50 | $0.45 | $0.40 |
 | `tech-change` | Technology change | $5.00 | $5.00 | $4.50 | $4.00 |
 | `extra-request` | Extra page or script | $0.30 | $0.30 | $0.27 | $0.24 |
@@ -35,7 +35,7 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `subdomain-discovery` | Subdomain discovery | $1.00 | $1.00 | $0.90 | $0.80 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
 
-### `cleanpull/any-store-product-monitor`: Any Store Product Monitor: Price & Stock Tracker
+### `cleanpull/any-store-product-monitor`: Price Tracker & Stock Monitor for Any Online Store
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
@@ -50,7 +50,7 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
 **From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $30.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
 
-### `cleanpull/promotions-monitor`: Promotions & Launch Monitor: Sales, Codes & New Products
+### `cleanpull/promotions-monitor`: Competitor Promotions & New Products Monitor
 
 Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 

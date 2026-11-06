@@ -5,7 +5,7 @@ Estimate with the Bronze column: the paid-plan price (Silver and Gold pay less),
 Where the Free column differs, free-plan users pay that price: quote it too, in the same line ("about USD 0.09; USD 0.17 on Apify's free plan"), so they never pay more than you said either.
 Every run also has a start event of $0.00005 per GB of memory.
 
-### `cleanpull/ad-library-monitor`: Ad Library Monitor: Competitor Ads on Google, Meta & TikTok
+### `cleanpull/ad-library-monitor`: Ad Library Monitor: Facebook, Google & TikTok Ads
 
 Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 
@@ -28,7 +28,7 @@ Default memory 128 MB. Prices per 1,000 events, by Apify plan:
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
 | `item-watched` | Item watched | $0.25 | $0.25 | $0.22 | $0.20 |
 
-### `cleanpull/shopify-store-scraper`: Shopify Store Scraper: Products, Prices & Stock
+### `cleanpull/shopify-store-scraper`: Shopify Scraper: Products, Stock & Sales Estimates
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 

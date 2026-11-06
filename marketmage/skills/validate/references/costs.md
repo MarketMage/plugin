@@ -5,7 +5,7 @@ Estimate with the Bronze column: the paid-plan price (Silver and Gold pay less),
 Where the Free column differs, free-plan users pay that price: quote it too, in the same line ("about USD 0.09; USD 0.17 on Apify's free plan"), so they never pay more than you said either.
 Every run also has a start event of $0.00005 per GB of memory.
 
-### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Offers, Buy Box, BSR & Price Monitor
+### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Buy Box, Offers & BSR
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
@@ -17,13 +17,13 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `product-checked` | Product checked, unchanged | $0.50 | $0.50 | $0.45 | $0.40 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
 
-### `cleanpull/tiktok-shop-sales-tracker`: TikTok Shop Sales Tracker: Units Sold per Day & Top Products
+### `cleanpull/tiktok-shop-sales-tracker`: TikTok Shop Scraper & Sales Tracker: Units per Day
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
 | Event | What it is | Free | Bronze | Silver | Gold+ |
 | --- | --- | --- | --- | --- | --- |
-| `product` (main) | Product | $3.00 | $3.00 | $2.70 | $2.40 |
+| `product` (main) | Product | $3.00 | $2.00 | $1.80 | $1.60 |
 | `product-checked` | Unchanged product (Changes only) | $0.50 | $0.50 | $0.45 | $0.40 |
 | `product-details` | Product details | $1.00 | $1.00 | $0.90 | $0.80 |
 | `source-summary` | Summary | $1.00 | $1.00 | $0.90 | $0.80 |
@@ -34,7 +34,7 @@ Default memory 4096 MB. Prices per 1,000 events, by Apify plan:
 
 | Event | What it is | Free | Bronze | Silver | Gold+ |
 | --- | --- | --- | --- | --- | --- |
-| `term-result` (main) | Term result | $1.50 | $1.50 | $1.30 | $1.10 |
+| `term-result` (main) | Term result | $1.00 | $1.00 | $0.90 | $0.80 |
 | `comparison-result` | Comparison result | $1.50 | $1.50 | $1.30 | $1.10 |
 | `calibrated-term` | Calibrated term | $10.00 | $10.00 | $9.00 | $8.00 |
 | `trending-item` | Trending item | $1.00 | $1.00 | $0.90 | $0.80 |
@@ -70,7 +70,7 @@ Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 | `provider-record` | Provider record | $3.00 | $3.00 | $2.70 | $2.40 |
 | `provider-search` | Provider search | $20.00 | $20.00 | $20.00 | $20.00 |
 
-### `cleanpull/reviews-monitor`: Reviews Monitor: Shopify Review Apps & Amazon
+### `cleanpull/reviews-monitor`: Reviews Monitor: Shopify, Amazon & Trustpilot
 
 Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 
@@ -86,7 +86,7 @@ Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 
 **From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
 
-### `cleanpull/ad-library-monitor`: Ad Library Monitor: Competitor Ads on Google, Meta & TikTok
+### `cleanpull/ad-library-monitor`: Ad Library Monitor: Facebook, Google & TikTok Ads
 
 Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 
@@ -99,7 +99,7 @@ Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 
 **From 2026-11-07:** `library-request` becomes $7.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
 
-### `cleanpull/shopify-store-scraper`: Shopify Store Scraper: Products, Prices & Stock
+### `cleanpull/shopify-store-scraper`: Shopify Scraper: Products, Stock & Sales Estimates
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 

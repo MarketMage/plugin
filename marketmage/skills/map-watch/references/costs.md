@@ -20,7 +20,7 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
 **From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $40.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
 
-### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Offers, Buy Box, BSR & Price Monitor
+### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Buy Box, Offers & BSR
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 

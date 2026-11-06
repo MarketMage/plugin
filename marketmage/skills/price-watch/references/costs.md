@@ -15,7 +15,7 @@ Default memory 128 MB. Prices per 1,000 events, by Apify plan:
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
 | `item-watched` | Item watched | $0.25 | $0.25 | $0.22 | $0.20 |
 
-### `cleanpull/any-store-product-monitor`: Any Store Product Monitor: Price & Stock Tracker
+### `cleanpull/any-store-product-monitor`: Price Tracker & Stock Monitor for Any Online Store
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
@@ -30,7 +30,7 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
 **From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $30.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
 
-### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Offers, Buy Box, BSR & Price Monitor
+### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Buy Box, Offers & BSR
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
@@ -42,7 +42,7 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `product-checked` | Product checked, unchanged | $0.50 | $0.50 | $0.45 | $0.40 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
 
-### `cleanpull/shopify-store-scraper`: Shopify Store Scraper: Products, Prices & Stock
+### `cleanpull/shopify-store-scraper`: Shopify Scraper: Products, Stock & Sales Estimates
 
 Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 
