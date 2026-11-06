@@ -7,6 +7,8 @@ description: Analyse a competitor's online store - catalogue size, price range, 
 
 Profile one competitor's store and say what a rival seller can learn from it. Read `references/running.md` first (costs, caps, tools, secrets). Prices are in `references/costs.md`.
 
+`references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
 **Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
@@ -54,7 +56,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 ## 4. Answer
 
 - **A short profile:** what they sell, at what price, and how they sell (discounts, codes, free-shipping threshold, bundles, apps).
-- **The visual moment, after the profile** (`references/running.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said): **the catalogue by type**, one horizontal bar per product type in `topProductTypes` (its `products` count, at most 8), labelled with the name and the count, with the share on sale (`onSaleShare`) and the median price (`priceMedian`) in the title. Not for the 30-page sample of a store that isn't Shopify (it has no store summary). Caption: the store's domain, its `productCount` products and the date read. The same figures are given in one line of the answer as well.
+- **The visual moment, after the profile** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said): **the catalogue by type**, one horizontal bar per product type in `topProductTypes` (its `products` count, at most 8), labelled with the name and the count, with the share on sale (`onSaleShare`) and the median price (`priceMedian`) in the title. Not for the 30-page sample of a store that isn't Shopify (it has no store summary). Caption: the store's domain, its `productCount` products and the date read. The same figures are given in one line of the answer as well.
 - **Their top 5 sellers** and their newest 5 products (or launches).
 - **What's on now:** the running promotion and the threshold, compared with the user's if known.
 - **Three takeaways** for the user: a price gap, a product gap, a tactic or tool worth trying.

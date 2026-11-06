@@ -59,7 +59,7 @@ For a launch plan's start-up list (`launch-plan`, first-order maths). Each line 
 
 ## EU product rules (for the EU risk notes)
 
-Neutral facts behind the risk notes in `judgement-for-you.md` ("EU risk notes"), each with its official page (read 4 Nov 2026):
+Neutral facts behind the risk notes in `judgement-abroad.md` ("EU risk notes"), each with its official page (read 4 Nov 2026):
 - **CE marking:** EU law requires CE marking for "toys, drones, electrical and electronic equipment, pyrotechnic products, recreational crafts and watercraft", "some kinds of pressure equipment, gas appliances, batteries, and machinery", "weighing and measuring equipment", "personal protective equipment" and "medical appliances, including diagnostic equipment" (Your Europe, "CE marking", https://europa.eu/youreurope/business/product-requirements/labels-markings/ce-marking/index_en.htm, last checked 17 Jul 2026; the list is not exhaustive).
 - **GPSR (a responsible person in the EU):** the General Product Safety Regulation (Regulation (EU) 2023/988, https://eur-lex.europa.eu/eli/reg/2023/988/oj), applying since 13 Dec 2024, requires that a consumer product placed on the EU market has an economic operator established in the EU responsible for it (Article 16): a seller outside the EU names one (an importer, an authorised representative, or a fulfilment service provider).
 - **Packaging (Germany, LUCID):** anyone distributing packaged goods in Germany must be registered in the LUCID Packaging Register of the Zentrale Stelle Verpackungsregister (https://www.verpackungsregister.org/en/; register at https://lucid.verpackungsregister.org/). Other EU countries run their own packaging schemes (extended producer responsibility); their own authority's site says what applies.

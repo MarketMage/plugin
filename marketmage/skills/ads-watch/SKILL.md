@@ -7,6 +7,7 @@ description: See or monitor the ads competitors run, from the platforms' public 
 
 A competitor's ads and how they change. Read these first:
 - `references/running.md`: costs, caps, tools, timing;
+- `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
 - `references/watchlists.md`: scheduling;
 - `references/costs.md`: the prices.
 
@@ -49,7 +50,7 @@ Nothing else is needed: no tokens or developer apps. What each platform shows:
 
 - **Volume and recency:** how many ads are active per brand and platform, and how many started in the last 7 and 30 days. A burst of new ads usually means a launch, a sale or creative testing.
 - **Formats:** the mix of text, image and video; a shift to video is a budget signal.
-- **The visual moment, after the volume line** (`references/running.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said): **how long the ads have run**, one horizontal bar per advertiser or brand in the answer (at most 10), its days running (`daysRunning` on `advertiser` rows; for a brand read, the longest-running active ad's days since its `firstShown`, the same figure the answer gives), labelled with the name and the days, and a marked line at 35 days labelled "proven (35+ days)". Coloured as a second cue: 35 days or more green, the rest grey, with "new" beside those at 14 days or fewer. Caption: the library, the market country and the date read ("Meta ads, US, read 6 Nov").
+- **The visual moment, after the volume line** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said): **how long the ads have run**, one horizontal bar per advertiser or brand in the answer (at most 10), its days running (`daysRunning` on `advertiser` rows; for a brand read, the longest-running active ad's days since its `firstShown`, the same figure the answer gives), labelled with the name and the days, and a marked line at 35 days labelled "proven (35+ days)". Coloured as a second cue: 35 days or more green, the rest grey, with "new" beside those at 14 days or fewer. Caption: the library, the market country and the date read ("Meta ads, US, read 6 Nov").
 - **Longest-running ads** (earliest `firstShown` still active) are usually the winners: those are the ones worth studying.
 - **Meta text:** recurring offers, hooks and landing pages in `text`, `title`, `cta` and `landingUrl`.
 - **Limits in one line, where they matter:** Google gives no text for image and video ads; TikTok covers the EU, UK and Switzerland only; Meta lists stopped ads only for ads that reached the EU.

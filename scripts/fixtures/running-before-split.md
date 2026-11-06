@@ -9,7 +9,7 @@ The plugin's Apify connector exposes these tools:
 - the run and storage readers (`get-actor-run`, `get-actor-run-list`, `get-dataset-items`, `get-key-value-store-record`, `abort-actor-run`);
 - the task tools (`create-actor-task`, `get-actor-task`, `update-actor-task`);
 - the schedule tools (`create-schedule`, `get-schedule`, `update-schedule`); there is no delete tool for tasks or schedules: a watch is stopped by pausing its schedule, and the user deletes it in the Console. When they ask to delete one, give the exact link with its ID, never only "the Console": `https://console.apify.com/actors/tasks/<taskId>` for a task and `https://console.apify.com/schedules/<scheduleId>` for a schedule (the steps: `watchlists.md`, "Deleting");
-- `apify-api-read` (read-only GET requests), **only** for these paths: `/v2/actor-tasks`, `/v2/actor-tasks/<id>` and `/v2/actor-tasks/<id>/runs…` for tasks whose name starts with `cw-`, `/v2/schedules` and `/v2/schedules/<id>`. Never read any other path (account, billing, other storages, other actors' runs).
+- `apify-api-read` (read-only GET requests), **only** for these paths: `/v2/actor-tasks`, `/v2/actor-tasks/<id>` and `/v2/actor-tasks/<id>/runs…` for tasks whose name starts with `cw-`, `/v2/schedules` and `/v2/schedules/<id>`, and the two store paths below. Never read any other path (account, billing, other storages, other actors' runs).
 
 Use only these tools, and only with `cleanpull/...` actors. **Create, change or pause only tasks and schedules whose names start with `cw-`.** Never touch any other task, schedule or run in the account: those belong to the user's other work.
 

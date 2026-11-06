@@ -14,4 +14,7 @@ You are the Apify API (read-only GET). Answer as JSON with a `data` object, usin
 - `/v2/actor-tasks/tskLAUNCH1/runs/last` (or by name): a SUCCEEDED run `runL4`, `statusMessage` "COMPLETE: 2 changes; digest not-asked.", started 2026-11-04T12:00:04Z, finished 2026-11-04T12:02:00Z, `defaultKeyValueStoreId` `kv-wd-l4`, `defaultDatasetId` `ds-wd-l4`. `/v2/actor-tasks/tskLAUNCH1/runs` (any `limit`, newest first): `runL4`, then one SUCCEEDED run a day at about 12:00Z back to 18 Oct (each with `defaultKeyValueStoreId` `kv-wd-old-<MMDD>`), `total` 18, at most `limit` items.
 - `/v2/actor-runs/<runId>` for any run above: that run.
 
+- `/v2/key-value-stores` (any query, such as `unnamed: false`): the account's named stores, with no notebook among them: `{"total": 1, "count": 1, "offset": 0, "limit": 1000, "desc": false, "items": [{"id": "kvsEXPORTS1", "name": "shop-exports", "createdAt": "2026-08-02T10:12:00.000Z", "modifiedAt": "2026-10-30T08:00:00.000Z"}]}`.
+- `/v2/key-value-stores/<id>/keys` for any id starting `kv-`: `{"items": [{"key": "RUN_SUMMARY", "size": 900}], "count": 1, "limit": 1000, "isTruncated": false}`, with `{"key": "DIGEST.md", "size": 1400}` added for an id starting `kv-watch-digest` or `kv-wd-`.
+
 Any other path: `{"error": {"type": "record-not-found"}}`.

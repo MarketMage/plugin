@@ -10,22 +10,7 @@ The facts table and the market verdict are the same for everyone. What changes w
 
 Asked early, remembered, re-checked when it may be stale.
 
-**Five quick bands, friendly, skippable:**
-
-> So I can say what this means for you, 5 quick ones (skip any): roughly what could you put into a first order, or a first month of ads if you'd dropship (under $250, under $1k, $1k–5k, $5k–25k, more)? How would you fulfil (dropship, own stock, Amazon FBA, print on demand)? Sold online before (no, a bit, yes with a brand)? Any channels already (a store, Amazon, TikTok, an email list, none)? And is this a side income or a brand you want to build?
-
-**Fulfilment options, in plain words** (in the guided session, for a newcomer, or when asked what one means), a few words each, after the question: **dropship** (a supplier ships each order straight to your buyer; you hold no stock), **own stock** (you buy units up front and ship orders yourself), **Amazon FBA** (you send stock to Amazon's warehouses and Amazon ships each order), **print on demand** (a printer makes and ships each item only when it sells, with your design on it), **I make it myself** (you make each item by hand or in your own workshop).
-
-**A sixth fulfilment option, "I make it myself."** Wherever the five bands are asked, the fulfilment question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
-
-**Asking for the profile: once per conversation.** This is the one rule every skill follows:
-- **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the cost line of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
-- **A quick one-off read** (one read under about USD 0.10; it still waits for a yes when it is over USD 0.05, as every run does: `running.md`, "Before any run") goes ahead first, with no profile in its cost line, and the profile is offered after its answer, in that answer's one friendly line; that is still the one offer for this conversation.
-- **Skipped or unanswered, never again in this chat:** no re-offer in later answers, follow-ups or other skills. The market verdict leads from then on.
-- **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the five bands would answer it; it is a reminder, not the question again.
-- A profile they give later, unprompted, is used at once ("Accept it unprompted").
-
-**Accept it unprompted.** If the user says "I've got about $2k and I've never sold before" anywhere in the chat, the conversation holds a line starting `Profile:`, or their notebook holds a profile (`notebook.md`), use it. Repeat it back once as bands ("Judging for: $1k–5k · own stock · first time · no channels · side income · US") and move on.
+**Five quick bands, the fulfilment options in plain words, asking once per conversation, and accepting a profile given unprompted:** `judgement-answer.md`, "Asking for the profile" (read with this file, or alone when there is no profile yet).
 
 **When the question and the profile disagree,** the newer, more specific statement wins: a budget, a channel or a way of fulfilling named in this question (or later in this chat) beats the saved or earlier profile, for this answer. Say so in one line, as bands, before the verdict: "Your profile says under $1k, but you mentioned a bigger amount for this one, so I judged it at $1k–5k." · "Your profile says Amazon FBA, but you said this one would sell through TikTok ads, so I read it through the cold-traffic dropship lens." Never ask which one is right first, and never repeat the exact figure (bands only, as below). When the change sounds lasting rather than about this one idea ("I've moved to FBA", "I've saved more now"), the stale re-check line below offers to save it; otherwise the saved profile stays as it is.
 
