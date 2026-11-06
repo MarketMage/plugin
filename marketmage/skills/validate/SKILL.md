@@ -26,6 +26,7 @@ Work one idea with the user: a verdict with numbers behind it, then the next mov
 - **The profile, if there isn't one and it hasn't been offered in this chat** (`references/judgement-answer.md`, "Asking for the profile": once per conversation): its five quick bands go in the same message as the cost line, skippable; nothing waits on them. With a profile, pick the lens now (from fulfilment and channels: `references/judgement-profile.md`, "Choosing the lens"), then read `references/judgement-for-you.md` and that lens's file: it changes the runs (below).
 
 Before running anything, check the runs already made in this conversation (`references/running-runs.md`, "Runs in this conversation"): TikTok rows or a Trends record for the same keyword from `find-products`, the keyword summary from `market-scan`, an Etsy or eBay read with listing rows for the same keyword and marketplace (from `find-products` or `market-scan`), and, for the same idea, the AliExpress single-unit check and the Where you'd compete rows from `find-products`, are reused, not bought again.
+A chat's first MarketMage job has no earlier runs to reuse: then that read is skipped.
 
 ## 2. Runs, cheapest first
 

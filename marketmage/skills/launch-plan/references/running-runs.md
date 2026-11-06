@@ -39,7 +39,7 @@ Say so before the run ("this takes a few minutes"), even when the user has alrea
 
 ## Runs in this conversation: what reuses what
 
-Before any run, look back through this conversation for a run that already holds what's needed (`running-runs.md`, "Runs in this conversation"):
+Before any run in a chat that already holds a CleanPull run, look back through it for a run that already holds what's needed (`running.md`'s "Runs in this conversation"):
 
 | Later job | Reuses | Saves |
 | --- | --- | --- |
