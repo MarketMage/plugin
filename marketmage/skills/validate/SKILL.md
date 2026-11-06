@@ -13,6 +13,8 @@ Work one idea with the user: a verdict with numbers behind it, then the next mov
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
+**The standard check's reads** (no lens): one first batch of `references/running.md`, `references/costs.md`, `references/judgement.md`, `references/judgement-answer.md` and `references/judgement-ladder.md`, then `references/running-results.md` once round 1 is in. `references/running-runs.md` only when the check adds a data-provider read (an Etsy or eBay read, the AliExpress single-unit check, the ads library), a run doesn't succeed, or this chat already holds a run.
+
 **Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
 
 ## 1. Ask only for
