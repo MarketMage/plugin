@@ -34,4 +34,4 @@ Every verdict names its biggest risk as **the early sign** to look for, not as a
 
 One watch, the one that matches the biggest risk. On a Strong verdict, this watch is the natural next move.
 
-**After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with the cost of its first paid step.
+**After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with no price (its estimate comes at the yes).

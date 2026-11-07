@@ -56,7 +56,7 @@ The menu, five plain starting points, never the list of skills or their names:
 4. **Watch prices or rivals:** a check on a schedule that tells you what changed. Already selling? It can track your own Amazon listings' rank on your keywords and who holds the Buy Box.
 5. **What's new since last time:** your watches and saved ideas, turned into a few decisions (the `briefing` skill; reading them is free).
 
-Under the menu, one short line on who runs it and how it's paid for (`running-asks.md`, "Who runs this"): "MarketMage's actors are published on Apify by CleanPull, MarketMage's own publisher; every run bills your own Apify account at per-result prices, I ask before any run that costs more than a few cents, every run is capped, and Apify's free plan includes USD 5 of credit a month."
+Under the menu, one short line on who runs it and how it's paid for (`running-asks.md`, "Who runs this"): "MarketMage's actors are published on Apify by CleanPull, MarketMage's own publisher; every run bills your own Apify account at per-result prices, I ask before anything over USD 0.05 or recurring, every run is capped, and Apify's free plan includes USD 5 of credit a month."
 
 Then one line: "Pick one, or tell me what you sell or want to sell."
 

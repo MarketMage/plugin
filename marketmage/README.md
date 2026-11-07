@@ -23,7 +23,7 @@ Then save a **watchlist** that runs on a schedule and tells you what changed: pr
 
 Every job runs [CleanPull's actors](https://apify.com/cleanpull) in **your own Apify account**, at their published per-result prices. **All you provide is your Apify sign-in**: no marketplace, supplier or ad platform accounts or keys.
 
-> **Claude asks before any run that costs more than a few cents.** Above USD 0.05, and before anything recurring, Claude gives one estimate and waits for your yes; smaller reads just run. Every run carries a spending cap, and every scheduled watchlist a maximum cost per run.
+> **Claude asks before anything over USD 0.05.** Above USD 0.05 for one request, and before anything recurring, Claude gives one estimate and waits for your yes; smaller reads just run. Every run carries a spending cap, and every scheduled watchlist a maximum cost per run.
 
 ## What you can ask
 

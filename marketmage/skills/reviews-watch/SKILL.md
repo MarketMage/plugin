@@ -51,7 +51,7 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - **On the user's own product:** turn each complaint into a fix: a size chart, packaging, a clearer photo or description.
 - **Small samples:** under about 20 reviews, say the themes are a hint, not a trend. Themes come from keyword and phrase matching, not AI, so a theme is a pointer to reviews to read, not a measured sentiment score. **Named themes are English only:** the known complaint and praise phrases ("runs small", "arrived damaged") are English, so reviews in another language (amazon.de, .fr, .es, a German Trustpilot page) give mostly recurring phrases in that language, or no themes: say so, and read the review texts themselves for what buyers complain about.
 - **Loox** shows no dates in some layouts, and **Stamped** and **Loox** publish no counts per star: say so when it matters.
-- End with the cost and the dataset link, and offer the watch: "I can tell you each morning when these get new or low reviews."
+- End with the dataset link, and offer the watch, with no price on the offer (its monthly estimate comes at set-up): "I can tell you each morning when these get new or low reviews."
 
 ## 4. Ongoing (a watchlist)
 

@@ -2,7 +2,7 @@
 
 From the actors' Store pricing (regenerate with `scripts/sync-references.py`; CI fails when it is out of date).
 Estimate with the Bronze column: the paid-plan price (Silver and Gold pay less), so no paid-plan user pays more than you said.
-Where the Free column differs, free-plan users pay that price: quote it too, in the same line ("about USD 0.09; USD 0.17 on Apify's free plan"), so they never pay more than you said either.
+Where the Free column differs, free-plan users pay that price: at the approval estimate, quote it too, in the same line ("up to about USD 0.09 (USD 0.17 on Apify's free plan), capped"), so they never pay more than you said either. These prices are for that one estimate before a yes (`running.md`, "Before any run"), never for cost lines elsewhere.
 Every run also has a start event of $0.00005 per GB of memory.
 
 ### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Buy Box, Offers & BSR
