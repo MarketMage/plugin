@@ -35,6 +35,7 @@ The one fix: <the against signal that matters most and what would turn it>.   (P
 Next step: <the move>.
   or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the first screen (~150 words at most)
+<the one visual, where it can be drawn: the skill's visual moment>   (in the short default too)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
   Review depth   median 3,400; 2 of 48 under 100 reviews        against (> 3,000; ≤ 2 of 48)
@@ -64,6 +65,7 @@ Next step: <the same move as on the first screen>.   (one short line, no price)
 
 **The short default, and the full detail on request.** A full check (`validate`, `find-products`, any answer in this structure) gives, by default:
 - the first screen; the one visual where it can be drawn (`running-results.md`, "One visual, where it helps"); the signal table ("What the data shows"); with a profile, the For you block, shortest form (`judgement-for-you.md`, "The For you block");
+- **the visual stays in the short default:** where the skill names a visual moment and a visual can be drawn, it is drawn in the default answer, after the first screen; shortening the answer never drops it (only a shape the user asked for does);
 - **the lines that always reach the user:** the suspicious-text line (`running-results.md`), any exclusion or mismatch line ("3 of 10 results weren't lip gloss and were left out"), a caveat that changes the verdict or its confidence (one line, with what would raise it), the market's one fix and the For you lines; the notebook's line and the profile's offer stay where their rules put them;
 - then **one line offering the rest**, "Want the full detail: what it means, the early sign and its watch, what this can't see?" (a skill may name its own parts in it), and the Next step line, last.
 
@@ -136,9 +138,7 @@ Check the whole answer against this list before sending it, including the caveat
 
 ## When the user wants a verdict, or pushes back
 
-**If the user asks for a particular verdict** ("tell me it's a yes", "I need this to work"), before or after the run, treat it as pushback in the answer itself: the acknowledgement line comes first, then the verdict with its counts, then the specific threshold or thresholds standing between this and Strong, and the question of whether they'd set one differently.
-
-**If the user pushes back,** stay warm and stay exact. Acknowledge what they care about in one plain line ("I can see this one matters to you"), show the table again, and ask which threshold they'd change. Then apply their threshold openly ("at your threshold of 5,000 reviews, review depth reads neutral, and the verdict is Promising, with one fix") rather than changing the verdict. Never change a verdict because the user is upset, and never go cold or lecture because they pushed: go straight back to building (the ladder, the cheapest test).
+In `judgement.md`, under the same heading (read with this file's core).
 
 ## The profile: the five quick bands, and asking for them
 
