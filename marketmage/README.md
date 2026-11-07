@@ -173,6 +173,7 @@ Honest limits, so the answers are read right:
 - Installing from GitHub needs the repository to be public (it is public from launch), or you to have access to it.
 - **Your Claude plan:** any, Free included; the scheduled Monday briefing needs a paid plan (Pro, Max, Ultra, Team, Enterprise).
 - **Then:** connect Apify when prompted.
+- **Fewer approval boxes (optional):** claude.ai asks before each Apify tool call until you change it. In Customize → Connectors → apify → Tool permissions, set **Read-only tools** and **Call Actor** to Always allow. MarketMage still states the cost and waits for your yes before any paid run above USD 0.05 or anything recurring, and every run is capped.
 
 ## Support
 
