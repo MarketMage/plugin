@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing a 
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
+**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -18,7 +18,7 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 - **When the two verdicts differ,** the one sentence that says why (`judgement-for-you.md`, "Guardrails") names the row that makes the difference and how it counts for them: "Promising for the market (4 for, 1 against); for you, a long shot, because the one against, demand on amazon.co.uk (at least 300 units a month across the top 10), is the only place you'd sell." A long shot is never introduced with words that read as a fit ("Nothing I read stops this working for you, but…"): its first clause is the thin demand, with its numbers, and no later line beside it says nothing else stops it (say what would turn it instead).
 - **A user's direct question comes first,** above both lines, answered in plain words (`judgement-tone.md`, "Answer the user's question first"); the verdict lines follow it.
 
-Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me roughly your budget and how you'd sell (5 quick questions, or skip) and I'll say what this means for you."
+Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
 **For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
@@ -31,7 +31,7 @@ The one fix: <the against signal that matters most and what would turn it>.   (P
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
   or: Sell it where people search: <Amazon floor> vs <best TikTok listing>; <the channel>. What would have to be true … (For you: a long shot, cold-traffic, search demand real)
-Next step: <the move>.
+Next step: <the move>.   (one short line, no price; once in the answer)
   or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the first screen (~150 words at most)
 What the data shows
@@ -75,7 +75,7 @@ Next step: <the same move as on the first screen>.   (one short line, no price)
 - "What you got right" credits only something the user said in this conversation, with the data's number beside it, and for a user who doesn't sell on Amazon never an Amazon FBA figure (`judgement.md`, rule 5). Nothing they said is backed: the line is left out.
 - The whole reply is sized to the question (`judgement-tone.md`, "Size the reply to the question"): the first screen at about 150 words, the rest in its shortest form.
 - Asked a yes/no question ("is it saturated?"), the verdict line still comes first, followed by the one-line opposite answer (rule 3), inside the first screen.
-- The last line is always the next move, never the verdict: the first screen's next step, repeated in one short line.
+- The last line is always the next move, never the verdict: one "Next step:" line, written once in the answer (never also on the first screen).
 - **The free stop is a next move too** (`judgement.md`, "The one exception, the free stop"): after Not this version, or For you: not this one, the next step may be "nothing to buy; keep the USD <X>", with the best related version on the same line, so the answer still ends in a move in their direction.
 
 **Two framings, same data, same verdict:**

@@ -5,7 +5,7 @@ One file for the answer step, in four parts: the answer structure, the tone (wit
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
+**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -19,7 +19,7 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 - **When the two verdicts differ,** the one sentence that says why (`judgement-for-you.md`, "Guardrails") names the row that makes the difference and how it counts for them: "Promising for the market (4 for, 1 against); for you, a long shot, because the one against, demand on amazon.co.uk (at least 300 units a month across the top 10), is the only place you'd sell." A long shot is never introduced with words that read as a fit ("Nothing I read stops this working for you, but…"): its first clause is the thin demand, with its numbers, and no later line beside it says nothing else stops it (say what would turn it instead).
 - **A user's direct question comes first,** above both lines, answered in plain words (`judgement-answer.md`, "Answer the user's question first"); the verdict lines follow it.
 
-Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me roughly your budget and how you'd sell (5 quick questions, or skip) and I'll say what this means for you."
+Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
 **For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
@@ -32,8 +32,7 @@ The one fix: <the against signal that matters most and what would turn it>.   (P
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
   or: Sell it where people search: <Amazon floor> vs <best TikTok listing>; <the channel>. What would have to be true … (For you: a long shot, cold-traffic, search demand real)
-Next step: <the move>.
-  or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
+  (no Next step line here: it is written once, last; the move is already in the line above)
                                               ── end of the first screen (~150 words at most)
 <the one visual, where it can be drawn: the skill's visual moment>   (in the short default too)
 What the data shows
@@ -46,7 +45,8 @@ For you, through the <lens> lens   (only with a profile; see "The For you block"
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
 
 Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
-Next step: <the same move as on the first screen>.   (one short line, no price)
+Next step: <the move>.   (one short line, no price; once in the answer)
+  or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the short default
 ── the full detail, on a yes or a question that needs it:
 What it means (for any seller)
@@ -79,12 +79,10 @@ Next step: <the same move as on the first screen>.   (one short line, no price)
 - "What you got right" credits only something the user said in this conversation, with the data's number beside it, and for a user who doesn't sell on Amazon never an Amazon FBA figure (`judgement.md`, rule 5). Nothing they said is backed: the line is left out.
 - The whole reply is sized to the question (`judgement-answer.md`, "Size the reply to the question"): the first screen at about 150 words, the rest in its shortest form.
 - Asked a yes/no question ("is it saturated?"), the verdict line still comes first, followed by the one-line opposite answer (rule 3), inside the first screen.
-- The last line is always the next move, never the verdict: the first screen's next step, repeated in one short line.
+- The last line is always the next move, never the verdict: one "Next step:" line, written once in the answer (never also on the first screen).
 - **The free stop is a next move too** (`judgement.md`, "The one exception, the free stop"): after Not this version, or For you: not this one, the next step may be "nothing to buy; keep the USD <X>", with the best related version on the same line, so the answer still ends in a move in their direction.
 
-**Two framings, same data, same verdict:**
-- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids'."
-- "Is this saturated?" → "**For the market: Promising, with one fix** (medium confidence). 2 signals say crowded (review median 3,400; 12 ads in 48), 4 say open (demand +38% over 5 years, 3 leaders under 4.2 stars, top-3 share 0.31, margin after fees 48% of the median price). Crowded on page 1, not closed: the leaders' quality gap is the opening a newcomer can build on."
+**Two framings, same data, same verdict:** the worked pair is in `judgement-first-answer.md`.
 
 # Judgement: tone
 
@@ -147,18 +145,20 @@ From `judgement-profile.md`, where the rest of the profile rules are (choosing t
 
 **Five quick bands, friendly, skippable:**
 
-> So I can say what this means for you, 5 quick ones (skip any): roughly what could you put into a first order, or a first month of ads if you'd dropship (under $250, under $1k, $1k–5k, $5k–25k, more)? How would you fulfil (dropship, own stock, Amazon FBA, print on demand)? Sold online before (no, a bit, yes with a brand)? Any channels already (a store, Amazon, TikTok, an email list, none)? And is this a side income or a brand you want to build?
+> So I can say what this means for you (skip either): how would you sell it (dropship, your own stock, Amazon FBA, print on demand, or you make it yourself), and roughly what could you put into a first order, or a first month of ads if you'd dropship (under $250, under $1k, $1k–5k, $5k–25k, more)?
 
-**Fulfilment options, in plain words** (in the guided session, for a newcomer, or when asked what one means), a few words each, after the question: **dropship** (a supplier ships each order straight to your buyer; you hold no stock), **own stock** (you buy units up front and ship orders yourself), **Amazon FBA** (you send stock to Amazon's warehouses and Amazon ships each order), **print on demand** (a printer makes and ships each item only when it sells, with your design on it), **I make it myself** (you make each item by hand or in your own workshop).
+**At most two questions, the most decisive first** (real-user test, 7 Nov 2026): how they'd sell, then the budget band, in one message, skippable. Experience, channels and goal are taken from what they have said ("never sold", "my Shopify", "side income"), repeated back once as bands, or left out; never the five as a list of questions.
+
+**Fulfilment options, in plain words** (when asked what one means; for a newcomer, only the two or three options that fit what they have said, never all five as a glossary), a few words each, after the question: **dropship** (a supplier ships each order straight to your buyer; you hold no stock), **own stock** (you buy units up front and ship orders yourself), **Amazon FBA** (you send stock to Amazon's warehouses and Amazon ships each order), **print on demand** (a printer makes and ships each item only when it sells, with your design on it), **I make it myself** (you make each item by hand or in your own workshop).
 
 **A sixth fulfilment option, "I make it myself."** Wherever the five bands are asked, the fulfilment question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
 
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
 - **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
 - **A quick one-off read** (one read under about USD 0.10; it still waits for a yes when it is over USD 0.05, as every run does: `running.md`, "Before any run") goes ahead first, with no profile in its estimate, and the profile is offered after its answer, in that answer's one friendly line; that is still the one offer for this conversation.
-- **A notebook they may keep:** before a direct job's yes the notebook isn't checked yet (`notebook.md`, "Is it on?"), so the offer line adds "or, if you keep a MarketMage notebook, say so and I'll use the profile saved there"; once the check after the yes finds a profile, it is used and the offer isn't repeated.
+- **A notebook they may keep:** before a direct job's yes the notebook isn't checked yet (`notebook.md`, "Is it on?"); only when the user mentions earlier work, a notebook or using MarketMage before does the offer line add "or, if you keep a MarketMage notebook, say so and I'll use the profile saved there" (never to a first-time user: the notebook's own ask comes after a first result, `notebook.md`); once the check after the yes finds a profile, it is used and the offer isn't repeated.
 - **Skipped or unanswered, never again in this chat:** no re-offer in later answers, follow-ups or other skills. The market verdict leads from then on.
-- **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the five bands would answer it; it is a reminder, not the question again.
+- **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the two quick questions would answer it; it is a reminder, not the question again.
 - A profile they give later, unprompted, is used at once ("Accept it unprompted").
 
 **Accept it unprompted.** If the user says "I've got about $2k and I've never sold before" anywhere in the chat, the conversation holds a line starting `Profile:`, or their notebook holds a profile (`notebook.md`), use it. Repeat it back once as bands ("Judging for: $1k–5k · own stock · first time · no channels · side income · US") and move on.

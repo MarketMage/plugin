@@ -1,0 +1,80 @@
+# Judgement: the first full answer, weighting by channel, and labels that match
+
+Part of the judgement rules (`judgement.md` is the core). Read in the same batch as `judgement-answer.md`, before scoring and before writing the first full answer of a check (`validate`, `find-products`, `market-scan`, a claim or guru check). From the real-user test of 7 Nov 2026: where an older line elsewhere says otherwise (a chart title carrying the verdict, verdict lines with nothing before them, every market row counting for a seller who isn't on Amazon, shipping left out of an own-store margin), this file wins.
+
+## The first full answer of a check
+
+The first answer that shows a check's results has five parts, in this order, and nothing comes before part 1:
+
+1. **The plain answer to the user's own question,** in one to three sentences, the answer itself first ("No:", "Yes, if …", "Partly:", "Not too late:", "Order, once …"). It answers what they asked, in their words, from this check's numbers: "is that real?" gets whether the claim is true; "should I order?" gets order or not yet, and what decides it; "too late?" gets the timing (`judgement-timing.md`); "where do I get them and what would I make?" gets the supplier and the money per sale. When the message asked nothing beyond the check itself ("is X worth selling?", "check X", "is it saturated?"), parts 1 and 2 are one and the same: the verdict sentence, said once, leads.
+2. **One plain verdict sentence:** the label, word for word (`judgement.md`, rule 7), and why, in its two biggest numbers, with the one fix or the best related version. With a profile the For you label leads, and the market's label is in the same sentence or the one after it ("**For you: a fit, with one fix** (first order USD 960, within your up-to-$5k budget); **For the market: Promising, with one fix**: demand is steady, +4% over 5 years, and the fix is …"). The verdict is said once: never a second verdict line repeating it, never again in the table, the chart or "What you got right".
+3. **The visual,** where one can be drawn (the skill's visual moment). **Its title describes the chart** ("Margin per pack at USD 27.99", "Lifetime units sold, top listings, TikTok Shop US"), and never carries the verdict. Parts 1 and 2 are written in the reply before the visual tool is called; an answer whose verdict or answer is only in a chart is wrong, chart or no chart.
+4. **A compact table** (under 10 rows), shaped to the user ("Notation follows experience", below).
+5. **The next move:** one "Next step:" line, last, and only once in the answer.
+
+Between parts 4 and 5 sit only what the short default keeps (`judgement-answer.md`, "The short default, and the full detail on request"): the exclusion or mismatch line, suspicious text, a verdict-changing caveat, the For you block with a profile, the one offer line. "The one fix", "What must stay true" or the best related version is inside part 2, not a line of its own after it.
+
+### A claim or guru check
+
+When the question is whether a claim is true ("he says these do 50k a month", "my course says 60% margin"), part 1 names the claim and says **true, false or partly**, with the data's number beside it, before anything else: "No: the 50,000 isn't a month. The top cloud slide listing on TikTok Shop shows 57,335 sold in total since it went up, and it's Mellow Sleep's own listing, not a generic product."
+- **Say what each number counts.** TikTok Shop's units sold are **lifetime** (everything a listing has sold since it was listed), never a month: a monthly claim against a lifetime counter is false as a monthly figure, or unproven when the lifetime total itself is under the claim. Amazon's "bought in past month" floor is per month, and a floor. Name which one each figure is.
+- **Say whose listing it is.** When the top figure is a brand's own listing (its shop name matches the brand in its title, or the shop sells many products under that brand), say so, and put what the generic listings sell beside it ("the unbranded ones sell about 3,400 to 4,000 in total"): that is what someone hoping for easy money needs to hear.
+- Never a judgement of the person who made the claim, and nothing filled in that the data can't see (their ad spend, returns, commissions): named in one line as what this can't see.
+
+**Two framings, same data, same verdict:**
+- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids'."
+- "Is this saturated?" → "**For the market: Promising, with one fix** (medium confidence). 2 signals say crowded (review median 3,400; 12 ads in 48), 4 say open (demand +38% over 5 years, 3 leaders under 4.2 stars, top-3 share 0.31, margin after fees 48% of the median price). Crowded on page 1, not closed: the leaders' quality gap is the opening a newcomer can build on."
+
+## Notation follows experience
+
+- **New to selling** (the profile's experience is none, or they say they're new, a beginner, or have never sold): plain sentences. The verdict sentence gives the counts in words ("3 things count for it and 1 against") and the confidence as what it means ("a first look: two of the reads came back thin"); no "·"-strings of counts, no neutral or unknown counts, no thresholds column. The table has three plain columns (what we looked at, what we found, whether it helps you). A term is explained the first time it appears (`judgement-answer.md`, "Plain words for a newcomer"), and only then; no definitions of terms the answer doesn't use.
+- **Experienced** (they've sold before, have products live, sell on Amazon with tools of their own) **or not known:** the compact notation is fine ("**For the market: Promising, with one fix** · high confidence · 3 for · 0 against · 5 neutral"), with the thresholds beside the numbers.
+- **Never twice:** one verdict (part 2), one Next step, one offer line.
+
+## Labels follow the counts and the budget gate
+
+- **Check every label against its own counts and gates before writing it** (the market's, each For you reading, each row of a table): the label is the one the verdict rule gives (`judgement.md`, "The verdict rule", with the line below), and a For you label is what its lens gives after the first-order gate. A label and its counts that read against each other are a mistake to fix, not a nuance to explain.
+- **More against than for is not Promising.** With two or more `against` and more `against` than `for`, the market label is **Not this version: here's one that could be**, with the best related version (rule 10 in `judgement.md`: the search never dead-ends). In find-products, such an idea is counted as one the data is against.
+- **The budget gate decides "a fit".** When the first order the data shows (the user's own quote, else the supplier's MOQ × unit cost) is over their budget band's edge, or over the amount they gave, the For you label is never "a strong fit" or "a fit, with one fix", unless a real smaller offer read in this run fits (`judgement-lens-own-stock.md`, "A smaller real start that fits makes it a fit, with one fix"; never against the user's own quote): "1,000 pairs × USD 5.20 = USD 5,200, over your under-$1k budget" is "not this one", with the related version that would pass. Without a profile there is no For you label: a budget the user named in the question is one plain line beside the verdict ("a first order at that minimum is about USD 5,200, more than the amount you gave me").
+- **The For you column only tells ideas apart.** In a table of ideas, when every row would carry the same For you label for the same reason, the column is dropped (the rule for empty columns, `running-results.md`, "No empty columns"), and one line above the table says the label once, why, and which idea leads for them; the table's order is then their order. When the labels or reasons differ, the column stays, each cell ranked ("#1 for you").
+
+## Weighting by channel
+
+How the user sells (said in the question or the chat, or the profile's fulfilment and channels) sets what leads, as it already sets the margin's fees (`judgement.md`, "The margin follows the user's channel"):
+- **On their own store, TikTok Shop or Etsy (not Amazon):** Amazon's review depth, concentration and paid pressure are **context**, never `against`, in everything said for them. They are not counted in any For you count, whatever the lens; in find-products' per-idea for and against for them, the Amazon page-1 signals (the chart's review depth and the competition check) are left out of the counts, with the numbers kept in the table, labelled "on Amazon"; in prose they are one line at most ("Amazon's page 1 is held by listings with 9,000+ reviews: context for you, since you'd sell on your own store"). **What leads for them:** demand steadiness (the trend and its yearly peak), repeat purchase (a consumable or something bought again: a judgement from the titles, said as one), the margin with shipping ("Shipping in the margin", below) and the ad cost (USD 8 and USD 12 of ads per sale, said as an assumption, for an own store). The market line keeps its label and counts (the facts layer, the same for everyone); when Amazon's page-1 rows are what hold it back, the verdict sentence says so in a clause ("for the market, Promising: its two againsts are Amazon's crowded page 1, which you won't sell on").
+- **On Amazon** (FBA, or own stock sold on Amazon), **or not said:** every market row counts, as before.
+
+## Shipping in the margin, for sellers who ship themselves
+
+For an own-store seller who ships their own orders (own stock, not FBA), the headline margin includes an **estimated** shipping cost per order, from the weight read in this run (the Amazon leaders' `fees.shippingWeightLb`, labelled as the leaders' weight; or the weight the user gives), taken as the packed weight and rounded up to the band:
+
+USPS Ground Advantage, commercial prices per parcel within the US (USPS Notice 123, effective 4 October 2026, https://pe.usps.com/text/dmm300/Notice123.htm, read 7 Nov 2026):
+
+| Packed weight up to | Mid-distance (zone 5): used in the margin | Near to far (zones 1 to 8) |
+| --- | --- | --- |
+| under 1 lb | USD 8.24 | USD 7.33 to 8.95 |
+| 1 lb | USD 9.29 | USD 8.01 to 11.22 |
+| 2 lb | USD 10.50 | USD 8.39 to 13.42 |
+| 3 lb | USD 12.12 | USD 9.04 to 16.30 |
+| 5 lb | USD 14.53 | USD 10.35 to 20.24 |
+| 10 lb | USD 17.81 | USD 12.56 to 26.39 |
+
+- **Say it as an estimate, with the weight used:** "about USD 10.50 to ship a 2 lb pack (USPS Ground Advantage, mid-distance; an estimate from the leaders' weight)". The near-to-far range goes in the table's margin cell. Packaging, and what the buyer pays for shipping, are theirs to add: when they say they charge shipping, the estimate comes off what they charge.
+- **The sum:** price − card fee (2.9% + USD 0.30, an assumption) − unit or landed cost − shipping estimate = what a sale leaves, before ads; then at USD 8 and USD 12 of ads per sale. The waterfall gets a bar labelled "shipping (estimate)".
+- **No weight read and none given:** the margin is "before shipping", said once, and the one question that completes it is the pack's weight.
+- **A dropshipper** already has shipping in a landed cost or labels the cost "before shipping" (the cold-traffic lens); no estimate is added there. **FBA sellers:** the FBA fee covers delivery to the buyer; no estimate. **Outside the US:** no table here: the margin is before shipping, and their carrier's price is asked once.
+- These are reference prices, sourced and dated (`judgement.md`, "Every fee and rate has a source, never memory"): never another carrier's figure from memory.
+
+## One demand statement per idea
+
+Each idea gets **one** demand-trend statement in an answer, with its window ("down 47% over 12 months", "up 63% over 5 years"): the window of the skill's own read (5 years in `validate`, 12 months in `find-products`), the same in the table, the prose and every later turn that quotes it. Another window is quoted only as a separate, labelled fact, never in its place. A **stand-in term** (a broader search used because the product's own term is too thin to read) is named as one wherever its figure appears: "searches for bully sticks (a stand-in: 'duck feet' has too few searches to read) are down 16% over 5 years".
+
+## Rising searches, in every answer
+
+The rules from going deeper (`judgement-deeper.md`, "Rising searches in a card") hold in quick answers too: the ideas table, the verdict's angle rung and any line that quotes one.
+- **Only relevant ones:** a rising search is quoted for an idea only when it is about that idea's own product (a dog row never carries "freeze dried cat treats"), and a novelty, joke or political search ("trump poop bags") is left out. When none of a term's rising searches fits, the cell says "no relevant rising searches yet".
+- **"From a small base":** a percentage on a low-volume term (`summary.lowVolume`), a breakout, or any rise of +500% or more is written with "from a small base" beside it ("+2,600%, from a small base"), never as a bare headline figure.
+
+## Wording that doesn't contradict itself
+
+A credit and a fix about the same number are said as one fact: "priced like the leader, above most of the page" (never "What you got right: your USD 19.99 is where the top listing sells" beside "the one fix: USD 19.99 sits above the market's band").
