@@ -70,7 +70,7 @@ Next step: <the same move as on the first screen>.   (one short line, no price)
 - then **one line offering the rest**, "Want the full detail: what it means, the early sign and its watch, what this can't see?" (a skill may name its own parts in it), and the Next step line, last.
 
 **The full detail** comes when the user says yes, or asks anything that needs a part of it ("what's the early sign?", "what can't this see?", "show me the other versions"; then that part alone, not the whole): "What it means", the one fix in detail with its test, the related versions, the early sign and its watch, the line on the opposite of their framing when the first screen didn't carry it, what this can't see, and the follow-ups (`running-results.md`, "At most two follow-ups"). Every rule for those parts holds there, each in its shortest form, from the data already read (no new run, no table repeated), ending on the Next step line again.
-- **Going deeper,** where a skill offers it: "Want the full detail, or shall we go deeper …?", once (`judgement-deeper.md`).
+- **Timing** ("too late?", "saturated?"): an exception, `judgement-timing.md`. **Deeper:** "…, or shall we go deeper …?", once (`judgement-deeper.md`).
 - **The one offer stands in for the follow-ups:** a watch, the launch plan, another version or a document wait for the full detail.
 - **A shape the user asks for wins** ("Size the reply to the question"): "just the verdict" or "table only" is that, with the next step; "everything", "full detail" or "the whole analysis" up front (or a saved `answerShape` that asks for it) gets the full detail at once, with no offer line. The screen-reader or no-tables shape keeps this same default, in sentences, with the offer line in words.
 

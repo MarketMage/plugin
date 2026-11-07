@@ -57,7 +57,7 @@ Or: "<follow-up>" · "<follow-up>"
 
 ```
 **1. Paw balm that doesn't leave greasy prints**, for big-dog owners in winter
-- Demand: top TikTok listing 9,800 units; "paw balm for cracked paws" +140%.
+- Demand: "paw balm for cracked paws" searches +140% over 12 months.
 - The gap: 7 of 31 low reviews on the 3 leaders say "greasy prints on the floor".
 - Feasibility: USD 1.20–1.90 a tin at 200 tins (factory list prices).
 - Open question: do these factories make a non-greasy formula? Ask 2 for samples.

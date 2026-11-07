@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). Read before choosing t
 
 ## 1. Pick the leaders that matter
 
-- **3 to 5 of the top 10** for the product's search (the Amazon leaders' rows already read in this chat, else the Amazon top 10: `complaint-brief`, step 2), each carrying a sales badge (`boughtPastMonthMin` above 0). A leader with no badge has no proof buyers choose it, so its complaints don't make the brief.
+- **3 of the top 10** by default (more only when the user asks for more) for the product's search (the Amazon leaders' rows already read in this chat, else the Amazon top 10: `complaint-brief`, step 2), each carrying a sales badge (`boughtPastMonthMin` above 0). A leader with no badge has no proof buyers choose it, so its complaints don't make the brief.
 - **Favour the highest 1-star share** (`starBreakdown`), then the biggest sellers (`boughtPastMonthMin`): the first shows where buyers are let down, the second where fixing it is worth most. Say in a few words which were picked and why ("the 5 best sellers, led by the two with the most 1-star reviews").
 - Rows that aren't the product (an accessory, another product of the brand) are never a leader (`running-results.md`, "Read the data like an analyst").
 
@@ -13,12 +13,14 @@ Part of the judgement rules (`judgement.md` is the core). Read before choosing t
 Read `known-limits.md` first; a route it lists is never tried.
 - **Leaders on Amazon US:** their review text isn't read there. Read the **same products on amazon.co.uk and amazon.de** (their product links, `https://www.amazon.co.uk/dp/<ASIN>` and `https://www.amazon.de/dp/<ASIN>`, in one read: each link keeps its own marketplace); say before the run that a brand sold only in the US comes back empty there. Add **the brand's own shop** for a leader whose product page the user gives or the rows link, when it uses a review app the reviews read supports, and **Trustpilot** (`trustpilotDomains`) for a leader that is a brand with its own domain, said as reviews of the brand and its orders. The user may paste the leader's **Walmart** reviews: read what they paste, labelled as from the pasted text.
 - **Leaders on another Amazon marketplace:** read that marketplace's own pages (its top 8 to 13 reviews per product).
+- **No date filter on a complaint read:** pass `sinceDays: 3650` (the reviews read keeps only the last 30 days unless told otherwise, and Amazon's 8 to 13 featured reviews are mostly older, so a short window returns no text while the summaries and page reads are still charged). A short `sinceDays` is for watches only.
 - **Say the known-limits line once,** in the estimate: "Amazon US shows review text only to signed-in shoppers, so I read the same products on Amazon UK and Germany." Never again in the brief, and never as something tried or missed (`known-limits.md`, "Say it once, plainly").
 
 ## 3. Read the low reviews as well as the themes
 
 - **The themes come first** (`themes`, `topComplaints`, `topPraise` on each rating summary), **then the 1–2★ review texts** themselves (`review` rows with `rating` 1 or 2), because a theme is a keyword match and the texts say what actually went wrong.
 - **Named themes are English only.** Reviews in German, Spanish or another language give few or no themes: Claude reads those texts itself and groups them, and says so once in a few words ("the German reviews I read myself").
+- **The same review on two pages counts once:** a review that appears on both the UK and the German page of the same product (the same text, or one a translation of the other, with the same rating) counts once.
 - **Count from what was read:** each complaint's count is the number of low reviews read that name it, out of all low reviews read ("11 of 46 low reviews read"), and how many of the leaders read have it. Never a count from memory, a likely complaint for that kind of product, or a total that adds up more than was read.
 
 ## 4. Write the brief, on one screen
