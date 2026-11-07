@@ -107,6 +107,8 @@ Follow `references/running.md` (caps, `waitSecs: 45`, polling). Read:
     **The plan as a document, offered in one line once the stop rule is agreed (so in the next answer, not beside the stop-rule question)** (`references/running-results.md`, "Explaining results": "Things people keep, offered"): "Want this plan as a document you can share with a partner?" On a yes, a document in this chat (an artifact, or a Word or PDF file where this Claude makes files; from Claude Code, an artifact's claude.ai link) with the plan's sections as headings, the stop rule as agreed and no MarketMage internal names. Never made unasked.
 12. **Next step, last, and only one:** send the three questions to the first supplier and ask for a sample. The watch is never the closing line.
 
+**After a complaint brief or a deeper conversation** (`references/judgement-deeper.md`, "In other flows"; `references/judgement-complaints.md`): the fix found there is the plan's difference (item 4), the spec in the suppliers' questions (item 2) and the listing's title and first bullet (item 5); and the price position (item 6) adds the "if ten more sellers arrive" line (`references/judgement-timing.md`), from the rows already read.
+
 **Voice:** hopeful and practical (`references/judgement-answer.md`, "Tone"): this is the user's plan, built on numbers they can check. Credit what the data backs; one step line at most for outside knowledge ("Before listing: check whether heated products need extra approval in your category").
 
 ## 5. The stop rule

@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). **Read only after the 
 
 ## The offer
 
-- **In the existing offer line,** never a line of its own: "Want the full detail, or shall we go deeper and shape this around what you'd actually sell?" (find-products); "…or shall we go deeper on the version you'd build?" (validate). Other flows name their own deeper part in the same line ("what it opens up for you", spy-store). A yes to the detail gets the full detail as now; a yes to deeper starts here.
+- **In the existing offer line,** never a line of its own: "Want the full detail, or shall we go deeper and shape this around what you'd actually sell?" (find-products); "…or shall we go deeper on the version you'd build?" (validate). Other flows name their own deeper part in the same line ("what it opens up for you", spy-store). A yes to the detail gets the full detail as now; a yes to deeper starts here. The offer is that line and nothing more: no teaser beside it (no related version, rising search or figure of what going deeper would find), so the short default stays exactly as short.
 - **Once per conversation.** After it has been made, later answers keep the plain offer line.
 - **A shape the user asks for wins:** "everything" still gets everything; "just the table" gets no offer.
 
@@ -99,6 +99,14 @@ Open: non-greasy formula: do factories make it?
 
 - **Within about 6 turns,** the conversation reaches a shortlist of one or two that fit their vision, and a concrete action: the launch plan (`launch-plan`), sample requests (`suppliers` at their quantity), a `validate` check, or a watch. When money is at stake, the test comes before the spend: samples, a small first batch, and a stop rule agreed with numbers before any ads.
 - **Across chats:** with the notebook off, one line to paste next time, like the `Profile:` line, given once at the shortlist: "To pick this up in another chat, paste: `Brief: dog paw balm, non-greasy, lick-safe · own Shopify store · $1k–5k · first order in the hundreds · set aside: poop bags`". With the notebook on: `notebook-use.md`, "Going deeper". The user's vision text is never stored in the notebook.
+
+## In other flows
+
+The same shape (the offer once, only what isn't known, facts from rows, one next step, "Where we are" when something moves), with each flow's own deeper part:
+- **validate: "The version you'd build"** (offer: "…or shall we go deeper on the version you'd build?"; or the user describes their version: a bundle, a feature, a price). In one answer of about 200 words: their price against the band (the margin at their price, after their channel's fees); **the premium rung** when their price is above `priceP75` (how many listings sit above it and how many of those carry sales badges, from the rows read); the leaders' complaints as the reason a buyer pays more, from the complaint brief (`judgement-complaints.md`: when the leaders' text isn't read yet, its read is offered with its one estimate, never filled in); and **the factory spec that carries the fix** (which factory offers list it, else "ask for it as a custom part"). A part of their plan that is only a hunch ("women-only branding") is called a hunch, kindly, with the read that would turn it into a reason to pay. On a timing question, the timing reading (`judgement-timing.md`).
+- **suppliers and launch-plan: supplier reality per direction:** each kept direction's first-order cash (unit price × minimum order) against their band, and which offers list the fix. When a complaint brief or a deeper conversation led here, the spec sheet's first line and the listing's title and first bullet lead with the fix, and the price position adds the "if ten more sellers arrive" floor (`judgement-timing.md`).
+- **market-scan:** the timing reading when the question is about timing (`judgement-timing.md`).
+- **spy-store and reviews-watch** carry their own deeper part in their skill (what a rival's store opens up for the user; the complaint brief on a rival, the user's own complaints turned into fixes).
 
 ## Cost, said only at the approval
 
