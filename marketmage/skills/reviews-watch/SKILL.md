@@ -8,6 +8,7 @@ description: Read or monitor product reviews - average rating, review count, sha
 Ratings, new reviews and what shoppers praise or complain about, now or over time. Read these first:
 - `references/running.md`: costs, caps, tools, secrets;
 - `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
 - `references/watchlists.md`: scheduling;
 - `references/costs.md`: the prices.
 
@@ -19,6 +20,7 @@ Ratings, new reviews and what shoppers praise or complain about, now or over tim
 
 - **The products:** product page URLs from the user's or competitors' shops, and Amazon ASINs or URLs with the marketplace (US by default).
 - **Companies on Trustpilot:** a domain (`allbirds.com`) or its `trustpilot.com/review/…` page, as `trustpilotDomains`.
+- **A store whose own reviews can't be read** (listed in `references/known-limits.md`, such as allbirds.com): never pass its product pages; read its Trustpilot page (`trustpilotDomains`) instead, even when the user pasted a product link, and say so once in the plain words given there.
 - **Once or ongoing.** If ongoing, how often: daily or weekly.
 - **Optional:** how far back (`sinceDays`, 30 by default) and how many reviews per product (`maxReviewsPerProduct`, 20 by default; 0 for the rating summary only).
 
@@ -32,14 +34,14 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - a shop product with 20 reviews ≈ **USD 0.013**; an Amazon ASIN outside the US (its 8 to 13 top reviews) ≈ **USD 0.01**; an amazon.com (US) ASIN: its rating summary only, USD 0.003 (below); outside the US, add up to USD 0.012 for the local-address reads;
   - **a Trustpilot business:** summary USD 0.003 + USD 0.003 for its read (provider search) + USD 0.0035 per review delivered (review USD 0.0005 + provider record USD 0.003): with 20 reviews ≈ **USD 0.076**. It's read through CleanPull's marketplace data service (a third-party provider; nothing to set up) and takes about 30 to 60 seconds a business;
   - a product whose shop uses another review app, or that can't be read, is not charged.
-  - **When the estimate is USD 0.05 or less,** run it straight away, with no cost mention; above that, give the one estimate and ask first (`references/running.md`, "Before any run"). **Example above it:** 4 product pages and 2 ASINs, 20 reviews each: "up to about USD 0.07 (capped). Go ahead?"
+  - **When the estimate is USD 0.05 or less,** run it straight away, with no cost mention; above that, give the one estimate and ask first (`references/running.md`, "Before any run"). **Example above it:** 4 product pages and 2 ASINs, 20 reviews each: "up to about USD 0.07 (with a spending limit). Go ahead?"
 - **Read** with `get-dataset-items`:
   - the `rating-summary` rows in full: `average`, `count`, `histogram` (`histogramUnit` is `count` for the review apps and `percent` for Amazon), `themes`, `topComplaints`, `topPraise`, `newestReviewDate`;
   - the `review` rows with `fields: "recordType,productTitle,rating,title,text,date,verified,variant,reviewId"` and a `limit` of about 100.
 - **Not read:** `RUN_SUMMARY.failures` names each product that wasn't, with the reason. Say which:
   - shops using Bazaarvoice, Junip, REVIEWS.io, PowerReviews or another app, and review apps loaded only by a theme's scripts;
   - Amazon's full review list (it needs a sign-in): outside the US Amazon gives the rating, the share per star and the top reviews only; amazon.com gives the rating and the share per star only (next point).
-- **amazon.com (US) shows no review text to signed-out shoppers:** follow `references/running-results.md`, "Amazon reviews in the US" (say it before the run, price US ASINs as the summary only in any estimate, offer amazon.co.uk or .de or shop pages, never "no complaints").
+- **amazon.com (US) shows no review text to signed-out shoppers:** follow `references/known-limits.md`, "Amazon reviews in the US" (say it before the run, price US ASINs as the summary only in any estimate, offer amazon.co.uk or .de or shop pages, never "no complaints").
 
 ## 3. Explain it like an expert
 
@@ -51,7 +53,7 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - **On the user's own product:** turn each complaint into a fix: a size chart, packaging, a clearer photo or description.
 - **Small samples:** under about 20 reviews, say the themes are a hint, not a trend. Themes come from keyword and phrase matching, not AI, so a theme is a pointer to reviews to read, not a measured sentiment score. **Named themes are English only:** the known complaint and praise phrases ("runs small", "arrived damaged") are English, so reviews in another language (amazon.de, .fr, .es, a German Trustpilot page) give mostly recurring phrases in that language, or no themes: say so, and read the review texts themselves for what buyers complain about.
 - **Loox** shows no dates in some layouts, and **Stamped** and **Loox** publish no counts per star: say so when it matters.
-- End with the dataset link, and offer the watch, with no price on the offer (its monthly estimate comes at set-up): "I can tell you each morning when these get new or low reviews."
+- When the answer quotes only some of the reviews, one plain line with the link to all of them ("Full list of the reviews: <link>") (`references/plain-words.md`); then offer the watch, with no price on the offer (its monthly estimate comes at set-up): "I can tell you each morning when these get new or low reviews."
 
 ## 4. Ongoing (a watchlist)
 

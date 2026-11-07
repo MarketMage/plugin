@@ -58,4 +58,4 @@ Before any run in a chat that already holds a CleanPull run, look back through i
 | `launch-plan` after `validate` | the Amazon leaders (ASINs, fees, ratings), the keyword summary, the supplier summary, and the leaders' complaints if read | about USD 0.08 |
 | `export` after anything | the dataset ID | a question |
 
-**Fresh enough:** prices, stock, Buy Box, ranks and promotions the same day; catalogues, review summaries and ads 7 days; Trends, supplier prices, listing audits and tech stacks 30 days. Say "from your run at 09:12 today" when you reuse one, and offer a fresh read if the user wants it.
+**Fresh enough:** prices, stock, Buy Box, ranks and promotions the same day; catalogues, review summaries and ads 7 days; Trends, supplier prices, listing audits and tech stacks 30 days. Say "from your check at 09:12 today" when you reuse one, and offer a fresh read if the user wants it.

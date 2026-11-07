@@ -8,6 +8,7 @@ description: Audit product pages from any online store or Amazon listings and gi
 A score and a fix list for product pages. Read `references/running.md` first (costs, caps, tools, secrets). Prices are in `references/costs.md`.
 
 `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
@@ -47,7 +48,7 @@ A score and a fix list for product pages. Read `references/running.md` first (co
   - A row with `partial: true` was served without its lower half: the checks in `notChecked` are left out of the score, not failed.
 - **Against a competitor:** name the checks where they're ahead and the user's fix for each; a store page and an Amazon listing are compared on what they share (title, images, attributes).
 - **The score is a guide,** built from Google's and Amazon's published guidance; search rankings use many other signals. Say so once.
-- Give the dataset link, and end on the next move, with no price.
+- When the answer quotes only part of the pages audited, one plain line with the link to all of them ("Full audit of every page: <link>") (`references/plain-words.md`); end on the next move, with no price.
 
 ## 5. Ongoing (a listing watch)
 

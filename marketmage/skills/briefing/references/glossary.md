@@ -24,7 +24,7 @@ Plain meanings for trade terms. Use these words the first time a term appears in
 | Units per day (TikTok Shop) | Units sold between two reads of the same product, divided by the days between them. One read gives lifetime units only. |
 | Watch, watchlist | A saved Apify task with a schedule that reads the same items each time and reports what changed. |
 | Baseline | A watch's first read, which everything after is compared with. It reads everything, so it costs more than a typical run. |
-| Spending cap, max cost per run | The most a run can cost: `maxTotalChargeUsd` for a run started in chat, `maxRunCostUsd` in a watch's input for scheduled runs. |
+| Spending limit (spending cap, max cost per run) | The most a check can cost (say "spending limit" to the user): `maxTotalChargeUsd` for a run started in chat, `maxRunCostUsd` in a watch's input for scheduled runs. |
 | Sales floor | The sum of Amazon's "bought in past month" badges over the top 10, each at the bottom of its bucket ("1K+" counts 1,000), and that times their prices: at least what they sell a month, never an estimate. |
 | Referral fee, FBA fee | Amazon's cut of each sale (a share of the price, 15% in most categories) and its charge for storing, packing and shipping a unit when Amazon fulfils it (set by size and weight). |
 | Margin after fees | What a sale pays out after the marketplace's fees, less the unit cost, as a share of the price; freight, duty and ads still to come. |
