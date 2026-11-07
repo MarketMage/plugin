@@ -1,0 +1,25 @@
+{
+  "input": {
+    "actor": "cleanpull/reviews-monitor",
+    "input": {
+      "asins": [
+        "https://www.amazon.co.uk/dp/B0DGBR0003",
+        "https://www.amazon.co.uk/dp/B0DGBR0001",
+        "https://www.amazon.co.uk/dp/B0DGNG0003",
+        "https://www.amazon.co.uk/dp/B0DGNG0001",
+        "https://www.amazon.co.uk/dp/B0DGGL0003",
+        "https://www.amazon.co.uk/dp/B0DGGL0004"
+      ],
+      "maxReviewsPerProduct": 20,
+      "includeThemes": true
+    },
+    "waitSecs": 45,
+    "callOptions": {
+      "maxTotalChargeUsd": 0.2
+    }
+  },
+  "output": "{\"runId\": \"run-dg-rm-bgg\", \"actorName\": \"cleanpull/reviews-monitor\", \"status\": \"SUCCEEDED\", \"statusMessage\": \"COMPLETE: 6 products, 21 reviews.\", \"defaultDatasetId\": \"ds-dogdirs-reviews-bgg\", \"defaultKeyValueStoreId\": \"kv-reviews-monitor\", \"chargedEventCounts\": {\"rating-summary\": 6, \"review\": 21, \"product-checked\": 0, \"residential-request\": 12}, \"nextStep\": \"Call get-dataset-items with datasetId ds-dogdirs-reviews-bgg to read the results.\"}",
+  "verdict": "ok",
+  "recordedAt": "2026-11-07T20:36:27.614Z",
+  "model": null
+}

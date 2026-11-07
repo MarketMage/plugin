@@ -1,0 +1,24 @@
+{
+  "input": {
+    "actor": "cleanpull/supplier-price-finder",
+    "input": {
+      "products": [
+        "dog deshedding brush",
+        "dog nail grinder",
+        "dog grooming glove"
+      ],
+      "sources": [
+        "made-in-china"
+      ],
+      "maxOffersPerSource": 10
+    },
+    "waitSecs": 45,
+    "callOptions": {
+      "maxTotalChargeUsd": 0.12
+    }
+  },
+  "output": "{\"runId\": \"run-dg-spf-bgg\", \"actorName\": \"cleanpull/supplier-price-finder\", \"status\": \"SUCCEEDED\", \"statusMessage\": \"Done: 3 product summaries and their Made-in-China offers. Each summary carries its unit price median and MOQ.\", \"defaultDatasetId\": \"ds-dg-spf-bgg\", \"defaultKeyValueStoreId\": \"kv-supplier-price-finder\", \"chargedEventCounts\": {\"product-summary\": 3, \"offer\": 15}, \"nextStep\": \"Call get-dataset-items with datasetId ds-dg-spf-bgg to read the results.\"}",
+  "verdict": "ok",
+  "recordedAt": "2026-11-07T20:36:13.456Z",
+  "model": null
+}

@@ -30,13 +30,13 @@ Up to about USD <X> (with a spending limit), about <N> minutes. Answer that and 
 - **A candidate that clashes with a rule the user set** is dropped, or kept with the clash named in its card ("comes in glass-thickness versions, close to the sizes you'd rule out"; "own-label wipes start at 3,000 packs, past the 'hundreds, not thousands' you set").
 - **Each direction is a short card,** these lines and nothing more, one fact each, every number from a row read in this chat:
   - **the direction and who it's for,** in the user's words ("Paw balm that doesn't leave greasy prints, for big-dog owners in winter");
-  - **Demand:** one fact (TikTok units of the top listing, the Amazon sales floor, a rising search with its rise);
+  - **Demand:** one fact (TikTok units of the top listing, the Amazon sales floor, a rising search with its rise and its period, "over 12 months");
   - **The gap:** one fact: a complaint with its count ("7 of 31 low reviews on the 3 leaders say 'greasy prints'": `judgement-complaints.md` for the bar a complaint must clear; below it, "a hint"), a price band with few strong listings, a variant the rising searches name that the leaders' titles don't carry, or a pitch no advertiser uses;
   - **Feasibility:** the factory price and minimum order against their band ("USD 1.20–1.90 a tin at 200 tins"), or the one-unit price for dropship;
   - **The open question,** with the check that settles it ("do these factories make a non-greasy formula? Ask 2 of them for samples").
 - **No verdict on a direction:** no market label, no For you label, no score. A direction is a hypothesis; `validate` is still the gate before money, and the card's open question says what would settle it.
 - **Lead with the one that fits them best,** in one line saying why ("Your dog fits the first two."). The rest waits for "tell me more about #2".
-- **About 300 words** for the whole answer, cards included, in this shape; each card line is one fact, about 20 words, with no second figure and no "and" joining two facts:
+- **At most 400 words** for the whole answer with 3 cards (about 300 is the aim), in this shape. **Each card at most 90 words:** a title line and four lines, each one fact with one number, about 15 words, with no second figure and no "and" joining two facts. The user's rules are not restated (they were, at the yes); the opening is one line.
 
 ```
 Three directions. <which fits them best, and why, in one line>.
@@ -48,8 +48,8 @@ Three directions. <which fits them best, and why, in one line>.
 - Open question: <it>: <the check that settles it>.
 **2. …**   **3. …**   (same four lines)
 
-Where we are: leaning <x> · <y> kept · set aside: <z> (<reason in a few words>).
-Next step: <the move>.
+Where we are: leaning <x> · <y> kept · set aside: <z> (<reason, 3 to 6 words>).
+Next step: <the move, one line>.
 Or: "<follow-up>" · "<follow-up>"
 ```
 
@@ -63,6 +63,10 @@ Or: "<follow-up>" · "<follow-up>"
 - Open question: do these factories make a non-greasy formula? Ask 2 for samples.
 ```
 
+- **"Where we are" adds nothing new:** names only, each reason a few words, and no fact a card already gave. The Next step is one line and the follow-ups one line.
+- **Totals come from the numbers on the same line:** a first order's cash is the unit price × the minimum order that line quotes, both ends of a range worked from those two figures (USD 1.90–2.18 × 200 = USD 380–436), never rounded into a different range.
+- **Rising searches in a card:** only one that is about the direction's own product (never a search for another animal or product that happened to come back for the term); and when its term is low-volume (`summary.lowVolume`) or the rise is a breakout, say "from a small base" beside the percentage.
+- **Plain sentences, no analyst notation:** no "· 3 for · 1 against", thresholds or signal names in the deeper turns; every turn opens with a plain answer to what the user asked, in text, before any card, chart or table.
 - **Nothing else in this answer:** no paragraph on sources or method, no table, no list of what was left out beyond the set-aside part of "Where we are". A source that came back empty for a direction is a few words in its gap line ("complaints not read yet"), never a note. A limit already said at the yes (the known-limits line, "reviews are a sample") is not said again.
 
 ## 3. A conversation that converges
@@ -71,7 +75,18 @@ Or: "<follow-up>" · "<follow-up>"
 - **Each turn ends on one Next step, plus at most two follow-ups** phrased as the user would say them (`running-results.md`, "At most two follow-ups"): today's rule, unchanged.
 - **"Where we are", one line, only when something moves** (a direction ruled in, leaning, kept or set aside): "Where we are: leaning paw balm (fits your dog and a small first order) · wipes kept · set aside: poop bags (leaders at 18,400 reviews; a price game)." Not on a turn where nothing moved.
 - **Pressing on one direction** (its complaints, its factory price at their quantity, its timing: `judgement-timing.md`, its advertisers) reuses the rows already read: no cost is said. A press that needs a new read under USD 0.05 just runs; over that, its one estimate and a yes (`running.md`, "Before any run"). A press for the complaints of one direction is the complaint brief (`judgement-complaints.md`).
-- **Turn sizes:** a press or a comparison about 150 words; a converging turn (the shortlist and its plan) about 200 words. "Everything" still gets everything.
+- **Turn sizes:** a press or a comparison about 150 words; a converging turn (the shortlist and its plan) at most 220 words, aiming at about 180: the pick and its reason in two or three short lines (one fact each, no restating a card), "Where we are" in one line, the `Brief:` line, the Next step in one line, the follow-ups in one line. "Everything" still gets everything. A converging turn, in this shape (no more than two reason lines of about 12 words, each one fact a card hasn't already said, and one line of about 25 words for the option that comes second):
+
+```
+I'd pick <x> for you: <the reason in their terms, one line>.
+- <one fact>.
+- <one fact>.
+<the other option, one line: what it has, and why it comes second>.
+Where we are: leaning <x> · <y> kept · set aside: <z>.
+To pick this up in another chat, paste: `Brief: <pick> · <channel> · <budget band> · set aside: <names>`   (notebook off, at the shortlist; 15 words at most)
+Next step: <the move, one line>.
+Or: "<follow-up>" · "<follow-up>"
+```
 
 ## 4. The working brief: what the conversation remembers
 

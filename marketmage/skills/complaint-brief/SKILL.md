@@ -5,13 +5,11 @@ description: Turn what buyers complain about in the leading listings for a produ
 
 # The complaint brief
 
-Find the complaint the user could fix in the leading listings, and turn it into a brief a factory can quote on. Read these first, in one batch:
-- `references/judgement-complaints.md`: picking the leaders, the sources, reading the low reviews, the brief's shape and the honesty rules. **Follow it exactly.**
-- `references/judgement.md`: the core judgement rules (the facts layer, the sales floor as a floor, "Read the data like an analyst"); its other parts are read only where a step names them: `references/judgement-answer.md` ("Tone") only when the brief is joined to a verdict, and none of the lens files.
-- `references/running.md`: costs, caps, tools, secrets, and the runs already made in this conversation.
-- `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
-- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
-- `references/costs.md`: the prices.
+Find the complaint the user could fix in the leading listings, and turn it into a brief a factory can quote on.
+
+**Up front, in one batch, only these:** `references/judgement-complaints.md` (picking the leaders, the sources, reading the low reviews, the brief's shape and the honesty rules: **follow it exactly**), `references/judgement.md` (the core: the facts layer, the sales floor as a floor), `references/running.md` (costs, caps, tools, secrets, the runs already made in this chat), `references/known-limits.md` (routes established not to work, read before choosing any source; never try a route it lists) and `references/plain-words.md` (the words the user sees). The run prices this skill needs are in its table below.
+- **Later, only at their step:** `references/running-results.md` in the same batch as the first result read; `references/running-runs.md` only for a Trustpilot read (a data-provider read), a run that doesn't succeed, or when this chat already holds a run; `references/costs.md` only when an estimate needs a price the table below doesn't give; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do; `references/judgement-answer.md` ("Tone") and the other judgement parts only when the brief turns into a verdict; no lens file.
+- **The tool calls:** about 14 when the brief is a chat's first job (5 reference reads, 3 runs, 3 result reads, 1 reference read with them); a `RUN_SUMMARY` read only when the user needs to know why a page wasn't read (a leader with no rows in the results simply wasn't read: say so).
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
