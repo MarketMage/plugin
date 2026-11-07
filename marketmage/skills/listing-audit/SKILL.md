@@ -24,7 +24,7 @@ A score and a fix list for product pages. Read `references/running.md` first (co
 
 - **Run** `cleanpull/listing-quality-checker` with `productUrls`, `competitorUrls`, `keywords`.
 - **Cost (paid plans):** USD 0.005 per page audited (each URL is read once); USD 0.007 more for a page from a site that blocks standard addresses. Comparison rows are free; a page that can't be read is not charged.
-  - **Example:** the user's page and 2 competitors' ≈ **USD 0.015**: run it straight away. 20 pages ≈ USD 0.10: say so and get a yes.
+  - **Example:** the user's page and 2 competitors' ≈ **USD 0.015**: run it straight away, with no cost said. 20 pages ≈ USD 0.10: give the one estimate (`references/running.md`, "Before any run") and get a yes.
 
 ## 3. Read the results
 
@@ -47,7 +47,7 @@ A score and a fix list for product pages. Read `references/running.md` first (co
   - A row with `partial: true` was served without its lower half: the checks in `notChecked` are left out of the score, not failed.
 - **Against a competitor:** name the checks where they're ahead and the user's fix for each; a store page and an Amazon listing are compared on what they share (title, images, attributes).
 - **The score is a guide,** built from Google's and Amazon's published guidance; search rankings use many other signals. Say so once.
-- End with the cost and the dataset link.
+- Give the dataset link, and end on the next move, with no price.
 
 ## 5. Ongoing (a listing watch)
 

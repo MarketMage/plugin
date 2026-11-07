@@ -9,7 +9,9 @@ PASS if all of these hold:
 - it weighs TikTok units (impulse, felt want) over Amazon search demand for this user, and says at least once that Amazon search demand (deep Best Sellers reviews or high search interest) is not counted for them, counts against cold traffic, or is not a lead for them (never that it favours them);
 - it applies at least two of these lens checks to specific ideas, each tied to a title or number: a "USB Rechargeable" lithium battery shown as a neutral risk note (never a policy fail: no named ad platform prohibits it), weight / bulk / fragility, demo-ability (visible on video in seconds, as a judgement), or MOQ-1 supplier availability (offering an AliExpress check, with a cost);
 - each idea gets a for-you reading next to the market's for/against, using the fixed labels (a strong fit / a fit, with one fix / a long shot / not this one), and a gate that can't be judged from the titles (single units, profit) is said to be not read, not checked yet or unclear, rather than guessed; the handheld USB laser pointer (60 TikTok units) reads "a long shot" (thin demand on their channel) or "not this one" (at USD 7.99 even a free product can't cover USD 8 of ads plus fees, and no listing of it sells at a higher price), never "a fit, with one fix";
-- non-cat rows are left out; it ends on a costed next step (validate two ideas, or the AliExpress check);
-- no hype words, no doom words, no comment on the profile itself; it states what the research cost.
+- non-cat rows are left out; it ends on a next step with no Apify cost (validate two ideas, or the AliExpress check);
+- no hype words, no doom words, no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
-FAIL if the rechargeable ball is set aside or failed for its battery alone, if the ideas are ranked only by Amazon demand with no lens, if no lens filter is applied to any idea, if the exact USD 500 is repeated, or if there is no costed next step.
+FAIL if the rechargeable ball is set aside or failed for its battery alone, if the ideas are ranked only by Amazon demand with no lens, if no lens filter is applied to any idea, if the exact USD 500 is repeated, or if there is no next step, or it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

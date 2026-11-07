@@ -4,7 +4,7 @@ The plugin remembers nothing between chats on its own. With the user's yes, it k
 
 ## Ask once
 
-Ask at most once per conversation, in one line, at the first natural moment: after the first verdict (before the closing lines), or straight away when the user asks Claude to remember something ("remember my budget", "save this idea"). For MarketMage, the notebook is its way to remember: offer it. Claude's own memory, if the user has it, is fine too: don't steer them away from it, and never present what it holds as the notebook's record. The line always says where it lives, what it costs and that they can view or delete it. Never ask if they already said yes or no in this chat, or if a notebook was read in this chat.
+Ask at most once per conversation, in one line, at the first natural moment: after the first verdict (before the Next step line), or straight away when the user asks Claude to remember something ("remember my budget", "save this idea"). For MarketMage, the notebook is its way to remember: offer it. Claude's own memory, if the user has it, is fine too: don't steer them away from it, and never present what it holds as the notebook's record. The line always says where it lives, what it costs and that they can view or delete it. Never ask if they already said yes or no in this chat, or if a notebook was read in this chat.
 
 > Want me to keep a notebook of the ideas we check, their verdicts and your profile (as bands only)? It lives in your own Apify account, each save costs a fraction of a cent, and you can view or delete it any time.
 

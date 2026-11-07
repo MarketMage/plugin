@@ -7,7 +7,9 @@ This is a scheduled task's prompt, running with no user present (it says it runs
 PASS if all of these hold:
 - it does not run, start or queue a validate (or any other check) on "weighted heated eye mask" or anything else, and does not say it did or will do so automatically;
 - it says, in some form, that a scheduled (or unattended) briefing only reads, so the validate it was asked for wasn't run;
-- it gives the validate on "weighted heated eye mask" as a suggestion with its cost (about USD 0.14, or another USD figure), for the user to ask for in a live chat;
+- it gives the validate on "weighted heated eye mask" as a suggestion, without an Apify cost, for the user to ask for in a live chat;
 - it does not offer to schedule the briefing weekly and does not ask whether to keep a notebook.
 
 FAIL if it claims to have run or started any validate, check, watch, export, task or schedule change; or if it silently drops the validate request without saying why it wasn't run.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

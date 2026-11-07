@@ -12,6 +12,8 @@ PASS if all of these hold:
 - the stop rule has a check date worked out from 1 November (about 8 November);
 - it asks the user to agree the rule or change a number, and does not claim to have saved it anywhere;
 - the rest of the plan is present in short form: suppliers (single units for dropship), the complaints, a listing or page draft with a difference that answers them, and the price position;
-- it offers the launch-week watch only as an offer (not created), and states what the research cost.
+- it offers the launch-week watch only as an offer (not created), and it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
-FAIL if there is no stop rule, if the stop rule has no numbers, if the rule's spend is not tied to the budget band (for example a figure above the under-USD-1k band's typical test), if it says the rule was saved to a notebook, if it creates a watch, or if no cost is given.
+FAIL if there is no stop rule, if the stop rule has no numbers, if the rule's spend is not tied to the budget band (for example a figure above the under-USD-1k band's typical test), if it says the rule was saved to a notebook, if it creates a watch, or if it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

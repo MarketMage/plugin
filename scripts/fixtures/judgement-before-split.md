@@ -16,12 +16,14 @@ Three layers, always kept apart:
 3. **Answer the opposite question too.** Asked "is it worth selling?", add the early sign that would say otherwise (`judgement-ladder.md`, "Watches"). Asked "is it saturated?", add one line on what a newcomer still has going. The framing of the question never moves the verdict.
 4. **Confidence is coverage, not feeling** (see "Confidence").
 5. **Credit where it's due, tied to a number.** When the data backs something the user said or chose, say so specifically: "You were right that demand is rising: +38% over 5 years." "Your USD 29.99 sits inside the p25 to p75 band (22.99 to 34.99)." At most two such lines, each naming its number. Never empty flattery ("great idea", "smart thinking"), and never a compliment about the person, their budget or their experience. If nothing the user said is backed by the data, leave the credit out rather than invent one.
-6. **Never end on a verdict.** Every judgement ends on a concrete move with its cost: the check of the best related version, the test that settles it, or the watch that catches the early sign. The verdict opens the answer; the next move closes the first screen and, in one short line, the answer.
+6. **Never end on a verdict.** Every judgement ends on a concrete move, with no price on it: the check of the best related version, the test that settles it, or the watch that catches the early sign. The verdict opens the answer; the next move closes the first screen and, in one short line, the answer.
 7. **"For you" first, "For the market" second.** With a profile, the answer leads with a verdict for this person ("For you: not this one", "For you: a strong fit"), read through their lens, then gives the market verdict ("For the market: Strong"), which never changes with who asks. Without a profile, the market verdict leads; the profile is offered only as `judgement-profile.md`, "Asking for the profile" says (once per conversation).
    - **The labels are fixed strings.** The For you verdict is always written as exactly one of these four, word for word, after "For you: ": **a strong fit**, **a fit, with one fix**, **a long shot**, **not this one**. The market verdict is exactly one of **Strong**, **Promising, with one fix**, **Not this version: here's one that could be** (shortened to "Not this version" in running text). Never a paraphrase ("there's room, with one fix", "it fits, with one thing to fix", "works, with one thing to fix first", "a fit with a caveat"): the explanation goes after the label, never inside it.
 8. **Tone: hopeful, curious, plain-spoken** (`judgement-tone.md`, "Tone"). Say a weak version is weak once, kindly, with its reason in numbers; then build. Never pre-own a failure that hasn't happened.
 9. **Say what the data can't see**, in one short line, with a clause only for each source actually read: Amazon publishes no sales figures (Best Sellers Rank and "bought in past month" are proxies, and the sales floor is their sum); Google Trends is relative interest, not volume; TikTok Shop is the US shop only; supplier prices are list prices, not quotes; reviews are a sample. It is a fact about coverage, not a warning about the idea.
-10. **The search never dead-ends.** Any verdict short of Strong carries the related versions ladder (`judgement-ladder.md`), and the best rung is offered for an immediate check with its cost.
+10. **The search never dead-ends.** Any verdict short of Strong carries the related versions ladder (`judgement-ladder.md`), and the best rung is offered for an immediate check.
+
+**Where these parts sit in the answer** (`judgement-answer.md`, "The short default, and the full detail on request"): the short default carries the table (rule 1), the scores (rule 2), the credit (rule 5), the next move (rule 6), the verdict lines (rule 7), the best related version or the one fix (rule 10) and, for a yes/no question, the one-line opposite answer (rule 3). "What it means" (rule 1), the early sign and its watch (rule 3), the full ladder (rule 10) and what the data can't see (rule 9) are in the full detail, except that for a yes/no question the one-line opposite answer (for "is it worth selling?", the early sign with today's number) stays on the first screen (`judgement-answer.md`, "Answer structure"); its watch offer waits. The rest is offered in one line, unless a caveat changes the verdict or its confidence: that one line stays in the default. **No notes block under the table in the default:** caveats that don't change the verdict (list prices, not quotes; an assumed fee or rate; a comparison term that came back different; rows kept as close cousins) and a one-sentence policy step ("Before listing: …") are full detail too; only an exclusion or mismatch line, suspicious text and a verdict-changing caveat sit under the table by default.
 
 **The sales floor is a floor.** Quote it as "at least 12,000 units, about USD 360,000 a month across the top 10" (`unitsPerMonthMin`, `revenuePerMonthMin`), never as an estimate of sales: a listing without a badge counts 0, and "10K+" can be far more than 10,000.
 
@@ -63,7 +65,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 - **Four for and nothing against is Strong.** Most signals land neutral on real data, so a clean 4 for, 0 against (with any number neutral) is a strong read: "4 for · 0 against · 3 neutral" is **Strong**. With one against, it takes 5 for.
 - **Three or more `unknown`:** the verdict is at most Promising, and the confidence `low`.
 - **Settled early:** when the signals read already decide the verdict whatever the unread ones would show (for example 4 `against` with two still unread), the verdict stands: say it without hedging, list the unread signals as "not read: can't change the verdict", and don't count them as missing for the confidence.
-- **"The one fix"** in a Promising verdict is the single change or test that would move it: name the `against` (or `unknown`) signal that matters most and what would turn it, with its cost.
+- **"The one fix"** in a Promising verdict is the single change or test that would move it: name the `against` (or `unknown`) signal that matters most and what would turn it.
 
 Print the counts ("5 for, 1 against, 2 unknown"), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
 
@@ -81,7 +83,7 @@ Count only the sources planned for the marketplace. A source that isn't planned 
 
 Signals left unread because the verdict was already settled don't lower the confidence either ("Settled early" above). A signal is `unknown` only when none of its sources was read: Demand level is `unknown` only when neither Amazon's bought-in-past-month nor TikTok was read (outside the US, bought-in-past-month alone scores it).
 
-State the confidence with the verdict, and what would raise it (one source, with its cost).
+State the confidence with the verdict, and what would raise it (one source).
 
 ## Related versions: the ladder
 
@@ -94,15 +96,15 @@ For any verdict short of **Strong**, give 2 or 3 related versions that stay in t
 5. **Channel:** the same product sold where the leaders aren't (TikTok Shop units when Amazon page 1 is ad-heavy; the user's own store or audience; search ads or a marketplace listing when Amazon's floor shows buyers searching for it but the feed shows little impulse demand).
 
 For each version:
-- **Name the fact that makes it promising,** from rows already read (a number, never a guess). A rung with no supporting fact in the data is skipped, not invented. If no rung has a fact yet, name the cheapest read that would find one (for example the Trends rising searches, about USD 0.0015 a term) and offer it.
+- **Name the fact that makes it promising,** from rows already read (a number, never a guess). A rung with no supporting fact in the data is skipped, not invented. If no rung has a fact yet, name the cheapest read that would find one (for example the Trends rising searches) and offer it.
 - **Say what stays the same** ("same buyers, same factory").
-- **Offer the best one for a check now, with its cost:** for example `validate` on it, reusing this conversation's rows where they apply (`running.md`, "Runs in this conversation"), or a `market-scan` summary (about USD 0.017). This offer is the answer's "Next step".
+- **Offer the best one for a check now:** for example `validate` on it, reusing this conversation's rows where they apply (`running.md`, "Runs in this conversation"), or a `market-scan` summary. This offer is the answer's "Next step".
 
 A **Promising** verdict also gets the ladder, shorter (1 or 2 versions), after "the one fix". A **Strong** verdict skips the ladder unless the user asks for options; it gets its watch instead.
 
 ## Watches: risks as early signs
 
-Every verdict names its biggest risk as **the early sign** to look for, not as a warning: "The early sign would be ad slots climbing past 12 in 48: today it's 4." Then offer the watch that would catch it, with its cost (from the skill that runs it and `costs.md`), and never create it without a yes (`watchlists.md`):
+Every verdict names its biggest risk as **the early sign** to look for, not as a warning: "The early sign would be ad slots climbing past 12 in 48: today it's 4." Then offer the watch that would catch it, with no price on the offer (its monthly estimate comes at set-up, with the yes: the skill that runs it and `costs.md`; the figures below are for that estimate), and never create it without a yes (`watchlists.md`):
 
 | Risk the data points to | The early sign | The watch to offer |
 | --- | --- | --- |
@@ -114,7 +116,7 @@ Every verdict names its biggest risk as **the early sign** to look for, not as a
 
 One watch, the one that matches the biggest risk. On a Strong verdict, this watch is the natural next move.
 
-**After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with the cost of its first paid step.
+**After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with no price (its estimate comes at the yes).
 
 ## Tone
 
@@ -124,11 +126,11 @@ One watch, the one that matches the biggest risk. On a Strong verdict, this watc
 - "the data strongly favours this" (Strong with 6 or more for), "the data favours this" (Strong with 4 or 5 for);
 - "the data is mixed: here's the one fix";
 - "the data is against this version; here's one it favours";
-- "we can't tell from this data yet: this read would tell us (cost)".
+- "we can't tell from this data yet: this read would tell us".
 
 **The verdict line is clean:** label, confidence, counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
 
-**One next move, not a menu:** the last line names one action with its cost. Other options, if any, go in the follow-ups before it (`running.md`, "Explaining results").
+**One next move, not a menu:** the last line names one action, with no price. Other options, if any, go in the follow-ups before it (`running.md`, "Explaining results").
 
 **Knowledge from outside the data** (a marketplace policy, a certification, a health-claim rule) is welcome when it changes the plan, as **one** sentence framed as a step ("Before listing: check Amazon's rules on battery-powered items"), never as a paragraph, a section of warnings or a list, never inside "For you" (the exceptions are the policy gate, which cites a named platform rule, and the risk notes: "Platform rules and risk notes"), and it never moves a signal or the market verdict. If several apply, name the one that matters most. Keep it under about 20 words, say it once in the whole answer (not again in the opposite-question line or the notes), and never explain the policy: point to it ("Before listing: read Amazon's dropshipping policy; it decides which suppliers fit.").
 
@@ -154,7 +156,7 @@ Check the whole answer against this list before sending it, including the caveat
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step with its cost. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
+**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -174,20 +176,24 @@ What you got right   (only when a number backs it; at most two lines)
 The one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
-  or: What would have to be true: <one line>. The cheapest test: <it>, about USD <cost>.   (For you: a long shot)
-Next step: <the move>, about USD <cost>.
+  or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
+Next step: <the move>.
                                               ── end of the first screen (~150 words at most)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
   Review depth   median 3,400; 2 of 48 under 100 reviews        against (> 3,000; ≤ 2 of 48)
   …
 
-What it means (for any seller)
-  Two sentences on the shape of the market.
-
 For you, through the <lens> lens   (only with a profile; see "The For you block")
   The lens lines: each row that counts differently, and each gate, with its fact.
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
+
+Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
+Next step: <the same move as on the first screen>.   (one short line, no price)
+                                              ── end of the short default
+── the full detail, on a yes or a question that needs it:
+What it means (for any seller)
+  Two sentences on the shape of the market.
 
 The one fix, in detail, with its test and cost (Promising)
 Related versions, in your direction           (Promising: 1 or 2; Not this version: 2 or 3)
@@ -196,8 +202,8 @@ Related versions, in your direction           (Promising: 1 or 2; Not this versi
 The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
-This research cost about USD <cost>.
-Next step: <the same move as on the first screen>, about USD <cost>.   (one short line)
+
+Next step: <the same move as on the first screen>.   (one short line, no price)
 ```
 
 - Tables stay under 10 rows. Numbers live in the table; prose repeats at most the two that carry the point.
@@ -205,7 +211,7 @@ Next step: <the same move as on the first screen>, about USD <cost>.   (one shor
 - The last line is always the next move, never the verdict: the first screen's next step, repeated in one short line.
 
 **Two framings, same data, same verdict:**
-- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids', about USD 0.017."
+- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids'."
 - "Is this saturated?" → "**For the market: Promising, with one fix** (medium confidence). 2 signals say crowded (review median 3,400; 12 ads in 48), 4 say open (demand +38% over 5 years, 3 leaders under 4.2 stars, top-3 share 0.31, margin after fees 48% of the median price). Crowded on page 1, not closed: the leaders' quality gap is the opening a newcomer can build on."
 
 ## The seller profile and lenses
@@ -221,7 +227,7 @@ Asked early, remembered, re-checked when it may be stale.
 > So I can say what this means for you, 5 quick ones (skip any): roughly what could you put into a first order, or a first month of ads if you'd dropship (under $250, under $1k, $1k–5k, $5k–25k, more)? How would you fulfil (dropship, own stock, Amazon FBA, print on demand)? Sold online before (no, a bit, yes with a brand)? Any channels already (a store, Amazon, TikTok, an email list, none)? And is this a side income or a brand you want to build?
 
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
-- **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the cost line of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
+- **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
 - **Skipped or unanswered, never again in this chat:** no re-offer in later answers, follow-ups or other skills. The market verdict leads from then on.
 - **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the five bands would answer it; it is a reminder, not the question again.
 - A profile they give later, unprompted, is used at once ("Accept it unprompted").
@@ -330,14 +336,14 @@ The reading:
 | **outlasting** (budget or experience to run tests past the crowd) | **favours** with 3+ proven ("demand that pays"); neutral with fewer | **favours** with 1+ proven; neutral with none | neutral |
 
 - **Any budget, a late wave:** one caution line ("a late wave: 6 of 15 advertisers started in the last 14 days"); it doesn't move the reading.
-- **Saturation alone never makes "not this one".** It is a row, not a gate: against, it caps at "a fit, with one fix", and the fix is an **unserved angle**: an angle or audience no current advertiser targets, found on the ladder (the angle rung's rising searches; the segment rung's buyer group or a feature the leaders' complaints ask for) and checked against the advertisers' ads (their sample ad links, or the same read with one row per ad to read their copy, about USD 0.05). **Never call an angle unserved before their ads were read:** when the user's spending limit covers it, run that ad-copy read before the answer and say what it found ("none of the 14 advertisers' ads mention sound"); otherwise say what was seen ("none of their names point at sound") and that their ad copy would confirm it, with its cost, and word the fix as unconfirmed ("an angle none of them appears to pitch"). The middle reading names the same fix as a line, without capping.
+- **Saturation alone never makes "not this one".** It is a row, not a gate: against, it caps at "a fit, with one fix", and the fix is an **unserved angle**: an angle or audience no current advertiser targets, found on the ladder (the angle rung's rising searches; the segment rung's buyer group or a feature the leaders' complaints ask for) and checked against the advertisers' ads (their sample ad links, or the same read with one row per ad to read their copy). **Never call an angle unserved before their ads were read:** when the user's spending limit covers it, run that ad-copy read before the answer and say what it found ("none of the 14 advertisers' ads mention sound"); otherwise say what was seen ("none of their names point at sound") and that their ad copy would confirm it, and word the fix as unconfirmed ("an angle none of them appears to pitch"). The middle reading names the same fix as a line, without capping.
 
 Gates (each pass / fail / unclear, with its fact). **Only these three can make "For you: not this one":**
 1. **Platform policy:** a named platform rule prohibits the product for the channel they named ("Platform rules and risk notes" above: Meta for Facebook or Instagram ads, TikTok for TikTok ads or TikTok Shop).
 2. **Single units ship:** read from the single-unit check (the supplier read with `singleUnitCheck: true`: its summary's `singleUnit`). `moq1OfferFound: true` passes (so does an AliExpress `lowestMoqOffer` with `moq: 1` from a full search). It fails **only** when AliExpress answered with offers and none sells single units (`singleUnit.offersRead` above 0 and `moq1OfferFound: false`). Every other reading is **a note, never a fail, and never caps the For you verdict**:
-   - **No matching listing** (`offersRead: 0`): "AliExpress showed no matching listing under this name; try another name", with one rerun of the check under a synonym offered (about USD 0.04).
-   - **No answer**, in any form (`aliexpress: "no answer"` or `aliexpress: "not checked"`, a free row with `kind: "unavailable"` or `kind: "stopped"`, or no summary row for the idea at all): "single units: not confirmed yet (AliExpress didn't answer in time; most consumer goods sell single units there)", with one rerun of the check offered (about USD 0.04).
-   - **Not read yet** (the check hasn't run): "single units: not read yet", with the single-unit check (about USD 0.04) as the next step.
+   - **No matching listing** (`offersRead: 0`): "AliExpress showed no matching listing under this name; try another name", with one rerun of the check under a synonym offered.
+   - **No answer**, in any form (`aliexpress: "no answer"` or `aliexpress: "not checked"`, a free row with `kind: "unavailable"` or `kind: "stopped"`, or no summary row for the idea at all): "single units: not confirmed yet (AliExpress didn't answer in time; most consumer goods sell single units there)", with one rerun of the check offered.
+   - **Not read yet** (the check hasn't run): "single units: not read yet", with the single-unit check as the next step.
    Print on demand: does not apply (made to order).
 3. **Profit at some price buyers pay:** the margin after ad cost at the **low** ad cost (USD 8 per sale), after the channel fee, with the same unit cost as the margin range above: a landed cost when one was read (a DHgate page's estimate, or the user's quote), else the cheapest MOQ-1 offer (`singleUnit.unitPriceMin`, or a full search's `lowestMoqOffer` with `moq: 1`), else the user's unit cost. The gate is read in this order, **first match wins** (the break-even price and the proven price ceiling are defined above; the user's planned price, when given, is their call). Without a read unit cost, the break-even used is the **cost-free floor**, (USD 8 + the fixed fee) ÷ (1 − the fee rate), the break-even at a unit cost of zero:
    1. **The user's planned price at or above the break-even** (the cost-free floor when the unit cost isn't read) → no fail. With a read unit cost it **passes**; when that price is above the ceiling, or no ceiling was read, add the note "buyers are shown paying up to USD <ceiling> (<which listing>); at your USD <price> the listing has to show why it's worth more" (or "no price with sales behind it was read"), never a fail or a cap. Without a read unit cost it is the unread note in 3.
@@ -364,8 +370,8 @@ Risk notes as above (lithium battery, health claims, children's products, ingest
 
 **The count, through this lens** (first match wins):
 - **not this one:** a gate fails (1, 2 or 3), naming the fact read in this run and the related version that would pass it. Nothing else makes it;
-- **a long shot:** no gate fails, but demand on the channel they'd sell through is thin: **Felt want is against** (the top TikTok Shop listing under 100 units, for example 94 units ever across 11 shops), or, where TikTok Shop isn't read (outside the US), Search-led demand is against for thinness (an Amazon floor under 1,000 units a month). **Thin demand stays thin:** say plainly that the feed shows little demand, with its numbers (and the Amazon floor beside it), and never call low Amazon demand an opening. Hopeful and honest: it can still work, so the answer says **what would have to be true** (in one line, from the data: "buyers who haven't found it on TikTok yet would have to stop for it in a feed") and **the cheapest test** that would show it, with its cost (the best ladder rung's check, for example `validate` on a version buyers already want, or a small ad test the user runs themselves, priced from their band). **When search demand is real but the feed's is thin** (Felt want against and an Amazon floor of 1,000+ units a month), the first related version is **the channel switch**, with both numbers: "buyers search for it (Amazon floor 6,550 a month) but don't impulse-buy it on TikTok (best listing 51 units): sell it where people search", meaning search ads (Google Shopping) to their own store, or a marketplace listing (Amazon, eBay, Walmart, or Etsy for a handmade or personalised version), each with what changes (search ads are paid per click rather than per view; Amazon needs stock or a seller-of-record setup with a supplier who ships under their name). This switch comes before the cheapest-test line, and the ladder's channel rung (`judgement-ladder.md`) is this one;
-- **a strong fit:** Felt want favours, no counted row is against, no gate fails and gate 1 is not unclear, gate 3 **passed** (its step 1 with a read unit cost, or step 5; not unclear, not with the price as the fix), **Where you'd compete was read** (not `unknown`), and no three notes point against. "Strong" is a claim the data has to back, so an unclear gate 3 or an unread Where you'd compete never reaches it: the idea is **a fit, with one fix**, the fix being the missing read, named with its cost from the skill running it (the single-unit check, the read that shows a price buyers pay, or the ad library read), never lower for being unread. Gate 2 unanswered (AliExpress didn't answer) doesn't block it on its own;
+- **a long shot:** no gate fails, but demand on the channel they'd sell through is thin: **Felt want is against** (the top TikTok Shop listing under 100 units, for example 94 units ever across 11 shops), or, where TikTok Shop isn't read (outside the US), Search-led demand is against for thinness (an Amazon floor under 1,000 units a month). **Thin demand stays thin:** say plainly that the feed shows little demand, with its numbers (and the Amazon floor beside it), and never call low Amazon demand an opening. Hopeful and honest: it can still work, so the answer says **what would have to be true** (in one line, from the data: "buyers who haven't found it on TikTok yet would have to stop for it in a feed") and **the cheapest test** that would show it (the best ladder rung's check, for example `validate` on a version buyers already want, or a small ad test the user runs themselves, priced from their band). **When search demand is real but the feed's is thin** (Felt want against and an Amazon floor of 1,000+ units a month), the first related version is **the channel switch**, with both numbers: "buyers search for it (Amazon floor 6,550 a month) but don't impulse-buy it on TikTok (best listing 51 units): sell it where people search", meaning search ads (Google Shopping) to their own store, or a marketplace listing (Amazon, eBay, Walmart, or Etsy for a handmade or personalised version), each with what changes (search ads are paid per click rather than per view; Amazon needs stock or a seller-of-record setup with a supplier who ships under their name). This switch comes before the cheapest-test line, and the ladder's channel rung (`judgement-ladder.md`) is this one;
+- **a strong fit:** Felt want favours, no counted row is against, no gate fails and gate 1 is not unclear, gate 3 **passed** (its step 1 with a read unit cost, or step 5; not unclear, not with the price as the fix), **Where you'd compete was read** (not `unknown`), and no three notes point against. "Strong" is a claim the data has to back, so an unclear gate 3 or an unread Where you'd compete never reaches it: the idea is **a fit, with one fix**, the fix being the missing read, named from the skill running it (the single-unit check, the read that shows a price buyers pay, or the ad library read), never lower for being unread. Gate 2 unanswered (AliExpress didn't answer) doesn't block it on its own;
 - **a fit, with one fix:** everything else. The fix is the one that matters most: an unclear policy gate's rule (gate 1), the price from gate 3 when it passed with the price as the fix, the read that would confirm a strong fit (what gate 3 is missing, Where you'd compete) when that is all that stands between it and strong, the TikTok read when Felt want is `unknown`, an against row (Amazon sells it; Where you'd compete, whose fix is an unserved angle), or the three notes that cap it.
 
 A provisional verdict while a slow read is still running (`running.md`, "Never hold the whole answer for a slow read") uses the same labels, marked "(provisional)" after the label, never a fifth label.
@@ -437,8 +443,8 @@ Read it off the lens with the same arithmetic as the market verdict, then the ga
 | For you label (exact) | When | What follows the label |
 | --- | --- | --- |
 | **a strong fit** | the lens's count reads strong, no gate fails and none caps it (an unanswered gate 2 or 3 counts as not failed, with its note; cold-traffic dropship also needs gate 3 passed and Where you'd compete read) | what must stay true |
-| **a fit, with one fix** | everything between | the one fix, with its cost |
-| **a long shot** | no gate fails, but demand on their own channel is thin | what would have to be true, and the cheapest test, with its cost |
+| **a fit, with one fix** | everything between | the one fix |
+| **a long shot** | no gate fails, but demand on their own channel is thin | what would have to be true, and the cheapest test |
 | **not this one** | a gate fails (any lens), or the market's Not this version in the lenses that use the market rows as they are, or the lens's own count reads Not this version (Marketplace on Etsy or eBay) | the failing fact, and the related version that would pass |
 
 A lens may move a fact's weight; it never invents a fact or changes a number. A falling trend stays falling in the table; the lens only says whether it counts for this person.
@@ -446,7 +452,7 @@ A lens may move a fact's weight; it never invents a fact or changes a number. A 
 ### The "For you" block
 
 Under "What it means", headed with the lens and the profile in brackets ("For you, through the cold-traffic dropship lens [under $1k · dropship · first time]"):
-- **The lens lines:** each row that counts differently for them and each gate, one line each, naming its fact: "Search-led demand: a 14,000-unit Amazon floor is a caution line for you, neutral in the count: those buyers search Amazon and can buy it there." "Gate 2, single units ship: not read yet (a note, no cap); the single-unit check (about USD 0.04, usually under a minute) settles it." Gates that pass go in one line together; notes in one line together; risk notes in one line together.
+- **The lens lines:** each row that counts differently for them and each gate, one line each, naming its fact: "Search-led demand: a 14,000-unit Amazon floor is a caution line for you, neutral in the count: those buyers search Amazon and can buy it there." "Gate 2, single units ship: not read yet (a note, no cap); the single-unit check (usually under a minute) settles it." Gates that pass go in one line together; notes in one line together; risk notes in one line together.
 - **The fit check**, four short lines, each with its numbers and the fact it comes from:
   - **First order against the budget:** units × landed (or unit) cost per unit = cash, against the band's upper edge. When the user gives their own supplier quote (MOQ and unit price), it is the first order: it replaces the supplier summary's `moqMedian` × `unitPriceMedian`, and the offers read are related versions (`judgement-lens-own-stock.md`, First order). The medians are never called an offer; an offer named is a real offer row, with its own MOQ and price: "200 units (the MOQ median) × USD 4.80 = USD 960, within your up-to-$5k budget." For dropship: the MOQ-1 offer (before shipping) and the cost of a sample order.
   - **Fulfilment against the product:** the leaders' weight and size tier (from their `fees`, labelled as the leaders'), else "weight not read"; bulk or fragility as a note, any battery as a risk note; against how they fulfil. Never invent freight. Cold-traffic dropship: the price-room guidance goes here (the price against about 3× the landed cost, or "landed cost still to read"), as guidance beside gate 3's break-even, never a second test.

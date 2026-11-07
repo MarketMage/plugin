@@ -32,14 +32,14 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - a shop product with 20 reviews ≈ **USD 0.013**; an Amazon ASIN outside the US (its 8 to 13 top reviews) ≈ **USD 0.01**; an amazon.com (US) ASIN: its rating summary only, USD 0.003 (below); outside the US, add up to USD 0.012 for the local-address reads;
   - **a Trustpilot business:** summary USD 0.003 + USD 0.003 for its read (provider search) + USD 0.0035 per review delivered (review USD 0.0005 + provider record USD 0.003): with 20 reviews ≈ **USD 0.076**. It's read through CleanPull's marketplace data service (a third-party provider; nothing to set up) and takes about 30 to 60 seconds a business;
   - a product whose shop uses another review app, or that can't be read, is not charged.
-  - **When the estimate is USD 0.05 or less,** say the cost in one line and run it straight away; above that, ask first. **Example above it:** 4 product pages and 2 ASINs, 20 reviews each ≈ USD 0.07: say so and get a yes.
+  - **When the estimate is USD 0.05 or less,** run it straight away, with no cost mention; above that, give the one estimate and ask first (`references/running.md`, "Before any run"). **Example above it:** 4 product pages and 2 ASINs, 20 reviews each: "up to about USD 0.07 (capped). Go ahead?"
 - **Read** with `get-dataset-items`:
   - the `rating-summary` rows in full: `average`, `count`, `histogram` (`histogramUnit` is `count` for the review apps and `percent` for Amazon), `themes`, `topComplaints`, `topPraise`, `newestReviewDate`;
   - the `review` rows with `fields: "recordType,productTitle,rating,title,text,date,verified,variant,reviewId"` and a `limit` of about 100.
 - **Not read:** `RUN_SUMMARY.failures` names each product that wasn't, with the reason. Say which:
   - shops using Bazaarvoice, Junip, REVIEWS.io, PowerReviews or another app, and review apps loaded only by a theme's scripts;
   - Amazon's full review list (it needs a sign-in): outside the US Amazon gives the rating, the share per star and the top reviews only; amazon.com gives the rating and the share per star only (next point).
-- **amazon.com (US) shows no review text to signed-out shoppers:** follow `references/running-results.md`, "Amazon reviews in the US" (say it in the cost line, price US ASINs as the summary only, offer amazon.co.uk or .de or shop pages, never "no complaints").
+- **amazon.com (US) shows no review text to signed-out shoppers:** follow `references/running-results.md`, "Amazon reviews in the US" (say it before the run, price US ASINs as the summary only in any estimate, offer amazon.co.uk or .de or shop pages, never "no complaints").
 
 ## 3. Explain it like an expert
 
@@ -51,7 +51,7 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - **On the user's own product:** turn each complaint into a fix: a size chart, packaging, a clearer photo or description.
 - **Small samples:** under about 20 reviews, say the themes are a hint, not a trend. Themes come from keyword and phrase matching, not AI, so a theme is a pointer to reviews to read, not a measured sentiment score. **Named themes are English only:** the known complaint and praise phrases ("runs small", "arrived damaged") are English, so reviews in another language (amazon.de, .fr, .es, a German Trustpilot page) give mostly recurring phrases in that language, or no themes: say so, and read the review texts themselves for what buyers complain about.
 - **Loox** shows no dates in some layouts, and **Stamped** and **Loox** publish no counts per star: say so when it matters.
-- End with the cost and the dataset link, and offer the watch: "I can tell you each morning when these get new or low reviews."
+- End with the dataset link, and offer the watch, with no price on the offer (its monthly estimate comes at set-up): "I can tell you each morning when these get new or low reviews."
 
 ## 4. Ongoing (a watchlist)
 

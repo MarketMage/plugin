@@ -13,16 +13,16 @@ For any verdict short of **Strong**, give 2 or 3 related versions that stay in t
 5. **Channel:** the same product sold where the leaders aren't (TikTok Shop units when Amazon page 1 is ad-heavy; the user's own store or audience; search ads or a marketplace listing when Amazon's floor shows buyers searching for it but the feed shows little impulse demand).
 
 For each version:
-- **Name the fact that makes it promising,** from rows already read (a number, never a guess). A rung with no supporting fact in the data is skipped, not invented. If no rung has a fact yet, name the cheapest read that would find one (for example the Trends rising searches, about USD 0.0015 a term) and offer it.
+- **Name the fact that makes it promising,** from rows already read (a number, never a guess). A rung with no supporting fact in the data is skipped, not invented. If no rung has a fact yet, name the cheapest read that would find one (for example the Trends rising searches) and offer it.
 - **Say what stays the same** ("same buyers, same factory").
-- **Offer the best one for a check now, with its cost:** for example `validate` on it, reusing this conversation's rows where they apply (`running-runs.md`, "Runs in this conversation"), or a `market-scan` summary (about USD 0.017). This offer is the answer's "Next step".
+- **Offer the best one for a check now:** for example `validate` on it, reusing this conversation's rows where they apply (`running-runs.md`, "Runs in this conversation"), or a `market-scan` summary. This offer is the answer's "Next step".
 - **After Not this version, the free stop:** the answer's last line may instead be "Next step: nothing to buy; keep the USD <X>.", with this offer kept as a follow-up (`judgement-answer.md`, "A free "stop here" is a next move too").
 
 A **Promising** verdict also gets the ladder, shorter (1 or 2 versions), after "the one fix". A **Strong** verdict skips the ladder unless the user asks for options; it gets its watch instead.
 
 ## Watches: risks as early signs
 
-Every verdict names its biggest risk as **the early sign** to look for, not as a warning: "The early sign would be ad slots climbing past 12 in 48: today it's 4." Then offer the watch that would catch it, with its cost (from the skill that runs it and `costs.md`), and never create it without a yes (`watchlists.md`):
+Every verdict names its biggest risk as **the early sign** to look for, not as a warning: "The early sign would be ad slots climbing past 12 in 48: today it's 4." Then offer the watch that would catch it, with no price on the offer (its monthly estimate comes at set-up, with the yes: the skill that runs it and `costs.md`; the figures below are for that estimate), and never create it without a yes (`watchlists.md`):
 
 | Risk the data points to | The early sign | The watch to offer |
 | --- | --- | --- |
@@ -34,4 +34,4 @@ Every verdict names its biggest risk as **the early sign** to look for, not as a
 
 One watch, the one that matches the biggest risk. On a Strong verdict, this watch is the natural next move.
 
-**After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with the cost of its first paid step.
+**After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with no price (its estimate comes at the yes).

@@ -10,6 +10,8 @@ PASS if all of these hold:
 - it treats the leaders' quality gap or rising related searches as room for a brand, with a number;
 - the profile is repeated as bands (USD 5k-25k, FBA, some experience, brand), not the exact USD 8,000;
 - the facts table and market verdict are the same kind as for any seller (no number changed by the profile);
-- no comment on the profile itself; it states what the research cost.
+- no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
 FAIL if "For you" is "not this one", if there is no fit check with the first-order number, if the exact USD 8,000 is repeated, or if the market verdict differs from Strong.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

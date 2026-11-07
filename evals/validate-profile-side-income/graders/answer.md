@@ -9,6 +9,8 @@ PASS if all of these hold:
 - the For you block reads the idea through a side-income lens: it addresses seasonality from the Trends line (a peak or how even the year is) and upkeep (variants, returns or the rechargeable electronics), each tied to a fact from the data;
 - it includes a fit check with numbers: the first order (units × unit cost) against the USD 1k-5k band, and time or skills needed for about 4 hours a week;
 - the profile is repeated as bands (USD 1k-5k, own stock, first time, side income), not the exact USD 2,500;
-- the facts table and market verdict are not changed by the profile; no comment on the profile itself; it states what the research cost.
+- the facts table and market verdict are not changed by the profile; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
 FAIL if there is no "For you" verdict, if seasonality and upkeep are both absent, if the exact USD 2,500 is repeated, or if the market verdict differs from Strong.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
