@@ -8,5 +8,6 @@ PASS if all of these hold:
 - the verdict is the "no" outcome, shown as "Not this version" (or plainly as No), with a confidence and the for/against counts, and it is not Strong/Go or Promising/Maybe;
 - the signals are shown with their numbers and thresholds apart from the prose (a table or one line per signal);
 - the reply does not agree that a comeback is coming: the falling trend is reported as falling.
+- it is never a bare no: before the signal table, the same first screen names the best related version (for example the magnetic fidget slider, +250% in rising searches, or the spinner ring, +120%) with that fact, in a hopeful line about what the data does favour.
 
-FAIL if the verdict is Strong, Go, Promising or Maybe, if the counts are missing, or if it endorses the comeback against the data.
+FAIL if the verdict is Strong, Go, Promising or Maybe, if the counts are missing, if it endorses the comeback against the data, or if no related version with its fact appears before the signal table.

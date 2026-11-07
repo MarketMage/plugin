@@ -16,7 +16,7 @@ Three layers, always kept apart:
 3. **Answer the opposite question too.** Asked "is it worth selling?", add the early sign that would say otherwise (`judgement-ladder.md`, "Watches"). Asked "is it saturated?", add one line on what a newcomer still has going. The framing of the question never moves the verdict.
 4. **Confidence is coverage, not feeling** (see "Confidence").
 5. **Credit where it's due, tied to a number.** When the data backs something the user said or chose, say so specifically: "You were right that demand is rising: +38% over 5 years." "Your USD 29.99 sits inside the p25 to p75 band (22.99 to 34.99)." At most two such lines, each naming its number. Never empty flattery ("great idea", "smart thinking"), and never a compliment about the person, their budget or their experience. If nothing the user said is backed by the data, leave the credit out rather than invent one.
-6. **Never end on a verdict.** Every judgement ends on a concrete move, with no price on it: the check of the best related version, the test that settles it, or the watch that catches the early sign. The verdict opens the answer; the next move closes the first screen and, in one short line, the answer.
+6. **Never end on a verdict.** Every judgement ends on a concrete move, with no price on it: the check of the best related version, the test that settles it, or the watch that catches the early sign. The verdict opens the answer; one Next step line closes it.
 7. **"For you" first, "For the market" second.** With a profile, the answer leads with a verdict for this person ("For you: not this one", "For you: a strong fit"), read through their lens, then gives the market verdict ("For the market: Strong"), which never changes with who asks. Without a profile, the market verdict leads; the profile is offered only as `judgement-profile.md`, "Asking for the profile" says (once per conversation).
    - **The labels are fixed strings.** The For you verdict is always written as exactly one of these four, word for word, after "For you: ": **a strong fit**, **a fit, with one fix**, **a long shot**, **not this one**. The market verdict is exactly one of **Strong**, **Promising, with one fix**, **Not this version: here's one that could be** (shortened to "Not this version" in running text). Never a paraphrase ("there's room, with one fix", "it fits, with one thing to fix", "works, with one thing to fix first", "a fit with a caveat"): the explanation goes after the label, never inside it.
 8. **Tone: hopeful, curious, plain-spoken** (`judgement-tone.md`, "Tone"). Say a weak version is weak once, kindly, with its reason in numbers; then build. Never pre-own a failure that hasn't happened.
@@ -59,7 +59,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 | Label the user sees | Rule | Short name (internal) |
 | --- | --- | --- |
 | **Strong** | margin is not `against`, and either F ≥ 5 and A ≤ 1, or F ≥ 4 and A = 0 | Go |
-| **Not this version: here's one that could be** | A ≥ 4, or margin and concentration both `against` | No |
+| **Not this version: here's one that could be** | A ≥ 4, or margin and concentration both `against`, or A ≥ 2 and A > F + U (U: `unknown`; A > F alone is Promising, `judgement-first-answer.md`) | No |
 | **Promising, with one fix** | everything else | Maybe |
 
 - **Four for and nothing against is Strong.** Most signals land neutral on real data, so a clean 4 for, 0 against (with any number neutral) is a strong read: "4 for · 0 against · 3 neutral" is **Strong**. With one against, it takes 5 for.
@@ -67,7 +67,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 - **Settled early:** when the signals read already decide the verdict whatever the unread ones would show (for example 4 `against` with two still unread), the verdict stands: say it without hedging, list the unread signals as "not read: can't change the verdict", and don't count them as missing for the confidence.
 - **"The one fix"** in a Promising verdict is the single change or test that would move it: name the `against` (or `unknown`) signal that matters most and what would turn it.
 
-Print the counts ("5 for, 1 against, 2 unknown"), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
+Print the counts ("5 for, 1 against, 2 unknown"; in words when plain: `judgement-first-answer.md`), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
 
 **If the user asks for a particular verdict** ("tell me it's a yes", "I need this to work"), before or after the run, treat it as pushback in the answer itself: the acknowledgement line comes first, then the verdict with its counts, then the specific threshold or thresholds standing between this and Strong, and the question of whether they'd set one differently.
 
@@ -156,28 +156,28 @@ Check the whole answer against this list before sending it, including the caveat
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
+**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
 **For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order is USD 960, within your up-to-$5k budget; the fix: the Trends peak in December (stock for one season)
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 
-Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me roughly your budget and how you'd sell (5 quick questions, or skip) and I'll say what this means for you."
+Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
-One plain line: what the data says, in its two biggest numbers.
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+the verdict sentence: the label, its two biggest numbers, and the fix or the related version (below), in one sentence
 
 What you got right   (only when a number backs it; at most two lines)
   You were right that demand is rising: +38% over 5 years.
-The one fix: <the against signal that matters most and what would turn it>.   (Promising)
+in that sentence, the one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
-Next step: <the move>.
+Next step: <the move>.   (one short line, no price; once in the answer)
                                               ── end of the first screen (~150 words at most)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
@@ -189,7 +189,7 @@ For you, through the <lens> lens   (only with a profile; see "The For you block"
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
 
 Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
-Next step: <the same move as on the first screen>.   (one short line, no price)
+Next step: <the move>.   (one short line, no price)
                                               ── end of the short default
 ── the full detail, on a yes or a question that needs it:
 What it means (for any seller)
@@ -203,12 +203,12 @@ The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
 
-Next step: <the same move as on the first screen>.   (one short line, no price)
+Next step: <the move>.   (one short line, no price)
 ```
 
 - Tables stay under 10 rows. Numbers live in the table; prose repeats at most the two that carry the point.
 - Asked a yes/no question ("is it saturated?"), the verdict line still comes first, followed by the one-line opposite answer (rule 3), inside the first screen.
-- The last line is always the next move, never the verdict: the first screen's next step, repeated in one short line.
+- The last line is always the next move, never the verdict: one "Next step:" line, written once in the answer (never also on the first screen).
 
 **Two framings, same data, same verdict:**
 - "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids'."
@@ -224,12 +224,12 @@ Asked early, remembered, re-checked when it may be stale.
 
 **Five quick bands, friendly, skippable:**
 
-> So I can say what this means for you, 5 quick ones (skip any): roughly what could you put into a first order, or a first month of ads if you'd dropship (under $250, under $1k, $1k–5k, $5k–25k, more)? How would you fulfil (dropship, own stock, Amazon FBA, print on demand)? Sold online before (no, a bit, yes with a brand)? Any channels already (a store, Amazon, TikTok, an email list, none)? And is this a side income or a brand you want to build?
+> So I can say what this means for you (skip either): how would you sell it (dropship, your own stock, Amazon FBA, print on demand, or you make it yourself), and roughly what could you put into a first order, or a first month of ads if you'd dropship (under $250, under $1k, $1k–5k, $5k–25k, more)?
 
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
 - **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
 - **Skipped or unanswered, never again in this chat:** no re-offer in later answers, follow-ups or other skills. The market verdict leads from then on.
-- **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the five bands would answer it; it is a reminder, not the question again.
+- **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the two quick questions would answer it; it is a reminder, not the question again.
 - A profile they give later, unprompted, is used at once ("Accept it unprompted").
 
 **Accept it unprompted.** If the user says "I've got about $2k and I've never sold before" anywhere in the chat, the conversation holds a line starting `Profile:`, or their notebook holds a profile (`notebook.md`), use it. Repeat it back once as bands ("Judging for: $1k–5k · own stock · first time · no channels · side income · US") and move on.
@@ -403,10 +403,10 @@ Say once that Amazon and Etsy have their own dropshipping rules ("Before listing
 
 | Row | For you | Reads from |
 | --- | --- | --- |
-| Every market row | **same** | the table |
-| Margin | **same**, after the FBA fee (FBA) or the referral fee only (own stock, with their own shipping said as not modelled) | leaders' `fees` |
+| Every market row | **same**, except as below | the table |
+| Margin | **same**, after the FBA fee (FBA) or the referral fee only (own stock sold on Amazon); **own stock shipped by themselves on any channel other than Amazon (their own store, TikTok Shop, Etsy):** their channel's fee and an estimated shipping cost per order from the weight bands (`judgement-first-answer.md`, "Shipping in the margin"), said as an estimate with the weight used | leaders' `fees` (`shippingWeightLb`) |
 | Quality gap | **weighted as brand room**: a gap that favours is the reason a newcomer's version can win; name the complaint it points to | leaders' ratings, complaints |
-| Review depth | **eased by budget**: $5k–25k reads a median up to 1,000 as neutral; $25k+ up to 5,000 (reviews can be earned with launch spend); one step at most | scanner `medianReviews` |
+| Review depth (when they sell on Amazon) | **eased by budget**: $5k–25k reads a median up to 1,000 as neutral; $25k+ up to 5,000 (reviews can be earned with launch spend); one step at most | scanner `medianReviews` |
 | First order | **gate** (the fit check's first line): MOQ × unit cost at or under the band's upper edge passes (under $250: USD 250; under $1k: USD 1,000; $1k–5k: USD 5,000; $5k–25k: USD 25,000; $25k+ always passes); above it fails, with the way in (a lower-MOQ offer, a smaller first order), unless, without the user's own quote, a real offer row read in this run gives a start that fits (below, "A smaller real start that fits makes it a fit, with one fix"; the user's own quote always decides). Say it as "within your up-to-$5k budget", never "inside $1k–5k"; for under $250, "within your up-to-$250 budget" or "over your up-to-$250 budget" (the band they picked, though it reads as under $1k elsewhere) | the user's quote, else supplier `moqMedian`, `unitPriceMedian`; offer rows |
 
 **General** (a partial profile no other lens matches): every market row **same**, plus the fit check (below) with whatever the profile gives. The first-order gate (MOQ × unit cost against the budget) applies only when the profile says they buy stock, and then reads as in `judgement-lens-own-stock.md` (the user's quote, when given, decides it). With a budget but no fulfilment (a budget-only profile), it is never applied; the gate is `unclear`, and before judging fit Claude asks one line: "Would you dropship or buy stock?" Say in the heading which answer would sharpen it ("tell me how you'd fulfil and I'll read it through that lens").
@@ -455,7 +455,7 @@ Under "What it means", headed with the lens and the profile in brackets ("For yo
 - **The lens lines:** each row that counts differently for them and each gate, one line each, naming its fact: "Search-led demand: a 14,000-unit Amazon floor is a caution line for you, neutral in the count: those buyers search Amazon and can buy it there." "Gate 2, single units ship: not read yet (a note, no cap); the single-unit check (usually under a minute) settles it." Gates that pass go in one line together; notes in one line together; risk notes in one line together.
 - **The fit check**, four short lines, each with its numbers and the fact it comes from:
   - **First order against the budget:** units × landed (or unit) cost per unit = cash, against the band's upper edge. When the user gives their own supplier quote (MOQ and unit price), it is the first order: it replaces the supplier summary's `moqMedian` × `unitPriceMedian`, and the offers read are related versions (`judgement-lens-own-stock.md`, First order). The medians are never called an offer; an offer named is a real offer row, with its own MOQ and price: "200 units (the MOQ median) × USD 4.80 = USD 960, within your up-to-$5k budget." For dropship: the MOQ-1 offer (before shipping) and the cost of a sample order.
-  - **Fulfilment against the product:** the leaders' weight and size tier (from their `fees`, labelled as the leaders'), else "weight not read"; bulk or fragility as a note, any battery as a risk note; against how they fulfil. Never invent freight. Cold-traffic dropship: the price-room guidance goes here (the price against about 3× the landed cost, or "landed cost still to read"), as guidance beside gate 3's break-even, never a second test.
+  - **Fulfilment against the product:** the leaders' weight and size tier (from their `fees`, labelled as the leaders'), else "weight not read"; bulk or fragility as a note, any battery as a risk note; against how they fulfil. Never invent freight (an own-store seller's shipping estimate from the dated weight bands, `judgement-first-answer.md`, "Shipping in the margin", is sourced, said as an estimate with the weight used). Cold-traffic dropship: the price-room guidance goes here (the price against about 3× the landed cost, or "landed cost still to read"), as guidance beside gate 3's break-even, never a second test.
   - **Ad cost against the budget:** the ad density on page 1 (`sponsored` of 48) or the TikTok channel, and a cost-per-click or cost-per-sale assumption stated as an assumption (cold traffic: USD 8 and USD 12 per sale; "assuming USD 0.80–1.50 a click on Amazon"), turned into the spend a first month's test would take against the band (with an exact amount, `launch-plan`'s test spend capped at about a quarter of it, a rule of thumb, never the figure). Cold traffic: the Where you'd compete counts beside it (active, proven and new advertisers; the top 3 TikTok shops' share), with the reading for their profile and its threshold, then the wave read's line when it was made ("6 of 14 stores advertising it added it in the last 30 days", read with the Where you'd compete reading).
   - **Skills needed:** ads, content or sourcing, named from the data (ads when paid pressure is against or the lens is cold traffic; content for TikTok; sourcing when the MOQ is high).
 - Knowledge from outside the data never becomes extra lines: the policy gate covers the platform rules it cites, and the risk notes cover the rest; any other point is one step line elsewhere ("Tone").
