@@ -16,7 +16,7 @@ Asked early, remembered, re-checked when it may be stale.
 
 **Fulfilment options, in plain words** (when asked what one means; for a newcomer, only the two or three options that fit what they have said, never all five as a glossary), a few words each, after the question: **dropship** (a supplier ships each order straight to your buyer; you hold no stock), **own stock** (you buy units up front and ship orders yourself), **Amazon FBA** (you send stock to Amazon's warehouses and Amazon ships each order), **print on demand** (a printer makes and ships each item only when it sells, with your design on it), **I make it myself** (you make each item by hand or in your own workshop).
 
-**A sixth fulfilment option, "I make it myself."** Wherever the five bands are asked, the fulfilment question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
+**A sixth fulfilment option, "I make it myself."** Wherever the two quick questions are asked, the how-you'd-sell question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
 
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
 - **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").

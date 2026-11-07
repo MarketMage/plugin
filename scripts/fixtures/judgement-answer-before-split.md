@@ -10,7 +10,7 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
 **For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order is USD 960, within your up-to-$5k budget; the fix: the Trends peak in December (stock for one season)
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 
 **Both verdict lines name their move, and never read as a contradiction:**
@@ -21,12 +21,12 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
-One plain line: what the data says, in its two biggest numbers.
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+the verdict sentence: the label, its two biggest numbers, and the fix or the related version (below), in one sentence
 
 What you got right   (only when a number backs it; at most two lines)
   You were right that demand is rising: +38% over 5 years.
-The one fix: <the against signal that matters most and what would turn it>.   (Promising)
+in that sentence, the one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
@@ -44,7 +44,7 @@ For you, through the <lens> lens   (only with a profile; see "The For you block"
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
 
 Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
-Next step: <the same move as on the first screen>.   (one short line, no price)
+Next step: <the move>.   (one short line, no price)
                                               ── end of the short default
 ── the full detail, on a yes or a question that needs it:
 What it means (for any seller)
@@ -57,8 +57,8 @@ Related versions, in your direction           (Promising: 1 or 2; Not this versi
 The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
-Next step: <the same move as on the first screen>.   (one short line, no price)
-  or, after the free stop on the first screen: the same free stop line, with the related version.
+Next step: <the move>.   (one short line, no price)
+  or, after the free stop: the same free stop line, with the related version.
 ```
 
 **The short default, and the full detail on request.** A full check (`validate`, `find-products`, any answer in this structure) gives, by default:

@@ -59,7 +59,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 | Label the user sees | Rule | Short name (internal) |
 | --- | --- | --- |
 | **Strong** | margin is not `against`, and either F ≥ 5 and A ≤ 1, or F ≥ 4 and A = 0 | Go |
-| **Not this version: here's one that could be** | A ≥ 4, or margin and concentration both `against`, or A ≥ 2 and A > F | No |
+| **Not this version: here's one that could be** | A ≥ 4, or margin and concentration both `against`, or A ≥ 2 and A > F + U (U: `unknown`; A > F alone is Promising, `judgement-first-answer.md`) | No |
 | **Promising, with one fix** | everything else | Maybe |
 
 - **Four for and nothing against is Strong.** Most signals land neutral on real data, so a clean 4 for, 0 against (with any number neutral) is a strong read: "4 for · 0 against · 3 neutral" is **Strong**. With one against, it takes 5 for.
@@ -67,7 +67,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 - **Settled early:** when the signals read already decide the verdict whatever the unread ones would show (for example 4 `against` with two still unread), the verdict stands: say it without hedging, list the unread signals as "not read: can't change the verdict", and don't count them as missing for the confidence.
 - **"The one fix"** in a Promising verdict is the single change or test that would move it: name the `against` (or `unknown`) signal that matters most and what would turn it.
 
-Print the counts ("5 for, 1 against, 2 unknown"), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
+Print the counts ("5 for, 1 against, 2 unknown"; in words when plain: `judgement-first-answer.md`), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
 
 **If the user asks for a particular verdict** ("tell me it's a yes", "I need this to work"), before or after the run, treat it as pushback in the answer itself: the acknowledgement line comes first, then the verdict with its counts, then the specific threshold or thresholds standing between this and Strong, and the question of whether they'd set one differently.
 
@@ -162,18 +162,18 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
 **For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order is USD 960, within your up-to-$5k budget; the fix: the Trends peak in December (stock for one season)
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 
 Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
-One plain line: what the data says, in its two biggest numbers.
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+the verdict sentence: the label, its two biggest numbers, and the fix or the related version (below), in one sentence
 
 What you got right   (only when a number backs it; at most two lines)
   You were right that demand is rising: +38% over 5 years.
-The one fix: <the against signal that matters most and what would turn it>.   (Promising)
+in that sentence, the one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
@@ -189,7 +189,7 @@ For you, through the <lens> lens   (only with a profile; see "The For you block"
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
 
 Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
-Next step: <the same move as on the first screen>.   (one short line, no price)
+Next step: <the move>.   (one short line, no price)
                                               ── end of the short default
 ── the full detail, on a yes or a question that needs it:
 What it means (for any seller)
@@ -203,7 +203,7 @@ The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
 
-Next step: <the same move as on the first screen>.   (one short line, no price)
+Next step: <the move>.   (one short line, no price)
 ```
 
 - Tables stay under 10 rows. Numbers live in the table; prose repeats at most the two that carry the point.
@@ -404,9 +404,9 @@ Say once that Amazon and Etsy have their own dropshipping rules ("Before listing
 | Row | For you | Reads from |
 | --- | --- | --- |
 | Every market row | **same**, except as below | the table |
-| Margin | **same**, after the FBA fee (FBA) or the referral fee only (own stock sold on Amazon); **own stock sold from their own store, TikTok Shop or Etsy:** their channel's fee and an estimated shipping cost per order from the weight bands (`judgement-first-answer.md`, "Shipping in the margin"), said as an estimate with the weight used | leaders' `fees` (`shippingWeightLb`) |
+| Margin | **same**, after the FBA fee (FBA) or the referral fee only (own stock sold on Amazon); **own stock shipped by themselves on any channel other than Amazon (their own store, TikTok Shop, Etsy):** their channel's fee and an estimated shipping cost per order from the weight bands (`judgement-first-answer.md`, "Shipping in the margin"), said as an estimate with the weight used | leaders' `fees` (`shippingWeightLb`) |
 | Quality gap | **weighted as brand room**: a gap that favours is the reason a newcomer's version can win; name the complaint it points to | leaders' ratings, complaints |
-| Review depth | **eased by budget**: $5k–25k reads a median up to 1,000 as neutral; $25k+ up to 5,000 (reviews can be earned with launch spend); one step at most | scanner `medianReviews` |
+| Review depth (when they sell on Amazon) | **eased by budget**: $5k–25k reads a median up to 1,000 as neutral; $25k+ up to 5,000 (reviews can be earned with launch spend); one step at most | scanner `medianReviews` |
 | First order | **gate** (the fit check's first line): MOQ × unit cost at or under the band's upper edge passes (under $250: USD 250; under $1k: USD 1,000; $1k–5k: USD 5,000; $5k–25k: USD 25,000; $25k+ always passes); above it fails, with the way in (a lower-MOQ offer, a smaller first order), unless, without the user's own quote, a real offer row read in this run gives a start that fits (below, "A smaller real start that fits makes it a fit, with one fix"; the user's own quote always decides). Say it as "within your up-to-$5k budget", never "inside $1k–5k"; for under $250, "within your up-to-$250 budget" or "over your up-to-$250 budget" (the band they picked, though it reads as under $1k elsewhere) | the user's quote, else supplier `moqMedian`, `unitPriceMedian`; offer rows |
 
 **General** (a partial profile no other lens matches): every market row **same**, plus the fit check (below) with whatever the profile gives. The first-order gate (MOQ × unit cost against the budget) applies only when the profile says they buy stock, and then reads as in `judgement-lens-own-stock.md` (the user's quote, when given, decides it). With a budget but no fulfilment (a budget-only profile), it is never applied; the gate is `unclear`, and before judging fit Claude asks one line: "Would you dropship or buy stock?" Say in the heading which answer would sharpen it ("tell me how you'd fulfil and I'll read it through that lens").

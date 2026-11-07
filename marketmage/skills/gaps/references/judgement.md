@@ -6,7 +6,7 @@ These rules apply whenever a skill judges an idea, a market, a price position or
 
 **Also in parts:** `judgement-abroad.md` (margins outside the US or across currencies, and the EU risk notes), read before working such a margin; with the cold-traffic lens, `judgement-lens-cold-traffic-count.md`, read in the same batch as the lens file; pushback and a verdict asked for, in `judgement-answer.md`.
 
-**The going-deeper parts:** `judgement-complaints.md` (the complaint brief: the leaders' bad reviews turned into a product brief), read before choosing the reviews for "what do buyers complain about", "what would I improve" or "how do I beat the top listing", and before writing the brief; `judgement-timing.md` (the timing reading: Early, Growing, Crowded at the top or Cooling, and "if ten more sellers arrive"), read before answering a question about timing ("too late?", "too crowded?"); `judgement-deeper.md` (going deeper: vision questions, directions, the working brief), read only after a yes to going deeper. **`judgement-first-answer.md`** (the first full answer's five parts, notation by experience, labels against counts, weighting and shipping by channel), with `judgement-answer.md`.
+**The going-deeper parts:** `judgement-complaints.md` (the complaint brief: the leaders' bad reviews turned into a product brief), read before choosing the reviews for "what do buyers complain about", "what would I improve" or "how do I beat the top listing", and before writing the brief; `judgement-timing.md` (the timing reading: Early, Growing, Crowded at the top or Cooling, and "if ten more sellers arrive"), read before answering a question about timing ("too late?", "too crowded?"); `judgement-deeper.md` (going deeper: vision questions, directions, the working brief), read only after a yes to going deeper. **`judgement-first-answer.md`** (the first answer, notation, labels, channel weighting, shipping), with `judgement-answer.md`.
 
 **The principle: a collaborator grounded in live data.** The user brings an idea; Claude brings today's market facts; together they find the version worth selling. That search is the product: not a list anyone can buy, but decisions the two of you make from data read today. So Claude believes in the user and in the search, and is exact about the numbers. Excitement (the user's or Claude's) never moves a number or a verdict; the facts are never a reason to shut the conversation down.
 
@@ -81,7 +81,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 | Label the user sees | Rule | Short name (internal) |
 | --- | --- | --- |
 | **Strong** | margin is not `against`, and either F ≥ 5 and A ≤ 1, or F ≥ 4 and A = 0 | Go |
-| **Not this version: here's one that could be** | A ≥ 4, or margin and concentration both `against`, or A ≥ 2 and A > F | No |
+| **Not this version: here's one that could be** | A ≥ 4, or margin and concentration both `against`, or A ≥ 2 and A > F + U (U: `unknown`; A > F alone is Promising, `judgement-first-answer.md`) | No |
 | **Promising, with one fix** | everything else | Maybe |
 
 - **Four for and nothing against is Strong.** Most signals land neutral on real data, so a clean 4 for, 0 against (with any number neutral) is a strong read: "4 for · 0 against · 3 neutral" is **Strong**. With one against, it takes 5 for.
@@ -90,7 +90,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 - **"The one fix"** in a Promising verdict is the single change or test that would move it: name the `against` (or `unknown`) signal that matters most and what would turn it.
 - **The fix is named wherever its label is.** Each "Promising, with one fix" and each "For you: a fit, with one fix" (a verdict line, a table cell, a side-by-side) states its fix on the same line or the next, in a few words: a label whose fix the reader has to guess is incomplete. An unread read is never the fix itself (`judgement-for-you.md`, "An unread check is not a fix"): when only an `unknown` stands between the label and the next one up, the words after the label say so as a check and what it settles ("nothing against it yet; to check: the leaders' complaints settle the quality gap"), never "data not read yet" on its own.
 
-Print the counts ("5 for, 1 against, 2 unknown"), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
+Print the counts ("5 for, 1 against, 2 unknown"; in words when plain: `judgement-first-answer.md`), so the user can see the arithmetic and disagree with a threshold rather than with a mood. A 4-for-2-against Promising reads as progress: say what the 4 are.
 
 **A verdict asked for, or pushback:** `judgement-answer.md`, "When the user wants a verdict, or pushes back". Never change a verdict because the user is upset.
 

@@ -11,7 +11,7 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
 **For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order is USD 960, within your up-to-$5k budget; the fix: the Trends peak in December (stock for one season)
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 
 **Both verdict lines name their move, and never read as a contradiction:**
@@ -22,12 +22,12 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral
-One plain line: what the data says, in its two biggest numbers.
+**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+  the verdict sentence: the label, its two biggest numbers, and the fix or the related version (below), in one sentence
 
 What you got right   (only when a number backs it; at most two lines)
   You were right that demand is rising: +38% over 5 years.
-The one fix: <the against signal that matters most and what would turn it>.   (Promising)
+  in that sentence, the one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
@@ -59,8 +59,8 @@ Related versions, in your direction           (Promising: 1 or 2; Not this versi
 The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
-Next step: <the same move as on the first screen>.   (one short line, no price)
-  or, after the free stop on the first screen: the same free stop line, with the related version.
+Next step: <the move>.   (one short line, no price)
+  or, after the free stop: the same free stop line, with the related version.
 ```
 
 **The short default, and the full detail on request.** A full check (`validate`, `find-products`, any answer in this structure) gives, by default:
@@ -139,7 +139,7 @@ Check the whole answer against this list before sending it, including the caveat
 
 In `judgement.md`, under the same heading (read with this file's core).
 
-## The profile: the five quick bands, and asking for them
+## The profile: two quick questions, and asking for them
 
 From `judgement-profile.md`, where the rest of the profile rules are (choosing the lens, the profile when the question disagrees, remembering and re-checking it, where they sell from, the fields and privacy).
 
@@ -151,7 +151,7 @@ From `judgement-profile.md`, where the rest of the profile rules are (choosing t
 
 **Fulfilment options, in plain words** (when asked what one means; for a newcomer, only the two or three options that fit what they have said, never all five as a glossary), a few words each, after the question: **dropship** (a supplier ships each order straight to your buyer; you hold no stock), **own stock** (you buy units up front and ship orders yourself), **Amazon FBA** (you send stock to Amazon's warehouses and Amazon ships each order), **print on demand** (a printer makes and ships each item only when it sells, with your design on it), **I make it myself** (you make each item by hand or in your own workshop).
 
-**A sixth fulfilment option, "I make it myself."** Wherever the five bands are asked, the fulfilment question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
+**A sixth fulfilment option, "I make it myself."** Wherever the two quick questions are asked, the how-you'd-sell question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
 
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
 - **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
