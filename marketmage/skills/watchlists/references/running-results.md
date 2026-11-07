@@ -41,22 +41,6 @@ The actors return what a search or a page gave them; a keyword match is not proo
 - **Fees and rates:** only from the run's data, the references' named assumptions, `costs.md` or the user's own figures (labelled as theirs), never from memory (`judgement.md`, "Every fee and rate has a source, never memory"; a skill without the judgement files follows the same rule: a fee the data didn't return is said to be unknown).
 - **Summaries the actor computed over every result** (a market scan's percentiles, TikTok keyword totals, a barcode's `lowestPrice`) carry the same risk. When the rows behind them were read, check them; when only the summary was read, say it covers every result as the site ranked them.
 
-## Words the user sees
-
-Answers are read by sellers, most of them not technical: never write as if the developer were asking. The words below are how MarketMage works inside; none appears in an answer, an estimate, an offer or a Next step unless the user used it first or asks how to see the raw data (then the Console link and its words are fine). Use the plain word instead:
-
-| Never, unprompted | Say instead |
-| --- | --- |
-| dataset, rows, records, items, fields, `RUN_SUMMARY`, summary record, status message | "the full list", "the results", "the listings", "the reviews", "the figures" (name what they are) |
-| actor, the actor's name (`cleanpull/…`), tool or tool names (`call-actor`, `get-dataset-items`…), connector, MCP, API | "the check", "the read", "MarketMage", or the site's name ("the Amazon check", "the TikTok Shop read") |
-| run, runs (as a noun for MarketMage's jobs: "the run", "this run", "a run failed") | "the check", "the read", "the search" ("the first check", "your check at 09:12") |
-| cap, capped, `maxTotalChargeUsd`, `maxRunCostUsd` | "spending limit" ("up to about USD 0.12 (with a spending limit)"; "Max cost per run (USD)" is the Console's own label, quoted as such when pointing to it) |
-| file names (`running.md`, `costs.md`, `DIGEST.md`…), "the rules", "my instructions", "the skill", "the reference", "mock" | nothing: say what is true, not where it is written ("MarketMage reads Amazon US only for this") |
-| a Console path (`console.apify.com/…`) | only when the user asks to see or download the raw results, or a step needs the Console (a delete, a setting) |
-
-- **The link to the full results is optional:** give it only when the answer shows part of a longer list the user may want (more reviews, listings or offers than the answer quotes), as one plain line: "Full list of the reviews: <link>", "All 48 listings: <link>". Never a "Dataset:" label, never a bare ID, never by default.
-- **Inside the plugin, the words stay:** these rules, tool calls and inputs keep their own names; only the text the user reads changes.
-
 ## Explaining results
 
 Lead with what matters, then the evidence:
@@ -66,7 +50,7 @@ Lead with what matters, then the evidence:
 
 Judgement skills follow the answer structure in `judgement-answer.md`. Every answer follows these format rules:
 - **Tables:** at most 10 rows (5 where a short answer will do), one idea per row, numbers in the table rather than in the prose.
-  - **No empty columns:** a column that would say the same "no", "none", "not checked", "not read yet", "—" or blank on every row is left out. What it would have shown becomes one line under the table, saying what wasn't read and offering it where an offer fits ("Competition isn't checked yet: want me to see how crowded each idea's Amazon search is?"), with no price (its estimate comes at the yes). A column is shown when at least one row has a real reading, and then the other rows say plainly what they lack ("not checked"). A column the skill always requires (the For you column, with its check named) stays.
+  - **No empty columns:** a column with **nothing read** on any row ("not checked", "not read yet", "—" or blank on every row) is left out. What it would have shown becomes one line under the table, saying what wasn't read and offering it where an offer fits ("Competition isn't checked yet: want me to see how crowded each idea's Amazon search is?"), with no price (its estimate comes at the yes). A column is shown when at least one row has a real reading, and then the other rows say plainly what they lack ("not checked"). A column the skill always requires (the For you column, with its check named) stays. **A column read on every row with the same result** ("no", "none") is a finding, not a gap: it becomes one factual line under the table instead ("No rising searches yet for any of the 5"; "Amazon itself sells none of the top 10"), never called unread.
   - **A missing figure is said as missing, never as "none":** "none" or "no rising searches" only when the data read says so (an empty list in the rows read); a figure the summary left out is read from the rows first ("A run's status message", "A figure left out is never zero").
 - **Plain words:** explain a trade term the first time it appears, from `glossary.md`, in a few words ("MOQ, the minimum order").
 - **At most two follow-ups, with no prices,** drawn from this data and phrased as the user would ask them, for example: "Who outranks you on 'yoga mat'?" · "Watch these 5 prices daily?". Each gets its estimate only when the user takes it up and it needs a yes (`running.md`, "Before any run"). They come just before the Next step line and don't repeat the next step. The user doesn't need to know skill names.

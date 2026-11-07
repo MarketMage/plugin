@@ -8,7 +8,7 @@ description: Read or monitor product reviews - average rating, review count, sha
 Ratings, new reviews and what shoppers praise or complain about, now or over time. Read these first:
 - `references/running.md`: costs, caps, tools, secrets;
 - `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` before a data-provider read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
-- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists.
+- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
 - `references/watchlists.md`: scheduling;
 - `references/costs.md`: the prices.
 
@@ -53,7 +53,7 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - **On the user's own product:** turn each complaint into a fix: a size chart, packaging, a clearer photo or description.
 - **Small samples:** under about 20 reviews, say the themes are a hint, not a trend. Themes come from keyword and phrase matching, not AI, so a theme is a pointer to reviews to read, not a measured sentiment score. **Named themes are English only:** the known complaint and praise phrases ("runs small", "arrived damaged") are English, so reviews in another language (amazon.de, .fr, .es, a German Trustpilot page) give mostly recurring phrases in that language, or no themes: say so, and read the review texts themselves for what buyers complain about.
 - **Loox** shows no dates in some layouts, and **Stamped** and **Loox** publish no counts per star: say so when it matters.
-- When the answer quotes only some of the reviews, one plain line with the link to all of them ("Full list of the reviews: <link>") (`references/running-results.md`, "Words the user sees"); then offer the watch, with no price on the offer (its monthly estimate comes at set-up): "I can tell you each morning when these get new or low reviews."
+- When the answer quotes only some of the reviews, one plain line with the link to all of them ("Full list of the reviews: <link>") (`references/plain-words.md`); then offer the watch, with no price on the offer (its monthly estimate comes at set-up): "I can tell you each morning when these get new or low reviews."
 
 ## 4. Ongoing (a watchlist)
 
