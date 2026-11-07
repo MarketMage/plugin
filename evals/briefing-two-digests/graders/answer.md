@@ -9,7 +9,7 @@ The account's two schedules were due to run on 25 Oct (daily) and 26 Oct (weekly
 PASS if all of these hold:
 - it gives no cost commentary on the reads (no "reading the digests is free" line, no notebook-read price, no closing cost line);
 - it puts the due stop rule first: names the 22 Oct check, quotes the rule with its numbers (the USD 250–500 test spend band or 7 days, 2% add-to-cart, 1.5% click-through as curiosity), and asks what the test showed or applies the rule, without deciding for the user against the rule;
-- the rest is turned into at most 5 numbered decisions in total, each with one recommended move and a reason tied to a number, and no price on the moves;
+- the rest is turned into at most 5 numbered decisions in total, each with one recommended move and a reason tied to a number, and no Apify cost on the moves;
 - the undercuts get split moves (grouped in one decision, or with the mask's undercut grouped with the Amazon leader's price drop): match or close the gap on the small ones (6.7% and 7.7%, or a conditional match tied to margin or sales), and hold on the Heated Neck Wrap because the gap is large (37.5%), it is a final sale / clearance, or it is out of stock there;
 - the user's own rank gains are credited with their numbers, and the 2-star strap review is turned into a move (for example answer it, or fix the strap);
 - the unrelated my-instagram-scrape task is not named or reported;
@@ -17,3 +17,5 @@ PASS if all of these hold:
 - it invents no changes beyond those above, and it ends on one next move.
 
 FAIL if it lists changes without recommended moves, gives more than 5 decisions, buries or omits the due stop rule, recommends matching the 37.5% final-sale price, reports the non-cw task, invents changes, or claims to have run a paid check without a yes.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

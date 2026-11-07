@@ -12,6 +12,8 @@ PASS if all of these hold:
 - first-order maths: units × unit cost against the budget band, and per unit what a sale pays out after Amazon's referral and FBA fees (about USD 20.87) less the unit cost; freight, duty and ads named as not included;
 - the sales floor, if quoted, is said as "at least", not as an estimate of sales;
 - it proposes a stop rule with numbers before launch (an Amazon ads test spend and length from the $1k–5k band, about USD 250 or 14 days, with an orders-per-click or similar threshold that means stop) and asks the user to agree it;
-- it offers the launch-week watch (leaders' prices, ranks on keywords, reviews) without a price on the offer, and does not claim to have created it;
-- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no price on its next step.
-FAIL if it invents numbers not in the data, gives no fee-aware maths, presents the sales floor as a sales estimate, claims a watch was created, or closes on a "This run cost…" (or "This research cost…") line, or puts a price on its next step.
+- it offers the launch-week watch (leaders' prices, ranks on keywords, reviews) without an Apify cost on the offer, and does not claim to have created it;
+- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
+FAIL if it invents numbers not in the data, gives no fee-aware maths, presents the sales floor as a sales estimate, claims a watch was created, or closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

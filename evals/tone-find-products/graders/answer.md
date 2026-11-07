@@ -9,8 +9,10 @@ PASS if all of these hold:
 - the handheld laser pointer is reported as not favoured, with a number, briefly (a short "what to avoid and why", not a lecture);
 - it builds on the user's laser-pointer hunch with the related version the data supports (an automatic or motion-activated laser toy, with a number such as 6,400 TikTok units or the +180% rising search), or credits the hunch only as far as the data backs it;
 - non-cat rows are left out of the cat-toy ideas;
-- it ends on a next step naming two ideas for `validate`, with no price;
+- it ends on a next step naming two ideas for `validate`, with no Apify cost;
 - it uses no hype words ("hot", "winning", "goldmine", "definitely") and no doom words ("unfortunately", "saturated to death", "be careful");
-- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no price on its next step.
+- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
-FAIL if the laser pointer is recommended as a top idea against the data, if the against ideas dominate the answer, if dog or litter products are presented as cat-toy ideas, or if there is no next step, or it closes on a "This run cost…" (or "This research cost…") line, or puts a price on its next step.
+FAIL if the laser pointer is recommended as a top idea against the data, if the against ideas dominate the answer, if dog or litter products are presented as cat-toy ideas, or if there is no next step, or it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

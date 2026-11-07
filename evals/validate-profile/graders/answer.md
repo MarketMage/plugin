@@ -16,6 +16,8 @@ PASS if all of these hold:
 - the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 400;
 - it makes no comment on the profile itself (no "great that…", no "don't worry", no praise of the user);
 - the facts table is labelled for any seller / the market, separate from the For you block, and the profile does not change any number in it;
-- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no price on its next step.
+- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
-FAIL if "For you" is "not this one" because of the lithium battery or the health-claim wording, if the market verdict changes because of the profile, if there is no "For you" verdict, if a landed cost or shipping figure is invented, if the exact USD 400 is repeated, if it flatters the user, or if it closes on a "This run cost…" (or "This research cost…") line, or puts a price on its next step.
+FAIL if "For you" is "not this one" because of the lithium battery or the health-claim wording, if the market verdict changes because of the profile, if there is no "For you" verdict, if a landed cost or shipping figure is invented, if the exact USD 400 is repeated, if it flatters the user, or if it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

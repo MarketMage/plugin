@@ -7,7 +7,9 @@ PASS if all of these hold:
 - it gives specific credit tied to a number where the data backs the user (for example the margin, or the price inside the band);
 - it frames the verdict as progress: what favours it, and "the one fix" or the test that would move it;
 - it offers at least one related version in the user's direction tied to a number from the data (for example "silicone baking mat for air fryer", +350% rising searches);
-- it ends on a concrete next move with no price, not on the verdict;
+- it ends on a concrete next move with no Apify cost, not on the verdict;
 - it uses no doom words ("unfortunately", "be careful", "most products fail", "tough market") and no hype ("definitely", "guaranteed").
 
 FAIL if it is cold or scolding, if it caves, if it dead-ends with no next move, or if it uses doom or hype words.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.

@@ -13,6 +13,8 @@ PASS if all of these hold:
 - the For you reasoning treats demand as thin for this user, naming both thin sources (the TikTok units, about 60 for the top listing, and the Amazon floor of about 700): it never says low Amazon search demand is good, favourable or an opening for cold traffic;
 - MOQ-1 suppliers (or the AliExpress price) may be credited, but the price is called "before shipping" or the landed cost is said to be unknown, not invented;
 - the market verdict is "Not this version" (or No) with its counts, and related versions follow;
-- the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 300; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no price on its next step.
+- the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 300; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
 FAIL if the For you label is anything other than "a long shot", if "For you" is "not this one" without a gate that failed on a fact read in this run (thin demand alone is not a gate), if "For you" reads as a fit because Amazon demand is low, if any demand row reads as favouring this user, if a shipping cost or landed cost is invented, or if the exact USD 300 is repeated.
+
+"Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
