@@ -15,10 +15,8 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `google-request` | Google Shopping search | $4.00 | $4.00 | $3.60 | $3.20 |
 | `product-change` | Product with changes | $2.00 | $2.00 | $1.80 | $1.60 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-| `provider-record` | Provider record | $3.00 | $3.00 | $2.70 | $2.40 |
-| `provider-search` | Provider search | $20.00 | $20.00 | $20.00 | $20.00 |
-
-**From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $40.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
+| `provider-record` | Provider record | $6.00 | $3.00 | $2.70 | $2.40 |
+| `provider-search` | Provider search | $40.00 | $20.00 | $20.00 | $20.00 |
 
 ### `cleanpull/any-store-product-monitor`: Price Tracker & Stock Monitor for Any Online Store
 
@@ -30,10 +28,8 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `product-checked` | Product checked, unchanged | $0.50 | $0.50 | $0.45 | $0.40 |
 | `residential-read` | Product from a protected store | $4.00 | $4.00 | $4.00 | $4.00 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-| `provider-record` | Provider record | $3.00 | $3.00 | $2.70 | $2.40 |
-| `provider-search` | Provider search | $15.00 | $15.00 | $15.00 | $15.00 |
-
-**From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $30.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
+| `provider-record` | Provider record | $6.00 | $3.00 | $2.70 | $2.40 |
+| `provider-search` | Provider search | $30.00 | $15.00 | $15.00 | $15.00 |
 
 ### `cleanpull/amazon-product-scraper`: Amazon Product Scraper: Buy Box, Offers & BSR
 

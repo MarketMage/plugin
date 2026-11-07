@@ -16,10 +16,8 @@ Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 | `product-checked` | Product checked | $0.50 | $0.50 | $0.45 | $0.40 |
 | `residential-request` | Request through home-network addresses | $6.00 | $6.00 | $6.00 | $6.00 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-| `provider-record` | Provider record | $3.00 | $3.00 | $2.70 | $2.40 |
-| `provider-search` | Provider search | $3.00 | $3.00 | $3.00 | $3.00 |
-
-**From 2026-11-07:** `provider-record` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged); `provider-search` becomes $6.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
+| `provider-record` | Provider record | $6.00 | $3.00 | $2.70 | $2.40 |
+| `provider-search` | Provider search | $6.00 | $3.00 | $3.00 | $3.00 |
 
 ### `cleanpull/watch-digest`: Watch Digest: Price, Stock & Rank Changes
 

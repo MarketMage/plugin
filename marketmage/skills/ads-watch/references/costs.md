@@ -14,9 +14,7 @@ Default memory 256 MB. Prices per 1,000 events, by Apify plan:
 | `watch-item-checked` (main) | Watch item checked | $1.00 | $1.00 | $0.90 | $0.80 |
 | `ad` | Ad | $1.50 | $1.50 | $1.35 | $1.20 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-| `library-request` | Ad library request | $3.50 | $3.50 | $3.25 | $3.00 |
-
-**From 2026-11-07:** `library-request` becomes $7.00 on Free (Bronze, Silver, Gold+ unchanged). Before 2026-11-07, quote the current prices.
+| `library-request` | Ad library request | $7.00 | $3.50 | $3.25 | $3.00 |
 
 ### `cleanpull/watch-digest`: Watch Digest: Price, Stock & Rank Changes
 
