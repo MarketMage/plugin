@@ -46,6 +46,15 @@
     ],
     "judgement": true
   },
+  "complaint-brief": {
+    "runs": [
+      "amazon-product-scraper",
+      "supplier-price-finder",
+      "reviews-monitor"
+    ],
+    "pricesOnly": [],
+    "judgement": true
+  },
   "spy-store": {
     "runs": [
       "shopify-store-scraper",

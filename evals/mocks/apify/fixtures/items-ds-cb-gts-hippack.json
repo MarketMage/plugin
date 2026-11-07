@@ -1,0 +1,478 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "women's hiking hip pack",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "hiking hip pack",
+   "hiking fanny pack"
+  ],
+  "summary": {
+   "average": 38,
+   "peak": 71,
+   "peakDate": "2026-07-05T00:00:00.000Z",
+   "latest": 49,
+   "latestDate": "2026-11-01T00:00:00.000Z",
+   "changePercent": 46.0,
+   "direction": "rising",
+   "lowVolume": false
+  },
+  "interestOverTime_timelineData": [
+   {
+    "date": "2021-11-01T00:00:00.000Z",
+    "value": [
+     28
+    ]
+   },
+   {
+    "date": "2022-02-01T00:00:00.000Z",
+    "value": [
+     29
+    ]
+   },
+   {
+    "date": "2022-05-01T00:00:00.000Z",
+    "value": [
+     31
+    ]
+   },
+   {
+    "date": "2022-08-01T00:00:00.000Z",
+    "value": [
+     40
+    ]
+   },
+   {
+    "date": "2022-11-01T00:00:00.000Z",
+    "value": [
+     33
+    ]
+   },
+   {
+    "date": "2023-02-01T00:00:00.000Z",
+    "value": [
+     34
+    ]
+   },
+   {
+    "date": "2023-05-01T00:00:00.000Z",
+    "value": [
+     36
+    ]
+   },
+   {
+    "date": "2023-08-01T00:00:00.000Z",
+    "value": [
+     45
+    ]
+   },
+   {
+    "date": "2023-11-01T00:00:00.000Z",
+    "value": [
+     38
+    ]
+   },
+   {
+    "date": "2024-02-01T00:00:00.000Z",
+    "value": [
+     39
+    ]
+   },
+   {
+    "date": "2024-05-01T00:00:00.000Z",
+    "value": [
+     41
+    ]
+   },
+   {
+    "date": "2024-08-01T00:00:00.000Z",
+    "value": [
+     50
+    ]
+   },
+   {
+    "date": "2024-11-01T00:00:00.000Z",
+    "value": [
+     43
+    ]
+   },
+   {
+    "date": "2025-02-01T00:00:00.000Z",
+    "value": [
+     44
+    ]
+   },
+   {
+    "date": "2025-05-01T00:00:00.000Z",
+    "value": [
+     46
+    ]
+   },
+   {
+    "date": "2025-08-01T00:00:00.000Z",
+    "value": [
+     55
+    ]
+   },
+   {
+    "date": "2025-11-01T00:00:00.000Z",
+    "value": [
+     48
+    ]
+   },
+   {
+    "date": "2026-02-01T00:00:00.000Z",
+    "value": [
+     49
+    ]
+   },
+   {
+    "date": "2026-05-01T00:00:00.000Z",
+    "value": [
+     51
+    ]
+   },
+   {
+    "date": "2026-08-01T00:00:00.000Z",
+    "value": [
+     60
+    ]
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "hip pack with water bottle holder women",
+    "value": "+250%"
+   },
+   {
+    "query": "small waist hip pack",
+    "value": "+140%"
+   },
+   {
+    "query": "hip pack for petite women",
+    "value": "+90%"
+   }
+  ],
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ },
+ {
+  "type": "term",
+  "searchTerm": "hiking hip pack",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "women's hiking hip pack",
+   "hiking fanny pack"
+  ],
+  "summary": {
+   "average": 55,
+   "peak": 100,
+   "peakDate": "2026-07-05T00:00:00.000Z",
+   "latest": 66,
+   "latestDate": "2026-11-01T00:00:00.000Z",
+   "changePercent": 31.0,
+   "direction": "rising",
+   "lowVolume": false
+  },
+  "interestOverTime_timelineData": [
+   {
+    "date": "2021-11-01T00:00:00.000Z",
+    "value": [
+     45
+    ]
+   },
+   {
+    "date": "2022-02-01T00:00:00.000Z",
+    "value": [
+     46
+    ]
+   },
+   {
+    "date": "2022-05-01T00:00:00.000Z",
+    "value": [
+     47
+    ]
+   },
+   {
+    "date": "2022-08-01T00:00:00.000Z",
+    "value": [
+     56
+    ]
+   },
+   {
+    "date": "2022-11-01T00:00:00.000Z",
+    "value": [
+     49
+    ]
+   },
+   {
+    "date": "2023-02-01T00:00:00.000Z",
+    "value": [
+     51
+    ]
+   },
+   {
+    "date": "2023-05-01T00:00:00.000Z",
+    "value": [
+     52
+    ]
+   },
+   {
+    "date": "2023-08-01T00:00:00.000Z",
+    "value": [
+     61
+    ]
+   },
+   {
+    "date": "2023-11-01T00:00:00.000Z",
+    "value": [
+     54
+    ]
+   },
+   {
+    "date": "2024-02-01T00:00:00.000Z",
+    "value": [
+     55
+    ]
+   },
+   {
+    "date": "2024-05-01T00:00:00.000Z",
+    "value": [
+     56
+    ]
+   },
+   {
+    "date": "2024-08-01T00:00:00.000Z",
+    "value": [
+     65
+    ]
+   },
+   {
+    "date": "2024-11-01T00:00:00.000Z",
+    "value": [
+     58
+    ]
+   },
+   {
+    "date": "2025-02-01T00:00:00.000Z",
+    "value": [
+     59
+    ]
+   },
+   {
+    "date": "2025-05-01T00:00:00.000Z",
+    "value": [
+     60
+    ]
+   },
+   {
+    "date": "2025-08-01T00:00:00.000Z",
+    "value": [
+     70
+    ]
+   },
+   {
+    "date": "2025-11-01T00:00:00.000Z",
+    "value": [
+     63
+    ]
+   },
+   {
+    "date": "2026-02-01T00:00:00.000Z",
+    "value": [
+     64
+    ]
+   },
+   {
+    "date": "2026-05-01T00:00:00.000Z",
+    "value": [
+     65
+    ]
+   },
+   {
+    "date": "2026-08-01T00:00:00.000Z",
+    "value": [
+     74
+    ]
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "hip pack with bottle holder",
+    "value": "+120%"
+   }
+  ],
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ },
+ {
+  "type": "term",
+  "searchTerm": "hiking fanny pack",
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "women's hiking hip pack",
+   "hiking hip pack"
+  ],
+  "summary": {
+   "average": 47,
+   "peak": 88,
+   "peakDate": "2025-07-06T00:00:00.000Z",
+   "latest": 50,
+   "latestDate": "2026-11-01T00:00:00.000Z",
+   "changePercent": 8.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "interestOverTime_timelineData": [
+   {
+    "date": "2021-11-01T00:00:00.000Z",
+    "value": [
+     46
+    ]
+   },
+   {
+    "date": "2022-02-01T00:00:00.000Z",
+    "value": [
+     46
+    ]
+   },
+   {
+    "date": "2022-05-01T00:00:00.000Z",
+    "value": [
+     46
+    ]
+   },
+   {
+    "date": "2022-08-01T00:00:00.000Z",
+    "value": [
+     55
+    ]
+   },
+   {
+    "date": "2022-11-01T00:00:00.000Z",
+    "value": [
+     47
+    ]
+   },
+   {
+    "date": "2023-02-01T00:00:00.000Z",
+    "value": [
+     47
+    ]
+   },
+   {
+    "date": "2023-05-01T00:00:00.000Z",
+    "value": [
+     47
+    ]
+   },
+   {
+    "date": "2023-08-01T00:00:00.000Z",
+    "value": [
+     55
+    ]
+   },
+   {
+    "date": "2023-11-01T00:00:00.000Z",
+    "value": [
+     48
+    ]
+   },
+   {
+    "date": "2024-02-01T00:00:00.000Z",
+    "value": [
+     48
+    ]
+   },
+   {
+    "date": "2024-05-01T00:00:00.000Z",
+    "value": [
+     48
+    ]
+   },
+   {
+    "date": "2024-08-01T00:00:00.000Z",
+    "value": [
+     56
+    ]
+   },
+   {
+    "date": "2024-11-01T00:00:00.000Z",
+    "value": [
+     49
+    ]
+   },
+   {
+    "date": "2025-02-01T00:00:00.000Z",
+    "value": [
+     49
+    ]
+   },
+   {
+    "date": "2025-05-01T00:00:00.000Z",
+    "value": [
+     49
+    ]
+   },
+   {
+    "date": "2025-08-01T00:00:00.000Z",
+    "value": [
+     57
+    ]
+   },
+   {
+    "date": "2025-11-01T00:00:00.000Z",
+    "value": [
+     49
+    ]
+   },
+   {
+    "date": "2026-02-01T00:00:00.000Z",
+    "value": [
+     50
+    ]
+   },
+   {
+    "date": "2026-05-01T00:00:00.000Z",
+    "value": [
+     50
+    ]
+   },
+   {
+    "date": "2026-08-01T00:00:00.000Z",
+    "value": [
+     58
+    ]
+   }
+  ],
+  "relatedQueries_rising": [],
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ },
+ {
+  "type": "comparison",
+  "searchTerms": [
+   "women's hiking hip pack",
+   "hiking hip pack",
+   "hiking fanny pack"
+  ],
+  "geo": "US",
+  "timeRange": "past-5-years",
+  "winner": "hiking hip pack",
+  "averages": [
+   {
+    "searchTerm": "hiking hip pack",
+    "average": 55
+   },
+   {
+    "searchTerm": "hiking fanny pack",
+    "average": 47
+   },
+   {
+    "searchTerm": "women's hiking hip pack",
+    "average": 38
+   }
+  ],
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ }
+]
