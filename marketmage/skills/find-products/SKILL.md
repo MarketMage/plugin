@@ -23,6 +23,8 @@ Turn the user's niche into a short, scored map of product ideas, and find the on
 - **Optional:** the price range they want to sell in.
 - **The profile, if there isn't one and it hasn't been offered in this chat:** its five quick bands, in the same message as the estimate, skippable, once per conversation (`references/judgement-answer.md`, "Asking for the profile"). The lens changes what is searched, so ask before the runs when it costs nothing to wait; if they skip, search for any seller and don't offer it again. **Except a quick one-off read** the user asked for directly (one TikTok list, one trends check: under about USD 0.10): don't put the five questions before it. Over USD 0.05, give its estimate and wait for the yes; under it, just run it, with no cost said; and offer the profile in one line after the answer (`references/running.md`, "Before any run", item 1: the one exception to "Asking for the profile").
 
+- **A profile found after the yes** (the notebook's status record, read with the first runs: `references/notebook.md`, "Is it on?") counts as a profile from then on: before writing the answer, read `references/judgement-profile.md`, `references/judgement-for-you.md` and the chosen lens's file in one batch, and the answer carries its "For you" column, with no profile offer. A lens's extra runs are offered after the answer, never run without a yes.
+
 ## 1b. Search through the lens
 
 With a profile, the lens shapes the search itself, not only the labels on one list (`references/judgement-for-you.md`, "The lenses, as data"):
