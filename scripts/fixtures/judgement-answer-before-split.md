@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing a 
 
 ## Answer structure
 
-**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
+**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it, with no visual: the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -62,7 +62,7 @@ Next step: <the move>.   (one short line, no price)
 ```
 
 **The short default, and the full detail on request.** A full check (`validate`, `find-products`, any answer in this structure) gives, by default:
-- the first screen; the one visual where it can be drawn (`running-results.md`, "One visual, where it helps"); the signal table ("What the data shows"); with a profile, the For you block, shortest form (`judgement-for-you.md`, "The For you block");
+- the first screen; the signal table ("What the data shows"); with a profile, the For you block, shortest form (`judgement-for-you.md`, "The For you block");
 - **the lines that always reach the user:** the suspicious-text line (`running-results.md`), any exclusion or mismatch line ("3 of 10 results weren't lip gloss and were left out"), a caveat that changes the verdict or its confidence (one line, with what would raise it), the market's one fix and the For you lines; the notebook's line and the profile's offer stay where their rules put them;
 - then **one line offering the rest**, "Want the full detail: what it means, the early sign and its watch, what this can't see?" (a skill may name its own parts in it), and the Next step line, last.
 
@@ -70,7 +70,7 @@ Next step: <the move>.   (one short line, no price)
 - **The one offer stands in for the follow-ups:** a watch, the launch plan, another version or a document wait for the full detail.
 - **A shape the user asks for wins** ("Size the reply to the question"): "just the verdict" or "table only" is that, with the next step; "everything", "full detail" or "the whole analysis" up front (or a saved `answerShape` that asks for it) gets the full detail at once, with no offer line. The screen-reader or no-tables shape keeps this same default, in sentences, with the offer line in words.
 
-- In the reply, the labels below the first screen ("What the data shows", "What it means (for any seller)", "For you, through the <lens> lens", "Related versions") are short `###` headings (`running.md`, "Explaining results", "Markdown that reads well everywhere"); the first screen keeps no heading. Where the skill names a visual moment and a visual can be drawn, it sits where the skill's moment says, always after the first screen and before the table it summarises; when the skill names no spot, between the first screen and "What the data shows" (`running.md`, "One visual, where it helps"). Write the whole first screen in the reply before drawing it: the verdict lines come first in every answer, with or without a visual. Never call the visual tool before the verdict lines are written.
+- In the reply, the labels below the first screen ("What the data shows", "What it means (for any seller)", "For you, through the <lens> lens", "Related versions") are short `###` headings (`running-results.md`, "Explaining results", "Markdown that reads well everywhere"); the first screen keeps no heading. The skill's visual moment is drawn only in a follow-up turn (the full detail, a chart asked for), after that reply's first line and before the table it summarises (`running-results.md`, "One visual, where it helps"); never in the answer that first gives the verdict, whose verdict lines come first.
 - Tables stay under 10 rows. Numbers live in the table; prose repeats at most the two that carry the point.
 - "What you got right" credits only something the user said in this conversation, with the data's number beside it, and for a user who doesn't sell on Amazon never an Amazon FBA figure (`judgement.md`, rule 5). Nothing they said is backed: the line is left out.
 - The whole reply is sized to the question (`judgement-tone.md`, "Size the reply to the question"): the first screen at about 150 words, the rest in its shortest form.
