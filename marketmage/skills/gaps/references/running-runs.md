@@ -25,6 +25,8 @@ Say so before the run ("this takes a few minutes"), even when the user has alrea
 
 ## When a run goes wrong
 
+**Actors not public yet.** A table in `costs.md` that starts with **Pending** is for an actor CleanPull hasn't published yet. If its run fails because the actor isn't found, say plainly that this part of the job is coming soon, give what the other steps found, and don't retry.
+
 | What happened | What to do |
 | --- | --- |
 | **ABORTED with results** (usually the cap) | Show what was read and what it cost. Work out from `RUN_SUMMARY` which items weren't read, estimate a rerun of **only those** (pass just those items, or `maxItems` for the rest), and get a new yes. |

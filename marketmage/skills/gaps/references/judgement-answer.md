@@ -35,6 +35,7 @@ The one fix: <the against signal that matters most and what would turn it>.   (P
 Next step: <the move>.
   or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the first screen (~150 words at most)
+<the one visual, where it can be drawn: the skill's visual moment>   (in the short default too)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
   Review depth   median 3,400; 2 of 48 under 100 reviews        against (> 3,000; ≤ 2 of 48)
@@ -64,6 +65,7 @@ Next step: <the same move as on the first screen>.   (one short line, no price)
 
 **The short default, and the full detail on request.** A full check (`validate`, `find-products`, any answer in this structure) gives, by default:
 - the first screen; the one visual where it can be drawn (`running-results.md`, "One visual, where it helps"); the signal table ("What the data shows"); with a profile, the For you block, shortest form (`judgement-for-you.md`, "The For you block");
+- **the visual stays in the short default:** where the skill names a visual moment and a visual can be drawn, it is drawn in the default answer, after the first screen; shortening the answer never drops it (only a shape the user asked for does);
 - **the lines that always reach the user:** the suspicious-text line (`running-results.md`), any exclusion or mismatch line ("3 of 10 results weren't lip gloss and were left out"), a caveat that changes the verdict or its confidence (one line, with what would raise it), the market's one fix and the For you lines; the notebook's line and the profile's offer stay where their rules put them;
 - then **one line offering the rest**, "Want the full detail: what it means, the early sign and its watch, what this can't see?" (a skill may name its own parts in it), and the Next step line, last.
 
@@ -136,9 +138,7 @@ Check the whole answer against this list before sending it, including the caveat
 
 ## When the user wants a verdict, or pushes back
 
-**If the user asks for a particular verdict** ("tell me it's a yes", "I need this to work"), before or after the run, treat it as pushback in the answer itself: the acknowledgement line comes first, then the verdict with its counts, then the specific threshold or thresholds standing between this and Strong, and the question of whether they'd set one differently.
-
-**If the user pushes back,** stay warm and stay exact. Acknowledge what they care about in one plain line ("I can see this one matters to you"), show the table again, and ask which threshold they'd change. Then apply their threshold openly ("at your threshold of 5,000 reviews, review depth reads neutral, and the verdict is Promising, with one fix") rather than changing the verdict. Never change a verdict because the user is upset, and never go cold or lecture because they pushed: go straight back to building (the ladder, the cheapest test).
+In `judgement.md`, under the same heading (read with this file's core).
 
 ## The profile: the five quick bands, and asking for them
 
@@ -155,6 +155,7 @@ From `judgement-profile.md`, where the rest of the profile rules are (choosing t
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
 - **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
 - **A quick one-off read** (one read under about USD 0.10; it still waits for a yes when it is over USD 0.05, as every run does: `running.md`, "Before any run") goes ahead first, with no profile in its estimate, and the profile is offered after its answer, in that answer's one friendly line; that is still the one offer for this conversation.
+- **A notebook they may keep:** before a direct job's yes the notebook isn't checked yet (`notebook.md`, "Is it on?"), so the offer line adds "or, if you keep a MarketMage notebook, say so and I'll use the profile saved there"; once the check after the yes finds a profile, it is used and the offer isn't repeated.
 - **Skipped or unanswered, never again in this chat:** no re-offer in later answers, follow-ups or other skills. The market verdict leads from then on.
 - **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the five bands would answer it; it is a reminder, not the question again.
 - A profile they give later, unprompted, is used at once ("Accept it unprompted").

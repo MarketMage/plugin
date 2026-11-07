@@ -14,7 +14,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 1,
-    "newInSource": true
+    "newInSource": true,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -33,7 +35,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 2,
-    "newInSource": true
+    "newInSource": true,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "eye"
+    ]
    }
   ]
  },
@@ -52,7 +58,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 3,
-    "newInSource": true
+    "newInSource": true,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated"
+    ]
    }
   ]
  },
@@ -71,7 +81,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 4,
-    "newInSource": true
+    "newInSource": true,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated"
+    ]
    }
   ]
  },
@@ -90,7 +104,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 5,
-    "newInSource": true
+    "newInSource": true,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -109,7 +125,12 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 6,
-    "newInSource": true
+    "newInSource": true,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated",
+     "mask"
+    ]
    }
   ]
  },
@@ -128,7 +149,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 7,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -147,7 +170,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 8,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated"
+    ]
    }
   ]
  },
@@ -166,7 +193,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 9,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "eye"
+    ]
    }
   ]
  },
@@ -185,7 +216,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 10,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -204,7 +237,12 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 11,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated",
+     "mask"
+    ]
    }
   ]
  },
@@ -223,7 +261,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 12,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "mask"
+    ]
    }
   ]
  },
@@ -242,7 +284,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 13,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -261,7 +305,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 14,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -280,7 +326,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 15,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated"
+    ]
    }
   ]
  },
@@ -299,7 +349,11 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 16,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated"
+    ]
    }
   ]
  },
@@ -318,7 +372,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 17,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -337,7 +393,12 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 18,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "heated",
+     "mask"
+    ]
    }
   ]
  },
@@ -356,7 +417,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 19,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
@@ -375,7 +438,9 @@
     "type": "keyword",
     "value": "heated eye mask",
     "position": 20,
-    "newInSource": false
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
    }
   ]
  },
