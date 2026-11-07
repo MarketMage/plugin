@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing a 
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step with its cost. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
+**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -29,10 +29,10 @@ What you got right   (only when a number backs it; at most two lines)
 The one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
-  or: What would have to be true: <one line>. The cheapest test: <it>, about USD <cost>.   (For you: a long shot)
+  or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
   or: Sell it where people search: <Amazon floor> vs <best TikTok listing>; <the channel>. What would have to be true … (For you: a long shot, cold-traffic, search demand real)
-Next step: <the move>, about USD <cost>.
-  or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>, about USD <cost>.   (the free stop: Not this version, or For you: not this one)
+Next step: <the move>.
+  or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the first screen (~150 words at most)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
@@ -53,9 +53,8 @@ Related versions, in your direction           (Promising: 1 or 2; Not this versi
 The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
-This research cost about USD <cost>.
-Next step: <the same move as on the first screen>, about USD <cost>.   (one short line)
-  or, after the free stop on the first screen: the same free stop line, with the related version and its cost.
+Next step: <the same move as on the first screen>.   (one short line, no price)
+  or, after the free stop on the first screen: the same free stop line, with the related version.
 ```
 
 - In the reply, the labels below the first screen ("What the data shows", "What it means (for any seller)", "For you, through the <lens> lens", "Related versions") are short `###` headings (`running.md`, "Explaining results", "Markdown that reads well everywhere"); the first screen keeps no heading. Where the skill names a visual moment and a visual can be drawn, it sits where the skill's moment says, always after the first screen and before the table it summarises; when the skill names no spot, between the first screen and "What the data shows" (`running.md`, "One visual, where it helps"). Write the whole first screen in the reply before drawing it: the verdict lines come first in every answer, with or without a visual.
@@ -64,8 +63,8 @@ Next step: <the same move as on the first screen>, about USD <cost>.   (one shor
 - The whole reply is sized to the question (`judgement-tone.md`, "Size the reply to the question"): the first screen at about 150 words, the rest in its shortest form.
 - Asked a yes/no question ("is it saturated?"), the verdict line still comes first, followed by the one-line opposite answer (rule 3), inside the first screen.
 - The last line is always the next move, never the verdict: the first screen's next step, repeated in one short line.
-- **The free stop is a next move too** (`judgement.md`, "The one exception, the free stop"): after Not this version, or For you: not this one, the next step may be "nothing to buy; keep the USD <X>", with the best related version and its cost on the same line, so the answer still ends in a move in their direction.
+- **The free stop is a next move too** (`judgement.md`, "The one exception, the free stop"): after Not this version, or For you: not this one, the next step may be "nothing to buy; keep the USD <X>", with the best related version on the same line, so the answer still ends in a move in their direction.
 
 **Two framings, same data, same verdict:**
-- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids', about USD 0.017."
+- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids'."
 - "Is this saturated?" → "**For the market: Promising, with one fix** (medium confidence). 2 signals say crowded (review median 3,400; 12 ads in 48), 4 say open (demand +38% over 5 years, 3 leaders under 4.2 stars, top-3 share 0.31, margin after fees 48% of the median price). Crowded on page 1, not closed: the leaders' quality gap is the opening a newcomer can build on."

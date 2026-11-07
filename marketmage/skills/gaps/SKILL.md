@@ -24,7 +24,7 @@ Match catalogues and say where the user is cheaper, dearer, alone or missing. Re
 
 ## 2. Read the catalogues first
 
-Catalog Matcher only matches datasets; it reads nothing from the web. So read each catalogue with the actor that fits, and **show the cost of these reads and the match together** before anything runs.
+Catalog Matcher only matches datasets; it reads nothing from the web. So read each catalogue with the actor that fits, and **give one estimate for these reads and the match together** before anything runs, with the yes it needs (`references/running.md`, "Before any run").
 
 | Catalogue | Actor | Input | Cost on paid plans |
 | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ When the user gives a dataset from an earlier read, match it directly: Catalog M
   - `gaps` and `gapsInYourBrandsOnly` as agreed.
 - **Cost:** USD 0.05 per competitor catalogue compared + USD 0.002 per matched pair + USD 0.0001 per gap row.
   - Pairs: estimate 10% of the smaller catalogue (rival stores usually overlap less: 2 to 4% in CleanPull's tests on outdoor stores; a reseller of the same brands can overlap much more). Gaps: up to the size of the other catalogue, fewer with `gapsInYourBrandsOnly`.
-  - **Example:** the user's 250 products against two rivals' 250 each, all on Shopify: reads 750 × 0.0008 = USD 0.60; match 2 × 0.05 + about 80 pairs × 0.002 + about 300 gaps × 0.0001 ≈ USD 0.29. **About USD 0.90 in all:** say so and get a yes.
+  - **Example:** the user's 250 products against two rivals' 250 each, all on Shopify: reads 750 × 0.0008 = USD 0.60; match 2 × 0.05 + about 80 pairs × 0.002 + about 300 gaps × 0.0001 ≈ USD 0.29. **Up to about USD 0.90 in all (capped):** the one estimate, with the question, and get a yes.
 - **The cap** on the match run: 1.5× its estimate plus USD 0.05 (in a live check, a cap only a little above the estimate stopped the pairs while the summary still came out). If it stops at the cap, `RUN_SUMMARY` says so (`stoppedAtSpendingLimit`): say how many pairs the summary counted but weren't delivered, and offer a rerun with a higher cap.
 
 ## 4. Read the results
@@ -74,7 +74,7 @@ Facts first, then what they mean (`references/judgement.md`, rules 1, 5 and 6).
 - **For you:** only with a profile (`references/judgement-profile.md`, "The seller profile and lenses"), in its own block, each line naming its fact, never the budget as a reason: for example "because the first order of gap items is 200 units at USD 3.10, start with the 2 cheapest gap items", or "because 14 of the gap items are in brands you already carry, add those first (no new supplier account)".
 - **Caveats in one line:** prices as listed, no shipping or tax; title matches below 0.85 need a look; a competitor showing compare-at prices on most products may be listing sale prices as its usual price.
 - **Where the user stands strong,** in one line with its number: the products only they sell, or the shared ones where they are cheapest. Credit tied to the data, never about the person.
-- **Next steps,** the most useful last: `export` to put the matches in a sheet; `price-watch` on the matched products where a rival already undercuts the user; the undercut watch (step 6) to hear when a rival newly sells one of the user's products for less (the early sign of a price move), with its cost.
+- **Next steps,** the most useful last: `export` to put the matches in a sheet; `price-watch` on the matched products where a rival already undercuts the user; the undercut watch (step 6) to hear when a rival newly sells one of the user's products for less (the early sign of a price move), with no prices on them (each gets its estimate when the user takes it up and it needs a yes).
 
 ## 6. Ongoing: watch for undercuts
 
@@ -95,7 +95,7 @@ When both the user's store and the rivals are Shopify stores, offer "watch for u
   | 2 | USD 1.70 | USD 0.76 | about USD 3.30 |
   | 3 | USD 2.45 | USD 1.05 | about USD 4.50 |
 
-  Larger stores cost more in proportion (USD 0.20 per 250 products a store a run). Show the first-run and typical figures and the monthly cost, and get a clear yes.
+  Larger stores cost more in proportion (USD 0.20 per 250 products a store a run). Give the monthly estimate, with the first run, once, as the approval, and get a clear yes.
 - **`maxRunCostUsd`:** about **USD 2 for one rival, 3 for two, 4 for three** at 250 products each, and USD 1 more for each further rival up to 10 (more for larger stores), on the task and in the baseline run. Unlike other watches, it stays at the first-run figure: the matcher divides it among the store reads, and a rival whose share is too small is skipped (unread, unpaid, with a reason giving the limit to set). Later runs charge only what they use.
 - **Weekly** is the default cadence: each run reads every store in full.
 - **Steps:** follow `references/watchlists.md` (cost, yes, task, baseline run now with a cap of the same `maxRunCostUsd`, then `create-schedule`).

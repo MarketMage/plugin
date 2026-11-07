@@ -30,11 +30,11 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 | Promotions and launches | `cleanpull/promotions-monitor` | `stores: ["brand.com"]`, `launchWindowDays: 30`, `maxLaunchesPerStore: 25` | USD 0.001 page check + USD 0.002 per promotion or launch row: usually **USD 0.02 to 0.06** |
 | Product page quality | `cleanpull/listing-quality-checker` | `productUrls`: their top 1 to 3 best sellers' pages (from the catalogue run); if the user gives their own page to compare, put theirs in `productUrls` and the store's pages in `competitorUrls` | **USD 0.005 a page** |
 
-- **Before the catalogue run:** say the cost and get a yes. Offer the promotions read with it (the full profile, tech + 250 products + promotions, is about USD 0.25). Offer the page audit when the user cares how the store sells online, or wants to compare their own page.
+- **Before the catalogue run:** give the one estimate and get a yes. Offer the promotions read with it, in the same estimate (the full profile, tech + 250 products + promotions: up to about USD 0.25 (capped)). Offer the page audit when the user cares how the store sells online, or wants to compare their own page.
 - **Not Shopify:** if the tech scan says another platform, quote only the Any Store sample (about USD 0.05) and the promotions read (about USD 0.02) as the profile (about USD 0.07 with the tech scan), and leave the Shopify line out.
 - **What actually sells (Shopify, offered by name):** `includeStock: true` adds published stock per variant (USD 0.0005 a product, about USD 0.125 for 250), and **from a second read a day or more later** units sold since the last read, sales per day and days of stock left, where the store publishes stock. Run it with `monitorName: "spy-<domain>"` so a later read, in this chat or another, compares with it; say the sales figures come with that second read.
 - **A small store from the proven small advertisers search** (`ads-watch`, its store size already read): skip the tech scan when it's known to be Shopify, read the whole catalogue with `maxProductsPerStore: 50` (its `publishedProductsCount` × USD 0.0008 + USD 0.003 summary, about USD 0.02 for 20 products), and lead the answer with what they sell beside the advertised product and how they price it: that is the shape of a store the user could build.
-- **Large Shopify stores:** offer `maxProductsPerStore: 1000` (about USD 0.80) only if the user wants the whole catalogue. The summary's `productCount` and `catalogueComplete` say how much was read.
+- **Large Shopify stores:** offer `maxProductsPerStore: 1000` (its estimate at the yes: about USD 0.80) only if the user wants the whole catalogue. The summary's `productCount` and `catalogueComplete` say how much was read.
 
 ## 3. Read the results
 
@@ -46,7 +46,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
   - `inStockShare`;
   - `topProductTypes` and `topVendors`;
   - `bestSellers`.
-- **Not Shopify (the Any Store sample):** there is no store summary row. From the 30 rows, work out and give: the price range and median (`price`), the share on sale (`onSale`), the share in stock (`inStock`), and the brands (`brand`). Say it is a 30-page sample of the sitemap, not the whole catalogue. Offer `maxProductsPerSitemap: 100` (about USD 0.15) for a fuller picture, or `urlFilter` to read one category.
+- **Not Shopify (the Any Store sample):** there is no store summary row. From the 30 rows, work out and give: the price range and median (`price`), the share on sale (`onSale`), the share in stock (`inStock`), and the brands (`brand`). Say it is a 30-page sample of the sitemap, not the whole catalogue. Offer `maxProductsPerSitemap: 100` (its estimate at the yes: about USD 0.15) for a fuller picture, or `urlFilter` to read one category.
 - **Promotions** (`recordType: "promotion"`): `type`, `text`, `code`, `threshold` and `thresholdCurrency`, `percentOff`, `confidence`, and on Shopify `markdown` (`sharePercent` of the newest products below compare-at price, `maxPercentOff`). Codes are only those the site prints. Bars drawn only by scripts aren't read.
 - **Launches** (`recordType: "launch"`): `title`, `launchedAt`, `price`, `relaunch`. On Shopify they're dated by the store; elsewhere a one-off read shows none (launches need two runs).
 - **Page audit:** `score`, `grade` and `topFixes`; what their page does well that the user's could copy (structured data for Google, images, shipping and returns markup).

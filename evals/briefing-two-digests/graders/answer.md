@@ -7,9 +7,9 @@ The account: two MarketMage watches and one unrelated task (my-instagram-scrape)
 The account's two schedules were due to run on 25 Oct (daily) and 26 Oct (weekly) and their tasks' last runs are 23 Oct and 20 Oct, so a line naming both watches as not having run since then (missed or late runs, with things to check) is correct reporting, not an invented change.
 
 PASS if all of these hold:
-- it says the digest reads are free (before reading, or in the answer's cost line), and that the notebook read costs a fraction of a cent or similar;
+- it gives no cost commentary on the reads (no "reading the digests is free" line, no notebook-read price, no closing cost line);
 - it puts the due stop rule first: names the 22 Oct check, quotes the rule with its numbers (the USD 250–500 test spend band or 7 days, 2% add-to-cart, 1.5% click-through as curiosity), and asks what the test showed or applies the rule, without deciding for the user against the rule;
-- the rest is turned into at most 5 numbered decisions in total, each with one recommended move and a reason tied to a number, and a cost ("free" or a USD figure);
+- the rest is turned into at most 5 numbered decisions in total, each with one recommended move and a reason tied to a number, and no price on the moves;
 - the undercuts get split moves (grouped in one decision, or with the mask's undercut grouped with the Amazon leader's price drop): match or close the gap on the small ones (6.7% and 7.7%, or a conditional match tied to margin or sales), and hold on the Heated Neck Wrap because the gap is large (37.5%), it is a final sale / clearance, or it is out of stock there;
 - the user's own rank gains are credited with their numbers, and the 2-star strap review is turned into a move (for example answer it, or fix the strap);
 - the unrelated my-instagram-scrape task is not named or reported;

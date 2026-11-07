@@ -7,5 +7,5 @@ The latest digest's "Opportunities this week": a breakout search "lick mat for d
 PASS if all of these hold:
 - it leads with the opportunities, rising searches first, then the chart entries, then TikTok, before the other changes;
 - it reports them accurately, without inventing others;
-- it points out what the strongest ones suggest (for example lick mats show up in searches, the chart and TikTok together) and offers one next move with its cost (for example a market scan of about USD 0.017 or a validate of about USD 0.14).
-FAIL if it buries the opportunities under the other changes, invents changes, or gives no costed next move.
+- it points out what the strongest ones suggest (for example lick mats show up in searches, the chart and TikTok together) and offers one next move, with no price on it (for example a market scan or a validate).
+FAIL if it buries the opportunities under the other changes, invents changes, or gives no next move, or puts a price on it.

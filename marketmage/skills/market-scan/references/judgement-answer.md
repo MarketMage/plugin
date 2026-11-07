@@ -5,7 +5,7 @@ One file for the answer step, in four parts: the answer structure, the tone (wit
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step with its cost. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
+**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -30,10 +30,10 @@ What you got right   (only when a number backs it; at most two lines)
 The one fix: <the against signal that matters most and what would turn it>.   (Promising)
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
-  or: What would have to be true: <one line>. The cheapest test: <it>, about USD <cost>.   (For you: a long shot)
+  or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
   or: Sell it where people search: <Amazon floor> vs <best TikTok listing>; <the channel>. What would have to be true … (For you: a long shot, cold-traffic, search demand real)
-Next step: <the move>, about USD <cost>.
-  or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>, about USD <cost>.   (the free stop: Not this version, or For you: not this one)
+Next step: <the move>.
+  or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the first screen (~150 words at most)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
@@ -54,9 +54,8 @@ Related versions, in your direction           (Promising: 1 or 2; Not this versi
 The early sign, and the watch that catches it (every verdict)
 
 What this can't see: one line (rule 9).
-This research cost about USD <cost>.
-Next step: <the same move as on the first screen>, about USD <cost>.   (one short line)
-  or, after the free stop on the first screen: the same free stop line, with the related version and its cost.
+Next step: <the same move as on the first screen>.   (one short line, no price)
+  or, after the free stop on the first screen: the same free stop line, with the related version.
 ```
 
 - In the reply, the labels below the first screen ("What the data shows", "What it means (for any seller)", "For you, through the <lens> lens", "Related versions") are short `###` headings (`running-results.md`, "Explaining results", "Markdown that reads well everywhere"); the first screen keeps no heading. Where the skill names a visual moment and a visual can be drawn, it sits where the skill's moment says, always after the first screen and before the table it summarises; when the skill names no spot, between the first screen and "What the data shows" (`running-results.md`, "One visual, where it helps"). Write the whole first screen in the reply before drawing it: the verdict lines come first in every answer, with or without a visual.
@@ -65,10 +64,10 @@ Next step: <the same move as on the first screen>, about USD <cost>.   (one shor
 - The whole reply is sized to the question (`judgement-answer.md`, "Size the reply to the question"): the first screen at about 150 words, the rest in its shortest form.
 - Asked a yes/no question ("is it saturated?"), the verdict line still comes first, followed by the one-line opposite answer (rule 3), inside the first screen.
 - The last line is always the next move, never the verdict: the first screen's next step, repeated in one short line.
-- **The free stop is a next move too** (`judgement.md`, "The one exception, the free stop"): after Not this version, or For you: not this one, the next step may be "nothing to buy; keep the USD <X>", with the best related version and its cost on the same line, so the answer still ends in a move in their direction.
+- **The free stop is a next move too** (`judgement.md`, "The one exception, the free stop"): after Not this version, or For you: not this one, the next step may be "nothing to buy; keep the USD <X>", with the best related version on the same line, so the answer still ends in a move in their direction.
 
 **Two framings, same data, same verdict:**
-- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids', about USD 0.017."
+- "Is this worth selling?" → "**For the market: Promising, with one fix** (medium confidence): 4 for, 2 against. You were right that demand is rising: +38% over 5 years. The fix is getting off a crowded page 1: the median listing there has 3,400 reviews, and 12 of 48 slots are ads priced under the organic p25. The 'XL' angle the rising searches point at (+250%) is where the same buyers are heading, priced above p75 with the size as the difference. Next step: a market scan of 'xl silicone lids'."
 - "Is this saturated?" → "**For the market: Promising, with one fix** (medium confidence). 2 signals say crowded (review median 3,400; 12 ads in 48), 4 say open (demand +38% over 5 years, 3 leaders under 4.2 stars, top-3 share 0.31, margin after fees 48% of the median price). Crowded on page 1, not closed: the leaders' quality gap is the opening a newcomer can build on."
 
 # Judgement: tone
@@ -83,13 +82,13 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing an
 - "the data strongly favours this" (Strong with 6 or more for), "the data favours this" (Strong with 4 or 5 for);
 - "the data is mixed: here's the one fix";
 - "the data is against this version; here's one it favours";
-- "we can't tell from this data yet: this read would tell us (cost)".
+- "we can't tell from this data yet: this read would tell us".
 
 **The verdict line is clean:** label, confidence, counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
 
-**One next move, not a menu:** the last line names one action with its cost. Other options, if any, go in the follow-ups before it (`running-results.md`, "Explaining results").
+**One next move, not a menu:** the last line names one action, with no price. Other options, if any, go in the follow-ups before it (`running-results.md`, "Explaining results").
 
-**A free "stop here" is a next move too.** When the verdict is "not this version" (the market's **Not this version**, or "For you: **not this one**"), the last line may be the free move instead of a priced one: "Next step: nothing to buy; keep the USD <X>.", where X is what the user would otherwise put in next (their quote's first order, the launch plan's goods, a test's ad spend; an exact amount of their own is never repeated: say "keep the amount you set aside" instead). It is offered beside the best related version, never in place of it: the related version stays in "Build on it" with its check's cost, as one of the follow-ups, so the search still never dead-ends (`judgement.md`, rule 10), and the user picks. Use it when the data says stop for this version and nothing read makes a cheap check the obvious move; otherwise the priced next step stays. Every other verdict (Strong, Promising, a strong fit, a fit, with one fix, a long shot) keeps the priced next step above. Say it plainly and warmly, never as a loss ("nothing to buy" is a result: the check just saved them the order).
+**A free "stop here" is a next move too.** When the verdict is "not this version" (the market's **Not this version**, or "For you: **not this one**"), the last line may be the free move instead of a paid one: "Next step: nothing to buy; keep the USD <X>.", where X is what the user would otherwise put in next (their quote's first order, the launch plan's goods, a test's ad spend; an exact amount of their own is never repeated: say "keep the amount you set aside" instead). It is offered beside the best related version, never in place of it: the related version stays in "Build on it", as one of the follow-ups, so the search still never dead-ends (`judgement.md`, rule 10), and the user picks. Use it when the data says stop for this version and nothing read makes a cheap check the obvious move; otherwise the paid next step stays. Every other verdict (Strong, Promising, a strong fit, a fit, with one fix, a long shot) keeps the paid next step above. Say it plainly and warmly, never as a loss ("nothing to buy" is a result: the check just saved them the order).
 
 **Knowledge from outside the data** (a marketplace policy, a certification, a health-claim rule) is welcome when it changes the plan, as **one** sentence framed as a step ("Before listing: check Amazon's rules on battery-powered items"), never as a paragraph, a section of warnings or a list, never inside "For you" (the exceptions are the policy gate, which cites a named platform rule, and the risk notes: "Platform rules and risk notes"), and it never moves a signal or the market verdict. If several apply, name the one that matters most. Keep it under about 20 words, say it once in the whole answer (not again in the opposite-question line or the notes), and never explain the policy: point to it ("Before listing: read Amazon's dropshipping policy; it decides which suppliers fit.").
 
@@ -141,8 +140,8 @@ From `judgement-profile.md`, where the rest of the profile rules are (choosing t
 **A sixth fulfilment option, "I make it myself."** Wherever the five bands are asked, the fulfilment question offers it after print on demand: "How would you fulfil (dropship, own stock, Amazon FBA, print on demand, or I make it myself)?" It is the Maker lens ("Choosing the lens").
 
 **Asking for the profile: once per conversation.** This is the one rule every skill follows:
-- **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the cost line of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
-- **A quick one-off read** (one read under about USD 0.10; it still waits for a yes when it is over USD 0.05, as every run does: `running.md`, "Before any run") goes ahead first, with no profile in its cost line, and the profile is offered after its answer, in that answer's one friendly line; that is still the one offer for this conversation.
+- **Offered once,** in the first message that needs it: the guided session's opening (`running.md`, "First use"), or the estimate of the first judgement (or the message that says the runs have started), so nothing waits on it. Only when no such message came before the first answer (a run that went ahead without a yes) does the first answer's first screen carry it, in one friendly line ("Answer structure").
+- **A quick one-off read** (one read under about USD 0.10; it still waits for a yes when it is over USD 0.05, as every run does: `running.md`, "Before any run") goes ahead first, with no profile in its estimate, and the profile is offered after its answer, in that answer's one friendly line; that is still the one offer for this conversation.
 - **Skipped or unanswered, never again in this chat:** no re-offer in later answers, follow-ups or other skills. The market verdict leads from then on.
 - **One exception:** if the user later asks something personal ("is this right for me?", "could I afford it?"), one line may remind them the five bands would answer it; it is a reminder, not the question again.
 - A profile they give later, unprompted, is used at once ("Accept it unprompted").

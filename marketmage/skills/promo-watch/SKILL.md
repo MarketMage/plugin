@@ -30,7 +30,7 @@ What competitors are promoting and launching, now or over time. Read these first
 - **Cost (paid plans):** USD 0.001 per page checked (a home page with its Shopify feeds, or an extra page) + USD 0.002 per promotion or launch row.
   - A store typically gives 3 to 15 rows: about **USD 0.02 a store**, at most USD 0.001 + (`maxLaunchesPerStore` + about 10 promotions) × 0.002 ≈ USD 0.07.
   - A store that can't be read is listed in the run summary and not charged; a few need residential reads (USD 0.006 each).
-  - **Example:** 5 stores ≈ USD 0.10, at most USD 0.35: say so and get a yes.
+  - **Example:** 5 stores ≈ USD 0.10, at most USD 0.35: "up to about USD 0.35 (capped). Go ahead?", and get a yes.
 - **Read** with `get-dataset-items`:
   - promotions: `fields: "recordType,store,type,text,code,threshold,thresholdCurrency,percentOff,amountOff,confidence,foundIn,markdown,pageUrl"`;
   - launches: `fields: "recordType,store,kind,title,url,launchedAt,relaunch,confidence,source,price,compareAtPrice,currency"`;

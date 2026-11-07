@@ -23,13 +23,13 @@ Then save a **watchlist** that runs on a schedule and tells you what changed: pr
 
 Every job runs [CleanPull's actors](https://apify.com/cleanpull) in **your own Apify account**, at their published per-result prices. **All you provide is your Apify sign-in**: no marketplace, supplier or ad platform accounts or keys.
 
-> **You see every cost first.** Claude shows what a run will cost before it starts, and waits for your yes above USD 0.05 and before anything recurring. Every run carries a spending cap, and every scheduled watchlist a maximum cost per run.
+> **Claude asks before any run that costs more than a few cents.** Above USD 0.05, and before anything recurring, Claude gives one estimate and waits for your yes; smaller reads just run. Every run carries a spending cap, and every scheduled watchlist a maximum cost per run.
 
 ## What you can ask
 
 | Skill | What it does | Try |
 | --- | --- | --- |
-| `start` (also `/marketmage:start`) | A guided first session: connecting Apify if needed, five quick optional questions about you, how costs work, then ideas in your interest, the two best checked for the market and for you, one related version and one watch, for about USD 0.55 at most (up to about USD 0.80 when dropshipping; about USD 0.45 and 0.70 on your account's first MarketMage run); a returning user is welcomed back to where they left off | "I'm new, help me find something to sell" · "What can MarketMage do?" |
+| `start` (also `/marketmage:start`) | A guided first session: connecting Apify if needed, five quick optional questions about you, how costs work, then ideas in your interest, the two best checked for the market and for you, one related version and one watch, with one estimate for your yes before it runs; a returning user is welcomed back to where they left off | "I'm new, help me find something to sell" · "What can MarketMage do?" |
 | `find-products` | Product ideas selling now, from Amazon Best Sellers, TikTok Shop units sold and Google Trends rising searches, scored and ranked by what the data favours, with what to avoid and why; as watchlists, a weekly opportunity digest (new rising searches, chart entries and TikTok products speeding up, in one "Opportunities this week" section), TikTok sales per day and Amazon chart new entries and climbers | "What kitchen products are selling well right now?" · "Find trending pet products under $30" · "Give me product ideas in skincare for the UK" |
 | `validate` | A verdict on one idea (Strong; Promising, with one fix; or Not this version, with related versions the data favours), scored signal by signal with its confidence: demand trend, Amazon competition and the leaders' monthly sales floor, TikTok sales, margin after Amazon's referral and FBA fees on amazon.com and on amazon.co.uk, .de, .fr, .it and .es (ex VAT on the European ones; before fees elsewhere); it ends on a costed next move | "Is a cordless pet grooming vacuum worth selling?" · "How saturated are silicone stretch lids on Amazon?" · "Validate weighted jump ropes for the US" |
 | `launch-plan` | After a promising verdict: suppliers at your first-order quantity, the leaders' 1-star complaints, a listing draft that answers them, your price against the market's band, first-order maths after fees, a stop rule with numbers agreed before you spend on ads, and one launch-week watch on the leaders' prices, ranks and reviews | "I want to go ahead with heated eye masks" · "Help me launch this" · "What would a first order look like?" |
@@ -123,7 +123,7 @@ Figures are at Bronze, the paid-plan price (lower on Silver and Gold). The tiers
 | Listing audit | $0.005 a page |
 | Listing watch, 20 pages, weekly | about $0.06 a month |
 
-Claude shows the cost of each run before it starts, and the monthly cost before saving a watchlist. The prices behind these figures are in each skill's `references/costs.md`, generated from the actors' Store pricing.
+Claude gives one estimate and asks before any run over USD 0.05, and the monthly cost before saving a watchlist; ask any time what a run cost or will cost. The prices behind these figures are in each skill's `references/costs.md`, generated from the actors' Store pricing.
 
 ## What each actor can't do
 

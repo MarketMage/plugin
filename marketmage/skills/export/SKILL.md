@@ -44,7 +44,7 @@ Write a dataset into a Google Sheet with `cleanpull/google-sheets-sync`. Read `r
   - one of `datasetId`, `runId` or `taskId`;
   - `columns`, to pick and order the columns that matter (the default writes every field).
   - Flattened nested fields like `price.amount` become their own columns.
-- **A choice of fields:** offer it in one line with the cost, before the yes: a readable set for the data's kind, or every field. When the user already said to go ahead, don't stop to ask: write every field, as they asked, and offer the readable set for the next export in the answer. The readable sets:
+- **A choice of fields:** offer it in one line, before the run (with the estimate, when it needs a yes): a readable set for the data's kind, or every field. When the user already said to go ahead, don't stop to ask: write every field, as they asked, and offer the readable set for the next export in the answer. The readable sets:
 
   | Data | Readable columns |
   | --- | --- |
@@ -53,7 +53,7 @@ Write a dataset into a Google Sheet with `cleanpull/google-sheets-sync`. Read `r
   | Anything else | the 5 to 8 fields a reader needs, named as in the dataset |
 
   A sheet a person reads (a colleague, a client) suits the readable set; a sheet that feeds another tool (Looker Studio, a script) usually wants every field. A history sheet (appended changes, kept for charts) keeps at least `from` and `to`, the numbers a price or BSR line is drawn from (`watchlists`, "A history chart"). Use the field names the dataset really has (read one item first when unsure).
-- **Cost:** USD 0.0001 per row written, so 500 rows ≈ **USD 0.05**. Say it; above USD 0.05, get a yes first. Pass a cap as usual.
+- **Cost:** USD 0.0001 per row written, so 500 rows ≈ **USD 0.05**. Up to USD 0.05, just run it, with no cost said; above it, give the one estimate (`references/running.md`, "Before any run") and get a yes first. Pass a cap as usual.
 - **If nothing was written,** the run still ends SUCCEEDED and the target's row says why (`error`, `errorKind`), uncharged:
 
   | What the row says | Why | What to tell the user |

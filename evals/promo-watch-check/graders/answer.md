@@ -2,5 +2,5 @@
 type: llm
 ---
 
-PASS if the reply reports the free-shipping thresholds (tentree over 100 US dollars, Zwilling above 79, ColourPop 35 in the US), the tentree code FREESHIP, and tentree's 30-50% off sale, says something about what these mean for a competing seller, and states what the run cost.
-FAIL if it invents codes or thresholds, or gives no cost.
+PASS if the reply reports the free-shipping thresholds (tentree over 100 US dollars, Zwilling above 79, ColourPop 35 in the US), the tentree code FREESHIP, and tentree's 30-50% off sale, says something about what these mean for a competing seller, and it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no price on its next step (the user already agreed to up to 30 cents).
+FAIL if it invents codes or thresholds, or closes on a "This run cost…" (or "This research cost…") line, or puts a price on its next step.
