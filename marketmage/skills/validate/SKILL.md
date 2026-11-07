@@ -100,7 +100,7 @@ Read the verdict off the counts with the rule in `references/judgement.md` (Stro
 
 **The detail, by item:**
 
-6. **The signal table** (under 10 rows), the same for everyone (its Margin row labelled with the fees it uses, "after Amazon's fees" or "before fees", and on amazon.co.uk or amazon.de with VAT taken off); through the cold-traffic lens it carries the Where you'd compete counts as a row of facts, with no market reading.
+6. **The signal table** (under 10 rows), the same for everyone (its Margin row labelled with the fees it uses, "after Amazon's fees" or "before fees", and on amazon.co.uk or amazon.de with VAT taken off; what the margin leaves out, such as freight, duty and ads, is said in that row's own cell, never in a note under the table); through the cold-traffic lens it carries the Where you'd compete counts as a row of facts, with no market reading.
 7. **What it means (for any seller):** two sentences, with the cross-checks.
 8. **For you, through the lens:** only with a profile, as `references/validate-lenses.md`, "Step 5, item 8: For you, through the lens" sets out (with `references/judgement-for-you.md`, "The For you block").
 9. **Build on it:**

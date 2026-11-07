@@ -7,7 +7,7 @@ The account: two MarketMage watches and one unrelated task (my-instagram-scrape)
 The account's two schedules were due to run on 25 Oct (daily) and 26 Oct (weekly) and their tasks' last runs are 23 Oct and 20 Oct, so a line naming both watches as not having run since then (missed or late runs, with things to check) is correct reporting, not an invented change.
 
 PASS if all of these hold:
-- it gives no cost commentary on the reads (no "reading the digests is free" line, no notebook-read price, no closing cost line);
+- it gives no cost commentary on the reads (no "reading the digests is free" line, no notebook-read price, no closing cost line; saying a scheduled briefing only reads and starts no paid run is fine);
 - it puts the due stop rule first: names the 22 Oct check, quotes the rule with its numbers (the USD 250–500 test spend band or 7 days, 2% add-to-cart, 1.5% click-through as curiosity), and asks what the test showed or applies the rule, without deciding for the user against the rule;
 - the rest is turned into at most 5 numbered decisions in total, each with one recommended move and a reason tied to a number, and no Apify cost on the moves;
 - the undercuts get split moves (grouped in one decision, or with the mask's undercut grouped with the Amazon leader's price drop): match or close the gap on the small ones (6.7% and 7.7%, or a conditional match tied to margin or sales), and hold on the Heated Neck Wrap because the gap is large (37.5%), it is a final sale / clearance, or it is out of stock there;
