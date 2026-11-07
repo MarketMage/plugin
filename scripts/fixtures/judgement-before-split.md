@@ -23,6 +23,8 @@ Three layers, always kept apart:
 9. **Say what the data can't see**, in one short line, with a clause only for each source actually read: Amazon publishes no sales figures (Best Sellers Rank and "bought in past month" are proxies, and the sales floor is their sum); Google Trends is relative interest, not volume; TikTok Shop is the US shop only; supplier prices are list prices, not quotes; reviews are a sample. It is a fact about coverage, not a warning about the idea.
 10. **The search never dead-ends.** Any verdict short of Strong carries the related versions ladder (`judgement-ladder.md`), and the best rung is offered for an immediate check.
 
+**Where these parts sit in the answer** (`judgement-answer.md`, "The short default, and the full detail on request"): the short default carries the table (rule 1), the scores (rule 2), the credit (rule 5), the next move (rule 6), the verdict lines (rule 7), the best related version or the one fix (rule 10) and, for a yes/no question, the one-line opposite answer (rule 3). "What it means" (rule 1), the early sign that would say otherwise (rule 3), the full ladder (rule 10) and what the data can't see (rule 9) are in the full detail, offered in one line, unless a caveat changes the verdict or its confidence: that one line stays in the default. **No notes block under the table in the default:** caveats that don't change the verdict (list prices, not quotes; an assumed fee or rate; a comparison term that came back different; rows kept as close cousins) and a one-sentence policy step ("Before listing: …") are full detail too; only an exclusion or mismatch line, suspicious text and a verdict-changing caveat sit under the table by default.
+
 **The sales floor is a floor.** Quote it as "at least 12,000 units, about USD 360,000 a month across the top 10" (`unitsPerMonthMin`, `revenuePerMonthMin`), never as an estimate of sales: a listing without a badge counts 0, and "10K+" can be far more than 10,000.
 
 **Score only relevant, comparable rows.** Every signal is computed after the checks in `running.md`, "Read the data like an analyst": rows that aren't the product, and offers that aren't comparable (renewed or used against new, a multi-pack against a single), are left out first, and the answer says how many. If what remains is too thin for a signal, that signal is `unknown`.
@@ -154,7 +156,7 @@ Check the whole answer against this list before sending it, including the caveat
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
+**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -182,12 +184,16 @@ What the data shows
   Review depth   median 3,400; 2 of 48 under 100 reviews        against (> 3,000; ≤ 2 of 48)
   …
 
-What it means (for any seller)
-  Two sentences on the shape of the market.
-
 For you, through the <lens> lens   (only with a profile; see "The For you block")
   The lens lines: each row that counts differently, and each gate, with its fact.
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
+
+Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
+Next step: <the same move as on the first screen>.   (one short line, no price)
+                                              ── end of the short default
+── the full detail, on a yes or a question that needs it:
+What it means (for any seller)
+  Two sentences on the shape of the market.
 
 The one fix, in detail, with its test and cost (Promising)
 Related versions, in your direction           (Promising: 1 or 2; Not this version: 2 or 3)

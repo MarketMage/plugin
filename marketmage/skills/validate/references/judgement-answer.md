@@ -5,7 +5,7 @@ One file for the answer step, in four parts: the answer structure, the tone (wit
 
 ## Answer structure
 
-**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. The signal table and the detail follow under it; nothing is dropped, only moved below.
+**The first screen comes first,** in about 150 words at most: the verdict lines, one plain line, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong), and the next step. A user who reads only that much has the answer. **The short default** follows it: the one visual where it can be drawn, the signal table, the For you block with a profile, then one line offering the rest; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
@@ -40,12 +40,16 @@ What the data shows
   Review depth   median 3,400; 2 of 48 under 100 reviews        against (> 3,000; ≤ 2 of 48)
   …
 
-What it means (for any seller)
-  Two sentences on the shape of the market.
-
 For you, through the <lens> lens   (only with a profile; see "The For you block")
   The lens lines: each row that counts differently, and each gate, with its fact.
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
+
+Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
+Next step: <the same move as on the first screen>.   (one short line, no price)
+                                              ── end of the short default
+── the full detail, on a yes or a question that needs it:
+What it means (for any seller)
+  Two sentences on the shape of the market.
 
 The one fix, in detail, with its test and cost (Promising)
 Related versions, in your direction           (Promising: 1 or 2; Not this version: 2 or 3)
@@ -57,6 +61,15 @@ What this can't see: one line (rule 9).
 Next step: <the same move as on the first screen>.   (one short line, no price)
   or, after the free stop on the first screen: the same free stop line, with the related version.
 ```
+
+**The short default, and the full detail on request.** A full check (`validate`, `find-products`, any answer in this structure) gives, by default:
+- the first screen; the one visual where it can be drawn (`running-results.md`, "One visual, where it helps"); the signal table ("What the data shows"); with a profile, the For you block, shortest form (`judgement-for-you.md`, "The For you block");
+- **the lines that always reach the user:** the suspicious-text line (`running-results.md`), any exclusion or mismatch line ("3 of 10 results weren't lip gloss and were left out"), a caveat that changes the verdict or its confidence (one line, with what would raise it), the market's one fix and the For you lines; the notebook's line and the profile's offer stay where their rules put them;
+- then **one line offering the rest**, "Want the full detail: what it means, the early sign and its watch, what this can't see?" (a skill may name its own parts in it), and the Next step line, last.
+
+**The full detail** comes when the user says yes, or asks anything that needs a part of it ("what's the early sign?", "what can't this see?", "show me the other versions"; then that part alone, not the whole): "What it means", the one fix in detail with its test, the related versions, the early sign and its watch, the line on the opposite of their framing when the first screen didn't carry it, what this can't see, and the follow-ups (`running-results.md`, "At most two follow-ups"). Every rule for those parts holds there, each in its shortest form, from the data already read (no new run, no table repeated), ending on the Next step line again.
+- **The one offer stands in for the follow-ups:** a watch, the launch plan, another version or a document wait for the full detail.
+- **A shape the user asks for wins** ("Size the reply to the question"): "just the verdict" or "table only" is that, with the next step; "everything", "full detail" or "the whole analysis" up front (or a saved `answerShape` that asks for it) gets the full detail at once, with no offer line. The screen-reader or no-tables shape keeps this same default, in sentences, with the offer line in words.
 
 - In the reply, the labels below the first screen ("What the data shows", "What it means (for any seller)", "For you, through the <lens> lens", "Related versions") are short `###` headings (`running-results.md`, "Explaining results", "Markdown that reads well everywhere"); the first screen keeps no heading. Where the skill names a visual moment and a visual can be drawn, it sits where the skill's moment says, always after the first screen and before the table it summarises; when the skill names no spot, between the first screen and "What the data shows" (`running-results.md`, "One visual, where it helps"). Write the whole first screen in the reply before drawing it: the verdict lines come first in every answer, with or without a visual.
 - Tables stay under 10 rows. Numbers live in the table; prose repeats at most the two that carry the point.
@@ -109,7 +122,7 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing an
 **Size the reply to the question.** Length follows what was asked, never the most the data could fill:
 - **A question that asks for no new check** (a definition, a yes or no, a doubt about a figure, a cost question, "which one would you pick?") gets a short answer: about 150 words at most, no table unless asked for, then one line offering more ("Want the full table for both?").
 - **A shape the user asks for** ("table only", "just the verdict", "short version") is that shape and nothing more, with the next step in one line.
-- **A new check** (`validate`, `find-products`) keeps every part of its answer structure, each in its shortest form: one line per point, each number once (in the table), each caveat once, no paragraph restating the table; about 600 words for one idea, about 900 for two side by side. When the user's message is two lines or fewer, or terse, the parts under the table (what it means, the For you block, the related versions, the early sign) take one or two lines each: the For you block one line per idea, and the fit check one line with its parts in a few words each; one line offers the full detail. Nothing is dropped to fit: a part is shortened, never left out. The answers to the user's own questions come first and don't count against the first screen's ~150 words (`judgement-answer.md`); the verdict lines follow them.
+- **A new check** (`validate`, `find-products`) gives the short default ("Answer structure", "The short default, and the full detail on request"): the first screen, the visual, the table and, with a profile, the For you block, then the one offer line and the next step, about 350 words for one idea. The full detail, on a yes, keeps every other part of its answer structure, each in its shortest form: one line per point, each number once (in the table, never repeated), each caveat once, no paragraph restating the table; about 600 words for one idea in all, about 900 for two side by side. When the user's message is two lines or fewer, or terse, the parts in the full detail (what it means, the related versions, the early sign) take one or two lines each, and the For you block one line per idea, with the fit check one line with its parts in a few words each. Nothing is dropped: a part is moved behind the offer or shortened, never left out. The answers to the user's own questions come first and don't count against the first screen's ~150 words (`judgement-answer.md`); the verdict lines follow them.
 
 **Words and moves to avoid:**
 - doom and pre-owned failure: "unfortunately", "most products fail", "be careful", "I'd be cautious", "risky" as a label, "uphill battle", "tough market", "a hard combination", "locked", "the hard part", "doomed", "saturated to death", "dead", "I wouldn't";

@@ -7,7 +7,7 @@ The data read for this idea favours it on every signal: demand rising about 96% 
 PASS if all of these hold:
 - the verdict is **Strong** (or Go), stated with a confidence and the for/against counts, even though the user expected "too crowded";
 - the reply shows the signals with their numbers apart from the judgement (a table or one line per signal);
-- it answers the user's "how saturated" framing directly with the data, and names the biggest risk or what would make it not worth it, with an early sign to watch;
+- it answers the user's "how saturated" framing directly with the data, and names the biggest risk or what would make it not worth it, with an early sign to watch (in the short default answer, the early sign and its watch may instead wait behind the one line offering the full detail, when that line names them: either passes);
 - any warm words are tied to a number from the data; it contains no praise of the user and no hype words ("great opportunity", "huge potential", "winning", "hot", "definitely");
 - it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (the user already agreed to up to 30 cents).
 

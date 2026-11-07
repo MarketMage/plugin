@@ -78,7 +78,9 @@ Give each idea its `for` and `against` counts. Then:
 - **For you, through the lens:** only with a profile: `references/find-products-lenses.md`, "Step 4, the For you block".
 - **Without a profile,** one friendly line before the next step offers it only if it wasn't offered earlier in this chat (`references/judgement-answer.md`, "Asking for the profile"); never a second time.
 
-End with:
+**The short default** (`references/judgement-answer.md`, "The short default, and the full detail on request"): the opening, the visual, the table, the count line and, with a profile, the For you block, with the lines that always reach the user (an exclusion line such as "3 of 10 results weren't lip gloss and were left out", suspicious text, a caveat that changes a reading), the profile's one offer, then one line offering the rest ("Want the full detail: the ideas set aside and why, the unchecked signals, what this can't see?") and the Next step last. **The full detail,** when the user says yes or asks anything that needs it (then only that part): the "What to avoid" line, the unchecked signals, what this can't see and the follow-ups (a watch, the wave read), each as set out here, from the rows already read, ending on the Next step again. A shape the user asks for wins: "everything" up front gets it all at once, with no offer line.
+
+End with (the first two in the full detail; the Next step in both):
 - the unchecked signals ("competition not checked on 5 of 8");
 - what this can't see, in one line, only for the sources read (`references/judgement.md`, rule 9);
 - **Next step, last:** which two ideas `validate` should take, and why those two by the counts, with no price (each reuses these rows: `references/running-runs.md`, "Runs in this conversation"). If the user had a favourite that the data is against, the next step can take its best related version instead, said in one line.
