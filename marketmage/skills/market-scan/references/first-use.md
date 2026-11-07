@@ -9,7 +9,7 @@ Read from `running.md` only when it says: the connector is missing ("Not connect
   2. An **"Add custom connector"** notice opens with the details already filled in. That's expected: it is Apify's official server, set up with the tools MarketMage uses. Signing in gives the connector access to your Apify account; MarketMage's skills only run CleanPull's actors and only create, change or pause their own `cw-` watches (that's how the skills are written, not a technical lock). Check the connector address starts with `https://mcp.apify.com/`, keep the details as they are and click **Add**. If it shows any other address, don't add it, and tell me what it says.
   3. Sign in to Apify, or **create a free Apify account** (it includes USD 5 of credit every month).
   4. Approve the access, come back to this chat and say "done".
-  5. Optional: when claude.ai asks before an Apify tool runs, you can choose **Always allow** for the Apify tools, so you aren't asked before each read. Every paid run still gets its estimate (when it needs your yes) and a hard cap first.
+  5. Optional: you can choose **Always allow** for the Apify tools, so claude.ai doesn't ask before each tool call, including runs and watch changes. MarketMage still gives every paid run its estimate and waits for your yes in chat when it needs one (and before anything recurring), sets a hard cap on every run, and only creates watches you ask for.
 - **Claude Code:** run `/mcp`, choose the Apify server and sign in (or create a free account) there.
 - Screenshots of each step: https://marketmage.io/start/
 

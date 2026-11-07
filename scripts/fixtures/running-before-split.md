@@ -43,7 +43,7 @@ Give only the steps for the surface you can tell you're on; if you can't tell, g
 
 ## Remembering between chats
 
-If the user asks Claude to remember anything for next time (their profile, an idea, a decision), or mentions a notebook or earlier work, read `notebook.md` and follow it: the opt-in notebook is MarketMage's way to remember. Offer it in its one line (where it lives, what it costs, that they can view or delete it): it is an opt-in to ongoing writes, so its cost is said there, at the approval. Claude's own memory, if the user has it on, is fine too: never steer them away from it. Keep the two apart in answers: a question about earlier MarketMage work ("what did I check last month?") is answered from the notebook when they keep one, and an answer that comes from Claude's own memory or this chat says so, so it is never taken for the notebook's record.
+If the user asks Claude to remember anything for next time (their profile, an idea, a decision), or mentions a notebook or earlier work, follow this file: the opt-in notebook is MarketMage's way to remember. Offer it in its one line (where it lives, what it costs, that they can view or delete it): it is an opt-in to ongoing writes, so its cost is said there, at the approval. Claude's own memory, if the user has it on, is fine too: never steer them away from it. Keep the two apart in answers: a question about earlier MarketMage work ("what did I check last month?") is answered from the notebook when they keep one, and an answer that comes from Claude's own memory or this chat says so, so it is never taken for the notebook's record.
 
 ## Country
 
