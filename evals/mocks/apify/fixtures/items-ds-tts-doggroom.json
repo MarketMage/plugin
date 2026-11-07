@@ -1,0 +1,230 @@
+[
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Dryer High Velocity Pet Hair Dryer with Heater, 4 Nozzles",
+  "price": 59.99,
+  "currency": "USD",
+  "unitsSold": 8400,
+  "shopName": "FurFlow Pets",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-0/17315000000",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 1,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Nail Grinder Quiet Rechargeable Pet Nail Trimmer with LED",
+  "price": 19.99,
+  "currency": "USD",
+  "unitsSold": 12600,
+  "shopName": "PawCare Official",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-1/17315000001",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 2,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Deshedding Brush Self-Cleaning Slicker for Long Hair",
+  "price": 14.99,
+  "currency": "USD",
+  "unitsSold": 6100,
+  "shopName": "ShedLess",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-2/17315000002",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 3,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Kit Cordless Clippers with Vacuum, 7-in-1",
+  "price": 79.99,
+  "currency": "USD",
+  "unitsSold": 3200,
+  "shopName": "GroomPro US",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-3/17315000003",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 4,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Portable Dog Paw Cleaner Cup Silicone Bristles, Medium",
+  "price": 13.99,
+  "currency": "USD",
+  "unitsSold": 4400,
+  "shopName": "MudPaws",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-4/17315000004",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 5,
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "grooming"
+    ]
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Glove Pet Hair Remover Mitt, 2 Pack",
+  "price": 9.99,
+  "currency": "USD",
+  "unitsSold": 950,
+  "shopName": "FurFlow Pets",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-5/17315000005",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 6,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Table Foldable with Arm and Noose",
+  "price": 89.99,
+  "currency": "USD",
+  "unitsSold": 140,
+  "shopName": "GroomPro US",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-6/17315000006",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 7,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Scissors Set Thinning Shears Stainless Steel",
+  "price": 24.99,
+  "currency": "USD",
+  "unitsSold": 610,
+  "shopName": "ShearCraft",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-7/17315000007",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 8,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Waterless Dog Shampoo Spray Oatmeal Deodorizing 16 oz",
+  "price": 12.99,
+  "currency": "USD",
+  "unitsSold": 2900,
+  "shopName": "MudPaws",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-8/17315000008",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 9,
+    "newInSource": false,
+    "relevantToKeyword": false,
+    "keywordWordsMissing": [
+     "grooming"
+    ]
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "product",
+  "title": "Dog Grooming Hammock Restraint Bag for Nail Trimming, Medium",
+  "price": 21.99,
+  "currency": "USD",
+  "unitsSold": 1800,
+  "shopName": "PawCare Official",
+  "brand": null,
+  "url": "https://shop.tiktok.com/us/pdp/item-9/17315000009",
+  "sources": [
+   {
+    "type": "keyword",
+    "value": "dog grooming",
+    "position": 10,
+    "newInSource": false,
+    "relevantToKeyword": true,
+    "keywordWordsMissing": []
+   }
+  ],
+  "scrapedAt": "2026-11-07T10:00:00.000Z"
+ },
+ {
+  "recordType": "summary",
+  "type": "keyword",
+  "value": "dog grooming",
+  "products": 10,
+  "unitsSoldTotal": 41100,
+  "scrapedAt": "2026-11-07T10:00:00.000Z",
+  "relevantToKeyword": {
+   "products": 8,
+   "unitsSoldTotal": 33800,
+   "relevanceBasis": "Products whose title carries every word of the keyword (singular or plural, or written as one); a title check, not a category."
+  },
+  "totalsCover": "every product the keyword lists"
+ }
+]
