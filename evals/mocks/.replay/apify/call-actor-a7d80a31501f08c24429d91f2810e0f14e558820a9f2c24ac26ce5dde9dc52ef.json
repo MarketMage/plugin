@@ -1,0 +1,26 @@
+{
+  "input": {
+    "actor": "cleanpull/amazon-bestsellers-tracker",
+    "input": {
+      "categories": [
+        "pet-supplies"
+      ],
+      "marketplaces": [
+        "US"
+      ],
+      "charts": [
+        "best-sellers"
+      ],
+      "maxItemsPerChart": 50,
+      "includeSummary": true
+    },
+    "waitSecs": 45,
+    "callOptions": {
+      "maxTotalChargeUsd": 0.27
+    }
+  },
+  "output": "{\"runId\": \"run-abt-pets\", \"actorName\": \"cleanpull/amazon-bestsellers-tracker\", \"status\": \"SUCCEEDED\", \"statusMessage\": \"Done: 13 results. 1 chart in 1 category: 12 product rows, 1 chart summary. Best Sellers in Pet Supplies (US): 50 products (12 rows delivered); median price USD 15.98, rating 4.5, 14,100 reviews; 3 of 12 under 500 reviews; 3 new and 0 dropped since last run.\", \"defaultDatasetId\": \"ds-abt-pets\", \"defaultKeyValueStoreId\": \"kv-amazon-bestsellers-tracker\", \"chargedEventCounts\": {\"product\": 50, \"chart-summary\": 1}, \"nextStep\": \"Call get-dataset-items with datasetId ds-abt-pets to read the results.\"}",
+  "verdict": "ok",
+  "recordedAt": "2026-11-07T20:35:47.671Z",
+  "model": null
+}

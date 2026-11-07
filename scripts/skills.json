@@ -22,7 +22,10 @@
       "marketplace-search-scanner",
       "watch-digest",
       "ad-library-monitor",
-      "shopify-store-scraper"
+      "shopify-store-scraper",
+      "amazon-product-scraper",
+      "supplier-price-finder",
+      "reviews-monitor"
     ],
     "pricesOnly": [
       "alerts-sender",
@@ -44,6 +47,15 @@
     "pricesOnly": [
       "marketmage-notebook"
     ],
+    "judgement": true
+  },
+  "complaint-brief": {
+    "runs": [
+      "amazon-product-scraper",
+      "supplier-price-finder",
+      "reviews-monitor"
+    ],
+    "pricesOnly": [],
     "judgement": true
   },
   "spy-store": {

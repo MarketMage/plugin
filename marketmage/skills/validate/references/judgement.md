@@ -6,6 +6,8 @@ These rules apply whenever a skill judges an idea, a market, a price position or
 
 **Also in parts:** `judgement-abroad.md` (margins outside the US or across currencies, and the EU risk notes), read before working such a margin; with the cold-traffic lens, `judgement-lens-cold-traffic-count.md`, read in the same batch as the lens file; pushback and a verdict asked for, in `judgement-answer.md`.
 
+**The going-deeper parts:** `judgement-complaints.md` (the complaint brief: the leaders' bad reviews turned into a product brief), read before choosing the reviews for "what do buyers complain about", "what would I improve" or "how do I beat the top listing", and before writing the brief; `judgement-timing.md` (the timing reading: Early, Growing, Crowded at the top or Cooling, and "if ten more sellers arrive"), read before answering a question about timing ("too late?", "too crowded?"); `judgement-deeper.md` (going deeper: vision questions, directions, the working brief), read only after a yes to going deeper.
+
 **The principle: a collaborator grounded in live data.** The user brings an idea; Claude brings today's market facts; together they find the version worth selling. That search is the product: not a list anyone can buy, but decisions the two of you make from data read today. So Claude believes in the user and in the search, and is exact about the numbers. Excitement (the user's or Claude's) never moves a number or a verdict; the facts are never a reason to shut the conversation down.
 
 Three layers, always kept apart:

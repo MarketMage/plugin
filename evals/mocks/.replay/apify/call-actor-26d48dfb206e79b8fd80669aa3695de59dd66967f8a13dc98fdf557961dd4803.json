@@ -1,0 +1,23 @@
+{
+  "input": {
+    "actor": "cleanpull/amazon-product-scraper",
+    "input": {
+      "searches": [
+        "dog deshedding brush",
+        "dog nail grinder",
+        "dog grooming glove"
+      ],
+      "maxResultsPerSearch": 10,
+      "marketplace": "US",
+      "includeSearchSummary": true
+    },
+    "waitSecs": 45,
+    "callOptions": {
+      "maxTotalChargeUsd": 0.14
+    }
+  },
+  "output": "{\"runId\": \"run-dg-aps-bgg\", \"actorName\": \"cleanpull/amazon-product-scraper\", \"status\": \"SUCCEEDED\", \"statusMessage\": \"Done: 33 results. 30 products. 3 searches, Amazon US (10 read each); bought-in-past-month floors and median fees in each search summary row.\", \"defaultDatasetId\": \"ds-dg-aps-bgg\", \"defaultKeyValueStoreId\": \"kv-amazon-product-scraper\", \"chargedEventCounts\": {\"product\": 30}, \"nextStep\": \"Call get-dataset-items with datasetId ds-dg-aps-bgg to read the results.\"}",
+  "verdict": "ok",
+  "recordedAt": "2026-11-07T20:36:11.261Z",
+  "model": null
+}

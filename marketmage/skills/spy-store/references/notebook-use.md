@@ -99,3 +99,7 @@ Where the user is, from what they did and said, never guessed ahead of it. Six s
 - **Delete everything:** `deleteAll` with `confirmDeleteAll: true`, only after they confirm in words ("delete my whole notebook"). It removes the store; nothing is kept.
 
 If a call fails with "Actor not found", the notebook isn't published yet: say it's coming soon, and give the `Profile:` line to keep in the meantime.
+
+## Going deeper
+
+With the notebook on, a deeper conversation (`judgement-deeper.md`) writes only what the rules above already allow: a direction the user checked (a `validate` verdict, a complaint brief) becomes an idea entry as usual; a direction set aside becomes a `drop` or `park` decision only on the user's own word ("drop the bags"), never because the conversation set it aside; the shortlist moves no stage by itself. The user's vision text ("stuff I'd use on my own dog") is chat content and is never written to the notebook; with the notebook off, the `Brief:` line to paste stands in for it.

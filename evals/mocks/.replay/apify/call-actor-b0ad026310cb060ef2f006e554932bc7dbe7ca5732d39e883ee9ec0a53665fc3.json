@@ -1,0 +1,30 @@
+{
+  "input": {
+    "actor": "cleanpull/google-trends-scraper",
+    "input": {
+      "mode": "explore",
+      "searchTerms": [
+        "dog deshedding brush",
+        "dog nail grinder",
+        "dog grooming glove",
+        "waterless dog shampoo",
+        "dog paw cleaner"
+      ],
+      "timeRange": "past-12-months",
+      "dataTypes": [
+        "interestOverTime",
+        "relatedQueries"
+      ],
+      "geo": "US"
+    },
+    "waitSecs": 45,
+    "callOptions": {
+      "memory": 512,
+      "maxTotalChargeUsd": 0.02
+    }
+  },
+  "output": "{\"runId\": \"run-gts-doggroom\", \"actorName\": \"cleanpull/google-trends-scraper\", \"status\": \"SUCCEEDED\", \"statusMessage\": \"Done: 5 results. \\\"dog hair dryer\\\" (US): rising +31%, peak 100 on 2026-01-11, latest 78 on 2026-11-01. \\\"dog nail grinder\\\" (US): stable +6%, peak 92 on 2025-12-21, latest 71 on 2026-11-01. \\\"deshedding brush\\\" (US): rising +18%, peak 88 on 2026-05-03, latest 64 on 2026-11-01. \\\"dog paw cleaner\\\" (US): stable -3%, peak 79 on 2026-01-25, latest 52 on 2026-11-01.\", \"defaultDatasetId\": \"ds-gts-doggroom\", \"defaultKeyValueStoreId\": \"kv-google-trends-scraper\", \"chargedEventCounts\": {\"term-result\": 5}, \"nextStep\": \"Call get-dataset-items with datasetId ds-gts-doggroom to read the results.\"}",
+  "verdict": "ok",
+  "recordedAt": "2026-11-07T20:36:06.925Z",
+  "model": null
+}
