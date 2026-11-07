@@ -70,6 +70,7 @@ The user owns both in their own Apify account and pays for each run at the price
 
 - **List:** `apify-api-read` on `/v2/actor-tasks` with `{"limit": 50, "desc": true}` and `/v2/schedules` with `{"limit": 50}` (the list carries each task's name and IDs, not its input; a larger page can still exceed what the tool returns). If a page comes back full (50 items, or `total` above what you have), read the next with `offset` 50, 100… until you have them all. Keep the ones whose names start with `cw-`.
 - **Latest result:** `apify-api-read` on `/v2/actor-tasks/<taskId>/runs` with `{"limit": 1, "desc": true}`: its first item is the last run, and no items means it hasn't run yet (never `/runs/last`, which fails then).
+  - **A task's latest run:** `/v2/actor-tasks/<taskId>/runs` with `{"limit": 1, "desc": true}`, never `/runs/last`: a task that hasn't run yet answers the list with no items, where `/runs/last` fails.
   - For Watch Digest, read `DIGEST.md` from its key-value store with `get-key-value-store-record`.
     - Exactly: take `defaultKeyValueStoreId` from that run, then `get-key-value-store-record` with `{"keyValueStoreId": "<defaultKeyValueStoreId>", "recordKey": "DIGEST.md"}`. Never call it without `keyValueStoreId`. For a run that didn't succeed, read it only if its store lists it (`running.md`, "Running": "Only a record that is there").
   - For Barcode, Listing Quality Checker and Catalog Matcher, read the dataset with `get-dataset-items`.
