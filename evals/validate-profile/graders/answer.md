@@ -12,7 +12,7 @@ PASS if all of these hold:
 - the AliExpress price is labelled before shipping (or the landed cost said to be unknown), and no shipping or freight figure is invented; if the verdict is a fit with one fix, the fix is named;
 - a fit check with numbers is present (the MOQ-1 offer or first order against the under-USD-1k band, and an ad-cost assumption stated as an assumption, ideally as a range such as USD 8 to 12 per sale);
 - the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 400;
-- it makes no comment on the profile itself (no "great that…", no "don't worry", no praise of the user);
+- it makes no comment on the profile itself (no "great that…", no "don't worry", no praise of the person or their situation); credit for the user's own pick that the data backs ("What you got right: your USD 29.99 sits in the middle of what shoppers pay") is the plugin's rule (judgement.md, rule 5) and is fine;
 - the facts table is labelled for any seller / the market (the short default's "What the data shows" heading counts), separate from the For you block, and the profile does not change any number in it;
 - it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
