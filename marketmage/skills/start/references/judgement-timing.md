@@ -31,6 +31,7 @@ The first that holds is the reading:
 
 - **The one exception to verdict lines first:** a question the check answers ("is it saturated?") normally opens on the verdict lines (`judgement-answer.md`); a timing question opens on the plain answer and the timing line instead, and in the short default the "if ten more sellers arrive" line is part of the first screen.
 - **First, as the answer to their question,** before the verdict lines (`judgement-answer.md`, "Answer the user's question first"): one plain sentence in their words ("Not too late. It's early: reviews are thin and new listings are still getting sales."), then the timing line, then the verdict lines as usual. Counts toward nothing: the first screen's ~150 words start after it.
+- **No echo between the two** (closing round: "Back off this version. Back off or keep going? Cooling."): when the plain sentence has already answered their framing ("back off or keep going", "too late?"), the timing line drops the repeated question and gives the reading with its two facts ("Timing: cooling. Google shows almost no searches, and the top 10 sell about 450 a month together.").
 - **Credit what they got right** when their own numbers or hunch match a row ("You were right that reviews are thin: the median is 41, and 19 of 48 listings have under 100.").
 
 ## "If ten more sellers arrive"
