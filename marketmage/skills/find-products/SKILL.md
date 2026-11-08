@@ -13,6 +13,8 @@ Turn the user's niche into a short, scored map of product ideas, and find the on
 - `references/notebook.md`: the opt-in notebook, when the user asks to be remembered or keeps one (then `references/notebook-use.md` before any notebook call).
 - `references/costs.md`: the prices.
 
+`references/judgement-answer-checks.md` (the required reads, a yes or no asked for, one peak, labels in other languages, the margin row for a seller off Amazon) is read with `references/judgement-answer.md`, in the same batch, whenever that is.
+
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
 **Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
@@ -64,6 +66,8 @@ With a profile, the lens shapes the search itself, not only the labels on one li
 - **Competition check** (the `keyword-summary` rows): `medianReviews`, `under100Reviews`, `top3SellerShare`, `sellerHhi`, the `priceP25`…`priceP75` band, and `salesFloor` (the top 10 organic results' "bought in past month" floor: `unitsPerMonthMin`, `revenuePerMonthMin`). Quote the floor as "at least 8,000 units, about USD 160,000 a month across the top 10", never as an estimate of sales (`references/judgement.md`, "The sales floor is a floor"). `marketplaceFees` gives Amazon US's referral rate (quote it from that row, never from this text) when the user asks what a sale pays out; the FBA fee comes with `validate`. **On Etsy or eBay** (the Marketplace lens's own read): no `salesFloor` (neither shows monthly sales: Demand level is `unknown` for them, with the Amazon and TikTok figures as labelled context); Concentration for them is the top 3 sellers' share of the listing rows that are the product (checked against the title; 10 or more such rows, else `unknown`, "sample too thin to score"; top-3 share thresholds only), never the summary's `top3SellerShare` or `sellerHhi`; the price band, and `marketplaceFees` for that marketplace; its `medianReviews` are the shop's or the seller's feedback, not the product's, so it isn't scored as review depth.
 
 ## 4. Score, then present
+
+**First, the answer's rules (required):** if `references/judgement-answer.md`, `references/judgement-first-answer.md`, `references/judgement-ladder.md` and `references/judgement-answer-checks.md` haven't been read in this chat, read them now, in one batch, before writing a word of the answer: an answer written without them is wrong.
 
 Score each idea on up to four signals, with the thresholds in `references/judgement.md`:
 - **Chart:** Best Sellers review depth (`reviewCount` median of its rows under 500 favours, over 3,000 against) and recent entries;

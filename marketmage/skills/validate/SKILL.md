@@ -18,6 +18,8 @@ Work one idea with the user: a verdict with numbers behind it, then the next mov
 
 **The standard check's reads** (no lens): one first batch of `references/running.md`, `references/costs.md`, `references/judgement.md`, `references/judgement-answer.md`, `references/judgement-first-answer.md` and `references/judgement-ladder.md`, with `references/running-results.md` in the same batch as round 1's result reads. `references/running-runs.md` only when the check adds a data-provider read (an Etsy or eBay read, the AliExpress single-unit check, the ads library), a run doesn't succeed, or this chat already holds a run.
 
+`references/judgement-answer-checks.md` (the required reads, a yes or no asked for, one peak, labels in other languages, the margin row for a seller off Amazon) is in that first batch too, and read with `references/judgement-answer.md`, in the same batch, whenever that is.
+
 **Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
 
 ## 1. Ask only for
@@ -94,12 +96,17 @@ Read only these fields, then fill the signal table in `references/judgement.md`,
   - demand against supply: Trends direction against `under100Reviews` and the newcomers in the top 10 (rising demand with few newcomers is the open case; falling demand with many newcomers is a crowd arriving late);
   - the price umbrella: if `priceP25` is under 3× the factory `unitPriceMedian` (2× for dropship), the market already sells near cost: say so instead of quoting the margin alone;
   - seasonality against lead time: a peak month less than about 90 days away is hard to source for on a first order (allow 60 to 90 days).
+  - that peak month is the yearly peak, the same month the table's trend cell names (`references/judgement-answer-checks.md`, "One peak, said the same way everywhere"); a one-off high never sets off the 90-day line.
 
 ## 4. Score, then judge
 
 Read the verdict off the counts with the rule in `references/judgement.md` (Strong: margin not against, and 5+ for with at most 1 against, or 4+ for with none against; Not this version: 4+ against, or margin and concentration both against; else Promising, with one fix; 3+ unknown caps at Promising, low confidence). **Never write the verdict before the table.** The same data gets the same verdict whether the user asked "is it worth selling?" or "is it saturated?", and however much they hope for one answer.
 
 ## 5. Answer, in this order
+
+**First, the answer's rules (required):** if `references/judgement-answer.md`, `references/judgement-first-answer.md`, `references/judgement-ladder.md` and `references/judgement-answer-checks.md` (with `references/judgement-timing.md` on a timing question) haven't been read in this chat, read them now, in one batch, before writing a word of the answer: an answer written without them is wrong.
+
+**A yes or no asked for** ("just tell me yes or no", "no essay"): the shape in `references/judgement-answer-checks.md`, "A yes or no asked for": no table, and a regulated product's line still comes.
 
 **The first screen** (about 150 words at most; `references/judgement-answer.md`, "Answer structure"), so a user who reads only that much has the answer:
 
@@ -124,6 +131,7 @@ Read the verdict off the counts with the rule in `references/judgement.md` (Stro
 **The detail, by item:**
 
 6. **The signal table** (under 10 rows), the same for everyone (its Margin row labelled with the fees it uses, "after Amazon's fees" or "before fees", and on amazon.co.uk or amazon.de with VAT taken off; what the margin leaves out or assumes, such as freight, duty and ads, or the FBA fee's assumption that Amazon ships, is said in that row's own cell, never in a note under the table); through the cold-traffic lens it carries the Where you'd compete counts as a row of facts, with no market reading.
+   For a seller who won't sell on Amazon, the Amazon-fee margin row isn't printed (still scored), and their own per-sale line is in the For you block (`references/judgement-answer-checks.md`, "The margin row, for a seller who won't sell on Amazon").
 7. **What it means (for any seller):** two sentences, with the cross-checks.
 8. **For you, through the lens:** only with a profile, as `references/validate-lenses.md`, "Step 5, item 8: For you, through the lens" sets out (with `references/judgement-for-you.md`, "The For you block").
 9. **Build on it:**

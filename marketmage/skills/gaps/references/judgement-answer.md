@@ -137,7 +137,7 @@ Check the whole answer against this list before sending it, including the caveat
 
 ## When the user wants a verdict, or pushes back
 
-In `judgement.md`, under the same heading (read with this file's core).
+In `judgement-answer-checks.md`, under the same heading (read in the same batch as this file).
 
 ## The profile: two quick questions, and asking for them
 
