@@ -61,7 +61,7 @@ Nothing else is needed: no marketplace accounts or keys. eBay, Etsy, Walmart, Ta
 
 ## 4. Explain it like an expert
 
-Facts first, then what they mean, kept apart (`references/judgement.md`, rules 1 to 3). Score these signals with the shared thresholds, and print each threshold next to its number:
+Facts first, then what they mean, kept apart (`references/judgement.md`, rules 1 to 3). Score these signals with the shared thresholds, and print each threshold next to its number (for a plain reader, in the full detail: `references/judgement-first-answer.md`, "Thresholds for a plain reader"):
 - **Review depth:** `medianReviews` and `under100Reviews` (median under 500 with at least 1 in 6 under 100 reviews favours a newcomer; median over 3,000 with at most 1 in 24 under 100 is against).
 - **Concentration:** `top3SellerShare` under 0.35 favours; over 0.55, or `sellerHhi` over 0.25, is against (a few brands own the page).
 - **Paid pressure:** 6 or fewer ads in 48 favours; 12 or more, priced under the organic `priceP25`, is against.

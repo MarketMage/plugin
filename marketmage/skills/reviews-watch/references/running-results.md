@@ -39,6 +39,7 @@ The actors return what a search or a page gave them; a keyword match is not proo
   - **Never "no usable price" while a matching row carries one:** "no price came back", "no usable price" or "we don't know what one costs" only when no kept row has a price. A minimum order quoted from a row comes with that row's price.
   - **The margin then uses that range** (its low and high ends, each with its minimum order; `judgement.md`, "Margin after fees"), and the first order a budget is checked against is a matching row's minimum × its price. A price the rows already hold is never the open question, the fix or the next step.
   - **Few matching rows lower the confidence, not the price:** under 6 comparable rows, "Coverage" (above) still applies (lower confidence, a better read offered), and the range is quoted as a first look.
+  - **This is the one exception to "Coverage"'s "never on one or two relevant rows":** a unit price from one or two matching offers is still quoted, offer by offer, as a first look for the margin; the verdict's confidence drops with it. The better read offered is more offers (a refined keyword, more results), never "finding a price".
 
 ## Explaining results
 
