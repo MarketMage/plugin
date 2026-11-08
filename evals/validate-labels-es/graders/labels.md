@@ -3,7 +3,7 @@ type: llm
 focus: last_message
 ---
 
-The conversation is in Spanish, so the verdict labels are the plugin's fixed Spanish translations, word for word. For the person ("Para ti:"), exactly one of: "encaja muy bien", "encaja, con un ajuste", "una apuesta difícil", "este no". For the market ("Para el mercado:"), exactly one of: "Sólido", "Prometedor, con un ajuste", "Esta versión no: esta otra podría funcionar" (shortened to "Esta versión no" in running text). Bold, the confidence and counts, or an explanation after the label are fine.
+The conversation is in Spanish, so the verdict labels are the plugin's fixed Spanish translations, word for word. For the person ("Para ti:"), exactly one of: "encaja muy bien", "encaja, con un ajuste", "una apuesta arriesgada", "este no". For the market ("Para el mercado:"), exactly one of: "Sólido", "Prometedor, con un ajuste", "Esta versión no: esta otra podría funcionar" (shortened to "Esta versión no" in running text). Bold, the confidence and counts, or an explanation after the label are fine.
 
 PASS if all of these hold:
 - the reply is in Spanish;

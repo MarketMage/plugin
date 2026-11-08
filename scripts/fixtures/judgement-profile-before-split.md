@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). Read when there is a p
 
 ## The seller profile and lenses
 
-The facts table and the market verdict are the same for everyone. What changes with the user is **which facts count** and **the decision**: a heated eye mask can be Strong for the market, a strong fit for a seller with USD 5k of own stock, and a fit, with one fix, for a first-timer dropshipping on cold traffic until a supplier read shows single units ship. The profile is how Claude knows which.
+The facts table and the market verdict are the same for everyone (one row aside: the Amazon-fee margin isn't printed for a seller off Amazon, though still scored: `judgement-answer-checks.md`). What changes with the user is **which facts count** and **the decision**: a heated eye mask can be Strong for the market, a strong fit for a seller with USD 5k of own stock, and a fit, with one fix, for a first-timer dropshipping on cold traffic until a supplier read shows single units ship. The profile is how Claude knows which.
 
 ### The profile
 

@@ -76,7 +76,7 @@ Under "What it means", headed with the lens and the profile in brackets ("For yo
 
 ### Guardrails, both ways
 
-- The "What the data shows" table is the same for everyone and carries no label. The market verdict line says "For the market".
+- The "What the data shows" table is the same for everyone (except the Amazon-fee margin row, left out for a seller off Amazon: `judgement-answer-checks.md`) and carries no label. The market verdict line says "For the market".
 - **The profile never makes thin demand strong.** No lens turns a demand reading that is against in the table into favours, and a lens that drops one demand source never lets the other stand in for more than it shows. For an Etsy or eBay seller, Amazon's floor under 1,000 units a month caps the For you verdict at "a fit, with one fix": the fix is a small demand test on their marketplace, with what it costs them, and the answer says Amazon shows little demand and Etsy and eBay don't publish theirs. When the count is already Promising for another reason, the one fix is the one that matters most (an `against` row, or else the `unknown` read that would settle the most, as in `judgement.md`), and the demand test still appears on the first screen as one line ("before you spend: <test>, about USD <cost>"). It is not "a long shot" (`judgement-lens-marketplace.md`).
 - Never comment on the profile itself ("impressive budget", "great that you've sold before", "don't worry, everyone starts somewhere"). React to the facts it unlocks.
 - Never soften a fact for a newcomer or harden one for an expert: the table is the same for both; only which rows count changes, and each change is named.

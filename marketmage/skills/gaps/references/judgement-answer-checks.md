@@ -5,18 +5,20 @@ Part of the judgement rules (`judgement.md` is the core). Read in the same batch
 ## The answer-time reads are required
 
 (R3-18: "shud i sell those led face mask thingys on amazon? … just tell me yes or no" read only `judgement.md` and `known-limits.md`, skipped the answer files, and so gave a full table to someone who asked for a yes or no, and left out the regulated-product line an LED therapy mask needs.)
-- **Before the first word of an answer that gives a verdict or a label,** the answer-time parts the skill names must have been read in this conversation: for `validate`, `find-products` and `market-scan`, `judgement-answer.md`, `judgement-first-answer.md`, `judgement-ladder.md` and this file (with `judgement-timing.md` on a timing question); for `suppliers` and `gaps`, `judgement-answer.md` and this file.
+- **Before the first word of an answer that gives a verdict or a label,** the answer-time parts the skill names must have been read in this conversation: for `validate`, `find-products` and `market-scan`, `judgement-answer.md`, `judgement-first-answer.md`, `judgement-ladder.md` and this file (with `judgement-timing.md` on a timing question); for `suppliers` and `gaps`, `judgement-answer.md`, this file and `running-results.md`. Other skills that read `judgement.md` (`briefing`, `launch-plan`, `start`, `complaint-brief`) read only the parts their own steps name.
 - **Any not yet read are read then,** in one batch of parallel reads, before writing. The answer's shape, its required lines and its labels are in them: an answer written without them is wrong, however right its numbers. A part already read in this chat is not read again.
 
 ## A yes or no asked for
 
 "Just tell me yes or no", "yes or no?", "no essay", "short answer please": the shape the user asked for wins (`judgement-answer.md`, "Size the reply to the question"), in about 80 words and never past 120 (live runs of 0.4.7's first draft gave 190: three sentences of reasons, a "what must stay true", the profile offer):
-1. **The plain answer, one sentence:** "Yes:", "No:" or "Yes, if …:", with the one or two numbers that decide it.
-2. **The verdict, one sentence:** its label, word for word (with a profile, the For you label first, then the market's), with its confidence in a few words; the one fix or the best related version only when the label carries one, in a few words. No counts list, no "what must stay true".
+
+**A verdict asked for is not this shape.** "Tell me it's a yes", "I need this to be a yes", "say yes": that is a verdict asked for, and it gets "When the user wants a verdict, or pushes back" below: the acknowledgement, the verdict with its counts, the table, the thresholds between it and Strong, and the best related version. The yes/no shape is only for a user who asks for brevity, never for one who asks for a particular answer.
+1. **The plain answer, one sentence,** its first word set by the label (with a profile, the For you label): **Strong** or **a strong fit** → "Yes:"; **Promising, with one fix** or **a fit, with one fix** → "Yes, if <the fix>:"; **Not this version**, **a long shot** or **not this one** → "No, but <the best related version>:" (the search never dead-ends: `judgement.md`, rule 10). Then the one or two numbers that decide it.
+2. **The verdict, one sentence:** its label, word for word (with a profile, the For you label first, then the market's), with its confidence in a few words; the one fix or the best related version only when the label carries one, in a few words. No counts list (the counts wait for the table), no "what must stay true".
 3. **Only the lines that always reach the user, one short sentence each, two at most:** a regulated product's line (`judgement-first-answer.md`, "A regulated product gets one line before ordering") first, then the one that matters most of an exclusion or mismatch, a caveat that changes the verdict and a cross-check that fires (the rest wait for the table). The regulated line is never dropped for brevity: it is part of the yes.
 4. **One short offer line,** "Want the table and the details?", then the Next step line, last, in a few words. The profile's offer waits for the next answer here (it is still the one offer for the chat).
 
-No table, no For you block beyond its verdict line, no "What you got right" (unless it is the reason itself), no headings, no bullets. The same data gets the same label as in the full answer; only the shape is shorter. For example (84 words):
+No table, no For you block beyond its verdict line, no "What you got right" (unless it is the reason itself), no headings, no bullets. The same data gets the same label as in the full answer; only the shape is shorter. For example (73 words):
 
 > **Yes:** the LED masks in Amazon's top 10 sell at least 6,500 a month, and searches are up 51% over 5 years.
 > **For the market: Strong** (low confidence: only 4 of the top 10 were LED masks).
@@ -41,12 +43,12 @@ No table, no For you block beyond its verdict line, no "What you got right" (unl
 | For you: | Para ti: | Für dich: | Pour vous : | Per te: | Para você: (Portugal: Para si:) |
 | a strong fit | encaja muy bien | passt sehr gut | très adapté | molto adatto | encaixa muito bem |
 | a fit, with one fix | encaja, con un ajuste | passt, mit einer Anpassung | adapté, avec un ajustement | adatto, con una modifica | encaixa, com um ajuste |
-| a long shot | una apuesta difícil | ein schwieriger Versuch | un pari difficile | una scommessa difficile | uma aposta difícil |
-| not this one | este no | dieses nicht | pas celui-ci | non questo | este não |
+| a long shot | una apuesta arriesgada | ein Wagnis | un pari risqué | una scommessa rischiosa | uma aposta arriscada |
+| not this one | este no | nicht das Richtige | pas celui-ci | non questo | este não |
 | For the market: | Para el mercado: | Für den Markt: | Pour le marché : | Per il mercato: | Para o mercado: |
 | Strong | Sólido | Stark | Solide | Solido | Sólido |
 | Promising, with one fix | Prometedor, con un ajuste | Vielversprechend, mit einer Anpassung | Prometteur, avec un ajustement | Promettente, con una modifica | Promissor, com um ajuste |
-| Not this version: here's one that could be | Esta versión no: esta otra podría funcionar | Nicht diese Version: diese hier könnte es sein | Pas cette version : en voici une qui pourrait marcher | Non questa versione: eccone una che potrebbe funzionare | Esta versão não: aqui está uma que pode funcionar |
+| Not this version: here's one that could be | Esta versión no: esta otra podría funcionar | Nicht diese Version: diese hier könnte funktionieren | Pas cette version : en voici une qui pourrait marcher | Non questa versione: eccone una che potrebbe funzionare | Esta versão não: aqui está uma que poderia funcionar |
 | Not this version (in running text) | esta versión no | nicht diese Version | pas cette version | non questa versione | esta versão não |
 
 - **Another language:** translate each of the seven labels once, plainly and close to the English, and use exactly that wording every time in the conversation.
