@@ -12,6 +12,8 @@ For key `RUN_SUMMARY` of store `kv-cb-rm-hippack`, return exactly:
 
 For key `RUN_SUMMARY` of store `kv-cb-aps-hippack`, return {"outcome": "COMPLETE", "products": 10, "failures": []}.
 
+For key `RUN_SUMMARY` of store `kv-sl-aps-slides`, return {"outcome": "COMPLETE", "products": 10, "failures": []}.
+
 For key `RUN_SUMMARY` of any other store, return a short JSON summary consistent with a successful run of the actor implied by the store ID (the store ID is `kv-<actor name>`), with `"outcome": "COMPLETE"` and `"failures": []`. For key `DIGEST.md` of store `kv-watch-digest-last`, return exactly:
 
 **3 changes** across 3 watched items.
