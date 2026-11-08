@@ -6,4 +6,4 @@ runs: 1
 tags: [real-user-round2]
 ---
 
-is a womens hiking hip pack worth selling on amazon US? id sell at 24.99. go ahead and check
+is a womens hiking hip pack worth selling on amazon US? go ahead and check

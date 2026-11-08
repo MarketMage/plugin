@@ -6,7 +6,7 @@ The data (eBay US, "airpods pro 2 lightning", 8 listings): one new listing at US
 
 PASS if all of these hold:
 - any price, range or "going rate" the reply gives for selling these as **new sealed** has its low end at or above the refurbished prices read (at least USD 104.99), or the reply says there's no reliable new price yet and treats the refurbished price as the floor for new; no profit per unit for new is worked from a sale price below USD 104.99 as the expected or realistic figure;
-- the USD 94.99 new listing is called an outlier, unreliable or not something to plan on, with the seller having no feedback (or no rating) as the reason; it is never the anchor of the new range or the profit figure;
+- the USD 94.99 new listing is called an outlier, an odd one out, a one-off that doesn't count, unreliable or not something to plan on, with the seller having no feedback (or no rating) as the reason; it is never the anchor of the new range or the profit figure;
 - the reply says plainly that only 1 (fewer than 3) of the listings is new, and offers a narrower search for new sealed units (for example the model number with "new sealed"), or says it ran one;
 - the reply never says new should sell above refurbished while giving a new range that ends at or below the refurbished price.
 
