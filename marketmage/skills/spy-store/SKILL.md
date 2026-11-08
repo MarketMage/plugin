@@ -17,6 +17,7 @@ Profile one competitor's store and say what a rival seller can learn from it. Re
 ## 1. Ask only for
 
 - **The store's domain:** `brand.com`.
+- **An Amazon listing link or ASIN** (amazon.<tld>/dp/<ASIN>, /gp/product/<ASIN>, an amzn.to or a.co link, or a bare ASIN): read it with `cleanpull/amazon-product-scraper` (`asins: ["<ASIN>"]`, `marketplace` from the link's domain: amazon.it → IT, .de → DE, .co.uk → UK, .fr → FR, .es → ES, .com → US; about USD 0.003, USD 0.006 outside the US), never with a web fetch or a web search (`references/known-limits.md`). Its title and category give the search terms for the other marketplaces, each in its shoppers' language; ask what the product is only if that read fails.
 - **Optional:** the part they care about (pricing, best sellers, new products, promotions, page quality, tools).
 
 ## 2. Runs
@@ -31,6 +32,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 | Promotions and launches | `cleanpull/promotions-monitor` | `stores: ["brand.com"]`, `launchWindowDays: 30`, `maxLaunchesPerStore: 25` | USD 0.001 page check + USD 0.002 per promotion or launch row: usually **USD 0.02 to 0.06** |
 | Product page quality | `cleanpull/listing-quality-checker` | `productUrls`: their top 1 to 3 best sellers' pages (from the catalogue run); if the user gives their own page to compare, put theirs in `productUrls` and the store's pages in `competitorUrls` | **USD 0.005 a page** |
 
+- **The product page audit** (`cleanpull/listing-quality-checker`) usually takes about 3–5 minutes: say so with the estimate, never "about a minute".
 - **Before the catalogue run:** give the one estimate and get a yes. Offer the promotions read with it, in the same estimate (the full profile, tech + 250 products + promotions: up to about USD 0.25 (with a spending limit)). Offer the page audit when the user cares how the store sells online, or wants to compare their own page.
 - **Not Shopify:** if the tech scan says another platform, quote only the Any Store sample (about USD 0.05) and the promotions read (about USD 0.02) as the profile (about USD 0.07 with the tech scan), and leave the Shopify line out.
 - **What actually sells (Shopify, offered by name):** `includeStock: true` adds published stock per variant (USD 0.0005 a product, about USD 0.125 for 250), and **from a second read a day or more later** units sold since the last read, sales per day and days of stock left, where the store publishes stock. Run it with `monitorName: "spy-<domain>"` so a later read, in this chat or another, compares with it; say the sales figures come with that second read.
@@ -39,7 +41,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 
 ## 3. Read the results
 
-- **Tech stack:** `ecommerce`, `marketingAutomation`, `payments`, `analytics`, `advertising`, and the Shopify `apps` and `theme` in the store summary. Name the tools a rival could copy: reviews, email and SMS, upsells, loyalty.
+- **Tech stack:** `ecommerce`, `marketingAutomation`, `payments`, `analytics`, `advertising`, and the Shopify `apps` and `theme` in the store summary. Name the tools a rival could copy: reviews, email and SMS, upsells, loyalty, subscriptions (Recharge, Skio, Loop: a sign that repeat buyers pay less than the list price).
 - **Store summary** (`recordType: "store"`):
   - `productCount`;
   - `priceMin`, `priceMedian` and `priceMax`;
@@ -57,6 +59,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 ## 4. Answer
 
 - **A short profile:** what they sell, at what price, and how they sell (discounts, codes, free-shipping threshold, bundles, apps).
+- When the chat holds the user's own product or price, the profile's first line is the rival's price for that product as a new buyer pays it (list price, then any running code or bundle), beside theirs.
 - **The visual moment, after the profile** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said; never in the first answer to this skill's new reads, only in a follow-up turn: the full detail or list, a chart the user asks for, a deeper turn): **the catalogue by type**, one horizontal bar per product type in `topProductTypes` (its `products` count, at most 8), labelled with the name and the count, with the share on sale (`onSaleShare`) and the median price (`priceMedian`) in the title. Not for the 30-page sample of a store that isn't Shopify (it has no store summary). Caption: the store's domain, its `productCount` products and the date read. The same figures are given in one line of the answer as well.
 - **Their top 5 sellers** and their newest 5 products (or launches).
 - **What's on now:** the running promotion and the threshold, compared with the user's if known.

@@ -10,7 +10,7 @@ One file for the answer step, in four parts: the answer structure, the tone (wit
 With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
-**For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order is USD 960, within your up-to-$5k budget; the fix: the Trends peak in December (stock for one season)
+**For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order, about USD 960, fits the $1k–5k range you picked; the fix: the Trends peak in December (stock for one season)
 **For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 

@@ -64,7 +64,8 @@
       "tech-stack-detector",
       "any-store-product-monitor",
       "promotions-monitor",
-      "listing-quality-checker"
+      "listing-quality-checker",
+      "amazon-product-scraper"
     ],
     "pricesOnly": []
   },
@@ -100,7 +101,8 @@
   "rank-watch": {
     "runs": [
       "watch-digest",
-      "amazon-keyword-rank-tracker"
+      "amazon-keyword-rank-tracker",
+      "amazon-product-scraper"
     ],
     "pricesOnly": [
       "alerts-sender"
@@ -117,7 +119,8 @@
   "reviews-watch": {
     "runs": [
       "reviews-monitor",
-      "watch-digest"
+      "watch-digest",
+      "amazon-product-scraper"
     ],
     "pricesOnly": [
       "alerts-sender"
@@ -147,7 +150,8 @@
   "market-scan": {
     "runs": [
       "marketplace-search-scanner",
-      "watch-digest"
+      "watch-digest",
+      "amazon-product-scraper"
     ],
     "pricesOnly": [
       "alerts-sender",

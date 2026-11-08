@@ -34,9 +34,11 @@ Three layers, always kept apart:
 
 **Where these parts sit in the answer** (`judgement-answer.md`, "The short default, and the full detail on request"): the short default carries the table (rule 1), the scores (rule 2), the credit (rule 5), the next move (rule 6), the verdict lines (rule 7), the best related version or the one fix (rule 10) and, for a yes/no question, the one-line opposite answer (rule 3). "What it means" (rule 1), the early sign and its watch (rule 3), the full ladder (rule 10) and what the data can't see (rule 9) are in the full detail, except that for a yes/no question the one-line opposite answer (for "is it worth selling?", the early sign with today's number) stays on the first screen (`judgement-answer.md`, "Answer structure"); its watch offer waits. The rest is offered in one line, unless a caveat changes the verdict or its confidence: that one line stays in the default. **No notes block under the table in the default:** caveats that don't change the verdict (list prices, not quotes; an assumed fee or rate; a comparison term that came back different; rows kept as close cousins) and a one-sentence policy step ("Before listing: …") are full detail too; only an exclusion or mismatch line, suspicious text and a verdict-changing caveat sit under the table by default.
 
+Also under the table by default: a cross-check that fires and a regulated product's one line (`judgement-first-answer.md`).
+
 **The sales floor is a floor.** Quote it as "at least 12,000 units, about USD 360,000 a month across the top 10" (`unitsPerMonthMin`, `revenuePerMonthMin`), never as an estimate of sales: a listing without a badge counts 0, and "10K+" can be far more than 10,000.
 
-**Score only relevant, comparable rows.** Every signal is computed after the checks in `running-results.md`, "Read the data like an analyst": rows that aren't the product, and offers that aren't comparable (renewed or used against new, a multi-pack against a single), are left out first, and the answer says how many. If what remains is too thin for a signal, that signal is `unknown`.
+**Score only relevant, comparable rows.** Every signal is computed after the checks in `running-results.md`, "Read the data like an analyst": rows that aren't the product, and offers that aren't comparable (renewed or used against new, a multi-pack against a single), are left out first, and the answer says how many. If what remains is too thin for a signal, that signal is `unknown`. Figures that can't be right are unread (`running-results.md`).
 
 ## Signals and thresholds
 
@@ -53,11 +55,9 @@ One table for every skill, so the thresholds agree. They are rules of thumb: say
 | Margin | after marketplace fees: (what a sale pays out after fees − unit or landed cost) ÷ selling price (see "Margin after fees") | 40% or more | under 25% | 25 to 40% |
 | Price band | the user's planned price against `priceP25`…`priceP75` | inside the band, or above `priceP75` with a stated difference | under `priceP25` (a race to the bottom) | left out when no price was given |
 
-**Low-volume Trends terms.** A term whose `summary.lowVolume` is true had at least one in five of its complete points (weeks, or days or months by range; `summary.points`, `pointsWithoutData`) too thin for Google to report, so its shape rests on a small sample:
-- **Falling** (`direction: "falling"`) is scored as usual: dropping below Google's threshold is a real fall, and the actor counts those points as 0 for exactly that reason.
-- **A breakout** (`direction: "rising"` with `changePercent` null on a low-volume term: unreported for the first quarter, now holding at least half its peak) favours, labelled as a rise from below Google's threshold, with no percent.
-- **Otherwise** (rising with a percent, or stable) the Demand trend is `unknown`, "too few searches to read a trend"; its peaks and dates aren't quoted as facts, and its `relatedQueries_rising` aren't used as angles (a breakout there can be noise, such as a phone model under a candle).
-- **With synonyms** (`validate` compares the product and up to 2 synonyms): the Demand trend comes from the product's own term; when that term is low-volume and a synonym isn't, the synonym's reading is used, and the answer names it.
+**Demand level when its two sources disagree.** When both the Amazon sales floor and TikTok Shop were read and one meets its favours threshold while the other meets its against threshold, the row reads on the one that favours, and its cell names the other as a fact beside it ("at least 12,000 a month on Amazon; the top TikTok listing has 60 sold"). A market sells where its buyers are; which channel counts for a seller is the lens's call (`judgement-for-you.md`), never the market row's.
+
+**Low-volume Trends terms** (`summary.lowVolume`): scored as `judgement-first-answer.md` says.
 
 **Margin after fees.** What a sale pays out is the price minus the marketplace's fees, before freight, duty and ads (unless the user gave a landed cost, which includes freight):
 - **Amazon US:** the Amazon leaders' `fees` (from Amazon's published 2026 US schedule, by category, size and weight): at the user's price, the referral fee at the leaders' rate plus the median `fbaFee` of the comparable leaders (size sets the FBA fee, not price); at a leader's own price, its `afterFees`. A leader with only a range (`fbaFeeRange`, `totalFeesRange`) gives a margin range: print both ends and score the lower one. The FBA fee assumes Amazon fulfils; say so once.
@@ -102,7 +102,9 @@ Count only the sources planned for the marketplace. A source that isn't planned 
 - **medium:** one planned source missing or small (under 20 reviews, under 20 listings, a Trends line with `missingDataTypes` or mostly zeros).
 - **low:** two or more planned sources missing or small, or three or more signals `unknown`.
 
-Signals left unread because the verdict was already settled don't lower the confidence either ("Settled early" above). A signal is `unknown` only when none of its sources was read: Demand level is `unknown` only when neither Amazon's bought-in-past-month nor TikTok was read (outside the US, bought-in-past-month alone scores it).
+**A TikTok read's sample:** its 20 rows are its full sample, so it is "small" only when fewer than 5 of its rows are the product (the same line as `find-products`' "the TikTok signal is thin"). When the Amazon sales floor came back from a full read, a thin TikTok read is a fact in the Demand level cell, never the reason the confidence drops.
+
+Signals left unread because the verdict was already settled don't lower the confidence either ("Settled early" above). A signal is `unknown` only when none of its sources was read: Demand level is `unknown` only when neither Amazon's bought-in-past-month nor TikTok was read (outside the US, bought-in-past-month alone scores it), or its figures can't be right (`running-results.md`).
 
 State the confidence with the verdict, and what would raise it (one source).
 

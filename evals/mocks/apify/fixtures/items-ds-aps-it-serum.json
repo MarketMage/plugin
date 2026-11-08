@@ -1,0 +1,38 @@
+[
+ {
+  "recordType": "product",
+  "marketplace": "IT",
+  "asin": "B082N24VWQ",
+  "url": "https://www.amazon.it/dp/B082N24VWQ",
+  "source": "asin",
+  "input": "B082N24VWQ",
+  "position": null,
+  "title": "Lumea Siero Viso Acido Ialuronico Puro 30 ml, Idratante Anti-et\u00e0 con Vitamina C, Made in Italy",
+  "brand": "Lumea Cosmetici",
+  "price": 24.9,
+  "currency": "EUR",
+  "rating": 4.4,
+  "reviewCount": 2310,
+  "starBreakdown": {
+   "5": 78,
+   "4": 6,
+   "3": 4,
+   "2": 3,
+   "1": 9
+  },
+  "rank": 1840,
+  "rankCategory": "Bellezza",
+  "boughtPastMonth": "500+ acquistati il mese scorso",
+  "boughtPastMonthMin": 500,
+  "dateFirstAvailable": "2019-12-04",
+  "soldByAmazon": false,
+  "buyBoxSeller": "Lumea Cosmetici",
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "categories": [
+   "Bellezza",
+   "Cura della pelle",
+   "Viso",
+   "Sieri"
+  ]
+ }
+]

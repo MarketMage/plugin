@@ -1,0 +1,402 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "automatic cat laser toy",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 12.99,
+  "priceP25": 19.99,
+  "priceMedian": 24.99,
+  "priceP75": 31.24,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": null,
+  "adsShown": false,
+  "ads": null,
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Renpho",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Bruder",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Huggaroo",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "TheraMed",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.38,
+  "sellerHhi": 0.08,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 3400,
+  "averageRating": 4.3,
+  "under100Reviews": 1,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 9000,
+   "revenuePerMonthMin": 224910.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "interactive cat toy ball",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 12.99,
+  "priceP25": 15.99,
+  "priceMedian": 19.99,
+  "priceP75": 24.99,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": null,
+  "adsShown": false,
+  "ads": null,
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Renpho",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Bruder",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Huggaroo",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "TheraMed",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.3,
+  "sellerHhi": 0.05,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 450,
+  "averageRating": 4.3,
+  "under100Reviews": 11,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 12500,
+   "revenuePerMonthMin": 249875.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "cat window perch",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 12.99,
+  "priceP25": 26.39,
+  "priceMedian": 32.99,
+  "priceP75": 41.24,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": null,
+  "adsShown": false,
+  "ads": null,
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Renpho",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Bruder",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Huggaroo",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "TheraMed",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.28,
+  "sellerHhi": 0.04,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 380,
+  "averageRating": 4.3,
+  "under100Reviews": 12,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 15400,
+   "revenuePerMonthMin": 508046.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "cardboard cat scratcher",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 12.99,
+  "priceP25": 19.99,
+  "priceMedian": 24.99,
+  "priceP75": 31.24,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": null,
+  "adsShown": false,
+  "ads": null,
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Renpho",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Bruder",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Huggaroo",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "TheraMed",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.41,
+  "sellerHhi": 0.09,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 6200,
+  "averageRating": 4.3,
+  "under100Reviews": 1,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 21000,
+   "revenuePerMonthMin": 524790.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "cat tunnel",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 12.99,
+  "priceP25": 12.79,
+  "priceMedian": 15.99,
+  "priceP75": 19.99,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": null,
+  "adsShown": false,
+  "ads": null,
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Renpho",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Bruder",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Huggaroo",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "TheraMed",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.45,
+  "sellerHhi": 0.11,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 2800,
+  "averageRating": 4.3,
+  "under100Reviews": 3,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 4200,
+   "revenuePerMonthMin": 67158.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ }
+]

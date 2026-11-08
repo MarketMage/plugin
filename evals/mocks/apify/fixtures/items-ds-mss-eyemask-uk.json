@@ -1,0 +1,83 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "heated eye mask",
+  "source": "amazon",
+  "marketplace": "UK",
+  "listings": 52,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "GBP",
+  "priceMin": 12.99,
+  "priceP25": 22.99,
+  "priceMedian": 27.99,
+  "priceP75": 34.99,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": 4,
+  "adsShown": true,
+  "ads": {
+   "count": 4,
+   "priceMin": 23.59,
+   "priceMedian": 29.49,
+   "priceMax": 41.29,
+   "topSellers": [
+    {
+     "seller": "Renpho",
+     "ads": 2
+    },
+    {
+     "seller": "Bruder",
+     "ads": 1
+    },
+    {
+     "seller": "Huggaroo",
+     "ads": 1
+    }
+   ]
+  },
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Renpho",
+    "listings": 4,
+    "share": 0.08
+   },
+   {
+    "seller": "Bruder",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Huggaroo",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "TheraMed",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.22,
+  "sellerHhi": 0.06,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 310,
+  "averageRating": 4.3,
+  "under100Reviews": 14,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 14000,
+   "revenuePerMonthMin": 395860.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "GBP",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  }
+ }
+]

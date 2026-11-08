@@ -19,6 +19,7 @@ Ratings, new reviews and what shoppers praise or complain about, now or over tim
 ## 1. Ask only for
 
 - **The products:** product page URLs from the user's or competitors' shops, and Amazon ASINs or URLs with the marketplace (US by default).
+- **A brand's best seller, not its ASIN** ("watch TruSkin's best seller"): find it with `cleanpull/amazon-product-scraper` (`searches: ["<brand> <product>"]`, `marketplace`, about USD 0.03 for 10 results), keeping the brand's rows (the most "bought in past month" leads), never with a web search (`references/known-limits.md`).
 - **Companies on Trustpilot:** a domain (`allbirds.com`) or its `trustpilot.com/review/…` page, as `trustpilotDomains`.
 - **A store whose own reviews can't be read** (listed in `references/known-limits.md`, such as allbirds.com): never pass its product pages; read its Trustpilot page (`trustpilotDomains`) instead, even when the user pasted a product link, and say so once in the plain words given there.
 - **Once or ongoing.** If ongoing, how often: daily or weekly.
