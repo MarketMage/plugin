@@ -58,6 +58,8 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 
 ## 4. Answer
 
+**First, the answer's rules (required):** if `references/running-results.md` and `references/plain-words.md` haven't been read in this chat, read them now, in one batch, before writing a word of the answer: an answer written without them is wrong.
+
 - **A short profile:** what they sell, at what price, and how they sell (discounts, codes, free-shipping threshold, bundles, apps).
 - When the chat holds the user's own product or price, the profile's first line is the rival's price for that product as a new buyer pays it (list price, then any running code or bundle), beside theirs.
 - **The visual moment, after the profile** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said; never in the first answer to this skill's new reads, only in a follow-up turn: the full detail or list, a chart the user asks for, a deeper turn): **the catalogue by type**, one horizontal bar per product type in `topProductTypes` (its `products` count, at most 8), labelled with the name and the count, with the share on sale (`onSaleShare`) and the median price (`priceMedian`) in the title. Not for the 30-page sample of a store that isn't Shopify (it has no store summary). Caption: the store's domain, its `productCount` products and the date read. The same figures are given in one line of the answer as well.

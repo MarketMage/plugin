@@ -63,6 +63,8 @@ When the user gives a dataset from an earlier read, match it directly: Catalog M
 
 ## 5. Answer
 
+**First, the answer's rules (required):** if `references/judgement-answer.md`, `references/judgement-answer-checks.md` and `references/running-results.md` haven't been read in this chat, read them now, in one batch, before writing a word of the answer: an answer written without them is wrong.
+
 Facts first, then what they mean (`references/judgement.md`, rules 1, 5 and 6).
 - **Price position first:** "On the 80 products you both sell, rival1 is 6% cheaper at the median; they undercut you on 31, you're cheaper on 22."
 - **Confidence, from how the pairs matched:** the summary's `byMethod` (pairs matched by barcode against title, part number, SKU or model) and the share at `confidence` 0.85 or above. Mostly barcode or 0.85+: `high`; under half: `medium`, and say the price index rests on title matches to check by eye; very few pairs (under 10): `low`.

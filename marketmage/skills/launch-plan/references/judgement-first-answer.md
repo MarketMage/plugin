@@ -81,6 +81,8 @@ For a seller with their own stock who ships their own orders on any channel othe
 
 Each idea gets **one** demand-trend statement in an answer, with its window ("down 47% over 12 months", "up 63% over 5 years"): the window of the skill's own read (5 years in `validate`, 12 months in `find-products`), the same in the table, the prose and every later turn that quotes it. Another window is quoted only as a separate, labelled fact, never in its place. A **stand-in term** (a broader search used because the product's own term is too thin to read) is named as one wherever its figure appears: "searches for bully sticks (a stand-in: 'duck feet' has too few searches to read) are down 16% over 5 years".
 
+Its peak, the same month everywhere: `judgement-answer-checks.md`.
+
 ## Rising searches, in every answer
 
 The rules from going deeper (`judgement-deeper.md`, "Rising searches in a card") hold in quick answers too: the ideas table, the verdict's angle rung and any line that quotes one.

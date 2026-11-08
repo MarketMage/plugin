@@ -14,6 +14,8 @@ The market behind a keyword, per marketplace. Read these first:
 - `references/watchlists.md`: scheduling;
 - `references/costs.md`: the prices.
 
+`references/judgement-answer-checks.md` (the required reads, a yes or no asked for, one peak, labels in other languages, the margin row for a seller off Amazon) is read with `references/judgement-answer.md`, in the same batch, whenever that is.
+
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
 **Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
@@ -62,6 +64,8 @@ Nothing else is needed: no marketplace accounts or keys. eBay, Etsy, Walmart, Ta
 - **Best Buy's own search** ranks related accessories high; say so if its listings look off-topic.
 
 ## 4. Explain it like an expert
+
+**First, the answer's rules (required):** if `references/judgement-answer.md`, `references/judgement-first-answer.md`, `references/judgement-ladder.md` and `references/judgement-answer-checks.md` haven't been read in this chat, read them now, in one batch, before writing a word of the answer: an answer written without them is wrong.
 
 Facts first, then what they mean, kept apart (`references/judgement.md`, rules 1 to 3). Score these signals with the shared thresholds, and print each threshold next to its number (for a plain reader, in the full detail: `references/judgement-first-answer.md`, "Thresholds for a plain reader"):
 - **Review depth:** `medianReviews` and `under100Reviews` (median under 500 with at least 1 in 6 under 100 reviews favours a newcomer; median over 3,000 with at most 1 in 24 under 100 is against).

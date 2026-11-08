@@ -42,6 +42,8 @@ Check this conversation first (`references/running-runs.md`, "Runs in this conve
 
 ## 4. Answer
 
+**First, the answer's rules (required):** if `references/judgement-complaints.md`, `references/running-results.md` and `references/plain-words.md` haven't been read in this chat, read them now, in one batch, before writing a word of the answer: an answer written without them is wrong.
+
 The brief, exactly as `references/judgement-complaints.md` steps 4 and 5 set it out, on one screen, in plain words (`references/plain-words.md`). Voice: a hopeful, grounded collaborator: the complaint is the user's opening, said as one, with the numbers exact.
 
 **The visual moment, after the opening line** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said; never in the first answer to this skill's new reads, only in a follow-up turn: the full detail or list, a chart the user asks for, a deeper turn): the complaints found, one horizontal bar per complaint (at most 4), its length the number of low reviews read that name it, labelled with the complaint and "N of M low reviews · K leaders", a hint under the threshold drawn in grey and labelled "a hint". Caption: the sources and the date read ("Amazon UK and Germany, read 7 Nov").
