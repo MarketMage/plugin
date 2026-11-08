@@ -85,3 +85,15 @@ USPS Ground Advantage, commercial prices per parcel within the US (USPS Notice 1
 - **No weight read and none given:** the margin is "before shipping", said once, and the one question that completes it is the pack's weight.
 - **A dropshipper** already has shipping in a landed cost or labels the cost "before shipping" (the cold-traffic lens); no estimate is added there. **FBA sellers:** the FBA fee covers delivery to the buyer; no estimate. **Outside the US:** no table here: the margin is before shipping, and their carrier's price is asked once.
 - These are reference prices, sourced and dated (`judgement.md`, "Every fee and rate has a source, never memory"): never another carrier's figure from memory.
+
+## Reference exchange rates
+
+The European Central Bank's euro reference rates of 6 Nov 2026 (https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml, read 8 Nov 2026), worked into US dollars. Used for a cost and a price in different currencies when the user hasn't given a rate of their own (`judgement-abroad.md`, "Mixed currencies"), always said as approximate, with this date and source: "at about USD 1.34 to £1 (the ECB's rate of 6 Nov 2026)".
+
+| Currency | 1 unit in USD | 1 USD in it |
+| --- | --- | --- |
+| GBP (£) | 1.3385 | 0.7471 |
+| EUR (€) | 1.1165 | 0.8957 |
+| CAD | 0.7109 | 1.4066 |
+| AUD | 0.6871 | 1.4554 |
+| CNY (RMB) | 0.1499 | 6.6713 |

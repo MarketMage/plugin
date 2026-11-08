@@ -1,6 +1,6 @@
 ---
 type: llm
-focus: trace
+focus: last_message
 ---
 
 Label exactness. Every "For you" verdict in the answer (each "For you: …" line, each per-person or per-idea For you reading, and each cell of a For you column) must use one of exactly four labels, word for word: "a strong fit", "a fit, with one fix", "a long shot", "not this one". Bold, a "(provisional)" tag after the label, "now:" before it in a follow-up, or an explanation after the label are fine. Market verdicts, if labelled, use "Strong", "Promising, with one fix" or "Not this version".

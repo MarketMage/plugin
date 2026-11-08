@@ -101,7 +101,8 @@
   "rank-watch": {
     "runs": [
       "watch-digest",
-      "amazon-keyword-rank-tracker"
+      "amazon-keyword-rank-tracker",
+      "amazon-product-scraper"
     ],
     "pricesOnly": [
       "alerts-sender"
@@ -118,7 +119,8 @@
   "reviews-watch": {
     "runs": [
       "reviews-monitor",
-      "watch-digest"
+      "watch-digest",
+      "amazon-product-scraper"
     ],
     "pricesOnly": [
       "alerts-sender"

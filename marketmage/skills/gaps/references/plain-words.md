@@ -14,6 +14,7 @@ Answers are read by sellers, most of them not technical: never write as if the d
 | cap, capped, `maxTotalChargeUsd`, `maxRunCostUsd` | "spending limit" ("up to about USD 0.12 (with a spending limit)"; "Max cost per run (USD)" is the Console's own label, quoted as such when pointing to it) |
 | file names (`running.md`, `costs.md`, `DIGEST.md`…), "the rules", "my instructions", "the skill", "the reference", "mock" | nothing: say what is true, not where it is written ("MarketMage reads Amazon US only for this") |
 | a Console path (`console.apify.com/…`) | only when the user asks to see or download the raw results, or a step needs the Console (a delete, a setting) |
+| to someone new to selling: "fit check", "lens", "gate", "felt want", "angle", "margin" with no gloss, "median" | what each one means, in a few words, or the plain phrase: "what it takes to start", "how you'd sell", "a check that could rule it out", "people buying on impulse from a video", "a selling hook", "what you keep per sale", "the middle listing" |
 
 - **The link to the full results is optional:** give it only when the answer shows part of a longer list the user may want (more reviews, listings or offers than the answer quotes), as one plain line: "Full list of the reviews: <link>", "All 48 listings: <link>". Never a "Dataset:" label, never a bare ID, never by default.
 - **Inside the plugin, the words stay:** these rules, tool calls and inputs keep their own names; only the text the user reads changes.

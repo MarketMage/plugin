@@ -21,6 +21,7 @@ Amazon keyword ranks, now or over time. Read these first:
 - **The keywords,** as shoppers type them (at most 300 per watchlist).
 - **The ASINs** to find for each keyword (theirs, and any competitors to compare). When different products have different keywords (a catalogue: each product's own search terms), ask for them **as sets**, product or product group → its keywords, and keep them apart (step 3, "One watcher per set").
 - **The marketplace:** US by default.
+- **A brand's best seller, not its ASIN** ("watch TruSkin's best seller"): find it with `cleanpull/amazon-product-scraper` (`searches: ["<brand> <product>"]`, `marketplace`, about USD 0.03 for 10 results), keeping the brand's rows (the most "bought in past month" leads), never with a web search (`references/known-limits.md`).
 - **Once or ongoing.** If ongoing, how often: daily or weekly.
 
 ## 2. One-off check

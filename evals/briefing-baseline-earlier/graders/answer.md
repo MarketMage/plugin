@@ -13,3 +13,5 @@ PASS if all of these hold:
 FAIL if it says the watch has only been checked once with nothing to compare against, calls it a first check or a baseline run, quotes the watch as 2 items, or invents a change.
 
 The briefing's notebook offer (one line saying where a notebook would live and that each save costs a fraction of a cent) and its weekly scheduled-briefing offer are part of the briefing's rules: they are not a cost on the move and don't fail it.
+
+Saying the watch has only been running a day, or that this was its first scheduled morning, is true and fine; what fails is calling this check the first one, a baseline or starting-point run, or saying there is nothing to compare against yet.

@@ -95,7 +95,7 @@ Then:
   - USD 0.001 per message once a channel is added.
   - **Example:** 5 keywords on Amazon US, weekly: 0.005 + 5 × 0.00025 + 5 × 0.002 + a few changes ≈ **USD 0.02 a run, about USD 0.08 a month**; daily ≈ USD 0.55 a month. The first run ≈ USD 0.035. The same 5 on eBay weekly add about 5 × 0.147 + 0.015 ≈ USD 0.75 a run, about USD 3.20 a month: **about 40 times the Amazon watch.** Say the ratio in the watch's estimate, before the yes.
 - **`maxRunCostUsd`:** 1.5× the typical run + USD 0.06 for Amazon searches, + USD 0.20 for eBay, Etsy, Walmart, Target or Best Buy searches (one such search's worst case is USD 0.166). For the Amazon example, about USD 0.09.
-- **Timing:** a digest with eBay, Etsy, Walmart, Target or Best Buy takes up to about 12 minutes longer.
+- **Timing:** a digest with Etsy takes about 4–5 minutes longer (sometimes up to about 9), and with eBay, Walmart, Target or Best Buy up to about 12 minutes longer.
 - **Steps:** follow `references/watchlists.md` (cost, yes, task, baseline with `maxRunCostUsd` raised to the first-run cap, schedule, where the results go).
 
 ## 6. Reading a market digest later
