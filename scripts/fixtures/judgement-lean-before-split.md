@@ -32,7 +32,7 @@ Three layers, always kept apart:
 
 **The sales floor is a floor.** Quote it as "at least 12,000 units, about USD 360,000 a month across the top 10" (`unitsPerMonthMin`, `revenuePerMonthMin`), never as an estimate of sales: a listing without a badge counts 0, and "10K+" can be far more than 10,000.
 
-**Score only relevant, comparable rows.** Every signal is computed after the checks in `running.md`, "Read the data like an analyst": rows that aren't the product, and offers that aren't comparable (renewed or used against new, a multi-pack against a single), are left out first, and the answer says how many. If what remains is too thin for a signal, that signal is `unknown`.
+**Score only relevant, comparable rows.** Every signal is computed after the checks in `running-results.md`, "Read the data like an analyst": rows that aren't the product, and offers that aren't comparable (renewed or used against new, a multi-pack against a single), are left out first, and the answer says how many. If what remains is too thin for a signal, that signal is `unknown`. Figures that can't be right are unread, never scored (`running-results.md`, "Figures that can't be right").
 
 ## Signals and thresholds
 

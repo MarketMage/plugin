@@ -63,3 +63,25 @@ Neutral facts behind the risk notes in `judgement-abroad.md` ("EU risk notes"), 
 - **CE marking:** EU law requires CE marking for "toys, drones, electrical and electronic equipment, pyrotechnic products, recreational crafts and watercraft", "some kinds of pressure equipment, gas appliances, batteries, and machinery", "weighing and measuring equipment", "personal protective equipment" and "medical appliances, including diagnostic equipment" (Your Europe, "CE marking", https://europa.eu/youreurope/business/product-requirements/labels-markings/ce-marking/index_en.htm, last checked 17 Jul 2026; the list is not exhaustive).
 - **GPSR (a responsible person in the EU):** the General Product Safety Regulation (Regulation (EU) 2023/988, https://eur-lex.europa.eu/eli/reg/2023/988/oj), applying since 13 Dec 2024, requires that a consumer product placed on the EU market has an economic operator established in the EU responsible for it (Article 16): a seller outside the EU names one (an importer, an authorised representative, or a fulfilment service provider).
 - **Packaging (Germany, LUCID):** anyone distributing packaged goods in Germany must be registered in the LUCID Packaging Register of the Zentrale Stelle Verpackungsregister (https://www.verpackungsregister.org/en/; register at https://lucid.verpackungsregister.org/). Other EU countries run their own packaging schemes (extended producer responsibility); their own authority's site says what applies.
+
+## Shipping in the margin, for sellers who ship themselves
+
+For a seller with their own stock who ships their own orders on any channel other than Amazon (their own store, TikTok Shop, Etsy; not FBA), the headline margin includes an **estimated** shipping cost per order, from the weight read in this run (the Amazon leaders' `fees.shippingWeightLb`, labelled as the leaders' weight; or the weight the user gives), taken as the packed weight and rounded up to the band:
+
+USPS Ground Advantage, commercial prices per parcel within the US (USPS Notice 123, effective 4 October 2026, https://pe.usps.com/text/dmm300/Notice123.htm, read 7 Nov 2026):
+
+| Packed weight up to | Mid-distance (zone 5): used in the margin | Near to far (zones 1 to 8) |
+| --- | --- | --- |
+| under 1 lb | USD 8.24 | USD 7.33 to 8.95 |
+| 1 lb | USD 9.29 | USD 8.01 to 11.22 |
+| 2 lb | USD 10.50 | USD 8.39 to 13.42 |
+| 3 lb | USD 12.12 | USD 9.04 to 16.30 |
+| 5 lb | USD 14.53 | USD 10.35 to 20.24 |
+| 10 lb | USD 17.81 | USD 12.56 to 26.39 |
+
+- **Say it as an estimate, with the weight used:** "about USD 10.50 to ship a 2 lb pack (USPS Ground Advantage, mid-distance; an estimate from the leaders' weight)". The near-to-far range goes in the table's margin cell. Packaging, and what the buyer pays for shipping, are theirs to add: when they say they charge shipping, the estimate comes off what they charge.
+- **The sum:** price − card fee (2.9% + USD 0.30, an assumption) − unit or landed cost − shipping estimate = what a sale leaves, before ads; then at USD 8 and USD 12 of ads per sale. The waterfall gets a bar labelled "shipping (estimate)".
+- **Over 10 lb:** no band here: the margin is before shipping, and their carrier's price is asked once.
+- **No weight read and none given:** the margin is "before shipping", said once, and the one question that completes it is the pack's weight.
+- **A dropshipper** already has shipping in a landed cost or labels the cost "before shipping" (the cold-traffic lens); no estimate is added there. **FBA sellers:** the FBA fee covers delivery to the buyer; no estimate. **Outside the US:** no table here: the margin is before shipping, and their carrier's price is asked once.
+- These are reference prices, sourced and dated (`judgement.md`, "Every fee and rate has a source, never memory"): never another carrier's figure from memory.

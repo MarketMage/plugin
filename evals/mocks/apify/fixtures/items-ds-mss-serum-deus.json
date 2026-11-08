@@ -1,0 +1,144 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "Hyaluron Serum Gesicht",
+  "source": "amazon",
+  "marketplace": "DE",
+  "listings": 52,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "EUR",
+  "priceMin": 6.59,
+  "priceP25": 10.99,
+  "priceMedian": 14.99,
+  "priceP75": 21.99,
+  "priceMax": 54.97,
+  "priced": 48,
+  "sponsored": 5,
+  "adsShown": true,
+  "ads": null,
+  "sellers": 22,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Cerave",
+    "listings": 3,
+    "share": 0.12
+   },
+   {
+    "seller": "The Ordinary",
+    "listings": 3,
+    "share": 0.1
+   },
+   {
+    "seller": "La Roche-Posay",
+    "listings": 3,
+    "share": 0.09
+   },
+   {
+    "seller": "Nivea",
+    "listings": 3,
+    "share": 0.06
+   }
+  ],
+  "top3SellerShare": 0.31,
+  "sellerHhi": 0.06,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 2900,
+  "averageRating": 4.3,
+  "under100Reviews": 3,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-11-08T10:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 21000,
+   "revenuePerMonthMin": 314790.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "EUR",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  }
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "hyaluronic acid serum",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 52,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 5.99,
+  "priceP25": 9.99,
+  "priceMedian": 13.99,
+  "priceP75": 19.99,
+  "priceMax": 49.97,
+  "priced": 48,
+  "sponsored": 9,
+  "adsShown": true,
+  "ads": null,
+  "sellers": 18,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "The Ordinary",
+    "listings": 3,
+    "share": 0.16
+   },
+   {
+    "seller": "CeraVe",
+    "listings": 3,
+    "share": 0.14
+   },
+   {
+    "seller": "Neutrogena",
+    "listings": 3,
+    "share": 0.12
+   },
+   {
+    "seller": "Cetaphil",
+    "listings": 3,
+    "share": 0.05
+   }
+  ],
+  "top3SellerShare": 0.42,
+  "sellerHhi": 0.06,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 6400,
+  "averageRating": 4.3,
+  "under100Reviews": 3,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-11-08T10:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 64000,
+   "revenuePerMonthMin": 895360.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ }
+]

@@ -17,6 +17,7 @@ Profile one competitor's store and say what a rival seller can learn from it. Re
 ## 1. Ask only for
 
 - **The store's domain:** `brand.com`.
+- **An Amazon listing link or ASIN** (amazon.<tld>/dp/<ASIN>, /gp/product/<ASIN>, an amzn.to or a.co link, or a bare ASIN): read it with `cleanpull/amazon-product-scraper` (`asins: ["<ASIN>"]`, `marketplace` from the link's domain: amazon.it → IT, .de → DE, .co.uk → UK, .fr → FR, .es → ES, .com → US; about USD 0.003, USD 0.006 outside the US), never with a web fetch or a web search (`references/known-limits.md`). Its title and category give the search terms for the other marketplaces, each in its shoppers' language; ask what the product is only if that read fails.
 - **Optional:** the part they care about (pricing, best sellers, new products, promotions, page quality, tools).
 
 ## 2. Runs
@@ -39,7 +40,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 
 ## 3. Read the results
 
-- **Tech stack:** `ecommerce`, `marketingAutomation`, `payments`, `analytics`, `advertising`, and the Shopify `apps` and `theme` in the store summary. Name the tools a rival could copy: reviews, email and SMS, upsells, loyalty.
+- **Tech stack:** `ecommerce`, `marketingAutomation`, `payments`, `analytics`, `advertising`, and the Shopify `apps` and `theme` in the store summary. Name the tools a rival could copy: reviews, email and SMS, upsells, loyalty, subscriptions (Recharge, Skio, Loop: a sign that repeat buyers pay less than the list price).
 - **Store summary** (`recordType: "store"`):
   - `productCount`;
   - `priceMin`, `priceMedian` and `priceMax`;
@@ -57,6 +58,7 @@ Start with the tech scan. It is cheap, and it tells you whether the store is on 
 ## 4. Answer
 
 - **A short profile:** what they sell, at what price, and how they sell (discounts, codes, free-shipping threshold, bundles, apps).
+- When the chat holds the user's own product or price, the profile's first line is the rival's price for that product as a new buyer pays it (list price, then any running code or bundle), beside theirs.
 - **The visual moment, after the profile** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said; never in the first answer to this skill's new reads, only in a follow-up turn: the full detail or list, a chart the user asks for, a deeper turn): **the catalogue by type**, one horizontal bar per product type in `topProductTypes` (its `products` count, at most 8), labelled with the name and the count, with the share on sale (`onSaleShare`) and the median price (`priceMedian`) in the title. Not for the 30-page sample of a store that isn't Shopify (it has no store summary). Caption: the store's domain, its `productCount` products and the date read. The same figures are given in one line of the answer as well.
 - **Their top 5 sellers** and their newest 5 products (or launches).
 - **What's on now:** the running promotion and the threshold, compared with the user's if known.

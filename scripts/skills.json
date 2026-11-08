@@ -64,7 +64,8 @@
       "tech-stack-detector",
       "any-store-product-monitor",
       "promotions-monitor",
-      "listing-quality-checker"
+      "listing-quality-checker",
+      "amazon-product-scraper"
     ],
     "pricesOnly": []
   },
@@ -147,7 +148,8 @@
   "market-scan": {
     "runs": [
       "marketplace-search-scanner",
-      "watch-digest"
+      "watch-digest",
+      "amazon-product-scraper"
     ],
     "pricesOnly": [
       "alerts-sender",
