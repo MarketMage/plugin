@@ -38,7 +38,7 @@ Check this conversation first (`references/running-runs.md`, "Runs in this conve
 
 - **Amazon leaders** (`fields: "recordType,asin,title,brand,price,rating,reviewCount,starBreakdown,boughtPastMonthMin,dateFirstAvailable"`): check each row is the product, then pick the leaders (`references/judgement-complaints.md`, step 1).
 - **Reviews, in one read:** `get-dataset-items` with `fields: "recordType,productUrl,productTitle,rating,title,text,date,average,count,histogram,themes,topComplaints,topPraise,reviewsNotShownKind"` and `limit: 160` (the rating summaries and the reviews together). A leader's UK or German page with no rows wasn't read: it isn't sold there ("not read", never "no complaints").
-- **Factory offers:** each offer's `title` and attributes, for the fix ("adjustable strap 20–48 in"); offers that aren't the product are left out.
+- **Factory offers** (`fields: "recordType,title,url,unitPriceMin,unitPriceMax,unitPriceAtQuantity,priceTiers,moq,unit,supplierName,specs"`): each offer's `title` and attributes, for the fix ("adjustable strap 20–48 in"); offers that aren't the product are left out.
 
 ## 4. Answer
 
