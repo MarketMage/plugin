@@ -41,3 +41,10 @@ One line, built from rows already read, on the first screen after the verdict li
 ## What it can't see, said once
 
 In the full detail's "What this can't see" line (or on the first screen when the user asked only about timing): sales history over time, keyword search volumes, and units per day from a single TikTok read. A fact about coverage, not a warning.
+
+## A season the user names ("in time for Christmas")
+
+When the request names a selling window (the Christmas rush, late November to December; Black Friday, late November; back to school, July to August in the US; summer, June to August), read this before the answer, in `find-products` and `validate` alike. It needs the Trends `interestOverTime` points: read them for every idea.
+- **Each idea, said plainly:** whether its searches peak in that window, the one peak per idea (`judgement-answer-checks.md`, "One peak"): "peaks in the Christmas window (highest December 2025)" or "no Christmas lift: highest in June 2026". The plain answer to their question names which ideas peak in it, and each idea's row or verdict line carries it: in what helps when it peaks there, in what holds it back when it doesn't. The delivery lead time line stays as it is.
+- **A seasonal fall is not a decline.** A fall measured from last season's peak is the season. Compare the latest point with the same weeks a year earlier (a 12-month read's first points): level or higher, with last year's high in the window, it is the season ("down 30% over 12 months, but that's the drop since last December's high: this week is level with the same week last year"); lower there too, it is a real decline, said as one ("and 25% below the same week last year: interest is falling, not only seasonal"). The idea's one demand statement and its count stay as they are; this line says which story the figure tells.
+- **Rank or flag:** the order and the counts don't change; among rows level on for minus against, an idea peaking in their window comes first, and an idea with no lift in it is flagged in its row, never dropped.
