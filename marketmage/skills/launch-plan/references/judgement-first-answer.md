@@ -12,7 +12,7 @@ The first answer that shows a check's results has five parts, in this order, and
 4. **A compact table** (under 10 rows), shaped to the user ("Notation follows experience", below).
 5. **The next move:** one "Next step:" line, last, and only once in the answer.
 
-Between parts 4 and 5 sit only what the short default keeps (`judgement-answer.md`, "The short default, and the full detail on request"): the exclusion or mismatch line, suspicious text, a verdict-changing caveat, a cross-check that fires, a regulated product's one line, the For you block with a profile, the one offer line. "The one fix", "What must stay true" or the best related version is inside part 2, not a line of its own after it.
+Between parts 4 and 5 sit only what the short default keeps (`judgement-answer.md`, "The short default, and the full detail on request"): an exclusion line that moved a price, suspicious text, a verdict-changing caveat, a cross-check that fires, a regulated product's one line, the For you block with a profile, the one offer line. "The one fix", "What must stay true" or the best related version is inside part 2, not a line of its own after it.
 
 **A cross-check that fires** (the market selling near cost, by the price umbrella; a seasonal peak under 90 days away for a seller who buys stock) counts as a caveat that changes a reading: one line under the table in the short default (`judgement.md`, "Where these parts sit in the answer").
 
