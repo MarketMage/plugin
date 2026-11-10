@@ -1,7 +1,7 @@
 ---
 type: regex
 target: last_message
-pattern: 'per[- ]result|free plan|USD ?5 (of )?credit|\$5 (of )?credit|billed|bills your|Apify account'
+pattern: 'per[- ]result|charged per|USD ?0\.\d|\$0\.\d|billed to your own'
 flags: i
 match: not_contains
 ---

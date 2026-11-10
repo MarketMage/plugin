@@ -14,14 +14,14 @@ Part of the judgement rules (`judgement.md` is the core). **Read only after the 
 - **About the buyer and their taste:** "Who do you picture buying it?", "What do you know or use a lot?", "Anything you'd rule out (bulky, fragile, sizes, seasonal)?". One or two, never a form. Knowing the buyer is a real edge: say why in a few words when it helps.
 - **The estimate goes in the same message** (`running.md`, "Before any run"), with what the directions read will look at, in plain words, and the known-limits line when it applies ("Amazon US shows review text only to signed-in shoppers, so I'll read the same products on Amazon UK."), and how long it takes. End on "Answer that and say go", so answering and saying yes is one turn. No runs in this turn.
 - **Without a profile,** one of the two questions may be the one profile band that changes the directions (roughly what a first order could be: under $250, under $1k, $1k–5k, more), when the user hasn't said it; never the five profile questions here.
-- **About 120 words, 150 at most,** in the shape below: their rules in one line, the questions with no examples beyond a few words, then the read and its estimate in two short sentences with **one figure** ("up to about USD 0.40 (with a spending limit)", plus the free-plan figure only where it differs), never a typical figure beside the worst case.
+- **About 120 words, 150 at most,** in the shape below: their rules in one line, the questions with no examples beyond a few words, then the read and its estimate in two short sentences with **one range and one ceiling** ("usually USD 0.25–0.40; it can't go over USD 1.50", plus the free-plan high end only where it differs: `running.md`, item 4), never a figure per run.
 
 ```
 Got it: <their rules, in their words>.
 1. <question, one line; a reason in a few words at most>
 2. <question, one line>                                   (only when needed)
 Then I'll <the read: one sentence, at most three things it looks at>. <the known-limits line, when it applies>
-Up to about USD <X> (with a spending limit), about <N> minutes. Answer that and say go.
+Usually USD <L>–<H>; it can't go over USD <C>. About <N> minutes. Answer that and say go.
 ```
 
 ## 2. The directions: 2 or 3 reasoned hunches, never verdicts

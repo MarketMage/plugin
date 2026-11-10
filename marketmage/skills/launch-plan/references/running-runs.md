@@ -27,6 +27,8 @@ Say so before the run ("this takes a few minutes"), even when the user has alrea
 
 ## When a run goes wrong
 
+**A failed read is never a failure of the plugin.** Don't narrate it. Retry a read, a list or a record once, quietly, where that is safe and free; otherwise one plain line naming what couldn't be read and what the answer does without it, with no error text, code or retry ("TikTok Shop's numbers didn't come back, so demand rests on Amazon here."), and carry on. **Not for runs or the account:** a run that fails, is aborted or is refused (a usage or memory limit, an actor not found), and a sign-in error, are said plainly as `running-runs.md`, "When a run goes wrong" (or "Not connected yet") sets out: what happened, whether anything was charged, what fixes it, in calm words. A missing source that moves a verdict or its confidence says so.
+
 **Actors not public yet.** A table in `costs.md` that starts with **Pending** is for an actor CleanPull hasn't published yet. If its run fails because the actor isn't found, say plainly that this part of the job is coming soon, give what the other steps found, and don't retry.
 
 | What happened | What to do |

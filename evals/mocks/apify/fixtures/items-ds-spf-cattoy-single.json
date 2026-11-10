@@ -1,0 +1,460 @@
+[
+ {
+  "recordType": "summary",
+  "product": "automatic cat laser toy",
+  "offers": 3,
+  "offersBySource": {
+   "aliexpress": 3
+  },
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 3
+   }
+  },
+  "currency": "USD",
+  "unitPriceMin": 3.4,
+  "unitPriceMedian": 4.01,
+  "unitPriceMax": 4.76,
+  "moqMin": 1,
+  "moqMedian": 1,
+  "lowestMoqOffer": {
+   "title": "Automatic Cat Laser Toy Motion Sensor Rotating",
+   "source": "aliexpress",
+   "url": "https://www.aliexpress.us/item/3256800101.html",
+   "unitPrice": 3.4,
+   "moq": 1,
+   "supplierName": "Meow Gadget Store"
+  },
+  "singleUnit": {
+   "moq1OfferFound": true,
+   "unitPriceMin": 3.4,
+   "currency": "USD",
+   "offersRead": 3,
+   "offersBySource": {
+    "aliexpress": 3
+   },
+   "sampleUrl": "https://www.aliexpress.us/item/3256800101.html",
+   "sampleSource": "aliexpress",
+   "priceBasis": "before shipping"
+  },
+  "notes": [
+   "AliExpress search results carry no shipping: the unit price is before shipping."
+  ]
+ },
+ {
+  "recordType": "summary",
+  "product": "interactive cat ball",
+  "offers": 3,
+  "offersBySource": {
+   "aliexpress": 3
+  },
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 3
+   }
+  },
+  "currency": "USD",
+  "unitPriceMin": 4.1,
+  "unitPriceMedian": 4.84,
+  "unitPriceMax": 5.74,
+  "moqMin": 1,
+  "moqMedian": 1,
+  "lowestMoqOffer": {
+   "title": "Smart Rolling Cat Ball Rechargeable Feather",
+   "source": "aliexpress",
+   "url": "https://www.aliexpress.us/item/3256800202.html",
+   "unitPrice": 4.1,
+   "moq": 1,
+   "supplierName": "SmartPet Official Store"
+  },
+  "singleUnit": {
+   "moq1OfferFound": true,
+   "unitPriceMin": 4.1,
+   "currency": "USD",
+   "offersRead": 3,
+   "offersBySource": {
+    "aliexpress": 3
+   },
+   "sampleUrl": "https://www.aliexpress.us/item/3256800202.html",
+   "sampleSource": "aliexpress",
+   "priceBasis": "before shipping"
+  },
+  "notes": [
+   "AliExpress search results carry no shipping: the unit price is before shipping."
+  ]
+ },
+ {
+  "recordType": "summary",
+  "product": "cat window perch",
+  "offers": 3,
+  "offersBySource": {
+   "aliexpress": 3
+  },
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 3
+   }
+  },
+  "currency": "USD",
+  "unitPriceMin": 8.9,
+  "unitPriceMedian": 10.5,
+  "unitPriceMax": 12.46,
+  "moqMin": 1,
+  "moqMedian": 1,
+  "lowestMoqOffer": {
+   "title": "Cat Window Perch Cordless Suction Hammock",
+   "source": "aliexpress",
+   "url": "https://www.aliexpress.us/item/3256800303.html",
+   "unitPrice": 8.9,
+   "moq": 1,
+   "supplierName": "HomeNest Pet Store"
+  },
+  "singleUnit": {
+   "moq1OfferFound": true,
+   "unitPriceMin": 8.9,
+   "currency": "USD",
+   "offersRead": 3,
+   "offersBySource": {
+    "aliexpress": 3
+   },
+   "sampleUrl": "https://www.aliexpress.us/item/3256800303.html",
+   "sampleSource": "aliexpress",
+   "priceBasis": "before shipping"
+  },
+  "notes": [
+   "AliExpress search results carry no shipping: the unit price is before shipping."
+  ]
+ },
+ {
+  "recordType": "summary",
+  "product": "cardboard cat scratcher",
+  "offers": 0,
+  "offersBySource": {
+   "aliexpress": 0
+  },
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 0
+   }
+  },
+  "currency": "USD",
+  "unitPriceMin": null,
+  "unitPriceMedian": null,
+  "moqMin": null,
+  "singleUnit": {
+   "moq1OfferFound": false,
+   "unitPriceMin": null,
+   "currency": "USD",
+   "offersRead": 0,
+   "offersBySource": {
+    "aliexpress": 0
+   },
+   "sampleUrl": null,
+   "sampleSource": null,
+   "priceBasis": "before shipping"
+  },
+  "notes": [
+   "AliExpress showed no listing whose title names every word of this idea."
+  ]
+ },
+ {
+  "recordType": "summary",
+  "product": "catnip toy",
+  "offers": 3,
+  "offersBySource": {
+   "aliexpress": 3
+  },
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 3
+   }
+  },
+  "currency": "USD",
+  "unitPriceMin": 1.2,
+  "unitPriceMedian": 1.42,
+  "unitPriceMax": 1.68,
+  "moqMin": 1,
+  "moqMedian": 1,
+  "lowestMoqOffer": {
+   "title": "Catnip Fish Toy 5 Pack",
+   "source": "aliexpress",
+   "url": "https://www.aliexpress.us/item/3256800505.html",
+   "unitPrice": 1.2,
+   "moq": 1,
+   "supplierName": "Kitty Joy Store"
+  },
+  "singleUnit": {
+   "moq1OfferFound": true,
+   "unitPriceMin": 1.2,
+   "currency": "USD",
+   "offersRead": 3,
+   "offersBySource": {
+    "aliexpress": 3
+   },
+   "sampleUrl": "https://www.aliexpress.us/item/3256800505.html",
+   "sampleSource": "aliexpress",
+   "priceBasis": "before shipping"
+  },
+  "notes": [
+   "AliExpress search results carry no shipping: the unit price is before shipping."
+  ]
+ },
+ {
+  "recordType": "summary",
+  "product": "cat tunnel",
+  "offers": 3,
+  "offersBySource": {
+   "aliexpress": 3
+  },
+  "sources": {
+   "aliexpress": {
+    "status": "ok",
+    "offers": 3
+   }
+  },
+  "currency": "USD",
+  "unitPriceMin": 3.7,
+  "unitPriceMedian": 4.37,
+  "unitPriceMax": 5.18,
+  "moqMin": 1,
+  "moqMedian": 1,
+  "lowestMoqOffer": {
+   "title": "Collapsible Cat Tunnel with Crinkle Ball",
+   "source": "aliexpress",
+   "url": "https://www.aliexpress.us/item/3256800606.html",
+   "unitPrice": 3.7,
+   "moq": 1,
+   "supplierName": "PetFun Store"
+  },
+  "singleUnit": {
+   "moq1OfferFound": true,
+   "unitPriceMin": 3.7,
+   "currency": "USD",
+   "offersRead": 3,
+   "offersBySource": {
+    "aliexpress": 3
+   },
+   "sampleUrl": "https://www.aliexpress.us/item/3256800606.html",
+   "sampleSource": "aliexpress",
+   "priceBasis": "before shipping"
+  },
+  "notes": [
+   "AliExpress search results carry no shipping: the unit price is before shipping."
+  ]
+ },
+ {
+  "recordType": "offer",
+  "product": "automatic cat laser toy",
+  "source": "aliexpress",
+  "title": "Automatic Cat Laser Toy Motion Sensor Rotating",
+  "unitPriceMin": 3.4,
+  "unitPriceMax": 3.4,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "Meow Gadget Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568001010.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "automatic cat laser toy",
+  "source": "aliexpress",
+  "title": "Automatic Cat Laser Toy Motion Sensor Rotating v2",
+  "unitPriceMin": 4.01,
+  "unitPriceMax": 4.01,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "Meow Gadget Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568001011.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "automatic cat laser toy",
+  "source": "aliexpress",
+  "title": "Automatic Cat Laser Toy Motion Sensor Rotating v3",
+  "unitPriceMin": 4.62,
+  "unitPriceMax": 4.62,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "Meow Gadget Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568001012.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "interactive cat ball",
+  "source": "aliexpress",
+  "title": "Smart Rolling Cat Ball Rechargeable Feather",
+  "unitPriceMin": 4.1,
+  "unitPriceMax": 4.1,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "SmartPet Official Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568002020.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "interactive cat ball",
+  "source": "aliexpress",
+  "title": "Smart Rolling Cat Ball Rechargeable Feather v2",
+  "unitPriceMin": 4.84,
+  "unitPriceMax": 4.84,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "SmartPet Official Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568002021.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "interactive cat ball",
+  "source": "aliexpress",
+  "title": "Smart Rolling Cat Ball Rechargeable Feather v3",
+  "unitPriceMin": 5.58,
+  "unitPriceMax": 5.58,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "SmartPet Official Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568002022.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "cat window perch",
+  "source": "aliexpress",
+  "title": "Cat Window Perch Cordless Suction Hammock",
+  "unitPriceMin": 8.9,
+  "unitPriceMax": 8.9,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "HomeNest Pet Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568003030.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "cat window perch",
+  "source": "aliexpress",
+  "title": "Cat Window Perch Cordless Suction Hammock v2",
+  "unitPriceMin": 10.5,
+  "unitPriceMax": 10.5,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "HomeNest Pet Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568003031.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "cat window perch",
+  "source": "aliexpress",
+  "title": "Cat Window Perch Cordless Suction Hammock v3",
+  "unitPriceMin": 12.1,
+  "unitPriceMax": 12.1,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "HomeNest Pet Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568003032.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "catnip toy",
+  "source": "aliexpress",
+  "title": "Catnip Fish Toy 5 Pack",
+  "unitPriceMin": 1.2,
+  "unitPriceMax": 1.2,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "Kitty Joy Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568005050.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "catnip toy",
+  "source": "aliexpress",
+  "title": "Catnip Fish Toy 5 Pack v2",
+  "unitPriceMin": 1.42,
+  "unitPriceMax": 1.42,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "Kitty Joy Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568005051.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "catnip toy",
+  "source": "aliexpress",
+  "title": "Catnip Fish Toy 5 Pack v3",
+  "unitPriceMin": 1.63,
+  "unitPriceMax": 1.63,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "Kitty Joy Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568005052.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "cat tunnel",
+  "source": "aliexpress",
+  "title": "Collapsible Cat Tunnel with Crinkle Ball",
+  "unitPriceMin": 3.7,
+  "unitPriceMax": 3.7,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "PetFun Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568006060.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "cat tunnel",
+  "source": "aliexpress",
+  "title": "Collapsible Cat Tunnel with Crinkle Ball v2",
+  "unitPriceMin": 4.37,
+  "unitPriceMax": 4.37,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "PetFun Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568006061.html"
+ },
+ {
+  "recordType": "offer",
+  "product": "cat tunnel",
+  "source": "aliexpress",
+  "title": "Collapsible Cat Tunnel with Crinkle Ball v3",
+  "unitPriceMin": 5.03,
+  "unitPriceMax": 5.03,
+  "moq": 1,
+  "unit": "piece",
+  "supplierName": "PetFun Store",
+  "supplierRating": 4.7,
+  "ordersCount": null,
+  "url": "https://www.aliexpress.us/item/32568006062.html"
+ }
+]

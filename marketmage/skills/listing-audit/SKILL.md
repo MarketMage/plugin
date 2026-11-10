@@ -26,7 +26,7 @@ A score and a fix list for product pages. Read `references/running.md` first (co
 - **Run** `cleanpull/listing-quality-checker` with `productUrls`, `competitorUrls`, `keywords`.
 - **How long:** an audit usually takes **about 3–5 minutes** (real-user test round 3: a run announced as "about a minute" took 3 min 24 s, about 5 with the leaders' read). Say so as it starts, in the estimate when there is one; never "about a minute".
 - **Cost (paid plans):** USD 0.005 per page audited (each URL is read once); USD 0.007 more for a page from a site that blocks standard addresses. Comparison rows are free; a page that can't be read is not charged.
-  - **Example:** the user's page and 2 competitors' ≈ **USD 0.015**: run it straight away, with no cost said. 20 pages ≈ USD 0.10: give the one estimate (`references/running.md`, "Before any run") and get a yes.
+  - **Example:** the user's page and 2 competitors' ≈ **USD 0.015**: run it straight away, with no cost said. 20 pages ≈ USD 0.10: give the one approval line ("Usually USD 0.07–0.10; it can't go over USD 0.50.", `references/running.md`, "Before any run"), get a yes, and cap the run at that ceiling.
 
 ## 3. Read the results
 
