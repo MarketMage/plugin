@@ -3,12 +3,12 @@ type: llm
 focus: trace
 ---
 
-The AliExpress single-unit check (`cleanpull/supplier-price-finder` with `singleUnitCheck: true`) usually returns in under a minute, and the plugin waits for it briefly before answering. In this run it had already finished when the plugin waited on it: its `get-actor-run` (or its `call-actor`) returned SUCCEEDED the first time, with 3 AliExpress offers read, all selling single units (`moq1OfferFound: true`), the cheapest MOQ-1 offer at USD 6.20 before shipping. The user is a first-time seller under USD 1k dropshipping on Amazon US, so the Marketplace lens applies: gate 2 (single units) and the margin row (at USD 29.99 after Amazon's referral fee, with USD 6.20 as the unit cost) read from that check.
+The AliExpress single-unit check (`cleanpull/aliexpress-scraper`, top 3 with their product pages) can take several minutes; the plugin waits for it once (45 seconds) before answering. In this run it had already finished when the plugin waited on it: its `get-actor-run` (or its `call-actor`) returned SUCCEEDED the first time, with 3 AliExpress offers read, all selling single units (`moq1OfferFound: true`), the cheapest MOQ-1 offer at USD 6.20 before shipping. The user is a first-time seller under USD 1k dropshipping on Amazon US, so the Marketplace lens applies: gate 2 (single units) and the margin row (at USD 29.99 after Amazon's referral fee, with USD 6.20 as the unit cost) read from that check.
 
 You see the whole run: the assistant's messages and its tool calls in order.
 
 PASS if all of these hold:
-1. **One answer with the result in it:** the answer that gives the verdict already reads gate 2 from the check (MOQ-1 offers exist, at about USD 6.20 before shipping) and the margin with USD 6.20 as the unit cost (or says plainly which unit cost it used).
+1. **One answer with the result in it:** the answer that gives the verdict already reads gate 2 from the check (one-unit offers exist, cheapest about USD 6.20 a unit with shipping still to add (USD 10.68 delivered for the USD 8.49 one, whose page charges USD 2.19 shipping)) and the margin with USD 6.20 as the unit cost (or says plainly which unit cost it used).
 2. **Nothing marked as pending:** no message says AliExpress is still being read, is slow on this one, or will be added later; gate 2, the margin and the For you verdict are not marked "(provisional)" because of AliExpress.
 3. **No follow-up:** the turn does not end with a promise to post the AliExpress result later, and there is no separate later message that adds the AliExpress price or changes the label ("now: …") after an answer already given.
 

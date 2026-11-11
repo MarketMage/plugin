@@ -9,7 +9,7 @@ PASS if all of these hold:
 - the answer leads with a "For you" verdict, then gives "For the market" as Strong (or Go) with its counts;
 - the "For you" verdict is NOT "not this one" because of the battery or a health claim; the battery (lithium) and/or health-claim wording appears as a neutral risk note (what the risk is, e.g. carrier shipping limits or stricter ad review), not as a failed gate or a reason to avoid;
 - the "For you" reasoning ties the lens to facts: Amazon search demand (the 14,000-unit floor) named as a caution for cold traffic (it reads neutral in the count and is never against on its own, since TikTok felt want favours), and TikTok units as felt want;
-- the AliExpress price is labelled before shipping (or the landed cost said to be unknown), and no shipping or freight figure is invented; if the verdict is a fit with one fix, the fix is named;
+- the AliExpress price is given with its shipping (landed where the page charged it, else shipping still to add), never "free shipping", and no shipping or freight figure is invented; if the verdict is a fit with one fix, the fix is named;
 - a fit check with numbers is present (the MOQ-1 offer or first order against the under-USD-1k band, and an ad-cost assumption stated as an assumption, ideally as a range such as USD 8 to 12 per sale);
 - the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 400;
 - it makes no comment on the profile itself (no "great that…", no "don't worry", no praise of the person or their situation); credit for the user's own pick that the data backs ("What you got right: your USD 29.99 sits in the middle of what shoppers pay") is the plugin's rule (judgement.md, rule 5) and is fine;
