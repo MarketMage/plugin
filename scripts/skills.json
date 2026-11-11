@@ -38,7 +38,7 @@
     "judgement": true,
     "caps": [
       "- **This skill, by channel (`SKILL.md`, step 1c), estimate said and spending limit (never said):** the general blend about USD 0.25 with the chart's changes, limit USD 0.40; Amazon (chart, competition check on 5, Trends) about USD 0.21, limit USD 0.36; dropship or an own store with ads (TikTok, the lasting Meta ads, AliExpress on 5, Trends) about USD 0.26 (about USD 0.28 on the free plan), limit USD 0.43; Etsy or eBay (the niche read, Trends) about USD 0.20 (about USD 0.36 on the free plan), limit USD 0.54; makers (Trends, their marketplace on 3) about USD 0.29 (about USD 0.52 on the free plan), limit USD 0.78.",
-      "- The limit is split across the runs in proportion to their high ends, and leaves the AliExpress check its USD 0.02 an idea above its own high end; a budget the user gave is the limit when it is lower. Watches: their monthly estimate and their own Max cost per run (`find-products-watches.md`)."
+      "- Each floored run gets its floor first (\"Floors\" above), and the rest of the limit is split across the other runs in proportion to their high ends: dropship with ads, limit USD 0.43, AliExpress on 5 its floor USD 0.22 (0.12 + 5 × 0.02), then TikTok 0.08, Meta ads 0.12 and Trends 0.01 from the other USD 0.21; floors over the limit raise it to their sum; a budget the user gave is the limit when it is lower. Watches: their monthly estimate and their own Max cost per run (`find-products-watches.md`)."
     ]
   },
   "validate": {
@@ -58,7 +58,7 @@
     "judgement": true,
     "caps": [
       "- **This skill, estimate said and spending limit (never said):** the standard check about USD 0.14 in the US (USD 0.11 elsewhere), limit USD 0.29 (USD 0.26). With the AliExpress single-unit check about USD 0.18, limit USD 0.33 (the actor reserves USD 0.02 for its search, which the limit covers); with where they'd compete about USD 0.23, limit USD 0.38; the Maker lens about USD 0.22 (about USD 0.31 on the free plan), limit USD 0.47.",
-      "- Each run's cap is its share of the check's limit, in proportion to its high end; a budget the user gave (\"up to 30 cents\") is the limit when it is lower."
+      "- Each floored run (the AliExpress single-unit check: its high end + USD 0.02 an idea) gets its floor first, and the other runs share the rest of the check's limit in proportion to their high ends; a budget the user gave (\"up to 30 cents\") is the limit when it is lower."
     ]
   },
   "complaint-brief": {
@@ -232,7 +232,7 @@
       "alerts-sender"
     ],
     "caps": [
-      "- **This skill:** a one-off ads read of 2 brands on Google, Meta and TikTok at 30 ads: about USD 0.32, spending limit USD 0.48. Proven small advertisers (steps 1 and 3, two runs): about USD 0.11 (about USD 0.13 on the free plan), spending limit USD 0.28, split about USD 0.19 and 0.09 (limits never said).",
+      "- **This skill:** a one-off ads read of 2 brands on Google, Meta and TikTok at 30 ads: about USD 0.32 (about USD 0.36 on the free plan), spending limit USD 0.54. Proven small advertisers (steps 1 and 3, two runs): about USD 0.11 (about USD 0.13 on the free plan), spending limit USD 0.28, split about USD 0.19 and 0.09 (limits never said).",
       "- **Watches:** their monthly estimate and their own Max cost per run, as this skill and `watchlists.md` set out."
     ]
   },

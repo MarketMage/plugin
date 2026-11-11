@@ -37,9 +37,9 @@ Nothing else is needed: no tokens or developer apps. What each platform shows:
   - USD 0.001 per watch item checked (per 100 ads read) + USD 0.0015 per ad delivered;
   - Meta and TikTok: + USD 0.0035 per library request (a page of 30 Meta ads, or 12 TikTok ads; on Meta, per country chosen). Google ads data comes from the ad data provider only on a run where Google's library returns none, and then charges library requests the same way;
   - a brand with many active ads at the default `maxAdsPerTarget: 100`: Google ≈ **USD 0.15**, Meta ≈ USD 0.165, TikTok ≈ USD 0.18. For a quick look, `maxAdsPerTarget: 30`: about USD 0.05 a brand on Google, USD 0.05 on Meta, USD 0.06 on TikTok.
-  - **Example:** 2 brands on Google, Meta and TikTok at 30 ads ≈ USD 0.32: one approval line ("This costs about USD 0.32, occasionally a little more if I need to dig deeper to answer you.") and a yes.
+  - **Example:** 2 brands on Google, Meta and TikTok at 30 ads ≈ USD 0.32, about USD 0.36 on Apify's free plan (its up to 10 library requests cost double there): one approval line ("This costs about USD 0.32 (about USD 0.36 on Apify's free plan), occasionally a little more if I need to dig deeper to answer you.") and a yes.
 - **Timing:** Google takes seconds to a minute a brand (requests are spaced out); Meta and TikTok pages come through the service and can take a minute or two. Start with `waitSecs: 45` and follow the run.
-- **The spending limit:** internal, never said: max(1.5 × the estimate, the estimate + USD 0.15) (`references/running.md`, item 6), USD 0.48 in the example above: the run's `maxTotalChargeUsd`.
+- **The spending limit:** internal, never said: max(1.5 × the estimate, the estimate + USD 0.15) (`references/running.md`, item 6), USD 0.54 in the example above (from the free-plan figure, 0.36, the higher): the run's `maxTotalChargeUsd`.
 
 ## 3. Read the results
 
