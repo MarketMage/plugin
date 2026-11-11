@@ -38,7 +38,7 @@ If the user already wants it scheduled, make this first check the watchlist's ba
   - `products: [barcodes]`;
   - `mapPrices: {...}`;
   - `sources: ["amazon", "bestbuy", "google"]`.
-- **Cost per barcode:** USD 0.003 + 3 Google searches × USD 0.004 ≈ **USD 0.015**. With extra `googleStores`, add USD 0.004 for each. 20 barcodes ≈ USD 0.30, so say this and get a yes over USD 0.05.
+- **Cost per barcode:** USD 0.003 + 3 Google searches × USD 0.004 ≈ **USD 0.015**. With extra `googleStores`, add USD 0.004 for each. 20 barcodes ≈ USD 0.30, so over USD 0.05 say it as one estimate with the soft note ("This costs about USD 0.30, occasionally a little more if I need to dig deeper to answer you."), get a yes, and cap the run at its spending limit, USD 0.45, never said.
 - **Read all three lists** in each record, never only the first:
   - `mapViolations`: confirmed-new offers below MAP, each with `store`, `seller`, `price`, `belowBy`, `title`, `condition`, `conditionBasis`, `url` with `urlSource` and `googleUrl`, and `isInternationalVersion`;
   - `mapUnconfirmed`: offers below MAP whose condition is `unknown`. **These are breaks too:** a new or unstated-condition offer under MAP is a violation unless its title shows another condition. Put them in the violations table, each marked "condition not stated"; never drop them;

@@ -43,7 +43,7 @@ A chat's first MarketMage job has no earlier runs to reuse: then that read is sk
 
 ## 2. Runs, cheapest first
 
-**The standard check, up to about USD 0.14 in the US** (about USD 0.11 elsewhere, without TikTok and with Amazon's local-market reads). Say it once, as the one estimate for both rounds ("up to about USD 0.14 (with a spending limit)", `references/running.md`, "Before any run"), with how long it usually takes (3 to 5 minutes for the two rounds), and get a yes; then run it in two rounds, with the one-line note before the first round's calls (`references/running.md`, "Running").
+**The standard check, about USD 0.14 in the US** (USD 0.11 elsewhere, without TikTok and with Amazon's local-market reads), with a spending limit of USD 0.29 (USD 0.26 elsewhere), never said (`references/costs.md`, "Estimate and spending limit"). Say it once, as the one approval line for both rounds ("This costs about USD 0.14, occasionally a little more if I need to dig deeper to answer you", `references/running.md`, "Before any run"), each run's cap its share of that limit, with how long it usually takes (3 to 5 minutes for the two rounds), and get a yes; then run it in two rounds, with the one-line note before the first round's calls (`references/running.md`, "Running").
 
 | Round | Question | Actor | Input | Cost on paid plans |
 | --- | --- | --- | --- | --- |

@@ -12,7 +12,11 @@
       "marketmage-notebook",
       "ad-library-monitor"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **The guided session (steps 1 to 3, one yes), by lens (`first-use.md`, \"The approval line, per lens\"), estimate said and spending limit (never said):** off Amazon without dropship about USD 0.55, limit USD 0.83 (the account's first run about USD 0.45, limit USD 0.68); on Amazon about USD 0.51, limit USD 0.77; dropship on Amazon about USD 0.61, limit USD 0.92; Etsy or eBay about USD 0.90 with dropship or USD 0.80 for print on demand (about USD 1.33 and 1.23 on the free plan), limits USD 2 and USD 1.85; dropship through ads about USD 0.69 (about USD 0.74 on the free plan), limit USD 1.11.",
+      "- The welcome itself runs nothing: its one cost line names no figure beyond Apify's free USD 5 a month."
+    ]
   },
   "find-products": {
     "runs": [
@@ -31,7 +35,11 @@
       "alerts-sender",
       "marketmage-notebook"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill, by channel (`SKILL.md`, step 1c), estimate said and spending limit (never said):** the general blend about USD 0.25 with the chart's changes, limit USD 0.40; Amazon (chart, competition check on 5, Trends) about USD 0.21, limit USD 0.36; dropship or an own store with ads (TikTok, the lasting Meta ads, AliExpress on 5, Trends) about USD 0.26 (about USD 0.28 on the free plan), limit USD 0.43; Etsy or eBay (the niche read, Trends) about USD 0.20 (about USD 0.36 on the free plan), limit USD 0.54; makers (Trends, their marketplace on 3) about USD 0.29 (about USD 0.52 on the free plan), limit USD 0.78.",
+      "- Each floored run gets its floor first (\"Floors\" above), and the rest of the limit is split across the other runs in proportion to their high ends: dropship with ads, limit USD 0.43, AliExpress on 5 its floor USD 0.22 (0.12 + 5 × 0.02), then TikTok 0.08, Meta ads 0.12 and Trends 0.01 from the other USD 0.21; floors over the limit raise it to their sum; a budget the user gave is the limit when it is lower. Watches: their monthly estimate and their own Max cost per run (`find-products-watches.md`)."
+    ]
   },
   "validate": {
     "runs": [
@@ -47,7 +55,11 @@
     "pricesOnly": [
       "marketmage-notebook"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill, estimate said and spending limit (never said):** the standard check about USD 0.14 in the US (USD 0.11 elsewhere), limit USD 0.29 (USD 0.26). With the AliExpress single-unit check about USD 0.18, limit USD 0.33 (the actor reserves USD 0.02 for its search, which the limit covers); with where they'd compete about USD 0.23, limit USD 0.38; the Maker lens about USD 0.22 (about USD 0.31 on the free plan), limit USD 0.47.",
+      "- Each floored run (the AliExpress single-unit check: its high end + USD 0.02 an idea) gets its floor first, and the other runs share the rest of the check's limit in proportion to their high ends; a budget the user gave (\"up to 30 cents\") is the limit when it is lower."
+    ]
   },
   "complaint-brief": {
     "runs": [
@@ -56,7 +68,10 @@
       "reviews-monitor"
     ],
     "pricesOnly": [],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill:** both rounds (3 leaders' reviews on Amazon UK and Germany, plus factory offers) about USD 0.20, spending limit USD 0.35 (never said), each run's cap its share of it."
+    ]
   },
   "spy-store": {
     "runs": [
@@ -67,7 +82,10 @@
       "listing-quality-checker",
       "amazon-product-scraper"
     ],
-    "pricesOnly": []
+    "pricesOnly": [],
+    "caps": [
+      "- **This skill:** the full profile (tech + 250 products + promotions, several runs) about USD 0.25, spending limit USD 0.40 (never said), the runs' caps sharing it."
+    ]
   },
   "price-check": {
     "runs": [
@@ -75,7 +93,10 @@
       "any-store-product-monitor",
       "amazon-product-scraper"
     ],
-    "pricesOnly": []
+    "pricesOnly": [],
+    "caps": [
+      "- **This skill:** most checks are USD 0.05 or less and run with no line said (cap max(1.5 × the high end, the high end + USD 0.15)). Above that, e.g. 20 new barcodes at about USD 0.016 each: about USD 0.32, spending limit USD 0.48 (never said)."
+    ]
   },
   "price-watch": {
     "runs": [
@@ -87,6 +108,9 @@
       "shopify-store-scraper",
       "alerts-sender",
       "google-sheets-sync"
+    ],
+    "caps": [
+      "- **This skill:** a watch: its monthly estimate and its own Max cost per run (`watchlists.md`); a one-off read before it follows `price-check`."
     ]
   },
   "map-watch": {
@@ -96,6 +120,10 @@
     ],
     "pricesOnly": [
       "google-sheets-sync"
+    ],
+    "caps": [
+      "- **This skill:** a first MAP check of 20 barcodes about USD 0.30, spending limit USD 0.45 (never said).",
+      "- **Watches:** their monthly estimate and their own Max cost per run."
     ]
   },
   "rank-watch": {
@@ -106,6 +134,10 @@
     ],
     "pricesOnly": [
       "alerts-sender"
+    ],
+    "caps": [
+      "- **This skill:** one keyword at page 1 up to about USD 0.025, no yes needed, cap USD 0.18; 10 keywords about USD 0.25, spending limit USD 0.40; one keyword at `maxResults: 144` about USD 0.073, spending limit USD 0.23 (limits never said).",
+      "- **Watches:** their monthly estimate and their own Max cost per run."
     ]
   },
   "export": {
@@ -114,6 +146,9 @@
     ],
     "pricesOnly": [
       "watch-digest"
+    ],
+    "caps": [
+      "- **This skill:** USD 0.0001 a row: up to 500 rows runs with no line said; above that, one estimate with the soft note, and a spending limit of max(1.5 × it, it + USD 0.15), never said. An export schedule is bounded by its `limit`."
     ]
   },
   "reviews-watch": {
@@ -124,6 +159,10 @@
     ],
     "pricesOnly": [
       "alerts-sender"
+    ],
+    "caps": [
+      "- **This skill:** 4 product pages and 2 ASINs at 20 reviews about USD 0.07, spending limit USD 0.22 (never said); Trustpilot businesses about USD 0.076 each at 20 reviews (free plan higher: quote its figure).",
+      "- **Watches:** their monthly estimate and their own Max cost per run."
     ]
   },
   "gaps": {
@@ -136,7 +175,10 @@
     "pricesOnly": [
       "marketmage-notebook"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill:** three 250-product Shopify catalogues read and matched about USD 0.90, spending limit USD 1.35 (never said); each run's cap is its share of the limit, so the match run (high end about USD 0.29) gets about USD 0.44 and isn't stopped part-way through its pairs."
+    ]
   },
   "promo-watch": {
     "runs": [
@@ -145,6 +187,10 @@
     ],
     "pricesOnly": [
       "alerts-sender"
+    ],
+    "caps": [
+      "- **This skill:** a one-off read of 5 stores about USD 0.35, spending limit USD 0.53 (never said).",
+      "- **Watches:** their monthly estimate and their own Max cost per run."
     ]
   },
   "market-scan": {
@@ -157,7 +203,11 @@
       "alerts-sender",
       "marketmage-notebook"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill:** one keyword on Amazon US (summary) and eBay at 24 results about USD 0.12 (about USD 0.20 on the free plan), spending limit USD 0.35; 8 keywords on eBay about USD 0.71 (about USD 1.21 on the free plan), spending limit USD 1.82 (limits never said). The cap is never under the high end plus USD 0.02 a keyword per service marketplace.",
+      "- **Watches:** their monthly estimate and their own Max cost per run."
+    ]
   },
   "suppliers": {
     "runs": [
@@ -166,7 +216,11 @@
     "pricesOnly": [
       "marketmage-notebook"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill:** 3 ideas on Made-in-China and AliExpress about USD 0.30, spending limit USD 0.45; the single-unit check on 3 ideas about USD 0.08, spending limit USD 0.23; one idea on Made-in-China alone (about USD 0.025) needs no yes (limits never said).",
+      "- **Floor:** the cap (the run's spending limit) always leaves USD 0.02 per idea per AliExpress or Alibaba source above the high end (USD 0.07 per idea when Made-in-China joins the single-unit check): the actor reserves it before each search, and a cap near the estimate stopped a read after 1 of 7 ideas. When the formula gives less, the floor is the limit."
+    ]
   },
   "ads-watch": {
     "runs": [
@@ -176,13 +230,21 @@
     ],
     "pricesOnly": [
       "alerts-sender"
+    ],
+    "caps": [
+      "- **This skill:** a one-off ads read of 2 brands on Google, Meta and TikTok at 30 ads: about USD 0.32 (about USD 0.36 on the free plan), spending limit USD 0.54. Proven small advertisers (steps 1 and 3, two runs): about USD 0.11 (about USD 0.13 on the free plan), spending limit USD 0.28, split about USD 0.19 and 0.09 (limits never said).",
+      "- **Watches:** their monthly estimate and their own Max cost per run, as this skill and `watchlists.md` set out."
     ]
   },
   "listing-audit": {
     "runs": [
       "listing-quality-checker"
     ],
-    "pricesOnly": []
+    "pricesOnly": [],
+    "caps": [
+      "- **This skill:** up to about 10 pages runs with no line said (cap max(1.5 × the high end, the high end + USD 0.15)); 20 pages about USD 0.10, spending limit USD 0.25 (never said).",
+      "- **Watches:** their monthly estimate and their own Max cost per run."
+    ]
   },
   "watchlists": {
     "runs": [],
@@ -203,6 +265,9 @@
       "amazon-bestsellers-tracker",
       "catalog-matcher",
       "alerts-sender"
+    ],
+    "caps": [
+      "- **This skill:** watches use their monthly estimate and their own Max cost per run (`watchlists.md`); listing, pausing and reading them costs nothing."
     ]
   },
   "launch-plan": {
@@ -217,13 +282,19 @@
       "amazon-keyword-rank-tracker",
       "marketmage-notebook"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill:** steps 1 and 2 (suppliers at the first-order quantity and the leaders' complaints) as one approval line, \"This costs about USD <total>, occasionally a little more if I need to dig deeper to answer you\", the spending limit max(1.5 × the total, the total + USD 0.15), never said. The launch watch keeps its monthly estimate and its own Max cost per run (`launch-plan-more.md`)."
+    ]
   },
   "notebook": {
     "runs": [
       "marketmage-notebook"
     ],
-    "pricesOnly": []
+    "pricesOnly": [],
+    "caps": [
+      "- **This skill:** each notebook call is capped at USD 0.01 and needs no yes once the user has opted in."
+    ]
   },
   "briefing": {
     "runs": [
@@ -232,6 +303,9 @@
     "pricesOnly": [
       "watch-digest"
     ],
-    "judgement": true
+    "judgement": true,
+    "caps": [
+      "- **This skill:** reading watches' digests starts no run; the notebook read is capped at USD 0.01. Watches use their monthly estimate and their own Max cost per run."
+    ]
   }
 }

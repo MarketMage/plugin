@@ -1,0 +1,15 @@
+---
+type: llm
+focus: trace
+---
+
+The user dropships through their own Shopify store with Facebook and TikTok ads and gave a go-ahead up to USD 1. In the mocked data: TikTok Shop's cat toy listings (an automatic laser toy 6,400 sold, an interactive rolling ball 5,200, a window perch 3,800, a scratcher box 2,100, catnip toys 1,400, a tunnel 900; a dog grooming glove that isn't a cat toy; a handheld laser pointer with 60); Meta ads running 35+ days (two stores advertising the automatic laser toy, the longest since 28 August, so 70+ days; the rolling ball since 2 September; the window perch since 30 September; the scratcher box since 20 September; plus a cat food brand, a vet clinic and a store's whole "cat collection", which are not cat toy ads); the AliExpress single-unit check (single units from USD 3.40 for the laser toy, 4.10 the ball, 8.90 the perch, 1.20 catnip, 3.70 the tunnel; no matching listing for the cardboard scratcher; no order counts on any offer). You see the whole run; judge the assistant's messages.
+
+PASS if all of these hold:
+- the research ran without asking first (the go-ahead and budget were given), and the answer is a table or list of cat toy ideas;
+- the answer says, for the leading ideas, which sources back each one in plain words (for example "selling on TikTok and advertised for 70+ days", or TikTok units plus how long ads have run plus a single-unit AliExpress price), and an idea backed by more sources is placed above one backed by fewer when their other signals are similar (for example the automatic laser toy or the rolling ball above catnip toys or the tunnel);
+- the ad evidence is checked for relevance: the cat food brand, the vet clinic and the store's whole-collection ad are not counted as backing any toy idea (left out quietly or named in one exclusion line), and the dog grooming glove is not presented as a cat toy idea;
+- it gives no AliExpress order counts or "orders" figures, since the data has none (single-unit prices are fine), and the cardboard scratcher's missing AliExpress match is said as no matching listing (or not confirmed yet), not as proof it can't be sourced;
+- the wording is for a seller: no "dataset", "actor", "call-actor", "maxTotalChargeUsd" or field names, and no cost line after the runs.
+
+FAIL if it asks for approval instead of running, if it never reads the Meta ads or the AliExpress check, if it gives no per-idea sources, if it counts the cat food, vet or whole-collection ads as backing, if it invents AliExpress order counts, or if it closes on what the runs cost.

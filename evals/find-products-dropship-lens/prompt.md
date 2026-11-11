@@ -1,5 +1,5 @@
 ---
-description: find-products through the cold-traffic dropship lens. A first-time dropshipper with under USD 1k, selling through their own store with TikTok and Facebook ads, asks for cat toy ideas. The search is shaped by the lens (TikTok felt-want first, platform rules checked, risk notes neutral, light, MOQ-1 suppliers offered), and Amazon search demand counts against for them.
+description: find-products through the cold-traffic dropship lens. A first-time dropshipper with under USD 1k, selling through their own store with TikTok and Facebook ads, asks for cat toy ideas. The search is shaped by the lens (TikTok felt-want first, with the Meta ads that have lasted and AliExpress single units read by default since 0.4.11, platform rules checked, risk notes neutral, light), and Amazon search demand is never a lead for them.
 max_turns: 25
 allowed_tools: [Read, Skill]
 runs: 1

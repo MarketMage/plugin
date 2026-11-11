@@ -47,8 +47,8 @@ When the user gives a dataset from an earlier read, match it directly: Catalog M
   - `gaps` and `gapsInYourBrandsOnly` as agreed.
 - **Cost:** USD 0.05 per competitor catalogue compared + USD 0.002 per matched pair + USD 0.0001 per gap row.
   - Pairs: estimate 10% of the smaller catalogue (rival stores usually overlap less: 2 to 4% in CleanPull's tests on outdoor stores; a reseller of the same brands can overlap much more). Gaps: up to the size of the other catalogue, fewer with `gapsInYourBrandsOnly`.
-  - **Example:** the user's 250 products against two rivals' 250 each, all on Shopify: reads 750 × 0.0008 = USD 0.60; match 2 × 0.05 + about 80 pairs × 0.002 + about 300 gaps × 0.0001 ≈ USD 0.29. **Up to about USD 0.90 in all (with a spending limit):** the one estimate, with the question, and get a yes.
-- **The cap** on the match run: 1.5× its estimate plus USD 0.05 (in a live check, a cap only a little above the estimate stopped the pairs while the summary still came out). If it stops at the cap, `RUN_SUMMARY` says so (`stoppedAtSpendingLimit`): say how many pairs the summary counted but weren't delivered, and offer a rerun with a higher cap.
+  - **Example:** the user's 250 products against two rivals' 250 each, all on Shopify: reads 750 × 0.0008 = USD 0.60; match 2 × 0.05 + about 80 pairs × 0.002 + about 300 gaps × 0.0001 ≈ USD 0.29. **About USD 0.90 in all, occasionally a little more if I need to dig deeper to answer you:** the one approval line, with the question, and get a yes.
+- **The cap** on each run: its share of the spending limit (USD 1.35 here, never said), in proportion to its high end, so the match run gets about USD 0.44 (`references/running.md`, item 6; in a live check, a cap only a little above the estimate stopped the pairs while the summary still came out, which the limit's room prevents). If it stops at the cap, `RUN_SUMMARY` says so (`stoppedAtSpendingLimit`): say how many pairs the summary counted but weren't delivered, and offer a rerun with a higher cap.
 
 ## 4. Read the results
 
