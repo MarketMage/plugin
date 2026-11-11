@@ -182,7 +182,7 @@ def table(name: str, a: dict, as_of: datetime.datetime) -> str:
         lines += ['', f'**From {date}:** ' + ('; '.join(notes) + '. ' if notes else '')
                   + (f'The events marked "from {date}" start then. ' if added else '')
                   + ('Other prices stay the same. ' if not notes else '')
-                  + f'Before {date}, quote the current prices.']
+                  + f'Before {date}, quote the current prices: the per-run estimates in the skills use them and run slightly low from that date (the spending limit covers the difference).']
     return '\n'.join(lines)
 
 

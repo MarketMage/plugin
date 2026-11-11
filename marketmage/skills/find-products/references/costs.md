@@ -142,7 +142,7 @@ Default memory 512 MB. Prices per 1,000 events, by Apify plan:
 | `product-details` | Product page details | $5.00 | $3.50 | $3.15 | $2.80 |
 | `review` | Review | $0.90 | $0.45 | $0.40 | $0.36 |
 
-**From 2026-11-25:** `listing` becomes $1.50 on Free, $1.00 on Bronze, $0.90 on Silver, $0.80 on Gold+; `review` becomes $1.20 on Free, $0.90 on Bronze, $0.81 on Silver, $0.72 on Gold+. Before 2026-11-25, quote the current prices.
+**From 2026-11-25:** `listing` becomes $1.50 on Free, $1.00 on Bronze, $0.90 on Silver, $0.80 on Gold+; `review` becomes $1.20 on Free, $0.90 on Bronze, $0.81 on Silver, $0.72 on Gold+. Before 2026-11-25, quote the current prices: the per-run estimates in the skills use them and run slightly low from that date (the spending limit covers the difference).
 
 ### `cleanpull/reviews-monitor`: Reviews Monitor: Shopify, Amazon & Trustpilot
 
