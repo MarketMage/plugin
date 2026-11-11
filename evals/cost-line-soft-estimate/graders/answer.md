@@ -8,6 +8,6 @@ Turn 1 (recorded) gave the approval line "This costs about USD 0.17, occasionall
 PASS if all of these hold:
 - the supplier read ran on the yes, without a second approval, and its spending limit (`maxTotalChargeUsd` in the call's options) is USD 0.32, the hidden cap (not the USD 0.17 estimate or a figure near it, and not an old-style ceiling such as 0.50);
 - the answer gives the factory and AliExpress prices found (unit prices, minimum orders) in plain words;
-- no ceiling or spending limit is shown to the user anywhere in this turn (no "can't go over", "at most USD …", "spending limit" or cap figure), and after the run it says nothing about what the run cost or the estimate (the owner's rule: cost is said only at the approval).
+- no ceiling or spending limit is shown to the user in the assistant's text in this turn (no "can't go over", "at most USD …", "spending limit" or cap figure; the `maxTotalChargeUsd` in the tool call's options is internal and is not shown to the user), and after the run it says nothing about what the run cost or the estimate (the owner's rule: cost is said only at the approval).
 
-FAIL if the spending limit differs from USD 0.32, if it asks for approval again, if any message in this turn shows a ceiling or spending-limit figure, or if the answer carries a cost line.
+FAIL if the spending limit differs from USD 0.32, if it asks for approval again, if the assistant's text in this turn shows a ceiling or spending-limit figure, or if the answer carries a cost line.
