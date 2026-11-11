@@ -1,6 +1,6 @@
 # Running: when the user asks
 
-The part of `running.md` read when one of these comes up: who runs this and what the connector can reach, a session allowance the user offers, Apify's plan names, "show me the input", checking a watch's cap in the Console, a secret or a delivery channel. The rest of the rules (and the few things MarketMage won't do) are in `running.md` and its other parts.
+The part of `running.md` read when one of these comes up: who runs this and what the connector can reach, a session allowance the user offers, a plan the user's answer changes, Apify's plan names, "show me the input", checking a watch's cap in the Console, a secret or a delivery channel. The rest of the rules (and the few things MarketMage won't do) are in `running.md` and its other parts.
 
 ## Who runs this, when the user asks
 
@@ -27,6 +27,14 @@ Never suggest uninstalling or removing the plugin unless the user says they want
 - a run whose high end doesn't fit what's left is the one moment the allowance is spoken of: it stops and asks, with its one estimate and why ("this one costs about USD 0.20, occasionally a little more if I need to dig deeper to answer you; USD 0.08 of your allowance is left: go ahead?");
 - it **never covers a watch, a schedule, a task change, an export schedule or anything recurring**: those always get their own yes, with their monthly cost;
 - it ends with the chat (never saved to the notebook or carried to another chat), or sooner when the user withdraws or changes it.
+
+## A changed plan
+
+**When the user's answer to an optional question changes the plan** (the approval asked how they sell, their budget or a price range, and the answer, "dropshipping", "I sell on Etsy", "under $1k", changes which reads run, or raises the estimate at all), the yes given earlier, or a "go ahead" in that same message, covers the new plan only when both hold:
+- the new plan's estimate (the free-plan figure when higher) is at most the one approved;
+- the "Reading … now" line before the first `call-actor` names the reads that run, the new ones by name ("Reading TikTok Shop, the Meta ads that have run 35+ days and AliExpress single units now: about USD 0.24, occasionally a little more if I need to dig deeper to answer you.").
+
+Otherwise start nothing: give the new plan's estimate in one line, naming the reads it adds or drops, and ask again ("For dropshipping I'd read TikTok Shop, the Meta ads that have run 35+ days, AliExpress single units and Trends instead of the Amazon chart. This costs about USD 0.26 (about USD 0.28 on Apify's free plan), occasionally a little more if I need to dig deeper to answer you. Go ahead?"). Never run a changed plan silently on the earlier yes. Its spending limit comes from the new estimate (`running.md`, item 6). An answer that changes only the wording or the ranking (the same reads, the same estimate) needs no new yes.
 
 ## Tier names
 

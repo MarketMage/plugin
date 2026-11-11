@@ -18,3 +18,7 @@ Answers are read by sellers, most of them not technical: never write as if the d
 
 - **The link to the full results is optional:** give it only when the answer shows part of a longer list the user may want (more reviews, listings or offers than the answer quotes), as one plain line: "Full list of the reviews: <link>", "All 48 listings: <link>". Never a "Dataset:" label, never a bare ID, never by default.
 - **Inside the plugin, the words stay:** these rules, tool calls and inputs keep their own names; only the text the user reads changes.
+
+## The market column beside the fit note
+
+**A row's market cell and its For you note read as one plain sentence to someone new.** The market cell is what the data shows so far, for anyone; the note is how the idea suits this seller. When the market cell can't call it yet (too few checks read), it says what is in, in plain words ("2 good signs, none against so far: too few checks to call it"; "only 1 check read so far, nothing against"), never "Nothing either way yet" or "too few reads to call" on its own beside a label such as "a fit, with one fix", which reads as a contradiction. Above such a table, one line says once what the two parts mean ("The middle column is what the market data shows so far; the note by each idea is how it suits you: dropship, under USD 1k."). The note's label stays as it is; only the words around it change.

@@ -52,3 +52,7 @@ The reading:
   - **Crowded, read neutral** (the middle reading) or **between:** neutral, with the unserved angle as a line.
   - **Crowded, read in favour** (the outlasting reading): demand being proven now: several stores think it's worth a launch this month; the ones still advertising in five weeks join the proven count.
 - **Never counted, never a gate.** It is one line beside Where you'd compete: it doesn't change that row, the for/against count or the label, and never makes "not this one" or "a long shot". It goes in the For you block's ad-cost line, after the advertiser counts.
+
+## Said exactly
+
+**Two Meta reads, never blurred.** The lasting-ads read (`minDaysRunning: 35` on the niche's keyword: which stores have kept ads running 35+ days) shows that ads for the niche have paid for someone; Where you'd compete (one row per advertiser for each idea: how many stores advertise it, active, proven and new) is the crowd for each idea. When only the first was read, a line about the missing read names both exactly, in plain words: "I read which stores have kept ads running 35+ days for "cat toys"; I haven't yet counted how many stores advertise each idea (the Where you'd compete read)". Never "the ideas are missing the ads check", "how many stores already run Facebook and Instagram ads for them" as if nothing on Meta were read, or the lasting-ads advertisers counted as Where you'd compete's crowd.
