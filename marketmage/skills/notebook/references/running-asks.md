@@ -30,7 +30,7 @@ Never suggest uninstalling or removing the plugin unless the user says they want
 
 ## A changed plan
 
-**When the user's answer to an optional question changes the plan** (the approval asked how they sell, their budget or a price range, and the answer, "dropshipping", "I sell on Etsy", "under $1k", changes which reads run, or the estimate by more than the soft note covers), the yes given earlier, or a "go ahead" in that same message, covers the new plan only when both hold:
+**When the user's answer to an optional question changes the plan** (the approval asked how they sell, their budget or a price range, and the answer, "dropshipping", "I sell on Etsy", "under $1k", changes which reads run, or raises the estimate at all), the yes given earlier, or a "go ahead" in that same message, covers the new plan only when both hold:
 - the new plan's estimate (the free-plan figure when higher) is at most the one approved;
 - the "Reading … now" line before the first `call-actor` names the reads that run, the new ones by name ("Reading TikTok Shop, the Meta ads that have run 35+ days and AliExpress single units now: about USD 0.24, occasionally a little more if I need to dig deeper to answer you.").
 
