@@ -22,6 +22,66 @@ You are the Apify `get-actor-run` tool. Reply with exactly one JSON object below
 
 {"runId": "<runId>", "actorName": "cleanpull/supplier-price-finder", "status": "SUCCEEDED", "statusMessage": "<message>", "defaultDatasetId": "<ds>", "defaultKeyValueStoreId": "kv-supplier-price-finder", "chargedEventCounts": {"product-summary": 1, "offer": 3, "provider-search": 1, "provider-record": 3}, "summary": "SUCCEEDED. 4 items.", "nextStep": "Call get-dataset-items with datasetId <ds> to read the results."}
 
+**`run-axs-cattoy`** (AliExpress Scraper, finished by the first wait): always reply with this JSON:
+
+{"runId": "run-axs-cattoy", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-cattoy", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 11 products; 27 pages read for 11 rows. cardboard cat scratcher: no results.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 11, "product-details": 10}}
+
+**`run-axs-cattoy-slow`** (AliExpress Scraper, its product pages slow). Count how many times `get-actor-run` was already answered for this same `runId` before this call. If three or fewer, reply with this JSON:
+
+{"runId": "run-axs-cattoy-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-cattoy", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "RUNNING", "statusMessage": "Reading AliExpress product pages…", "chargedEventCounts": {}}
+
+Otherwise (four or more answered before), it has finished: reply with this JSON:
+
+{"runId": "run-axs-cattoy-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-cattoy", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 11 products; 27 pages read for 11 rows. cardboard cat scratcher: no results.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 11, "product-details": 10}}
+
+**`run-axs-eyemask`** (AliExpress Scraper, finished by the first wait): always reply with this JSON:
+
+{"runId": "run-axs-eyemask", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-eyemask", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 8 pages read for 3 rows. 1 product page could not be read (delivered from its search card).", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 2}}
+
+**`run-axs-eyemask-slow`** (AliExpress Scraper, its product pages slow). Count how many times `get-actor-run` was already answered for this same `runId` before this call. If three or fewer, reply with this JSON:
+
+{"runId": "run-axs-eyemask-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-eyemask", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "RUNNING", "statusMessage": "Reading AliExpress product pages…", "chargedEventCounts": {}}
+
+Otherwise (four or more answered before), it has finished: reply with this JSON:
+
+{"runId": "run-axs-eyemask-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-eyemask", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 8 pages read for 3 rows. 1 product page could not be read (delivered from its search card).", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 2}}
+
+**`run-axs-fidget`** (AliExpress Scraper, finished by the first wait): always reply with this JSON:
+
+{"runId": "run-axs-fidget", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-fidget", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 7 pages read for 3 rows.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 3}}
+
+**`run-axs-fidget-slow`** (AliExpress Scraper, its product pages slow). Count how many times `get-actor-run` was already answered for this same `runId` before this call. If three or fewer, reply with this JSON:
+
+{"runId": "run-axs-fidget-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-fidget", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "RUNNING", "statusMessage": "Reading AliExpress product pages…", "chargedEventCounts": {}}
+
+Otherwise (four or more answered before), it has finished: reply with this JSON:
+
+{"runId": "run-axs-fidget-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-fidget", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 7 pages read for 3 rows.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 3}}
+
+**`run-axs-bakingmat`** (AliExpress Scraper, finished by the first wait): always reply with this JSON:
+
+{"runId": "run-axs-bakingmat", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-bakingmat", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 7 pages read for 3 rows.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 3}}
+
+**`run-axs-bakingmat-slow`** (AliExpress Scraper, its product pages slow). Count how many times `get-actor-run` was already answered for this same `runId` before this call. If three or fewer, reply with this JSON:
+
+{"runId": "run-axs-bakingmat-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-bakingmat", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "RUNNING", "statusMessage": "Reading AliExpress product pages…", "chargedEventCounts": {}}
+
+Otherwise (four or more answered before), it has finished: reply with this JSON:
+
+{"runId": "run-axs-bakingmat-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-bakingmat", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 7 pages read for 3 rows.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 3}}
+
+**`run-axs-harness`** (AliExpress Scraper, finished by the first wait): always reply with this JSON:
+
+{"runId": "run-axs-harness", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-harness", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 7 pages read for 3 rows.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 3}}
+
+**`run-axs-harness-slow`** (AliExpress Scraper, its product pages slow). Count how many times `get-actor-run` was already answered for this same `runId` before this call. If three or fewer, reply with this JSON:
+
+{"runId": "run-axs-harness-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-harness", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "RUNNING", "statusMessage": "Reading AliExpress product pages…", "chargedEventCounts": {}}
+
+Otherwise (four or more answered before), it has finished: reply with this JSON:
+
+{"runId": "run-axs-harness-slow", "actorName": "cleanpull/aliexpress-scraper", "defaultDatasetId": "ds-axs-harness", "defaultKeyValueStoreId": "kv-aliexpress-scraper", "status": "SUCCEEDED", "statusMessage": "COMPLETE: 3 products; 7 pages read for 3 rows.", "chargedEventCounts": {"apify-actor-start": 1, "listing": 3, "product-details": 3}}
+
 **Any other `runId`:**
 
 {"runId": "<runId>", "status": "SUCCEEDED", "statusMessage": "Finished."}

@@ -83,7 +83,7 @@ USPS Ground Advantage, commercial prices per parcel within the US (USPS Notice 1
 - **The sum:** price − card fee (2.9% + USD 0.30, an assumption) − unit or landed cost − shipping estimate = what a sale leaves, before ads; then at USD 8 and USD 12 of ads per sale. The waterfall gets a bar labelled "shipping (estimate)".
 - **Over 10 lb:** no band here: the margin is before shipping, and their carrier's price is asked once.
 - **No weight read and none given:** the margin is "before shipping", said once, and the one question that completes it is the pack's weight.
-- **A dropshipper** already has shipping in a landed cost or labels the cost "before shipping" (the cold-traffic lens); no estimate is added there. **FBA sellers:** the FBA fee covers delivery to the buyer; no estimate. **Outside the US:** no table here: the margin is before shipping, and their carrier's price is asked once.
+- **A dropshipper** already has shipping in a landed cost or labels the cost "plus shipping, still to add" (the cold-traffic lens; never "free shipping"); no estimate is added there. **FBA sellers:** the FBA fee covers delivery to the buyer; no estimate. **Outside the US:** no table here: the margin is before shipping, and their carrier's price is asked once.
 - These are reference prices, sourced and dated (`judgement.md`, "Every fee and rate has a source, never memory"): never another carrier's figure from memory.
 
 ## Reference exchange rates

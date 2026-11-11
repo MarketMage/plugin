@@ -7,6 +7,7 @@
       "google-trends-scraper",
       "marketplace-search-scanner",
       "supplier-price-finder",
+      "aliexpress-scraper",
       "amazon-product-scraper",
       "watch-digest",
       "marketmage-notebook",
@@ -14,7 +15,7 @@
     ],
     "judgement": true,
     "caps": [
-      "- **The guided session (steps 1 to 3, one yes), by lens (`first-use.md`, \"The approval line, per lens\"), estimate said and spending limit (never said):** off Amazon without dropship about USD 0.55, limit USD 0.83 (the account's first run about USD 0.45, limit USD 0.68); on Amazon about USD 0.51, limit USD 0.77; dropship on Amazon about USD 0.61, limit USD 0.92; Etsy or eBay about USD 0.90 with dropship or USD 0.80 for print on demand (about USD 1.33 and 1.23 on the free plan), limits USD 2 and USD 1.85; dropship through ads about USD 0.69 (about USD 0.74 on the free plan), limit USD 1.11.",
+      "- **The guided session (steps 1 to 3, one yes), by lens (`first-use.md`, \"The approval line, per lens\"), estimate said and spending limit (never said):** off Amazon without dropship about USD 0.55, limit USD 0.83 (the account's first run about USD 0.45, limit USD 0.68); on Amazon about USD 0.51, limit USD 0.77; dropship on Amazon about USD 0.55 (about USD 0.57 on the free plan), limit USD 0.86; Etsy or eBay about USD 0.84 with dropship or USD 0.80 for print on demand (about USD 1.29 and 1.23 on the free plan), limits USD 1.94 and USD 1.85; dropship through ads about USD 0.64 (about USD 0.72 on the free plan), limit USD 1.08.",
       "- The welcome itself runs nothing: its one cost line names no figure beyond Apify's free USD 5 a month."
     ]
   },
@@ -29,6 +30,7 @@
       "shopify-store-scraper",
       "amazon-product-scraper",
       "supplier-price-finder",
+      "aliexpress-scraper",
       "reviews-monitor"
     ],
     "pricesOnly": [
@@ -37,8 +39,8 @@
     ],
     "judgement": true,
     "caps": [
-      "- **This skill, by channel (`SKILL.md`, step 1c), estimate said and spending limit (never said):** the general blend about USD 0.25 with the chart's changes, limit USD 0.40; Amazon (chart, competition check on 5, Trends) about USD 0.21, limit USD 0.36; dropship or an own store with ads (TikTok, the lasting Meta ads, AliExpress on 5, Trends) about USD 0.26 (about USD 0.28 on the free plan), limit USD 0.43; Etsy or eBay (the niche read, Trends) about USD 0.20 (about USD 0.36 on the free plan), limit USD 0.54; makers (Trends, their marketplace on 3) about USD 0.29 (about USD 0.52 on the free plan), limit USD 0.78.",
-      "- Each floored run gets its floor first (\"Floors\" above), and the rest of the limit is split across the other runs in proportion to their high ends: dropship with ads, limit USD 0.43, AliExpress on 5 its floor USD 0.22 (0.12 + 5 × 0.02), then TikTok 0.08, Meta ads 0.12 and Trends 0.01 from the other USD 0.21; floors over the limit raise it to their sum; a budget the user gave is the limit when it is lower. Watches: their monthly estimate and their own Max cost per run (`find-products-watches.md`)."
+      "- **This skill, by channel (`SKILL.md`, step 1c), estimate said and spending limit (never said):** the general blend about USD 0.25 with the chart's changes, limit USD 0.40; Amazon (chart, competition check on 5, Trends) about USD 0.21, limit USD 0.36; dropship or an own store with ads (TikTok, the lasting Meta ads, AliExpress on 5 with their product pages, Trends) about USD 0.20 (about USD 0.26 on the free plan), limit USD 0.41; Etsy or eBay (the niche read, Trends) about USD 0.20 (about USD 0.36 on the free plan), limit USD 0.54; makers (Trends, their marketplace on 3) about USD 0.29 (about USD 0.52 on the free plan), limit USD 0.78.",
+      "- The rest of the limit is split across the runs in proportion to their high ends (only a run with a floor, \"Floors\" above, gets its floor first; the AliExpress read has none): dropship with ads, limit USD 0.41, split by the free-plan high ends: AliExpress on 5 USD 0.15 (0.096 on the free plan, 0.063 on paid plans), TikTok 0.10, the Meta ads 0.15 and Trends 0.01; a budget the user gave is the limit when it is lower. Watches: their monthly estimate and their own Max cost per run (`find-products-watches.md`)."
     ]
   },
   "validate": {
@@ -48,6 +50,7 @@
       "google-trends-scraper",
       "marketplace-search-scanner",
       "supplier-price-finder",
+      "aliexpress-scraper",
       "reviews-monitor",
       "ad-library-monitor",
       "shopify-store-scraper"
@@ -57,8 +60,8 @@
     ],
     "judgement": true,
     "caps": [
-      "- **This skill, estimate said and spending limit (never said):** the standard check about USD 0.14 in the US (USD 0.11 elsewhere), limit USD 0.29 (USD 0.26). With the AliExpress single-unit check about USD 0.18, limit USD 0.33 (the actor reserves USD 0.02 for its search, which the limit covers); with where they'd compete about USD 0.23, limit USD 0.38; the Maker lens about USD 0.22 (about USD 0.31 on the free plan), limit USD 0.47.",
-      "- Each floored run (the AliExpress single-unit check: its high end + USD 0.02 an idea) gets its floor first, and the other runs share the rest of the check's limit in proportion to their high ends; a budget the user gave (\"up to 30 cents\") is the limit when it is lower."
+      "- **This skill, estimate said and spending limit (never said):** the standard check about USD 0.14 in the US (USD 0.11 elsewhere), limit USD 0.29 (USD 0.26). With the AliExpress read (`aliexpress-scraper`, the top 3 with their product pages, about USD 0.013) about USD 0.15 (about USD 0.16 on the free plan), limit USD 0.31; with where they'd compete too about USD 0.20 (about USD 0.21 on the free plan), limit USD 0.36; the Maker lens about USD 0.22 (about USD 0.31 on the free plan), limit USD 0.47.",
+      "- The runs share the check's limit in proportion to their high ends (a run with a floor, \"Floors\" above, gets it first; the AliExpress read has none); a budget the user gave (\"up to 30 cents\") is the limit when it is lower."
     ]
   },
   "complaint-brief": {
@@ -211,15 +214,16 @@
   },
   "suppliers": {
     "runs": [
-      "supplier-price-finder"
+      "supplier-price-finder",
+      "aliexpress-scraper"
     ],
     "pricesOnly": [
       "marketmage-notebook"
     ],
     "judgement": true,
     "caps": [
-      "- **This skill:** 3 ideas on Made-in-China and AliExpress about USD 0.30, spending limit USD 0.45; the single-unit check on 3 ideas about USD 0.08, spending limit USD 0.23; one idea on Made-in-China alone (about USD 0.025) needs no yes (limits never said).",
-      "- **Floor:** the cap (the run's spending limit) always leaves USD 0.02 per idea per AliExpress or Alibaba source above the high end (USD 0.07 per idea when Made-in-China joins the single-unit check): the actor reserves it before each search, and a cap near the estimate stopped a read after 1 of 7 ideas. When the formula gives less, the floor is the limit."
+      "- **This skill:** 3 ideas on Made-in-China plus AliExpress's top 3 each with their product pages (`aliexpress-scraper`, never more than 3) about USD 0.11 (about USD 0.13 on the free plan), spending limit USD 0.28; the single-unit check on 3 ideas (AliExpress's top 3 each, with their product pages) about USD 0.04 (about USD 0.06 on the free plan), spending limit USD 0.21; one idea on Made-in-China alone (about USD 0.025) or the single-unit check on one idea (about USD 0.013, USD 0.02 on the free plan) needs no yes (limits never said).",
+      "- **Floor:** a `supplier-price-finder` cap always leaves USD 0.02 per idea per Alibaba source above the high end: the actor reserves it before each search, and a cap near the estimate stopped a read after 1 of 7 ideas. When the formula gives less, the floor is the limit. The AliExpress read reserves nothing: its cap is the formula's."
     ]
   },
   "ads-watch": {
@@ -275,6 +279,7 @@
       "amazon-product-scraper",
       "marketplace-search-scanner",
       "supplier-price-finder",
+      "aliexpress-scraper",
       "reviews-monitor",
       "watch-digest"
     ],
