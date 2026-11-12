@@ -17,7 +17,7 @@ MarketMage costs nothing to install. It works on any Claude plan, Free included;
 3. In the **URL** box, type `MarketMage/plugin`, choose **Use "MarketMage/plugin"** in the list that opens, then click **Sync**.
 4. MarketMage appears on the Plugins page. Click **Add** next to it. Claude says "Marketmage is installed and ready to use". (A note may offer to grant the Claude GitHub App access for automatic syncing: you can skip it.)
 
-Given MarketMage as a .zip file? Click **Add**, then **Upload plugin**, and pick the file. Uploading a newer version over it keeps your Apify connection.
+Prefer a file? Download [marketmage.zip](https://github.com/MarketMage/plugin/releases/latest/download/marketmage.zip) (the latest release, also at [marketmage.io/download](https://marketmage.io/download/)), then click **Add**, then **Upload plugin**, and pick the file. An uploaded copy doesn't update itself: upload a newer version over it, which keeps your Apify connection.
 
 **In Claude Code**
 

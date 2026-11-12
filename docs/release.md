@@ -18,6 +18,16 @@ gh auth status        # the active account must be marketmage-dev
 - Listing icon: `marketmage/.claude-plugin/icon.png` (the site's 512 px icon). The directory's docs (checked 12 Nov) read a plugin listing from the files of the live version, so a new icon ships like any other change, as a new version.
 - **History:** this repository started from one fresh commit, so no earlier snapshot (with its old MIT license) is ever public. The development history, PRs #1–#36, is kept in the private, archived repository `MarketMage/plugin-history`. Never push from an old clone to this repository.
 
+## Release zips
+
+Every version is also published as a zip, for people who install with **Upload plugin**.
+
+- **How it runs:** `.github/workflows/release.yml` runs on every push to `main` (and by hand: **Actions → release → Run workflow**). It reads `version` from `marketmage/.claude-plugin/plugin.json`; if the tag `v<version>` doesn't exist yet, it zips the **contents** of `marketmage/` (so `.claude-plugin/plugin.json` is at the zip's top level, as Upload plugin needs; `.DS_Store` and other system files left out), creates the tag and a release named `MarketMage <version>`, and attaches `marketmage.zip`. If the tag exists, it does nothing.
+- **To release:** bump `version` in `plugin.json` in the PR as usual and merge it. Nothing else.
+- **The stable link:** the asset is always named `marketmage.zip`, so https://github.com/MarketMage/plugin/releases/latest/download/marketmage.zip serves the newest version. marketmage.io/download/marketmage.zip redirects there, and the site's download page reads the version and size from the latest release when the site is built, so rebuild and deploy the site after a release.
+- **Permissions:** the workflow asks for `contents: write` (the organization's default token is read-only) and uses only `actions/checkout` and the `gh` CLI, as the organization allows only GitHub's own actions. Branch protection covers `main` only, so creating tags isn't blocked.
+- **Redo a release:** delete the release and its tag (`gh release delete v<version> --cleanup-tag --yes`), then run the workflow by hand.
+
 ## The organization (done 2026-11-05)
 
 GitHub no longer converts a personal account into an organization, so the account was renamed and a new organization took the name:
