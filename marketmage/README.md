@@ -1,15 +1,13 @@
 # MarketMage
 
-Product research and competitor monitoring for e-commerce sellers, inside Claude.
+Product research and competitor monitoring for e-commerce sellers, inside Claude. For dropshippers, Amazon sellers, makers and resellers on Etsy and eBay, researchers and agencies, and brands.
 
 **How to begin:** type `/marketmage:start` for a welcome with everything MarketMage can do (and a guided first session if you want something to sell), or just say one of these:
 - "I'm new, help me find something to sell"
 - "Is a heated eye mask worth selling for me?"
 - "What is allbirds.com selling right now?"
 
-**Which Claude plan:** any, Free included. The Monday scheduled briefing uses Claude's scheduled tasks, which come with the paid plans (Pro, Max, Ultra, Team, Enterprise).
-
-New to Apify? The first session walks you through connecting it, and a free Apify account works (USD 5 of credit a month). Screenshots: [marketmage.io/start](https://marketmage.io/start/).
+**Which Claude plan:** any, Free included. The Monday scheduled briefing uses Claude's scheduled tasks, which come with the paid plans (Pro, Max, Ultra, Team, Enterprise). To install, see [Install](#install) below.
 
 Ask in plain words:
 - what to sell, whether an idea is worth it, and what it costs to source;
@@ -24,6 +22,43 @@ Then save a **watchlist** that runs on a schedule and tells you what changed: pr
 Every job runs [CleanPull's actors](https://apify.com/cleanpull) in **your own Apify account**, at their published per-result prices. **All you provide is your Apify sign-in**: no marketplace, supplier or ad platform accounts or keys.
 
 > **Claude asks before anything over USD 0.05.** Above USD 0.05 for one request, and before anything recurring, Claude gives one estimate ("This costs about USD 0.35, occasionally a little more if I need to dig deeper to answer you.") and waits for your yes; smaller reads just run. Each run also carries a spending limit set a little above the estimate, so a job can finish without asking twice and still can't run away, and every scheduled watchlist has a maximum cost per run.
+
+## Install
+
+MarketMage costs nothing to install. It works on any Claude plan, Free included; the scheduled Monday briefing needs a paid plan (Pro, Max, Ultra, Team, Enterprise).
+
+**On claude.ai or in the Claude desktop app**
+
+1. Open **Customize** in the left sidebar, then the **Plugins** tab ([claude.ai/customize/plugins](https://claude.ai/customize/plugins)).
+2. Click **Add**, then **Add marketplace**, then **Add from a repository**.
+3. In the **URL** box, type `MarketMage/plugin` and click **Sync**.
+4. MarketMage now appears with your other plugins. Search for **MarketMage**, open it and click **Add**.
+
+Given MarketMage as a .zip file? Click **Add**, then **Upload plugin**, and pick the file. Uploading a newer version over it keeps your Apify connection.
+
+**In Claude Code**
+
+1. Type `/plugin marketplace add MarketMage/plugin`.
+2. Then type `/plugin install marketmage@marketmage`.
+
+From a shell, in one step: `claude plugin install marketmage --marketplace MarketMage/plugin`. A plugin you added on claude.ai also reaches Claude Code by itself, the next time you start it signed in to the same account.
+
+**Connect your Apify account, once**
+
+Apify is a web-data platform. MarketMage's research runs there, in your own Apify account, and Apify bills that account for each run, usually cents. A free Apify account works: it includes USD 5 of credit a month and needs no credit card. You can create one at [apify.com](https://apify.com) or while connecting.
+
+1. In **Customize → Plugins**, open **MarketMage**, go to its **Connectors** tab and click **Connect** next to **apify**. In Claude Code, type `/mcp` and choose **apify**.
+2. Claude shows an "Add custom connector" notice with the details filled in. Check the address starts with `https://mcp.apify.com/`, keep the details as they are and click **Add**.
+3. Sign in to Apify, or create a free account, and approve. It is the only sign-in MarketMage needs.
+4. Optional, fewer approval boxes: claude.ai asks before each Apify tool call until you change it. In **Customize → Connectors → apify → Tool permissions**, set **Read-only tools** and **Call Actor** to **Always allow**. MarketMage still waits for your yes before any paid run over USD 0.05 or anything recurring, and every run has a spending limit.
+
+**Your first message:** type `/marketmage:start` for a short welcome, or ask "Can you check what allbirds.com sells and how they price it?" Asking Claude to *check* or *look up* something reads it live with MarketMage.
+
+**Once MarketMage is in Claude's plugin directory,** you'll also find it under **Customize → Plugins → Discover** and add it there, with nothing to type (the directory shows on paid Claude plans). The steps above keep working.
+
+Step by step, with pictures: [marketmage.io/start](https://marketmage.io/start/).
+
+**Help:** [marketmage.io/support](https://marketmage.io/support/) · bugs and ideas: [GitHub issues](https://github.com/MarketMage/plugin/issues) · security: security@marketmage.io
 
 ## What you can ask
 
@@ -167,15 +202,6 @@ Honest limits, so the answers are read right:
 - **What MarketMage won't do:** write, buy or post fake reviews; find out who a reviewer, buyer or seller is as a private person; copy a rival's listing text, photos or ads word for word; source or sell replicas of a branded product; or agree prices or split markets with a competitor. Claude declines only that part and offers the version that gets you what you're after. The full list is in the [Acceptable Use Policy](https://marketmage.io/acceptable-use).
 - **You are responsible for how you use the results:** respect the sites' terms, copyright in product content and creatives, and the privacy laws that apply to you. Read at a pace and scale those terms allow.
 - **Results stay in your Apify account:** datasets, key-value stores, tasks and schedules, under your control.
-
-## Install
-
-- **Claude Code**, in a session: `/plugin marketplace add marketmage/plugin`, then `/plugin install marketmage@marketmage`. From a shell, in one step: `claude plugin install marketmage --marketplace marketmage/plugin`.
-- **From a clone:** `claude --plugin-dir ./marketmage` (from the repository root) loads it for one session.
-- Installing from GitHub needs the repository to be public (it is public from launch), or you to have access to it.
-- **Your Claude plan:** any, Free included; the scheduled Monday briefing needs a paid plan (Pro, Max, Ultra, Team, Enterprise).
-- **Then:** connect Apify when prompted.
-- **Fewer approval boxes (optional):** claude.ai asks before each Apify tool call until you change it. In Customize → Connectors → apify → Tool permissions, set **Read-only tools** and **Call Actor** to Always allow. MarketMage still states the cost and waits for your yes before any paid run above USD 0.05 or anything recurring, and every run is capped.
 
 ## Support
 
