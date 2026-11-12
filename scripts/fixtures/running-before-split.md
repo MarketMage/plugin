@@ -96,7 +96,7 @@ Datasets stay in the user's Apify account and reading them again costs nothing; 
 
 | Later job | Reuses | Saves |
 | --- | --- | --- |
-| `gaps` after `spy-store` on the same store | the Shopify dataset, only when its summary says `catalogueComplete: true` (spy-store reads 100 products; gaps needs the whole catalogue, so a partial read is read again at gaps' size) | about USD 0.08 a store |
+| `gaps` after `spy-store` on the same store | the Shopify dataset, only when its summary says `catalogueComplete: true` or it read at least gaps' 250 products (spy-store's snapshot reads 100, so a 100-product partial read is read again at gaps' size) | about USD 0.08 a store |
 | `validate` after `find-products` | TikTok rows and the Trends record for the same keyword | USD 0.06 to 0.09 |
 | `validate` after `market-scan` | the keyword summary | USD 0.017 |
 | `reviews-watch` after `spy-store` | the best sellers' URLs | a question |

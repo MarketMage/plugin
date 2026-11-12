@@ -14,7 +14,7 @@ The approval line gives one estimate with a soft note: "This costs about USD 0.3
 - **No yes needed** (estimate USD 0.05 or less): no line is said; the cap follows the same formula from the run's own high end.
 - **Watches** keep their monthly estimate and their own Max cost per run (`watchlists.md`); this limit is for one-off checks.
 
-- **This skill:** the full profile (tech + 100 products + promotions, several runs) about USD 0.13, spending limit USD 0.25 (never said), the runs' caps sharing it.
+- **This skill:** the full profile (tech + 100 products + promotions, several runs) about USD 0.15, spending limit USD 0.30 (never said), the runs' caps sharing it.
 
 ## Prices
 
