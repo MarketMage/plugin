@@ -17,9 +17,10 @@ Use only these tools, and only with `cleanpull/...` actors. **Create, change or 
 
 - **claude.ai, the desktop app or Cowork:**
   1. **Customize → Plugins → MarketMage → Connectors → Connect.**
-  2. An **"Add custom connector"** notice opens with the details already filled in. That's expected: it is Apify's official server, set up with the tools MarketMage uses. Signing in gives the connector access to your Apify account; MarketMage's skills only run CleanPull's actors and only create, change or pause their own `cw-` watches (that's how the skills are written, not a technical lock). Check the connector address starts with `https://mcp.apify.com/`, keep the details as they are and click **Add**. If it shows any other address, don't add it, and tell me what it says.
-  3. Sign in to Apify, or **create a free Apify account** (it includes USD 5 of credit every month).
-  4. Approve the access, come back to this chat and say "done".
+  2. An **"Add custom connector"** notice opens with the details already filled in. That's expected: it is Apify's official server, set up with the tools MarketMage uses. Signing in gives the connector access to your Apify account; MarketMage's skills only run CleanPull's actors and only create, change or pause their own `cw-` watches (that's how the skills are written, not a technical lock). Check it says **Connects to mcp.apify.com** (the address starts with `https://mcp.apify.com/`) and click **Continue**. If it shows any other address, stop there, and tell me what it says.
+  3. A settings page follows (sign-in method and OAuth client, already chosen): leave everything as it is and click **Add** at the bottom.
+  4. Click **Connect** next to apify again. Apify opens: sign in, or **create a free Apify account** (it includes USD 5 of credit every month), and approve. Already signed in to Apify in that browser, with Claude approved before? Then it connects at once, with nothing to type.
+  5. The Connectors tab shows **apify · Connected**: come back to this chat and say "done".
 - **Claude Code:** run `/mcp`, choose the Apify server and sign in (or create a free account) there.
 - Screenshots of each step: https://marketmage.io/start/
 
