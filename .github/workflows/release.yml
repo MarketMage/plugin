@@ -17,9 +17,19 @@ concurrency:
 
 jobs:
   release:
+    # Only main is released, also when the workflow is run by hand from another branch.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # The same checks as check.yml, so a commit that fails them is never published.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml==6.0.2
+      - run: python3 scripts/check.py
+      - run: python3 scripts/sync-references.py --check
 
       - name: Read the version
         id: version
@@ -27,11 +37,18 @@ jobs:
           version=$(python3 -c 'import json; print(json.load(open("marketmage/.claude-plugin/plugin.json"))["version"])')
           if [ -z "$version" ]; then echo "plugin.json has no version" >&2; exit 1; fi
           echo "version=$version" >> "$GITHUB_OUTPUT"
-          if git ls-remote --exit-code --tags origin "refs/tags/v$version" >/dev/null; then
+          # --exit-code: 0 when the tag exists, 2 when it doesn't; anything else is a git error.
+          set +e
+          git ls-remote --exit-code --tags origin "refs/tags/v$version" >/dev/null
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
             echo "Tag v$version exists already: nothing to release."
             echo "exists=true" >> "$GITHUB_OUTPUT"
-          else
+          elif [ "$code" -eq 2 ]; then
             echo "exists=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "git ls-remote failed (exit $code)" >&2; exit 1
           fi
 
       - name: Build marketmage.zip
@@ -43,7 +60,10 @@ jobs:
           zip -r -X -q ../marketmage.zip . -x '*.DS_Store' '*Thumbs.db' '*desktop.ini' '__MACOSX/*'
           cd ..
           unzip -l marketmage.zip | grep -q ' \.claude-plugin/plugin\.json$'
-          echo "Files: $(unzip -Z1 marketmage.zip | grep -vc '/$')"
+          files=$(unzip -Z1 marketmage.zip | grep -vc '/$')
+          echo "Files: $files"
+          # The directory and claude.ai's upload take at most 512 files.
+          if [ "$files" -gt 512 ]; then echo "marketmage.zip has $files files; the limit is 512" >&2; exit 1; fi
           ls -l marketmage.zip
 
       - name: Publish the release
@@ -64,5 +84,6 @@ jobs:
           gh release create "v$VERSION" marketmage.zip \
             --target "$GITHUB_SHA" \
             --title "MarketMage $VERSION" \
-            --notes-file notes.md \
-            --latest
+            --notes-file notes.md
+          # gh marks the release Latest by itself when it is the highest version, so an older
+          # version re-released never takes over the latest download link.
