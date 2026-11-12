@@ -34,7 +34,7 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
 - **Cost (paid plans):**
   - each product read: a rating summary USD 0.003 + USD 0.0005 per review delivered;
   - a shop product with 20 reviews ≈ **USD 0.013**; an Amazon ASIN outside the US (its 8 to 13 top reviews) ≈ **USD 0.01**; an amazon.com (US) ASIN: its rating summary only, USD 0.003 (below); outside the US, add up to USD 0.012 for the local-address reads;
-  - **a Trustpilot business:** summary USD 0.003 + USD 0.003 for its read (provider search) + USD 0.0035 per review delivered (review USD 0.0005 + provider record USD 0.003): with 20 reviews ≈ **USD 0.076**. It's read through CleanPull's marketplace data service (a third-party provider; nothing to set up) and takes about 30 to 60 seconds a business;
+  - **a Trustpilot business:** summary USD 0.003 + USD 0.003 for its read (provider search) + USD 0.0035 per review delivered (review USD 0.0005 + provider record USD 0.003): with 20 reviews ≈ **USD 0.076**. It's read through CleanPull's marketplace data service (a third-party provider; nothing to set up) and takes about 2 to 3 minutes a business;
   - a product whose shop uses another review app, or that can't be read, is not charged.
   - **When the estimate is USD 0.05 or less,** run it straight away, with no cost mention; above that, give the one approval line, one estimate with the soft note, and ask first (`references/running.md`, "Before any run"). **Example above it:** 4 product pages and 2 ASINs, 20 reviews each: "This costs about USD 0.07, occasionally a little more if I need to dig deeper to answer you. Go ahead?", with the run's cap at its spending limit, USD 0.22, never said.
 - **Read** with `get-dataset-items`:
@@ -71,7 +71,7 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - digest USD 0.005;
   - products × USD 0.00025;
   - each product with nothing new USD 0.0005; each with something new USD 0.003 + USD 0.0005 per new review;
-  - **each Trustpilot business:** its read (provider search) USD 0.003 + its newest 5 reviews re-checked at USD 0.003 each, so USD 0.0185 with nothing new (with the USD 0.0005 check); a new review is USD 0.0035 instead of a re-check, plus the USD 0.003 summary. About **USD 0.56 a month per business daily**, USD 0.08 weekly. **Suggest weekly for Trustpilot** unless the business gets more than about 5 reviews a day (then daily, so the newest 5 cover them). It adds about 30 to 60 seconds to the digest (up to 4 businesses at a time);
+  - **each Trustpilot business:** its read (provider search) USD 0.003 + its newest 5 reviews re-checked at USD 0.003 each, so USD 0.0185 with nothing new (with the USD 0.0005 check); a new review is USD 0.0035 instead of a re-check, plus the USD 0.003 summary. About **USD 0.56 a month per business daily**, USD 0.08 weekly. **Suggest weekly for Trustpilot** unless the business gets more than about 5 reviews a day (then daily, so the newest 5 cover them). It adds about 2 to 3 minutes to the digest (up to 4 businesses at a time);
   - USD 0.001 per message once a channel is added.
   - **The first run** reads each product's summary and up to 20 reviews as the baseline: about USD 0.013 per product; a Trustpilot business's summary, read and newest 5 reviews: about USD 0.024.
   - **Example:** 20 products daily, 4 of them with a couple of new reviews: 0.005 + 20 × 0.00025 + 16 × 0.0005 + 4 × 0.004 ≈ **USD 0.034 a run, about USD 1.00 a month**; the first run ≈ USD 0.27. Weekly is about USD 0.15 a month.

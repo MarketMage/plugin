@@ -15,7 +15,7 @@ These reads are slower:
 - **the AliExpress read** (`cleanpull/aliexpress-scraper`: the single-unit check and every dropship cost read, "AliExpress prices" below): its search takes seconds, then each product page 30 seconds to a minute or more, so several minutes, even for one idea (a live run of 5 results took 11.5 minutes; a page that fails comes from its search card with `detailsRead: false`: shipping not read) (its status message names each search as it finishes: "heated eye mask: 1 pages read, 3 results; 3 delivered in all"). Leave `callOptions.timeout` out (the default is 60 minutes);
 - **Target and Best Buy by barcode:** 3 to 5 minutes a run;
 - **product pages on those marketplaces:** a few seconds to a few minutes;
-- **Trustpilot:** about 30 to 60 seconds a business.
+- **Trustpilot:** about 2 to 3 minutes for a business (homesick.com, 12 Nov: 175 s; quoted "about a minute" before, so never say that).
 
 Say so before the run ("this takes a few minutes"), even when the user has already said yes, start it with `waitSecs: 45`, and follow it with `get-actor-run` as above. Each such run also has a provider search fee per source (see `costs.md`), so group the user's items into one run rather than several.
 

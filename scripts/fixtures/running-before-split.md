@@ -151,7 +151,7 @@ These reads are slower:
 - **marketplace and supplier searches:** usually 1 to 4 minutes a run for Walmart, eBay, Home Depot and Lowe's, and Alibaba (its search pages are read directly: about 35 to 80 seconds a product idea); usually 4–5 minutes, sometimes up to about 9 for Etsy; up to about 12 minutes for Target and Best Buy, and for the others when a page can't be read and the service reads the search the slow way; whatever the number of keywords; with Amazon in the same job, answer with Amazon first while the others run;
 - **Target and Best Buy by barcode:** 3 to 5 minutes a run;
 - **product pages on those marketplaces:** a few seconds to a few minutes;
-- **Trustpilot:** about 30 to 60 seconds a business.
+- **Trustpilot:** about 2 to 3 minutes for a business (homesick.com, 12 Nov: 175 s; quoted "about a minute" before, so never say that).
 
 Say so before the run ("this takes a few minutes"), even when the user has already said yes, start it with `waitSecs: 45`, and follow it with `get-actor-run` as above. Each such run also has a provider search fee per source (see `costs.md`), so group the user's items into one run rather than several.
 
