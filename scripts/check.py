@@ -109,6 +109,13 @@ manifest = json.loads((PLUGIN / '.claude-plugin' / 'plugin.json').read_text())
 if len(manifest.get('description', '')) > 500:
     # claude.ai's plugin upload refuses a plugin description over 500 characters.
     fail(f'{SHIP}/.claude-plugin/plugin.json: description is {len(manifest["description"])} characters; claude.ai allows 500')
+# claude.ai's marketplace sync strips top-level keys it doesn't know, with a warning on the listing
+# (12 Nov: privacyPolicyUrl). The manifest keeps to the keys the plugin reference documents.
+KNOWN_KEYS = {'name', 'version', 'description', 'author', 'homepage', 'repository', 'license', 'keywords',
+              'displayName', 'commands', 'agents', 'skills', 'hooks', 'mcpServers', 'lspServers',
+              'outputStyles', 'userConfig', 'dependencies', 'experimental'}
+for key in sorted(set(manifest) - KNOWN_KEYS):
+    fail(f'{SHIP}/.claude-plugin/plugin.json: key {key!r} is not a manifest key claude.ai knows; it is stripped with a warning')
 
 for name in skills:
     d = PLUGIN / 'skills' / name

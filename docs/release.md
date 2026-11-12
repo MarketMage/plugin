@@ -35,7 +35,7 @@ GitHub no longer converts a personal account into an organization, so the accoun
 1. ✓ **Make the repository public** (done 9 Nov), then the go-live settings below (done 9 Nov).
 2. ✓ **Pin the plugin** on the organization's profile (done 9 Nov).
 3. **Reviewer test account** (before submitting; `plans/claude-plugin/submission-checklist.md`, 3.D): a separate Apify account with its own mailbox (for example review@marketmage.io) and about USD 10 of credit. Sign in to it once from Claude, then ask Claude to create the sample watchlist `cw-price-sample` (no recipients) and run it twice. Its sign-in details go only in the submission form.
-4. **Submit to the directory** at https://claude.ai/directory/manage: **Submit new → Plugin bundle**, repository `MarketMage/plugin`, plugin path `marketmage`, branch `main`. Install the Claude GitHub App on the repository if the portal asks.
+4. **Submit to the directory** at https://claude.ai/directory/manage: **Submit new → Plugin bundle**, repository `MarketMage/plugin`, plugin path `marketmage`, branch `main`. Install the Claude GitHub App on the repository if the portal asks. If the form asks for a privacy policy, it is https://marketmage.io/privacy/ (the manifest has no privacy key: claude.ai strips it).
 
 ## Make it public
 
