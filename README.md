@@ -30,10 +30,15 @@ From a shell, in one step: `claude plugin install marketmage --marketplace Marke
 
 Apify is a web-data platform. MarketMage's research runs there, in your own Apify account, and Apify bills that account for each run, usually cents. A free Apify account works: it includes USD 5 of credit a month and needs no credit card. You can create one at [apify.com](https://apify.com) or while connecting.
 
-1. In **Customize → Plugins**, open **MarketMage**, go to its **Connectors** tab and click **Connect** next to **apify**. In Claude Code, type `/mcp` and choose **apify**.
-2. Claude shows an "Add custom connector" notice with the details filled in. Check the address starts with `https://mcp.apify.com/`, keep the details as they are and click **Add**.
-3. Sign in to Apify, or create a free account, and approve. It is the only sign-in MarketMage needs.
-4. Optional, fewer approval boxes: claude.ai asks before each Apify tool call until you change it. In **Customize → Connectors → apify → Tool permissions**, set **Read-only tools** and **Call Actor** to **Always allow**. MarketMage still waits for your yes before any paid run over USD 0.05 or anything recurring, and every run has a spending limit.
+On claude.ai or the desktop app:
+
+1. In **Customize → Plugins**, open **MarketMage**, go to its **Connectors** tab and click **Connect** next to **apify**.
+2. Claude shows an "Add custom connector" notice with the details filled in. Check it says **Connects to mcp.apify.com** and click **Continue**.
+3. On the settings page that follows, leave everything as it is and click **Add** at the bottom.
+4. Back on the same Connectors tab, click **Connect** next to apify again, then sign in to Apify or create a free account, and approve. (Already signed in to Apify in that browser? It may connect at once.) It is the only sign-in MarketMage needs.
+5. Optional, fewer approval boxes: claude.ai asks before each Apify tool call until you change it. In **Customize → Connectors → apify → Tool permissions**, set **Read-only tools** and **Call Actor** to **Always allow**. MarketMage still waits for your yes before any paid run over USD 0.05 or anything recurring, and every run has a spending limit.
+
+In Claude Code: type `/mcp`, choose **apify** and sign in to Apify.
 
 **Your first message:** type `/marketmage:start` for a short welcome, or ask "Can you check what allbirds.com sells and how they price it?" Asking Claude to *check* or *look up* something reads it live with MarketMage.
 
