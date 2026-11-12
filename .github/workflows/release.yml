@@ -57,7 +57,7 @@ jobs:
 
           **Install from the zip:** download \`marketmage.zip\` below. On claude.ai or in the Claude desktop app, open **Customize → Plugins**, click **Add → Upload plugin** and pick the file. Uploading over an earlier version keeps your Apify connection.
 
-          **Or add the repository** (updates itself): **Add → Add marketplace → Add from a repository**, \`MarketMage/plugin\`. In Claude Code: \`/plugin marketplace add MarketMage/plugin\`, then \`/plugin install marketmage@marketmage\`.
+          **Or add the repository** (it can sync automatically once you grant the Claude GitHub App access): **Add → Add marketplace → Add from a repository**, \`MarketMage/plugin\`. In Claude Code: \`/plugin marketplace add MarketMage/plugin\`, then \`/plugin install marketmage@marketmage\`.
 
           Step-by-step guide: https://marketmage.io/download/
           NOTES
