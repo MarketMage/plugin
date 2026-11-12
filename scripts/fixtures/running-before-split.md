@@ -96,7 +96,7 @@ Datasets stay in the user's Apify account and reading them again costs nothing; 
 
 | Later job | Reuses | Saves |
 | --- | --- | --- |
-| `gaps` after `spy-store` on the same store | the Shopify dataset | about USD 0.20 a store |
+| `gaps` after `spy-store` on the same store | the Shopify dataset, only when its summary says `catalogueComplete: true` (spy-store reads 100 products; gaps needs the whole catalogue, so a partial read is read again at gaps' size) | about USD 0.08 a store |
 | `validate` after `find-products` | TikTok rows and the Trends record for the same keyword | USD 0.06 to 0.09 |
 | `validate` after `market-scan` | the keyword summary | USD 0.017 |
 | `reviews-watch` after `spy-store` | the best sellers' URLs | a question |
@@ -151,7 +151,7 @@ These reads are slower:
 - **marketplace and supplier searches:** usually 1 to 4 minutes a run for Walmart, eBay, Home Depot and Lowe's, and Alibaba (its search pages are read directly: about 35 to 80 seconds a product idea); usually 4–5 minutes, sometimes up to about 9 for Etsy; up to about 12 minutes for Target and Best Buy, and for the others when a page can't be read and the service reads the search the slow way; whatever the number of keywords; with Amazon in the same job, answer with Amazon first while the others run;
 - **Target and Best Buy by barcode:** 3 to 5 minutes a run;
 - **product pages on those marketplaces:** a few seconds to a few minutes;
-- **Trustpilot:** about 30 to 60 seconds a business.
+- **Trustpilot:** about 2 to 3 minutes for a business; never quote it as under a minute.
 
 Say so before the run ("this takes a few minutes"), even when the user has already said yes, start it with `waitSecs: 45`, and follow it with `get-actor-run` as above. Each such run also has a provider search fee per source (see `costs.md`), so group the user's items into one run rather than several.
 

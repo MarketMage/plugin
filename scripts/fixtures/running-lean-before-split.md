@@ -96,7 +96,7 @@ Datasets stay in the user's Apify account and reading them again costs nothing; 
 
 | Later job | Reuses | Saves |
 | --- | --- | --- |
-| `gaps` after `spy-store` on the same store | the Shopify dataset | about USD 0.20 a store |
+| `gaps` after `spy-store` on the same store | the Shopify dataset, only when its summary says `catalogueComplete: true` (spy-store reads 100 products; gaps needs the whole catalogue, so a partial read is read again at gaps' size) | about USD 0.08 a store |
 | `validate` after `find-products` | TikTok rows and the Trends record for the same keyword | USD 0.06 to 0.09 |
 | `validate` after `market-scan` | the keyword summary | USD 0.017 |
 | `validate` after `market-scan` (an Etsy or eBay seller, listing rows read) | that marketplace's keyword summary and listing rows for the same keyword (same day; not when that scan had `ebayFixedPriceOnly: true`, a filtered sample) | about USD 0.10 and, on Etsy, usually 4–5 minutes, sometimes up to about 9 |
@@ -164,7 +164,7 @@ These reads are slower:
 - **the AliExpress read** (`cleanpull/aliexpress-scraper`: the single-unit check and every dropship cost read, "AliExpress prices" below): its search takes seconds, then each product page 30 seconds to a minute or more, so several minutes, even for one idea (a live run of 5 results took 11.5 minutes; a page that fails comes from its search card with `detailsRead: false`: shipping not read) (its status message names each search as it finishes: "heated eye mask: 1 pages read, 3 results; 3 delivered in all"). Leave `callOptions.timeout` out (the default is 60 minutes);
 - **Target and Best Buy by barcode:** 3 to 5 minutes a run;
 - **product pages on those marketplaces:** a few seconds to a few minutes;
-- **Trustpilot:** about 30 to 60 seconds a business.
+- **Trustpilot:** about 2 to 3 minutes for a business; never quote it as under a minute.
 
 Say so before the run ("this takes a few minutes"), even when the user has already said yes, start it with `waitSecs: 45`, and follow it with `get-actor-run` as above. Each such run also has a provider search fee per source (see `costs.md`), so group the user's items into one run rather than several.
 

@@ -1,6 +1,6 @@
 # Release: going public
 
-The repository stays **private** until go-live. This file lists what is ready, what is left, and the exact commands for the day.
+**State (12 Nov 2026, 0.4.15):** the repository is public (since 9 Nov), with branch protection, secret scanning, push protection and private vulnerability reporting on; the plugin is pinned on the organization; marketmage.io is indexable and shows the GitHub install. Left: the reviewer test account, then the directory submission (below). This file keeps what is ready and the commands that were used, for reference.
 
 **Which account runs the commands.** Every command runs as **marketmage-dev**, the MarketMage organization's own account (its `gh` login is labelled `MarketMage`). Commits and pushes always come from it, so the history shows MarketMage only. Check the active account first; other sessions switch accounts too:
 
@@ -11,11 +11,11 @@ gh auth status        # the active account must be marketmage-dev
 
 ## What is ready
 
-- The plugin users install is `marketmage/`. It holds 262 files; the directory's limit is 512. The largest file is the icon, `.claude-plugin/icon.png` (123 KB, an image, so the directory's 256 KiB limit for non-image files doesn't apply to it). The largest text file is `skills/find-products/SKILL.md` (36 KB). `scripts/check.py` keeps it within the limits in CI.
+- The plugin users install is `marketmage/`. It holds 505 files; the directory's limit is 512. The largest file is the icon, `.claude-plugin/icon.png` (123 KB, an image, so the directory's 256 KiB limit for non-image files doesn't apply to it). The largest text file is `skills/find-products/SKILL.md` (51 KB). `scripts/check.py` keeps it within the limits in CI.
 - `/plugin marketplace add MarketMage/plugin` then `/plugin install marketmage@marketmage` installs `marketmage/`, because the marketplace's `source` is `./marketmage`. The scripts read the plugin folder from that field.
 - License: PolyForm Shield 1.0.0, the official text verbatim, with `Required Notice: Copyright (c) 2026 Extoris LLC (https://marketmage.io)`, in `LICENSE` and `marketmage/LICENSE`; `plugin.json` says `PolyForm-Shield-1.0.0`.
 - `SECURITY.md`, `CONTRIBUTING.md`, issue templates (bug report, feature idea, support link) with their `bug` and `idea` labels, and `.gitignore`.
-- Listing icon: `marketmage/.claude-plugin/icon.png` (the site's 512 px icon). **The portal takes the icon only once, the first time the plugin is saved or submitted**, so replace this file before then if you want a different one.
+- Listing icon: `marketmage/.claude-plugin/icon.png` (the site's 512 px icon). The directory's docs (checked 12 Nov) read a plugin listing from the files of the live version, so a new icon ships like any other change, as a new version.
 - **History:** this repository started from one fresh commit, so no earlier snapshot (with its old MIT license) is ever public. The development history, PRs #1–#36, is kept in the private, archived repository `MarketMage/plugin-history`. Never push from an old clone to this repository.
 
 ## The organization (done 2026-11-05)
@@ -32,8 +32,8 @@ GitHub no longer converts a personal account into an organization, so the accoun
 
 ## Left to do, in order
 
-1. **Make the repository public** (command below), then run the go-live settings below.
-2. **Pin the plugin** on the organization's profile: https://github.com/MarketMage → **Customize pins** → `plugin`. Only public repositories can be pinned.
+1. ✓ **Make the repository public** (done 9 Nov), then the go-live settings below (done 9 Nov).
+2. ✓ **Pin the plugin** on the organization's profile (done 9 Nov).
 3. **Reviewer test account** (before submitting; `plans/claude-plugin/submission-checklist.md`, 3.D): a separate Apify account with its own mailbox (for example review@marketmage.io) and about USD 10 of credit. Sign in to it once from Claude, then ask Claude to create the sample watchlist `cw-price-sample` (no recipients) and run it twice. Its sign-in details go only in the submission form.
 4. **Submit to the directory** at https://claude.ai/directory/manage: **Submit new → Plugin bundle**, repository `MarketMage/plugin`, plugin path `marketmage`, branch `main`. Install the Claude GitHub App on the repository if the portal asks.
 
@@ -91,7 +91,7 @@ gh api repos/MarketMage/plugin/private-vulnerability-reporting
 
 ## After go-live
 
-- **Update marketmage.io the same day** (Claude does this): site branch `go-live` already has `"repo_public": true` and `"preview": false` on top of the PolyForm Shield Terms and the corrected license in the structured data. Deploy it to production, so the docs show the GitHub link and install commands and search engines may index the site.
+- ✓ **Update marketmage.io the same day** (done 9 Nov): site branch `go-live` had `"repo_public": true` and `"preview": false` on top of the PolyForm Shield Terms and the corrected license in the structured data. Deploy it to production, so the docs show the GitHub link and install commands and search engines may index the site.
 - Test the public install in a clean config:
 
   ```bash

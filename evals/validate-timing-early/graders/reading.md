@@ -1,7 +1,7 @@
 ---
 type: regex
 target: last_message
-pattern: '\?\**\s*\**Early\b'
+pattern: 'Timing:\**\s*\**Early\b'
 flags: i
 match: contains
 ---
