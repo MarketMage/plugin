@@ -10,6 +10,8 @@ PASS if all of these hold:
 - it uses no hype beyond the data ("definitely", "guaranteed", "can't miss", "goldmine", "huge potential") and no doom or pre-owned failure ("most products fail", "be careful", "unfortunately");
 - it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 
+Since 0.4.22 the verdict here is Promising, with one fix (the margin after launch ads), and the answer states a verdict confidence (medium or low, it hangs on the ad cost) and the data's confidence: saying plainly how sure it is, and that the ad cost decides it, is the rule, not caution; warmth is still expected on what the data backs (demand, an open page 1, the user's dry-eyes hunch).
+
 FAIL if it is flat or cautious despite the data (for example leading with risks or caveats), if it praises the person rather than tying credit to data, if it names no early sign or no watch and has no offer line naming them, or if it uses hype or doom words.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
