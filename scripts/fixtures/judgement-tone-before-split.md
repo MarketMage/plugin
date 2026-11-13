@@ -12,9 +12,9 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing an
 - "the data is against this version; here's one it favours";
 - "we can't tell from this data yet: this read would tell us".
 
-**The verdict line is clean:** label, confidence, counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
+**The verdict line is clean:** label, the two confidences (`judgement.md`, "Confidence"), counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
 
-**One next move, not a menu:** the last line names one action, with no price. Other options, if any, go in the follow-ups before it (`running.md`, "Explaining results").
+**One next move, not a menu:** the last line names one action, with no price: the step that most reduces the verdict's biggest unknown, even a free one outside MarketMage (`judgement-ladder.md`, "The next move"), then at most two "After that" items in the same line. Other options, if any, go in the follow-ups before it (`running-results.md`, "Explaining results").
 
 **A free "stop here" is a next move too.** When the verdict is "not this version" (the market's **Not this version**, or "For you: **not this one**"), the last line may be the free move instead of a paid one: "Next step: nothing to buy; keep the USD <X>.", where X is what the user would otherwise put in next (their quote's first order, the launch plan's goods, a test's ad spend; an exact amount of their own is never repeated: say "keep the amount you set aside" instead). It is offered beside the best related version, never in place of it: the related version stays in "Build on it", as one of the follow-ups, so the search still never dead-ends (`judgement.md`, rule 10), and the user picks. Use it when the data says stop for this version and nothing read makes a cheap check the obvious move; otherwise the paid next step stays. Every other verdict (Strong, Promising, a strong fit, a fit, with one fix, a long shot) keeps the paid next step above. Say it plainly and warmly, never as a loss ("nothing to buy" is a result: the check just saved them the order).
 

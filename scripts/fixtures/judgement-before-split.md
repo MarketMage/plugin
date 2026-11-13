@@ -14,7 +14,7 @@ Three layers, always kept apart:
 1. **Facts before judgement, and apart from it.** "What the data shows" comes first and could be published as is. Then "What it means", then the verdict's support. Never put a number and an opinion in the same line of the table.
 2. **Score every signal before the verdict.** Each signal gets `favours`, `against`, `neutral` or `unknown`, with its number and its threshold on the same line (the table below). Read the verdict off the counts with the fixed rule. Never choose the verdict first and fit the evidence to it.
 3. **Answer the opposite question too.** Asked "is it worth selling?", add the early sign that would say otherwise (`judgement-ladder.md`, "Watches"). Asked "is it saturated?", add one line on what a newcomer still has going. The framing of the question never moves the verdict.
-4. **Confidence is coverage, not feeling** (see "Confidence").
+4. **Two confidences, neither a feeling:** the data's coverage and how firmly the verdict stands (see "Confidence").
 5. **Credit where it's due, tied to a number.** When the data backs something the user said or chose, say so specifically: "You were right that demand is rising: +38% over 5 years." "Your USD 29.99 sits inside the p25 to p75 band (22.99 to 34.99)." At most two such lines, each naming its number. Never empty flattery ("great idea", "smart thinking"), and never a compliment about the person, their budget or their experience. If nothing the user said is backed by the data, leave the credit out rather than invent one.
 6. **Never end on a verdict.** Every judgement ends on a concrete move, with no price on it: the check of the best related version, the test that settles it, or the watch that catches the early sign. The verdict opens the answer; one Next step line closes it.
 7. **"For you" first, "For the market" second.** With a profile, the answer leads with a verdict for this person ("For you: not this one", "For you: a strong fit"), read through their lens, then gives the market verdict ("For the market: Strong"), which never changes with who asks. Without a profile, the market verdict leads; the profile is offered only as `judgement-profile.md`, "Asking for the profile" says (once per conversation).
@@ -41,7 +41,7 @@ One table for every skill, so the thresholds agree. They are rules of thumb: say
 | Concentration | scanner `top3SellerShare`, `sellerHhi`; Amazon `soldByAmazon` | top-3 share under 0.35 | top-3 share over 0.55, or HHI over 0.25, or Amazon itself sells 3+ of the top 10 | between |
 | Quality gap | Amazon top 10 `rating`, `starBreakdown` | 3+ of 10 rated under 4.2, or a 1-star share of 8% or more on the leaders | the top 5 all rated 4.6 or more, with 1-star shares of 4% or less | between |
 | Paid pressure | scanner `sponsored`, `ads.priceMedian` against the organic `priceMedian` | 6 or fewer ads in 48 results | 12 or more ads in 48, priced under the organic `priceP25` | between; `unknown` when ads weren't read |
-| Margin | after marketplace fees: (what a sale pays out after fees − unit or landed cost) ÷ selling price (see "Margin after fees") | 40% or more | under 25% | 25 to 40% |
+| Margin | after fees, freight and launch ads: (what a sale pays out after fees − unit or landed cost − freight allowance − USD 8 of launch ads) ÷ selling price (see "Margin after fees"); the before-ads margin is a context line | 40% or more | under 25% | 25 to 40% |
 | Price band | the user's planned price against `priceP25`…`priceP75` | inside the band, or above `priceP75` with a stated difference | under `priceP25` (a race to the bottom) | left out when no price was given |
 
 **Where you'd compete** (read only through the cold-traffic dropship lens): a row of facts in the table, the same for everyone, with its counts (Meta advertisers active, proven, new; TikTok Shop shops and the top 3 shops' share of units) and no market reading. It is left out of the market verdict: whether a crowd of advertisers is a wall or proof that ads pay depends on the budget, so only the lens reads it ("Where you'd compete: saturation on paid social and TikTok Shop").
@@ -52,7 +52,7 @@ One table for every skill, so the thresholds agree. They are rules of thumb: say
 - **No fee figures** (Amazon outside the US gives `supported: false`; Target, Best Buy; rows without `fees`): the margin is before fees, scored on the before-fee thresholds (cost at most 30% of the price favours, over 45% against), and the row says fees weren't modelled there. Fees are modelled for US marketplaces only.
 - Show the arithmetic in one line: "USD 29.99 − 9.12 fees = 20.87 paid out; − 4.80 unit cost = 16.07, 54% of the price."
 
-The after-fee thresholds are the before-fee ones less typical Amazon fees (about 30% of the price for a small item): a cost at most 30% of the price left about 40% after fees, and a cost over 45% left under 25%. They are rules of thumb for a first look.
+The after-fee thresholds are the before-fee ones less typical Amazon fees (about 30% of the price for a small item): a cost at most 30% of the price left about 40% after fees, and a cost over 45% left under 25%. They are rules of thumb for a first look. The same 40% and 25% hold after freight and launch ads (under 25% is where launch ads eat most of what a sale leaves); on the before-fee path, the cost share counts the freight allowance and the launch ads too.
 
 **The verdict rule.** Count the signals that favour (F) and are against (A), leaving out `unknown`. The user sees the label; the arithmetic is fixed:
 
@@ -63,7 +63,7 @@ The after-fee thresholds are the before-fee ones less typical Amazon fees (about
 | **Promising, with one fix** | everything else | Maybe |
 
 - **Four for and nothing against is Strong.** Most signals land neutral on real data, so a clean 4 for, 0 against (with any number neutral) is a strong read: "4 for · 0 against · 3 neutral" is **Strong**. With one against, it takes 5 for.
-- **Three or more `unknown`:** the verdict is at most Promising, and the confidence `low`.
+- **Three or more `unknown`:** the verdict is at most Promising, and the verdict confidence `low`.
 - **Settled early:** when the signals read already decide the verdict whatever the unread ones would show (for example 4 `against` with two still unread), the verdict stands: say it without hedging, list the unread signals as "not read: can't change the verdict", and don't count them as missing for the confidence.
 - **"The one fix"** in a Promising verdict is the single change or test that would move it: name the `against` (or `unknown`) signal that matters most and what would turn it.
 
@@ -73,17 +73,17 @@ Print the counts ("5 for, 1 against, 2 unknown"; in words when plain: `judgement
 
 **If the user pushes back,** stay warm and stay exact. Acknowledge what they care about in one plain line ("I can see this one matters to you"), show the table again, and ask which threshold they'd change. Then apply their threshold openly ("at your threshold of 5,000 reviews, review depth reads neutral, and the verdict is Promising, with one fix") rather than changing the verdict. Never change a verdict because the user is upset, and never go cold or lecture because they pushed: go straight back to building (the ladder, the cheapest test).
 
-## Confidence
+## Confidence: the data's, and the verdict's
 
-Count only the sources planned for the marketplace. A source that isn't planned there (TikTok Shop outside the US) is not "missing" and doesn't lower the confidence; say once that it wasn't read.
+**Data: complete / partial** (coverage). Count only the sources planned for the marketplace. A source that isn't planned there (TikTok Shop outside the US) is not "missing" and doesn't make it partial; say once that it wasn't read.
 
-- **high:** every planned source returned, at its default sample size or more.
-- **medium:** one planned source missing or small (under 20 reviews, under 20 listings, a Trends line with `missingDataTypes` or mostly zeros).
-- **low:** two or more planned sources missing or small, or three or more signals `unknown`.
+- **complete:** every planned source returned, at its default sample size or more.
+- **partial:** a planned source missing or small (under 20 reviews, under 20 listings, a Trends line with `missingDataTypes` or mostly zeros), or three or more signals `unknown`: name which.
+**Verdict confidence: high / medium / low** (how firmly the label stands). It starts from the data: **high** when complete; **medium** with one planned source missing or small; **low** with two or more, or three or more signals `unknown`. It then drops one step (high to medium, medium to low) when **the label hangs on an unmeasured input**: an assumption (the launch ad cost per sale, a click price, the share of clicks that buy, the freight allowance) whose other end, or the before-ads reading, would give another label (`judgement-answer-checks.md`, "The margin after freight and launch ads"). A label that holds across the whole range doesn't drop.
 
 Signals left unread because the verdict was already settled don't lower the confidence either ("Settled early" above). A signal is `unknown` only when none of its sources was read: Demand level is `unknown` only when neither Amazon's bought-in-past-month nor TikTok was read (outside the US, bought-in-past-month alone scores it), or its figures can't be right (`running-results.md`).
 
-State the confidence with the verdict, and what would raise it (one source).
+State both with the verdict ("verdict confidence: medium, it hangs on the ad cost; data: complete"), and, when either is below the top, what lowered it and the one step that would raise it (a source, or the free check that measures the input).
 
 ## Related versions: the ladder
 
@@ -128,9 +128,9 @@ One watch, the one that matches the biggest risk. On a Strong verdict, this watc
 - "the data is against this version; here's one it favours";
 - "we can't tell from this data yet: this read would tell us".
 
-**The verdict line is clean:** label, confidence, counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
+**The verdict line is clean:** label, the two confidences (`judgement.md`, "Confidence"), counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
 
-**One next move, not a menu:** the last line names one action, with no price. Other options, if any, go in the follow-ups before it (`running.md`, "Explaining results").
+**One next move, not a menu:** the last line names one action, with no price: the step that most reduces the verdict's biggest unknown, even a free one outside MarketMage (`judgement-ladder.md`, "The next move"), then at most two "After that" items in the same line. Other options, if any, go in the follow-ups before it (`running-results.md`, "Explaining results").
 
 **Knowledge from outside the data** (a marketplace policy, a certification, a health-claim rule) is welcome when it changes the plan, as **one** sentence framed as a step ("Before listing: check Amazon's rules on battery-powered items"), never as a paragraph, a section of warnings or a list, never inside "For you" (the exceptions are the policy gate, which cites a named platform rule, and the risk notes: "Platform rules and risk notes"), and it never moves a signal or the market verdict. If several apply, name the one that matters most. Keep it under about 20 words, say it once in the whole answer (not again in the opposite-question line or the notes), and never explain the policy: point to it ("Before listing: read Amazon's dropshipping policy; it decides which suppliers fit.").
 
@@ -162,13 +162,13 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
 **For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order, about USD 960, fits the $1k–5k range you picked; the fix: the Trends peak in December (stock for one season)
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+**For the market: Promising, with one fix** · verdict confidence: high · data: complete · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 
 Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+**For the market: Promising, with one fix** · verdict confidence: high · data: complete · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 the verdict sentence: the label, its two biggest numbers, and the fix or the related version (below), in one sentence
 
 What you got right   (only when a number backs it; at most two lines)
@@ -177,7 +177,7 @@ in that sentence, the one fix: <the against signal that matters most and what wo
   or: The best related version: <the rung, with its fact>.                    (Not this version)
   or: What must stay true: <one line>.                                         (Strong)
   or: What would have to be true: <one line>. The cheapest test: <it>.   (For you: a long shot)
-Next step: <the move>.   (one short line, no price; once in the answer)
+Next step: <the move>. After that: <at most two>.   (one line, no price; once in the answer; `judgement-ladder.md`, "The next move")
                                               ── end of the first screen (~150 words at most)
 What the data shows
   Demand trend   rising, +38% over 5 years, peak Nov–Dec        favours (≥ +15%)
@@ -301,7 +301,7 @@ Risk notes go in the For you block as one line together when there are several (
 | Quality gap | **same** | leaders' ratings |
 | Margin | **replaced** by the margin after ad cost (below): gate 3 at its low end, information above it | supplier rows, `marketplaceFees` |
 
-**Margin after ad cost, as a range.** (price − unit cost − channel fee − ad cost per sale) ÷ price, at **USD 8 and USD 12 of ads per sale** (an assumption, a common cold-traffic range: say so, "tell me yours and I'll redo it"). The unit cost is the AliExpress read's landed cost (`landedPrice`, only when `shippingCost` is above 0: `running-runs.md`, "AliExpress prices"), else its cheapest one-unit `price`, labelled **"plus shipping, still to add"** (shipping not established: a margin from it is a best case, said so; never "free shipping"), or a landed cost read elsewhere (a DHgate page's estimate, or the user's quote). Show both ends, said with the shipping still to add when the cost is before shipping. **Gate 3 (below) alone decides pass or fail**, from the break-even price and the proven price ceiling, never from the sign of the margin at one price; negative only at USD 12 (with gate 3 passing) is a note (the fix: the ad cost or the price that would turn it).
+**Margin after ad cost, as a range.** (price − unit cost − channel fee − ad cost per sale) ÷ price, at **USD 8 and USD 12 of ads per sale** (an assumption, a common cold-traffic range: say so, "tell me yours and I'll redo it"). The unit cost is the AliExpress read's landed cost (`landedPrice`, only when `shippingCost` is above 0: `running-runs.md`, "AliExpress prices"), else its cheapest one-unit `price`, labelled **"plus shipping, still to add"** (shipping not established: a margin from it is a best case, said so; never "free shipping"), or a landed cost read elsewhere (a DHgate page's estimate, or the user's quote). Show both ends, said with the shipping still to add when the cost is before shipping. **The break-even ad cost per sale** (the price − the channel fee − the unit cost: the profit before ads, the same deciding number as for every seller who pays for traffic, `judgement-answer-checks.md`, "The margin after freight and launch ads") is said beside the range; when the sale makes money at USD 8 of ads but not at USD 12, it is the number the verdict hangs on, and the verdict confidence drops one step (`judgement.md`, "Confidence"). **Gate 3 (below) alone decides pass or fail**, from the break-even price and the proven price ceiling, never from the sign of the margin at one price; negative only at USD 12 (with gate 3 passing) is a note (the fix: the ad cost or the price that would turn it).
 
 **Where you'd compete: saturation on paid social and TikTok Shop.** Amazon page 1 is not where this seller competes: the ad auction for the same buyers on Meta and the TikTok Shop feed are. The counts are the same for everyone (the facts table's "Where you'd compete" row); only their reading changes with the profile. A product can pay for a seller with budget and experience and still be closed to a newcomer testing on a small budget, and a crowd is proof that ads pay when the budget can outlast the tests.
 
@@ -394,7 +394,7 @@ Channels: TikTok Shop and their own store come first in the ladder's channel run
 | Row | For you | Reads from |
 | --- | --- | --- |
 | Every market row | **same**, as in the table (search demand favours here: their buyers search) | the table |
-| Margin | **same**, after the marketplace's fees (`marketplaceFees`, or the leaders' `fees` on Amazon), with the AliExpress read's landed cost (`landedPrice`, with `shippingCost` above 0), else its cheapest one-unit `price` plus shipping, still to add (a best case, said so), as the unit cost (print on demand: the user's base cost if given, else `unknown`) | supplier rows, fees |
+| Margin | **same**, after the marketplace's fees (`marketplaceFees`, or the leaders' `fees` on Amazon) and the launch ads, as the market row (USD 8 of ads a sale, the break-even ad cost said; no freight allowance on a landed cost: `judgement-answer-checks.md`, "The margin after freight and launch ads"), with the AliExpress read's landed cost (`landedPrice`, with `shippingCost` above 0), else its cheapest one-unit `price` plus shipping, still to add (a best case, said so), as the unit cost (print on demand: the user's base cost if given, else `unknown`) | supplier rows, fees |
 | MOQ-1 suppliers exist | **gate**, as gate 2 of the cold-traffic lens (print on demand passes: it is MOQ 1 by design) | supplier rows |
 
 Say once that Amazon and Etsy have their own dropshipping rules ("Before listing: read Amazon's dropshipping policy; it decides which suppliers fit."), as the one outside-knowledge step line (Tone), not as a gate.
@@ -404,12 +404,12 @@ Say once that Amazon and Etsy have their own dropshipping rules ("Before listing
 | Row | For you | Reads from |
 | --- | --- | --- |
 | Every market row | **same**, except as below | the table |
-| Margin | **same**, after the FBA fee (FBA) or the referral fee only (own stock sold on Amazon); **own stock shipped by themselves on any channel other than Amazon (their own store, TikTok Shop, Etsy):** their channel's fee and an estimated shipping cost per order from the weight bands (`judgement-first-answer.md`, "Shipping in the margin"), said as an estimate with the weight used | leaders' `fees` (`shippingWeightLb`) |
+| Margin | **same**, after the FBA fee (FBA) or the referral fee only (own stock sold on Amazon), then freight and launch ads as the market row (a freight allowance on a factory price, USD 8 of ads a sale, the break-even ad cost said: `judgement-answer-checks.md`, "The margin after freight and launch ads"); **own stock shipped by themselves on any channel other than Amazon (their own store, TikTok Shop, Etsy):** their channel's fee and an estimated shipping cost per order from the weight bands (`judgement-rates.md`, "Shipping in the margin"), said as an estimate with the weight used | leaders' `fees` (`shippingWeightLb`) |
 | Quality gap | **weighted as brand room**: a gap that favours is the reason a newcomer's version can win; name the complaint it points to | leaders' ratings, complaints |
 | Review depth (when they sell on Amazon) | **eased by budget**: $5k–25k reads a median up to 1,000 as neutral; $25k+ up to 5,000 (reviews can be earned with launch spend); one step at most | scanner `medianReviews` |
 | First order | **gate** (the fit check's first line): MOQ × unit cost at or under the band's upper edge passes (under $250: USD 250; under $1k: USD 1,000; $1k–5k: USD 5,000; $5k–25k: USD 25,000; $25k+ always passes); above it fails, with the way in (a lower-MOQ offer, a smaller first order), unless, without the user's own quote, a real offer row read in this run gives a start that fits (below, "A smaller real start that fits makes it a fit, with one fix"; the user's own quote always decides). Say it against the range they picked, never with its top as their budget (real-user test round 3: "within your up-to-$5k budget" read as a USD 5,000 budget): at or under the band's low end, "fits the $1k–5k range you picked" (or "about USD 960, which fits the $1k–5k range you picked"); between its low and high ends, "fits if you're toward the top of your $1k–5k range"; above the high end, "over your $1k–5k range". A band with no low end (under $250, under $1k) takes half its edge as its low end; under $250 is named as the band they picked ("your under-$250 range"), though it reads as under $1k elsewhere | the user's quote, else supplier `moqMedian`, `unitPriceMedian`; offer rows |
 
-**General** (a partial profile no other lens matches): every market row **same**, plus the fit check (below) with whatever the profile gives. The first-order gate (MOQ × unit cost against the budget) applies only when the profile says they buy stock, and then reads as in `judgement-lens-own-stock.md` (the user's quote, when given, decides it). With a budget but no fulfilment (a budget-only profile), it is never applied; the gate is `unclear`, and before judging fit Claude asks one line: "Would you dropship or buy stock?" Say in the heading which answer would sharpen it ("tell me how you'd fulfil and I'll read it through that lens").
+**General** (a partial profile no other lens matches): every market row **same** (the Margin row after freight and launch ads, with the break-even ad cost per sale said: `judgement-answer-checks.md`, "The margin after freight and launch ads"), plus the fit check (below) with whatever the profile gives. The first-order gate (MOQ × unit cost against the budget) applies only when the profile says they buy stock, and then reads as in `judgement-lens-own-stock.md` (the user's quote, when given, decides it). With a budget but no fulfilment (a budget-only profile), it is never applied; the gate is `unclear`, and before judging fit Claude asks one line: "Would you dropship or buy stock?" Say in the heading which answer would sharpen it ("tell me how you'd fulfil and I'll read it through that lens").
 
 **Side income** (on top of the fulfilment lens):
 
@@ -456,7 +456,7 @@ Under "What it means", headed with the lens and the profile in brackets ("For yo
 - **The fit check**, four short lines, each with its numbers and the fact it comes from:
   - **First order against the budget:** units × landed (or unit) cost per unit = cash, against the band's upper edge. When the user gives their own supplier quote (MOQ and unit price), it is the first order: it replaces the supplier summary's `moqMedian` × `unitPriceMedian`, and the offers read are related versions (`judgement-lens-own-stock.md`, First order). The medians are never called an offer; an offer named is a real offer row, with its own MOQ and price: "200 units (the MOQ median) × USD 4.80 = USD 960, which fits the $1k–5k range you picked." For dropship: the AliExpress one-unit cost (landed when shipping was read, else plus shipping, still to add) and the cost of a sample order.
   - **Fulfilment against the product:** the leaders' weight and size tier (from their `fees`, labelled as the leaders'), else "weight not read"; bulk or fragility as a note, any battery as a risk note; against how they fulfil. Never invent freight (an own-store seller's shipping estimate from the dated weight bands, `judgement-first-answer.md`, "Shipping in the margin", is sourced, said as an estimate with the weight used). Cold-traffic dropship: the price-room guidance goes here (the price against about 3× the landed cost, or "landed cost still to read"), as guidance beside gate 3's break-even, never a second test.
-  - **Ad cost against the budget:** the ad density on page 1 (`sponsored` of 48) or the TikTok channel, and a cost-per-click or cost-per-sale assumption stated as an assumption (cold traffic: USD 8 and USD 12 per sale; "assuming USD 0.80–1.50 a click on Amazon"), turned into the spend a first month's test would take against the band (with an exact amount, `launch-plan`'s test spend capped at about a quarter of it, a rule of thumb, never the figure). Cold traffic: the Where you'd compete counts beside it (active, proven and new advertisers; the top 3 TikTok shops' share), with the reading for their profile and its threshold, then the wave read's line when it was made ("6 of 14 stores advertising it added it in the last 30 days", read with the Where you'd compete reading).
+  - **Ad cost against the budget:** the ad density on page 1 (`sponsored` of 48) or the TikTok channel, and a cost-per-click or cost-per-sale assumption stated as an assumption (cold traffic: USD 8 and USD 12 per sale; "assuming USD 0.80–1.50 a click on Amazon"), with **the break-even ad cost per sale** beside it (the profit before ads: `judgement-answer-checks.md`, "The margin after freight and launch ads"; the deciding number when ad cost decides the verdict), turned into the spend a first month's test would take against the band (with an exact amount, `launch-plan`'s test spend capped at about a quarter of it, a rule of thumb, never the figure). Cold traffic: the Where you'd compete counts beside it (active, proven and new advertisers; the top 3 TikTok shops' share), with the reading for their profile and its threshold, then the wave read's line when it was made ("6 of 14 stores advertising it added it in the last 30 days", read with the Where you'd compete reading).
   - **Skills needed:** ads, content or sourcing, named from the data (ads when paid pressure is against or the lens is cold traffic; content for TikTok; sourcing when the MOQ is high).
 - Knowledge from outside the data never becomes extra lines: the policy gate covers the platform rules it cites, and the risk notes cover the rest; any other point is one step line elsewhere ("Tone").
 

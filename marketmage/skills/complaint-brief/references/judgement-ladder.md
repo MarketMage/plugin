@@ -1,6 +1,6 @@
 # Judgement: related versions and watches
 
-Part of the judgement rules (`judgement.md` is the core). Read once the verdict is known: the ladder for any verdict short of Strong, the watch for every verdict.
+Part of the judgement rules (`judgement.md` is the core). Read once the verdict is known: the ladder for any verdict short of Strong, the watch for every verdict, the next move for every answer that judges.
 
 ## Related versions: the ladder
 
@@ -35,3 +35,11 @@ Every verdict names its biggest risk as **the early sign** to look for, not as a
 One watch, the one that matches the biggest risk. On a Strong verdict, this watch is the natural next move.
 
 **After Strong or Promising, the launch plan.** When the verdict is Strong or Promising, or the user says they want to go ahead, offer the launch plan (the `launch-plan` skill: suppliers at their first-order quantity, the leaders' complaints, a listing draft, price position, first-order maths and a launch-week watch) as one of the follow-ups, with no price (its estimate comes at the yes).
+
+## The next move: the step that settles the biggest unknown
+
+(Tester review of 0.4.21: the heated eye mask's next step was a paid read, while what decided its verdict, what a click costs, was a free five-minute look-up in the user's own ad console.) The Next step is **the one step that most reduces the verdict's biggest unknown**, whether or not MarketMage makes it and whether or not it costs anything:
+- **The biggest unknown, in this order:** the unmeasured input the verdict confidence names (the launch ad cost per sale, a click price, freight: `judgement.md`, "Confidence"); else the `unknown` signal or unread gate that would change the label; else the early sign that would ("Watches").
+- **The step that measures it:** a free step the user can take now comes first when it settles more than a paid read: the suggested bid for the main keyword in their Amazon ad console (Sponsored Products), a freight quote from a forwarder, a sample. Say its time, never a price, and what each result means, with the deciding numbers worked from this check: "Next step: look up the suggested bid for 'heated eye mask' in your Amazon ad console, about 5 minutes: if 1 in 10 clicks buy (an assumption), a bid under about USD 0.50 keeps ads under about USD 5 a sale, where it works; over about USD 1.20 a click, it loses money." A bid is the click price; the sale's ad cost is that ÷ the share of clicks that buy (`judgement-answer-checks.md`, "The margin after freight and launch ads").
+- **One move, then at most two "After that" items,** in the same Next step line, in order, with no price on any: "Next step: <the move>. After that: <one>; <two>." A paid read moves to "After that" when a free step settles more (the leaders' complaints, a related version's check, a watch); the follow-ups and the offer line are unchanged.
+- **When nothing unmeasured holds the verdict** (verdict confidence high, nothing `unknown` that could move the label), the move is as before: the best related version's check, the fix's test, or after Strong the watch. The free stop ("nothing to buy; keep the USD <X>") still applies after Not this version.
