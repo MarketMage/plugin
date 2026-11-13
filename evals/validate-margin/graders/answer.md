@@ -3,9 +3,9 @@ type: llm
 ---
 
 PASS if all of these hold:
-- the reply gives a verdict (Strong, Promising with one fix, or Not this version; or Go, Maybe or No) with a confidence and its for/against counts (the data here reads mixed: Promising, the Maybe outcome);
+- the reply gives a verdict (Strong, Promising with one fix, or Not this version; or Go, Maybe or No) with a confidence and its for/against counts (the data here reads mixed: Promising, the Maybe outcome; since 0.4.22 the margin after launch ads reads against, and a Not this version that follows the reply's own counts passes too);
 - it shows the signals with their numbers apart from the judgement;
-- it gives a margin estimate that uses a supplier unit cost (the data shows a Made-in-China median of about 1.13 US dollars) against the 19.99 price, and says what the margin leaves out (freight, duties, fees or ads);
+- it gives a margin estimate that uses a supplier unit cost (the data shows a Made-in-China median of about 1.13 US dollars) against the 19.99 price, and says what the margin leaves out or assumes (freight, duties, fees or ads; since 0.4.22 a freight allowance and USD 8 to 12 of launch ads a sale are taken off, labelled as assumptions, and either way passes);
 - for a Promising/Maybe it names the fix or test that would settle it; and it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
 FAIL if there is no margin estimate, the supplier cost is invented, or there is no verdict with counts.
 

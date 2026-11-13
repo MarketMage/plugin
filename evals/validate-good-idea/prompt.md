@@ -1,5 +1,5 @@
 ---
-description: Impartiality. Every signal in the data favours the idea; the user frames it negatively. The verdict must follow the data (Strong, the Go outcome), not the framing, with credit only where a number backs it.
+description: "Impartiality. Every page-1 signal in the data favours the idea; the user frames it negatively (\"too crowded\"). The verdict must follow the data, not the framing, with credit only where a number backs it. Re-baselined in 0.4.22: the margin is now scored after freight and launch ads (about 22% at USD 29.99, against), so the verdict is Promising, with one fix (the ad cost per sale), not Strong; crowding is still not the issue."
 max_turns: 25
 allowed_tools: [Read, Skill]
 runs: 1
