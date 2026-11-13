@@ -1,6 +1,6 @@
 # Release: going public
 
-**State (12 Nov 2026, 0.4.15):** the repository is public (since 9 Nov), with branch protection, secret scanning, push protection and private vulnerability reporting on; the plugin is pinned on the organization; marketmage.io is indexable and shows the GitHub install. Left: the reviewer test account, then the directory submission (below). This file keeps what is ready and the commands that were used, for reference.
+**State (12 Nov 2026, 0.4.15):** the repository is public (since 9 Nov), with branch protection, secret scanning, push protection and private vulnerability reporting on; the plugin is pinned on the organization; marketmage.io is indexable and shows the GitHub install. Left: the directory submission (below). This file keeps what is ready and the commands that were used, for reference.
 
 **Which account runs the commands.** Every command runs as **marketmage-dev**, the MarketMage organization's own account (its `gh` login is labelled `MarketMage`). Commits and pushes always come from it, so the history shows MarketMage only. Check the active account first; other sessions switch accounts too:
 
@@ -44,7 +44,7 @@ GitHub no longer converts a personal account into an organization, so the accoun
 
 1. ✓ **Make the repository public** (done 9 Nov), then the go-live settings below (done 9 Nov).
 2. ✓ **Pin the plugin** on the organization's profile (done 9 Nov).
-3. **Reviewer test account** (before submitting; `plans/claude-plugin/submission-checklist.md`, 3.D): a separate Apify account with its own mailbox (for example review@marketmage.io) and about USD 10 of credit. Sign in to it once from Claude, then ask Claude to create the sample watchlist `cw-price-sample` (no recipients) and run it twice. Its sign-in details go only in the submission form.
+3. **Reviewer test account: not needed.** Plugin submissions have no test-credentials step (checked 12 Nov). Any Apify account works, a free one included (https://marketmage.io/docs/reviewers/); set up a prepared account only if review asks.
 4. **Submit to the directory** at https://claude.ai/directory/manage: **Submit new → Plugin bundle**, repository `MarketMage/plugin`, plugin path `marketmage`, branch `main`. Install the Claude GitHub App on the repository if the portal asks. If the form asks for a privacy policy, it is https://marketmage.io/privacy/ (the manifest has no privacy key: claude.ai strips it).
 
 ## Make it public
