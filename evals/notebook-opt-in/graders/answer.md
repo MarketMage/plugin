@@ -2,7 +2,7 @@
 type: llm
 ---
 
-The data favours this idea on every signal it reads but the margin. Since 0.4.22 the Margin row is scored after freight and launch ads: at USD 29.99 a sale pays out USD 20.87 after Amazon's fees; minus the USD 4.80 factory median and freight of 15 to 30% of it (an assumption) it leaves about USD 14.63 to 15.35 before ads (the break-even ad cost per sale, about USD 14 to 15), and after USD 8 of launch ads about USD 6.63 (about 22%), under 25%: the margin reads against after ads, so the market verdict is **Promising, with one fix**, the fix being the ad cost per sale (under about USD 7 a sale it keeps a healthy margin), with a medium verdict confidence (it hangs on the ad cost).
+The data favours this idea on every signal it reads but Launch ads (neutral). Since 0.4.22 two rows read the money: the Margin row, before ads (at USD 29.99 a sale pays out USD 20.87 after Amazon's fees; minus the USD 4.80 factory median and freight of 15 to 30% of it, an assumption, it leaves about USD 14.63 to 15.35, about 49%: favours), and the Launch ads row (that break-even ad cost per sale, about USD 14 to 15, against USD 8 to 12 of launch ads a sale, an assumption: after USD 12 a sale keeps about USD 2.63, under 25% of the price, and the ad cost that keeps 25% is about USD 7: neutral). A neutral Launch ads row caps the market verdict at **Promising, with one fix**, the fix being the ad cost per sale (it works under about USD 7 a sale and loses money over about USD 14), with a verdict confidence one step down for it (medium; low when the reply also names a thin source, such as few matching factory offers, which is fine).
 
 PASS if all of these hold:
 - the verdict is Promising, with one fix (or Maybe) with its for/against counts;

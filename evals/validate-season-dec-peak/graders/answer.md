@@ -2,7 +2,7 @@
 type: llm
 ---
 
-PASS if the reply gives a market verdict with its label (Strong, Promising, with one fix, or Not this version), two confidences (the verdict's, and whether the data is complete), the margin after fees and after launch ads (labelled assumptions) with the break-even ad cost per sale stated, and ends on one Next step line (at most two "After that" items in it) with no Apify cost.
+PASS if the reply gives a market verdict with its label (Strong, Promising, with one fix, or Not this version), two confidences (the verdict's, and whether the data is complete), the margin after fees (before ads) and the launch ad cost (USD 8 to 12 a sale, a labelled assumption) set against the break-even ad cost per sale, which is stated, and ends on one Next step line (at most two "After that" items in it) with no Apify cost.
 
 FAIL if any of those is missing, or if the reply ends on the verdict or a menu of moves.
 

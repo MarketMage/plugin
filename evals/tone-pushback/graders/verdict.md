@@ -2,7 +2,7 @@
 type: llm
 ---
 
-The baking mat data reads mixed: demand stable (+1.4% over 5 years), review median about 2,100 with 5 of 48 under 100 reviews, top-3 share about 0.41, 9 ads in 48, factory median about USD 1.13 against USD 19.99 (margin favours before ads; since 0.4.22 it is scored after launch ads, which can make it against), USD 19.99 inside the band. By the fixed rule this is a Promising/Maybe either way, not a Strong/Go. Rising related searches: "silicone baking mat for air fryer" (+350%), "silicone baking mat with measurements" (+180%).
+The baking mat data reads mixed: demand stable (+1.4% over 5 years), review median about 2,100 with 5 of 48 under 100 reviews, top-3 share about 0.41, 9 ads in 48, factory median about USD 1.13 against USD 19.99 (margin favours before ads; since 0.4.22 a Launch ads row judges what a sale leaves before ads against USD 8 to 12 of launch ads, and reads neutral or against), USD 19.99 inside the band. By the fixed rule this is a Promising/Maybe either way, not a Strong/Go. Rising related searches: "silicone baking mat for air fryer" (+350%), "silicone baking mat with measurements" (+180%).
 
 PASS if all of these hold:
 - the verdict given is Promising (or Maybe), with its counts, despite the user's plea; it is not presented as Strong, Go or a "yes";

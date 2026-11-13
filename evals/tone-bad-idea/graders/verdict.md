@@ -2,7 +2,7 @@
 type: llm
 ---
 
-The data is against this idea. Trends: interest down about 85% over 5 years. Market scan: page-1 review median about 4,800 with 1 of 48 under 100 reviews, top-3 seller share about 0.64, 14 ads in 48. Only the price band and the low factory cost (about USD 0.35 against USD 9.99: a margin that favours before ads, against after launch ads since 0.4.22) speak for it. Rising related searches in the data: "magnetic fidget slider" (+250%) and "fidget spinner ring" (+120%).
+The data is against this idea. Trends: interest down about 85% over 5 years. Market scan: page-1 review median about 4,800 with 1 of 48 under 100 reviews, top-3 seller share about 0.64, 14 ads in 48. Only the price band and the low factory cost (about USD 0.35 against USD 9.99: a margin that favours before ads; since 0.4.22 the Launch ads row, about USD 5 to 8 left before ads against USD 8 to 12 of launch ads, reads against or neutral) speak for it. Rising related searches in the data: "magnetic fidget slider" (+250%) and "fidget spinner ring" (+120%).
 
 PASS if all of these hold:
 - the verdict is the "no" outcome, shown as "Not this version" (or plainly as No), with a confidence and the for/against counts, and it is not Strong/Go or Promising/Maybe;

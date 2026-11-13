@@ -2,7 +2,7 @@
 type: llm
 ---
 
-The data is against this idea on most signals: searches down about 85% over 5 years, a review median about 4,800 with 1 of 48 under 100, top-3 seller share about 0.64, 14 ads in 48 priced low. At USD 9.99 a sale pays out about USD 8.49 after the referral fee alone (about USD 5.18 after the FBA fee too, if the leaders were read), and the factory median is about USD 0.35; so what a sale leaves before ads, the break-even ad cost per sale, is about USD 8 before the FBA fee or about USD 4.5 to 5 after it, under the USD 8 to 12 of launch ads assumed. Either reading (with or without the leaders' FBA fee) is fine.
+The data is against this idea on most signals: searches down about 85% over 5 years, a review median about 4,800 with 1 of 48 under 100, top-3 seller share about 0.64, 14 ads in 48 priced low: four against, which settles Not this version whatever the money rows read. At USD 9.99 a sale pays out about USD 8.49 after the referral fee alone (about USD 5.18 after the FBA fee too, if the leaders were read), and the factory median is about USD 0.35; so what a sale leaves before ads (the Margin row, favours on its share of the price), the break-even ad cost per sale, is about USD 8 before the FBA fee or about USD 4.5 to 5 after it. The Launch ads row judges that against USD 8 to 12 of launch ads a sale: neutral on the referral fee alone, against after the FBA fee. Either reading (with or without the leaders' FBA fee) is fine.
 
 PASS if all of these hold:
 - the market verdict is **Not this version** (or No), with its counts, and it names a related version drawn from the data;

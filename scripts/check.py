@@ -92,6 +92,32 @@ for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/refere
     if size > MAX_REFERENCE_BYTES:
         fail(f'{f.relative_to(ROOT)}: {size} bytes; a reference stays at or under {MAX_REFERENCE_BYTES} so claude.ai reads it in one go: split it')
 
+# A pointer to a section (`file.md`, "Section") must name a section that is in that file, as a heading or a
+# bold lead: when a section moves, its old pointers break silently (review of 0.4.22: four pointed at
+# sections that had moved to another file). Checked on the shared files and each skill's own files.
+XREF = re.compile(r'`(?:references/)?([\w.-]+\.md)`,? "([^"]+)"')
+
+
+def _norm(t: str) -> str:
+    return re.sub(r'[\s"\u201c\u201d\'\u2019*`]+', ' ', t).strip(' .:,;').lower()
+
+
+_titles: dict = {}
+for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/SKILL.md')) + [
+        r for r in sorted((PLUGIN / 'skills').glob('*/references/*.md')) if not (SHARED / r.name).exists()]:
+    refs = f.parent if f.parent.name == 'references' else f.parent / 'references'
+    for n, line in enumerate(f.read_text().splitlines(), 1):
+        for name, sec in XREF.findall(line):
+            target = next((t for t in (refs / name, SHARED / name) if t.is_file()), None)
+            if target is None or name == 'SKILL.md':
+                continue
+            if target not in _titles:
+                _titles[target] = {_norm(h) for ln in target.read_text().splitlines()
+                                   for h in re.findall(r'^#+\s+(.*)', ln) + re.findall(r'\*\*(.+?)\*\*', ln)}
+            q = _norm(sec)
+            if not any(q == t or q in t for t in _titles[target]):
+                fail(f'{f.relative_to(ROOT)}:{n}: `{name}`, "{sec}": no heading or bold lead by that name in {name}')
+
 for cmd in sorted((PLUGIN / 'commands').glob('*.md')):
     m = re.match(r'^---\n(.*?)\n---\n', cmd.read_text(), re.S)
     try:
