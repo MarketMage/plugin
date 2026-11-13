@@ -122,7 +122,7 @@ Datasets stay in the user's Apify account and reading them again costs nothing; 
 
 | What happened | What to do |
 | --- | --- |
-| **ABORTED with results** (usually the cap) | Show what was read and what it cost. Work out from `RUN_SUMMARY` which items weren't read, estimate a rerun of **only those** (pass just those items, or `maxItems` for the rest), and get a new yes. |
+| **ABORTED with results** (usually the cap) | Show what was read and what it cost. Work out from `RUN_SUMMARY` which items weren't read, estimate a rerun of **only those** (send only those items, or `maxItems` for the rest), and get a new yes. |
 | **FAILED, "Actor not found"** | The actor isn't public yet (see "Actors not public yet"): say this part is coming soon, give the other steps' results, don't retry. |
 | **Memory limit** (Apify refuses the start for the account's memory) | Nothing ran or was charged. Apify limits the total memory of the actors running in an account at once (8 GB on the free plan at the time of writing; the user's plan may differ). Start the runs one after another instead of together, or wait a few minutes for the running ones (often a scheduled digest), and say so. |
 | **A data provider was unavailable** (`RUN_SUMMARY` names the items not read, uncharged) | Say which items. For a watch, they are read on the next run; for a one-off, offer a rerun of only those items later. |
