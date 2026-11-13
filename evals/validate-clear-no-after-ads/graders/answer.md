@@ -7,8 +7,8 @@ The data is against this idea on most signals: searches down about 85% over 5 ye
 PASS if all of these hold:
 - the market verdict is **Not this version** (or No), with its counts, and it names a related version drawn from the data;
 - it states the break-even ad cost per sale, or in plain words what a sale leaves before ads set against the launch ad cost (for example "a sale leaves about USD 4.70 before ads, less than the USD 8 a sale ads usually cost at launch");
-- it gives two confidences, the verdict's and the data's; the verdict confidence is **not** lowered because of the ad cost (the verdict holds whatever ads cost); a verdict confidence of high, or one lowered only for a missing source, passes;
-- it ends on one Next step line (a check of the related version, or the free stop "nothing to buy"), with at most two "After that" items in it and no Apify cost.
+- it gives two confidences, the verdict's and the data's (for a verdict settled after the first reads, "the data read is enough to settle it" or "data: complete" counts as the data's); the verdict confidence is **not** lowered because of the ad cost (the verdict holds whatever ads cost); a verdict confidence of high, or one lowered only for a missing source, passes;
+- it ends on one Next step line (a check of the related version, or the free stop "nothing to buy; keep the USD …" with the related version offered on the same line, which is the plugin's approved free-stop shape and not a menu), with at most two "After that" items in it and no Apify cost.
 
 FAIL if the verdict is Strong, Promising, Go or Maybe; if there is no break-even ad cost or before-ads figure; if only one confidence is given, or the verdict confidence is said to hang on the ad cost; or if it ends on the verdict or a menu.
 
