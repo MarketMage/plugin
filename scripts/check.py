@@ -108,14 +108,19 @@ for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/SKILL.
     refs = f.parent if f.parent.name == 'references' else f.parent / 'references'
     for n, line in enumerate(f.read_text().splitlines(), 1):
         for name, sec in XREF.findall(line):
+            if name == 'SKILL.md':
+                continue
             target = next((t for t in (refs / name, SHARED / name) if t.is_file()), None)
-            if target is None or name == 'SKILL.md':
+            if target is None:
+                target = next(iter(sorted((PLUGIN / 'skills').glob(f'*/references/{name}'))), None)
+            if target is None:
+                fail(f'{f.relative_to(ROOT)}:{n}: `{name}`, "{sec}": no file named {name} in the plugin')
                 continue
             if target not in _titles:
-                _titles[target] = {_norm(h) for ln in target.read_text().splitlines()
+                _titles[target] = {_norm(re.sub(r'^\d+\.\s*', '', h)) for ln in target.read_text().splitlines()
                                    for h in re.findall(r'^#+\s+(.*)', ln) + re.findall(r'\*\*(.+?)\*\*', ln)}
             q = _norm(sec)
-            if not any(q == t or q in t for t in _titles[target]):
+            if not any(q == t or t.startswith(q) for t in _titles[target]):
                 fail(f'{f.relative_to(ROOT)}:{n}: `{name}`, "{sec}": no heading or bold lead by that name in {name}')
 
 for cmd in sorted((PLUGIN / 'commands').glob('*.md')):

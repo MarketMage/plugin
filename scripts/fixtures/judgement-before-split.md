@@ -41,7 +41,7 @@ One table for every skill, so the thresholds agree. They are rules of thumb: say
 | Concentration | scanner `top3SellerShare`, `sellerHhi`; Amazon `soldByAmazon` | top-3 share under 0.35 | top-3 share over 0.55, or HHI over 0.25, or Amazon itself sells 3+ of the top 10 | between |
 | Quality gap | Amazon top 10 `rating`, `starBreakdown` | 3+ of 10 rated under 4.2, or a 1-star share of 8% or more on the leaders | the top 5 all rated 4.6 or more, with 1-star shares of 4% or less | between |
 | Paid pressure | scanner `sponsored`, `ads.priceMedian` against the organic `priceMedian` | 6 or fewer ads in 48 results | 12 or more ads in 48, priced under the organic `priceP25` | between; `unknown` when ads weren't read |
-| Margin | before ads: (what a sale pays out after fees − unit or landed cost − freight allowance) ÷ selling price ("Margin after fees"); the after-ads figures are the Launch ads row's | 40% or more | under 25% | 25 to 40% |
+| Margin | before ads: (payout after fees − unit or landed cost − freight allowance) ÷ price ("Margin after fees"); after-ads figures go in the Launch ads row | 40% or more | under 25% | 25 to 40% |
 | Price band | the user's planned price against `priceP25`…`priceP75` | inside the band, or above `priceP75` with a stated difference | under `priceP25` (a race to the bottom) | left out when no price was given |
 
 **Where you'd compete** (read only through the cold-traffic dropship lens): a row of facts in the table, the same for everyone, with its counts (Meta advertisers active, proven, new; TikTok Shop shops and the top 3 shops' share of units) and no market reading. It is left out of the market verdict: whether a crowd of advertisers is a wall or proof that ads pay depends on the budget, so only the lens reads it ("Where you'd compete: saturation on paid social and TikTok Shop").
@@ -54,7 +54,7 @@ One table for every skill, so the thresholds agree. They are rules of thumb: say
 
 The after-fee thresholds are the before-fee ones less typical Amazon fees (about 30% of the price for a small item): a cost at most 30% of the price left about 40% after fees, and a cost over 45% left under 25%. They are rules of thumb for a first look; the same 40% and 25% hold after the freight allowance, and on the before-fee path the cost share counts the freight allowance too.
 
-**The verdict rule.** Count the signals that favour (F) and are against (A), leaving out `unknown`. The user sees the label; the arithmetic is fixed:
+**The verdict rule.** Count the signals that favour (F) and are against (A), leaving out `unknown` and Launch ads (a cap, not a signal). The user sees the label; the arithmetic is fixed:
 
 | Label the user sees | Rule | Short name (internal) |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ Print the counts ("5 for, 1 against, 2 unknown"; in words when plain: `judgement
 
 - **complete:** every planned source returned, at its default sample size or more.
 - **partial:** a planned source missing or small (under 20 reviews, under 20 listings, a Trends line with `missingDataTypes` or mostly zeros), or three or more signals `unknown`: name which.
-**Verdict confidence: high / medium / low** (how firmly the label stands). It starts from the data: **high** when complete; **medium** with one planned source missing or small; **low** with two or more, or three or more signals `unknown`. It then drops one step (high to medium, medium to low) when **the label hangs on an unmeasured input**: an assumption (the launch ad cost per sale, a click price, the share of clicks that buy, the freight allowance) whose other end would give another label, as a neutral Launch ads row does whenever its cap sets the label. A label that holds across the whole range doesn't drop (Launch ads favours or against).
+**Verdict confidence: high / medium / low** (how firmly the label stands). It starts from the data: **high** when complete; **medium** with one planned source missing or small; **low** with two or more, or three or more signals `unknown`. It then drops one step when **the label hangs on an unmeasured input**: an assumption (launch ad cost, click price, share of clicks that buy, freight) whose other end would give another label, as a neutral Launch ads row does when its cap sets the label. A label that holds across the whole range doesn't drop (Launch ads favours or against).
 
 Signals left unread because the verdict was already settled don't lower the confidence either ("Settled early" above). A signal is `unknown` only when none of its sources was read: Demand level is `unknown` only when neither Amazon's bought-in-past-month nor TikTok was read (outside the US, bought-in-past-month alone scores it), or its figures can't be right (`running-results.md`).
 
