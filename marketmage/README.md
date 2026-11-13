@@ -63,7 +63,7 @@ In Claude Code: type `/mcp`, choose **apify** and sign in to Apify.
 
 Step by step, with pictures: [marketmage.io/start](https://marketmage.io/start/).
 
-**Help:** [marketmage.io/support](https://marketmage.io/support/) · bugs and ideas: [GitHub issues](https://github.com/MarketMage/plugin/issues) · security: security@marketmage.io
+**Documentation:** [marketmage.io/docs](https://marketmage.io/docs/) · **Help:** [marketmage.io/support](https://marketmage.io/support/) · bugs and ideas: [GitHub issues](https://github.com/MarketMage/plugin/issues) · security: security@marketmage.io
 
 ## What you can ask
 
@@ -225,4 +225,4 @@ The [LICENSE](LICENSE) file is the binding text.
 
 MarketMage is a trademark of Extoris LLC.
 
-Published by Extoris LLC · [Terms](https://marketmage.io/terms/) · [Privacy](https://marketmage.io/privacy/) · [Acceptable Use](https://marketmage.io/acceptable-use)
+Published by Extoris LLC · [Documentation](https://marketmage.io/docs/) · [Terms](https://marketmage.io/terms/) · [Privacy](https://marketmage.io/privacy/) · [Acceptable Use](https://marketmage.io/acceptable-use)
