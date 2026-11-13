@@ -1,7 +1,7 @@
 {
   "name": "marketmage",
   "displayName": "MarketMage",
-  "version": "0.4.20",
+  "version": "0.4.21",
   "description": "E-commerce product research and competitor monitoring, run on CleanPull's actors in your own Apify account: find and validate products, with factory prices read from Made-in-China and Alibaba, Amazon's fees from the listings themselves and a fit check for your budget; profile competitor stores, prices, reviews, promotions and ads; and schedule watchlists for prices, stock, MAP, Amazon ranks, reviews and more. Start with /marketmage:start, or just say \"Is a heated eye mask worth selling for me?\"",
   "author": {
     "name": "MarketMage",
