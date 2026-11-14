@@ -11,7 +11,7 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 
 ```
 **For you: a fit, with one fix** [$1k–5k · own stock · side income] · the first order, about USD 960, fits the $1k–5k range you picked; the fix: the Trends peak in December (stock for one season)
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+**For the market: Promising, with one fix** · verdict confidence: high · data: complete · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
 ```
 
 **Both verdict lines name their move, and never read as a contradiction:**
@@ -22,7 +22,7 @@ With a profile, the first screen opens with two verdict lines, "For you" first:
 Without a profile, the market line leads, labelled the same way. Only when the profile hasn't been offered yet in this conversation ("Asking for the profile"), the first screen adds one friendly line before the next step: "Tell me how you'd sell it and roughly your budget (or skip), and I'll say what this means for you."
 
 ```
-**For the market: Promising, with one fix** · high confidence · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
+**For the market: Promising, with one fix** · verdict confidence: high · data: complete · 4 for · 2 against · 1 neutral   (compact: a known experienced seller; plain by default, `judgement-first-answer.md`)
   the verdict sentence: the label, its two biggest numbers, and the fix or the related version (below), in one sentence
 
 What you got right   (only when a number backs it; at most two lines)
@@ -44,7 +44,7 @@ For you, through the <lens> lens   (only with a profile; see "The For you block"
   Fit check: first order · fulfilment · ad cost · skills, each with its number.
 
 Want the full detail: what it means, the early sign and its watch, what this can't see?   (the one offer line)
-Next step: <the move>.   (one short line, no price; once in the answer)
+Next step: <the move>. After that: <at most two>.   (one line, no price; once in the answer; `judgement-ladder.md`, "The next move")
   or: Next step: nothing to buy; keep the USD <X>. Or <the best related version>.   (the free stop: Not this version, or For you: not this one)
                                               ── end of the short default
 ── the full detail, on a yes or a question that needs it:
@@ -98,9 +98,9 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing an
 - "the data is against this version; here's one it favours";
 - "we can't tell from this data yet: this read would tell us".
 
-**The verdict line is clean:** label, confidence, counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
+**The verdict line is clean:** label, the two confidences (`judgement.md`, "Confidence"), counts, and one line with its two biggest numbers. No "though", no apology for the confidence: what lowered it goes under the table, in one line with what would raise it.
 
-**One next move, not a menu:** the last line names one action, with no price. Other options, if any, go in the follow-ups before it (`running-results.md`, "Explaining results").
+**One next move, not a menu:** the last line names one action, with no price: the step that most reduces the verdict's biggest unknown, even a free one outside MarketMage (`judgement-ladder.md`, "The next move"), then at most two "After that" items in the same line. Other options, if any, go in the follow-ups before it (`running-results.md`, "Explaining results").
 
 **A free "stop here" is a next move too.** When the verdict is "not this version" (the market's **Not this version**, or "For you: **not this one**"), the last line may be the free move instead of a paid one: "Next step: nothing to buy; keep the USD <X>.", where X is what the user would otherwise put in next (their quote's first order, the launch plan's goods, a test's ad spend; an exact amount of their own is never repeated: say "keep the amount you set aside" instead). It is offered beside the best related version, never in place of it: the related version stays in "Build on it", as one of the follow-ups, so the search still never dead-ends (`judgement.md`, rule 10), and the user picks. Use it when the data says stop for this version and nothing read makes a cheap check the obvious move; otherwise the paid next step stays. Every other verdict (Strong, Promising, a strong fit, a fit, with one fix, a long shot) keeps the paid next step above. Say it plainly and warmly, never as a loss ("nothing to buy" is a result: the check just saved them the order).
 
@@ -117,8 +117,6 @@ Part of the judgement rules (`judgement.md` is the core). Read before writing an
 **Open on the best opening.** When an answer ranks several ideas (`find-products`, `gaps`), its first sentence names the strongest lead found and its number: "The strongest lead is a 40-piece meal-prep set: 34,876 units sold on TikTok Shop at USD 30.99." The count of ideas the data favours, finds mixed or is against goes after the table, never first.
 
 **Answer the user's question first.** When the user's message asks something directly (a question, "what does X mean?", "do I have to…?", "is that real?", a doubt about a number), the reply opens with the answer, in plain words, before any heading, verdict line, step output or table: one to three sentences, the answer itself first ("No: dropshipping means the supplier ships each order to your buyer, so you buy no stock up front. A sample to check quality is optional, about USD 20 here."). Several questions get one short answer each, in the order asked. A question the data can't settle yet gets what is known and what would settle it, never silence. Then the rest of the reply follows (the step they asked for, the verdict lines, the table). This comes before the first screen's verdict lines (`judgement-answer.md`) and before any skill's rule on what the answer opens with; it never moves a verdict or a number. A question the check itself answers ("is it worth selling?", "is it saturated?") is answered by the verdict lines, with no line before them; this rule is for the other questions in the message. A question about a label or a term is answered with its meaning in plain words and what it means for their idea: "'A fit, with one fix' means nothing found so far rules it out for you, and one thing stands between it and a strong fit; for the harness, that's the crowd of sellers on TikTok."
-
-**Plain words for a newcomer.** With a profile whose experience is none (never sold), or a user who says they're new to selling, every trade term gets a few plain words the first time it appears in the conversation (`glossary.md`), and so does every term of this method: lens ("how I read the numbers for how you sell"), cold traffic ("ads shown to people who weren't searching for it"), concentration or top-3 share ("how much of the page the three biggest sellers hold"), HHI, review depth, paid pressure, felt want, gate, sales floor, break-even, FBA, MOQ, landed cost. Where a plain phrase says the same, use it alone ("how few sellers dominate" rather than "concentration"); never an internal term ("HHI-like", "a neutral reading", "the cold-traffic dropship lens") without its meaning. The table's readings ("favours", "against", "neutral") get one plain line the first time ("favours: this number helps the idea; against: it hurts; neutral: neither"), and a percentile is said as what it is ("the cheapest quarter sells under £6.99", not "p25"). The four For you labels and the three market labels stay word for word; their meaning is said once, in plain words, the first time they appear in the conversation. This is plain speech, never a remark about being new (the words to avoid, below).
 
 **Size the reply to the question.** Length follows what was asked, never the most the data could fill:
 - **A question that asks for no new check** (a definition, a yes or no, a doubt about a figure, a cost question, "which one would you pick?") gets a short answer: about 150 words at most, no table unless asked for, then one line offering more ("Want the full table for both?").

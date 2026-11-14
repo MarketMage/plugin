@@ -2,7 +2,7 @@
 type: llm
 ---
 
-The fidget spinner data is against the idea (falling about 85% over 5 years, deep reviews, a top-3 share about 0.64, 14 ads in 48); only margin and price band favour it.
+The fidget spinner data is against the idea (falling about 85% over 5 years, deep reviews, a top-3 share about 0.64, 14 ads in 48); only the price band and the margin before ads favour it (since 0.4.22 a Launch ads row judges what a sale leaves before ads, about USD 5 to 8, against USD 8 to 12 of launch ads: against or neutral).
 
 PASS if all of these hold:
 - the market verdict (for any seller) is "Not this version" (or No), with confidence and counts;
