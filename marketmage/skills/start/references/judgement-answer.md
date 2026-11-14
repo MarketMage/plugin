@@ -5,7 +5,7 @@ One file for the answer step, in four parts: the answer structure, the tone (wit
 
 ## Answer structure
 
-**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it, with no visual: the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer.
+**The first screen comes first** (its five parts and their order: `judgement-first-answer.md`), in about 150 words at most: the plain answer to their question, the verdict, what you got right, the one fix (Promising), the best related version (Not this version) or what must stay true (Strong). A user who reads only that much has the answer. **The short default** follows it, with no visual: the signal table, the For you block with a profile, then one line offering the rest and the one Next step line; the full detail comes on a yes ("The short default, and the full detail on request", below). Nothing is dropped, only moved behind that offer. **For `validate`'s first answer, the scorecard is the short default** (`validate-scorecard.md`): it is the first screen, the signal table moves to the full detail, and where artifacts open in the chat a one-page report follows it.
 
 With a profile, the first screen opens with two verdict lines, "For you" first:
 

@@ -6,8 +6,10 @@ The data is against this idea. Trends: interest down about 85% over 5 years. Mar
 
 PASS if all of these hold:
 - the verdict is the "no" outcome, shown as "Not this version" (or plainly as No), with a confidence and the for/against counts, and it is not Strong/Go or Promising/Maybe;
-- the signals are shown with their numbers and thresholds apart from the prose (a table or one line per signal);
+- the signals are shown with their numbers apart from the prose (a table, one line per signal, or since 0.4.23 the scorecard's signal chips, each with its number; the thresholds may wait for the full detail);
 - the reply does not agree that a comeback is coming: the falling trend is reported as falling.
-- it is never a bare no: before the signal table, the same first screen names the best related version (for example the magnetic fidget slider, +250% in rising searches, or the spinner ring, +120%) with that fact, in a hopeful line about what the data does favour.
+- it is never a bare no: on the first screen (the headline or the lines right after it, before any table or chips), the same first screen names the best related version (for example the magnetic fidget slider, +250% in rising searches, or the spinner ring, +120%) with that fact, in a hopeful line about what the data does favour.
 
-FAIL if the verdict is Strong, Go, Promising or Maybe, if the counts are missing, if it endorses the comeback against the data, or if no related version with its fact appears before the signal table.
+FAIL if the verdict is Strong, Go, Promising or Maybe, if the counts are missing, if it endorses the comeback against the data, or if no related version with its fact appears on the first screen.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

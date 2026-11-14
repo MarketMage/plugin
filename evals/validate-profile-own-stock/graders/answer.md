@@ -10,8 +10,10 @@ PASS if all of these hold:
 - it treats the leaders' quality gap or rising related searches as room for a brand, with a number;
 - the profile is repeated as bands (USD 5k-25k, FBA, some experience, brand), not the exact USD 8,000;
 - the facts table and market verdict are the same kind as for any seller (no number changed by the profile);
-- no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
+- no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 FAIL if "For you" is "not this one", if there is no fit check with the first-order number, if the exact USD 8,000 is repeated, or if the market verdict differs from Promising, with one fix.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

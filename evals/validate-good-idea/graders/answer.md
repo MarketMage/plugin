@@ -6,13 +6,15 @@ The data read for this idea favours it on every signal: demand rising about 96% 
 
 PASS if all of these hold:
 - the verdict is **Promising, with one fix** (or Maybe), its fix the ad cost per sale (not crowding), stated with its confidences and the for/against counts, and the answer to "too crowded" is that page 1 is open, from the data;
-- the reply shows the signals with their numbers apart from the judgement (a table or one line per signal);
+- the reply shows the signals with their numbers apart from the judgement (a table, one line per signal, or since 0.4.23 the scorecard's signal chips with their numbers);
 - it answers the user's "how saturated" framing directly with the data, and names the biggest risk or what would make it not worth it, with an early sign to watch (in the short default answer, the early sign and its watch may instead wait behind the one line offering the full detail, when that line names them: either passes); since 0.4.22, when the launch ad cost decides the verdict, naming the ad cost as the biggest risk with the step that measures it (the suggested bid in the Amazon ad console, with what result means what) meets this point instead, and the early sign and watch may wait in the full detail behind the one offer line, whether or not that line names them; "page 1 is open" may be said in any words the data backs (sales spread across many brands, new listings still selling);
 - any warm words are tied to a number from the data; it contains no praise of the user and no hype words ("great opportunity", "huge potential", "winning", "hot", "definitely");
-- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (the user already agreed to up to 30 cents).
+- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23) (the user already agreed to up to 30 cents).
 
 A credit line that names the user's own choice with its number ("you were right to aim at USD 29.99: it sits in the middle half of the market") is credit tied to data, not praise of the user. A factory median recomputed after leaving out an offer that isn't the product (about USD 4.95, with a margin near USD 14.43) is fine.
 
-FAIL if the verdict is Strong, Go, Not this version or No, if the fix is about crowding, if it agrees the market is too crowded against the data, if it praises the user or praises the idea without a number, or if it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+FAIL if the verdict is Strong, Go, Not this version or No, if the fix is about crowding, if it agrees the market is too crowded against the data, if it praises the user or praises the idea without a number, or if it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

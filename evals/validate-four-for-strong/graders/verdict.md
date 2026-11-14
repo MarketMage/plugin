@@ -7,8 +7,10 @@ The data: demand rising about 40% over 5 years (favours); the top 10's sales flo
 PASS if all of these hold:
 - the verdict is **Promising, with one fix** (or Maybe) with its counts (4 for, 0 against, or counts within one of these if a single signal is read differently but still with 0 against and at least 4 for);
 - the one fix is the ad cost per sale (it works if ads cost under about USD 4 to 5 a sale and loses money over about USD 10), the only thing holding it back from Strong; no other row is named as the fix or as against;
-- the signals are shown with their numbers apart from the prose, and it ends on a next move with no Apify cost.
+- the signals are shown with their numbers apart from the prose, and it ends on a next move with no Apify cost (beyond the move's own one estimate, allowed since 0.4.23).
 
 FAIL if the verdict is Not this version or No, if a row other than the ad cost is read as against or named as the fix, if the verdict is Strong (or Go), or if there are no counts.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.
