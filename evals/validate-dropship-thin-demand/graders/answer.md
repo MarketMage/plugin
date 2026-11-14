@@ -13,8 +13,10 @@ PASS if all of these hold:
 - the For you reasoning treats demand as thin for this user, naming both thin sources (the TikTok units, about 60 for the top listing, and the Amazon floor of about 700): it never says low Amazon search demand is good, favourable or an opening for cold traffic;
 - MOQ-1 suppliers (or the AliExpress price) may be credited, but shipping is never called free: the landed cost uses the page's shipping where read, or shipping is said to be still to add, never invented;
 - the market verdict is "Not this version" (or No) with its counts, and the best related version follows (on the first screen; the full list of related versions may wait behind the one line offering the full detail);
-- the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 300; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
+- the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 300; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 FAIL if the For you label is anything other than "a long shot", if "For you" is "not this one" without a gate that failed on a fact read in this run (thin demand alone is not a gate), if "For you" reads as a fit because Amazon demand is low, if any demand row reads as favouring this user, if a shipping cost or landed cost is invented, or if the exact USD 300 is repeated.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

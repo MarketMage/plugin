@@ -9,8 +9,10 @@ PASS if all of these hold:
 - "For the market" is **Promising, with one fix** (or Maybe), its fix the ad cost per sale, with its counts; the market table and verdict still show the launch ad range (USD 8 to 12 a sale) or the break-even ad cost, the same as for any seller;
 - the user's newsletter or "no ads" is never used to change the market verdict or remove the Launch ads row from the market's counts;
 - the exact budget is never repeated (bands such as "$1k-5k" are fine);
-- it ends on one Next step line, at most two "After that" items in it, and no Apify cost.
+- it ends on one Next step line, at most two "After that" items in it, and no Apify cost (beyond the move's own one estimate, allowed since 0.4.23).
 
 FAIL if the market verdict is Strong (the facts layer changed for this user) or Not this version; if For you is "not this one" or "a long shot"; if For you's fix or caveat is the ad cost although the user said they won't run ads; or if there is no For you verdict.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

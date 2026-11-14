@@ -15,9 +15,11 @@ PASS if all of these hold:
 - a fit check with numbers is present (the MOQ-1 offer or first order against the under-USD-1k band, and an ad-cost assumption stated as an assumption, ideally as a range such as USD 8 to 12 per sale);
 - the profile is repeated as bands (under USD 1k, dropship, first time, side income), not the exact USD 400;
 - it makes no comment on the profile itself (no "great that…", no "don't worry", no praise of the person or their situation); credit for the user's own pick that the data backs ("What you got right: your USD 29.99 sits in the middle of what shoppers pay") is the plugin's rule (judgement.md, rule 5) and is fine;
-- the facts table is labelled for any seller / the market (the short default's "What the data shows" heading counts), separate from the For you block, and the profile does not change any number in it;
-- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
+- the facts table, or since 0.4.23 the scorecard's signal chips, are the market's facts (the short default's "What the data shows" heading counts, and so do chips under a "For the market" line), separate from the For you block, and the profile does not change any number in them;
+- it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
-FAIL if "For you" is "not this one" because of the lithium battery or the health-claim wording, if the market verdict changes because of the profile, if there is no "For you" verdict, if a landed cost or shipping figure is invented, if the exact USD 400 is repeated, if it flatters the user, or if it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step.
+FAIL if "For you" is "not this one" because of the lithium battery or the health-claim wording, if the market verdict changes because of the profile, if there is no "For you" verdict, if a landed cost or shipping figure is invented, if the exact USD 400 is repeated, if it flatters the user, or if it closes on a "This run cost…" (or "This research cost…") line, or puts an Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

@@ -9,8 +9,10 @@ PASS if all of these hold:
 - the margin is worked after Amazon's fees with a freight or duty allowance (labelled an assumption) or a clear note that freight is still to add, and the launch ads (USD 8 and/or 12 a sale, labelled an assumption) are set against what a sale leaves; figures within about USD 1 or 3 percentage points of those above are fine;
 - the break-even ad cost per sale (about USD 26 to 27.5) is stated, in those or equivalent words ("ads can cost up to about USD 26 a sale before it loses money");
 - it gives two confidences: one for the verdict, which is **high**, and one for the data (complete, or every source came back), in compact or plain words;
-- it ends on one Next step line, with at most two "After that" items in it, and no Apify cost on it.
+- it ends on one Next step line, with at most two "After that" items in it, and no Apify cost on it (beyond the move's own one estimate, allowed since 0.4.23).
 
-FAIL if the verdict is Promising, Not this version, Maybe or No; if launch ads are never mentioned; if the break-even ad cost is missing; if only one confidence is given or the verdict confidence is medium or low; or if it ends on a menu of moves or puts an Apify cost on the next step.
+FAIL if the verdict is Promising, Not this version, Maybe or No; if launch ads are never mentioned; if the break-even ad cost is missing; if only one confidence is given or the verdict confidence is medium or low; or if it ends on a menu of moves or puts an Apify cost on the next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

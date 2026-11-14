@@ -9,8 +9,10 @@ PASS if all of these hold:
 - the For you block reads the idea through a side-income lens: it addresses seasonality from the Trends line (a peak or how even the year is) and upkeep (variants, returns or the rechargeable electronics), each tied to a fact from the data;
 - it includes a fit check with numbers: the first order (units × unit cost) against the USD 1k-5k band, and time or skills needed for about 4 hours a week;
 - the profile is repeated as bands (USD 1k-5k, own stock, first time, side income), not the exact USD 2,500;
-- the facts table and market verdict are not changed by the profile; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
+- the facts table and market verdict are not changed by the profile; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 FAIL if there is no "For you" verdict, if seasonality and upkeep are both absent, if the exact USD 2,500 is repeated, or if the market verdict differs from Promising, with one fix.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

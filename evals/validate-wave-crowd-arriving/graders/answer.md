@@ -12,8 +12,10 @@ PASS if all of these hold:
 - it reads the wave for this user's band as a crowd arriving: several stores are testing the same product or pitch now, so they would be bidding against them (outbid while testing, or the same idea), and it suggests an angle or audience no current advertiser targets (an unserved angle) as what matters for them;
 - the wave is information, not a reject: the For you label is "a fit, with one fix" (not "not this one", not "a long shot"), and nothing says the wave alone rules the product out;
 - it states the 14 advertisers (or the crowded reading) as the Meta US ad read, without inventing spend;
-- the profile is given as bands (under USD 1k), not the exact USD 600; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step.
+- the profile is given as bands (under USD 1k), not the exact USD 600; no comment on the profile itself; it does not close on what the run cost (no "This run cost…" or "This research cost…" line) and puts no Apify cost on its next step (beyond the move's own one estimate, allowed since 0.4.23).
 
 FAIL if the wave is not reported with numbers, if the For you label is "not this one" or "a long shot", if the wave is read as a reason to give up or as good news for this user (proof that it pays now) without the crowd-arriving reading, if no unserved angle is suggested, if the wave changes the for/against count or the Where you'd compete row (it is one line beside them), if 7 stores are counted as adding it, if the stated cost is far from the charges (under USD 0.12 or over USD 0.25 in total), if the exact USD 600 is repeated, or if no cost is given.
 
 "Apify cost" means what MarketMage's runs cost; product, unit, fee, ad or sample prices from the data are not Apify costs and are fine anywhere.
+
+Since 0.4.23 (the scorecard), the first answer's Next step line says the move's cost when it has one: a free step says it is free (with its time), and a MarketMage read may carry its one estimate ("about $0.14"); that is the approved shape and does not count as an Apify cost on the next step. A closing "This run cost…" line still fails. Money may be written with $ rather than USD.

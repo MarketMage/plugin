@@ -4,7 +4,7 @@ Part of the judgement rules (`judgement.md` is the core). **Read only after the 
 
 ## The offer
 
-- **In the existing offer line,** never a line of its own: "Want the full detail, or shall we go deeper and shape this around what you'd actually sell?" (find-products); "…or shall we go deeper on the version you'd build?" (validate). Other flows name their own deeper part in the same line ("what it opens up for you", spy-store). A yes to the detail gets the full detail as now; a yes to deeper starts here. The offer is that line and nothing more: no teaser beside it (no related version, rising search or figure of what going deeper would find), so the short default stays exactly as short.
+- **In the existing offer line,** never a line of its own: "Want the full detail, or shall we go deeper and shape this around what you'd actually sell?" (find-products). In validate, not in the first answer's scorecard (its one offer is the full detail, so nothing competes with the next move): "Shall we go deeper on the version you'd build?" comes as one of the full detail's follow-ups. Other flows name their own deeper part in the same line ("what it opens up for you", spy-store). A yes to the detail gets the full detail as now; a yes to deeper starts here. The offer is that line and nothing more: no teaser beside it (no related version, rising search or figure of what going deeper would find), so the short default stays exactly as short.
 - **Once per conversation.** After it has been made, later answers keep the plain offer line.
 - **A shape the user asks for wins:** "everything" still gets everything; "just the table" gets no offer.
 

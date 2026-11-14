@@ -10,6 +10,6 @@ PASS if all of these hold:
 - it gives one line on what happens if more sellers arrive (or a price fight), worked at the cheapest quarter's price of about USD 17.99, with what a sale would leave after Amazon's fees and the unit cost (about USD 6 to 6.50 a sale, or about 35%; a figure within a few cents or points is fine);
 - it says the user's 15k searches (and the sellers' country) aren't something this check confirms or shows, without inventing a search volume;
 - it credits what the user got right only with the data's number (for example reviews being thin: median 41);
-- the market verdict line ("For the market: …") is present with its counts.
+- the market verdict is present with its counts (since 0.4.23 the scorecard headline carries the market label without a "For the market:" prefix when there is no profile, and the counts are said in words in the bold sentence after it).
 
 FAIL if the reading is anything other than Early, if a "too late"-style label appears as the reading, if the ten-more-sellers line is missing or worked at a price other than about USD 17.99, or if it states a search volume as a fact.
