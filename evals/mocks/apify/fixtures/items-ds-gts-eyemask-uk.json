@@ -1,0 +1,883 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "heated eye mask",
+  "geo": "GB",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "cordless heated eye mask",
+   "steam eye mask"
+  ],
+  "summary": {
+   "average": 33,
+   "peak": 52,
+   "peakDate": "2026-06-28T00:00:00.000Z",
+   "latest": 45,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 95.6,
+   "direction": "rising"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "formattedAxisTime": "2021-10-03",
+    "value": [
+     20
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2021-10-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-01-02",
+    "value": [
+     22
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-01-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-04-03",
+    "value": [
+     21
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-04-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-07-03",
+    "value": [
+     28
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-07-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-10-02",
+    "value": [
+     24
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-10-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-01-01",
+    "value": [
+     26
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-01-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-04-02",
+    "value": [
+     25
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-04-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-07-02",
+    "value": [
+     34
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-07-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-10-01",
+    "value": [
+     29
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-10-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-12-31",
+    "value": [
+     31
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-12-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-03-31",
+    "value": [
+     30
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-03-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-06-30",
+    "value": [
+     40
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-06-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-09-29",
+    "value": [
+     33
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-09-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-12-29",
+    "value": [
+     36
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-12-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-03-30",
+    "value": [
+     35
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-03-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-06-29",
+    "value": [
+     46
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-06-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-09-28",
+    "value": [
+     38
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-09-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-12-28",
+    "value": [
+     41
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-12-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-03-29",
+    "value": [
+     40
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-03-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-06-28",
+    "value": [
+     52
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-09-27",
+    "value": [
+     45
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   }
+  ],
+  "missingDataTypes": [],
+  "relatedQueries_top": [
+   {
+    "query": "heated eye mask best",
+    "value": 100,
+    "isBreakout": false
+   },
+   {
+    "query": "heated eye mask for kids",
+    "value": 90,
+    "isBreakout": false
+   },
+   {
+    "query": "heated eye mask set",
+    "value": 80,
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "heated eye mask for dry eyes",
+    "value": 900,
+    "formattedValue": "+900%",
+    "isBreakout": false
+   },
+   {
+    "query": "bluetooth heated eye mask",
+    "value": 400,
+    "formattedValue": "+400%",
+    "isBreakout": false
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "type": "term",
+  "searchTerm": "cordless heated eye mask",
+  "geo": "GB",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "heated eye mask",
+   "steam eye mask"
+  ],
+  "summary": {
+   "average": 30,
+   "peak": 49,
+   "peakDate": "2026-06-28T00:00:00.000Z",
+   "latest": 42,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 110.1,
+   "direction": "rising"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "formattedAxisTime": "2021-10-03",
+    "value": [
+     17
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2021-10-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-01-02",
+    "value": [
+     19
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-01-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-04-03",
+    "value": [
+     18
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-04-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-07-03",
+    "value": [
+     25
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-07-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-10-02",
+    "value": [
+     21
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-10-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-01-01",
+    "value": [
+     23
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-01-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-04-02",
+    "value": [
+     22
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-04-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-07-02",
+    "value": [
+     31
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-07-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-10-01",
+    "value": [
+     26
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-10-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-12-31",
+    "value": [
+     28
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-12-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-03-31",
+    "value": [
+     27
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-03-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-06-30",
+    "value": [
+     37
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-06-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-09-29",
+    "value": [
+     30
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-09-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-12-29",
+    "value": [
+     33
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-12-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-03-30",
+    "value": [
+     32
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-03-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-06-29",
+    "value": [
+     43
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-06-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-09-28",
+    "value": [
+     35
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-09-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-12-28",
+    "value": [
+     38
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-12-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-03-29",
+    "value": [
+     37
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-03-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-06-28",
+    "value": [
+     49
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-09-27",
+    "value": [
+     42
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   }
+  ],
+  "missingDataTypes": [],
+  "relatedQueries_top": [
+   {
+    "query": "heated eye mask best",
+    "value": 100,
+    "isBreakout": false
+   },
+   {
+    "query": "heated eye mask for kids",
+    "value": 90,
+    "isBreakout": false
+   },
+   {
+    "query": "heated eye mask set",
+    "value": 80,
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "heated eye mask for dry eyes",
+    "value": 900,
+    "formattedValue": "+900%",
+    "isBreakout": false
+   },
+   {
+    "query": "bluetooth heated eye mask",
+    "value": 400,
+    "formattedValue": "+400%",
+    "isBreakout": false
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "type": "term",
+  "searchTerm": "steam eye mask",
+  "geo": "GB",
+  "timeRange": "past-5-years",
+  "comparedWith": [
+   "heated eye mask",
+   "cordless heated eye mask"
+  ],
+  "summary": {
+   "average": 27,
+   "peak": 46,
+   "peakDate": "2026-06-28T00:00:00.000Z",
+   "latest": 39,
+   "latestDate": "2026-10-04T00:00:00.000Z",
+   "changePercent": 129.9,
+   "direction": "rising"
+  },
+  "interestOverTime_timelineData": [
+   {
+    "formattedAxisTime": "2021-10-03",
+    "value": [
+     14
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2021-10-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-01-02",
+    "value": [
+     16
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-01-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-04-03",
+    "value": [
+     15
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-04-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-07-03",
+    "value": [
+     22
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-07-03T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2022-10-02",
+    "value": [
+     18
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2022-10-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-01-01",
+    "value": [
+     20
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-01-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-04-02",
+    "value": [
+     19
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-04-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-07-02",
+    "value": [
+     28
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-07-02T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-10-01",
+    "value": [
+     23
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-10-01T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2023-12-31",
+    "value": [
+     25
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2023-12-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-03-31",
+    "value": [
+     24
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-03-31T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-06-30",
+    "value": [
+     34
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-06-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-09-29",
+    "value": [
+     27
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-09-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2024-12-29",
+    "value": [
+     30
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2024-12-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-03-30",
+    "value": [
+     29
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-03-30T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-06-29",
+    "value": [
+     40
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-06-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-09-28",
+    "value": [
+     32
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-09-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2025-12-28",
+    "value": [
+     35
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2025-12-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-03-29",
+    "value": [
+     34
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-03-29T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-06-28",
+    "value": [
+     46
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-06-28T00:00:00.000Z",
+    "isPartial": false
+   },
+   {
+    "formattedAxisTime": "2026-09-27",
+    "value": [
+     39
+    ],
+    "hasData": [
+     true
+    ],
+    "date": "2026-09-27T00:00:00.000Z",
+    "isPartial": false
+   }
+  ],
+  "missingDataTypes": [],
+  "relatedQueries_top": [
+   {
+    "query": "heated eye mask best",
+    "value": 100,
+    "isBreakout": false
+   },
+   {
+    "query": "heated eye mask for kids",
+    "value": 90,
+    "isBreakout": false
+   },
+   {
+    "query": "heated eye mask set",
+    "value": 80,
+    "isBreakout": false
+   }
+  ],
+  "relatedQueries_rising": [
+   {
+    "query": "heated eye mask for dry eyes",
+    "value": 900,
+    "formattedValue": "+900%",
+    "isBreakout": false
+   },
+   {
+    "query": "bluetooth heated eye mask",
+    "value": 400,
+    "formattedValue": "+400%",
+    "isBreakout": false
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "type": "comparison",
+  "searchTerms": [
+   "heated eye mask",
+   "cordless heated eye mask",
+   "steam eye mask"
+  ],
+  "geo": "GB",
+  "timeRange": "past-5-years",
+  "winner": "heated eye mask",
+  "averages": [
+   {
+    "searchTerm": "heated eye mask",
+    "average": 33
+   },
+   {
+    "searchTerm": "cordless heated eye mask",
+    "average": 30
+   },
+   {
+    "searchTerm": "steam eye mask",
+    "average": 27
+   }
+  ],
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ }
+]

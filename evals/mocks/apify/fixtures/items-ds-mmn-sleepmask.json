@@ -1,0 +1,117 @@
+[
+ {
+  "operation": "read",
+  "ok": true,
+  "message": "read: 3 entries.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook07",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook07"
+  },
+  "counts": {
+   "idea": 2,
+   "variation": 1,
+   "decision": 0,
+   "watch": 0
+  },
+  "profile": {
+   "budgetBand": "1k-5k",
+   "fulfilment": "fba",
+   "experience": "none",
+   "channels": [
+    "amazon"
+   ],
+   "goal": "side-income",
+   "marketCountry": "US",
+   "updatedAt": "2026-11-07T21:10:00.000Z"
+  },
+  "entries": [
+   {
+    "id": "v-c00l1ng",
+    "kind": "variation",
+    "parentId": "i-slp3msk",
+    "idea": "Blackout sleep mask",
+    "date": "2026-11-07",
+    "marketplace": "amazon.com",
+    "change": "Cooling (ice-silk) version",
+    "verdict": "maybe",
+    "confidence": "medium",
+    "signals": {
+     "favours": 3,
+     "against": 1,
+     "neutral": 2,
+     "unknown": 1
+    },
+    "keyNumbers": {
+     "priceMedian": 16.99,
+     "medianReviews": 2100,
+     "unitsPerMonthMin": 6000
+    },
+    "landedCostPerUnit": {
+     "amount": 1.6,
+     "currency": "USD",
+     "asOf": "2026-11-07"
+    },
+    "note": "stage: validating \u00b7 For you: a fit, with one fix. Fix: thinner reviews data; sells higher than the plain mask."
+   },
+   {
+    "id": "i-s0cks3p",
+    "kind": "idea",
+    "idea": "Compression socks, 3-pair pack",
+    "date": "2026-11-07",
+    "marketplace": "amazon.com",
+    "verdict": "no",
+    "confidence": "high",
+    "signals": {
+     "favours": 2,
+     "against": 3,
+     "neutral": 2,
+     "unknown": 0
+    },
+    "keyNumbers": {
+     "priceMedian": 9.99,
+     "medianReviews": 18400
+    },
+    "landedCostPerUnit": {
+     "amount": 3.1,
+     "currency": "USD",
+     "asOf": "2026-11-07"
+    },
+    "note": "stage: validating \u00b7 For you: not this one. About 1% margin at USD 9.99 after FBA fees."
+   },
+   {
+    "id": "i-slp3msk",
+    "kind": "idea",
+    "idea": "Blackout sleep mask",
+    "date": "2026-11-07",
+    "marketplace": "amazon.com",
+    "verdict": "maybe",
+    "confidence": "high",
+    "signals": {
+     "favours": 4,
+     "against": 1,
+     "neutral": 2,
+     "unknown": 0
+    },
+    "keyNumbers": {
+     "priceMedian": 12.99,
+     "medianReviews": 3900,
+     "unitsPerMonthMin": 21000
+    },
+    "landedCostPerUnit": {
+     "amount": 0.9,
+     "currency": "USD",
+     "asOf": "2026-11-07"
+    },
+    "note": "stage: validating \u00b7 For you: a fit, with one fix. 55% margin after fees. Fix: stand out on a crowded page 1."
+   }
+  ],
+  "matched": 3,
+  "returned": 3,
+  "more": false,
+  "sizeBytes": 1900
+ }
+]

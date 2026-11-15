@@ -1,0 +1,37 @@
+[
+ {
+  "operation": "read",
+  "ok": true,
+  "message": "read: 0 entries.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook07",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook07"
+  },
+  "counts": {
+   "idea": 0,
+   "variation": 0,
+   "decision": 0,
+   "watch": 0
+  },
+  "profile": {
+   "budgetBand": "1k-5k",
+   "fulfilment": "own-stock",
+   "experience": "some",
+   "channels": [
+    "amazon"
+   ],
+   "goal": "side-income",
+   "marketCountry": "US",
+   "updatedAt": "2026-10-30T10:00:00.000Z"
+  },
+  "entries": [],
+  "matched": 0,
+  "returned": 0,
+  "more": false,
+  "sizeBytes": 1900
+ }
+]

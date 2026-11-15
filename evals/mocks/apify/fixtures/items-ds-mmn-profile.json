@@ -1,0 +1,28 @@
+[
+ {
+  "operation": "upsertProfile",
+  "ok": true,
+  "message": "Profile saved.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook01",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook01"
+  },
+  "counts": {
+   "idea": 0,
+   "variation": 0,
+   "decision": 0,
+   "watch": 0
+  },
+  "profile": {
+   "budgetBand": "1k-5k",
+   "fulfilment": "fba",
+   "experience": "none",
+   "marketCountry": "US"
+  },
+  "sizeBytes": 260
+ }
+]

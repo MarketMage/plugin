@@ -1,0 +1,28 @@
+{
+  "input": {
+    "actor": "cleanpull/marketplace-search-scanner",
+    "input": {
+      "keywords": [
+        "dog deshedding brush",
+        "dog nail grinder",
+        "dog grooming glove"
+      ],
+      "sources": [
+        "amazon"
+      ],
+      "amazonMarketplaces": [
+        "US"
+      ],
+      "listingRows": false,
+      "includeAds": false
+    },
+    "waitSecs": 45,
+    "callOptions": {
+      "maxTotalChargeUsd": 0.1
+    }
+  },
+  "output": "{\"runId\": \"run-dg-mss-bgg\", \"actorName\": \"cleanpull/marketplace-search-scanner\", \"status\": \"SUCCEEDED\", \"statusMessage\": \"Done: 3 results. 3 searches; 3 pages read for 3 rows. Amazon US: one keyword summary per search (price band, sellers, review depth, sales floor); too many searches to list here.\", \"defaultDatasetId\": \"ds-dg-mss-bgg\", \"defaultKeyValueStoreId\": \"kv-marketplace-search-scanner\", \"chargedEventCounts\": {\"keyword-summary\": 3, \"search-page\": 3}, \"nextStep\": \"Call get-dataset-items with datasetId ds-dg-mss-bgg to read the results.\"}",
+  "verdict": "ok",
+  "recordedAt": "2026-11-07T20:36:06.916Z",
+  "model": null
+}

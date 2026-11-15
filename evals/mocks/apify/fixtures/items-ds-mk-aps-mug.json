@@ -1,0 +1,232 @@
+[
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA001",
+  "title": "Handmade Ceramic Coffee Mug 14 oz, Speckled Stoneware",
+  "brand": "Sweejar",
+  "price": 29.99,
+  "rating": 4.6,
+  "reviewCount": 3120,
+  "starBreakdown": {
+   "5": 79,
+   "4": 10,
+   "3": 5,
+   "2": 3,
+   "1": 3
+  },
+  "rank": 1000,
+  "boughtPastMonthMin": 200,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA002",
+  "title": "Stoneware Coffee Mugs Set of 4, Reactive Glaze",
+  "brand": "Bosmarlin",
+  "price": 54.99,
+  "rating": 4.7,
+  "reviewCount": 9800,
+  "starBreakdown": {
+   "5": 82,
+   "4": 9,
+   "3": 4,
+   "2": 2,
+   "1": 3
+  },
+  "rank": 1731,
+  "boughtPastMonthMin": 300,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA003",
+  "title": "Speckled Ceramic Mug, Pottery Style, 16 oz",
+  "brand": "Hasense",
+  "price": 27.99,
+  "rating": 4.5,
+  "reviewCount": 1450,
+  "starBreakdown": {
+   "5": 74,
+   "4": 12,
+   "3": 6,
+   "2": 3,
+   "1": 5
+  },
+  "rank": 2462,
+  "boughtPastMonthMin": 100,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA004",
+  "title": "Handmade Pottery Mug with Handle",
+  "brand": "AmorArte",
+  "price": 34.99,
+  "rating": 4.4,
+  "reviewCount": 620,
+  "starBreakdown": {
+   "5": 70,
+   "4": 13,
+   "3": 8,
+   "2": 4,
+   "1": 5
+  },
+  "rank": 3193,
+  "boughtPastMonthMin": 50,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA005",
+  "title": "Large Stoneware Mug 20 oz, Speckled",
+  "brand": "Kook",
+  "price": 32.99,
+  "rating": 4.6,
+  "reviewCount": 2210,
+  "starBreakdown": {
+   "5": 78,
+   "4": 11,
+   "3": 5,
+   "2": 2,
+   "1": 4
+  },
+  "rank": 3924,
+  "boughtPastMonthMin": 100,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA006",
+  "title": "Ceramic Coffee Mug, Rustic Farmhouse",
+  "brand": "DOWAN",
+  "price": 24.99,
+  "rating": 4.7,
+  "reviewCount": 5400,
+  "starBreakdown": {
+   "5": 81,
+   "4": 10,
+   "3": 4,
+   "2": 2,
+   "1": 3
+  },
+  "rank": 4655,
+  "boughtPastMonthMin": 100,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA007",
+  "title": "Reactive Glaze Mug Set of 2",
+  "brand": "Sweese",
+  "price": 36.99,
+  "rating": 4.6,
+  "reviewCount": 3300,
+  "starBreakdown": {
+   "5": 80,
+   "4": 9,
+   "3": 5,
+   "2": 3,
+   "1": 3
+  },
+  "rank": 5386,
+  "boughtPastMonthMin": 50,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA008",
+  "title": "Speckled Stoneware Latte Mug",
+  "brand": "Hasense",
+  "price": 29.99,
+  "rating": 4.5,
+  "reviewCount": 890,
+  "starBreakdown": {
+   "5": 73,
+   "4": 13,
+   "3": 6,
+   "2": 4,
+   "1": 4
+  },
+  "rank": 6117,
+  "boughtPastMonthMin": 0,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA009",
+  "title": "Handmade Japanese Style Pottery Mug",
+  "brand": "Yalong",
+  "price": 39.99,
+  "rating": 4.3,
+  "reviewCount": 410,
+  "starBreakdown": {
+   "5": 66,
+   "4": 15,
+   "3": 9,
+   "2": 4,
+   "1": 6
+  },
+  "rank": 6848,
+  "boughtPastMonthMin": 0,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0MUGCA010",
+  "title": "Stoneware Mug, Matte Glaze, 12 oz",
+  "brand": "Bosmarlin",
+  "price": 26.99,
+  "rating": 4.6,
+  "reviewCount": 1100,
+  "starBreakdown": {
+   "5": 77,
+   "4": 12,
+   "3": 5,
+   "2": 3,
+   "1": 3
+  },
+  "rank": 7579,
+  "boughtPastMonthMin": 0,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ }
+]

@@ -1,0 +1,697 @@
+{
+ "tools": [
+  {
+   "name": "call-actor",
+   "description": "Call any Actor from the Apify Store.\n\nWORKFLOW:\nCall this tool with the actor name and proper input matching the Actor input schema.\n\nFor MCP server Actors:\n- Call using format: \"actorName:toolName\" (e.g., \"username/name:tool-name\")\n\nIMPORTANT:\n- Waits up to waitSecs (default 30s) for completion; returns run status and storage IDs, and with waitSecs > 0 also reports dataset field metadata\n- Use get-dataset-items with the datasetId to fetch results; non-terminal runs include a nextStep with polling instructions\n- Use dedicated Actor tools when available for better experience\n\nThere are two ways to run Actors:\n1. Dedicated Actor tools: These are pre-configured tools, offering a simpler and more direct experience.\n2. Generic call-actor tool (call-actor): Use this when a dedicated tool is not available or when you want to run any Actor dynamically. This tool is especially useful if you do not want to add specific tools or your client does not support dynamic tool registration.\n\nUSAGE:\n- Always use dedicated tools when available\n- Use the generic call-actor tool only if a dedicated tool does not exist for your Actor.\n\n- Use `waitSecs` (0–45) to control how long to wait. Default 30s returns results for fast actors. Use `waitSecs: 0` to start and return immediately for long-running actors.\n\nEXAMPLES:\n- user_input: Get instagram posts using apify/instagram-scraper",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "actor": {
+      "type": "string",
+      "description": "The Actor to call: its ID, or its name in the \"username/name\" form (e.g., \"apify/rag-web-browser\").\n\nFor MCP server Actors, use format \"actorName:toolName\" to call a specific tool (e.g., \"username/name:tool-name\")."
+     },
+     "input": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {},
+      "description": "The input JSON to pass to the Actor. Required."
+     },
+     "waitSecs": {
+      "description": "Seconds to wait for completion (0–45, default 30). Returns with current run status if not terminal within waitSecs.",
+      "default": 30,
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 45
+     },
+     "callOptions": {
+      "description": "Optional run config: memory (MB), timeout (s), build, maxItems (pay-per-result cap), maxTotalChargeUsd (pay-per-event cap).",
+      "type": "object",
+      "properties": {
+       "memory": {
+        "description": "Memory per run in MB. Power of 2 from 128 to 32768.\nApify also caps total memory across all your concurrent runs (account plan limit); if a run is rejected because that quota would be exceeded, retry with a smaller value.",
+        "type": "number",
+        "minimum": 128,
+        "maximum": 32768
+       },
+       "timeout": {
+        "description": "Maximum runtime for the Actor in seconds. After this time elapses, the Actor will be automatically terminated.\nUse 0 for infinite timeout (no time limit).",
+        "type": "number",
+        "minimum": 0
+       },
+       "build": {
+        "description": "Tag or number of the Actor build to run (e.g., \"latest\", \"beta\", \"1.2.345\"). If omitted, the Actor's default build is used.",
+        "type": "string"
+       },
+       "maxItems": {
+        "description": "Pay-per-result Actors only — ignored otherwise.\nCaps billed dataset items; does NOT limit production. Prefer the Actor's own input fields (e.g. maxResults) to bound work.",
+        "type": "integer",
+        "exclusiveMinimum": 0,
+        "maximum": 9007199254740991
+       },
+       "maxTotalChargeUsd": {
+        "description": "Pay-per-event Actors only — ignored otherwise.\nCaps total USD billed; does NOT limit work. Prefer the Actor's own input fields to bound work.",
+        "type": "number",
+        "exclusiveMinimum": 0
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "actor",
+     "input"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "get-actor-run",
+   "description": "Get detailed information about a specific Actor run.\n\nReturns run result: status, storages (datasets/keyValueStores alias map), stats, summary, nextStep.\n- summary describes the past (e.g. \"SUCCEEDED in 22s. 47 items; 3 fields available.\").\n- nextStep prescribes one primary follow-up action with identifiers interpolated (e.g. \"Use get-dataset-items with datasetId=...\").\n- waitSecs (0–45, default 30) waits up to that many seconds for terminal status before returning.\n\nUSAGE:\n- Use to check the status of a run started by any Actor-running tool.\n- Pass waitSecs > 0 to block until terminal (or until the cap elapses).\n\nUSAGE EXAMPLES:\n- user_input: Show details of run y2h7sK3Wc\n- user_input: Wait for run y2h7sK3Wc to finish",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "runId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The ID of the Actor run."
+     },
+     "waitSecs": {
+      "default": 30,
+      "description": "Maximum seconds to wait for the run to reach a terminal state (SUCCEEDED, FAILED, ABORTED, TIMED-OUT).\n0 returns immediately with the current status. Cap: 45. Default: 30.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 45
+     }
+    },
+    "required": [
+     "runId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "get-actor-run-list",
+   "description": "List Actor runs for the authenticated user with optional filtering and sorting.\nThe results will include run details (including defaultDatasetId and defaultKeyValueStoreId) and can be filtered by Actor and by status.\nPass actorId to list only the runs of one Actor, for example to find its latest run.\nValid statuses: READY (not allocated), RUNNING (executing), SUCCEEDED (finished), FAILED (failed), TIMING-OUT, TIMED-OUT, ABORTING, ABORTED.\n\nUSAGE:\n- Use when you need to browse or filter recent Actor runs.\n\nUSAGE EXAMPLES:\n- user_input: List my last 10 runs (newest first)\n- user_input: Show only SUCCEEDED runs\n- user_input: Show the latest run of apify/web-scraper",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "actorId": {
+      "description": "Only list runs of this Actor: its ID, or its full name as username/name or username~name. A name without the username is not enough.",
+      "type": "string",
+      "minLength": 1
+     },
+     "offset": {
+      "default": 0,
+      "type": "number",
+      "description": "Number of array elements that should be skipped at the start. The default value is 0."
+     },
+     "limit": {
+      "default": 10,
+      "type": "number",
+      "maximum": 10,
+      "description": "Maximum number of array elements to return. The default value (as well as the maximum) is 10."
+     },
+     "desc": {
+      "default": false,
+      "type": "boolean",
+      "description": "If true or 1 then the runs are sorted by the startedAt field in descending order. Default: sorted in ascending order."
+     },
+     "status": {
+      "description": "Return only runs with the provided status.",
+      "type": "string",
+      "enum": [
+       "READY",
+       "RUNNING",
+       "SUCCEEDED",
+       "FAILED",
+       "TIMING-OUT",
+       "TIMED-OUT",
+       "ABORTING",
+       "ABORTED"
+      ]
+     }
+    },
+    "required": [
+     "offset",
+     "limit",
+     "desc"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "abort-actor-run",
+   "description": "Abort an Actor run that is currently starting or running.\nFor runs with status SUCCEEDED, FAILED, ABORTING, ABORTED, or TIMED-OUT, this call has no effect.\nThe results will include the updated run details after the abort request.\n\nUSAGE:\n- Use when you need to stop a run that is taking too long or misconfigured.\n\nUSAGE EXAMPLES:\n- user_input: Abort run y2h7sK3Wc\n- user_input: Gracefully abort run y2h7sK3Wc",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "runId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The ID of the Actor run to abort."
+     },
+     "gracefully": {
+      "description": "If true, the Actor run will abort gracefully with a 30-second timeout.",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "runId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "get-dataset-items",
+   "description": "Get items (rows) from a dataset — the output/results produced by an Actor run.\nReturns the rows themselves, not dataset metadata, counts, or a schema.\nWhen the user provides a datasetId and asks to retrieve results, output, data, or rows, call this tool directly.\nDefault limit is 20. Use clean=true to skip empty items and hidden fields.\n\nUSAGE:\n- Use when you need to read data from a dataset (all items or only selected fields).\n\nUSAGE EXAMPLES:\n- user_input: Retrieve results from dataset abc123\n- user_input: Get only metadata.url and title from dataset username~my-dataset",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "datasetId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Dataset ID or username~dataset-name."
+     },
+     "clean": {
+      "description": "If true, returns only non-empty items and skips hidden fields (starting with #). Shortcut for skipHidden=true and skipEmpty=true.",
+      "type": "boolean"
+     },
+     "offset": {
+      "description": "Number of items to skip at the start. Default is 0.",
+      "type": "number"
+     },
+     "limit": {
+      "description": "Maximum number of items to return. Default is 20.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+     },
+     "fields": {
+      "description": "Comma-separated list of fields to include in results. Fields in output are sorted as specified. Use dot notation for nested objects (e.g. \"metadata.url\"); the server auto-flattens parent prefixes.",
+      "type": "string"
+     },
+     "omit": {
+      "description": "Comma-separated list of fields to exclude from results.",
+      "type": "string"
+     },
+     "desc": {
+      "description": "If true, results are returned in reverse order (newest to oldest).",
+      "type": "boolean"
+     },
+     "flatten": {
+      "description": "Comma-separated list of fields to flatten (e.g. flatten=\"metadata\" turns {\"metadata\":{\"url\":\"x\"}} into {\"metadata.url\":\"x\"}). Normally derived automatically from dot-notation in `fields`; specify only as a diagnostic override.",
+      "type": "string"
+     }
+    },
+    "required": [
+     "datasetId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "get-key-value-store-record",
+   "description": "Get the value stored under a specific key in a key-value store — a single record, not a listing of all keys.\nRequires the exact key name.\nThe response preserves the original Content-Encoding; most clients handle decompression automatically.\n\nUSAGE:\n- Use when you need to retrieve a specific record (JSON, text, or binary) from a store.\n\nUSAGE EXAMPLES:\n- user_input: Get record INPUT from store abc123\n- user_input: Get record data.json from store username~my-store",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "keyValueStoreId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Key-value store ID or username~store-name."
+     },
+     "recordKey": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Key of the record to retrieve."
+     }
+    },
+    "required": [
+     "keyValueStoreId",
+     "recordKey"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "create-actor-task",
+   "description": "Create a saved Actor task: a reusable configuration of a single Actor, adapted for a specific\nuse case. A task stores the Actor input and run options such as the build, memory, and timeout, and can be\nrun repeatedly from Apify Console, Schedules, or the API, so the user does not have to configure the Actor\nagain for every run.\n\nCreating a task does not make it public. The public display configuration (`publicConfig`) can be set here or later with update-actor-task; either way the task stays private until it is published.\n\nUSAGE:\n- Use when the user wants to save an Actor configuration for repeated use.\n- When the user's intent is clear, pick sensible values for unspecified input fields from the Actor's input schema, state the choices, and proceed instead of asking.\n\nUSAGE EXAMPLES:\n- user_input: Save this instagram-scraper config as a task called daily-posts",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "actorId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The Actor to create the task for: its ID, its name (resolved against your own Actors), or \"username/actor-name\" for an Actor owned by someone else."
+     },
+     "name": {
+      "description": "Name of the task, unique within the account: 3-63 characters, letters, digits and dashes only (e.g. \"my-task\"). Generated from the Actor name when omitted.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 63,
+      "pattern": "^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9])$"
+     },
+     "input": {
+      "description": "The input JSON the task runs the Actor with.",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {}
+     },
+     "title": {
+      "description": "Human-readable title of the task.",
+      "type": "string"
+     },
+     "description": {
+      "description": "Short description of what the task does.",
+      "type": "string"
+     },
+     "build": {
+      "description": "Actor build tag or number to run, e.g. \"latest\".",
+      "type": "string"
+     },
+     "timeoutSecs": {
+      "description": "Run timeout in seconds; 0 means no timeout.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+     },
+     "memoryMbytes": {
+      "description": "Memory limit for the run in megabytes.",
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+     },
+     "publicConfig": {
+      "description": "Public display configuration of the task's landing page. Setting it does not publish the task and requires write access to the Actor.",
+      "type": "object",
+      "properties": {
+       "seoTitle": {
+        "description": "Title shown on the public landing page and in search results. At most 60 characters.",
+        "type": "string",
+        "maxLength": 60
+       },
+       "seoDescription": {
+        "description": "Description shown on the public landing page. Required to publish. At most 160 characters.",
+        "type": "string",
+        "maxLength": 160
+       },
+       "inputSchemaFields": {
+        "description": "Names of the input fields to display on the public page. At least one valid field is required to publish; the names must exist in the task input.",
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "datasetName": {
+        "description": "Name of the dataset whose schema provides the views.",
+        "type": "string"
+       },
+       "datasetView": {
+        "description": "View key from the Actor's dataset schema. Required to publish; ask the user, no tool lists dataset views.",
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "actorId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "get-actor-task",
+   "description": "Get a saved Actor task: the Actor it runs, its name, title, description, stored input, and run options.\nInput fields the Actor declares as secret are returned as encrypted placeholders, never in plaintext.\nAlso reports whether the task is published on a public landing page, and its display configuration if so.\nUse update-actor-task to change the task.\n\nUSAGE:\n- Use when you need a task's current settings.\n- Use to check whether a task is published.\n\nUSAGE EXAMPLES:\n- user_input: Show me my task my-example-task\n- user_input: What Actor does task E2jjCZBezvAZnX8Rb run?\n- user_input: Is task E2jjCZBezvAZnX8Rb published?",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "taskId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The task to fetch: its ID, its name (resolved against your own tasks), or \"username/task-name\" for a task owned by someone else."
+     }
+    },
+    "required": [
+     "taskId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "update-actor-task",
+   "description": "Update a saved Actor task: its input, run options, or the public display configuration (`publicConfig`) of its landing page.\nThis does not publish or unpublish the task.\nTo publish a task, `publicConfig.inputSchemaFields` (at least one field name from the task input),\n`publicConfig.datasetView`, and `publicConfig.seoDescription` must be set here first. Updating `publicConfig`\nrequires write access to the task's Actor.\n\nUSAGE:\n- Use to change a task's input or run options.\n- Use to fill in the public display configuration before publishing a task.\n\nUSAGE EXAMPLES:\n- user_input: Change my task my-task to use the beta build\n- user_input: Set up my-task for publishing with the overview dataset view",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "taskId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The task to update: its ID, its name (resolved against your own tasks), or \"username/task-name\" for a task owned by someone else."
+     },
+     "name": {
+      "description": "New name of the task: 3-63 characters, letters, digits and dashes only.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 63,
+      "pattern": "^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9])$"
+     },
+     "title": {
+      "description": "New human-readable title of the task.",
+      "type": "string"
+     },
+     "description": {
+      "description": "New short description of the task.",
+      "type": "string"
+     },
+     "input": {
+      "description": "Replacement input JSON for the task. Replaces the stored input, it is not merged into it.",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {}
+     },
+     "build": {
+      "description": "Actor build tag or number to run, e.g. \"latest\".",
+      "type": "string"
+     },
+     "timeoutSecs": {
+      "description": "Run timeout in seconds; 0 means no timeout.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+     },
+     "memoryMbytes": {
+      "description": "Memory limit for the run in megabytes.",
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+     },
+     "publicConfig": {
+      "description": "Public display configuration of the task landing page. Provided fields are merged into the stored configuration; the publication state itself is not changed here.",
+      "type": "object",
+      "properties": {
+       "seoTitle": {
+        "description": "Title shown on the public landing page and in search results. At most 60 characters.",
+        "type": "string",
+        "maxLength": 60
+       },
+       "seoDescription": {
+        "description": "Description shown on the public landing page. Required to publish. At most 160 characters.",
+        "type": "string",
+        "maxLength": 160
+       },
+       "inputSchemaFields": {
+        "description": "Names of the input fields to display on the public page. At least one valid field is required to publish; the names must exist in the task input.",
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "datasetName": {
+        "description": "Name of the dataset whose schema provides the views.",
+        "type": "string"
+       },
+       "datasetView": {
+        "description": "View key from the Actor's dataset schema. Required to publish; ask the user, no tool lists dataset views.",
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "taskId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "create-schedule",
+   "description": "Create a schedule that runs Actors and saved Actor tasks automatically on a cron cadence. Each action\nruns one Actor (with its own input and run options) or one task (its stored input, optionally with top-level\noverrides); Actor and task names are resolved to IDs before the schedule is saved.\nThe schedule is created enabled unless `isEnabled: false` is passed, and fires in `timezone` (default UTC).\nUp to 10 Actor actions and 10 task actions; while a previous run from an action is still running, the next one\nis skipped (`isExclusive`, default true).\nA schedule cannot be triggered manually here; to run the Actor or task right now, use call-actor.\n\nUSAGE:\n- Use when the user wants an Actor or task to run repeatedly at set times.\n- Turn the user's wording into a 5-field cron expression plus their time zone; use @daily-style shortcuts only when no time is named, because they fire at a random offset within the period.\n- To keep the configuration reusable outside the schedule, save it with create-actor-task first and schedule the task.\n\nUSAGE EXAMPLES:\n- user_input: Run my task insta-daily every day at 9am Prague time\n- user_input: Schedule apify/instagram-scraper every Monday morning with this input",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "name": {
+      "description": "Name of the schedule, unique within the account: 3-63 characters, letters, digits and dashes only (e.g. \"insta-daily\"). Generated when omitted.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 63
+     },
+     "title": {
+      "description": "Human-readable title, at most 40 characters. Generated from the name when omitted.",
+      "type": "string",
+      "maxLength": 40
+     },
+     "description": {
+      "description": "What the schedule is for.",
+      "type": "string",
+      "maxLength": 5000
+     },
+     "cronExpression": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "When the schedule fires, as a standard 5-field cron expression \"minute hour day-of-month month day-of-week\" evaluated in `timezone`. Examples: \"0 9 * * *\" daily at 09:00, \"0 */6 * * *\" every 6 hours, \"0 9 * * 1\" Mondays at 09:00, \"0 0 1 * *\" on the 1st of each month. The shortcuts @hourly, @daily, @weekly, @monthly and @yearly fire at a random offset inside their period (@daily somewhere between 00:05 and 06:00), so use them only when the user names no time. An optional leading seconds field is accepted; the minimum interval between runs is 10 seconds."
+     },
+     "timezone": {
+      "description": "IANA time zone the cron expression is evaluated in, e.g. \"Europe/Prague\", \"America/New_York\", \"Asia/Tokyo\". Default \"UTC\". Take it from the user's wording (\"9am Prague time\").",
+      "type": "string",
+      "minLength": 1
+     },
+     "isEnabled": {
+      "default": true,
+      "description": "Whether the schedule fires. Defaults to true, so it starts at its next cron time; pass false to create it paused.",
+      "type": "boolean"
+     },
+     "isExclusive": {
+      "description": "If true (the default), an action is skipped while its previous scheduled run is still running.",
+      "type": "boolean"
+     },
+     "actions": {
+      "minItems": 1,
+      "maxItems": 20,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "actorId": {
+         "description": "Actor to run: its ID, its name (resolved against your own Actors), or \"username/actor-name\". Give either actorId or taskId, never both.",
+         "type": "string",
+         "minLength": 1
+        },
+        "taskId": {
+         "description": "Task to run: its ID, its name (resolved against your own tasks), or \"username/task-name\".",
+         "type": "string",
+         "minLength": 1
+        },
+        "input": {
+         "description": "For an Actor: the input JSON it runs with. For a task: top-level keys that override the stored task input for this run (shallow merge; a nested object replaces the stored one).",
+         "type": "object",
+         "properties": {},
+         "additionalProperties": {}
+        },
+        "build": {
+         "description": "Actor actions only: build tag or number to run, e.g. \"latest\".",
+         "type": "string"
+        },
+        "timeoutSecs": {
+         "description": "Actor actions only: run timeout in seconds; 0 means no timeout.",
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 9007199254740991
+        },
+        "memoryMbytes": {
+         "description": "Actor actions only: memory limit for the run in megabytes.",
+         "type": "integer",
+         "exclusiveMinimum": 0,
+         "maximum": 9007199254740991
+        },
+        "restartOnError": {
+         "description": "Actor actions only: restart the run when it fails.",
+         "type": "boolean"
+        }
+       },
+       "additionalProperties": false
+      },
+      "description": "What runs at each firing: one entry per Actor or task. At most 10 Actor entries and 10 task entries, counted separately."
+     }
+    },
+    "required": [
+     "cronExpression",
+     "isEnabled",
+     "actions"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "get-schedule",
+   "description": "Get a schedule: when it fires (cron expression and time zone), whether it is enabled, its next and last\nrun times, and the Actors and tasks it runs with their inputs and run options. Input fields the Actor declares\nas secret are returned as encrypted placeholders, never in plaintext.\nRequires the schedule's name or ID from the user; no tool lists schedules.\nUse update-schedule to change it; its `actions` field accepts this result's `actions` as they are (a non-JSON Actor input comes back as a string and has to be re-entered as JSON).\n\nUSAGE:\n- Use when you need a schedule's current settings or want to know when it runs next.\n- Use before changing a schedule's actions, since an update replaces all of them.\n\nUSAGE EXAMPLES:\n- user_input: Show me my schedule insta-daily\n- user_input: When does schedule E2jjCZBezvAZnX8Rb run next?",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "scheduleId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The schedule to fetch: its ID, its name (resolved against your own schedules), or \"username/schedule-name\" for a schedule owned by someone else."
+     }
+    },
+    "required": [
+     "scheduleId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "update-schedule",
+   "description": "Update a schedule: its cron expression or time zone, enable or disable it, rename it, or replace its actions.\nFields you omit keep their stored value. \"Pause\", \"stop\" or \"turn off\" mean `isEnabled: false`; \"resume\" or\n\"turn on\" mean `isEnabled: true` — never delete a schedule to pause it.\n`actions` replaces all stored actions, Actor and task actions alike: to add or remove one, read the schedule with get-schedule, copy its `actions`, edit the copy, and send the whole array. Replacing actions restarts exclusivity tracking,\nso a run already in progress is not counted.\n\nUSAGE:\n- Use to change when a schedule fires, to pause or resume it, or to change what it runs.\n\nUSAGE EXAMPLES:\n- user_input: Pause my schedule insta-daily\n- user_input: Change schedule insta-daily to run every 6 hours\n- user_input: Add my task weekly-report to schedule insta-daily",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "scheduleId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The schedule to update: its ID, its name (resolved against your own schedules), or \"username/schedule-name\" for a schedule owned by someone else."
+     },
+     "name": {
+      "description": "Name of the schedule, unique within the account: 3-63 characters, letters, digits and dashes only (e.g. \"insta-daily\"). Generated when omitted.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 63
+     },
+     "title": {
+      "description": "Human-readable title, at most 40 characters. Generated from the name when omitted.",
+      "type": "string",
+      "maxLength": 40
+     },
+     "description": {
+      "description": "What the schedule is for.",
+      "type": "string",
+      "maxLength": 5000
+     },
+     "cronExpression": {
+      "description": "When the schedule fires, as a standard 5-field cron expression \"minute hour day-of-month month day-of-week\" evaluated in `timezone`. Examples: \"0 9 * * *\" daily at 09:00, \"0 */6 * * *\" every 6 hours, \"0 9 * * 1\" Mondays at 09:00, \"0 0 1 * *\" on the 1st of each month. The shortcuts @hourly, @daily, @weekly, @monthly and @yearly fire at a random offset inside their period (@daily somewhere between 00:05 and 06:00), so use them only when the user names no time. An optional leading seconds field is accepted; the minimum interval between runs is 10 seconds.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+     },
+     "timezone": {
+      "description": "IANA time zone the cron expression is evaluated in, e.g. \"Europe/Prague\", \"America/New_York\", \"Asia/Tokyo\". Default \"UTC\". Take it from the user's wording (\"9am Prague time\").",
+      "type": "string",
+      "minLength": 1
+     },
+     "isEnabled": {
+      "description": "Whether the schedule fires. false pauses it without losing its configuration.",
+      "type": "boolean"
+     },
+     "isExclusive": {
+      "description": "If true (the default), an action is skipped while its previous scheduled run is still running.",
+      "type": "boolean"
+     },
+     "actions": {
+      "description": "Replaces ALL stored actions, Actor and task actions alike: send every action to keep, the ones left out are deleted. Omit to leave the actions unchanged. At most 10 Actor entries and 10 task entries, counted separately.",
+      "minItems": 1,
+      "maxItems": 20,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "actorId": {
+         "description": "Actor to run: its ID, its name (resolved against your own Actors), or \"username/actor-name\". Give either actorId or taskId, never both.",
+         "type": "string",
+         "minLength": 1
+        },
+        "taskId": {
+         "description": "Task to run: its ID, its name (resolved against your own tasks), or \"username/task-name\".",
+         "type": "string",
+         "minLength": 1
+        },
+        "input": {
+         "description": "For an Actor: the input JSON it runs with. For a task: top-level keys that override the stored task input for this run (shallow merge; a nested object replaces the stored one).",
+         "type": "object",
+         "properties": {},
+         "additionalProperties": {}
+        },
+        "build": {
+         "description": "Actor actions only: build tag or number to run, e.g. \"latest\".",
+         "type": "string"
+        },
+        "timeoutSecs": {
+         "description": "Actor actions only: run timeout in seconds; 0 means no timeout.",
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 9007199254740991
+        },
+        "memoryMbytes": {
+         "description": "Actor actions only: memory limit for the run in megabytes.",
+         "type": "integer",
+         "exclusiveMinimum": 0,
+         "maximum": 9007199254740991
+        },
+        "restartOnError": {
+         "description": "Actor actions only: restart the run when it fails.",
+         "type": "boolean"
+        }
+       },
+       "additionalProperties": false
+      }
+     }
+    },
+    "required": [
+     "scheduleId"
+    ],
+    "additionalProperties": false
+   }
+  },
+  {
+   "name": "apify-api-read",
+   "description": "Send a GET request to the Apify API at a path, such as /v2/actor-runs/abc.\nA GET to the synchronous run endpoints is refused. Run an Actor with call-actor.\nA proxy to the Apify API, like apify api in the Apify CLI; the server adds the host and the API token.\nWrite the path as actors, v2/actors, or /v2/actors, with its values in it.\nA name is written username~name, or ~name for one you own, as in /v2/actors/~my-actor.\nwaitForFinish above 45 seconds outlasts the usual 60-second tool-call timeout.\nReturns the parsed response body, JSON with its data wrapper included: integers above 2^53 can\nlose precision. A body over 262144 bytes is not returned.\n\nExample call: {\"path\": \"/v2/webhook-dispatches\", \"query\": {\"limit\": 10, \"desc\": true}}\n\nUSAGE:\n- Use for data no dedicated tool returns, such as webhooks, usage, and limits.\n\nUSAGE EXAMPLES:\n- user_input: List the webhooks on my account\n- user_input: How much of my monthly usage have I spent?",
+   "inputSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+     "path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The API path with its values in it: actors, v2/actors, and /v2/actors are the same. A name is written username~name, or ~name for one you own, as in /v2/actors/~my-actor. A query string written into the path is sent too."
+     },
+     "query": {
+      "description": "Query parameters, by name, for example {\"limit\": 10}. Added to a query string in the path.",
+      "type": "object",
+      "propertyNames": {
+       "type": "string"
+      },
+      "additionalProperties": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "number"
+        },
+        {
+         "type": "boolean"
+        }
+       ]
+      }
+     }
+    },
+    "required": [
+     "path"
+    ],
+    "additionalProperties": false
+   }
+  }
+ ]
+}

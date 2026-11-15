@@ -1,0 +1,51 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "handmade stoneware mug",
+  "source": "amazon",
+  "marketplace": "CA",
+  "listings": 48,
+  "currency": "CAD",
+  "priceMin": 14.99,
+  "priceP25": 24.99,
+  "priceMedian": 32.99,
+  "priceP75": 44.99,
+  "priceMax": 89.0,
+  "priced": 48,
+  "singleNewPrice": {
+   "listings": 44,
+   "currency": "CAD",
+   "min": 14.99,
+   "p25": 24.99,
+   "median": 32.99,
+   "p75": 44.99,
+   "max": 89.0,
+   "excludedMultiPack": 4,
+   "excludedOtherCondition": 0,
+   "excludedUnknownCondition": 0,
+   "basis": "Organic fixed-price listings in the main currency whose condition is new and whose title states no multi-pack (packCount null or 1)."
+  },
+  "sponsored": 7,
+  "adsShown": true,
+  "sellers": 30,
+  "sellerSource": "title-brand",
+  "top3SellerShare": 0.31,
+  "sellerHhi": 0.06,
+  "reviewScope": "product",
+  "medianReviews": 210,
+  "under100Reviews": 14,
+  "firstRun": true,
+  "salesFloor": {
+   "unitsPerMonthMin": 900,
+   "revenuePerMonthMin": 29691,
+   "listingsCounted": 10,
+   "listingsWithBadge": 5,
+   "currency": "CAD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket. A floor, not an estimate of actual sales."
+  },
+  "marketplaceFees": null,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-11-04T10:00:00.000Z"
+ }
+]

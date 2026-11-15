@@ -1,0 +1,27 @@
+[
+ {
+  "operation": "read",
+  "ok": true,
+  "message": "The notebook is empty: nothing has been saved yet.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook01",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook01"
+  },
+  "counts": {
+   "idea": 0,
+   "variation": 0,
+   "decision": 0,
+   "watch": 0
+  },
+  "profile": null,
+  "entries": [],
+  "matched": 0,
+  "returned": 0,
+  "more": false,
+  "sizeBytes": 120
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "handmade stoneware mug",
+  "geo": "CA",
+  "summary": {
+   "average": 41,
+   "peak": 100,
+   "peakDate": "2025-12-07T00:00:00.000Z",
+   "latest": 41,
+   "changePercent": 22.0,
+   "direction": "rising",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "speckled mug",
+    "value": 180,
+    "formattedValue": "+180%",
+    "isBreakout": false
+   },
+   {
+    "query": "wheel thrown mug",
+    "value": 120,
+    "formattedValue": "+120%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   41
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "handmade pottery mug",
+  "geo": "CA",
+  "summary": {
+   "average": 58,
+   "peak": 100,
+   "peakDate": "2025-12-07T00:00:00.000Z",
+   "latest": 58,
+   "changePercent": 9.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "pottery mug with thumb rest",
+    "value": 140,
+    "formattedValue": "+140%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   58
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "ceramic mug",
+  "geo": "CA",
+  "summary": {
+   "average": 77,
+   "peak": 100,
+   "peakDate": "2025-12-07T00:00:00.000Z",
+   "latest": 77,
+   "changePercent": -4.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "custom ceramic mug",
+    "value": 90,
+    "formattedValue": "+90%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   77
+  ]
+ }
+]

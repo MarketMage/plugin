@@ -1,0 +1,2170 @@
+[
+  {
+    "type": "term",
+    "searchTerm": "led face mask",
+    "geo": "US",
+    "timeRange": "past-5-years",
+    "comparedWith": [
+      "red light face mask",
+      "light therapy mask"
+    ],
+    "summary": {
+      "average": 35,
+      "peak": 66,
+      "peakDate": "2026-04-05T00:00:00.000Z",
+      "latest": 45,
+      "latestDate": "2026-10-04T00:00:00.000Z",
+      "changePercent": 51.1,
+      "direction": "rising"
+    },
+    "interestOverTime_timelineData": [
+      {
+        "formattedAxisTime": "2021-11-07",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2021-11-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2021-12-05",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2021-12-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-01-02",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-01-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-02-06",
+        "value": [
+          21
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-02-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-03-06",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-03-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-04-03",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-04-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-05-01",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-05-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-06-05",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-06-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-07-03",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-07-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-08-07",
+        "value": [
+          24
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-08-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-09-04",
+        "value": [
+          24
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-09-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-10-02",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-10-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-11-06",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-11-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-12-04",
+        "value": [
+          41
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-12-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-01-01",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-01-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-02-05",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-02-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-03-05",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-03-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-04-02",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-04-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-05-07",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-05-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-06-04",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-06-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-07-02",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-07-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-08-06",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-08-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-09-03",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-09-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-10-01",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-10-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-11-05",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-11-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-12-03",
+        "value": [
+          46
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-12-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-01-07",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-01-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-02-04",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-02-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-03-03",
+        "value": [
+          32
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-03-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-04-07",
+        "value": [
+          32
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-04-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-05-05",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-05-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-06-02",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-06-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-07-07",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-07-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-08-04",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-08-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-09-01",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-09-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-10-06",
+        "value": [
+          35
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-10-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-11-03",
+        "value": [
+          42
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-11-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-12-01",
+        "value": [
+          52
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-12-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-01-05",
+        "value": [
+          41
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-01-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-02-02",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-02-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-03-02",
+        "value": [
+          37
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-03-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-04-06",
+        "value": [
+          37
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-04-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-05-04",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-05-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-06-01",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-06-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-07-06",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-07-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-08-03",
+        "value": [
+          39
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-08-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-09-07",
+        "value": [
+          39
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-09-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-10-05",
+        "value": [
+          40
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-10-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-11-02",
+        "value": [
+          47
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-11-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-12-07",
+        "value": [
+          57
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-12-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-01-04",
+        "value": [
+          46
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-01-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-02-01",
+        "value": [
+          41
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-02-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-03-01",
+        "value": [
+          42
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-03-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-04-05",
+        "value": [
+          66
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-04-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-05-03",
+        "value": [
+          43
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-05-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-06-07",
+        "value": [
+          43
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-06-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-07-05",
+        "value": [
+          44
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-07-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-08-02",
+        "value": [
+          44
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-08-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-09-06",
+        "value": [
+          44
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-09-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-10-04",
+        "value": [
+          45
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-10-04T00:00:00.000Z",
+        "isPartial": false
+      }
+    ],
+    "missingDataTypes": [],
+    "relatedQueries_top": [
+      {
+        "query": "red light face mask best",
+        "value": 100,
+        "isBreakout": false
+      },
+      {
+        "query": "red light face mask for kids",
+        "value": 90,
+        "isBreakout": false
+      },
+      {
+        "query": "red light face mask set",
+        "value": 80,
+        "isBreakout": false
+      }
+    ],
+    "relatedQueries_rising": [
+      {
+        "query": "red light face mask for dry faces",
+        "value": 900,
+        "formattedValue": "+900%",
+        "isBreakout": false
+      },
+      {
+        "query": "bluetooth red light face mask",
+        "value": 400,
+        "formattedValue": "+400%",
+        "isBreakout": false
+      }
+    ],
+    "scrapedAt": "2026-10-16T14:00:00.000Z"
+  },
+  {
+    "type": "term",
+    "searchTerm": "red light face mask",
+    "geo": "US",
+    "timeRange": "past-5-years",
+    "comparedWith": [
+      "led face mask",
+      "light therapy mask"
+    ],
+    "summary": {
+      "average": 32,
+      "peak": 61,
+      "peakDate": "2026-04-05T00:00:00.000Z",
+      "latest": 42,
+      "latestDate": "2026-10-04T00:00:00.000Z",
+      "changePercent": 55.0,
+      "direction": "rising"
+    },
+    "interestOverTime_timelineData": [
+      {
+        "formattedAxisTime": "2021-11-07",
+        "value": [
+          24
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2021-11-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2021-12-05",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2021-12-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-01-02",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-01-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-02-06",
+        "value": [
+          19
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-02-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-03-06",
+        "value": [
+          20
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-03-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-04-03",
+        "value": [
+          20
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-04-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-05-01",
+        "value": [
+          20
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-05-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-06-05",
+        "value": [
+          21
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-06-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-07-03",
+        "value": [
+          21
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-07-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-08-07",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-08-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-09-04",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-09-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-10-02",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-10-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-11-06",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-11-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-12-04",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-12-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-01-01",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-01-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-02-05",
+        "value": [
+          24
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-02-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-03-05",
+        "value": [
+          24
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-03-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-04-02",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-04-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-05-07",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-05-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-06-04",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-06-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-07-02",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-07-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-08-06",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-08-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-09-03",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-09-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-10-01",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-10-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-11-05",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-11-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-12-03",
+        "value": [
+          43
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-12-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-01-07",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-01-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-02-04",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-02-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-03-03",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-03-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-04-07",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-04-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-05-05",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-05-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-06-02",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-06-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-07-07",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-07-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-08-04",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-08-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-09-01",
+        "value": [
+          32
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-09-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-10-06",
+        "value": [
+          32
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-10-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-11-03",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-11-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-12-01",
+        "value": [
+          48
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-12-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-01-05",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-01-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-02-02",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-02-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-03-02",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-03-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-04-06",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-04-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-05-04",
+        "value": [
+          35
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-05-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-06-01",
+        "value": [
+          35
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-06-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-07-06",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-07-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-08-03",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-08-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-09-07",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-09-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-10-05",
+        "value": [
+          37
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-10-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-11-02",
+        "value": [
+          43
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-11-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-12-07",
+        "value": [
+          53
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-12-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-01-04",
+        "value": [
+          42
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-01-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-02-01",
+        "value": [
+          38
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-02-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-03-01",
+        "value": [
+          39
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-03-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-04-05",
+        "value": [
+          61
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-04-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-05-03",
+        "value": [
+          40
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-05-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-06-07",
+        "value": [
+          40
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-06-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-07-05",
+        "value": [
+          40
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-07-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-08-02",
+        "value": [
+          41
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-08-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-09-06",
+        "value": [
+          41
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-09-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-10-04",
+        "value": [
+          42
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-10-04T00:00:00.000Z",
+        "isPartial": false
+      }
+    ],
+    "missingDataTypes": [],
+    "relatedQueries_top": [
+      {
+        "query": "red light face mask best",
+        "value": 100,
+        "isBreakout": false
+      },
+      {
+        "query": "red light face mask for kids",
+        "value": 90,
+        "isBreakout": false
+      },
+      {
+        "query": "red light face mask set",
+        "value": 80,
+        "isBreakout": false
+      }
+    ],
+    "relatedQueries_rising": [
+      {
+        "query": "red light face mask for dry faces",
+        "value": 900,
+        "formattedValue": "+900%",
+        "isBreakout": false
+      },
+      {
+        "query": "bluetooth red light face mask",
+        "value": 400,
+        "formattedValue": "+400%",
+        "isBreakout": false
+      }
+    ],
+    "scrapedAt": "2026-10-16T14:00:00.000Z"
+  },
+  {
+    "type": "term",
+    "searchTerm": "light therapy mask",
+    "geo": "US",
+    "timeRange": "past-5-years",
+    "comparedWith": [
+      "led face mask",
+      "red light face mask"
+    ],
+    "summary": {
+      "average": 28,
+      "peak": 54,
+      "peakDate": "2026-04-05T00:00:00.000Z",
+      "latest": 36,
+      "latestDate": "2026-10-04T00:00:00.000Z",
+      "changePercent": 58.8,
+      "direction": "rising"
+    },
+    "interestOverTime_timelineData": [
+      {
+        "formattedAxisTime": "2021-11-07",
+        "value": [
+          20
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2021-11-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2021-12-05",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2021-12-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-01-02",
+        "value": [
+          20
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-01-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-02-06",
+        "value": [
+          16
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-02-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-03-06",
+        "value": [
+          16
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-03-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-04-03",
+        "value": [
+          17
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-04-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-05-01",
+        "value": [
+          17
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-05-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-06-05",
+        "value": [
+          18
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-06-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-07-03",
+        "value": [
+          18
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-07-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-08-07",
+        "value": [
+          18
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-08-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-09-04",
+        "value": [
+          19
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-09-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-10-02",
+        "value": [
+          19
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-10-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-11-06",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-11-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2022-12-04",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2022-12-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-01-01",
+        "value": [
+          24
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-01-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-02-05",
+        "value": [
+          20
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-02-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-03-05",
+        "value": [
+          21
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-03-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-04-02",
+        "value": [
+          21
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-04-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-05-07",
+        "value": [
+          21
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-05-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-06-04",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-06-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-07-02",
+        "value": [
+          22
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-07-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-08-06",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-08-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-09-03",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-09-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-10-01",
+        "value": [
+          23
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-10-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-11-05",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-11-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2023-12-03",
+        "value": [
+          37
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2023-12-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-01-07",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-01-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-02-04",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-02-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-03-03",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-03-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-04-07",
+        "value": [
+          25
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-04-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-05-05",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-05-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-06-02",
+        "value": [
+          26
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-06-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-07-07",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-07-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-08-04",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-08-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-09-01",
+        "value": [
+          27
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-09-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-10-06",
+        "value": [
+          28
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-10-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-11-03",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-11-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2024-12-01",
+        "value": [
+          41
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2024-12-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-01-05",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-01-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-02-02",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-02-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-03-02",
+        "value": [
+          29
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-03-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-04-06",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-04-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-05-04",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-05-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-06-01",
+        "value": [
+          30
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-06-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-07-06",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-07-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-08-03",
+        "value": [
+          31
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-08-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-09-07",
+        "value": [
+          32
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-09-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-10-05",
+        "value": [
+          32
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-10-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-11-02",
+        "value": [
+          37
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-11-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2025-12-07",
+        "value": [
+          46
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2025-12-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-01-04",
+        "value": [
+          37
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-01-04T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-02-01",
+        "value": [
+          33
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-02-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-03-01",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-03-01T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-04-05",
+        "value": [
+          54
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-04-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-05-03",
+        "value": [
+          34
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-05-03T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-06-07",
+        "value": [
+          35
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-06-07T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-07-05",
+        "value": [
+          35
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-07-05T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-08-02",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-08-02T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-09-06",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-09-06T00:00:00.000Z",
+        "isPartial": false
+      },
+      {
+        "formattedAxisTime": "2026-10-04",
+        "value": [
+          36
+        ],
+        "hasData": [
+          true
+        ],
+        "date": "2026-10-04T00:00:00.000Z",
+        "isPartial": false
+      }
+    ],
+    "missingDataTypes": [],
+    "relatedQueries_top": [
+      {
+        "query": "red light face mask best",
+        "value": 100,
+        "isBreakout": false
+      },
+      {
+        "query": "red light face mask for kids",
+        "value": 90,
+        "isBreakout": false
+      },
+      {
+        "query": "red light face mask set",
+        "value": 80,
+        "isBreakout": false
+      }
+    ],
+    "relatedQueries_rising": [
+      {
+        "query": "red light face mask for dry faces",
+        "value": 900,
+        "formattedValue": "+900%",
+        "isBreakout": false
+      },
+      {
+        "query": "bluetooth red light face mask",
+        "value": 400,
+        "formattedValue": "+400%",
+        "isBreakout": false
+      }
+    ],
+    "scrapedAt": "2026-10-16T14:00:00.000Z"
+  },
+  {
+    "type": "comparison",
+    "searchTerms": [
+      "led face mask",
+      "red light face mask",
+      "light therapy mask"
+    ],
+    "geo": "US",
+    "timeRange": "past-5-years",
+    "winner": "led face mask",
+    "averages": [
+      {
+        "searchTerm": "led face mask",
+        "average": 35
+      },
+      {
+        "searchTerm": "red light face mask",
+        "average": 32
+      },
+      {
+        "searchTerm": "light therapy mask",
+        "average": 28
+      }
+    ],
+    "scrapedAt": "2026-10-16T14:00:00.000Z"
+  }
+]

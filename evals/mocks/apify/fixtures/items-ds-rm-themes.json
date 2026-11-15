@@ -1,0 +1,283 @@
+[
+ {
+  "recordType": "rating-summary",
+  "source": "yotpo",
+  "sourceName": "Yotpo",
+  "productUrl": "https://mvmt.com/products/odyssey-ii-ceramic-fusion-grey-40mm-28000461",
+  "productKey": "cbf4e98e01272e1b",
+  "domain": "mvmt.com",
+  "productTitle": "Odyssey II Ceramic Fusion Grey 40mm",
+  "productId": "10221707821304",
+  "average": 4.83,
+  "count": 6,
+  "histogram": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 1,
+   "5": 5
+  },
+  "histogramUnit": "count",
+  "reviewsRead": 5,
+  "newReviews": 0,
+  "newestReviewDate": "2026-09-08T00:00:00.000Z",
+  "oldestReviewDate": "2025-11-30T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "uncomfortable",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.2,
+    "exampleReviewIds": [
+     "882971486"
+    ]
+   },
+   {
+    "theme": "looks great",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 4,
+    "share": 0.8,
+    "exampleReviewIds": [
+     "894671816",
+     "882971386",
+     "882971411"
+    ]
+   },
+   {
+    "theme": "durable",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.2,
+    "exampleReviewIds": [
+     "894671816"
+    ]
+   }
+  ],
+  "topComplaints": [
+   "uncomfortable"
+  ],
+  "topPraise": [
+   "looks great",
+   "durable"
+  ],
+  "changes": [],
+  "firstSeen": false,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-14T23:13:47.822Z"
+ },
+ {
+  "recordType": "rating-summary",
+  "source": "okendo",
+  "sourceName": "Okendo",
+  "productUrl": "https://www.tentree.com/products/kessler-sweater-warm-oak-heather-fade",
+  "productKey": "f1379f1ff0983c76",
+  "domain": "tentree.com",
+  "productTitle": "Womens Kessler Sweater",
+  "productId": "8143575646394",
+  "average": 4.56,
+  "count": 9,
+  "histogram": {
+   "1": 1,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 8
+  },
+  "histogramUnit": "count",
+  "reviewsRead": 9,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-14T12:23:30.510Z",
+  "oldestReviewDate": "2025-11-20T22:36:09.000Z",
+  "themes": [
+   {
+    "theme": "comfortable",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 4,
+    "share": 0.444,
+    "exampleReviewIds": [
+     "6b2ba5c7-a9ce-44ac-a83b-c0d380f888c7",
+     "73708acd-1248-4aeb-82a4-7bcac6ac0b95",
+     "f77cbe91-a149-4a11-b8c4-3c11f53d38d5"
+    ]
+   },
+   {
+    "theme": "great quality",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.222,
+    "exampleReviewIds": [
+     "2504fc78-a2b0-4511-9c39-8bc4c8c775f5",
+     "6b2ba5c7-a9ce-44ac-a83b-c0d380f888c7"
+    ]
+   },
+   {
+    "theme": "looks great",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 2,
+    "share": 0.222,
+    "exampleReviewIds": [
+     "6b2ba5c7-a9ce-44ac-a83b-c0d380f888c7",
+     "14ff42da-fa57-4e6b-abb4-4cf028077c69"
+    ]
+   },
+   {
+    "theme": "fits well",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.111,
+    "exampleReviewIds": [
+     "6b2ba5c7-a9ce-44ac-a83b-c0d380f888c7"
+    ]
+   },
+   {
+    "theme": "great customer service",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.111,
+    "exampleReviewIds": [
+     "6b2ba5c7-a9ce-44ac-a83b-c0d380f888c7"
+    ]
+   }
+  ],
+  "topComplaints": [],
+  "topPraise": [
+   "comfortable",
+   "great quality",
+   "looks great"
+  ],
+  "changes": [],
+  "firstSeen": false,
+  "readThroughResidentialProxy": false,
+  "scrapedAt": "2026-10-14T23:13:48.006Z"
+ },
+ {
+  "recordType": "review",
+  "source": "yotpo",
+  "sourceName": "Yotpo",
+  "productUrl": "https://mvmt.com/products/odyssey-ii-ceramic-fusion-grey-40mm-28000461",
+  "productKey": "cbf4e98e01272e1b",
+  "domain": "mvmt.com",
+  "productTitle": "Odyssey II Ceramic Fusion Grey 40mm",
+  "reviewId": "894671816",
+  "reviewKey": "c0536e1aba09b8d04243e98e4e1b369b225faf315e04fc293b629e3a18b76f14",
+  "rating": 5,
+  "title": "It's a beautiful watch, well",
+  "text": "It's a beautiful watch, well designed and durable! I have a few movement watches and I must say it is one of my favorites.",
+  "date": "2026-09-08T00:00:00.000Z",
+  "verified": false,
+  "helpfulVotes": 0,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-14T23:13:47.822Z"
+ },
+ {
+  "recordType": "review",
+  "source": "yotpo",
+  "sourceName": "Yotpo",
+  "productUrl": "https://mvmt.com/products/odyssey-ii-ceramic-fusion-grey-40mm-28000461",
+  "productKey": "cbf4e98e01272e1b",
+  "domain": "mvmt.com",
+  "productTitle": "Odyssey II Ceramic Fusion Grey 40mm",
+  "reviewId": "882971386",
+  "reviewKey": "ca1059a1281a8c7f4768022c1b6051a466ee58775691b8582ec1c55a6a1b429c",
+  "rating": 5,
+  "title": "100% Satisfied",
+  "text": "Absolutely stunning watch",
+  "date": "2026-04-30T00:00:00.000Z",
+  "verified": true,
+  "helpfulVotes": 0,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-14T23:13:47.822Z"
+ },
+ {
+  "recordType": "review",
+  "source": "yotpo",
+  "sourceName": "Yotpo",
+  "productUrl": "https://mvmt.com/products/odyssey-ii-ceramic-fusion-grey-40mm-28000461",
+  "productKey": "cbf4e98e01272e1b",
+  "domain": "mvmt.com",
+  "productTitle": "Odyssey II Ceramic Fusion Grey 40mm",
+  "reviewId": "882971411",
+  "reviewKey": "876f9e56a460438495aca60b2706bb5a89a715577f5e83a04ee346b008db7bcb",
+  "rating": 5,
+  "title": "Fusion Grey watch",
+  "text": "I think it is a great looking watch. I have 4 watches from MVMT and I enjoy all of them. This watch appears to be more of a blue tone than a grey tone. But, I still like the color.",
+  "date": "2026-04-28T00:00:00.000Z",
+  "verified": true,
+  "helpfulVotes": 0,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-14T23:13:47.822Z"
+ },
+ {
+  "recordType": "review",
+  "source": "okendo",
+  "sourceName": "Okendo",
+  "productUrl": "https://www.tentree.com/products/kessler-sweater-warm-oak-heather-fade",
+  "productKey": "f1379f1ff0983c76",
+  "domain": "tentree.com",
+  "productTitle": "Womens Kessler Sweater",
+  "reviewId": "0c3c5dc4-3d01-4c81-8590-4ee671ba3fda",
+  "reviewKey": "9f2f9369161887dd4a52eaa1ee1bee61234851ca23a6c435bde0572cf4c94663",
+  "rating": 5,
+  "title": "Girlfriend love it",
+  "text": "Same old quality as tentree always offered",
+  "date": "2026-10-14T12:23:30.510Z",
+  "verified": true,
+  "variant": "DEEP BURGUNDY HEATHER FADE / XS",
+  "helpfulVotes": 0,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-14T23:13:48.006Z"
+ },
+ {
+  "recordType": "review",
+  "source": "okendo",
+  "sourceName": "Okendo",
+  "productUrl": "https://www.tentree.com/products/kessler-sweater-warm-oak-heather-fade",
+  "productKey": "f1379f1ff0983c76",
+  "domain": "tentree.com",
+  "productTitle": "Womens Kessler Sweater",
+  "reviewId": "ca8940f3-51ff-48f0-9b1f-0a02c4123840",
+  "reviewKey": "acdb045268aa19c58f5a6ffc1fcc110ab6cbc96cc182a6fb7c4c24a66923f50e",
+  "rating": 5,
+  "title": "Excellente qualit\u00e9",
+  "text": "Tr\u00e8s satisfaite merci",
+  "date": "2026-10-07T13:11:17.988Z",
+  "verified": true,
+  "variant": "WARM OAK HEATHER FADE / S",
+  "helpfulVotes": 0,
+  "language": "fr",
+  "isNew": false,
+  "scrapedAt": "2026-10-14T23:13:48.006Z"
+ },
+ {
+  "recordType": "review",
+  "source": "okendo",
+  "sourceName": "Okendo",
+  "productUrl": "https://www.tentree.com/products/kessler-sweater-warm-oak-heather-fade",
+  "productKey": "f1379f1ff0983c76",
+  "domain": "tentree.com",
+  "productTitle": "Womens Kessler Sweater",
+  "reviewId": "2504fc78-a2b0-4511-9c39-8bc4c8c775f5",
+  "reviewKey": "2630adfb00db5b31fdf22e7b3ce8c4f6707310b3ea744660a2697c517e958e21",
+  "rating": 5,
+  "title": "My new go-to sweater!",
+  "text": "I love everything about this sweater. Great quality and can immediately see this becoming a staple in my closet.",
+  "date": "2026-06-12T19:27:02.413Z",
+  "verified": true,
+  "helpfulVotes": 0,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-14T23:13:48.006Z"
+ }
+]

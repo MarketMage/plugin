@@ -1,0 +1,56 @@
+[
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0USSIGN01",
+  "asin": "B0USSIGN01",
+  "marketplace": "US",
+  "productTitle": "Bamboo Cutting Board Set of 3",
+  "productId": "B0USSIGN01",
+  "average": 4.6,
+  "count": 18234,
+  "histogram": {
+   "1": 3,
+   "2": 2,
+   "3": 5,
+   "4": 14,
+   "5": 76
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 0,
+  "newReviews": 0,
+  "themes": [],
+  "topComplaints": [],
+  "topPraise": [],
+  "reviewsNotShownKind": "sign-in",
+  "reviewsNotShown": "Amazon shows this product's reviews only to signed-in shoppers: the page says \"Sign in to see customer reviews\" where its top reviews were (amazon.com, since October 2026). The rating, ratings count and share per star are read; this actor never signs in, so no review text comes back for it."
+ },
+ {
+  "recordType": "rating-summary",
+  "source": "amazon",
+  "sourceName": "Amazon",
+  "productUrl": "https://www.amazon.com/dp/B0USSIGN02",
+  "asin": "B0USSIGN02",
+  "marketplace": "US",
+  "productTitle": "Organic Bamboo Cutting Boards with Juice Groove",
+  "productId": "B0USSIGN02",
+  "average": 4.4,
+  "count": 6120,
+  "histogram": {
+   "1": 7,
+   "2": 3,
+   "3": 6,
+   "4": 15,
+   "5": 69
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 0,
+  "newReviews": 0,
+  "themes": [],
+  "topComplaints": [],
+  "topPraise": [],
+  "reviewsNotShownKind": "sign-in",
+  "reviewsNotShown": "Amazon shows this product's reviews only to signed-in shoppers: the page says \"Sign in to see customer reviews\" where its top reviews were (amazon.com, since October 2026). The rating, ratings count and share per star are read; this actor never signs in, so no review text comes back for it."
+ }
+]

@@ -1,0 +1,91 @@
+[
+ {
+  "operation": "read",
+  "ok": true,
+  "message": "read: 2 entries.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook01",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook01"
+  },
+  "counts": {
+   "idea": 1,
+   "variation": 1,
+   "decision": 0,
+   "watch": 0
+  },
+  "profile": {
+   "budgetBand": "1k-5k",
+   "fulfilment": "maker",
+   "experience": "some",
+   "channels": [
+    "etsy"
+   ],
+   "goal": "brand",
+   "marketCountry": "US",
+   "answerShape": "no-tables",
+   "updatedAt": "2026-10-20T10:00:00.000Z"
+  },
+  "entries": [
+   {
+    "id": "v-8tq1wd",
+    "kind": "variation",
+    "parentId": "i-5mg2pc",
+    "idea": "Speckled stoneware mug",
+    "date": "2026-10-22",
+    "marketplace": "etsy.com",
+    "change": "Set of 2, gift boxed",
+    "verdict": "go",
+    "confidence": "medium",
+    "signals": {
+     "favours": 4,
+     "against": 1,
+     "neutral": 1,
+     "unknown": 1
+    },
+    "keyNumbers": {
+     "priceMedian": 58,
+     "medianReviews": 240
+    },
+    "landedCostPerUnit": {
+     "amount": 19.5,
+     "currency": "USD",
+     "asOf": "2026-10-22"
+    },
+    "note": "stage: validating · For you: a strong fit."
+   },
+   {
+    "id": "i-5mg2pc",
+    "kind": "idea",
+    "idea": "Speckled stoneware mug",
+    "date": "2026-10-20",
+    "marketplace": "etsy.com",
+    "verdict": "maybe",
+    "confidence": "medium",
+    "signals": {
+     "favours": 3,
+     "against": 1,
+     "neutral": 2,
+     "unknown": 1
+    },
+    "keyNumbers": {
+     "priceMedian": 32,
+     "medianReviews": 410
+    },
+    "landedCostPerUnit": {
+     "amount": 9.8,
+     "currency": "USD",
+     "asOf": "2026-10-20"
+    },
+    "note": "stage: validating · For you: a fit, with one fix. Fix: a gift set."
+   }
+  ],
+  "matched": 2,
+  "returned": 2,
+  "more": false,
+  "sizeBytes": 1900
+ }
+]

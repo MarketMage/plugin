@@ -1,0 +1,200 @@
+[
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "PawRoll Store",
+  "advertiserId": "1029384700000",
+  "adId": "2300000000000000",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-08-28T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Your cat's new favourite workout: the motion-activated laser that plays while you're at work. 30% off this week.",
+  "title": "Automatic Cat Laser Toy",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://pawroll.shop/products/automatic-cat-laser-toy",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000000000",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "PawRoll Store",
+  "advertiserId": "1029384707919",
+  "adId": "2300000000104729",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-09-12T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Indoor cats need to hunt. Our rotating laser keeps them moving for 15 minutes, then rests.",
+  "title": "Automatic Cat Laser Toy",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://pawroll.shop/products/automatic-cat-laser-toy",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000104729",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "Zoomie Cat Co",
+  "advertiserId": "1029384715838",
+  "adId": "2300000000209458",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-09-05T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Bored cat? This auto laser toy turns on when your cat walks by. Free US shipping.",
+  "title": "Motion Laser Cat Toy",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://zoomiecat.co/products/motion-laser-cat-toy",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000209458",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "LumiPaw",
+  "advertiserId": "1029384723757",
+  "adId": "2300000000314187",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-09-02T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "The smart rolling ball that dodges, rolls and chirps. Rechargeable, safe for indoor cats.",
+  "title": "Interactive Cat Ball",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://lumipaw.com/products/interactive-cat-ball",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000314187",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "Kitty Sill Co",
+  "advertiserId": "1029384731676",
+  "adId": "2300000000418916",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-09-30T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Give your cat the best seat in the house. Cordless window perch holds up to 40 lb.",
+  "title": "Cat Window Perch",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://kittysill.co/products/cat-window-perch",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000418916",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "Whisker Haven",
+  "advertiserId": "1029384739595",
+  "adId": "2300000000523645",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-09-20T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Cardboard scratcher box with bell balls inside: saves your sofa, keeps them busy.",
+  "title": "Cat Scratcher Toy Box",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://whiskerhaven.com/products/cat-scratcher-toy-box",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000523645",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "Purrfect Bites",
+  "advertiserId": "1029384747514",
+  "adId": "2300000000628374",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-07-01T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Grain-free cat food your picky eater will finish. Try the sampler.",
+  "title": "Grain-Free Cat Food Sampler",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://purrfectbites.com/products/sampler",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000628374",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "Downtown Vet Clinic",
+  "advertiserId": "1029384755433",
+  "adId": "2300000000733103",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-08-15T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "New cat? Book a wellness check and vaccines this month.",
+  "title": "Cat Wellness Check",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://downtownvet.example.com/cats",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000733103",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ },
+ {
+  "recordType": "ad",
+  "platform": "meta",
+  "advertiser": "PetHaven",
+  "advertiserId": "1029384763352",
+  "adId": "2300000000837832",
+  "status": "active",
+  "active": true,
+  "firstShown": "2026-09-18T07:00:00.000Z",
+  "lastShown": "2026-11-08T07:00:00.000Z",
+  "text": "Everything for your cat, in one place. Shop the cat collection.",
+  "title": "Shop Cats",
+  "mediaType": "video",
+  "cta": "Shop now",
+  "landingUrl": "https://pethaven.shop/collections/cat",
+  "countries": [
+   "US"
+  ],
+  "adUrl": "https://www.facebook.com/ads/library?id=2300000000837832",
+  "watch": "cat toy",
+  "watchType": "keyword"
+ }
+]

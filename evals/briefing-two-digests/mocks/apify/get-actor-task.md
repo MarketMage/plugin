@@ -1,0 +1,5 @@
+---
+type: agent
+---
+
+You are the Apify `get-actor-task` tool. For `tskGAPS1` (or `cw-gaps-glowrest`) reply with only: {"taskId": "tskGAPS1", "actorId": "cleanpull/catalog-matcher", "name": "cw-gaps-glowrest", "input": {"yourStore": "mystore.com", "competitorStores": ["glowrest.com"], "monitorName": "glowrest", "minUndercutPercent": 5, "maxRunCostUsd": 0.12}}. For `tskLAUNCH1` (or `cw-launch-eyemask`) reply with only: {"taskId": "tskLAUNCH1", "actorId": "cleanpull/watch-digest", "name": "cw-launch-eyemask", "input": {"title": "Launch week: heated eye mask", "monitorName": "launch-eyemask", "amazonAsins": ["B0CEYE0001", "B0CEYE0002", "B0CEYE0003", "B0CEYE0004", "B0CEYE0005"], "amazonMarketplace": "US", "rankKeywords": ["heated eye mask", "cordless eye mask", "steam eye mask"], "rankAsins": ["B0CEYE0001", "B0CEYE0002", "B0CEYE0003", "B0CEYE0004", "B0MYMASK01"], "rankMarketplace": "US", "reviewAsins": ["B0CEYE0001", "B0CEYE0002", "B0MYMASK01"], "reviewMarketplace": "US", "maxRunCostUsd": 0.09}}. For any other id: {"error": "Task not found"}.

@@ -1,0 +1,232 @@
+[
+ {
+  "recordType": "product",
+  "asin": "B0CANDL001",
+  "title": "Hand Poured Soy Candle, Lavender, 8 oz",
+  "brand": "LA JOLIE MUSE",
+  "price": 17.99,
+  "rating": 4.5,
+  "reviewCount": 21000,
+  "starBreakdown": {
+   "5": 72,
+   "4": 13,
+   "3": 7,
+   "2": 3,
+   "1": 5
+  },
+  "rank": 1000,
+  "boughtPastMonthMin": 2000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL002",
+  "title": "Scented Soy Candle Gift Set, 4 Pack",
+  "brand": "Yinuo Light",
+  "price": 24.99,
+  "rating": 4.4,
+  "reviewCount": 14800,
+  "starBreakdown": {
+   "5": 68,
+   "4": 15,
+   "3": 8,
+   "2": 4,
+   "1": 5
+  },
+  "rank": 1731,
+  "boughtPastMonthMin": 1000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL003",
+  "title": "Wood Wick Soy Candle, Sandalwood",
+  "brand": "Cocodor",
+  "price": 19.99,
+  "rating": 4.4,
+  "reviewCount": 9600,
+  "starBreakdown": {
+   "5": 69,
+   "4": 14,
+   "3": 8,
+   "2": 4,
+   "1": 5
+  },
+  "rank": 2462,
+  "boughtPastMonthMin": 1000,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL004",
+  "title": "Hand Poured Soy Candle, Fresh Linen",
+  "brand": "Homesick",
+  "price": 34.0,
+  "rating": 4.6,
+  "reviewCount": 7200,
+  "starBreakdown": {
+   "5": 78,
+   "4": 10,
+   "3": 5,
+   "2": 3,
+   "1": 4
+  },
+  "rank": 3193,
+  "boughtPastMonthMin": 500,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL005",
+  "title": "Soy Candle in Tin, Travel Size, 3 Pack",
+  "brand": "Paddywax",
+  "price": 22.0,
+  "rating": 4.5,
+  "reviewCount": 3100,
+  "starBreakdown": {
+   "5": 74,
+   "4": 12,
+   "3": 6,
+   "2": 3,
+   "1": 5
+  },
+  "rank": 3924,
+  "boughtPastMonthMin": 500,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL006",
+  "title": "Coconut Soy Candle, Sea Salt",
+  "brand": "Pura Vida Candle",
+  "price": 16.99,
+  "rating": 4.3,
+  "reviewCount": 2400,
+  "starBreakdown": {
+   "5": 65,
+   "4": 15,
+   "3": 9,
+   "2": 5,
+   "1": 6
+  },
+  "rank": 4655,
+  "boughtPastMonthMin": 300,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL007",
+  "title": "Hand Poured Soy Candle, Pumpkin Spice",
+  "brand": "LA JOLIE MUSE",
+  "price": 17.99,
+  "rating": 4.5,
+  "reviewCount": 8800,
+  "starBreakdown": {
+   "5": 72,
+   "4": 13,
+   "3": 7,
+   "2": 3,
+   "1": 5
+  },
+  "rank": 5386,
+  "boughtPastMonthMin": 500,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL008",
+  "title": "Beeswax Candle, Honey, 9 oz",
+  "brand": "Bee Kind",
+  "price": 26.99,
+  "rating": 4.6,
+  "reviewCount": 1300,
+  "starBreakdown": {
+   "5": 77,
+   "4": 11,
+   "3": 5,
+   "2": 3,
+   "1": 4
+  },
+  "rank": 6117,
+  "boughtPastMonthMin": 200,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL009",
+  "title": "Crackling Wood Wick Candle, Tobacco Vanilla",
+  "brand": "Cocodor",
+  "price": 21.99,
+  "rating": 4.4,
+  "reviewCount": 5100,
+  "starBreakdown": {
+   "5": 70,
+   "4": 14,
+   "3": 7,
+   "2": 4,
+   "1": 5
+  },
+  "rank": 6848,
+  "boughtPastMonthMin": 100,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ },
+ {
+  "recordType": "product",
+  "asin": "B0CANDL010",
+  "title": "Soy Candle, Eucalyptus Spearmint, 14 oz",
+  "brand": "Chesapeake Bay",
+  "price": 24.99,
+  "rating": 4.6,
+  "reviewCount": 11200,
+  "starBreakdown": {
+   "5": 79,
+   "4": 10,
+   "3": 5,
+   "2": 2,
+   "1": 4
+  },
+  "rank": 7579,
+  "boughtPastMonthMin": 100,
+  "dateFirstAvailable": null,
+  "soldByAmazon": false,
+  "fees": {
+   "supported": false
+  }
+ }
+]

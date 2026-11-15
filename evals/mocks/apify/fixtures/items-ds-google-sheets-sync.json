@@ -1,0 +1,25 @@
+[
+ {
+  "recordType": "summary",
+  "spreadsheet": "https://docs.google.com/spreadsheets/d/1AbCdEfGhIjKlMnOp",
+  "tab": "Results",
+  "mode": "append",
+  "rowsWritten": 16,
+  "columns": [
+   "recordType",
+   "storeDomain",
+   "storeName",
+   "productCount",
+   "priceMin",
+   "priceMedian",
+   "priceMax",
+   "title",
+   "productType",
+   "onSale",
+   "available",
+   "publishedAt",
+   "bestSellerRank",
+   "url"
+  ]
+ }
+]

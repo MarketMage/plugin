@@ -1,0 +1,33 @@
+[
+ {
+  "operation": "upsertProfile",
+  "ok": true,
+  "message": "Profile saved.",
+  "error": null,
+  "schemaVersion": 2,
+  "sizeLimitBytes": 200000,
+  "store": {
+   "name": "marketmage-notebook",
+   "id": "kvsNoteBook07",
+   "consoleUrl": "https://console.apify.com/storage/key-value-stores/kvsNoteBook07"
+  },
+  "counts": {
+   "idea": 2,
+   "variation": 1,
+   "decision": 0,
+   "watch": 0
+  },
+  "profile": {
+   "budgetBand": "under-1k",
+   "fulfilment": "dropship",
+   "experience": "none",
+   "channels": [
+    "store"
+   ],
+   "goal": "side-income",
+   "marketCountry": "US",
+   "updatedAt": "2026-11-11T09:00:00.000Z"
+  },
+  "sizeBytes": 260
+ }
+]

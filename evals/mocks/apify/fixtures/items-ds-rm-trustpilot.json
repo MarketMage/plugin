@@ -1,0 +1,174 @@
+[
+ {
+  "recordType": "rating-summary",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "average": 3.6,
+  "count": 4120,
+  "histogram": {
+   "1": 24,
+   "2": 7,
+   "3": 6,
+   "4": 13,
+   "5": 50
+  },
+  "histogramUnit": "percent",
+  "reviewsRead": 6,
+  "newReviews": 0,
+  "newestReviewDate": "2026-10-12T00:00:00.000Z",
+  "themes": [
+   {
+    "theme": "delivery",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.17
+   },
+   {
+    "theme": "refund",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.17
+   },
+   {
+    "theme": "durability",
+    "polarity": "complaint",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.17
+   },
+   {
+    "theme": "comfortable",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.17
+   },
+   {
+    "theme": "customer service",
+    "polarity": "praise",
+    "kind": "known",
+    "reviews": 1,
+    "share": 0.17
+   }
+  ],
+  "topComplaints": [
+   "delivery",
+   "refund",
+   "durability"
+  ],
+  "topPraise": [
+   "comfortable",
+   "customer service"
+  ],
+  "changes": [],
+  "firstSeen": true,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "reviewId": "tp0",
+  "rating": 5,
+  "title": "Comfiest shoes I own",
+  "text": "Bought the Tree Runners and they are so comfortable, true to size.",
+  "date": "2026-10-12T00:00:00.000Z",
+  "verified": true,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "reviewId": "tp1",
+  "rating": 1,
+  "title": "Order never arrived",
+  "text": "Waited three weeks, tracking stuck, support slow to reply.",
+  "date": "2026-10-10T00:00:00.000Z",
+  "verified": true,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "reviewId": "tp2",
+  "rating": 2,
+  "title": "Wore out fast",
+  "text": "Holes in the toe after four months of walking.",
+  "date": "2026-10-08T00:00:00.000Z",
+  "verified": true,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "reviewId": "tp3",
+  "rating": 4,
+  "title": "Good but runs small",
+  "text": "Lovely material but size up half a size.",
+  "date": "2026-10-05T00:00:00.000Z",
+  "verified": true,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "reviewId": "tp4",
+  "rating": 5,
+  "title": "Great customer service",
+  "text": "Exchange was quick and free.",
+  "date": "2026-10-02T00:00:00.000Z",
+  "verified": true,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ },
+ {
+  "recordType": "review",
+  "source": "trustpilot",
+  "sourceName": "Trustpilot",
+  "productUrl": "https://www.trustpilot.com/review/allbirds.com",
+  "domain": "allbirds.com",
+  "productTitle": "Allbirds",
+  "reviewId": "tp5",
+  "rating": 1,
+  "title": "Refund took ages",
+  "text": "Returned in August, refund only after many emails.",
+  "date": "2026-09-29T00:00:00.000Z",
+  "verified": true,
+  "language": "en",
+  "isNew": false,
+  "scrapedAt": "2026-10-16T14:00:00.000Z"
+ }
+]

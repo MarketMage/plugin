@@ -1,0 +1,101 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "silicone baking mat",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 57,
+  "resultsText": "1-48 of over 10,000 results",
+  "currency": "USD",
+  "priceMin": 7.99,
+  "priceP25": 12.99,
+  "priceMedian": 15.99,
+  "priceP75": 21.99,
+  "priceMax": 34.99,
+  "priced": 48,
+  "sponsored": 9,
+  "adsShown": true,
+  "ads": {
+   "count": 9,
+   "priceMin": 10.79,
+   "priceMedian": 13.49,
+   "priceMax": 18.89,
+   "topSellers": [
+    {
+     "seller": "Amazon Basics",
+     "ads": 2
+    },
+    {
+     "seller": "Silpat",
+     "ads": 1
+    },
+    {
+     "seller": "Kitzini",
+     "ads": 1
+    }
+   ]
+  },
+  "sellers": 16,
+  "sellerKnown": 44,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "Amazon Basics",
+    "listings": 8,
+    "share": 0.17
+   },
+   {
+    "seller": "Silpat",
+    "listings": 6,
+    "share": 0.12
+   },
+   {
+    "seller": "Kitzini",
+    "listings": 5,
+    "share": 0.1
+   },
+   {
+    "seller": "GRIDMANN",
+    "listings": 3,
+    "share": 0.06
+   }
+  ],
+  "top3SellerShare": 0.41,
+  "sellerHhi": 0.11,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 2100,
+  "averageRating": 4.7,
+  "under100Reviews": 5,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 8900,
+   "revenuePerMonthMin": 159511.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "components": [
+    {
+     "name": "referral fee",
+     "percent": 15,
+     "fixed": null,
+     "note": "Most categories; 8% to 17% in some (electronics, grocery and beauty under a price, clothing), 45% for Amazon device accessories; at least $0.30."
+    }
+   ],
+   "basis": "Published list rates for US sellers, most categories. The FBA fulfilment fee depends on size and weight and is not in this figure: the Amazon Product Scraper works it out per product (its fees field).",
+   "sources": [
+    "https://sellercentral.amazon.com/help/hub/reference/external/GTG4BAWSY39Z98Z3"
+   ],
+   "asOf": "2026-10-23"
+  }
+ }
+]

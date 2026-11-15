@@ -1,0 +1,101 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "deshedding brush",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "currency": "USD",
+  "priceP25": 12.99,
+  "priceMedian": 17.99,
+  "priceP75": 26.99,
+  "priced": 48,
+  "sponsored": 9,
+  "sellers": 28,
+  "top3SellerShare": 0.41,
+  "sellerHhi": 0.1,
+  "medianReviews": 2100,
+  "under100Reviews": 6,
+  "salesFloor": {
+   "unitsPerMonthMin": 23800,
+   "revenuePerMonthMin": 429000.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results; a floor, not an estimate of actual sales."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "asOf": "2026-10-23"
+  },
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "dog nail grinder",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "currency": "USD",
+  "priceP25": 17.99,
+  "priceMedian": 22.99,
+  "priceP75": 29.99,
+  "priced": 48,
+  "sponsored": 8,
+  "sellers": 28,
+  "top3SellerShare": 0.33,
+  "sellerHhi": 0.08,
+  "medianReviews": 1400,
+  "under100Reviews": 9,
+  "salesFloor": {
+   "unitsPerMonthMin": 18300,
+   "revenuePerMonthMin": 432000.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results; a floor, not an estimate of actual sales."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "asOf": "2026-10-23"
+  },
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ },
+ {
+  "recordType": "keyword-summary",
+  "keyword": "cordless dog clippers",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "currency": "USD",
+  "priceP25": 29.99,
+  "priceMedian": 44.99,
+  "priceP75": 79.99,
+  "priced": 48,
+  "sponsored": 10,
+  "sellers": 28,
+  "top3SellerShare": 0.36,
+  "sellerHhi": 0.09,
+  "medianReviews": 1900,
+  "under100Reviews": 7,
+  "salesFloor": {
+   "unitsPerMonthMin": 6400,
+   "revenuePerMonthMin": 318000.0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 10,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results; a floor, not an estimate of actual sales."
+  },
+  "marketplaceFees": {
+   "marketplace": "amazon",
+   "typicalFeePercent": 15,
+   "fixedFeePerOrder": 0,
+   "asOf": "2026-10-23"
+  },
+  "scrapedAt": "2026-11-06T15:00:00.000Z"
+ }
+]

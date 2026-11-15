@@ -1,0 +1,51 @@
+[
+ {
+  "recordType": "product",
+  "url": "https://www.examplepottery.com/products/speckled-stoneware-mug",
+  "domain": "examplepottery.com",
+  "title": "Speckled Stoneware Mug, 12 oz",
+  "price": 24.99,
+  "currency": "USD",
+  "listPrice": 29.99,
+  "onSale": true,
+  "discountPercent": 17,
+  "inStock": true,
+  "variantCount": 6,
+  "variantsInStock": 4,
+  "priceMin": 19.99,
+  "priceMax": 34.99,
+  "variants": [
+   {
+    "title": "Speckled White / 12 oz",
+    "price": 24.99,
+    "inStock": true
+   },
+   {
+    "title": "Speckled White / 16 oz",
+    "price": 29.99,
+    "inStock": true
+   },
+   {
+    "title": "Sage / 12 oz",
+    "price": 24.99,
+    "inStock": false
+   },
+   {
+    "title": "Sage / 16 oz",
+    "price": 29.99,
+    "inStock": true
+   },
+   {
+    "title": "Charcoal / 8 oz",
+    "price": 19.99,
+    "inStock": true
+   },
+   {
+    "title": "Charcoal / 20 oz",
+    "price": 34.99,
+    "inStock": false
+   }
+  ],
+  "scrapedAt": "2026-11-06T14:00:00.000Z"
+ }
+]

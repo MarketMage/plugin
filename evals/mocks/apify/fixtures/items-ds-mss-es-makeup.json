@@ -1,0 +1,65 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "organizador maquillaje",
+  "source": "amazon",
+  "marketplace": "ES",
+  "listings": 48,
+  "resultsText": "1-48 de m\u00e1s de 4.000 resultados",
+  "currency": "EUR",
+  "priceMin": 8.99,
+  "priceP25": 15.99,
+  "priceMedian": 21.99,
+  "priceP75": 29.99,
+  "priceMax": 59.99,
+  "priced": 48,
+  "sponsored": 7,
+  "adsShown": true,
+  "ads": null,
+  "sellers": 29,
+  "sellerKnown": 46,
+  "sellerSource": "title-brand",
+  "topSellers": [
+   {
+    "seller": "mDesign",
+    "listings": 3,
+    "share": 0.07
+   },
+   {
+    "seller": "Amazon Basics",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "SONGMICS",
+    "listings": 3,
+    "share": 0.06
+   },
+   {
+    "seller": "Sorbus",
+    "listings": 2,
+    "share": 0.04
+   }
+  ],
+  "top3SellerShare": 0.19,
+  "sellerHhi": 0.04,
+  "reviewScope": "product",
+  "withReviews": 48,
+  "medianReviews": 45,
+  "averageRating": 4.4,
+  "under100Reviews": 48,
+  "firstRun": true,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-10-16T14:00:00.000Z",
+  "salesFloor": {
+   "unitsPerMonthMin": 0,
+   "revenuePerMonthMin": 0,
+   "listingsCounted": 10,
+   "listingsWithBadge": 0,
+   "currency": "EUR",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket (\"1K+\" = 1,000), and that floor times their price. A floor, not an estimate of actual sales: a result without a badge counts 0, and every bucket can hide far more than its floor."
+  },
+  "averageReviews": 45
+ }
+]

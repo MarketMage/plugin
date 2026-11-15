@@ -1,0 +1,51 @@
+[
+ {
+  "recordType": "keyword-summary",
+  "keyword": "hand poured soy candle",
+  "source": "amazon",
+  "marketplace": "US",
+  "listings": 48,
+  "currency": "USD",
+  "priceMin": 9.99,
+  "priceP25": 15.99,
+  "priceMedian": 19.99,
+  "priceP75": 26.99,
+  "priceMax": 49.99,
+  "priced": 48,
+  "singleNewPrice": {
+   "listings": 44,
+   "currency": "USD",
+   "min": 9.99,
+   "p25": 15.99,
+   "median": 19.99,
+   "p75": 26.99,
+   "max": 49.99,
+   "excludedMultiPack": 4,
+   "excludedOtherCondition": 0,
+   "excludedUnknownCondition": 0,
+   "basis": "Organic fixed-price listings in the main currency whose condition is new and whose title states no multi-pack (packCount null or 1)."
+  },
+  "sponsored": 10,
+  "adsShown": true,
+  "sellers": 30,
+  "sellerSource": "title-brand",
+  "top3SellerShare": 0.29,
+  "sellerHhi": 0.06,
+  "reviewScope": "product",
+  "medianReviews": 640,
+  "under100Reviews": 12,
+  "firstRun": true,
+  "salesFloor": {
+   "unitsPerMonthMin": 6200,
+   "revenuePerMonthMin": 123938,
+   "listingsCounted": 10,
+   "listingsWithBadge": 5,
+   "currency": "USD",
+   "basis": "The sum of Amazon's \"bought in past month\" badges over the top 10 organic results, each counted at the bottom of its bucket. A floor, not an estimate of actual sales."
+  },
+  "marketplaceFees": null,
+  "pagesRead": 1,
+  "notes": [],
+  "scrapedAt": "2026-11-04T10:00:00.000Z"
+ }
+]

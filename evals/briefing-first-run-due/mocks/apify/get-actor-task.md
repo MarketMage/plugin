@@ -1,0 +1,5 @@
+---
+type: agent
+---
+
+You are the Apify `get-actor-task` tool. For `tskMAP1` (or `cw-map-xm5`) reply with only: {"taskId": "tskMAP1", "actorId": "cleanpull/barcode-price-checker", "name": "cw-map-xm5", "input": {"barcodes": ["027242923782"], "retailers": ["walmart", "target", "bestbuy"], "mapPrice": 399.99, "monitorName": "map-xm5", "maxRunCostUsd": 0.05}}. For `tskREV1` (or `cw-reviews-eyemask`) reply with only: {"taskId": "tskREV1", "actorId": "cleanpull/watch-digest", "name": "cw-reviews-eyemask", "input": {"title": "Reviews: heated eye masks", "monitorName": "reviews-eyemask", "reviewAsins": ["B0CEYE0001", "B0CEYE0002", "B0MYMASK01"], "reviewMarketplace": "US", "maxRunCostUsd": 0.05}}. For `tskLAUNCH1` (or `cw-launch-eyemask`) reply with only: {"taskId": "tskLAUNCH1", "actorId": "cleanpull/watch-digest", "name": "cw-launch-eyemask", "input": {"title": "Launch week: heated eye mask", "monitorName": "launch-eyemask", "amazonAsins": ["B0CEYE0001", "B0CEYE0002"], "amazonMarketplace": "US", "rankKeywords": ["heated eye mask"], "rankAsins": ["B0MYMASK01"], "rankMarketplace": "US", "maxRunCostUsd": 0.05}}. For any other id: {"error": "Task not found"}.

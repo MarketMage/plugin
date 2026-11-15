@@ -1,0 +1,83 @@
+[
+ {
+  "type": "term",
+  "searchTerm": "hand poured soy candle",
+  "geo": "US",
+  "summary": {
+   "average": 46,
+   "peak": 100,
+   "peakDate": "2025-12-14T00:00:00.000Z",
+   "latest": 46,
+   "changePercent": 18.0,
+   "direction": "rising",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "wood wick soy candle",
+    "value": 160,
+    "formattedValue": "+160%",
+    "isBreakout": false
+   },
+   {
+    "query": "fall soy candle",
+    "value": 110,
+    "formattedValue": "+110%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   46
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "soy candle",
+  "geo": "US",
+  "summary": {
+   "average": 70,
+   "peak": 100,
+   "peakDate": "2025-12-14T00:00:00.000Z",
+   "latest": 70,
+   "changePercent": 6.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "crackling soy candle",
+    "value": 130,
+    "formattedValue": "+130%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   70
+  ]
+ },
+ {
+  "type": "term",
+  "searchTerm": "handmade candle",
+  "geo": "US",
+  "summary": {
+   "average": 52,
+   "peak": 100,
+   "peakDate": "2025-12-14T00:00:00.000Z",
+   "latest": 52,
+   "changePercent": 3.0,
+   "direction": "stable",
+   "lowVolume": false
+  },
+  "relatedQueries_rising": [
+   {
+    "query": "small batch candle",
+    "value": 90,
+    "formattedValue": "+90%",
+    "isBreakout": false
+   }
+  ],
+  "interestOverTime_averages": [
+   52
+  ]
+ }
+]
