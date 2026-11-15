@@ -5,4 +5,4 @@ allowed_tools: [Read, Skill]
 runs: 1
 ---
 
-Tell me weekly when new sellers show up in the top results for "cork yoga block" on Walmart and Target, Mondays at 9am America/Chicago. No delivery channel for now. I've seen the costs and I agree - go ahead and create it.
+Tell me weekly when new sellers show up in the top results for "cork yoga block" on Walmart and Target, Mondays at 9am America/Chicago. I've seen the costs and I agree - go ahead and create it.

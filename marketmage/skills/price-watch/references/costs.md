@@ -67,22 +67,3 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `store-summary` | Store summary | $3.00 | $3.00 | $2.70 | $2.40 |
 | `comparison-result` | Cross-store comparison | $1.00 | $1.00 | $0.90 | $0.80 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-
-### `cleanpull/alerts-sender`: Alerts Sender: Email, Slack, Discord & Teams
-
-Default memory 256 MB. Prices per 1,000 events, by Apify plan:
-
-| Event | What it is | Free | Bronze | Silver | Gold+ |
-| --- | --- | --- | --- | --- | --- |
-| `alert-delivered` (main) | Message delivered | $1.00 | $1.00 | $0.90 | $0.80 |
-| `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-
-### `cleanpull/google-sheets-sync`: Google Sheets Sync: Import, Export & Upsert Datasets
-
-Default memory 4096 MB. Prices per 1,000 events, by Apify plan:
-
-| Event | What it is | Free | Bronze | Silver | Gold+ |
-| --- | --- | --- | --- | --- | --- |
-| `row-written` (main) | Row written | $0.10 | $0.10 | $0.090 | $0.080 |
-| `row-read` | Row read | $0.050 | $0.050 | $0.045 | $0.040 |
-| `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |

@@ -62,11 +62,10 @@ What competitors are promoting and launching, now or over time. Read these first
   - stores × USD 0.00025;
   - USD 0.001 per store's page check;
   - USD 0.002 per promotion started or ended and per launch;
-  - USD 0.001 per message once a channel is added.
   - **The first run** records every running promotion (and the last day's Shopify launches) as the baseline: about USD 0.02 a store.
   - **Example:** 10 stores daily, about 3 changes a day: 0.005 + 10 × 0.00025 + 10 × 0.001 + 3 × 0.002 ≈ **USD 0.024 a run, about USD 0.70 a month**; the first run ≈ USD 0.22. Weekly is about USD 0.10 a month.
 - **`maxRunCostUsd`:** 1.5× the typical run + USD 0.03 (room for one store's worst case). For the example, about USD 0.07.
-- **Steps:** follow `references/watchlists.md`: monthly and first-run cost, a yes, the task, the baseline run (with `maxRunCostUsd` raised to the first-run cap in that run's input), the schedule, and where the results go: "your briefing in Claude, on request or on a Monday schedule"; the Console link for a channel only when the user asks for Slack, Discord, Teams, a webhook or email (step 7).
+- **Steps:** follow `references/watchlists.md`: monthly and first-run cost, a yes, the task, the baseline run (with `maxRunCostUsd` raised to the first-run cap in that run's input), the schedule, and where the results go: "your briefing in Claude, on request or on a Monday schedule" (step 6).
 
 ## 5. Reading a promotions digest later
 

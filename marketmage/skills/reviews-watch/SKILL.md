@@ -63,8 +63,9 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
 - **The task:** `cleanpull/watch-digest`, named `cw-reviews-<name>`, with:
   - `reviewProductUrls`, `reviewAsins`, `reviewTrustpilotDomains` (domains or `trustpilot.com/review/…` pages) and `reviewMarketplace` (at most 1,000 products and businesses together);
   - `monitorName: "<name>"` and `title`;
-  - `maxRunCostUsd` (see below);
-  - `alertBelowRating` (for example 3) when the user only wants to hear about bad reviews: the message then lists only new reviews under that many stars, and ratings that fell under it (`references/watchlists.md`, "Alerts").
+  - `maxRunCostUsd` (see below).
+
+  When the user only cares about bad reviews, the watch still reads every review; say the briefing leads with the new ones under the stars they named and ratings that fell under it.
 
   The digest reports new reviews (with the lowest rating among them and their top themes), the rating moving by 0.1 stars or more, the count jumping or dropping by 10% or more, and a product page removed (confirmed on a second run). A Trustpilot business is checked through its newest 5 reviews each run: more new reviews than that between runs aren't all listed, so suggest daily for busy businesses.
 - **Cost per run:**
@@ -72,11 +73,10 @@ Never ask for reviewer names, and leave `includeReviewerNames` off (its default)
   - products × USD 0.00025;
   - each product with nothing new USD 0.0005; each with something new USD 0.003 + USD 0.0005 per new review;
   - **each Trustpilot business:** its read (`provider-search`) USD 0.003 + its newest 5 reviews re-checked at USD 0.003 each, so USD 0.0185 with nothing new (with the USD 0.0005 check); a new review is USD 0.0035 instead of a re-check, plus the USD 0.003 summary. About **USD 0.56 a month per business daily**, USD 0.08 weekly. **Suggest weekly for Trustpilot** unless the business gets more than about 5 reviews a day (then daily, so the newest 5 cover them). It adds about 2 to 3 minutes to the digest (up to 4 businesses at a time);
-  - USD 0.001 per message once a channel is added.
   - **The first run** reads each product's summary and up to 20 reviews as the baseline: about USD 0.013 per product; a Trustpilot business's summary, read and newest 5 reviews: about USD 0.024.
   - **Example:** 20 products daily, 4 of them with a couple of new reviews: 0.005 + 20 × 0.00025 + 16 × 0.0005 + 4 × 0.004 ≈ **USD 0.034 a run, about USD 1.00 a month**; the first run ≈ USD 0.27. Weekly is about USD 0.15 a month.
 - **`maxRunCostUsd`:** 1.5× the typical run + USD 0.04 (room for one product's worst case, USD 0.037; with Trustpilot businesses only, + USD 0.03, for a business's USD 0.0235; `references/watchlists.md`). For the example, about USD 0.09; for 3 Trustpilot businesses daily, 1.5 × 0.06 + 0.03 ≈ USD 0.12.
-- **Steps:** follow `references/watchlists.md`: show the monthly and first-run cost and get a yes, create the task, run the baseline (with `maxRunCostUsd` raised to the first-run cap in that run's input), schedule it, and say where the results go: "your briefing in Claude, on request or on a Monday schedule"; the Console link for email or Slack delivery only when the user asks for a channel (step 7).
+- **Steps:** follow `references/watchlists.md`: show the monthly and first-run cost and get a yes, create the task, run the baseline (with `maxRunCostUsd` raised to the first-run cap in that run's input), schedule it, and say where the results go: "your briefing in Claude, on request or on a Monday schedule" (step 6).
 - **The watch can share a digest** with an existing price watchlist: add the review items to its task (`watchlists` skill, "Change") instead of creating a second one, if the user prefers one message.
 
 ## 5. Reading a reviews digest later

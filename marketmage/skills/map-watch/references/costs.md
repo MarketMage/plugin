@@ -43,13 +43,3 @@ Default memory 1024 MB. Prices per 1,000 events, by Apify plan:
 | `local-market` | Product read outside the US | $3.00 | $3.00 | $2.70 | $2.40 |
 | `product-checked` | Product checked, unchanged | $0.50 | $0.50 | $0.45 | $0.40 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
-
-### `cleanpull/google-sheets-sync`: Google Sheets Sync: Import, Export & Upsert Datasets
-
-Default memory 4096 MB. Prices per 1,000 events, by Apify plan:
-
-| Event | What it is | Free | Bronze | Silver | Gold+ |
-| --- | --- | --- | --- | --- | --- |
-| `row-written` (main) | Row written | $0.10 | $0.10 | $0.090 | $0.080 |
-| `row-read` | Row read | $0.050 | $0.050 | $0.045 | $0.040 |
-| `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |

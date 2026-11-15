@@ -93,7 +93,7 @@ What each later job reuses and how fresh is fresh enough: `running-runs.md`, "Ru
 - **Always start `cleanpull/google-trends-scraper` with `callOptions.memory: 512`:** it needs no more, and it leaves room under the account's memory limit.
 ## Secrets: never in chat
 
-Never ask for, accept, pass or repeat an API key, token, password or webhook URL in chat. When one is pasted, a delivery channel is asked for, or a task's input is updated: `running-asks.md`, "Secrets: never in chat", first.
+Never ask for, accept, pass or repeat an API key, token, password or webhook URL in chat. When one is pasted or a task's input is updated: `running-asks.md`, "Secrets: never in chat", first.
 
 ## The few things MarketMage won't do
 

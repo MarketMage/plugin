@@ -70,7 +70,6 @@ Before any run in a chat that already holds a CleanPull run, look back through i
 | `listing-audit` after `rank-watch` | `outrankedBy` URLs as `competitorUrls` | a question |
 | `price-watch` after `price-check` | the same URLs and ASINs as items (not a baseline: a different actor and monitor); Walmart, Target, Best Buy, eBay and Etsy pages read the same day skip the baseline run, and the first scheduled run records them (`price-watch`, "Same-day marketplace pages") | a second confirm; about USD 0.0045 a page and USD 0.015 a marketplace |
 | `launch-plan` after `validate` | the Amazon leaders (ASINs, fees, ratings), the keyword summary, the supplier summary, and the leaders' complaints if read | about USD 0.08 |
-| `export` after anything | the dataset ID | a question |
 
 **Fresh enough:** prices, stock, Buy Box, ranks and promotions the same day; catalogues, review summaries and ads 7 days; Trends, supplier prices, listing audits and tech stacks 30 days. Say "from your check at 09:12 today" when you reuse one, and offer a fresh read if the user wants it.
 

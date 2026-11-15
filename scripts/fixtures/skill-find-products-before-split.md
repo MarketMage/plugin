@@ -102,7 +102,7 @@ End with (the first two in the full detail; the Next step in both):
 
 ## 5. Ongoing: the weekly opportunity digest, sales per day and chart moves (watchlists)
 
-Offer these with the answer when the user wants to keep an eye on the niche ("once or ongoing", `references/running.md`). All are Watch Digest watchlists (`references/watchlists.md`), so their results go to "your briefing in Claude, on request or on a Monday schedule" (sent to Slack, Discord, Teams or email only when the user asks), and the `watchlists` skill reads them.
+Offer these with the answer when the user wants to keep an eye on the niche ("once or ongoing", `references/running.md`). All are Watch Digest watchlists (`references/watchlists.md`), so their results go to "your briefing in Claude, on request or on a Monday schedule", and the `watchlists` skill reads them.
 
 **The weekly opportunity digest** (the one to offer first: new rising products in the niche, every week), task `cw-opps-<niche>`:
 - **Input:** `cleanpull/watch-digest` with, in one task:

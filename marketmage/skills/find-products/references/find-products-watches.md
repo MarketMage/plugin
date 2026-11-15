@@ -2,7 +2,7 @@
 
 Step 5 of the `find-products` skill, read when the user wants to keep an eye on the niche or asks what a watch would cost: the weekly opportunity digest, TikTok Shop sales per day and chart moves, as watchlists (`references/watchlists.md`). Reading their digests later is step 6 of `SKILL.md`.
 
-Offer these with the answer when the user wants to keep an eye on the niche ("once or ongoing", `references/running.md`). All are Watch Digest watchlists (`references/watchlists.md`), so their results go to "your briefing in Claude, on request or on a Monday schedule" (sent to Slack, Discord, Teams or email only when the user asks), and the `watchlists` skill reads them.
+Offer these with the answer when the user wants to keep an eye on the niche ("once or ongoing", `references/running.md`). All are Watch Digest watchlists (`references/watchlists.md`), so their results go to "your briefing in Claude, on request or on a Monday schedule", and the `watchlists` skill reads them.
 
 **The weekly opportunity digest** (the one to offer first: new rising products in the niche, every week), task `cw-opps-<niche>`:
 - **Input:** `cleanpull/watch-digest` with, in one task:
