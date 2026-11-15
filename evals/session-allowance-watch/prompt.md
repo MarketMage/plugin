@@ -5,4 +5,4 @@ allowed_tools: [Read, Skill]
 runs: 1
 ---
 
-You can spend up to USD 2 in this chat without asking me. Watch https://www.allbirds.com/products/mens-tree-runners for price and stock changes daily at 8am New York time. No delivery channel for now.
+You can spend up to USD 2 in this chat without asking me. Watch https://www.allbirds.com/products/mens-tree-runners for price and stock changes daily at 8am New York time.

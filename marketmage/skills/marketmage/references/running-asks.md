@@ -1,6 +1,6 @@
 # Running: when the user asks
 
-The part of `running.md` read when one of these comes up: who runs this and what the connector can reach, a session allowance the user offers, a plan the user's answer changes, Apify's plan names, "show me the input", checking a watch's cap in the Console, a secret or a delivery channel. The rest of the rules (and the few things MarketMage won't do) are in `running.md` and its other parts.
+The part of `running.md` read when one of these comes up: who runs this and what the connector can reach, a session allowance the user offers, a plan the user's answer changes, Apify's plan names, "show me the input", checking a watch's cap in the Console, or a secret. The rest of the rules (and the few things MarketMage won't do) are in `running.md` and its other parts.
 
 ## Who runs this, when the user asks
 
@@ -25,7 +25,7 @@ Never suggest uninstalling or removing the plugin unless the user says they want
 - a run whose high end fits the allowance left skips the wait for a yes: start it, with no cost mention. It still carries its cap (above), so the allowance can't be passed;
 - after such a run, say nothing about its cost or the allowance: it is honoured silently, through the caps (`running.md`, "No cost talk anywhere else"). Keep the allowance left in mind from what the runs were charged (with the caps of runs from it still running held back), and say it only when the user asks;
 - a run whose high end doesn't fit what's left is the one moment the allowance is spoken of: it stops and asks, with its one estimate and why ("this one costs about USD 0.20, occasionally a little more if I need to dig deeper to answer you; USD 0.08 of your allowance is left: go ahead?");
-- it **never covers a watch, a schedule, a task change, an export schedule or anything recurring**: those always get their own yes, with their monthly cost;
+- it **never covers a watch, a schedule, a task change or anything recurring**: those always get their own yes, with their monthly cost;
 - it ends with the chat (never saved to the notebook or carried to another chat), or sooner when the user withdraws or changes it.
 
 ## A changed plan
@@ -49,13 +49,12 @@ Otherwise start nothing: give the new plan's estimate in one line, naming the re
 ## Secrets: never in chat
 
 - **The plugin needs no keys from the user** beyond their Apify sign-in: every marketplace, supplier, review and ad source is read by the actors themselves. Never ask for a marketplace, supplier or ad platform key, token or account.
-- **Never ask for, accept or pass** an API key, access token, SMTP password, or Slack, Discord, Teams or webhook URL in chat. Webhook URLs are secrets: anyone who has one can post to the channel.
-- **If the user pastes one anyway,** don't use it, and don't repeat it back. Say why, point them to the Console link below, and suggest they rotate it (create a new key or webhook and delete the pasted one), since it is now in the chat history.
-- **To add a delivery channel to a saved watchlist:** create or update the task without the secret, then give the user `https://console.apify.com/actors/tasks/<taskId>/input`. They paste the key or webhook into its secret field there and save. Apify stores it encrypted. Give the steps in `watchlists-delivery.md`, "Where the user pastes a setting".
+- **Never ask for, accept or pass** an API key, access token, password or webhook URL in chat (a webhook URL is a secret: anyone who has one can post with it).
+- **If the user pastes one anyway,** don't use it, don't put it in any task, run or input, and don't repeat it back. Say why in one line (this version reports changes in their briefing in Claude and sends nothing anywhere else, so it needs no key), and suggest they rotate it (create a new one and delete the pasted one), since it is now in the chat history.
 - **When you update a task's input,** pass the whole input you read with `get-actor-task`. That includes every `ENCRYPTED_VALUE:` field, unchanged, because the update replaces the stored input and would otherwise drop the user's saved secrets. Then check it:
   1. Before the update, note which fields hold an `ENCRYPTED_VALUE:` value.
   2. After it, read the task again with `get-actor-task`.
-  3. If any of those fields is now missing or no longer `ENCRYPTED_VALUE:`, tell the user plainly which channel lost its setting and give them `https://console.apify.com/actors/tasks/<taskId>/input` to paste it again.
+  3. If any of those fields is now missing or no longer `ENCRYPTED_VALUE:`, tell the user plainly which saved setting is gone (the field's label), that it was theirs and the plugin doesn't use it, and give them `https://console.apify.com/actors/tasks/<taskId>/input` in case they want to add it back there. Never ask for it in chat.
 
 ## The few things MarketMage won't do: the full list
 

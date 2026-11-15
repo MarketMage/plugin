@@ -39,12 +39,3 @@ Default memory 128 MB. Prices per 1,000 events, by Apify plan:
 | `digest` (main) | Digest | $5.00 | $5.00 | $4.50 | $4.00 |
 | `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |
 | `item-watched` | Item watched | $0.25 | $0.25 | $0.22 | $0.20 |
-
-### `cleanpull/alerts-sender`: Alerts Sender: Email, Slack, Discord & Teams
-
-Default memory 256 MB. Prices per 1,000 events, by Apify plan:
-
-| Event | What it is | Free | Bronze | Silver | Gold+ |
-| --- | --- | --- | --- | --- | --- |
-| `alert-delivered` (main) | Message delivered | $1.00 | $1.00 | $0.90 | $0.80 |
-| `apify-actor-start` | Actor Start | $0.050 | $0.050 | $0.050 | $0.050 |

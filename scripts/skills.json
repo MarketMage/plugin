@@ -34,7 +34,6 @@
       "reviews-monitor"
     ],
     "pricesOnly": [
-      "alerts-sender",
       "marketmage-notebook"
     ],
     "judgement": true,
@@ -108,9 +107,7 @@
     "pricesOnly": [
       "any-store-product-monitor",
       "amazon-product-scraper",
-      "shopify-store-scraper",
-      "alerts-sender",
-      "google-sheets-sync"
+      "shopify-store-scraper"
     ],
     "caps": [
       "- **This skill:** a watch: its monthly estimate and its own Max cost per run (`watchlists.md`); a one-off read before it follows `price-check`."
@@ -121,9 +118,7 @@
       "barcode-price-checker",
       "amazon-product-scraper"
     ],
-    "pricesOnly": [
-      "google-sheets-sync"
-    ],
+    "pricesOnly": [],
     "caps": [
       "- **This skill:** a first MAP check of 20 barcodes about USD 0.30, spending limit USD 0.45 (never said).",
       "- **Watches:** their monthly estimate and their own Max cost per run."
@@ -135,23 +130,10 @@
       "amazon-keyword-rank-tracker",
       "amazon-product-scraper"
     ],
-    "pricesOnly": [
-      "alerts-sender"
-    ],
+    "pricesOnly": [],
     "caps": [
       "- **This skill:** one keyword at page 1 up to about USD 0.025, no yes needed, cap USD 0.18; 10 keywords about USD 0.25, spending limit USD 0.40; one keyword at `maxResults: 144` about USD 0.073, spending limit USD 0.23 (limits never said).",
       "- **Watches:** their monthly estimate and their own Max cost per run."
-    ]
-  },
-  "export": {
-    "runs": [
-      "google-sheets-sync"
-    ],
-    "pricesOnly": [
-      "watch-digest"
-    ],
-    "caps": [
-      "- **This skill:** USD 0.0001 a row: up to 500 rows runs with no line said; above that, one estimate with the soft note, and a spending limit of max(1.5 × it, it + USD 0.15), never said. An export schedule is bounded by its `limit`."
     ]
   },
   "reviews-watch": {
@@ -160,9 +142,7 @@
       "watch-digest",
       "amazon-product-scraper"
     ],
-    "pricesOnly": [
-      "alerts-sender"
-    ],
+    "pricesOnly": [],
     "caps": [
       "- **This skill:** 4 product pages and 2 ASINs at 20 reviews about USD 0.07, spending limit USD 0.22 (never said); Trustpilot businesses about USD 0.076 each at 20 reviews (free plan higher: quote its figure).",
       "- **Watches:** their monthly estimate and their own Max cost per run."
@@ -188,9 +168,7 @@
       "promotions-monitor",
       "watch-digest"
     ],
-    "pricesOnly": [
-      "alerts-sender"
-    ],
+    "pricesOnly": [],
     "caps": [
       "- **This skill:** a one-off read of 5 stores about USD 0.35, spending limit USD 0.53 (never said).",
       "- **Watches:** their monthly estimate and their own Max cost per run."
@@ -203,7 +181,6 @@
       "amazon-product-scraper"
     ],
     "pricesOnly": [
-      "alerts-sender",
       "marketmage-notebook"
     ],
     "judgement": true,
@@ -232,9 +209,7 @@
       "watch-digest",
       "shopify-store-scraper"
     ],
-    "pricesOnly": [
-      "alerts-sender"
-    ],
+    "pricesOnly": [],
     "caps": [
       "- **This skill:** a one-off ads read of 2 brands on Google, Meta and TikTok at 30 ads: about USD 0.32 (about USD 0.36 on the free plan), spending limit USD 0.54. Proven small advertisers (steps 1 and 3, two runs): about USD 0.11 (about USD 0.13 on the free plan), spending limit USD 0.28, split about USD 0.19 and 0.09 (limits never said).",
       "- **Watches:** their monthly estimate and their own Max cost per run, as this skill and `watchlists.md` set out."
@@ -267,8 +242,7 @@
       "supplier-price-finder",
       "tiktok-shop-sales-tracker",
       "amazon-bestsellers-tracker",
-      "catalog-matcher",
-      "alerts-sender"
+      "catalog-matcher"
     ],
     "caps": [
       "- **This skill:** watches use their monthly estimate and their own Max cost per run (`watchlists.md`); listing, pausing and reading them costs nothing."

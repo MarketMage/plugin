@@ -60,7 +60,7 @@ Nothing else is needed: no tokens or developer apps. What each platform shows:
 
 ## 5. Ongoing (a watchlist)
 
-- **The task:** `cleanpull/watch-digest`, named `cw-ads-<name>`, with `adAdvertisers` (and `adKeywords`, `adGoogleAdvertiserIds`, `adMetaPageIds`), `adPlatforms`, `adCountries`, `monitorName: "<name>"`, `title` and `maxRunCostUsd` (at most 200 watch items). One digest a run, read in "your briefing in Claude, on request or on a Monday schedule"; sent to Slack, Discord, Teams, a webhook or email only when the user asks for that channel (`references/watchlists.md`, step 7).
+- **The task:** `cleanpull/watch-digest`, named `cw-ads-<name>`, with `adAdvertisers` (and `adKeywords`, `adGoogleAdvertiserIds`, `adMetaPageIds`), `adPlatforms`, `adCountries`, `monitorName: "<name>"`, `title` and `maxRunCostUsd` (at most 200 watch items). One digest a run, read in "your briefing in Claude, on request or on a Monday schedule" (`references/watchlists.md`, step 6).
 - **What the digests report:** new ads (started since the last run) and stopped ads (confirmed when a second full read agrees; on TikTok only after an ad has gone a week unshown). Brands with more than 100 active ads get no stops reported (a stop needs a full read).
 - **Cost:**
   - **the first run** delivers every active ad as the baseline: up to about USD 0.15 per watch item (100 ads), plus Meta and TikTok library requests;

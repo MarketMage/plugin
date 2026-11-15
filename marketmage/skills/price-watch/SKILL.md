@@ -26,8 +26,6 @@ Create a watchlist: one Watch Digest task and a schedule that runs it. Read thes
 - **How often:** daily at a time, or weekly.
 - **Optional:**
   - the smallest price move worth reporting (`minPriceChangePercent`, for example 2);
-  - whether to send a digest even when nothing changed (`sendWhenNoChanges`);
-  - only real price cuts in the message (`alertPriceDropPercent`, for example 10; store products and Shopify stores; `references/watchlists.md`, "Alerts");
   - for Shopify stores, sales per day (`shopifyIncludeStock: true`): stock per variant and, from the second run, units sold and sales per day where the store publishes stock, at USD 0.0005 more per product read, every run (250 products ≈ USD 0.125 a run, about USD 3.75 a month daily, USD 0.55 weekly). Say the cost plainly; weekly is usually enough.
 
 - **One request for several kinds** (a "competitor watch": prices, promotions and launches, ads for the same stores): offer one digest task for all of them (`references/watchlists.md`, "One request, one digest").
@@ -45,7 +43,6 @@ digest                              USD 0.005
                  with shopifyIncludeStock: + USD 0.0005 per product, every run
 + Walmart, Target, Best Buy, eBay or Etsy pages: USD 0.003 each on top (`provider-record`, every run)
                  + USD 0.015 per such marketplace per run (`provider-search`)
-+ delivery (once a channel is added): USD 0.001 per message
 ```
 
 - **The first run** reads everything at the new or changed price. Later runs are mostly unchanged.
@@ -59,7 +56,7 @@ digest                              USD 0.005
 ### Your own Buy Box, hourly
 
 For the user's **own** ASINs, when they want to know quickly when they lose the Buy Box, an hourly watch is the one schedule faster than daily (`references/watchlists.md`, step 1). Only their own ASINs: rivals' listings stay daily.
-- **What arrives:** set `changeTypes: ["buy-box"]` on this watch, so it reports only Buy Box changes on those ASINs: the Buy Box changing hands or being suppressed. With `sendWhenNoChanges: false` (the default), a message comes only on a run where that happened; price, stock, seller, rating and BSR moves are left out of this watch's digest (watcher problems are still reported). If they also want those, they belong on their daily watch, or, when they ask for them hourly, leave `changeTypes` out (every change type, with `minPriceChangePercent` keeping small price moves out) and say a price or BSR move then also sends one.
+- **What arrives:** set `changeTypes: ["buy-box"]` on this watch, so it reports only Buy Box changes on those ASINs: the Buy Box changing hands or being suppressed. The digest then reports only a run where that happened, and their briefing in Claude reads it when they ask (it is not a message sent to them); price, stock, seller, rating and BSR moves are left out of this watch's digest (watcher problems are still reported). If they also want those, they belong on their daily watch, or, when they ask for them hourly, leave `changeTypes` out (every change type, with `minPriceChangePercent` keeping small price moves out) and say a price or BSR move then also shows up in it.
 - **Cost:** 720 runs a month, so the digest fee leads: per run 0.005 + ASINs × (0.00025 + 0.0005). Example: 5 own ASINs hourly ≈ 0.005 + 5 × 0.00075 ≈ USD 0.009 a run, **about USD 6.30 a month**; every 4 hours (180 runs), about USD 1.58; daily, about USD 0.26. Show the hourly and 4-hourly figures and let them choose.
 
 ## 3. Create it
@@ -69,8 +66,8 @@ Follow `references/watchlists.md`, "Creating one":
   - `title`;
   - `monitorName: "<name>"`;
   - the item lists;
-  - `minPriceChangePercent` and `sendWhenNoChanges`;
-  - `alertPriceDropPercent` and `shopifyIncludeStock` if agreed;
+  - `minPriceChangePercent`;
+  - `shopifyIncludeStock` if agreed;
   - `maxRunCostUsd`: about 1.5× the typical per-run cost (with the USD 0.003 per non-US ASIN in it), at least USD 0.02, plus, with Walmart, Target, Best Buy, eBay or Etsy pages, USD 0.003 per such page and USD 0.015 per such marketplace (see `references/watchlists.md`).
 
   No channel fields.
@@ -80,8 +77,8 @@ Follow `references/watchlists.md`, "Creating one":
   - Read `DIGEST.md` and the `digest` row (`watchers`, `baselineItems`).
   - Report how many items are now watched, and any watcher that failed, with its reason.
 - **Schedule:** `create-schedule` with the task action and the cron expression in the user's time zone.
-- **History, for ASIN watches:** a watch's history is read back at most 7 runs at a time, so for the last 30 or 90 days of price, Buy Box and BSR offer a **history sheet**: the `export` skill's export schedule after each run, appending each run's changes to a Google Sheet (`incremental: true`), at USD 0.0001 a row. One line, with no price: "Keep a history sheet of these changes?"; a yes creates a recurring export, so its monthly estimate (rows a month × USD 0.0001) comes with that yes, before it is set up. From that sheet or the last runs, Claude can draw a price, BSR and Buy Box chart on request, free (`watchlists` skill, "A history chart").
-- **Delivery:** the results go to "your briefing in Claude, on request or on a Monday schedule" (`references/watchlists.md`, step 7); don't offer or ask about a channel. **Only when the user asks for Slack, Discord, Teams, a webhook or email,** set it up as a follow-up: Slack, Discord, Teams or a webhook (free; the Slack steps and one channel per watch set in step 7), or email through the user's own sending service (step 7: what email needs, the free options first, and the address never taken from context). Give the Console link to add it: `https://console.apify.com/actors/tasks/<taskId>/input`. No delivery field is set from chat: for email, the user enters the address, the sender and the key together on that page (Watch Digest refuses an address without them, and every scheduled run would fail).
+- **History, for ASIN watches:** a watch's history is read back at most 7 runs at a time; from those runs, Claude can draw a price, BSR and Buy Box chart on request, free (`watchlists` skill, "A history chart").
+- **Where the results go:** "your briefing in Claude, on request or on a Monday schedule" (`references/watchlists.md`, step 6); nothing is sent anywhere else. If the user asks for email, a chat app or a spreadsheet, say plainly in one line that this version reports the changes in their briefing in Claude, and carry on.
 
 ## 4. Reading a digest later
 

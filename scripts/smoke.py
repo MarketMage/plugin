@@ -9,14 +9,10 @@ Needs the Apify CLI signed in. It bills the signed-in account; the whole set cos
 (each run is capped; the per-skill totals are printed). Every actor is public, so every skill that
 runs an actor has a case. A case's input may hold "{prev}", replaced by the previous run's dataset
 ID in the same skill (gaps reads catalogues, then matches them).
-
-The export case writes to a Google Sheet: set SMOKE_SHEET_URL to a sheet shared with
-cleanpull-sheets-1@cleanpull-sheets.iam.gserviceaccount.com as Editor, or the case is skipped.
 """
 from __future__ import annotations
 
 import json
-import os
 import subprocess
 import sys
 import time
@@ -65,9 +61,6 @@ CASES = {
     ],
     'listing-audit': [
         ('listing-quality-checker', {'productUrls': ['https://www.allbirds.com/products/mens-tree-runners'], 'competitorUrls': ['https://www.tentree.com/products/kessler-sweater-warm-oak-heather-fade']}, 0.03, ['score', 'grade', 'topFixes', 'scoreGap']),
-    ],
-    'export': [
-        ('google-sheets-sync', {'spreadsheet': os.environ.get('SMOKE_SHEET_URL', ''), 'tab': 'smoke-{date}', 'mode': 'append', 'rawData': [{'url': 'https://example.com/a', 'price': 1}, {'url': 'https://example.com/b', 'price': 2}]}, 0.01, []),
     ],
     'rank-watch': [
         ('amazon-keyword-rank-tracker', {'keywords': ['stainless steel water bottle'], 'asins': ['B0BZYCJK89'], 'marketplace': 'US', 'maxResults': 48, 'stopWhenFound': True}, 0.03, ['organicRank', 'organicPage', 'sponsoredRank', 'outrankedBy', 'adsShown']),
@@ -119,9 +112,6 @@ def main() -> None:
     for skill in only:
         prev = None
         for actor, inp, cap, want in CASES[skill]:
-            if actor == 'google-sheets-sync' and not inp.get('spreadsheet'):
-                print(skill, 'skipped: set SMOKE_SHEET_URL to a sheet shared with the service account', flush=True)
-                continue
             inp = json.loads(json.dumps(inp).replace('{prev}', prev or ''))
             res = run(actor, inp, cap, want)
             prev = res['datasetId']

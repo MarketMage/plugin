@@ -77,7 +77,7 @@ Facts first, then what they mean (`references/judgement.md`, rules 1, 5 and 6).
 - **For you:** only with a profile (`references/judgement-profile.md`, "The seller profile and lenses"), in its own block, each line naming its fact, never the budget as a reason: for example "because the first order of gap items is 200 units at USD 3.10, start with the 2 cheapest gap items", or "because 14 of the gap items are in brands you already carry, add those first (no new supplier account)".
 - **Caveats in one line:** prices as listed, no shipping or tax; title matches below 0.85 need a look; a competitor showing compare-at prices on most products may be listing sale prices as its usual price.
 - **Where the user stands strong,** in one line with its number: the products only they sell, or the shared ones where they are cheapest. Credit tied to the data, never about the person.
-- **Next steps,** the most useful last: `export` to put the matches in a sheet; `price-watch` on the matched products where a rival already undercuts the user; the undercut watch (step 6) to hear when a rival newly sells one of the user's products for less (the early sign of a price move), with no prices on them (each gets its estimate when the user takes it up and it needs a yes).
+- **Next steps,** the most useful last: `price-watch` on the matched products where a rival already undercuts the user; the undercut watch (step 6) to hear when a rival newly sells one of the user's products for less (the early sign of a price move), with no prices on them (each gets its estimate when the user takes it up and it needs a yes).
 
 ## 6. Ongoing: watch for undercuts
 
@@ -102,7 +102,7 @@ When both the user's store and the rivals are Shopify stores, offer "watch for u
 - **`maxRunCostUsd`:** about **USD 2 for one rival, 3 for two, 4 for three** at 250 products each, and USD 1 more for each further rival up to 10 (more for larger stores), on the task and in the baseline run. Unlike other watches, it stays at the first-run figure: the matcher divides it among the store reads, and a rival whose share is too small is skipped (unread, unpaid, with a reason giving the limit to set). Later runs charge only what they use.
 - **Weekly** is the default cadence: each run reads every store in full.
 - **Steps:** follow `references/watchlists.md` (cost, yes, task, baseline run now with a cap of the same `maxRunCostUsd`, then `create-schedule`).
-- **Delivery:** results stay in the user's Apify account and go to "your briefing in Claude, on request or on a Monday schedule"; the `watchlists` skill also reads them on request ("what changed in my undercut watch?"). Don't bring up channels. Only if the user asks for email or chat alerts, say plainly that this watch can't send them: Catalog Matcher sends no messages.
+- **Delivery:** results stay in the user's Apify account and go to "your briefing in Claude, on request or on a Monday schedule"; the `watchlists` skill also reads them on request ("what changed in my undercut watch?"). Nothing is sent anywhere else. If the user asks for email or chat alerts, say plainly that this version reports the changes in their briefing in Claude.
 
 ## 7. Reading an undercut watch later
 

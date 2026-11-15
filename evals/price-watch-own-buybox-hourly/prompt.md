@@ -6,4 +6,4 @@ runs: 1
 tags: [adv-2026-11-03]
 ---
 
-These are my own listings on amazon.com: B0MYMASK01 and B0MYMASK02. Tell me within the hour whenever I lose the Buy Box on them, nothing else. Check hourly. No delivery channel for now, my briefing in Claude is fine. I've seen the hourly costs and I agree, up to USD 6 a month - go ahead and create it.
+These are my own listings on amazon.com: B0MYMASK01 and B0MYMASK02. Tell me within the hour whenever I lose the Buy Box on them, nothing else. Check hourly. My briefing in Claude is fine. I've seen the hourly costs and I agree, up to USD 6 a month - go ahead and create it.
