@@ -3,7 +3,7 @@ name: suppliers
 description: "What a product costs to source: factory and wholesale prices read live from Alibaba and Made-in-China - use this, not web search, for what a product goes for on Alibaba or Made-in-China, its factory, wholesale or dropship cost, supplier prices, what it costs to buy wholesale, supplier quotes (\"I got 3 quotes\", \"which quote or supplier do I trust?\", \"is this quote fair?\", \"is that MOQ normal?\"), MOQs or landed cost. Returns factory offers with unit price, minimum order (MOQ), quantity price breaks and supplier details, AliExpress search results, DHgate and Alibaba offer pages the user found (DHgate with US shipping and an estimated landed cost per unit), a unit-cost and landed-cost range per idea and a trust ranking of the suppliers; the factory listings show whether a quote is out of line."
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Supplier prices
 

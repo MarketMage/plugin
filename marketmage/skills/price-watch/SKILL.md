@@ -3,7 +3,7 @@ name: price-watch
 description: Set up a scheduled watchlist that reports price, sale, stock, Buy Box and Best Sellers Rank changes on competitors' product pages (any online store), Amazon listings and whole Shopify stores (new and removed products, price moves, discounts), as one digest per run. It saves the watch in the user's Apify account as a task with its own daily or weekly schedule, and the user's MarketMage briefing in Claude reads its digests. Use when someone wants to be told when competitor prices, sales or stock change, or asks to watch or monitor product pages, Amazon listings or Shopify stores every day or week. For a one-off comparison use price-check; for Amazon keyword ranks use rank-watch.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Price watch
 

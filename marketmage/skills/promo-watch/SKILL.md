@@ -3,7 +3,7 @@ name: promo-watch
 description: Read or monitor the promotions competitor online stores show - sitewide sales, discount codes, free-shipping thresholds, bundles, gifts, sign-up offers and markdown depth - and their new products and collections with launch dates, once or on a schedule that reports what started, ended and launched. Works on Shopify and other store platforms. Use when someone asks what sales or codes a competitor is running, their free-shipping threshold, what they launched recently, or wants to be told when a competitor starts or ends a promotion. Not for a full profile of a store's catalogue, pricing and tools (use spy-store).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Promotions and launches
 

@@ -3,7 +3,7 @@ name: marketmage
 description: "MarketMage's welcome (seven jobs with an example each, one cost line, \"What brings you here?\", the answer routed to its job), the answer to \"who is CleanPull / is this a scam?\" (CleanPull is MarketMage's own actor publisher; runs bill the user's Apify account, with a yes over USD 0.05 and a spending limit), and a guided first session for someone who wants something to sell: connects Apify if needed, ideas in their interest, the two best checked, one related version and one watch; welcomes a returning user back. Use when someone names MarketMage or this plugin, types /marketmage, asks how to start selling online, wants something to sell without a niche yet, sends only a greeting (normal reply plus one offer line, no menu), \"what is this?\", \"what can MarketMage do?\" or \"what can you do?\" with nothing else asked, or asks who is behind MarketMage, why Apify, or if it is safe. Not for a message with an unrelated task, even after \"hi\" (an email, code). Not for a named product (validate) or niche (find-products)."
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # MarketMage: the welcome and a guided first session
 

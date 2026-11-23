@@ -3,7 +3,7 @@ name: gaps
 description: Compare the user's product catalogue with one or more competitors' - which products both sell (matched by barcode, part number, SKU, model or title, with a confidence), the price gap on each, what competitors sell that the user doesn't (and the reverse), and an overall price index. Reads the catalogues from Shopify stores, any online store's product pages or Amazon first. Use when someone asks which of their products a rival also sells and at what price, what ranges a competitor carries that they don't, or whether they are cheaper or dearer overall.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Catalogue gaps
 

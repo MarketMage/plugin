@@ -186,7 +186,7 @@ def main() -> None:
     before = json.dumps(pending, sort_keys=True)
     refresh = '--refresh-pending' in sys.argv
     # The shared references ship once, in the plugin's shared/ folder: 20 copies (one per skill) made
-    # the plugin too large for the directory's automated policy review (23 Nov 2026).
+    # the plugin too large for the directory's automated policy review (0.4.28, held 15 Nov 2026).
     shipped = PLUGIN / 'shared'
     shipped.mkdir(exist_ok=True)
     names = {f.name for f in SHARED.glob('*.md')}

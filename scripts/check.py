@@ -151,6 +151,19 @@ KNOWN_KEYS = {'name', 'version', 'description', 'author', 'homepage', 'repositor
 for key in sorted(set(manifest) - KNOWN_KEYS):
     fail(f'{SHIP}/.claude-plugin/plugin.json: key {key!r} is not a manifest key claude.ai knows; it is stripped with a warning')
 
+# The shared files, parsed once: the backticked file names each one points to. A name there must be a
+# shared file, `costs.md` or some skill's own part; anything else is a dangling pointer.
+SHIPPED_SHARED = {f.name for f in (PLUGIN / 'shared').glob('*.md')}
+OWN_PARTS = {f.name for f in (PLUGIN / 'skills').glob('*/references/*.md')}
+SHARED_POINTERS: dict[str, set[str]] = {}
+for src in sorted((PLUGIN / 'shared').glob('*.md')):
+    SHARED_POINTERS[src.name] = set()
+    for n, line in enumerate(src.read_text().splitlines(), 1):
+        for ref in re.findall(r'`(?:references/)?([a-z][a-z-]*\.md)`', line):
+            SHARED_POINTERS[src.name].add(ref)
+            if ref not in SHARED_NAMES and ref not in OWN_PARTS:
+                fail(f'{SHIP}/shared/{src.name}:{n} points to {ref}, which is no shared file and no skill\'s own file')
+
 for name in skills:
     d = PLUGIN / 'skills' / name
     md = d / 'SKILL.md'
@@ -184,7 +197,7 @@ for name in skills:
     if not (d / 'references' / 'costs.md').exists():
         fail(f'{SHIP}/skills/{name}: missing references/costs.md (run scripts/sync-references.py)')
     # The shared references ship once, in shared/: a copy in a skill would make the plugin too large
-    # for the directory's automated policy review again (23 Nov 2026: 20 copies, 473 files, 6.9 MB).
+    # for the directory's automated policy review again (0.4.28, held 15 Nov 2026: 20 copies, 473 files, 6.9 MB).
     for ref in sorted(SHARED_NAMES & {f.name for f in (d / 'references').glob('*.md')}):
         fail(f'{SHIP}/skills/{name}: references/{ref} is a copy of shared/{ref}; point to `shared/{ref}` instead')
     # Every pointer resolves. In the SKILL.md and the skill's own references, a shared file is named
@@ -194,37 +207,32 @@ for name in skills:
     # judgement part skips the common references' pointers into the judgement parts (those passages are
     # for the judgement skills: the profile, confidence, the answer structure).
     have = {f.name for f in (d / 'references').glob('*.md')}
-    shipped = {f.name for f in (PLUGIN / 'shared').glob('*.md')}
     pointers: dict[str, set[str]] = {}
-    for src in [md] + sorted((d / 'references').glob('*.md')) + sorted((PLUGIN / 'shared').glob('*.md')):
-        in_shared = src.parent.name == 'shared'
+    for src in [md] + sorted((d / 'references').glob('*.md')):
         key = 'SKILL.md' if src == md else src.name
         pointers[key] = set()
-        where = 'SKILL.md' if src == md else (f'shared/{src.name}' if in_shared else f'references/{src.name}')
+        where = 'SKILL.md' if src == md else f'references/{src.name}'
         for n, line in enumerate(src.read_text().splitlines(), 1):
             for ref in re.findall(r'`shared/([a-z][a-z-]*\.md)`', line):
                 pointers[key].add(ref)
-                if ref not in shipped:
+                if ref not in SHIPPED_SHARED:
                     fail(f'{SHIP}/skills/{name}: {where}:{n} points to shared/{ref}, which is not in {SHIP}/shared/')
-            if not in_shared:
-                for ref in re.findall(r'(?<!shared/)references/([a-z][a-z-]*\.md)', line):
+            for ref in re.findall(r'(?<!shared/)references/([a-z][a-z-]*\.md)', line):
+                pointers[key].add(ref)
+                if ref in SHARED_NAMES:
+                    fail(f'{SHIP}/skills/{name}: {where}:{n} names references/{ref}; a shared file is `shared/{ref}`')
+                elif ref not in have:
+                    fail(f'{SHIP}/skills/{name}: {where}:{n} points to {ref}, which is not in its references/')
+            for ref in re.findall(r'`([a-z][a-z-]*\.md)`', line):
+                if ref in SHARED_NAMES:
+                    fail(f'{SHIP}/skills/{name}: {where}:{n} names `{ref}`; a shared file is `shared/{ref}`')
+                elif ref == 'costs.md':
                     pointers[key].add(ref)
-                    if ref in SHARED_NAMES:
-                        fail(f'{SHIP}/skills/{name}: {where}:{n} names references/{ref}; a shared file is `shared/{ref}`')
-                    elif ref not in have:
-                        fail(f'{SHIP}/skills/{name}: {where}:{n} points to {ref}, which is not in its references/')
-                for ref in re.findall(r'`([a-z][a-z-]*\.md)`', line):
-                    if ref in SHARED_NAMES:
-                        fail(f'{SHIP}/skills/{name}: {where}:{n} names `{ref}`; a shared file is `shared/{ref}`')
-                    elif ref == 'costs.md':
-                        pointers[key].add(ref)
-            else:
-                for ref in re.findall(r'`([a-z][a-z-]*\.md)`', line):
-                    if ref not in SHARED_NAMES and ref not in have:
-                        continue  # another skill's own part, named for that skill
-                    if not judged and src.name in COMMON and ref in JUDGEMENT:
-                        continue
-                    pointers[key].add(ref)
+    # The shared files' own pointers (parsed once, above the loop), kept where they lead to a file this
+    # skill has: a shared file, or its costs.md or own part.
+    for src, refs in SHARED_POINTERS.items():
+        pointers[src] = {ref for ref in refs if (ref in SHARED_NAMES or ref in have)
+                         and not (not judged and src in COMMON and ref in JUDGEMENT)}
     # Every judgement part a skill gets is reachable from its SKILL.md through those pointers,
     # so it knows when to read each one.
     seen, todo = set(), ['SKILL.md']
@@ -315,7 +323,7 @@ if len(shipped) > 512:
     fail(f'{SHIP}/: {len(shipped)} files; the directory holds a plugin with more than 512 for a reviewer')
 # The directory's automated policy review didn't finish on 473 files and 6.9 MB (v0.4.28, 15 Nov 2026:
 # "Files the policy review couldn't cover", held for a reviewer). With the shared references shipped once
-# the plugin is about 85 files and 1.2 MB; these limits keep it well under what failed.
+# the plugin is 84 files and 1.26 MB (0.4.29); these limits keep it well under what failed.
 MAX_SHIPPED_FILES, MAX_SHIPPED_BYTES = 150, 2_000_000
 if len(shipped) > MAX_SHIPPED_FILES:
     fail(f'{SHIP}/: {len(shipped)} files; keep it at or under {MAX_SHIPPED_FILES} so the automated policy review reads them all')

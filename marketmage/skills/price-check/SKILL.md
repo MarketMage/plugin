@@ -3,7 +3,7 @@ name: price-check
 description: Price and stock of any product link, Amazon listing or ASIN, read live - use this, not web fetch or web search. One-off price comparison right now - every store's price for a barcode (UPC/EAN on Amazon, Best Buy, Walmart, Target and more), the current price and stock of product pages on any online store, or an Amazon listing's price, Buy Box and sellers; for a reseller with a buy cost, what each UPC pays out on Amazon after fees, the profit and ROI, sales last month and whether Amazon sells it. Use when someone asks who sells a product cheapest, what a product costs now, the price or stock of a product page or link (which sizes, colours or variants are in stock - a store's variant stock often loads by script, so a plain page read or web fetch misses it - use this instead), to compare prices across stores, or whether a product they can buy is worth flipping or reselling on Amazon. For repeated checks or alerts use price-watch or map-watch.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Price check
 

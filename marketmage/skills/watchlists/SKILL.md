@@ -3,7 +3,7 @@ name: watchlists
 description: List, read, pause, resume, change or stop the user's MarketMage watchlists - the price, MAP, rank, reviews, promotions, marketplace, ads and listing watches this plugin saved in their Apify account (tasks and schedules named cw-...) - and show their latest digest of changes, a history chart of a watched product, or what each client's watches cost over a period. Use when someone asks what they are watching with MarketMage, what one of their watches found, for a product's price or rank history, for a per-client cost report, or to pause, change or delete one. Not for other Apify tasks or schedules, and not for a briefing of what's new across everything since the last visit (use briefing).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Watchlists
 

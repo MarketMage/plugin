@@ -3,7 +3,7 @@ name: listing-audit
 description: Audit product pages from any online store or Amazon listings and give each a 0-100 score with every check marked pass, warn or fail and a concrete fix - product structured data (Product and Offer markup, GTIN, availability, shipping and returns, review markup), title, images and alt text, attributes, meta tags, canonical and page weight; for Amazon, title rules, bullets, images, A+ content and description - with a side-by-side comparison against a competitor's page. Use when someone asks why Google doesn't show their product with price or stars, how to improve a product page or listing, or how their page compares with a competitor's. Not for profiling a competitor's whole store (use spy-store).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Listing audit
 

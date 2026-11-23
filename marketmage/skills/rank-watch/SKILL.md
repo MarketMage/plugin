@@ -3,7 +3,7 @@ name: rank-watch
 description: Check or monitor where Amazon products rank for search keywords - organic and sponsored position, page, who outranks them - once, or on a schedule that reports rank moves and milestones (entered the top 10, reached page 1, ad started or stopped). Ongoing tracking is saved in the user's Apify account as a task with its own daily or weekly schedule. Use when a seller asks where their listing ranks for a keyword, who outranks them, or wants their keyword ranks tracked every day or week.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Rank watch
 

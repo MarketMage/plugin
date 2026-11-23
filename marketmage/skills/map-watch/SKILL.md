@@ -3,7 +3,7 @@ name: map-watch
 description: Check sellers against a minimum advertised price (MAP) by barcode across Amazon, Best Buy, Walmart, Target and other Google Shopping stores, once or on a schedule that reports new violations, price drops and new sellers. Use when a brand or distributor asks who is selling below MAP, or wants ongoing MAP monitoring for their UPCs/EANs.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # MAP watch
 

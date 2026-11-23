@@ -3,7 +3,7 @@ name: launch-plan
 description: Turn a product idea the data favours into a first launch plan, in one guided flow - supplier prices at the user's first-order quantity, what buyers complain about in the Amazon leaders' 1-star reviews, a listing draft (title, 5 bullets and the difference that answers those complaints), the price position against the market's band, first-order maths after Amazon's fees against their budget band, a stop rule with numbers agreed before launch, and one launch-week watch on the leaders' prices, ranks and reviews - asking first, with one estimate, before the paid steps run. Use after a Strong or Promising verdict, when someone says they want to go ahead with, launch or start sourcing an idea, or when they paste their ad test results to read against the stop rule. Not for judging whether an idea is worth it (use validate first).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Launch plan
 

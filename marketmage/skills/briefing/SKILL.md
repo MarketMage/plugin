@@ -3,7 +3,7 @@ name: briefing
 description: "The user's MarketMage morning briefing - what each of their watches (the cw- watchlists in their Apify account) found since their last briefing (or, without a notebook, their latest digests), plus their notebook (ideas, decisions, journey stage, a due stop rule), turned into at most 5 decisions, each with one move and its reason. Use when someone says \"what's new\", \"catch me up\", \"anything I should know\" or \"my briefing\"; on a greeting (\"good morning\") only if it names MarketMage, watches, competitors or selling, or the chat already used MarketMage or holds MarketMage notebook: on (then also with no specific job); or any run without the user present (a scheduled task, or a prompt that says it's scheduled or unattended). Not for a bare greeting in a fresh chat, or one then an unrelated task (planning their day, an email, code). Not for reading, pausing or changing one particular watch (use watchlists), or for checking a new product idea (use validate)."
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Briefing
 

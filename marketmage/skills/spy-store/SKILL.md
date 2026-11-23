@@ -3,7 +3,7 @@ name: spy-store
 description: Analyse a competitor's online store - catalogue size, price range, discounts, best sellers, new arrivals, the promotions it shows now (sales, codes, free-shipping threshold) and its recent launches, how well its product pages are built, and the apps and marketing tools it runs on (Shopify themes and apps, email, reviews, ads, payments). Use when someone gives a store's domain and asks what it sells, how it prices or promotes, what is selling or new, or what tech it uses. Works best on Shopify stores; other platforms get a product sample, promotions and the tech stack. Not for watching a store's promotions over time (use promo-watch) or for a fix list on one product page (use listing-audit).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Spy on a store
 

@@ -3,7 +3,7 @@ name: complaint-brief
 description: Turn what buyers complain about in the leading listings for a product idea into a product brief - the complaint you'd fix (how many low reviews name it, across how many leaders, with a quote), why it matters (the leaders' sales floor), the praise to match, the fix as a factory spec line, whether factories already list it, how to show it in the main photo, and the sample test. Reads the Amazon top 10's best sellers and their reviews (for US leaders, the same products on Amazon UK and Germany, the brand's own shop or Trustpilot), plus factory offers. Use when someone asks what buyers complain about in a product or niche, what they would improve, how to beat the top listing, or what version to build. Not for the reviews of one specific product page, ASIN or store the user links, or for watching reviews over time (use reviews-watch).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # The complaint brief
 

@@ -3,7 +3,7 @@ name: validate
 description: Is a specific product worth selling, and what would the margin be? Reads Amazon's real fees from the top listings - use this, not web search, for a product's Amazon fees or margin at a price. Covers the demand trend, Amazon competition (reviews, the leaders' monthly sales floor, seller concentration), TikTok Shop sales and the margin after Amazon's referral and FBA fees by the listings' own size tier and weight, never an assumed size (US; before fees elsewhere), scored into a verdict and confidence (Strong; Promising, with one fix; or Not this version). Use when someone names a product and asks if it will sell, if it's saturated or too late, whether a claim about it is real ("a TikTok guy says it does 50k a month"), how strong competition is, or their margin or fees at a price ("whats my margin if i sell on amazon at 34.99"); also "here are my numbers, back off or keep going?", "is this niche worth it", or a plan with a price. Not for finding ideas (find-products) or a keyword's market alone (market-scan).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Validate a product idea
 

@@ -3,7 +3,7 @@ name: reviews-watch
 description: Read or monitor product reviews - average rating, review count, share per star, the newest reviews and the complaint and praise themes in them - for product pages on shops using Judge.me, Yotpo, Okendo, Loox or Stamped, for Amazon ASINs, and for businesses on Trustpilot, once or on a schedule that reports new reviews and rating moves. Use when someone asks what customers say about a product (theirs or a competitor's), what shoppers complain about, whether a rating is slipping, or wants to be told about new or bad reviews. Not for writing replies to reviews.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Reviews watch
 

@@ -3,7 +3,7 @@ name: find-products
 description: Find e-commerce product ideas that are selling now, from the sources the user's channel acts on - TikTok Shop units sold, Meta ads that have kept running 35+ days and AliExpress single-unit prices for dropshippers; Amazon Best Sellers charts and how crowded each idea's Amazon search is for Amazon sellers; Etsy listings for makers; and Google Trends demand and rising searches - with ideas several sources back ranked higher, scored into a ranked table of the ideas the data favours, with a short note on what to avoid and why, for a niche or category the user names, ending on the two ideas to check next; and a weekly opportunity digest of the niche (new rising searches, new chart entries, TikTok Shop products speeding up). Use when someone asks what to sell, for trending or winning products, or for product ideas in a niche. Not for checking one specific idea (use validate) or for watching prices.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Find products
 

@@ -3,7 +3,7 @@ name: ads-watch
 description: See or monitor the ads competitors run, from the platforms' public ad libraries - Google Ads Transparency Center (search, YouTube and display, any country), Meta Ad Library (Facebook and Instagram, running ads in any country) and TikTok's ads library (EU, UK and Switzerland) - with first and last shown dates, active status, text where the library gives it, and links, once or on a schedule that reports new and stopped ads; and find proven small advertisers for a product keyword (small stores whose Meta ads have run 35+ days, their store size and the angle they use). Use when someone asks what ads a competitor is running, when they launched new creatives, wants to be told when a rival starts or stops ads, or asks who is successfully advertising a product, which small stores keep running ads for it, or for proof an idea sells with ads. Not for writing or running the user's own ads.
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Ads watch
 

@@ -3,7 +3,7 @@ name: notebook
 description: The user's MarketMage notebook, kept opt-in in their own Apify account - the product ideas they checked with their verdicts and key numbers, the versions they tried, their decisions, the watches linked to an idea, and their seller profile as bands - to start one, show it, find an idea in it, or delete an entry or all of it. Use when someone asks MarketMage to remember them or an idea across chats, asks what they checked or decided before, says "my notebook", or wants their saved data shown or deleted. Not for running a new check (use validate or find-products).
 ---
 
-Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
 
 # Notebook
 
