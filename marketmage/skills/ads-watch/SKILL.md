@@ -3,18 +3,20 @@ name: ads-watch
 description: See or monitor the ads competitors run, from the platforms' public ad libraries - Google Ads Transparency Center (search, YouTube and display, any country), Meta Ad Library (Facebook and Instagram, running ads in any country) and TikTok's ads library (EU, UK and Switzerland) - with first and last shown dates, active status, text where the library gives it, and links, once or on a schedule that reports new and stopped ads; and find proven small advertisers for a product keyword (small stores whose Meta ads have run 35+ days, their store size and the angle they use). Use when someone asks what ads a competitor is running, when they launched new creatives, wants to be told when a rival starts or stops ads, or asks who is successfully advertising a product, which small stores keep running ads for it, or for proof an idea sells with ads. Not for writing or running the user's own ads.
 ---
 
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder; every other file named here or in them (`costs.md`, and this skill's own parts) is in this skill's own `references/` folder.
+
 # Ads watch
 
 A competitor's ads and how they change. Read these first:
-- `references/running.md`: costs, caps, tools, timing;
-- `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` also before a status message stands in for rows; `references/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
-- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
-- `references/watchlists.md`: scheduling;
+- `shared/running.md`: costs, caps, tools, timing;
+- `shared/running.md` is the core; its parts are read only at their step (its first lines say when): `shared/running-results.md` once results are in, before using them; `shared/running-runs.md` also before a status message stands in for rows; `shared/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `shared/running-abroad.md` outside the US; `shared/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+- `shared/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `shared/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `shared/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
+- `shared/watchlists.md`: scheduling;
 - `references/costs.md`: the prices.
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
-**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
+**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`shared/running.md`, "Running").
 
 ## 1. Ask only for
 
@@ -39,7 +41,7 @@ Nothing else is needed: no tokens or developer apps. What each platform shows:
   - a brand with many active ads at the default `maxAdsPerTarget: 100`: Google ≈ **USD 0.15**, Meta ≈ USD 0.165, TikTok ≈ USD 0.18. For a quick look, `maxAdsPerTarget: 30`: about USD 0.05 a brand on Google, USD 0.05 on Meta, USD 0.06 on TikTok.
   - **Example:** 2 brands on Google, Meta and TikTok at 30 ads ≈ USD 0.32, about USD 0.36 on Apify's free plan (its up to 10 library requests cost double there): one approval line ("This costs about USD 0.32 (about USD 0.36 on Apify's free plan), occasionally a little more if I need to dig deeper to answer you.") and a yes.
 - **Timing:** Google takes seconds to a minute a brand (requests are spaced out); Meta and TikTok pages can take a minute or two. Start with `waitSecs: 45` and follow the run.
-- **The spending limit:** internal, never said: max(1.5 × the estimate, the estimate + USD 0.15) (`references/running.md`, item 6), USD 0.54 in the example above (from the free-plan figure, 0.36, the higher): the run's `maxTotalChargeUsd`.
+- **The spending limit:** internal, never said: max(1.5 × the estimate, the estimate + USD 0.15) (`shared/running.md`, item 6), USD 0.54 in the example above (from the free-plan figure, 0.36, the higher): the run's `maxTotalChargeUsd`.
 
 ## 3. Read the results
 
@@ -51,7 +53,7 @@ Nothing else is needed: no tokens or developer apps. What each platform shows:
 
 - **Volume and recency:** how many ads are active per brand and platform, and how many started in the last 7 and 30 days. A burst of new ads usually means a launch, a sale or creative testing.
 - **Formats:** the mix of text, image and video; a shift to video is a budget signal.
-- **The visual moment, after the volume line** (`references/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said; never in the first answer to this skill's new reads, only in a follow-up turn: the full detail or list, a chart the user asks for, a deeper turn): **how long the ads have run**, one horizontal bar per advertiser or brand in the answer (at most 10), its days running (`daysRunning` on `advertiser` rows; for a brand read, the longest-running active ad's days since its `firstShown`, the same figure the answer gives), labelled with the name and the days, and a marked line at 35 days labelled "proven (35+ days)". Coloured as a second cue: 35 days or more green, the rest grey, with "new" beside those at 14 days or fewer. Caption: the library, the market country and the date read ("Meta ads, US, read 6 Nov").
+- **The visual moment, after the volume line** (`shared/running-results.md`, "Explaining results": "One visual, where it helps"; only where you can draw one, and otherwise nothing about it is said; never in the first answer to this skill's new reads, only in a follow-up turn: the full detail or list, a chart the user asks for, a deeper turn): **how long the ads have run**, one horizontal bar per advertiser or brand in the answer (at most 10), its days running (`daysRunning` on `advertiser` rows; for a brand read, the longest-running active ad's days since its `firstShown`, the same figure the answer gives), labelled with the name and the days, and a marked line at 35 days labelled "proven (35+ days)". Coloured as a second cue: 35 days or more green, the rest grey, with "new" beside those at 14 days or fewer. Caption: the library, the market country and the date read ("Meta ads, US, read 6 Nov").
 - **Longest-running ads** (earliest `firstShown` still active) are usually the winners: those are the ones worth studying.
 - **Meta text:** recurring offers, hooks and landing pages in `text`, `title`, `cta` and `landingUrl`.
 - **Limits in one line, where they matter:** Google gives no text for image and video ads; TikTok covers the EU, UK and Switzerland only; Meta lists stopped ads only for ads that reached the EU.
@@ -60,14 +62,14 @@ Nothing else is needed: no tokens or developer apps. What each platform shows:
 
 ## 5. Ongoing (a watchlist)
 
-- **The task:** `cleanpull/watch-digest`, named `cw-ads-<name>`, with `adAdvertisers` (and `adKeywords`, `adGoogleAdvertiserIds`, `adMetaPageIds`), `adPlatforms`, `adCountries`, `monitorName: "<name>"`, `title` and `maxRunCostUsd` (at most 200 watch items). One digest a run, read in "your briefing in Claude, on request or on a Monday schedule" (`references/watchlists.md`, step 6).
+- **The task:** `cleanpull/watch-digest`, named `cw-ads-<name>`, with `adAdvertisers` (and `adKeywords`, `adGoogleAdvertiserIds`, `adMetaPageIds`), `adPlatforms`, `adCountries`, `monitorName: "<name>"`, `title` and `maxRunCostUsd` (at most 200 watch items). One digest a run, read in "your briefing in Claude, on request or on a Monday schedule" (`shared/watchlists.md`, step 6).
 - **What the digests report:** new ads (started since the last run) and stopped ads (confirmed when a second full read agrees; on TikTok only after an ad has gone a week unshown). Brands with more than 100 active ads get no stops reported (a stop needs a full read).
 - **Cost:**
   - **the first run** delivers every active ad as the baseline: up to about USD 0.15 per watch item (100 ads), plus Meta and TikTok library requests;
   - **later runs:** digest USD 0.005 + USD 0.00025 per watch item; USD 0.001 per watch item checked; USD 0.0015 per new ad; Meta and TikTok about 1 and 3 library requests per brand a day at 30 ads (USD 0.0035 each), more for brands with many ads.
   - **Example:** 5 brands on Google daily, about 3 new ads a day: 0.005 + 5 × 0.00025 + 5 × 0.001 + 3 × 0.0015 ≈ **USD 0.016 a run, about USD 0.48 a month**; the first run up to about USD 0.76. The same 5 on Meta and TikTok add about 20 library requests a day ≈ USD 2.10 a month.
-- **`maxRunCostUsd`:** 1.5× the typical run + **USD 0.05 of room** for the ads watcher (Watch Digest gives an ad item it has already read whole its steady-state share). For the Google example: about USD 0.075, so USD 0.08. The baseline run uses the first-run cap (`references/watchlists.md`, step 4), with **USD 0.18 of room** for the ads watcher on top of its first-run estimate.
-- **Steps:** follow `references/watchlists.md`.
+- **`maxRunCostUsd`:** 1.5× the typical run + **USD 0.05 of room** for the ads watcher (Watch Digest gives an ad item it has already read whole its steady-state share). For the Google example: about USD 0.075, so USD 0.08. The baseline run uses the first-run cap (`shared/watchlists.md`, step 4), with **USD 0.18 of room** for the ads watcher on top of its first-run estimate.
+- **Steps:** follow `shared/watchlists.md`.
 
 ## 6. Proven small advertisers
 
@@ -83,7 +85,7 @@ The best evidence an idea sells with paid ads is a **small store that keeps payi
 | 4 | The proven small advertisers | no run | nothing to run |
 | 5 | Read 1 to 3 of those stores and their ads' angle (its own yes) | per store: `cleanpull/shopify-store-scraper` with `stores: ["<domain>"]`, `maxProductsPerStore: 50`, `storeSummary: true`, `bestSellerRank: true`; and `cleanpull/ad-library-monitor` with `metaPageIds: ["<advertiserId>"]`, `platforms: ["meta"]`, `countries`, `activeOnly: true`, `maxAdsPerTarget: 10` | store: up to 20 products × USD 0.0008 + USD 0.003 summary ≈ USD 0.02; ads: USD 0.001 + up to 2 library pages × USD 0.0035 + 10 × USD 0.0015 ≈ USD 0.023; **about USD 0.04 a store**, 3 ≈ USD 0.13 (Free plan from 2026-11-07: about USD 0.05 a store, 3 ≈ USD 0.15) |
 
-Steps 1 and 3 together: **about USD 0.11 at most** on paid plans, and on the Free plan from 2026-11-07 about USD 0.13 (say "This costs about USD 0.11, occasionally a little more if I need to dig deeper to answer you.", adding the Free figure, "(about USD 0.13 on Apify's free plan)", for a Free-plan user once that date has come or the run may cross it; the two runs share the spending limit, USD 0.28, never said, in proportion to their high ends, `references/running.md`, item 6: about USD 0.19 for step 1 and USD 0.09 for step 3). Start step 1 with `waitSecs: 45`: Meta pages can take a minute or two.
+Steps 1 and 3 together: **about USD 0.11 at most** on paid plans, and on the Free plan from 2026-11-07 about USD 0.13 (say "This costs about USD 0.11, occasionally a little more if I need to dig deeper to answer you.", adding the Free figure, "(about USD 0.13 on Apify's free plan)", for a Free-plan user once that date has come or the run may cross it; the two runs share the spending limit, USD 0.28, never said, in proportion to their high ends, `shared/running.md`, item 6: about USD 0.19 for step 1 and USD 0.09 for step 3). Start step 1 with `waitSecs: 45`: Meta pages can take a minute or two.
 
 **Reading it:**
 - **Step 1** (`fields: "recordType,advertiser,advertiserId,landingDomain,landingUrl,adsKept,earliestFirstShown,daysRunning,sampleAdUrl"`): every row is an advertiser whose earliest kept ad has run 35 days or more. Leave out advertisers whose name and landing page plainly sell something else (the keyword in an unrelated ad), and say how many.
@@ -94,7 +96,7 @@ Steps 1 and 3 together: **about USD 0.11 at most** on paid plans, and on the Fre
 
 **Close** with the one next move, with no price on it (its estimate comes with its yes): reading the strongest store (step 5), or, when the user hasn't checked the idea yet, `validate` on it. Say the libraries show advertisers, not their spend.
 
-**No cost talk after the runs** (`references/running.md`, "No cost talk anywhere else"): the answer never reports against the amount the user gave ("everything fit within your 15 cents", "well under your budget"), never calls a link, a step or a read free or cheap, and puts no price on an offer or the next move. Their amount is honoured through the caps, silently.
+**No cost talk after the runs** (`shared/running.md`, "No cost talk anywhere else"): the answer never reports against the amount the user gave ("everything fit within your 15 cents", "well under your budget"), never calls a link, a step or a read free or cheap, and puts no price on an offer or the next move. Their amount is honoured through the caps, silently.
 
 ### Proven advertisers checked on TikTok (EU, UK, Switzerland)
 

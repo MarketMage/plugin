@@ -1,8 +1,8 @@
 # Find products: the ongoing watches
 
-Step 5 of the `find-products` skill, read when the user wants to keep an eye on the niche or asks what a watch would cost: the weekly opportunity digest, TikTok Shop sales per day and chart moves, as watchlists (`references/watchlists.md`). Reading their digests later is step 6 of `SKILL.md`.
+Step 5 of the `find-products` skill, read when the user wants to keep an eye on the niche or asks what a watch would cost: the weekly opportunity digest, TikTok Shop sales per day and chart moves, as watchlists (`shared/watchlists.md`). Reading their digests later is step 6 of `SKILL.md`.
 
-Offer these with the answer when the user wants to keep an eye on the niche ("once or ongoing", `references/running.md`). All are Watch Digest watchlists (`references/watchlists.md`), so their results go to "your briefing in Claude, on request or on a Monday schedule", and the `watchlists` skill reads them.
+Offer these with the answer when the user wants to keep an eye on the niche ("once or ongoing", `shared/running.md`). All are Watch Digest watchlists (`shared/watchlists.md`), so their results go to "your briefing in Claude, on request or on a Monday schedule", and the `watchlists` skill reads them.
 
 **The weekly opportunity digest** (the one to offer first: new rising products in the niche, every week), task `cw-opps-<niche>`:
 - **Input:** `cleanpull/watch-digest` with, in one task:
@@ -13,7 +13,7 @@ Offer these with the answer when the user wants to keep an eye on the niche ("on
 - **What it reports:** the digest opens with an **Opportunities this week** section: new rising searches and breakouts first, then new entries on the chart, then TikTok Shop products selling faster. Every other change follows by watcher. The first run is the baseline (rising searches remembered, chart and TikTok recorded): rising searches and chart entries start with the second run, TikTok products speeding up with the third (the second gives the first units per day). Interest moves are Google's relative interest (0 to 100), not search counts.
 - **Cost per run, weekly** (`references/costs.md`): digest USD 0.005 + USD 0.00025 per item (term, chart, keyword); each Trends term USD 0.0015 every run; the chart and TikTok parts as below. **Example:** 5 terms, the New Releases chart of one department at 50 ranks, and 1 TikTok keyword: first run ≈ 0.005 + 7 × 0.00025 + 5 × 0.0015 + 50 × 0.0015 + 0.002 + 0.06 ≈ **USD 0.15**; later runs ≈ 0.005 + 0.002 + 0.0075 + about 0.04 for the chart's moves + up to 0.06 for TikTok ≈ **USD 0.115 a run, about USD 0.50 a month**. Without TikTok (outside the US, or to keep it light) about USD 0.25 a month. Daily isn't needed: the section is built for a week.
 - **`maxRunCostUsd`:** about 1.5× a typical run (USD 0.17 for the example); the baseline run uses the first-run cap (about USD 0.23).
-- **Steps:** follow `references/watchlists.md` (cost, yes, task, baseline, schedule weekly, where the results go). If the user keeps a notebook, link the watch to the niche's idea entry (`references/notebook.md`).
+- **Steps:** follow `shared/watchlists.md` (cost, yes, task, baseline, schedule weekly, where the results go). If the user keeps a notebook, link the watch to the niche's idea entry (`shared/notebook.md`).
 
 **TikTok Shop sales per day** (US only), task `cw-tiktok-<name>`:
 - **Input:** `cleanpull/watch-digest` with `tiktokKeywords` (at most 100), `tiktokMaxProductsPerKeyword` (20 by default), `monitorName: "<name>"`, `title`, `maxRunCostUsd`.
@@ -26,6 +26,6 @@ Offer these with the answer when the user wants to keep an eye on the niche ("on
 - **Cost per run:** digest USD 0.005 + USD 0.00025 per chart; the first run reads every rank (USD 0.0015 each: USD 0.15 for 100) + USD 0.002 a chart summary; later runs USD 0.002 per move and USD 0.0001 per unchanged rank, about USD 0.03 a chart a day. **Example:** `kitchen`, Best Sellers and New Releases, 100 ranks, daily: first run ≈ USD 0.31, then about USD 0.065 a run, about USD 1.95 a month. With `chartMaxItemsPerChart: 50` and Best Sellers only: first run ≈ USD 0.08, then about USD 0.02 a run, about USD 0.65 a month.
 
 **Both:**
-- **`maxRunCostUsd`:** about 1.5× a typical run, at least USD 0.02; the baseline run uses the first-run cap (`references/watchlists.md`, step 4). These watchers stop cleanly at their share of the cap and keep what they didn't deliver for the next run; a digest that says one stopped early needs a higher figure.
+- **`maxRunCostUsd`:** about 1.5× a typical run, at least USD 0.02; the baseline run uses the first-run cap (`shared/watchlists.md`, step 4). These watchers stop cleanly at their share of the cap and keep what they didn't deliver for the next run; a digest that says one stopped early needs a higher figure.
 - **One digest:** both can go in one task with other watches (`watchlists` skill, "Change"), named for its main kind.
-- **Steps:** follow `references/watchlists.md` (cost, yes, task, baseline, schedule, where the results go).
+- **Steps:** follow `shared/watchlists.md` (cost, yes, task, baseline, schedule, where the results go).

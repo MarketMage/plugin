@@ -54,7 +54,7 @@ PRIVATE = {
                           r'Bearer\s+[A-Za-z0-9._-]{16,}'),
     'an account ID': re.compile(r'userId\s*[=:]|"userId"|accountId\s*[=:]|"accountId"|[?&](?:username|user)='),
 }
-PLUGIN_PATH = re.compile(r'(/[^\s"\'`]*?)/(skills/[a-z-]+/(?:SKILL\.md|references/[a-z0-9-]+\.md)|skills/[a-z-]+)')
+PLUGIN_PATH = re.compile(r'(/[^\s"\'`]*?)/(skills/[a-z-]+/(?:SKILL\.md|references/[a-z0-9-]+\.md)|shared/[a-z0-9-]+\.md|skills/[a-z-]+)')
 
 
 def histories():
