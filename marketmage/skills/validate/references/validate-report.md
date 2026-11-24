@@ -8,7 +8,7 @@ One artifact: a single self-contained HTML page (no React, no script, no externa
 
 **Every figure is from this check:** each number is read in this check (the rows, the summaries, the user's own figures, labelled as theirs) or is an assumption the references name (freight at 15 to 30% of a factory price, $8 to 12 of launch ads a sale, $0.80 to 1.50 a click on Amazon US, 1 in 10 clicks buying), labelled "an assumption" where it appears. The same figure is the same everywhere in the chat and the report. No points between real readings, no estimate drawn as a fact, no fee or rate from memory. The demand line plots the Trends points read (monthly averages of the weekly points are fine, said in its caption); with no series read, that section says "not read" and draws nothing.
 
-**Money in the seller's symbol** ($, £, €), plain words throughout (`plain-words.md`), the labels word for word. No Apify cost anywhere except the next move's own cost, when it has one. **The same layout for every verdict:** a "no" shows its evidence as fully as a "yes", every section present (a section with nothing read says so in one line).
+**Money in the seller's symbol** ($, £, €), plain words throughout (`shared/plain-words.md`), the labels word for word. No Apify cost anywhere except the next move's own cost, when it has one. **The same layout for every verdict:** a "no" shows its evidence as fully as a "yes", every section present (a section with nothing read says so in one line).
 
 ## Top to bottom
 

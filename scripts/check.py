@@ -4,8 +4,9 @@
 - every skill has a SKILL.md whose `name` matches its folder and whose description fits;
 - no SKILL.md contains `$<digit>` or `$ARGUMENTS` (Claude Code replaces those with the skill's
   arguments, so a price like "$0.005" would be mangled; write "USD 0.005");
-- every skill has its references (every non-judgement file in scripts/shared/ and `costs.md`, and the
-  `judgement*.md` files skills.json gives it, each of which its SKILL.md must point to);
+- the shared references ship once, in the plugin's shared/ folder (read as `shared/<name>.md`), never as
+  copies in a skill; every skill has its `costs.md`; every pointer resolves, and the `judgement*.md` files
+  skills.json gives a skill are reachable from its SKILL.md;
 - the split references still hold every line of the old ones (scripts/fixtures/*-before-split.md), and a slimmed
   SKILL.md every line of its old self, in it or its own references (scripts/fixtures/skill-*-before-split.md);
 - no reference file is over 24 KiB, so claude.ai's file reader takes each in one read;
@@ -51,12 +52,13 @@ skills = json.loads((ROOT / 'scripts' / 'skills.json').read_text())
 SHARED = ROOT / 'scripts' / 'shared'
 JUDGEMENT = sorted(f.name for f in SHARED.glob('judgement*.md'))
 COMMON = sorted(f.name for f in SHARED.glob('*.md') if not f.name.startswith('judgement'))
+SHARED_NAMES = {f.name for f in SHARED.glob('*.md')}
 
 # The split references keep every rule word for word: each non-blank line of the references as
 # they were before the split (scripts/fixtures/<name>-before-split.md) must still be a line of
 # some file in scripts/shared/. Only file names in backticks may differ (a section moved to a
 # smaller file). When a rule is reworded on purpose, refresh the fixture in the same commit.
-FILE_NAME = re.compile(r'`(references/)?[a-z][a-z-]*\.md`')
+FILE_NAME = re.compile(r'`(references/|shared/)?[a-z][a-z-]*\.md`')
 
 
 def norm(line: str) -> str:
@@ -77,7 +79,8 @@ for fixture in sorted((ROOT / 'scripts' / 'fixtures').glob('*-before-split.md'))
 for fixture in sorted((ROOT / 'scripts' / 'fixtures').glob('skill-*-before-split.md')):
     name = fixture.name[len('skill-'):-len('-before-split.md')]
     d = PLUGIN / 'skills' / name
-    have = {norm(line) for f in [d / 'SKILL.md'] + sorted((d / 'references').glob('*.md')) if f.exists() for line in f.read_text().splitlines()}
+    have = {norm(line) for f in [d / 'SKILL.md'] + sorted((d / 'references').glob('*.md')) + sorted(SHARED.glob('*.md'))
+            if f.exists() for line in f.read_text().splitlines()}
     for n, line in enumerate(fixture.read_text().splitlines(), 1):
         if line.strip() and norm(line) not in have:
             fail(f'{fixture.name}:{n}: this line of the old SKILL.md is in neither {SHIP}/skills/{name}/SKILL.md nor its references: {line.strip()[:80]}')
@@ -87,7 +90,7 @@ for fixture in sorted((ROOT / 'scripts' / 'fixtures').glob('skill-*-before-split
 # this size. Split a file that grows past it into a core and parts read at their own step, as running.md
 # and judgement.md are, with a before-split fixture.
 MAX_REFERENCE_BYTES = 24 * 1024
-for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/references/*.md')):
+for f in sorted((PLUGIN / 'shared').glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/references/*.md')):
     size = len(f.read_bytes())
     if size > MAX_REFERENCE_BYTES:
         fail(f'{f.relative_to(ROOT)}: {size} bytes; a reference stays at or under {MAX_REFERENCE_BYTES} so claude.ai reads it in one go: split it')
@@ -95,7 +98,7 @@ for f in sorted(SHARED.glob('*.md')) + sorted((PLUGIN / 'skills').glob('*/refere
 # A pointer to a section (`file.md`, "Section") must name a section that is in that file, as a heading or a
 # bold lead: when a section moves, its old pointers break silently (review of 0.4.22: four pointed at
 # sections that had moved to another file). Checked on the shared files and each skill's own files.
-XREF = re.compile(r'`(?:references/)?([\w.-]+\.md)`,? "([^"]+)"')
+XREF = re.compile(r'`(?:references/|shared/)?([\w.-]+\.md)`,? "([^"]+)"')
 
 
 def _norm(t: str) -> str:
@@ -148,6 +151,19 @@ KNOWN_KEYS = {'name', 'version', 'description', 'author', 'homepage', 'repositor
 for key in sorted(set(manifest) - KNOWN_KEYS):
     fail(f'{SHIP}/.claude-plugin/plugin.json: key {key!r} is not a manifest key claude.ai knows; it is stripped with a warning')
 
+# The shared files, parsed once: the backticked file names each one points to. A name there must be a
+# shared file, `costs.md` or some skill's own part; anything else is a dangling pointer.
+SHIPPED_SHARED = {f.name for f in (PLUGIN / 'shared').glob('*.md')}
+OWN_PARTS = {f.name for f in (PLUGIN / 'skills').glob('*/references/*.md')}
+SHARED_POINTERS: dict[str, set[str]] = {}
+for src in sorted((PLUGIN / 'shared').glob('*.md')):
+    SHARED_POINTERS[src.name] = set()
+    for n, line in enumerate(src.read_text().splitlines(), 1):
+        for ref in re.findall(r'`(?:references/)?([a-z][a-z-]*\.md)`', line):
+            SHARED_POINTERS[src.name].add(ref)
+            if ref not in SHARED_NAMES and ref not in OWN_PARTS:
+                fail(f'{SHIP}/shared/{src.name}:{n} points to {ref}, which is no shared file and no skill\'s own file')
+
 for name in skills:
     d = PLUGIN / 'skills' / name
     md = d / 'SKILL.md'
@@ -178,30 +194,45 @@ for name in skills:
     if isinstance(flag, list):
         for f in sorted(set(flag) - set(JUDGEMENT)):
             fail(f'{SHIP}/skills/{name}: skills.json lists {f}, which is not in scripts/shared/')
-    for ref in COMMON + ['costs.md'] + judged:
-        if not (d / 'references' / ref).exists():
-            fail(f'{SHIP}/skills/{name}: missing references/{ref} (run scripts/sync-references.py)')
-    # Every pointer resolves: each reference file named in the SKILL.md or in any of the skill's
-    # own references (`references/<file>.md`, or a backticked `<file>.md` that is a shared
-    # reference or costs.md) must be in this skill's own references/. The one scope: a skill that
-    # gets no judgement part skips the common references' pointers into the judgement parts
-    # (those passages are for the judgement skills: the profile, confidence, the answer structure).
-    known = {f.name for f in SHARED.glob('*.md')} | {'costs.md'}
+    if not (d / 'references' / 'costs.md').exists():
+        fail(f'{SHIP}/skills/{name}: missing references/costs.md (run scripts/sync-references.py)')
+    # The shared references ship once, in shared/: a copy in a skill would make the plugin too large
+    # for the directory's automated policy review again (0.4.28, held 15 Nov 2026: 20 copies, 473 files, 6.9 MB).
+    for ref in sorted(SHARED_NAMES & {f.name for f in (d / 'references').glob('*.md')}):
+        fail(f'{SHIP}/skills/{name}: references/{ref} is a copy of shared/{ref}; point to `shared/{ref}` instead')
+    # Every pointer resolves. In the SKILL.md and the skill's own references, a shared file is named
+    # `shared/<file>.md` (it is in the plugin's shared/ folder) and any other `references/<file>.md` or
+    # backticked `costs.md` is in this skill's own references/. The shared files name each other, and
+    # costs.md or a skill's own part, by the bare backticked name. The one scope: a skill that gets no
+    # judgement part skips the common references' pointers into the judgement parts (those passages are
+    # for the judgement skills: the profile, confidence, the answer structure).
     have = {f.name for f in (d / 'references').glob('*.md')}
     pointers: dict[str, set[str]] = {}
     for src in [md] + sorted((d / 'references').glob('*.md')):
         key = 'SKILL.md' if src == md else src.name
         pointers[key] = set()
+        where = 'SKILL.md' if src == md else f'references/{src.name}'
         for n, line in enumerate(src.read_text().splitlines(), 1):
-            named = set(re.findall(r'references/([a-z][a-z-]*\.md)', line))
-            named |= {f for f in re.findall(r'`([a-z][a-z-]*\.md)`', line) if f in known}
-            for ref in sorted(named):
-                if not judged and key in COMMON and ref in JUDGEMENT:
-                    continue
+            for ref in re.findall(r'`shared/([a-z][a-z-]*\.md)`', line):
                 pointers[key].add(ref)
-                if ref not in have:
-                    where = 'SKILL.md' if src == md else f'references/{src.name}'
+                if ref not in SHIPPED_SHARED:
+                    fail(f'{SHIP}/skills/{name}: {where}:{n} points to shared/{ref}, which is not in {SHIP}/shared/')
+            for ref in re.findall(r'(?<!shared/)references/([a-z][a-z-]*\.md)', line):
+                pointers[key].add(ref)
+                if ref in SHARED_NAMES:
+                    fail(f'{SHIP}/skills/{name}: {where}:{n} names references/{ref}; a shared file is `shared/{ref}`')
+                elif ref not in have:
                     fail(f'{SHIP}/skills/{name}: {where}:{n} points to {ref}, which is not in its references/')
+            for ref in re.findall(r'`([a-z][a-z-]*\.md)`', line):
+                if ref in SHARED_NAMES:
+                    fail(f'{SHIP}/skills/{name}: {where}:{n} names `{ref}`; a shared file is `shared/{ref}`')
+                elif ref == 'costs.md':
+                    pointers[key].add(ref)
+    # The shared files' own pointers (parsed once, above the loop), kept where they lead to a file this
+    # skill has: a shared file, or its costs.md or own part.
+    for src, refs in SHARED_POINTERS.items():
+        pointers[src] = {ref for ref in refs if (ref in SHARED_NAMES or ref in have)
+                         and not (not judged and src in COMMON and ref in JUDGEMENT)}
     # Every judgement part a skill gets is reachable from its SKILL.md through those pointers,
     # so it knows when to read each one.
     seen, todo = set(), ['SKILL.md']
@@ -212,9 +243,9 @@ for name in skills:
                 todo.append(ref)
     for ref in judged:
         if ref not in seen:
-            fail(f'{SHIP}/skills/{name}: gets references/{ref} but no pointer from its SKILL.md leads to it')
-    if flag is True and 'references/judgement.md' not in text:
-        fail(f'{SHIP}/skills/{name}: a judgement skill must point to references/judgement.md')
+            fail(f'{SHIP}/skills/{name}: gets shared/{ref} but no pointer from its SKILL.md leads to it')
+    if flag is True and 'shared/judgement.md' not in text:
+        fail(f'{SHIP}/skills/{name}: a judgement skill must point to shared/judgement.md')
 
 for cmd in sorted((PLUGIN / 'commands').glob('*.md')):
     for bad in re.findall(r'\$(?:\d|ARGUMENTS)', cmd.read_text()):
@@ -278,7 +309,7 @@ for f in label_files:
 # and similar system files. When git is available, the files counted are those git tracks plus new
 # files it doesn't ignore (a .DS_Store that .gitignore covers never ships); without git, every file
 # in the folder counts.
-SHIPPED_TOP = {'.claude-plugin', '.mcp.json', 'skills', 'commands', 'README.md', 'LICENSE'}
+SHIPPED_TOP = {'.claude-plugin', '.mcp.json', 'skills', 'commands', 'README.md', 'LICENSE', 'shared'}
 SYSTEM_FILES = {'.DS_Store', 'Thumbs.db', 'desktop.ini', '__MACOSX'}
 IMAGE_OR_FONT = {'.png', '.jpg', '.jpeg', '.gif', '.webp', '.woff', '.woff2', '.ttf', '.otf'}
 try:
@@ -290,6 +321,15 @@ if not shipped:
     shipped = [f for f in PLUGIN.rglob('*') if f.is_file()]
 if len(shipped) > 512:
     fail(f'{SHIP}/: {len(shipped)} files; the directory holds a plugin with more than 512 for a reviewer')
+# The directory's automated policy review didn't finish on 473 files and 6.9 MB (v0.4.28, 15 Nov 2026:
+# "Files the policy review couldn't cover", held for a reviewer). With the shared references shipped once
+# the plugin is 84 files and 1.26 MB (0.4.29); these limits keep it well under what failed.
+MAX_SHIPPED_FILES, MAX_SHIPPED_BYTES = 150, 2_000_000
+if len(shipped) > MAX_SHIPPED_FILES:
+    fail(f'{SHIP}/: {len(shipped)} files; keep it at or under {MAX_SHIPPED_FILES} so the automated policy review reads them all')
+total = sum(f.stat().st_size for f in shipped)
+if total > MAX_SHIPPED_BYTES:
+    fail(f'{SHIP}/: {total} bytes; keep it at or under {MAX_SHIPPED_BYTES} so the automated policy review reads it all')
 for f in shipped:
     rel = f.relative_to(PLUGIN)
     if rel.parts[0] not in SHIPPED_TOP:

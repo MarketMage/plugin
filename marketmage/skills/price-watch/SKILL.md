@@ -3,18 +3,20 @@ name: price-watch
 description: Set up a scheduled watchlist that reports price, sale, stock, Buy Box and Best Sellers Rank changes on competitors' product pages (any online store), Amazon listings and whole Shopify stores (new and removed products, price moves, discounts), as one digest per run. It saves the watch in the user's Apify account as a task with its own daily or weekly schedule, and the user's MarketMage briefing in Claude reads its digests. Use when someone wants to be told when competitor prices, sales or stock change, or asks to watch or monitor product pages, Amazon listings or Shopify stores every day or week. For a one-off comparison use price-check; for Amazon keyword ranks use rank-watch.
 ---
 
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
+
 # Price watch
 
 Create a watchlist: one Watch Digest task and a schedule that runs it. Read these first:
-- `references/running.md`: costs, caps, tools, and the secrets rule;
-- `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` also before a status message stands in for rows; `references/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
-- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
-- `references/watchlists.md`: the steps and naming;
+- `shared/running.md`: costs, caps, tools, and the secrets rule;
+- `shared/running.md` is the core; its parts are read only at their step (its first lines say when): `shared/running-results.md` once results are in, before using them; `shared/running-runs.md` also before a status message stands in for rows; `shared/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `shared/running-abroad.md` outside the US; `shared/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+- `shared/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `shared/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `shared/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
+- `shared/watchlists.md`: the steps and naming;
 - `references/costs.md`: the prices.
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
-**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
+**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`shared/running.md`, "Running").
 
 ## 1. Ask only for
 
@@ -28,7 +30,7 @@ Create a watchlist: one Watch Digest task and a schedule that runs it. Read thes
   - the smallest price move worth reporting (`minPriceChangePercent`, for example 2);
   - for Shopify stores, sales per day (`shopifyIncludeStock: true`): stock per variant and, from the second run, units sold and sales per day where the store publishes stock, at USD 0.0005 more per product read, every run (250 products ≈ USD 0.125 a run, about USD 3.75 a month daily, USD 0.55 weekly). Say the cost plainly; weekly is usually enough.
 
-- **One request for several kinds** (a "competitor watch": prices, promotions and launches, ads for the same stores): offer one digest task for all of them (`references/watchlists.md`, "One request, one digest").
+- **One request for several kinds** (a "competitor watch": prices, promotions and launches, ads for the same stores): offer one digest task for all of them (`shared/watchlists.md`, "One request, one digest").
 - **Amazon's delivery location:** Amazon is read as a signed-out shopper in the marketplace's own country, at Amazon's default delivery location (no postcode). Say it in one line when you set up an ASIN watch: the Buy Box and price can differ from what the user sees signed in at their own address.
 
 ## 2. Cost, per run (paid plans)
@@ -55,20 +57,20 @@ digest                              USD 0.005
 
 ### Your own Buy Box, hourly
 
-For the user's **own** ASINs, when they want to know quickly when they lose the Buy Box, an hourly watch is the one schedule faster than daily (`references/watchlists.md`, step 1). Only their own ASINs: rivals' listings stay daily.
+For the user's **own** ASINs, when they want to know quickly when they lose the Buy Box, an hourly watch is the one schedule faster than daily (`shared/watchlists.md`, step 1). Only their own ASINs: rivals' listings stay daily.
 - **What arrives:** set `changeTypes: ["buy-box"]` on this watch, so it reports only Buy Box changes on those ASINs: the Buy Box changing hands or being suppressed. The digest then reports only a run where that happened, and their briefing in Claude reads it when they ask (it is not a message sent to them); price, stock, seller, rating and BSR moves are left out of this watch's digest (watcher problems are still reported). If they also want those, they belong on their daily watch, or, when they ask for them hourly, leave `changeTypes` out (every change type, with `minPriceChangePercent` keeping small price moves out) and say a price or BSR move then also shows up in it.
 - **Cost:** 720 runs a month, so the digest fee leads: per run 0.005 + ASINs × (0.00025 + 0.0005). Example: 5 own ASINs hourly ≈ 0.005 + 5 × 0.00075 ≈ USD 0.009 a run, **about USD 6.30 a month**; every 4 hours (180 runs), about USD 1.58; daily, about USD 0.26. Show the hourly and 4-hourly figures and let them choose.
 
 ## 3. Create it
 
-Follow `references/watchlists.md`, "Creating one":
+Follow `shared/watchlists.md`, "Creating one":
 - **Task:** `create-actor-task` for `cleanpull/watch-digest`, named `cw-price-<name>`, with this input:
   - `title`;
   - `monitorName: "<name>"`;
   - the item lists;
   - `minPriceChangePercent`;
   - `shopifyIncludeStock` if agreed;
-  - `maxRunCostUsd`: about 1.5× the typical per-run cost (with the USD 0.003 per non-US ASIN in it), at least USD 0.02, plus, with Walmart, Target, Best Buy, eBay or Etsy pages, USD 0.003 per such page and USD 0.015 per such marketplace (see `references/watchlists.md`).
+  - `maxRunCostUsd`: about 1.5× the typical per-run cost (with the USD 0.003 per non-US ASIN in it), at least USD 0.02, plus, with Walmart, Target, Best Buy, eBay or Etsy pages, USD 0.003 per such page and USD 0.015 per such marketplace (see `shared/watchlists.md`).
 
   No channel fields.
 - **Same-day marketplace pages:** Walmart, Target, Best Buy, eBay and Etsy product pages that `price-check` read in this conversation today (rows returned: a run whose status message starts `Done:` with N above 0 counts only for a page the message names, or whose row was read; a page left out under `More in the dataset.` is read again) are not read again now (about USD 0.0045 a page and USD 0.015 a marketplace saved): the first scheduled run records their baseline (no changes for them that run). Say so in one plain sentence instead of paying for another read now, for example "The first scheduled check records these pages' prices, so their first change report comes with the check after it; today's prices are the ones you just saw." Run the baseline below with the other items only (that run's input without those pages; the task keeps them all), and skip it when nothing else is left. The task's `maxRunCostUsd`, with its room for these pages, already covers their first read. Every other item gets the baseline run.
@@ -78,7 +80,7 @@ Follow `references/watchlists.md`, "Creating one":
   - Report how many items are now watched, and any watcher that failed, with its reason.
 - **Schedule:** `create-schedule` with the task action and the cron expression in the user's time zone.
 - **History, for ASIN watches:** a watch's history is read back at most 7 runs at a time; from those runs, Claude can draw a price, BSR and Buy Box chart on request, free (`watchlists` skill, "A history chart").
-- **Where the results go:** "your briefing in Claude, on request or on a Monday schedule" (`references/watchlists.md`, step 6); nothing is sent anywhere else. If the user asks for email, a chat app or a spreadsheet, say plainly in one line that this version reports the changes in their briefing in Claude, and carry on.
+- **Where the results go:** "your briefing in Claude, on request or on a Monday schedule" (`shared/watchlists.md`, step 6); nothing is sent anywhere else. If the user asks for email, a chat app or a spreadsheet, say plainly in one line that this version reports the changes in their briefing in Claude, and carry on.
 
 ## 4. Reading a digest later
 

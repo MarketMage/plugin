@@ -3,16 +3,18 @@ name: listing-audit
 description: Audit product pages from any online store or Amazon listings and give each a 0-100 score with every check marked pass, warn or fail and a concrete fix - product structured data (Product and Offer markup, GTIN, availability, shipping and returns, review markup), title, images and alt text, attributes, meta tags, canonical and page weight; for Amazon, title rules, bullets, images, A+ content and description - with a side-by-side comparison against a competitor's page. Use when someone asks why Google doesn't show their product with price or stars, how to improve a product page or listing, or how their page compares with a competitor's. Not for profiling a competitor's whole store (use spy-store).
 ---
 
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
+
 # Listing audit
 
-A score and a fix list for product pages. Read `references/running.md` first (costs, caps, tools, secrets). Prices are in `references/costs.md`.
+A score and a fix list for product pages. Read `shared/running.md` first (costs, caps, tools, secrets). Prices are in `references/costs.md`.
 
-`references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` also before a status message stands in for rows; `references/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
-- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
+`shared/running.md` is the core; its parts are read only at their step (its first lines say when): `shared/running-results.md` once results are in, before using them; `shared/running-runs.md` also before a status message stands in for rows; `shared/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `shared/running-abroad.md` outside the US; `shared/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+- `shared/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `shared/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `shared/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
-**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
+**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`shared/running.md`, "Running").
 
 ## 1. Ask only for
 
@@ -26,7 +28,7 @@ A score and a fix list for product pages. Read `references/running.md` first (co
 - **Run** `cleanpull/listing-quality-checker` with `productUrls`, `competitorUrls`, `keywords`.
 - **How long:** an audit usually takes **about 3–5 minutes** (real-user test round 3: a run announced as "about a minute" took 3 min 24 s, about 5 with the leaders' read). Say so as it starts, in the estimate when there is one; never "about a minute".
 - **Cost (paid plans):** USD 0.005 per page audited (each URL is read once); USD 0.007 more for a page from a site that blocks standard addresses. Comparison rows are free; a page that can't be read is not charged.
-  - **Example:** the user's page and 2 competitors' ≈ **USD 0.015**: run it straight away, with no cost said. 20 pages ≈ USD 0.10: give the one approval line ("This costs about USD 0.10, occasionally a little more if I need to dig deeper to answer you.", `references/running.md`, "Before any run"), get a yes, and cap the run at its spending limit, USD 0.25, never said.
+  - **Example:** the user's page and 2 competitors' ≈ **USD 0.015**: run it straight away, with no cost said. 20 pages ≈ USD 0.10: give the one approval line ("This costs about USD 0.10, occasionally a little more if I need to dig deeper to answer you.", `shared/running.md`, "Before any run"), get a yes, and cap the run at its spending limit, USD 0.25, never said.
 
 ## 3. Read the results
 
@@ -49,7 +51,7 @@ A score and a fix list for product pages. Read `references/running.md` first (co
   - A row with `partial: true` was served without its lower half: the checks in `notChecked` are left out of the score, not failed.
 - **Against a competitor:** name the checks where they're ahead and the user's fix for each; a store page and an Amazon listing are compared on what they share (title, images, attributes).
 - **The score is a guide,** built from Google's and Amazon's published guidance; search rankings use many other signals. Say so once.
-- When the answer quotes only part of the pages audited, one plain line with the link to all of them ("Full audit of every page: <link>") (`references/plain-words.md`); end on the next move, with no price.
+- When the answer quotes only part of the pages audited, one plain line with the link to all of them ("Full audit of every page: <link>") (`shared/plain-words.md`); end on the next move, with no price.
 
 ## 5. Ongoing (a listing watch)
 
@@ -57,5 +59,5 @@ For the user's own pages, after a theme update or a catalogue change:
 - **The task:** `cleanpull/listing-quality-checker`, named `cw-listing-<name>`, with `productUrls`, `keywords`, `changesOnly: true`, `monitorName: "<name>"`, `maxRunCostUsd`. Weekly is usually enough.
 - **What later runs return:** a page only when a check or the score moved (by 5 points by default), with `changedChecks`; a page gone on two runs in a row as a `change` row (`removed`). It sends no messages: the `watchlists` skill reads the results.
 - **Cost:** the first run audits every page (USD 0.005 each); later runs USD 0.0006 per unchanged page and USD 0.005 per changed one. **Example:** 20 pages weekly ≈ USD 0.012 a run, **about USD 0.06 a month**; the first run ≈ USD 0.10.
-- **`maxRunCostUsd`:** 1.5× the typical run, at least USD 0.02; the baseline run uses the first-run cap (`references/watchlists.md`, step 4).
-- **Steps:** follow `references/watchlists.md`.
+- **`maxRunCostUsd`:** 1.5× the typical run, at least USD 0.02; the baseline run uses the first-run cap (`shared/watchlists.md`, step 4).
+- **Steps:** follow `shared/watchlists.md`.

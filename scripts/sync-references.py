@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Writes each skill's references/costs.md from the actors' live Store pricing, and copies the
-shared references into the skills. The judgement files (`judgement*.md`) go only to the skills whose
-skills.json entry has `"judgement"`: `true` for all of them, or a list of the ones the skill reads (a skill
-that doesn't judge gets only what it names, for example the tone). Every other shared file goes to every
-skill, and a file a skill no longer gets is removed from its references. Run after any price change:
+shared references from scripts/shared/ into the plugin's one shared/ folder, which every skill reads
+as `shared/<name>.md` (`../../shared/` from its folder). A file no longer in scripts/shared/ is removed
+from shared/, and a stray copy of a shared file in a skill's own references/ is removed. Which
+judgement parts a skill reads is set by its SKILL.md's pointers (skills.json's `"judgement"` is checked
+by check.py). Run after any price change:
 
     python3 scripts/sync-references.py
 
@@ -45,15 +46,6 @@ SKILLS = json.loads((ROOT / 'scripts' / 'skills.json').read_text())
 SHARED = ROOT / 'scripts' / 'shared'
 PENDING = ROOT / 'scripts' / 'pending-pricing.json'
 TIERS = [('FREE', 'Free'), ('BRONZE', 'Bronze'), ('SILVER', 'Silver'), ('GOLD', 'Gold+')]
-
-
-def wanted(name: str, spec: dict) -> bool:
-    """Whether the shared file `name` goes to this skill: a judgement file only as skills.json says
-    (`"judgement": true` for all of them, or a list of names); every other shared file to every skill."""
-    if not name.startswith('judgement'):
-        return True
-    flag = spec.get('judgement')
-    return flag is True or (isinstance(flag, list) and name in flag)
 
 
 def public_actor(name: str) -> dict | None:
@@ -193,39 +185,49 @@ def main() -> None:
     pending = json.loads(PENDING.read_text()) if PENDING.exists() else {}
     before = json.dumps(pending, sort_keys=True)
     refresh = '--refresh-pending' in sys.argv
+    # The shared references ship once, in the plugin's shared/ folder: 20 copies (one per skill) made
+    # the plugin too large for the directory's automated policy review (0.4.28, held 15 Nov 2026).
+    shipped = PLUGIN / 'shared'
+    shipped.mkdir(exist_ok=True)
+    names = {f.name for f in SHARED.glob('*.md')}
+    for f in sorted(SHARED.glob('*.md')):
+        if check:
+            if not (shipped / f.name).exists() or (shipped / f.name).read_text() != f.read_text():
+                stale.append(f'{PLUGIN.name}/shared/{f.name}')
+        else:
+            shutil.copy(f, shipped / f.name)
+    for f in sorted(shipped.iterdir()):
+        if f.name not in names:
+            if check:
+                stale.append(f'{PLUGIN.name}/shared/{f.name} (not in scripts/shared/)')
+            else:
+                f.unlink()
     for skill, spec in SKILLS.items():
         actors = spec['runs'] + spec['pricesOnly']
         refs = PLUGIN / 'skills' / skill / 'references'
         refs.mkdir(parents=True, exist_ok=True)
-        for f in sorted(SHARED.glob('*.md')):
-            if not wanted(f.name, spec):
-                if (refs / f.name).exists():
-                    if check:
-                        stale.append(f'{PLUGIN.name}/skills/{skill}/references/{f.name} (not wanted)')
-                    else:
-                        (refs / f.name).unlink()
-                continue
-            if check:
-                if not (refs / f.name).exists() or (refs / f.name).read_text() != f.read_text():
-                    stale.append(f'{PLUGIN.name}/skills/{skill}/references/{f.name}')
-            else:
-                shutil.copy(f, refs / f.name)
+        for name in sorted(names):
+            if (refs / name).exists():
+                if check:
+                    stale.append(f'{PLUGIN.name}/skills/{skill}/references/{name} (a copy of shared/{name})')
+                else:
+                    (refs / name).unlink()
         parts = [
             '# Costs',
             '',
             'From the actors\' Store pricing (regenerate with `scripts/sync-references.py`; CI fails when it is out of date).',
             'Estimate with the Bronze column: the paid-plan price (Silver and Gold pay less), so no paid-plan user pays more than you said.',
-            'Where the Free column differs, free-plan users pay that price: at the approval, quote its figure too, in the same line ("This costs about USD 0.09 (about USD 0.17 on Apify\'s free plan), occasionally a little more if I need to dig deeper to answer you"), so they never pay more than you said either. These prices are for that one approval line before a yes (`running.md`, "Before any run"), never for cost lines elsewhere.',
+            'Where the Free column differs, free-plan users pay that price: at the approval, quote its figure too, in the same line ("This costs about USD 0.09 (about USD 0.17 on Apify\'s free plan), occasionally a little more if I need to dig deeper to answer you"), so they never pay more than you said either. These prices are for that one approval line before a yes (`shared/running.md`, "Before any run"), never for cost lines elsewhere.',
             'Every run also has a start event of $0.00005 per GB of memory.',
             '',
             '## Estimate and spending limit',
             '',
-            'The approval line gives one estimate with a soft note: "This costs about USD 0.35, occasionally a little more if I need to dig deeper to answer you." No range, no ceiling and no spending-limit figure is said (`running.md`, "Before any run", items 4 to 6).',
+            'The approval line gives one estimate with a soft note: "This costs about USD 0.35, occasionally a little more if I need to dig deeper to answer you." No range, no ceiling and no spending-limit figure is said (`shared/running.md`, "Before any run", items 4 to 6).',
             '- **The estimate:** the counted worst case of what is planned (its high end), each event at its Bronze price × the count the input can return (change events included where the read repeats one this account made). Item 5\'s USD 0.25 bound for a go-ahead in the message compares the estimate, never the spending limit.',
             '- **The spending limit (internal, never said):** max(1.5 × the estimate, the estimate + USD 0.15), from the estimate as said at the approval (the free-plan figure when higher), rounded up to the cent (said USD 0.17: limit USD 0.32); never above a budget or allowance the user gave. One run\'s `maxTotalChargeUsd` is the limit; several runs on one yes: each floored run gets its floor first (below), and the rest is split across the others in proportion to their high ends; when the floors together come to more than the limit, the limit is raised to their sum. It sits above the estimate so a job finishes instead of stopping part-way (owner\'s rule of 9 Nov 2026: a supplier read capped near its estimate stopped after 1 of 7 ideas; kept internal by the owner\'s change of 10 Nov 2026).',
             '- **Floors** (per-search reserves the actor holds before it starts; a cap under one stops a read part-way): `supplier-price-finder`, its high end + USD 0.02 per idea per Alibaba source (AliExpress is read with `aliexpress-scraper`, which reserves nothing ahead, so its cap is the formula\'s share with no floor); `marketplace-search-scanner`, its high end + USD 0.02 per keyword per service marketplace (eBay, Etsy, Walmart, Target, Best Buy, Home Depot, Lowe\'s).',
             '- **No yes needed** (estimate USD 0.05 or less): no line is said; the cap follows the same formula from the run\'s own high end.',
-            '- **Watches** keep their monthly estimate and their own Max cost per run (`watchlists.md`); this limit is for one-off checks.',
+            '- **Watches** keep their monthly estimate and their own Max cost per run (`shared/watchlists.md`); this limit is for one-off checks.',
         ] + ([''] + spec['caps'] if spec.get('caps') else []) + ['', '## Prices', '']
         for name in actors:
             if name not in cache:

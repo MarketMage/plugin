@@ -3,18 +3,20 @@ name: promo-watch
 description: Read or monitor the promotions competitor online stores show - sitewide sales, discount codes, free-shipping thresholds, bundles, gifts, sign-up offers and markdown depth - and their new products and collections with launch dates, once or on a schedule that reports what started, ended and launched. Works on Shopify and other store platforms. Use when someone asks what sales or codes a competitor is running, their free-shipping threshold, what they launched recently, or wants to be told when a competitor starts or ends a promotion. Not for a full profile of a store's catalogue, pricing and tools (use spy-store).
 ---
 
+Files named `shared/<name>.md` here are in the plugin's shared folder, `../../shared/` from this skill's folder, and the shared files name each other by file name alone (all in that folder). `costs.md` and the files named `references/<name>.md` here are in this skill's own `references/` folder.
+
 # Promotions and launches
 
 What competitors are promoting and launching, now or over time. Read these first:
-- `references/running.md`: costs, caps, tools, secrets;
-- `references/running.md` is the core; its parts are read only at their step (its first lines say when): `references/running-results.md` once results are in, before using them; `references/running-runs.md` also before a status message stands in for rows; `references/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `references/running-abroad.md` outside the US; `references/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
-- `references/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `references/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `references/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
-- `references/watchlists.md`: scheduling;
+- `shared/running.md`: costs, caps, tools, secrets;
+- `shared/running.md` is the core; its parts are read only at their step (its first lines say when): `shared/running-results.md` once results are in, before using them; `shared/running-runs.md` also before a status message stands in for rows; `shared/running-runs.md` before a slower read, when a run doesn't succeed, or when this chat already holds a run; `shared/running-abroad.md` outside the US; `shared/running-asks.md` when the user asks who runs this, offers an allowance, pastes a secret or asks for something MarketMage won't do.
+- `shared/known-limits.md`: routes established not to work, each with what to use instead: read in the same batch as `shared/running.md`, before choosing any source (a store, a marketplace, a country, a keyword); never try a route it lists. `shared/plain-words.md` (the words the user sees, for every answer) is read in that same batch.
+- `shared/watchlists.md`: scheduling;
 - `references/costs.md`: the prices.
 
 **Read once, together:** a reference already read in this conversation (by this skill or another MarketMage skill: their copies are the same text) is not read again. Read the references a step needs in one batch of parallel reads, never one after another.
 
-**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`references/running.md`, "Running").
+**Reading a run's record** (`RUN_SUMMARY`, `DIGEST.md`): `get-key-value-store-record` with `keyValueStoreId` set to the run's `defaultKeyValueStoreId` (from `call-actor` or `get-actor-run`) and `recordKey` set to the key; never without `keyValueStoreId` (`shared/running.md`, "Running").
 
 ## 1. Ask only for
 
@@ -65,7 +67,7 @@ What competitors are promoting and launching, now or over time. Read these first
   - **The first run** records every running promotion (and the last day's Shopify launches) as the baseline: about USD 0.02 a store.
   - **Example:** 10 stores daily, about 3 changes a day: 0.005 + 10 × 0.00025 + 10 × 0.001 + 3 × 0.002 ≈ **USD 0.024 a run, about USD 0.70 a month**; the first run ≈ USD 0.22. Weekly is about USD 0.10 a month.
 - **`maxRunCostUsd`:** 1.5× the typical run + USD 0.03 (room for one store's worst case). For the example, about USD 0.07.
-- **Steps:** follow `references/watchlists.md`: monthly and first-run cost, a yes, the task, the baseline run (with `maxRunCostUsd` raised to the first-run cap in that run's input), the schedule, and where the results go: "your briefing in Claude, on request or on a Monday schedule" (step 6).
+- **Steps:** follow `shared/watchlists.md`: monthly and first-run cost, a yes, the task, the baseline run (with `maxRunCostUsd` raised to the first-run cap in that run's input), the schedule, and where the results go: "your briefing in Claude, on request or on a Monday schedule" (step 6).
 
 ## 5. Reading a promotions digest later
 
